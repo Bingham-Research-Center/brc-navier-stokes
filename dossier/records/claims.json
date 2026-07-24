@@ -593,6 +593,22 @@
       "last_checked": "2026-07-24"
     },
     {
+      "id": "CLM-GAVRILOV-COMPACT-EULER-001",
+      "plain": "There is a nonzero smooth compactly supported steady incompressible Euler flow in three dimensions.",
+      "formal": "There exist nonzero U in C_c^infinity(R3;R3) and smooth P with compactly supported gradient such that div U=0 and U dot grad U=-grad P.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "smooth_steady_Euler",
+      "assumptions": [],
+      "conclusion": "Smooth finite-energy steady Euler packets can be spatially localized and placed with disjoint velocity and pressure-gradient supports.",
+      "scaling": "Euler_steady",
+      "status": "established",
+      "source_ids": ["SRC-GAVRILOV-2019"],
+      "depends_on": [],
+      "audit": "The peer-reviewed theorem is stated in the pinned arXiv v1 source at lines 44-66. Lines 292-303 give the localizable pressure law and cutoff producing smooth compact support. Disjoint-copy packing and the virial calculation used in the repository are separate elementary deductions.",
+      "last_checked": "2026-07-24"
+    },
+    {
       "id": "CLM-OPEN-001",
       "plain": "It is open whether every smooth three-dimensional unforced initial state remains smooth globally.",
       "formal": "Neither Clay alternative A nor B has an accepted proof.",

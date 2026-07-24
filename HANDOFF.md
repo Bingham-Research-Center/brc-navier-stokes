@@ -1,4 +1,4 @@
-# Handoff: R3C compactness defect
+# Handoff: R3C one-trajectory defect transport
 
 **Updated:** 2026-07-24
 
@@ -6,11 +6,11 @@
 
 **Live route:** `ROUTE-R3C`
 
-**Checkpoint:** `EXP-TYPE-II-INVISCID-CARRIER-001`
+**Checkpoint:** `EXP-TYPE-II-CARRIER-DEFECT-001`
 
 ## Load only
 
-- [Current carrier theorem](dossier/experiments/type-ii-inviscid-carrier-entrance.md).
+- [Current defect theorem](dossier/experiments/type-ii-carrier-defect-compactness.md).
 - [Canonical R3C record](dossier/records/routes.json).
 
 Everything else is durable in [status](dossier/status.md) or
@@ -19,43 +19,45 @@ input or external review.
 
 ## Exact live question
 
-Can actual NSE dynamics turn the exhaustive inviscid carrier ledger into a
-contradiction: either by strong compactness with trace persistence to a rigid
-nonzero ancient Euler object, or by charging every failure of compactness to
-one finite physical budget?
+Can the common physical ancestry of Type-II carriers turn terminal
+Reynolds/trace microstructure into a positive non-reusable high-frequency
+flux, persistence charge, or return to a controlled critical class?
 
 ## Progress marker
 
-Entrance is classified; no PDE cell is eliminated. Every weak-\(L^3\)
-Type-II sequence has a carrier normalisation with viscosity tending to zero,
-an arbitrarily long past, and an exhaustive first \(2\times3\times3\) ledger:
+Entrance remains the \(2\times3\times3\) energy--geometry--clock ledger. In
+all nine energy-efficient cells, the new theorem proves:
 
-1. bounded/divergent normalised energy;
-2. diffuse/partial/tight carrier energy;
-3. zero/finite/infinite forward horizon.
+1. \(v_j\) is compact in every local negative Sobolev space;
+2. its quadratic limit is a positive-semidefinite Euler--Reynolds defect,
+   with a separate positive-semidefinite terminal tensor defect, while
+   retained cells force positive combined trace-plus-defect mass; and
+3. normalised viscous dissipation vanishes on every fixed carrier interval
+   by physical terminal absolute continuity.
 
-The coherent self-similar subbranch is restricted to
-\(2/5\le\gamma<1/2\) under additional stated hypotheses. Scalar energy,
-scaling, and necessary vorticity tests cannot close it: the proof note gives a
-sharp divergence-free kinematic survivor which is not an NSE solution.
+Exact smooth small-viscosity NSE families built from packed compact steady
+Euler flows realise every geometry cell with no nonzero strong limit and
+mimic every clock on truncated observation windows. Their endpoints are
+extendible and their trajectories vary, so they close only finite-window
+equation-level compactness, not the first-singular-time route.
 
 ## Known unknown
 
-In the bounded-energy retained branch, strong
-\(L^2_{\mathrm{loc}}\) space-time compactness passes the nonlinearity, but a
-nonzero ancient Euler limit also needs trace persistence. The alternatives
-are Reynolds stress, anomalous dissipation, temporal-trace loss,
-vector/frequency oscillation, fragmentation, energy escape, and the three
-forward-clock cells.
+The efficient branch now splits into a coherent nonzero weak trace awaiting
+propagation and Euler rigidity, inviscid Reynolds/trace microstructure,
+fragmentation, or energy escape. A fixed normalised space-time defect costs
+only \(e_j\tau_j\to0\) physically, while terminal defect energy is a reusable
+stock. The divergent-normalised-energy branch still lacks global compactness
+and may retain normalised viscous dissipation.
 
 ## Next bounded cycle
 
-1. Derive the strongest local space-time and trace compactness available from
-   the actual rescaled NSE equation in the bounded-energy retained branch.
-2. If strong compactness fails, express the Reynolds/dissipation defect as an
-   exact positive or signed same-trajectory quantity and test whether it is
-   summable.
-3. Stress-test both outcomes against partial concentration and
-   zero/infinite-horizon cells before claiming exhaustiveness.
+1. Derive an exact localised high-pass energy identity transporting terminal
+   trace defect backwards by a fixed carrier time, using nonextendibility
+   wherever it genuinely adds information.
+2. Split it exhaustively into persistent inherited defect, positive nonlinear
+   flux, and spatial escape; do not replace signed flux by total variation.
+3. Pull each surviving term to the physical trajectory and test event reuse
+   in the zero, finite, and infinite horizon cells.
 
 Before reporting or committing: `make check` and `git diff --check`.

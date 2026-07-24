@@ -385,6 +385,13 @@ tightness does not control either. Frequency oscillation can make \(V=0\)
 while the normalised layer energy stays positive, and temporal concentration
 can make a nonzero \(s=0\) carrier disappear from the space-time limit.
 
+The subsequent
+[carrier-defect theorem](type-ii-carrier-defect-compactness.md) proves that
+the viscous-dissipation defect vanishes on every fixed rescaled interval in
+the energy-efficient branch. It can still survive after normalisation in the
+energy-vanishing branch. Reynolds, trace, and spatial-escape defects remain
+in the energy-efficient branch.
+
 Thus the first high-consequence R3C unknown is precise: either promote at
 least one carrier branch to a nonzero Euler object with enough structure for
 rigidity, or show that every failure of compactness pays a non-reusable
@@ -604,8 +611,8 @@ Navier--Stokes data. The next major theorem must do at least one of:
 
 1. produce strong carrier compactness with trace persistence and then
    classify every resulting nonzero finite-energy ancient Euler object;
-2. assign a positive, non-reusable charge to Reynolds stress, anomalous
-   dissipation, fragmentation, or energy escape;
+2. assign a positive, non-reusable charge to Reynolds stress, trace loss,
+   fragmentation, energy escape, or energy-vanishing dissipation;
 3. prove a clock law excluding the zero- or infinite-horizon defect cells; or
 4. force all first singularities back into a previously controlled critical
    class.

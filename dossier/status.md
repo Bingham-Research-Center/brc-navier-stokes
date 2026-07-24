@@ -151,8 +151,14 @@ past, and an exhaustive \(2\times3\times3\) subsequence ledger:
 - zero/finite/infinite forward turnover horizon.
 
 Strong space-time compactness plus trace persistence would produce a nonzero
-finite-energy ancient Euler object. Without them, Reynolds stress, anomalous
-dissipation, temporal-trace loss, fragmentation, or energy escape remains.
+finite-energy ancient Euler object. The
+[carrier-defect theorem](experiments/type-ii-carrier-defect-compactness.md)
+proves that normalised viscous dissipation vanishes on each fixed carrier
+interval in all nine energy-efficient cells, but leaves a
+positive-semidefinite Euler--Reynolds/terminal-trace ledger. Exact
+varying-trajectory packet clouds realise every efficient
+geometry cell and every truncated clock analogue, so finite-window
+equation-level compactness alone is closed; their endpoints remain smooth.
 Under separate self-similar
 hypotheses, the current preprint and a favourable-viscosity repository
 adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
@@ -160,9 +166,9 @@ outgoing or axisymmetric smooth Euler profiles are excluded under the
 preprint's exact assumptions. A divergence-free kinematic path satisfies the
 listed energy and necessary vorticity ledgers in that window but is not NSE.
 
-R3C now needs compactness with trace persistence plus complete Euler rigidity,
-a non-reusable charge for every compactness defect, or a clock theorem
-excluding the surviving horizon cells.
+R3C now needs common-trajectory suppression of inviscid microstructure, a
+non-reusable high-frequency flux or persistence charge, and separate control
+of the divergent-normalised-energy cells.
 
 ### Frozen R3B boundary
 

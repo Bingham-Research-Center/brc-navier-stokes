@@ -75,7 +75,6 @@ The conditional structural reduction retains a nonzero coherent ancient
 suitable distance profile with two terminal singular points, no exact
 continuous or discrete self-similarity, and recurring positive Besov defect.
 The [current status](status.md) gives the shortest dependency path.
-
 The latest actual-NSE consequence is:
 
 \[
@@ -91,7 +90,6 @@ c\left(\frac{\nu}{M}\right)^2
 with \(K_j/\Lambda_j\to1\). Thus each late event has positive terminal
 signed flux and a fixed fractional lower-band decrement. The near-lossless
 shell survivor is closed.
-
 Sparse lower bands are automatically frequency-disjoint, and even full
 next-event matching would only make the vanishing physical floors summable.
 The exact ancestry permits that. The heat-kernel majorant's critical Dini
@@ -115,16 +113,18 @@ exclusion would leave Type-II and oscillatory concentration. A Clay
 regularity proof must cover R3C or prove that all first singularities enter
 the R3B class.
 
-The [repository entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md)
-turns any \(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) sequence into a
-vanishing-viscosity carrier problem with an ancient rescaled past. Its
+The [entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md) turns
+any \(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) sequence into a
+vanishing-viscosity carrier with an ancient rescaled past. Its
 subsequence alternatives record energy efficiency, diffuse/partial/tight
-geometry, and the remaining turnover horizon. The live fork is now:
-
-- strong carrier compactness with trace persistence followed by
-  ancient-Euler rigidity; or
-- a non-reusable NSE charge for every Reynolds, dissipation, trace,
-  fragmentation, energy-escape, and clock defect.
+geometry, and the remaining turnover horizon. The
+[defect theorem](experiments/type-ii-carrier-defect-compactness.md) removes
+fixed-interval normalised viscous dissipation from every energy-efficient
+cell. Extendible packet clouds defeat finite-window nonzero compactness in
+every geometry and truncated clock analogue. The live fork is
+common-trajectory/terminal transport to a nonzero ancient Euler object, or a
+non-reusable flux, persistence, escape, fragmentation, or energy-vanishing
+charge.
 
 ### Breakdown side
 

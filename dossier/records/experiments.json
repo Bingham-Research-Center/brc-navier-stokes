@@ -3804,6 +3804,40 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-CARRIER-DEFECT-001",
+      "title": "Energy-efficient Type-II carriers lose viscosity before they gain compactness",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-GAVRILOV-COMPACT-EULER-001"
+      ],
+      "hypothesis": "Uniform carrier energy and the exact vanishing-viscosity Navier-Stokes equation may yield a nonzero compact Euler limit, or else expose an exact defect with a finite same-trajectory physical charge.",
+      "invariants": [
+        "Uniform global L2 energy and the projected equation give strong local continuity only in every negative Sobolev space",
+        "The quadratic weak-star limit is an Euler-Reynolds equation with a positive-semidefinite matrix-valued defect whose trace is the local strong-L2 defect",
+        "At the selected time the terminal tensor defect is positive-semidefinite and every partial or tight layer retains positive mass in the weak trace plus that defect",
+        "In the energy-efficient branch the carrier energy normalizer is bounded below",
+        "Exact physical pullback identifies normalized viscous dissipation as terminal physical dissipation divided by the carrier energy normalizer",
+        "Absolute continuity of one-trajectory terminal dissipation makes normalized viscous dissipation vanish on every fixed carrier interval in all nine energy-efficient cells",
+        "Compactly supported steady Euler packets can be scaled, packed, and separated while preserving one normalized weak-L3 amplitude layer and bounded energy",
+        "A diagonal small-viscosity stability argument gives exact smooth Navier-Stokes equation families with arbitrarily long past and any prescribed truncated forward-observation horizon",
+        "Tight packet clouds converge weakly to zero while retaining a positive isotropic energy defect; diffuse and partial variants realize the other geometry cells and all truncated clock analogues",
+        "The packet endpoints are smoothly extendible, so they do not realize the first-singular-time semantics of the clock cells",
+        "An exact backscaling puts every packet family at one fixed physical viscosity with bounded energy and diverging weak-L3 norm, but on a different physical trajectory at each index",
+        "The packet families vary their initial data and carrier viscosity and are not rescalings of one physical blow-up trajectory"
+      ],
+      "method": "Use the projected carrier equation for uniform negative-Sobolev time regularity, extract positive quadratic and terminal trace defects, pull normalized viscous dissipation back exactly to the shrinking physical terminal interval, then pack scaled Gavrilov steady Euler flows and approximate each finite packet cloud diagonally by an exact small-viscosity Navier-Stokes solution.",
+      "certificate": "A written analytic proof, exact scaling and virial calculations, and a pinned peer-reviewed Gavrilov source with archive and TeX SHA-256 line anchors. No executable certificate or external mathematical review is claimed.",
+      "success_criterion": "Determine the strongest equation-level carrier compactness, remove every viscous-dissipation defect from the energy-efficient one-trajectory branch, and decide whether finite-window equation, energy, geometry, and interval-length data alone force a nonzero Euler profile.",
+      "failure_interpretation": "The negative-Sobolev compactness, positivity of the Reynolds or trace defect, physical dissipation pullback, terminal absolute-continuity argument, disjoint steady-Euler packing, virial identity, or diagonal exact Navier-Stokes approximation is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-carrier-defect-compactness.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

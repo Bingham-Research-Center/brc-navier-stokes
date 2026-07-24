@@ -473,6 +473,19 @@
       "status": "preprint",
       "last_checked": "2026-07-24",
       "notes": "Pinned v3 archive SHA-256: e37680663969e1f7bfd8c81c0419f7c087c0e2d712851647d3c64e8fc34ece80. Exact source is civ26v22.tex, SHA-256 dcc86b0113872a709b5b04ff84ba0e5470c6b03ce4da300472cb3615f64bd716: finite-energy Euler two-fifths theorem and strain proof at lines 149-256; viscous inner/outer proposition at lines 374-436; local-outgoing profile theorems at lines 728-930; unconditional-on-meridional-flow axisymmetric theorem, subject to the standing normalization and far-field assumptions at lines 1041-1112. The source is a current preprint, not a peer-reviewed theorem."
+    },
+    {
+      "id": "SRC-GAVRILOV-2019",
+      "title": "A steady Euler flow with compact support",
+      "authors": ["A. V. Gavrilov"],
+      "year": 2019,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1007/s00039-019-00476-6",
+      "version": "Geometric and Functional Analysis 29(1), 190-197; arXiv:1810.08020v1",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-24",
+      "notes": "Pinned arXiv v1 gzip archive SHA-256: 878e48e0159bc0a7e2716d5dd1d82c9b43ff9e66ddf886631a0fec0e59adaa1e. The single source member is p7a.tex, uncompressed SHA-256 777e525f8be1df35b20e72c27106bf3487bb998cf11ae54a6ff6f17de6325717: theorem and compact-support statement at lines 44-66; localizable pressure law and smooth cutoff at lines 292-303; energy-pressure relation and compact-flow virial identity at lines 321-334."
     }
   ]
 }
