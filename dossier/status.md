@@ -268,48 +268,42 @@ survivors occur in Navier--Stokes.
 
 ## Live gates
 
-### Primary R3B gates
+### Active R3C gate
 
-1. **Critical nested dissipation.** Prove the classified Dini gain by NSE
-   structure, or obtain non-reuse/fresh signed blocks. Global
-   higher-integrability alone is now excluded as a norm shortcut.
-2. **Event-index floor.** Prove a nonsummable scale-zero charge, non-Zeno
-   rigidity, or a pressure-visible fixed-increment telescope. Bounded
-   frequency overlap alone is closed.
-3. **Clock/zoom coupling.** Prevent the physical zoom from outrunning the
-   \(9/4\) or stronger coefficient cost.
-4. **Direct-response branch.** Exclude or absorb the
-   [inverse-\(15/4\) ancestor](experiments/adjoint-pressure-direct-response.md).
-5. **Finite-secondary-index branch.** Sum the disjoint scale-matched packets
-   beyond the square-root Rademacher ledger.
+The [Type-II carrier theorem](experiments/type-ii-inviscid-carrier-entrance.md)
+selects a near-extremising weak-\(L^3\) layer and rescales by its amplitude
+and volume radius. Every sequence with \(m_j\to\infty\) then has effective
+viscosity \(\varepsilon_j\asymp\nu/m_j\to0\), an arbitrarily long rescaled
+past, and an exhaustive \(2\times3\times3\) subsequence ledger:
 
-### Secondary structural gates
+- bounded/divergent normalised energy;
+- diffuse/partial/tight carrier geometry; and
+- zero/finite/infinite forward turnover horizon.
 
-- Prove or refute the no-neck bound comparing carrier offset with parent
-  radius.
-- Upgrade fixed-shell parent limits to the suitable or mild class required by
-  rigidity.
-- Control the projective tensor/trace defect without replacing signed
-  cancellation by variation; see
-  [tensor adjoint closure](experiments/tensor-adjoint-closure.md) and
-  [Kato defect](experiments/adjoint-kato-defect.md).
-- Construct the two-edge carrier-to-parent genealogy before reviving a
-  stationary scale-process proof.
-- Decide whether the divergent strong \(L^{5/2}_{t,x}\) fresh-shell
-  occupation from
-  [two-scale synchronisation](experiments/two-scale-synchronization.md)
-  has a finite-secondary-index or other scale-zero bound.
-- Classify the sequence-dependent trace/projective-cross zero profiles
-  retained by the
-  [trace adjoint](experiments/tensor-trace-adjoint.md) without replacing signed
-  cancellation by total variation.
-- For the original 2607 direction, derive the endpoint direction hypothesis
-  from NSE dynamics, control spatially constant velocity backgrounds, or
-  identify the weakest oscillation modulus that still beats analyticity.
+Strong space-time compactness plus trace persistence would produce a nonzero
+finite-energy ancient Euler object. Without them, Reynolds stress, anomalous
+dissipation, temporal-trace loss, fragmentation, or energy escape remains.
+Under separate self-similar
+hypotheses, the current preprint and a favourable-viscosity repository
+adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
+outgoing or axisymmetric smooth Euler profiles are excluded under the
+preprint's exact assumptions. A divergence-free kinematic path satisfies the
+listed energy and necessary vorticity ledgers in that window but is not NSE.
 
-### Outside R3B
+R3C now needs compactness with trace persistence plus complete Euler rigidity,
+a non-reusable charge for every compactness defect, or a clock theorem
+excluding the surviving horizon cells.
 
-- ROUTE-R3C must address Type-II and oscillatory concentration.
+### Frozen R3B boundary
+
+R3B still requires a critical Dini/non-reuse theorem, a fixed event floor,
+clock/zoom coupling, direct-response exclusion, and a finite-secondary-index
+sum. Its no-neck, parent-class, tensor/trace, genealogy, and 2607 endpoint
+children remain preserved in the [canonical route](records/routes.json) and
+linked proof notes; do not reopen them without new input or external review.
+
+### Other open sides
+
 - ROUTE-B has no Clay-admissible blow-up construction.
 - The HWY route still requires independent certificate reproduction and a
   smooth-prehistory or admissible-force bridge; see the
@@ -318,8 +312,8 @@ survivors occur in Navier--Stokes.
 ## Current work order
 
 1. Keep R3B frozen until a new theorem or fresh external review changes it.
-2. Classify exhaustive R3C Type-II entrance alternatives.
-3. Generate external-review packets from canonical proofs only when requested.
+2. Attack R3C carrier compactness versus a chargeable defect.
+3. Generate external-review packets from canonical proofs only on request.
 
 ## Epistemic and validation rules
 

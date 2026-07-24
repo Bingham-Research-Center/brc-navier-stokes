@@ -3768,6 +3768,42 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-INVISCID-CARRIER-001",
+      "title": "Type-II amplitude layers enter an inviscid carrier ledger",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001",
+        "CLM-PRODI-SERRIN-001",
+        "CLM-CIV-EULER-TWO-FIFTHS-001",
+        "CLM-CIV-NSE-ONE-HALF-001",
+        "CLM-CIV-EULER-PROFILE-RIGIDITY-001"
+      ],
+      "hypothesis": "Every sequence with diverging velocity weak-L3 norm can be reduced, without a Type-I ceiling, to exact amplitude-layer, energy-efficiency, carrier-geometry, and turnover-clock alternatives whose natural equation has vanishing viscosity.",
+      "invariants": [
+        "A near-extremising dyadic amplitude layer has amplitude comparable to m^3/e and volume radius comparable to e/m^2",
+        "The global enstrophy lower bound is comparable to m^4/e and yields finite L4_t weak-L3 occupation",
+        "Amplitude-radius nondimensionalisation gives effective viscosity comparable to nu/m and an arbitrarily long rescaled past",
+        "The energy ratio has bounded and divergent subsequence alternatives",
+        "The carrier-scale concentration function has diffuse, partial, and tight alternatives without fixing a centre or connected geometry",
+        "The remaining turnover horizon has zero, finite-positive, and infinite alternatives",
+        "Strong local space-time compactness and carrier-trace persistence are additional; otherwise a Reynolds, dissipation, or temporal-trace defect survives",
+        "Under the exact additional self-similar hypotheses, the jointly conditioned Type-II exponent window is 2/5<=gamma<1/2",
+        "A smooth compactly supported divergence-free kinematic path satisfies the exact energy identity, finite weak-L3 occupation, and divergent necessary vorticity integral throughout that window",
+        "The kinematic path is not a Navier-Stokes solution and no Clay alternative is asserted"
+      ],
+      "method": "Select a half-extremising weak-L3 level, subtract the doubled tail, apply Sobolev and energy equality, nondimensionalise on the layer turnover scale, diagonalise the energy, concentration-function, and horizon parameters, isolate spatial, frequency, and temporal-trace compactness defects, adapt the instantaneous strain split using the favourable viscous Kato inequality, and construct an exact energy-class kinematic survivor.",
+      "certificate": "A written analytic proof, a pinned arXiv:2602.17570v3 source with SHA-256 and line anchors, and exact scaling calculations. No executable certificate or external mathematical review is claimed.",
+      "success_criterion": "Produce the repository's first subsequence-exhaustive weak-L3 Type-II entrance ledger, identify the exact inviscid compactness defect, and show sharply why energy and necessary blow-up rates alone do not close it.",
+      "failure_interpretation": "The dyadic layer constants, rescaled equation, concentration trichotomy, strain optimisation, source boundary, or kinematic energy ledger is incorrect, or an asserted branch silently assumes spatial or temporal compactness.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-inviscid-carrier-entrance.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

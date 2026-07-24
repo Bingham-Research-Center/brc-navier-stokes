@@ -456,6 +456,23 @@
       "status": "preprint",
       "last_checked": "2026-07-23",
       "notes": "Computer-assisted singular-initial-data result; independent reproduction pending."
+    },
+    {
+      "id": "SRC-CONSTANTIN-IGNATOVA-VICOL-2026",
+      "title": "On putative self-similarity for incompressible 3D Euler",
+      "authors": [
+        "Peter Constantin",
+        "Mihaela Ignatova",
+        "Vlad Vicol"
+      ],
+      "year": 2026,
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2602.17570",
+      "version": "arXiv:2602.17570v3, 2026-07-20",
+      "primary": true,
+      "status": "preprint",
+      "last_checked": "2026-07-24",
+      "notes": "Pinned v3 archive SHA-256: e37680663969e1f7bfd8c81c0419f7c087c0e2d712851647d3c64e8fc34ece80. Exact source is civ26v22.tex, SHA-256 dcc86b0113872a709b5b04ff84ba0e5470c6b03ce4da300472cb3615f64bd716: finite-energy Euler two-fifths theorem and strain proof at lines 149-256; viscous inner/outer proposition at lines 374-436; local-outgoing profile theorems at lines 728-930; unconditional-on-meridional-flow axisymmetric theorem, subject to the standing normalization and far-field assumptions at lines 1041-1112. The source is a current preprint, not a peer-reviewed theorem."
     }
   ]
 }

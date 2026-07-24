@@ -193,13 +193,13 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Critical profile to Type-II dynamics",
-      "question": "Starting only from a smooth finite-energy solution before a putative first singular time, can every Type-II entrance be reduced to exhaustive carrier alternatives stable under moving or multiple centres, changing scales, oscillation, and loss of profile compactness, without importing a uniform weak-L3 Type-I ceiling?",
+      "question": "Every sequence with diverging velocity weak-L3 norm now enters an exhaustive 2-by-3-by-3 amplitude-layer ledger: bounded or divergent normalized energy, diffuse or partial or tight carrier geometry, and zero or finite-positive or infinite turnover horizon. The turnover normalization has viscosity nu/m tending to zero and an arbitrarily long past. Can actual Navier-Stokes dynamics either force strong compactness with trace persistence to a rigid nonzero ancient Euler object or assign a positive non-reusable charge to every Reynolds-stress, dissipation, temporal-trace, fragmentation, and energy-escape defect?",
       "entry_assumptions": ["A smooth finite-energy Navier-Stokes solution before a putative first singular time", "No uniform terminal weak-L3 bound or R3B Besov genealogy"],
-      "success": "A proved exhaustive entrance reduction followed by a scale-adaptive estimate or rigidity theorem closing every Type-II and oscillatory branch.",
-      "kill_criterion": "An actual Navier-Stokes Type-II entrance mechanism outside the asserted alternatives, or a coherent surviving branch outside the proposed scale-adaptive estimate.",
+      "success": "For every ledger cell, prove either return to a controlled critical class, strong carrier compactness with trace persistence followed by complete ancient-Euler rigidity, or a nonsummable defect charge paid by a finite same-trajectory Navier-Stokes budget.",
+      "kill_criterion": "An actual same-trajectory Navier-Stokes Type-II mechanism that survives one ledger cell with no rigid compact limit and with every Reynolds, dissipation, temporal-trace, fragmentation, energy-escape, and clock charge summable. Kinematic energy paths do not kill the route.",
       "status": "open",
       "children": [],
-      "evidence_claim_ids": []
+      "evidence_claim_ids": ["CLM-SCALE-001", "CLM-ENERGY-001", "CLM-PRODI-SERRIN-001", "CLM-CIV-EULER-TWO-FIFTHS-001", "CLM-CIV-NSE-ONE-HALF-001", "CLM-CIV-EULER-PROFILE-RIGIDITY-001"]
     },
     {
       "id": "ROUTE-B",

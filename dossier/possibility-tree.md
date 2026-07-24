@@ -115,6 +115,17 @@ exclusion would leave Type-II and oscillatory concentration. A Clay
 regularity proof must cover R3C or prove that all first singularities enter
 the R3B class.
 
+The [repository entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md)
+turns any \(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) sequence into a
+vanishing-viscosity carrier problem with an ancient rescaled past. Its
+subsequence alternatives record energy efficiency, diffuse/partial/tight
+geometry, and the remaining turnover horizon. The live fork is now:
+
+- strong carrier compactness with trace persistence followed by
+  ancient-Euler rigidity; or
+- a non-reusable NSE charge for every Reynolds, dissipation, trace,
+  fragmentation, energy-escape, and clock defect.
+
 ### Breakdown side
 
 No smooth Clay-admissible singularity is constructed. Certified or numerical

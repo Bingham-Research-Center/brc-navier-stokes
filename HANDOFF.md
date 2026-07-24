@@ -1,4 +1,4 @@
-# Handoff: Type-II entrance
+# Handoff: Type-II compactness defect
 
 **Updated:** 2026-07-24
 
@@ -6,7 +6,7 @@
 
 **Live route:** `ROUTE-R3C`
 
-**Previous checkpoint:** `EXP-ADJOINT-PRESSURE-FRESHNESS-WITHOUT-FLOOR-001`
+**Checkpoint:** `EXP-TYPE-II-INVISCID-CARRIER-001`
 
 This is replace-not-append working memory. Durable results live in
 [`dossier/status.md`](dossier/status.md), exact metadata in
@@ -16,12 +16,8 @@ named experiment notes.
 ## Load only
 
 - [Clay target](dossier/clay-target.md).
-- [R3C in the possibility tree](dossier/possibility-tree.md#r3c-type-ii).
+- [Current carrier theorem](dossier/experiments/type-ii-inviscid-carrier-entrance.md).
 - [Canonical R3C record](dossier/records/routes.json).
-- For overlap with prior work only:
-  [natural-frequency cascade](dossier/experiments/natural-frequency-cascade.md),
-  [packet lifetime](dossier/experiments/packet-lifetime.md), and
-  [sparse-analyticity endgame](dossier/experiments/sparse-analyticity-endgame.md).
 
 Do not load the R3B chain unless a new theorem or external review directly
 reopens it. Its result, assumptions, gates, failed shortcuts, and proof links
@@ -30,51 +26,53 @@ are preserved in the
 
 ## Exact live question
 
-Starting only from a smooth finite-energy solution before a putative first
-singular time, give an exhaustive Type-II entrance alternative that survives
-moving centres, multiple cores, changing scales, oscillation, and loss of
-profile compactness. Do not import R3B's uniform weak-\(L^3\) bound or
-conditional Besov genealogy.
+Can actual NSE dynamics turn the exhaustive inviscid carrier ledger into a
+contradiction: either by strong compactness with trace persistence to a rigid
+nonzero ancient Euler object, or by charging every failure of compactness to
+one finite physical budget?
 
-## Checked starting ledger
+## State in one minute
 
-Write \(m(t)=\|u(t)\|_{L^{3,\infty}}\) and \(E_0=\sup_t\|u(t)\|_2^2\).
-Energy and Sobolev give
-
-\[
-m(t)^4\lesssim E_0\|\nabla u(t)\|_2^2,
-\qquad
-\int_0^{T^*}m(t)^4\,dt\lesssim E_0^2/\nu.
-\]
-
-Thus Type-II weak-\(L^3\) growth is permitted only on a finite
-\(m^4\)-occupation budget; this is not regularity.
-
-For a near-extremising dyadic amplitude layer with energy \(e(t)\), the scale
-ledger is
+For every sequence with
+\(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\), the current theorem selects an
+amplitude layer with
 
 \[
-a\asymp m^3/e,\qquad R\asymp e/m^2,\qquad
-\|\nabla u\|_2^2\gtrsim m^4/e.
+a_j\asymp m_j^3/e_j,\qquad
+R_j\asymp e_j/m_j^2,\qquad
+\tau_j=R_j/a_j\asymp e_j^2/m_j^5.
 \]
 
-Along any \(m\to\infty\) sequence, the first candidate exhaustive split is:
+Carrier normalisation gives viscosity
+\(\varepsilon_j\asymp\nu/m_j\to0\) and an arbitrarily long past. After a
+subsequence, the exact first ledger is:
 
-1. \(E_0/e\) remains bounded: an energy-efficient coherent carrier;
-2. \(E_0/e\to\infty\): a vanishing-energy carrier.
+1. bounded or divergent \(E_0/e_j\);
+2. diffuse, partially concentrated, or tight layer energy at scale \(R_j\);
+3. zero, finite-positive, or infinite forward turnover horizon.
 
-This split is a reduction to prove and stress-test, not yet a route closure.
-The high-consequence unknown is whether actual NSE dynamics force enough
-compactness or rigidity in either branch; scalar energy and clock budgets
-alone allow Zeno concentration.
+In the bounded-energy, spatially retained branch, strong
+\(L^2_{\mathrm{loc}}\) space-time compactness would pass the nonlinearity to a
+finite-energy ancient Euler solution; trace persistence is additionally
+needed to make it nonzero. The precise survivors are Reynolds stress,
+anomalous dissipation, temporal-trace loss, vector/frequency oscillation,
+fragmentation, and energy escape.
+
+A current v3 preprint claims exclusion of outgoing and axisymmetric smooth
+stationary Euler profiles in the subparabolic similarity range under its
+exact assumptions. It does not control the defect branches. A sharp
+divergence-free kinematic path satisfies energy equality and the listed
+necessary vorticity ledger but is not a Navier--Stokes solution.
 
 ## Next bounded cycle
 
-1. Prove the layer reduction with exact constants and quantifiers.
-2. Test both branches against Type-II rates, moving/multiple centres,
-   oscillatory scales, and compactness loss.
-3. Record either one exhaustive entrance theorem or the sharp survivor that
-   prevents it; then update R3C's canonical record and compact status.
+1. Derive the strongest local space-time and trace compactness available from
+   the actual rescaled NSE equation in the bounded-energy retained branch.
+2. If strong compactness fails, express the Reynolds/dissipation defect as an
+   exact positive or signed same-trajectory quantity and test whether it is
+   summable.
+3. Stress-test both outcomes against partial concentration and
+   zero/infinite-horizon cells before claiming exhaustiveness.
 
 ## Frozen boundary
 

@@ -532,6 +532,67 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-CIV-EULER-TWO-FIFTHS-001",
+      "plain": "A finite-energy smooth Euler blow-up with the self-similar vorticity-gradient rate must have similarity exponent at least two fifths.",
+      "formal": "If a smooth finite-energy R3 Euler solution blows up at T-star and sup over t<T-star of (T-star-t)^(1+gamma)||grad omega(t)||_infinity is finite, then gamma is at least 2/5.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "smooth_Euler",
+      "assumptions": [
+        "Finite kinetic energy",
+        "Finite-time smooth Euler blow-up",
+        "The stated global vorticity-gradient rate for some gamma>0"
+      ],
+      "conclusion": "The similarity exponent satisfies gamma>=2/5.",
+      "scaling": "Euler_self_similar",
+      "status": "preprint_claim",
+      "source_ids": ["SRC-CONSTANTIN-IGNATOVA-VICOL-2026"],
+      "depends_on": [],
+      "audit": "Exact v3 source lines 149-256. The source theorem is Euler. The repository's favourable-viscosity adaptation to Navier-Stokes is a separate internal theorem recorded in EXP-TYPE-II-INVISCID-CARRIER-001 and is not attributed to the preprint.",
+      "last_checked": "2026-07-24"
+    },
+    {
+      "id": "CLM-CIV-NSE-ONE-HALF-001",
+      "plain": "An approximately self-similar Navier-Stokes vorticity decomposition with a regular outer part cannot blow up with exponent above one half.",
+      "formal": "If omega=omega_in+omega_out, omega_in is supported in a ball of radius comparable to (1-t)^gamma and has L2 norm at most C(1-t)^(-1+3gamma/2), and omega_out belongs to L4_t L2_x, then blow-up at t=1 implies gamma<=1/2.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "Navier_Stokes_solution_with_inner_outer_vorticity_decomposition",
+      "assumptions": [
+        "The exact inner support and L2 rate",
+        "The outer vorticity belongs to L4 in time and L2 in space",
+        "Finite-time blow-up at the normalized terminal time"
+      ],
+      "conclusion": "The similarity exponent satisfies gamma<=1/2.",
+      "scaling": "Navier_Stokes_approximate_self_similar",
+      "status": "preprint_claim",
+      "source_ids": ["SRC-CONSTANTIN-IGNATOVA-VICOL-2026"],
+      "depends_on": ["CLM-PRODI-SERRIN-001"],
+      "audit": "Exact v3 source lines 374-436. The proof sums the inner and outer L4_t L2_x vorticity bounds when gamma>1/2 and invokes the corresponding regularity criterion. No endpoint exclusion is claimed.",
+      "last_checked": "2026-07-24"
+    },
+    {
+      "id": "CLM-CIV-EULER-PROFILE-RIGIDITY-001",
+      "plain": "Under the preprint's standing far-field assumptions, local-outgoing or axisymmetric smooth globally self-similar Euler profiles cannot have exponent below one half.",
+      "formal": "For a nontrivial C2 globally self-similar R3 Euler profile satisfying the source normalization, sublinearity, and quantified far-field bounds, either the source local-outgoing property or axisymmetry implies gamma>=1/2.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "smooth_globally_self_similar_Euler_profile",
+      "assumptions": [
+        "The stationary Euler profile equation",
+        "The source normalization and quantified far-field bounds",
+        "Either the finite-nodal-set local-outgoing property or axisymmetry",
+        "A nontrivial C2 velocity profile"
+      ],
+      "conclusion": "The similarity exponent satisfies gamma>=1/2.",
+      "scaling": "Euler_globally_self_similar",
+      "status": "preprint_claim",
+      "source_ids": ["SRC-CONSTANTIN-IGNATOVA-VICOL-2026"],
+      "depends_on": [],
+      "audit": "Exact v3 source lines 728-930 for the local-outgoing branch and 1041-1112 for the axisymmetric branch. This does not cover time-dependent profiles, noncompact limits, failure of the far-field hypotheses, nonsmooth profiles, or Reynolds-defect limits.",
+      "last_checked": "2026-07-24"
+    },
+    {
       "id": "CLM-OPEN-001",
       "plain": "It is open whether every smooth three-dimensional unforced initial state remains smooth globally.",
       "formal": "Neither Clay alternative A nor B has an accepted proof.",
