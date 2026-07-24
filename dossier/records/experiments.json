@@ -3640,6 +3640,42 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-NONLINEAR-REGENERATION-001",
+      "title": "Borderline annular pressure requires nonlinear regeneration",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001"
+      ],
+      "hypothesis": "The inverse-square-root exterior-adjoint endpoint left by annular localisation may still exclude passive far-shell clouds once reciprocal coefficient frequencies and the long physical genealogy horizon are used.",
+      "invariants": [
+        "Splitting the coefficient on a radius-R shell at smooth frequency R inverse makes the low-frequency gradient pressure cost proportional to R inverse",
+        "The reciprocal-frequency low-mode shell sum is geometric under the inverse-square-root exterior adjoint tail",
+        "The reversed coefficient obeys an exact forward Navier-Stokes Duhamel identity from every admissible remote genealogy time",
+        "The high-frequency heat multiplier is bounded by horizon inverse one-half times exp of minus c horizon divided by R squared",
+        "Summing the inherited high-frequency term against an exterior adjoint tail R to minus beta gives energy times horizon to minus (1+beta)/2",
+        "At beta equals one-half the inherited annular cost is bounded by E_n H_n to minus three-quarters",
+        "Physical outer scaling gives E_n proportional to rho_n inverse one-half and H_n proportional to rho_n inverse two, so the inherited cost is O(rho_n) and vanishes",
+        "After the low-frequency, coefficient-cutoff, compact-inner, and inherited terms are removed, only the high-frequency nonlinear Duhamel regeneration action remains",
+        "A finite l1 secondary index for the nonlinear regeneration action is sufficient for finite genealogy-level adjoint-pressure cost",
+        "Any actual divergent finite-window pressure history forces divergent nonlinear regeneration action, but divergence is not asserted",
+        "The static endpoint annular cloud cannot be a passive remote heat inheritance on the physical genealogy",
+        "The theorem does not prove regeneration is recent, signed, disjoint, non-Zeno, or finite and proves no ancient-profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution"
+      ],
+      "method": "Refine the annular CLMS decomposition by splitting each coefficient shell at reciprocal spatial frequency, sum the low modes by Lorentz Bernstein, express every high mode by the exact same-genealogy Duhamel formula, sum the remote heat term against the endpoint adjoint tail, and insert the physical energy-horizon scaling.",
+      "certificate": "A written conditional same-genealogy regeneration theorem and executable ledgers for reciprocal shell sums, dyadic heat erasure, the three-quarter horizon power, and the resulting positive rho power; external mathematical review is pending.",
+      "success_criterion": "Exclude passive low-frequency or remotely inherited coefficient clouds from the annular endpoint and isolate actual nonlinear Navier-Stokes regeneration as the sole remaining payer.",
+      "failure_interpretation": "The reciprocal-frequency Lorentz Bernstein estimate, reversed-time Duhamel sign, heat multiplier, dyadic shell sum, physical energy-horizon scaling, or insertion into the annular CLMS estimate is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-nonlinear-regeneration.md",
+        "lab/navier_lab/adjoint_pressure_nonlinear_regeneration.py",
+        "lab/tests/test_adjoint_pressure_nonlinear_regeneration.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

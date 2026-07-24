@@ -108,8 +108,18 @@ may still cost order one: an \(\ell^1\) shell secondary index is needed,
 while the current theorem supplies only \(\ell^\infty\). Under physical
 rescaling the equivalent strong-gradient threshold is exactly
 \(L^{5/2}_{t,x}\); the available \(L^{2+\delta_B}\), with
-\(\delta_B<1/2\), remains on the wrong side. External mathematical review
-of this localisation is pending.
+\(\delta_B<1/2\), remains on the wrong side.
+
+The subsequent
+[conditional nonlinear-regeneration theorem](experiments/adjoint-pressure-nonlinear-regeneration.md)
+shows that this endpoint cannot be passive on the physical genealogy.
+Coefficient frequencies at or below reciprocal shell scale are summable,
+and remote inherited high frequencies cost at most
+\(\mathcal E_n(\nu L_n)^{-3/4}=O(\rho_n)\to0\). Any surviving
+non-summable shell action must therefore lie in a high-frequency nonlinear
+Duhamel regeneration field on the same trajectory. Its secondary index,
+sign, recency, and event freshness remain open. External mathematical
+review of both localisations is pending.
 
 ### 4. Feedback pressure becomes a physical coefficient tail
 
@@ -192,10 +202,11 @@ survivors occur in Navier--Stokes.
 
 ### Primary R3B gates
 
-1. **Uniform adjoint cost.** Upgrade the annular \(R^{-1/2}\)
-   exterior-adjoint tail from an \(\ell^\infty\) shell action to a finite
-   \(\ell^1\) secondary index, gain any positive tail power, or derive an
-   equivalent critical \(L^{5/2}\)-type one-trajectory estimate.
+1. **Nonlinear regeneration cost.** Bound the shell-weighted nonlinear
+   Duhamel regeneration action, or prove that non-summable regeneration
+   forces fresh signed flux/decrement events. A positive adjoint-tail power
+   or critical \(L^{5/2}\)-type estimate remains sufficient, but passive
+   low modes and remote heat inheritance are no longer live obstructions.
 2. **Event-index freshness.** Prove bounded time-frequency overlap, a
    scale-zero floor, non-Zeno speed, an intervening event, or a
    pressure-visible telescope for the forced lower-band decrements.

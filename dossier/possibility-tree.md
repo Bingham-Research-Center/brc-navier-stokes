@@ -95,7 +95,8 @@ shell survivor is closed.
 The remaining survivor may reuse overlapping intervals and bands while its
 flux and physical floors decay geometrically. R3B closes only if one obtains:
 
-- a finite annular exterior-adjoint secondary index plus additive events;
+- a finite nonlinear-regeneration secondary index, or a theorem turning
+  non-summable regeneration into fresh signed flux/decrement events;
 - bounded time-frequency overlap or a scale-zero decrement;
 - a non-Zeno/intervening-event theorem;
 - a pressure-visible cross-event telescope; or

@@ -644,13 +644,16 @@ It does not prove:
 6. exclusion of the coherent ancient profile;
 7. regularity, breakdown, or any Clay alternative A--D.
 
-The live adjoint-cost question is now:
+The subsequent
+[nonlinear-regeneration reduction](adjoint-pressure-nonlinear-regeneration.md)
+shows that reciprocal-or-lower coefficient frequencies sum at this endpoint
+and that remote inherited high frequencies vanish on the physical genealogy.
+It therefore narrows the live question further:
 
-> Prove a finite secondary index for the exterior Oseen-adjoint tail,
-> obtain any positive power beyond \(R^{-1/2}\), or derive an
-> equivalent scale-critical \(L^{5/2}\)-type gain from the joint
-> Navier--Stokes genealogy.  The coefficient's divergent global energy
-> is no longer a reason this might fail.
+> Prove a finite secondary index for the high-frequency nonlinear Duhamel
+> regeneration action, or show that its non-summable shells force fresh
+> signed flux/decrement events. A positive exterior-adjoint tail power or
+> scale-critical \(L^{5/2}\)-type gain remains sufficient.
 
 The local-energy, shell, tail, cell-cloud, and \(L^p\) scaling ledgers
 are checked in

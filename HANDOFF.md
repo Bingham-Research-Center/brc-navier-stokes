@@ -4,7 +4,7 @@
 
 **Clay status:** unsolved
 
-**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-ANNULAR-COST-001`
+**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-NONLINEAR-REGENERATION-001`
 
 **Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
 
@@ -99,36 +99,30 @@ at the required event scales, or prove a sharp obstruction. The lower bound is
 already established in
 [adjoint-pressure history](dossier/experiments/adjoint-pressure-history.md).
 
-For each fixed smooth member, CLMS and adjoint energy give a finite but
-nonuniform global-\(L^2\) upper estimate. The
-[conditional annular cost theorem](dossier/experiments/adjoint-pressure-annular-cost.md)
-now removes that global factor. With \(R_k=L^kR_0\) and
+The [conditional annular cost theorem](dossier/experiments/adjoint-pressure-annular-cost.md)
+removes the nonuniform global-\(L^2\) factor and leaves an exact
+\(R_k^{-1/2}\) exterior-adjoint endpoint. The subsequent
+[nonlinear-regeneration theorem](dossier/experiments/adjoint-pressure-nonlinear-regeneration.md)
+splits each coefficient shell at frequency \(R_k^{-1}\). Reciprocal-or-lower
+frequencies have a summable \(R_k^{-1}\) action, while the remotely inherited
+high-frequency action is
 
 \[
-\mathcal A_{n,k}(T)
-=
-\left(\int_0^T
-\|a_{n,\psi}\|_{L^2(|x|>2R_k)}^2\,dt\right)^{1/2},
+O\!\left(\mathcal E_n(\nu L_n)^{-3/4}\right)
+=O(\rho_n)\longrightarrow0
 \]
 
-the pressure history is bounded by an inner term plus
+on the physical genealogy. Consequently
 
 \[
-C\sum_k\mathcal A_{n,k}(T)
-\left[
-\left(R_k+\frac{\nu T}{R_k}\right)^{1/2}
-+M\left(\frac{T}{R_k}\right)^{1/2}
-\right].
+\int_0^T\|\nabla\pi^*_{n,\psi}\|_1\,dt
+\le C+C\mathfrak R_n(T)+o(1),
 \]
 
-The proved feedback tail has exactly
-\(\mathcal A_{n,k}\lesssim R_k^{-1/2}\): it gives an
-\(\ell^\infty\) shell action, while finiteness needs the corresponding
-\(\ell^1\) secondary index. Any positive extra tail power would sum.
-Equivalently, this localisation closes under a genealogy-uniform
-\(\nabla u\in L^p_{t,x}\) budget, but physical scaling makes \(p=5/2\)
-the exact threshold; the known \(p=2+\delta_B<5/2\) gain does not reach it.
-External mathematical review of this new localisation is pending.
+where \(\mathfrak R_n\) is the shell-weighted high-frequency nonlinear
+Duhamel regeneration action. Its finiteness, sign, recency, and event-index
+freshness remain unproved. External mathematical review of both new
+localisations is pending.
 
 ### B. Event-index freshness
 
@@ -152,7 +146,7 @@ can cancel in every gauge.
 - The proof-consistent critical-amplitude reading of Albritton--Barker
   Theorem 4.1 still needs external mathematical confirmation.
 - The selected Besov-event and feedback-pressure genealogy is conditional.
-- No uniform finite total adjoint-pressure budget or event-index sum is known.
+- No finite nonlinear-regeneration secondary index or event-index sum is known.
 
 ## Closed shortcuts: do not retry unchanged
 
@@ -173,10 +167,11 @@ The broader failure catalogue is indexed in
 
 ## Next actions
 
-1. Seek a positive exterior-adjoint tail power or finite shell secondary
-   index; do not return to the now-removed global-energy obstruction.
+1. Bound the nonlinear Duhamel regeneration action, or prove that its
+   non-summable shells force fresh signed flux/decrement events; do not return
+   to passive low-frequency or remote-inheritance explanations.
 2. If that budget closes, test whether decrement packets embed additively;
-   otherwise test event freshness against the exact borderline shell profile.
+   otherwise test freshness against the exact regenerated endpoint profile.
 3. Allow at most five new frontier attempts without a cost/freshness theorem,
    an unconditional NSE statement, or a decisive no-go; then consolidate.
 4. Prepare fresh-context external review packets for the adjoint-cost theorem,
