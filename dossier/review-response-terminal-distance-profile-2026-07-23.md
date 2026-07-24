@@ -1,7 +1,7 @@
 # Response to independent review: terminal distance profile
 
 - **Reviewed target:** terminal-distance-profile worktree after `70e0e6a`
-- **Review packet:** [external cover letter](review-letter-terminal-distance-profile-2026-07-23.md)
+- **Review packet:** `review-letter-terminal-distance-profile-2026-07-23.md` (archived in Git at `c277792`)
 - **Reviewed theorem:** [terminal distance profile](experiments/terminal-distance-profile.md)
 - **Reviewer:** independent adversarial mathematical AI
 - **Date:** 2026-07-23

@@ -3,7 +3,7 @@
 **Date:** 2026-07-23
 
 **Reviewed packet:**
-[`review-letter-scale-hull-balance-2026-07-23.md`](review-letter-scale-hull-balance-2026-07-23.md)
+`review-letter-scale-hull-balance-2026-07-23.md` (archived in Git at `c277792`)
 
 **Primary reduction:**
 [`experiments/scale-hull-balance.md`](experiments/scale-hull-balance.md)

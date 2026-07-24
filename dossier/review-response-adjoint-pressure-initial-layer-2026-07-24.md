@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[`review-letter-adjoint-pressure-initial-layer-2026-07-23.md`](review-letter-adjoint-pressure-initial-layer-2026-07-23.md)
+`review-letter-adjoint-pressure-initial-layer-2026-07-23.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [`experiments/adjoint-pressure-initial-layer.md`](experiments/adjoint-pressure-initial-layer.md)

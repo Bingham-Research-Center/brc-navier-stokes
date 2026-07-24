@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[review request](review-letter-adjoint-pressure-balanced-polar-2026-07-24.md)
+`review-letter-adjoint-pressure-balanced-polar-2026-07-24.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [balanced first-hitting polar compactness](experiments/adjoint-pressure-balanced-polar.md)

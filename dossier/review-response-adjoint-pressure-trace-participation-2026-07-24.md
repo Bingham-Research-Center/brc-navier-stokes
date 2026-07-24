@@ -8,7 +8,7 @@
 The independent adversarial reviewer audited
 [the repaired theorem](experiments/adjoint-pressure-trace-participation.md)
 against
-[the review request](review-letter-adjoint-pressure-trace-participation-2026-07-24.md).
+`review-letter-adjoint-pressure-trace-participation-2026-07-24.md` (archived in Git at `c277792`).
 No invalid implication remains.
 
 ## Disposition of the first submission

@@ -8,7 +8,7 @@
 The independent adversarial reviewer audited
 [the theorem](experiments/adjoint-pressure-intermediate-localization.md)
 against
-[the review request](review-letter-adjoint-pressure-intermediate-localization-2026-07-24.md).
+`review-letter-adjoint-pressure-intermediate-localization-2026-07-24.md` (archived in Git at `c277792`).
 No invalid implication remains.
 
 ## Accepted theorem

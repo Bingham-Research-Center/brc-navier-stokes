@@ -40,3 +40,11 @@ dependency-free validator is **lab/navier_lab/records.py**.
 - **unsupported:** a counterexample or unrepairable gap defeats the stated step.
 
 No status is upgraded by prose alone. Add evidence and rerun **make check**.
+
+## Review hygiene
+
+Proof notes and these records are canonical.  Completed one-use review
+requests are removed once their corrections are incorporated; their full text
+is recoverable at Git checkpoint `c277792`.  Review responses are retained
+when they record verdicts or repairs.  New external review packets should be
+generated from the current proof rather than a stale request.

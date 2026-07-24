@@ -1,7 +1,7 @@
 # Response to independent review: coherent weak-\(L^3\) Besov ancestry
 
 - **Reviewed target:** `63d131d`
-- **Review packet:** [external review letter](review-letter-terminal-besov-ancestry-2026-07-23.md)
+- **Review packet:** `review-letter-terminal-besov-ancestry-2026-07-23.md` (archived in Git at `c277792`)
 - **Reviewer:** independent adversarial mathematical AI
 - **Date:** 2026-07-23
 - **Clay status:** unsolved

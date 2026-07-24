@@ -7,7 +7,7 @@
 
 The independent adversarial reviewer audited
 [the theorem](experiments/adjoint-pressure-stretched-history.md) against
-[the review request](review-letter-adjoint-pressure-stretched-history-2026-07-24.md).
+`review-letter-adjoint-pressure-stretched-history-2026-07-24.md` (archived in Git at `c277792`).
 No repair to the claimed result is required.
 
 ## Accepted result

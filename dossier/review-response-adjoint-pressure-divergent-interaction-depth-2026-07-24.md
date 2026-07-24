@@ -8,7 +8,7 @@
 The independent adversarial reviewer audited
 [the theorem](experiments/adjoint-pressure-divergent-interaction-depth.md)
 against the
-[review request](review-letter-adjoint-pressure-divergent-interaction-depth-2026-07-24.md)
+`review-letter-adjoint-pressure-divergent-interaction-depth-2026-07-24.md` (archived in Git at `c277792`)
 in three passes.
 
 ## Accepted theorem

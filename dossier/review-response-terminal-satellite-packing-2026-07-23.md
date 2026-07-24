@@ -3,7 +3,7 @@
 - **Date:** 2026-07-23
 - **Reviewed baseline:** `fede170` plus the terminal-satellite-packing
   worktree
-- **Review target:** [cover letter](review-letter-terminal-satellite-packing-2026-07-23.md)
+- **Review target:** `review-letter-terminal-satellite-packing-2026-07-23.md` (archived in Git at `c277792`)
 - **Theorem target:** [satellite-packing reduction](experiments/terminal-satellite-packing.md)
 - **Reviewer:** independent adversarial mathematical AI
 - **Disposition:** **valid in stated conditional scope**

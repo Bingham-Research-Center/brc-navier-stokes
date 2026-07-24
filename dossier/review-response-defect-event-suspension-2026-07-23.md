@@ -3,7 +3,7 @@
 **Date:** 2026-07-23
 
 **Reviewed packet:**
-[`review-letter-defect-event-suspension-2026-07-23.md`](review-letter-defect-event-suspension-2026-07-23.md)
+`review-letter-defect-event-suspension-2026-07-23.md` (archived in Git at `c277792`)
 
 **Primary theorem and reduction:**
 [`experiments/defect-event-suspension.md`](experiments/defect-event-suspension.md)

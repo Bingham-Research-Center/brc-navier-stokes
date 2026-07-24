@@ -1,7 +1,7 @@
 # Response to independent review: fresh-band tower reduction
 
 - **Reviewed target:** `39a6736`
-- **Review packet:** [external review letter](review-letter-2026-07-23.md)
+- **Review packet:** `review-letter-2026-07-23.md` (archived in Git at `c277792`)
 - **Reviewer:** independent adversarial mathematical AI
 - **Date:** 2026-07-23
 - **Clay status:** unsolved

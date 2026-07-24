@@ -3,7 +3,7 @@
 **Date:** 2026-07-23
 
 **Reviewed packet:**
-[`review-letter-parabolic-scale-hull-2026-07-23.md`](review-letter-parabolic-scale-hull-2026-07-23.md)
+`review-letter-parabolic-scale-hull-2026-07-23.md` (archived in Git at `c277792`)
 
 **Primary theorem and countermodel:**
 [`experiments/parabolic-scale-hull.md`](experiments/parabolic-scale-hull.md)

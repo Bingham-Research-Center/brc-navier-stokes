@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[`review-letter-adjoint-pressure-frequency-zeno-2026-07-24.md`](review-letter-adjoint-pressure-frequency-zeno-2026-07-24.md)
+`review-letter-adjoint-pressure-frequency-zeno-2026-07-24.md` (archived in Git at `c277792`)
 
 **Primary countermodel:**
 [`experiments/adjoint-pressure-frequency-zeno.md`](experiments/adjoint-pressure-frequency-zeno.md)

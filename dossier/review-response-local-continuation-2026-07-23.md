@@ -2,7 +2,7 @@
 
 - **Reviewed target:** `25777bd` plus the uncommitted fixed-shell
   spatial-localisation patch
-- **Review packet:** [external review letter](review-letter-local-continuation-2026-07-23.md)
+- **Review packet:** `review-letter-local-continuation-2026-07-23.md` (archived in Git at `c277792`)
 - **Reviewer:** independent adversarial mathematical AI
 - **Date:** 2026-07-23
 - **Clay status:** unsolved

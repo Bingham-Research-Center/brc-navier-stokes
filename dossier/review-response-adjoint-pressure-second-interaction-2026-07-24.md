@@ -7,7 +7,7 @@
 
 The independent adversarial reviewer audited
 [the theorem](experiments/adjoint-pressure-second-interaction.md) against
-[the review request](review-letter-adjoint-pressure-second-interaction-2026-07-24.md).
+`review-letter-adjoint-pressure-second-interaction-2026-07-24.md` (archived in Git at `c277792`).
 No repair to the claimed reduction is required.
 
 ## Accepted theorem

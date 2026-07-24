@@ -8,7 +8,7 @@
 The independent adversarial reviewer audited
 [the reduction](experiments/adjoint-pressure-critical-volterra.md)
 against the
-[review request](review-letter-adjoint-pressure-critical-volterra-2026-07-24.md),
+`review-letter-adjoint-pressure-critical-volterra-2026-07-24.md` (archived in Git at `c277792`),
 the exact cached Barker source, and the executable ledger.
 
 No fatal analytic flaw was found.

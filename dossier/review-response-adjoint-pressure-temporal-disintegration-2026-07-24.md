@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[review request](review-letter-adjoint-pressure-temporal-disintegration-2026-07-24.md)
+`review-letter-adjoint-pressure-temporal-disintegration-2026-07-24.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [temporal-disintegration reduction](experiments/adjoint-pressure-temporal-disintegration.md)

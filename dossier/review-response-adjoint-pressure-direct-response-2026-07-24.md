@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[`review-letter-adjoint-pressure-direct-response-2026-07-24.md`](review-letter-adjoint-pressure-direct-response-2026-07-24.md)
+`review-letter-adjoint-pressure-direct-response-2026-07-24.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [`experiments/adjoint-pressure-direct-response.md`](experiments/adjoint-pressure-direct-response.md)

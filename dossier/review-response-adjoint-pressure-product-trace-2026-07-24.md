@@ -9,7 +9,7 @@ vector-variation repairs
 The independent adversarial reviewer audited
 [the repaired theorem](experiments/adjoint-pressure-product-trace.md)
 against
-[the review request](review-letter-adjoint-pressure-product-trace-2026-07-24.md).
+`review-letter-adjoint-pressure-product-trace-2026-07-24.md` (archived in Git at `c277792`).
 No invalid implication remains.
 
 ## Accepted theorem

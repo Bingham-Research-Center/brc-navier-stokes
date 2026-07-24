@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[`review-letter-adjoint-pressure-frequency-colligation-2026-07-24.md`](review-letter-adjoint-pressure-frequency-colligation-2026-07-24.md)
+`review-letter-adjoint-pressure-frequency-colligation-2026-07-24.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [`experiments/adjoint-pressure-frequency-colligation.md`](experiments/adjoint-pressure-frequency-colligation.md)

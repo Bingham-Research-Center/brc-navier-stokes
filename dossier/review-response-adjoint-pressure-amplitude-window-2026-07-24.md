@@ -6,7 +6,7 @@
 **Clay status:** unsolved
 
 The independent adversarial reviewer audited the thirteen links in
-[the request](review-letter-adjoint-pressure-amplitude-window-2026-07-24.md)
+`review-letter-adjoint-pressure-amplitude-window-2026-07-24.md` (archived in Git at `c277792`)
 against
 [the theorem](experiments/adjoint-pressure-amplitude-window.md), its
 reviewed predecessors, and the executable ledger.

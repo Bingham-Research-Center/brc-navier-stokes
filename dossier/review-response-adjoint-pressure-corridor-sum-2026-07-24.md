@@ -7,7 +7,7 @@
 **Clay status:** unsolved
 
 **Reviewed request:**
-[`review-letter-adjoint-pressure-corridor-sum-2026-07-24.md`](review-letter-adjoint-pressure-corridor-sum-2026-07-24.md)
+`review-letter-adjoint-pressure-corridor-sum-2026-07-24.md` (archived in Git at `c277792`)
 
 **Reviewed note:**
 [`experiments/adjoint-pressure-corridor-sum.md`](experiments/adjoint-pressure-corridor-sum.md)

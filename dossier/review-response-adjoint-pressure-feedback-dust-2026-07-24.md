@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[`review-letter-adjoint-pressure-feedback-dust-2026-07-24.md`](review-letter-adjoint-pressure-feedback-dust-2026-07-24.md)
+`review-letter-adjoint-pressure-feedback-dust-2026-07-24.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [`experiments/adjoint-pressure-feedback-dust.md`](experiments/adjoint-pressure-feedback-dust.md)

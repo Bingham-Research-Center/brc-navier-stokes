@@ -3,7 +3,7 @@
 **Date:** 2026-07-24
 
 **Reviewed packet:**
-[review request](review-letter-adjoint-pressure-polar-vacuum-2026-07-24.md)
+`review-letter-adjoint-pressure-polar-vacuum-2026-07-24.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [first-hitting polar-vacuum reduction](experiments/adjoint-pressure-polar-vacuum.md)

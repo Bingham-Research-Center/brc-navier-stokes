@@ -6,8 +6,9 @@
 - **Clay status:** unsolved
 - **Inputs:** [frequency-energy audit](frequency-energy-flux.md),
   [fresh-detector transfer](fresh-detector-transfer.md),
-  [microbubble decoration](microbubble-decoration-rigidity.md), and
-  [external review letter](../review-letter-2026-07-23.md)
+  [microbubble decoration](microbubble-decoration-rigidity.md), and the
+  [accepted review response](../review-response-2026-07-23.md);
+  the request is archived in Git at `c277792`
 
 The first formulation of this experiment collapsed two different scales.
 That collapse invalidated its claim that the preceding levelwise limits

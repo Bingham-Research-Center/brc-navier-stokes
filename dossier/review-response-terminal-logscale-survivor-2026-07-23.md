@@ -3,7 +3,7 @@
 **Date:** 2026-07-23
 
 **Reviewed packet:**
-[`review-letter-terminal-logscale-survivor-2026-07-23.md`](review-letter-terminal-logscale-survivor-2026-07-23.md)
+`review-letter-terminal-logscale-survivor-2026-07-23.md` (archived in Git at `c277792`)
 
 **Primary theorem:**
 [`experiments/terminal-logscale-survivor.md`](experiments/terminal-logscale-survivor.md)
