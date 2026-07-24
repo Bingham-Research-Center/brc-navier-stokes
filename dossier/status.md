@@ -178,8 +178,7 @@ fresh. The
 upgrades this to actual old-band correlation or fixed nonlinear/viscous
 replacement work. The
 [critical band-budget theorem](experiments/type-ii-band-dissipation-budget.md)
-now sums the changing nonlinear works with \(\sqrt{r_j}\) weights and the
-viscous works with \(r_j^2/\Delta t_j\) weights against one physical
+sums changing nonlinear works with \(\sqrt{r_j}\) weights and viscous works with \(r_j^2/\Delta t_j\) weights against one physical
 dissipation budget. Scale-disjoint bands have bounded-overlap lifetimes, but
 fixed widths force geometric radii and summable nonlinear charges. The
 [triad-packet theorem](experiments/type-ii-triad-packet-sharpness.md)
@@ -193,13 +192,14 @@ radius-\(R_j\) carrier therefore needs \(cR_j^{5/2}\) to shrink through a
 fixed scale block. The exact \(q_j=4\) gaps are \(o(R_j^{5/2})\), so that
 representative has no infinite nonzero \(L^2\)-precompact carrier subsequence.
 The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
-makes the selected layer either diffuse or fixed-energy ultraviolet above
-\(K_j/R_j\), \(K_j\to\infty\). The latter forces \(K_j^2/R_j^2\) enstrophy,
-zero terminal carrier trace, and positive trace defect. Its future-scale
-depth is unbounded but not causal ancestry. Separate self-similar results
-restrict \(2/5\le\gamma<1/2\) under their stated hypotheses.
-R3C now asks whether the detector transports into a later first record or
-forces fixed spatial import; diffuse and divergent-energy cells remain open.
+makes the layer diffuse or fixed-energy ultraviolet above \(K_j/R_j\), \(K_j\to\infty\); the latter forces \(K_j^2/R_j^2\) enstrophy,
+zero terminal trace, and positive trace defect. The [multirecord import
+theorem](experiments/type-ii-multirecord-spatial-import.md) makes each future
+carrier ball empty a linear number of original-grid records earlier, forcing
+fixed signed import. Disjoint windows give divergent event totals, but finite \(L^1\) flux action controls only \(R_j|\mathsf X_j|\).
+Separate self-similar results retain \(2/5\le\gamma<1/2\) under their hypotheses.
+R3C now needs a scale-free import budget or finite crossing multiplicity;
+diffuse and divergent-energy cells remain open.
 
 ### Frozen R3B boundary
 

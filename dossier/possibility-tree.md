@@ -114,17 +114,17 @@ regularity proof must cover R3C or prove that all first singularities enter
 the R3B class.
 
 The [entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md) maps
-\(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) to ancient vanishing-viscosity
-carriers and records energy, geometry, and turnover alternatives. The
+\(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) to ancient vanishing-viscosity carriers and records energy, geometry, and turnover alternatives. The
 [defect theorem](experiments/type-ii-carrier-defect-compactness.md) removes
 fixed-interval normalised viscous dissipation; the
-[carrier clock](experiments/type-ii-compact-carrier-clock.md) excludes an
-infinite nonzero \(L^2\)-precompact subsequence of the exact fast \(q=4\)
-survivor. The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
+[carrier clock](experiments/type-ii-compact-carrier-clock.md) excludes an infinite
+nonzero \(L^2\)-precompact subsequence of the exact fast \(q=4\) survivor. The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
 makes its selected layer diffuse or fixed-energy ultraviolet above
-\(K_j/R_j\), \(K_j\to\infty\). The retained case has zero terminal trace and
-positive trace defect, but no causal link to a later record. The live fork is
-later-carrier transport versus import; diffuse and divergent-energy remain.
+\(K_j/R_j\), \(K_j\to\infty\). The [multirecord import theorem](experiments/type-ii-multirecord-spatial-import.md) forces fixed
+signed energy import into every retained future carrier ball from a linear
+number of original-grid records earlier. Disjoint event totals diverge, but
+the direct finite flux action carries a summable \(R_j\) weight. The live
+gate is scale-free import non-reuse; diffuse and divergent-energy remain.
 
 ### Breakdown side
 

@@ -1,42 +1,47 @@
-# Handoff: R3C ultraviolet-core transport
+# Handoff: R3C spatial-import non-reuse
 
 **Updated:** 2026-07-24 · **Clay status:** unsolved
 
 **Live route:** `ROUTE-R3C` · **Checkpoint:**
-`EXP-TYPE-II-TERMINAL-INFRARED-EVACUATION-001`
+`EXP-TYPE-II-MULTIRECORD-SPATIAL-IMPORT-001`
 
 ## Load only
 
-- [Terminal infrared theorem](dossier/experiments/type-ii-terminal-infrared-evacuation.md)
+- [Multirecord import theorem](dossier/experiments/type-ii-multirecord-spatial-import.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
 ## Exact live question
 
-Does the retained ultraviolet detector at \(t_j\) transport into a later
-first-record carrier, or must fixed energy enter across the radius-\(R_j\)
-boundary?
+Can carrier genealogy remove the summable \(R_j\) weight from the finite
+pressure-plus-kinetic flux action, or give repeated imports finite crossing
+multiplicity along energy-transport paths?
 
 ## Live theorem
 
-For every smooth finite-energy super-turnover sequence,
+On the original exact \(q=4\) grid, set
 \[
-\|\mathbf1_{B_A}P_{\le K}F_j\|_2\to0
-\quad(0<A,K<\infty).
+i_j=j-\lfloor j/4\rfloor.
 \]
-For the energy-efficient exact \(q=4\) survivor, the selected layer is
-either diffuse or, in each partial/tight cell, admits \(K_j\to\infty\) with
+Every retained partial/tight energy-efficient endpoint forces
 \[
-\int_{B_A}|P_{>K_j}F_j|^2\ge\gamma/4.
+\mathsf X_j:=
+\int_{t_{i_j}}^{t_j}\!\!\int
+\left(\frac12|u|^2+p\right)u\cdot\nabla\chi_j\,dx\,dt
+\ge\gamma/4.
 \]
-The retained case has \(V(0)=0\), positive terminal trace defect, and
-\(\|\nabla u(t_j)\|_2^2\gtrsim K_j^2/R_j^2\). Its future-scale frequency
-depth is unbounded; no later carrier, residence time, or causal ancestry is
-proved.
+An infinite subsequence has disjoint time windows, hence
+\(\sum\mathsf X_j=\infty\). The direct common budget is only
+\[
+\sum R_j|\mathsf X_j|\lesssim
+\int_0^{T^*}\!\!\int(|u|^3+|p||u|)<\infty,
+\]
+which is compatible with geometric \(R_j\). No packet freshness or Clay
+alternative is proved.
 
 ## Next bounded cycle
 
-Compare the detected high-pass core at \(t_j\) with the first-record layer at
-\(t_{j+1}\) through the localised energy/transport identity. Prove packet
-retention or a fixed signed spatial-import event. Do not revisit carrier
-compactness or local half-radius sharpness; keep diffuse and
+Decompose the signed energy flux into transport paths/tubes and test whether
+one packet can cross infinitely many shrinking moving cutoffs without a
+scale-free pressure, deformation, or residence cost. Do not rederive
+terminal infrared evacuation or local import; keep diffuse and
 divergent-normalised-energy branches separate.

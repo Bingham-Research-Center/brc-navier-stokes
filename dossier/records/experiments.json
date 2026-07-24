@@ -4108,6 +4108,41 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-MULTIRECORD-SPATIAL-IMPORT-001",
+      "title": "Fast retained Type-II cores force multirecord spatial import",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001"
+      ],
+      "hypothesis": "A smooth trajectory realizing the retained energy-efficient exact q=4 ledger may keep each future carrier core locally prestored across an unbounded number of earlier first records without paying fixed spatial energy import.",
+      "invariants": [
+        "On a finite-volume set, local L2 energy is bounded by a universal constant times the one-third power of the volume times the squared weak-L3 norm",
+        "The retained selected layer supplies a fixed physical energy floor inside a radius-R_j ball at its endpoint record",
+        "If m_i divided by m_j tends to zero, the same future radius-R_j ball has vanishing complete kinetic energy at the earlier first record t_i, uniformly in moving future centres",
+        "The exact local kinetic-energy equality retains the sign of the net pressure-plus-kinetic boundary flux, with positive sign denoting import for a radial nonincreasing cutoff",
+        "The only unsigned cutoff correction is bounded by a constant times viscosity times t_j minus t_i divided by R_j squared, while local viscous dissipation strengthens the required import",
+        "On the original exact q=4 record grid, i_j equal to j minus floor j over four crosses an unbounded linear number of records, has m_i divided by m_j tending to zero, and makes the viscous cutoff correction vanish",
+        "Every sufficiently late retained original-grid index therefore has a fixed positive signed spatial-import floor through its future carrier annulus",
+        "The imported total-energy amount is not identified with the separately proved local ultraviolet detector and no causal packet freshness is asserted",
+        "An infinite subsequence of the multirecord windows is pairwise disjoint and its positive signed event totals have divergent numerical sum",
+        "The global energy class makes the pressure-plus-kinetic flux density integrable in space-time and bounds only the radius-weighted sum of event magnitudes",
+        "Because the exact carrier radii are summable, the radius-weighted common budget does not contradict the fixed unweighted event floors",
+        "No scale-free non-reuse law, centre or nesting control, diffuse-branch exclusion, divergent-energy control, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Compare a retained future carrier ball at t_j with the same ball at an earlier original-grid first record, use finite-volume weak-L3 capacity to empty the earlier ball, integrate the signed local kinetic-energy equality, verify the exact q=4 amplitude and cutoff-diffusion exponents, extract disjoint multirecord windows, and audit the direct global L1 flux budget.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report cover Lorentz capacity, local-energy signs, pressure gauge invariance, cutoff diffusion, the original-grid q=4 exponent ledger, fixed import, disjoint extraction, and the radius-weighted L1 flux budget. Two same-system adversarial recomputations found no fatal or major defect after cutoff geometry, packet-identification, indexing, endpoint-exponent, and budget-wording repairs; this is not external mathematical confirmation. No executable artefact is claimed.",
+      "success_criterion": "Determine whether repeated imports have finite crossing multiplicity along energy-transport paths or whether carrier genealogy removes the summable radius weight from the finite pressure-plus-kinetic flux action.",
+      "failure_interpretation": "The finite-volume Lorentz capacity, retained local floor, local-energy sign, pressure gauge, cutoff correction, q=4 index arithmetic, disjoint extraction, or radius-weighted common budget is incorrect, or the result is overstated as packet identification, freshness, or a finite-budget contradiction.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-multirecord-spatial-import.md",
+        "dossier/rounds/2026-07-24-type-ii-multirecord-spatial-import.tex"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

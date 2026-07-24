@@ -1,0 +1,495 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+
+\title{Multirecord Spatial Import into Fast Type-II Carriers}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 24 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round proves a signed spatial-transport theorem for the retained
+energy-efficient branch of the exact \(q=4\) Type-II ledger.  A future
+radius-\(R_j\) carrier ball contains fixed energy at its record time
+\(t_j\), but the first-record weak-\(L^3\) ceiling makes the energy in the
+same ball vanish at
+\(t_{j-\lfloor j/4\rfloor}\).  The viscous cutoff correction across this
+multirecord window is \(o(1)\).  The exact local kinetic-energy equality
+therefore forces a fixed net weighted pressure-plus-kinetic energy import
+through the future carrier annulus.  These events occur on a pairwise
+disjoint subsequence of time intervals.  Their numerical sum diverges.  The
+finite common \(L^1\) flux budget controls only the summably weighted totals
+\(R_j|\mathsf X_j|\), so no contradiction or freshness statement is proved.
+The Clay problem remains unsolved.
+\end{abstract}
+
+\section{Epistemic scope}
+
+The statements below are analytic theorems under the displayed
+smoothness, finite-energy, first-record, energy-efficient, retained-geometry,
+and exact \(q=4\) hypotheses.  The preceding terminal-infrared theorem says
+that the retained endpoint core is ultraviolet; only its local total-energy
+floor is needed in the present proof.  The imported total-energy amount is
+not identified with that Fourier detector.  The result is new within this
+repository and awaits external mathematical review.  No claim of literature
+novelty is made.
+
+\section{First-record carrier data}
+
+Let \(u\) solve
+\[
+ \partial_tu+u\cdot\nabla u=-\nabla p+\nu\Delta u,
+ \qquad
+ \nabla\cdot u=0
+\]
+smoothly on \(\R^3\times[0,T^*)\), with
+\[
+ \sup_{t<T^*}\frac12\|u(t)\|_2^2\le E_0.
+\]
+Let \(t_j\uparrow T^*\) be first record times for
+\[
+ m_j:=\|u(t_j)\|_{L^{3,\infty}},
+\]
+so that
+\[
+ \|u(t)\|_{L^{3,\infty}}\le m_j
+ \qquad(0\le t\le t_j).
+\]
+
+At \(t_j\), choose a near-extremising amplitude layer
+\[
+ A_j:=\{a_j<|u(t_j)|\le2a_j\},
+\]
+and define
+\[
+ e_j:=\int_{A_j}|u(t_j)|^2\,dx,
+ \qquad
+ R_j:=|A_j|^{1/3}.
+\]
+In the energy-efficient branch,
+\[
+ 0<c_0\le e_j\le2E_0,
+ \qquad
+ R_j\asymp\frac{e_j}{m_j^2}.
+\]
+In a partial or tight geometry cell, choose \(0<\eta<\theta\).
+There are fixed \(A<\infty\), centres \(x_j\), and
+\[
+ \gamma:=\eta c_0>0
+\]
+such that
+\begin{equation}
+ \label{eq:final-floor}
+ \boxed{
+ \int_{B_{AR_j}(x_j)}|u(x,t_j)|^2\,dx\ge\gamma
+ }
+\end{equation}
+eventually.
+
+\section{Capacity of the future ball}
+
+\begin{lemma}[Finite-volume weak-\(L^3\) capacity]
+\label{lem:capacity}
+For every finite-measure \(\Omega\subset\R^3\) and
+\(f\in L^{3,\infty}(\R^3)\),
+\[
+ \boxed{
+ \int_\Omega|f|^2\,dx
+ \le
+ C|\Omega|^{1/3}\|f\|_{L^{3,\infty}}^2.
+ }
+\]
+\end{lemma}
+
+\begin{proof}
+Put \(K=\|f\|_{L^{3,\infty}}\).  The distribution function on \(\Omega\)
+satisfies
+\[
+ |\Omega\cap\{|f|>\lambda\}|
+ \le
+ \min\{|\Omega|,K^3\lambda^{-3}\}.
+\]
+Split the layer-cake identity for \(\int_\Omega|f|^2\) at
+\[
+ \lambda_0:=K|\Omega|^{-1/3}.
+\]
+Then
+\[
+\begin{aligned}
+ \int_\Omega|f|^2\,dx
+ &=
+ 2\int_0^\infty
+ \lambda|\Omega\cap\{|f|>\lambda\}|\,d\lambda\\
+ &\le
+ 2|\Omega|\int_0^{\lambda_0}\lambda\,d\lambda
+ +
+ 2K^3\int_{\lambda_0}^\infty\lambda^{-2}\,d\lambda\\
+ &\le
+ C K^2|\Omega|^{1/3}.
+\end{aligned}
+\]
+\end{proof}
+
+Choose earlier indices \(i_j<j\) such that
+\begin{equation}
+ \label{eq:amplitude-separation}
+ \frac{m_{i_j}}{m_j}\longrightarrow0.
+\end{equation}
+At the earlier record, Lemma~\ref{lem:capacity}, the first-record property,
+and \(R_j\lesssim E_0m_j^{-2}\) give
+\begin{equation}
+ \label{eq:initial-empty}
+\begin{aligned}
+ &\int_{B_{(A+1)R_j}(x_j)}
+ |u(x,t_{i_j})|^2\,dx\\
+ &\qquad\le
+ C_AR_jm_{i_j}^2\\
+ &\qquad\le
+ C_AE_0\left(\frac{m_{i_j}}{m_j}\right)^2
+ \longrightarrow0.
+\end{aligned}
+\end{equation}
+This estimate is uniform in the future centres \(x_j\).
+
+\section{The signed local energy identity}
+
+Choose
+\[
+ 0\le\chi\in C_c^\infty(\R^3),
+ \qquad
+ \chi=1\ \hbox{on }B_A,
+ \qquad
+ \operatorname{supp}\chi\subset B_{A+1},
+\]
+with \(\chi\) radial and nonincreasing in radius, and put
+\[
+ \chi_j(x):=
+ \chi\left(\frac{x-x_j}{R_j}\right).
+\]
+Define
+\[
+ \mathcal E_j(t)
+ :=
+ \frac12\int_{\R^3}\chi_j|u(t)|^2\,dx.
+\]
+
+The smooth local energy equality is
+\[
+ \partial_t\frac{|u|^2}{2}
+ +
+ \nabla\cdot
+ \left[
+ \left(\frac{|u|^2}{2}+p\right)u
+ \right]
+ =
+ \nu\Delta\frac{|u|^2}{2}
+ -
+ \nu|\nabla u|^2.
+\]
+Integrating it against \(\chi_j\) on \([t_{i_j},t_j]\) gives
+\begin{equation}
+ \label{eq:local-balance}
+ \boxed{
+ \mathcal E_j(t_j)-\mathcal E_j(t_{i_j})
+ =
+ \mathsf X_j-\mathsf D_j+\mathsf C_j,
+ }
+\end{equation}
+where
+\[
+ \mathsf X_j
+ :=
+ \int_{t_{i_j}}^{t_j}\!\!\int_{\R^3}
+ \left(\frac12|u|^2+p\right)
+ u\cdot\nabla\chi_j\,dx\,dt,
+\]
+\[
+ \mathsf D_j
+ :=
+ \nu\int_{t_{i_j}}^{t_j}\!\!\int_{\R^3}
+ \chi_j|\nabla u|^2\,dx\,dt
+ \ge0,
+\]
+and
+\[
+ \mathsf C_j
+ :=
+ \frac{\nu}{2}
+ \int_{t_{i_j}}^{t_j}\!\!\int_{\R^3}
+ |u|^2\Delta\chi_j\,dx\,dt.
+\]
+The pressure gauge is immaterial because
+\(\int u\cdot\nabla\chi_j\,dx=0\).  With the sign in
+\eqref{eq:local-balance}, positive \(\mathsf X_j\) is net energy import
+through the annulus supporting \(\nabla\chi_j\).
+
+Since
+\[
+ \|\Delta\chi_j\|_\infty
+ =
+ R_j^{-2}\|\Delta\chi\|_\infty,
+\]
+the global energy ceiling gives
+\begin{equation}
+ \label{eq:cutoff-error}
+ \boxed{
+ |\mathsf C_j|
+ \le
+ C_{\chi,E_0}\nu\frac{t_j-t_{i_j}}{R_j^2}.
+ }
+\end{equation}
+
+\begin{theorem}[Multirecord retained-core import]
+\label{thm:import}
+Assume \eqref{eq:final-floor}, \eqref{eq:amplitude-separation}, and
+\[
+ \nu\frac{t_j-t_{i_j}}{R_j^2}\longrightarrow0.
+\]
+Then
+\[
+ \boxed{
+ \liminf_{j\to\infty}\mathsf X_j
+ \ge\frac{\gamma}{2}>0.
+ }
+\]
+\end{theorem}
+
+\begin{proof}
+The final floor and the choice of cutoff give
+\[
+ \mathcal E_j(t_j)\ge\frac{\gamma}{2}.
+\]
+Equation~\eqref{eq:initial-empty} gives
+\[
+ \mathcal E_j(t_{i_j})\longrightarrow0,
+\]
+and \eqref{eq:cutoff-error} gives \(\mathsf C_j\to0\).
+Rearranging \eqref{eq:local-balance},
+\[
+ \mathsf X_j
+ =
+ \mathcal E_j(t_j)-\mathcal E_j(t_{i_j})
+ +
+ \mathsf D_j-\mathsf C_j.
+\]
+The nonnegative dissipation \(\mathsf D_j\) can only increase the required
+import.  Taking the lower limit proves the theorem.
+\end{proof}
+
+\begin{remark}
+No absolute estimate on the pressure flux is used.  This is a lower bound
+for its signed sum with kinetic transport.  The theorem does not assign
+separate signs to the pressure and kinetic pieces.
+\end{remark}
+
+\section{The exact q-four schedule}
+
+The representative ledger has, up to fixed comparison constants,
+\[
+ m_j\asymp2^{2j},
+ \qquad
+ R_j\asymp2^{-4j},
+ \qquad
+ t_{j+1}-t_j\asymp\frac{2^{-11j}}j.
+\]
+Set
+\[
+ N_j:=\left\lfloor\frac j4\right\rfloor,
+ \qquad
+ i_j:=j-N_j.
+\]
+Then
+\[
+ j-i_j=N_j\longrightarrow\infty
+\]
+and
+\[
+ \frac{m_{i_j}}{m_j}
+ \asymp
+ 2^{-2N_j}
+ \longrightarrow0.
+\]
+The geometric gap sum gives
+\[
+ t_j-t_{i_j}
+ \le
+ C\frac{2^{-11i_j}}{i_j}.
+\]
+Since \(R_j^2\asymp2^{-8j}\),
+\[
+\begin{aligned}
+ \nu\frac{t_j-t_{i_j}}{R_j^2}
+ &\le
+ \frac{C\nu}{i_j}
+ 2^{-11(j-N_j)+8j}\\
+ &=
+ \frac{C\nu}{i_j}
+ 2^{-3j+11N_j}\\
+ &\le
+ \frac{C\nu}{j}
+ 2^{-j/4}
+ \longrightarrow0.
+\end{aligned}
+\]
+Here \(j\) remains the original q-four record-grid index.  A partial or
+tight geometry subsequence is retained as an infinite subset of that grid
+and is not renumbered.  Theorem~\ref{thm:import} therefore applies at every
+sufficiently late retained index of any smooth trajectory realising the
+exact survivor.
+
+\begin{corollary}[Linear record depth]
+\label{cor:depth}
+For any fixed \(0<\alpha\le3/11\), the same conclusion holds with
+\[
+ i_j=j-\lfloor\alpha j\rfloor.
+\]
+Thus the future carrier ball is empty at an earlier record whose index
+distance from \(j\) grows linearly.
+\end{corollary}
+
+\begin{proof}
+The amplitude ratio is comparable to
+\[
+ 2^{-2\lfloor\alpha j\rfloor}\longrightarrow0.
+\]
+The cutoff error is bounded by a fixed multiple of
+\[
+ j^{-1}2^{(-3+11\alpha)j},
+\]
+which tends to zero when \(\alpha<3/11\).  At \(\alpha=3/11\), the
+exponential factor is bounded and the remaining \(1/i_j\) factor tends to
+zero.
+\end{proof}
+
+\section{Disjoint event extraction}
+
+For \(i_j=j-\lfloor j/4\rfloor\), choose \(j_n\) recursively so that
+\[
+ i_{j_{n+1}}>j_n.
+\]
+Then the intervals
+\[
+ [t_{i_{j_n}},t_{j_n}]
+\]
+are pairwise disjoint.  Theorem~\ref{thm:import} gives, eventually,
+\[
+ \boxed{
+ \mathsf X_{j_n}\ge\frac{\gamma}{4}.
+ }
+\]
+Hence
+\[
+ \sum_n\mathsf X_{j_n}=+\infty.
+\]
+
+\begin{remark}[What nonsummability means here]
+This is a nonsummable ledger of signed event totals on one trajectory, not
+a contradiction with a known finite Navier--Stokes action.  Each event uses
+a different moving, shrinking cutoff.  A single packet can therefore be
+counted each time it enters the next nested carrier ball.
+\end{remark}
+
+\section{The scale-weighted common flux budget}
+
+Choose the whole-space pressure representative
+\[
+ p=\mathcal R_a\mathcal R_b(u_au_b).
+\]
+Sobolev interpolation gives
+\[
+ \|u(t)\|_3^3
+ \le
+ C\|u(t)\|_2^{3/2}\|\nabla u(t)\|_2^{3/2}.
+\]
+The energy equality and H{\"o}lder in time imply
+\[
+ \int_0^{T^*}\|u(t)\|_3^3\,dt<\infty.
+\]
+Moreover,
+\[
+ \|p(t)\|_{3/2}\le C\|u(t)\|_3^2.
+\]
+Hence
+\[
+ \boxed{
+ \mathcal F_*:=
+ \int_0^{T^*}\!\!\int_{\R^3}
+ \left(|u|^3+|p||u|\right)\,dx\,dt
+ <\infty.
+ }
+\]
+
+Since
+\[
+ \|\nabla\chi_j\|_\infty\le\frac{C_\chi}{R_j},
+\]
+the pairwise disjoint event intervals give
+\[
+ \boxed{
+ \sum_nR_{j_n}|\mathsf X_{j_n}|
+ \le
+ C_\chi\mathcal F_*.
+ }
+\]
+This is compatible with fixed \(\mathsf X_{j_n}\), because the exact carrier
+radii have a finite geometric sum.  The direct energy-class transport
+estimate therefore introduces one carrier-radius weight.
+
+\section{Robust findings and open obligations}
+
+\subsection*{Findings, subject to review}
+
+\begin{enumerate}
+\item A future carrier ball has vanishing energy at a record a linear number
+of \(q=4\) generations earlier.
+\item The retained endpoint has a fixed physical energy floor.
+\item Viscous diffusion through the cutoff is negligible across the
+multirecord window.
+\item The exact local energy equality forces fixed positive signed
+pressure-plus-kinetic import into the future carrier ball.
+\item The preceding terminal-infrared theorem locates the endpoint floor in
+an ultraviolet core.
+\item Infinitely many fixed import events occur on pairwise disjoint time
+intervals of one trajectory.
+\item The finite common \(L^1\) flux budget controls only
+\(R_j|\mathsf X_j|\), whose forced lower weights are summable.
+\end{enumerate}
+
+\subsection*{Things still to prove}
+
+\begin{enumerate}
+\item Assign finite crossing multiplicity to energy-transport paths, or
+control the centre and nesting geometry of the moving cutoffs.
+\item Remove the summable carrier-radius weight from the finite global
+pressure-plus-kinetic transport action.
+\item Prevent one energy packet from paying every nested import event.
+\item Prove post-entry residence or another non-reuse cost.
+\item Exclude the diffuse and divergent-normalised-energy branches.
+\end{enumerate}
+
+\begin{conjecture}[Finite-multiplicity import]
+Along every retained first-record Type-II sequence, either its positive
+imports admit an assignment to energy-transport paths with uniformly finite
+crossing multiplicity, or repeated nesting forces a nonsummable viscous,
+pressure, or Lagrangian deformation action.
+\end{conjecture}
+
+No part of the conjecture is proved here.  This round proves neither
+regularity nor breakdown and establishes no Clay alternative A--D.
+
+\end{document}
