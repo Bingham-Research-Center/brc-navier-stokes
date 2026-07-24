@@ -1,4 +1,4 @@
-# Handoff: R3C one-trajectory defect transport
+# Handoff: R3C flux residence and freshness
 
 **Updated:** 2026-07-24
 
@@ -6,11 +6,11 @@
 
 **Live route:** `ROUTE-R3C`
 
-**Checkpoint:** `EXP-TYPE-II-CARRIER-DEFECT-001`
+**Checkpoint:** `EXP-TYPE-II-SUBGRID-TRANSPORT-001`
 
 ## Load only
 
-- [Current defect theorem](dossier/experiments/type-ii-carrier-defect-compactness.md).
+- [Current subgrid theorem](dossier/experiments/type-ii-subgrid-transport.md).
 - [Canonical R3C record](dossier/records/routes.json).
 
 Everything else is durable in [status](dossier/status.md) or
@@ -19,45 +19,44 @@ input or external review.
 
 ## Exact live question
 
-Can the common physical ancestry of Type-II carriers turn terminal
-Reynolds/trace microstructure into a positive non-reusable high-frequency
-flux, persistence charge, or return to a controlled critical class?
+Can actual NSE flux geometry prevent one energy packet from traversing
+infinitely many increasing carrier subscales with finite viscous action?
 
 ## Progress marker
 
-Entrance remains the \(2\times3\times3\) energy--geometry--clock ledger. In
-all nine energy-efficient cells, the new theorem proves:
+Entrance remains the \(2\times3\times3\) ledger. In all nine
+energy-efficient cells, normalised viscous dissipation vanishes on every
+fixed interval and the whole remaining forward horizon.
 
-1. \(v_j\) is compact in every local negative Sobolev space;
-2. its quadratic limit is a positive-semidefinite Euler--Reynolds defect,
-   with a separate positive-semidefinite terminal tensor defect, while
-   retained cells force positive combined trace-plus-defect mass; and
-3. normalised viscous dissipation vanishes on every fixed carrier interval
-   by physical terminal absolute continuity.
+For the terminal-microstructure branch, positive convolution subgrid energy
+recovers exactly half the trace-defect measure. Its smooth local-energy
+balance gives, one fixed carrier time backwards:
 
-Exact smooth small-viscosity NSE families built from packed compact steady
-Euler flows realise every geometry cell with no nonzero strong limit and
-mimic every clock on truncated observation windows. Their endpoints are
-extendible and their trajectories vary, so they close only finite-window
-equation-level compactness, not the first-singular-time route.
+1. inherited nonnegative subgrid energy;
+2. positive signed nonlinear transfer; or
+3. positive signed spatial import through the cutoff.
+
+Every integrated term pulls back by \(b_j\asymp e_j\ge c>0\), so either
+transfer branch has a fixed physical energy floor on a shrinking interval.
 
 ## Known unknown
 
-The efficient branch now splits into a coherent nonzero weak trace awaiting
-propagation and Euler rigidity, inviscid Reynolds/trace microstructure,
-fragmentation, or energy escape. A fixed normalised space-time defect costs
-only \(e_j\tau_j\to0\) physically, while terminal defect energy is a reusable
-stock. The divergent-normalised-energy branch still lacks global compactness
-and may retain normalised viscous dissipation.
+An exact adjacent-shell Zeno ledger moves the same positive surviving energy
+through infinitely many increasing boundaries on disjoint intervals while
+paying finite total dissipation and a vanishing terminal dissipation tail.
+Thus signed fixed flux is not fresh merely because times and scales differ.
+
+The coherent weak trace still needs propagation and Euler rigidity. The
+divergent-normalised-energy branch still lacks global compactness.
 
 ## Next bounded cycle
 
-1. Derive an exact localised high-pass energy identity transporting terminal
-   trace defect backwards by a fixed carrier time, using nonextendibility
-   wherever it genuinely adds information.
-2. Split it exhaustively into persistent inherited defect, positive nonlinear
-   flux, and spatial escape; do not replace signed flux by total variation.
-3. Pull each surviving term to the physical trajectory and test event reuse
-   in the zero, finite, and infinite horizon cells.
+1. Derive the sharpest NSE flux-rate/residence bound at filter
+   \(\ell_j\), using the terminal normalisation
+   \(\|v_j(0)\|_{L^{3,\infty}}\asymp1\).
+2. Split \(\ell_j\) against \(\varepsilon_j\) and the next carrier scale:
+   forced viscous residence, fresh onward transfer, or a Zeno survivor.
+3. Turn positive spatial import into a recentered ancestry alternative and
+   test whether moving cutoffs can reuse the same packet.
 
 Before reporting or committing: `make check` and `git diff --check`.

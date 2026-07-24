@@ -297,6 +297,19 @@ For every compact interval \(J\Subset I\), and also for
 }
 \]
 
+More strongly, on the entire remaining forward carrier interval,
+
+\[
+\boxed{
+\varepsilon_j
+\int_0^{H_j}\!\!\int_{\mathbb R^3}
+|\nabla v_j|^2\,dy\,ds
+\longrightarrow0.
+}
+\]
+
+The integral ending at \(H_j\) is understood improperly.
+
 Consequently the global normalised energy drop across \(J\) tends to zero.
 After a subsequence \(b_j\to b>0\), and uniformly for \(s\) in compact
 subintervals of \(I\),
@@ -328,6 +341,20 @@ The physical intervals \(t_j+\tau_jJ\) shrink to \(T^*\), because
 \(\tau_j\to0\) and \(t_j\uparrow T^*\). The physical dissipation belongs to
 \(L^1(0,T^*)\), while \(b_j\ge c_0/4\). Absolute continuity of the integral
 proves the claim.
+
+For the full forward interval, the same exact pullback gives
+
+\[
+\varepsilon_j
+\int_0^{H_j}\!\!\int|\nabla v_j|^2\,dy\,ds
+=
+\frac{\nu}{b_j}
+\int_{t_j}^{T^*}\!\!\int|\nabla u|^2\,dx\,dt.
+\]
+
+The physical terminal tail again tends to zero by absolute continuity,
+independently of whether \(H_j\to0\), \(H_j\to H\in(0,\infty)\), or
+\(H_j\to\infty\).
 
 The rescaled energy identity is
 

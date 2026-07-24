@@ -3819,7 +3819,7 @@
         "At the selected time the terminal tensor defect is positive-semidefinite and every partial or tight layer retains positive mass in the weak trace plus that defect",
         "In the energy-efficient branch the carrier energy normalizer is bounded below",
         "Exact physical pullback identifies normalized viscous dissipation as terminal physical dissipation divided by the carrier energy normalizer",
-        "Absolute continuity of one-trajectory terminal dissipation makes normalized viscous dissipation vanish on every fixed carrier interval in all nine energy-efficient cells",
+        "Absolute continuity of one-trajectory terminal dissipation makes normalized viscous dissipation vanish on every fixed carrier interval and on the entire remaining forward horizon in all nine energy-efficient cells",
         "Compactly supported steady Euler packets can be scaled, packed, and separated while preserving one normalized weak-L3 amplitude layer and bounded energy",
         "A diagonal small-viscosity stability argument gives exact smooth Navier-Stokes equation families with arbitrarily long past and any prescribed truncated forward-observation horizon",
         "Tight packet clouds converge weakly to zero while retaining a positive isotropic energy defect; diffuse and partial variants realize the other geometry cells and all truncated clock analogues",
@@ -3834,6 +3834,36 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/type-ii-carrier-defect-compactness.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
+      "id": "EXP-TYPE-II-SUBGRID-TRANSPORT-001",
+      "title": "Terminal Type-II trace defect has an exact signed subgrid ancestry",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": ["CLM-ENERGY-001"],
+      "hypothesis": "A positive terminal carrier trace defect may force a persistent, signed, same-trajectory high-frequency transfer with a fixed non-reusable physical cost.",
+      "invariants": [
+        "Nonnegative convolution filtering defines pointwise nonnegative subgrid energy and viscous variance",
+        "Subtracting resolved from filtered local energy gives an exact signed balance between subgrid change, nonlinear cascade, spatial import, viscous subgrid loss, and viscous cutoff diffusion",
+        "The iterated limit of terminal subgrid energy is exactly one half of the terminal trace-defect measure",
+        "A diagonal filter converts every positive localized trace defect into inherited microstructure, positive signed nonlinear cascade, or positive signed spatial import over each fixed backward carrier time",
+        "Normalized subgrid dissipation and its cutoff error vanish by one-trajectory terminal absolute continuity and uniform energy",
+        "The entire remaining forward carrier horizon has vanishing normalized viscous dissipation in every energy-efficient clock cell",
+        "Every integrated term pulls back with the exact physical energy factor b equal to amplitude squared times carrier radius cubed",
+        "A cascade or spatial-import branch therefore has a fixed order-e physical signed-transfer floor on a shrinking interval",
+        "Fixed backward carrier intervals can be thinned to pairwise-disjoint physical intervals",
+        "An exact adjacent-shell dissipative ledger sends one surviving packet through infinitely many increasing boundaries with uniform positive signed flux, finite total dissipation, and vanishing terminal dissipation tail",
+        "The shell ledger is not a Navier-Stokes solution and defeats only energy, sign, scale-ordering, disjoint-time, and absolute-continuity summation"
+      ],
+      "method": "Use a positive compact convolution filter, subtract the resolved energy equation from the filtered smooth Navier-Stokes local energy equality, recover the terminal trace measure by an iterated filter limit, choose a diagonal filter scale, pull the resulting signed trichotomy exactly to physical variables, and construct a two-shell linear ODE cascade whose summable heat actions retain positive energy through infinitely many boundaries.",
+      "certificate": "A written analytic proof and exact shell-ODE inequalities, followed by independent same-system adversarial recomputation of all signs, limits, scaling factors, interval thinning, and telescopes. No executable certificate or external mathematical confirmation is claimed.",
+      "success_criterion": "Replace terminal trace loss by an exact signed one-trajectory ancestry with a fixed physical transfer floor, then decide whether that floor is summable from energy and dissipation alone.",
+      "failure_interpretation": "The filtered local-energy signs, trace-defect iterated limit, diagonal extraction, vanishing viscous errors, physical b scaling, disjoint-interval thinning, shell product lower bound, flux floor, or dissipation telescope is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-subgrid-transport.md"
       ],
       "last_run": "2026-07-24"
     },

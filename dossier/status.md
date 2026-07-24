@@ -154,11 +154,15 @@ Strong space-time compactness plus trace persistence would produce a nonzero
 finite-energy ancient Euler object. The
 [carrier-defect theorem](experiments/type-ii-carrier-defect-compactness.md)
 proves that normalised viscous dissipation vanishes on each fixed carrier
-interval in all nine energy-efficient cells, but leaves a
-positive-semidefinite Euler--Reynolds/terminal-trace ledger. Exact
-varying-trajectory packet clouds realise every efficient
-geometry cell and every truncated clock analogue, so finite-window
-equation-level compactness alone is closed; their endpoints remain smooth.
+interval and the entire remaining forward horizon in all nine
+energy-efficient cells, but leaves a positive-semidefinite
+Euler--Reynolds/terminal-trace ledger. The
+[subgrid-transport theorem](experiments/type-ii-subgrid-transport.md)
+turns every positive terminal trace defect into inherited microstructure,
+positive signed nonlinear transfer, or positive signed spatial import, with
+an order-\(e_j\) physical floor. An exact Zeno shell ledger shows that the
+same packet can pay every increasing-scale flux floor with finite
+dissipation, so sign and disjoint time intervals do not supply freshness.
 Under separate self-similar
 hypotheses, the current preprint and a favourable-viscosity repository
 adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
@@ -166,9 +170,9 @@ outgoing or axisymmetric smooth Euler profiles are excluded under the
 preprint's exact assumptions. A divergence-free kinematic path satisfies the
 listed energy and necessary vorticity ledgers in that window but is not NSE.
 
-R3C now needs common-trajectory suppression of inviscid microstructure, a
-non-reusable high-frequency flux or persistence charge, and separate control
-of the divergent-normalised-energy cells.
+R3C now needs an NSE-specific flux-residence, freshness, or spatial-ancestry
+law, coherent-trace rigidity, and separate control of the
+divergent-normalised-energy cells.
 
 ### Frozen R3B boundary
 
