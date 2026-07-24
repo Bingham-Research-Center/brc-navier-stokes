@@ -3970,6 +3970,41 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-BAND-DISSIPATION-BUDGET-001",
+      "title": "Frozen Type-II band works share a critical dissipation budget",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001"
+      ],
+      "hypothesis": "The event-dependent Gaussian tests may be summable after their exact fractional Sobolev costs are retained, and scale-separated bands may permit bounded-overlap correlation lifetimes.",
+      "invariants": [
+        "Every frozen Gaussian test has homogeneous H-alpha norm squared at most C-alpha times the fixed quantile gap times the low radius to the power minus two alpha",
+        "The Navier-Stokes nonlinearity maps energy-class H1 velocity into homogeneous H-minus-one-half with norm at most C times enstrophy",
+        "The nonlinear frozen-band work weighted by viscosity times the square root of low radius over quantile gap is bounded by dissipation on the same interval",
+        "The squared viscous frozen-band work weighted by low radius squared over quantile gap, viscosity, and interval length is bounded by dissipation on the same interval",
+        "Disjoint consecutive record intervals therefore sum both weighted works against one physical dissipation budget",
+        "Failed correlations partition into nonlinear square-root-radius charges and viscous radius-squared-over-time charges with finite total",
+        "Pairwise disjoint Gaussian scale intervals obey an exact Bessel bound because their heat-scale integrals sum to at most one",
+        "At most four times energy divided by the quantile gap separated bands can remain simultaneously correlated",
+        "First correlation-death intervals have bounded overlap and inherit the same common weighted budget",
+        "A fixed quantile gap forces a uniform multiplicative width for every Gaussian band",
+        "Scale separation therefore makes the nonlinear square-root-radius charges geometrically summable",
+        "In the q_j=4 representative ledger the viscous death charges diverge, so all but finitely many deaths must be nonlinear",
+        "No unweighted work sum, contradiction, NSE rotation obstruction, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Estimate the frozen Gaussian test in homogeneous half- and one-derivative Sobolev norms, pair the nonlinear term through the critical H-minus-one-half fractional Leibniz estimate, pair viscosity by Cauchy-Schwarz, sum against physical dissipation, then combine heat-scale telescoping with Bessel packing to control first correlation-death lifetimes and audit the separated-scale ceiling.",
+      "certificate": "A self-contained written proof of the band Sobolev bounds, critical nonlinear dual estimate, consecutive and bounded-overlap work budgets, Gaussian Bessel identity, lifetime count, uniform band width, and exact q_j=4 charge powers. External mathematical review is pending and no executable certificate is claimed.",
+      "success_criterion": "Determine whether changing frozen tests possess a common same-trajectory budget, extend it to genuine correlation lifetimes, and identify whether elementary square-function packing closes or reaches a sharp summability boundary.",
+      "failure_interpretation": "The fractional band norm, H-minus-one-half product estimate, viscosity normalization, dissipation summation, heat-scale Bessel identity, lifetime overlap count, multiplicative width, or survivor charge power is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-band-dissipation-budget.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

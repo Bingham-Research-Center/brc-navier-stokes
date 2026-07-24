@@ -1,41 +1,42 @@
-# Handoff: R3C event-dependent band work
+# Handoff: R3C unthinned band stack
 
 **Updated:** 2026-07-24 · **Clay status:** unsolved
 
-**Live route:** `ROUTE-R3C` · **Checkpoint:** `EXP-TYPE-II-CROSS-RECORD-CORRELATION-001`
+**Live route:** `ROUTE-R3C` · **Checkpoint:** `EXP-TYPE-II-BAND-DISSIPATION-BUDGET-001`
 
 ## Load only
 
-- [Frozen-band theorem](dossier/experiments/type-ii-cross-record-correlation.md)
+- [Critical band budget](dossier/experiments/type-ii-band-dissipation-budget.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
 ## Exact live question
 
-Can the fixed nonlinear works against successive frozen Type-II bands be
-summed against one finite same-trajectory budget?
+Can the unthinned first-record bands be counted across logarithmic scale, or
+can NSE triads realise the remaining nonlinear rotation?
 
 ## Live result
 
-The Gaussian band between two physical quantiles has initial squared norm
-\(2\gamma\). At the next selected first record, either its correlation is at
-least \(\gamma\), or nonlinear or viscous work has magnitude at least
-\(\gamma/2\). Replacement respectively forces
+Successive frozen-band works share the physical dissipation budget:
 
 \[
-\Delta t_j\gtrsim
-\frac{\tau_j\ell_j^{\mathrm L}}
-{q_j^2\log(e+C/\ell_j^{\mathrm L})}
-\quad\text{or}\quad
-\Delta t_j\gtrsim
-\frac{\tau_j(\ell_j^{\mathrm L})^2}
-{\varepsilon_jd_j}.
+\sum_j\left[
+\nu\sqrt{\frac{r_j}{\gamma}}|W_j^{N}|
++
+\frac{r_j^2|W_j^\nu|^2}{\gamma\nu\Delta t_j}
+\right]
+\lesssim
+\nu\int_0^{T^*}\|\nabla u\|_2^2.
 \]
 
-An exact orthogonal-band rotation plus the \(q_j=4\) ledger pays every fixed
-work while keeping all known budgets summable. It is not NSE.
+Scale-separated bands have bounded-overlap correlation lifetimes. But their
+fixed width forces geometric radii, so the nonlinear
+\(\sum_j\sqrt{r_j}\) charge converges automatically. The \(q_j=4\) ledger's
+viscous charges diverge; any survivor is eventually nonlinear.
 
 ## Next bounded cycle
 
-Seek one adjoint or square-function estimate for the changing frozen tests.
-Otherwise prove the sharp NSE-compatible rotation survivor. Keep spatial
-recentering, coherent-trace rigidity, and divergent energy separate.
+Do not re-run elementary Bessel thinning. Seek a Carleson/variation estimate
+for overlapping heat-scale intervals without discarding event density.
+Otherwise test whether actual NSE triads can implement the critical
+nonlinear rotation. Keep recentering, coherent trace, and divergent energy
+separate.

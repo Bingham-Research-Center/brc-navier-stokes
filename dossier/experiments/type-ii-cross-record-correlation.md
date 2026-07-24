@@ -82,6 +82,13 @@ clocks, weak-\(L^3\) occupation, and viscous-action ledger remain summable.
 The tests change with the events, so fixed work is not yet a charge against
 one finite common budget.
 
+**Subsequent update.** The
+[critical band-budget theorem](type-ii-band-dissipation-budget.md) supplies a
+common *weighted* dissipation budget for these works and extends it to
+scale-separated first-correlation lifetimes. Its critical
+\(\sqrt{r_j}\) nonlinear weights remain summable in the exact survivor, so
+the unweighted obstruction recorded here is not removed.
+
 ## 1. The positive Gaussian band
 
 Retain the hypotheses and notation of the cross-record theorem. In

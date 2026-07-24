@@ -1,0 +1,590 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\D}{\mathcal D}
+\newcommand{\WN}{\mathcal W^{\mathrm N}}
+\newcommand{\WV}{\mathcal W^\nu}
+\newcommand{\Cband}{\mathcal C}
+
+\title{A Critical Common Budget for Type-II Frozen-Band Work}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 24 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round answers the live summation question for the event-dependent
+Gaussian tests on the energy-efficient Type-II branch.  The answer is
+positive but scale-critical: nonlinear band work weighted by the square root
+of the physical band radius, and squared viscous work weighted by radius
+squared over event time, sum against the one physical dissipation measure.
+After a scale-separated extraction, an exact Gaussian Bessel identity
+extends the estimate to full first-correlation lifetimes.  The same
+extraction exposes the ceiling of this approach: the fixed quantile gap
+forces a uniform multiplicative band width, hence geometric radii and an
+automatically summable nonlinear charge.  In the existing \(q_j=4\) power
+ledger, viscous death is impossible infinitely often, but nonlinear rotation
+remains compatible.  These are conditional analytic reductions, not a
+regularity or breakdown theorem.
+\end{abstract}
+
+\section{Scope and setup}
+
+Let \(u\) be a smooth finite-energy solution on
+\([0,T^*)\times\R^3\):
+\[
+ \partial_tu+\mathbb P\nabla\!\cdot(u\otimes u)=\nu\Delta u,
+ \qquad \nabla\!\cdot u=0.
+\]
+Set
+\[
+ E_*:=\sup_{t<T^*}\frac12\|u(t)\|_2^2,
+ \qquad
+ \D(I):=\nu\int_I\|\nabla u(t)\|_2^2\,dt,
+ \qquad
+ \D_*:=\D((0,T^*))\le E_*.
+\]
+The last inequality is the classical energy identity before \(T^*\).
+
+At selected first-record times \(t_j\uparrow T^*\), retain the physical
+Gaussian subgrid quantiles
+\[
+ \mathbf K(r_j^{\mathrm L},t_j)=\eta_{\mathrm L},
+ \qquad
+ \mathbf K(r_j^{\mathrm H},t_j)=\eta_{\mathrm H},
+ \qquad
+ \gamma:=\eta_{\mathrm H}-\eta_{\mathrm L}>0.
+\]
+For \(G_rf=\Gamma_r*f\), define
+\[
+ S_j:=G_{r_j^{\mathrm L}}^2-G_{r_j^{\mathrm H}}^2,
+ \qquad
+ B_j:=S_j^{1/2},
+ \qquad
+ \psi_j:=S_ju(t_j).
+\]
+The multiplier
+\[
+ \mathfrak s_j(\xi)
+ =
+ e^{-(r_j^{\mathrm L})^2|\xi|^2}
+ -
+ e^{-(r_j^{\mathrm H})^2|\xi|^2}
+\]
+is nonnegative and
+\[
+ \int_{\R^3}\mathfrak s_j|\widehat u(t_j)|^2\,d\xi
+ =
+ \|B_ju(t_j)\|_2^2
+ =
+ 2\gamma.
+\]
+
+For \(s\in(t_j,T^*)\), put
+\[
+\begin{aligned}
+ \WN_{j,s}
+ &:=
+ \int_{t_j}^{s}\!\!\int_{\R^3}
+ u\otimes u:\nabla\psi_j\,dx\,dt,\\
+ \WV_{j,s}
+ &:=
+ -\nu\int_{t_j}^{s}\!\!\int_{\R^3}
+ \nabla u:\nabla\psi_j\,dx\,dt.
+\end{aligned}
+\]
+Then
+\[
+ \Cband_j(s)-2\gamma
+ =
+ \WN_{j,s}+\WV_{j,s},
+ \qquad
+ \Cband_j(s):=
+ \langle B_ju(s),B_ju(t_j)\rangle.
+\]
+All conclusions below are conditional on the branch that produced these
+fixed-gap quantiles.  No argument derives that branch from arbitrary Clay
+data.
+
+\section{Two critical estimates}
+
+\begin{lemma}[Fractional norm of the frozen band]
+For every \(\alpha\ge0\),
+\[
+ \|\psi_j\|_{\dot H^\alpha}^2
+ \le
+ C_\alpha\gamma(r_j^{\mathrm L})^{-2\alpha}.
+\]
+In particular,
+\[
+ \|\psi_j\|_{\dot H^{1/2}}
+ \lesssim
+ \sqrt{\frac{\gamma}{r_j^{\mathrm L}}},
+ \qquad
+ \|\nabla\psi_j\|_2
+ \lesssim
+ \frac{\sqrt\gamma}{r_j^{\mathrm L}}.
+\]
+\end{lemma}
+
+\begin{proof}
+Write
+\[
+ x=(r_j^{\mathrm L})^2|\xi|^2,
+ \qquad
+ \rho_j=r_j^{\mathrm H}/r_j^{\mathrm L}>1.
+\]
+Then
+\[
+ 0\le\mathfrak s_j=e^{-x}-e^{-\rho_j^2x}\le e^{-x}.
+\]
+Since \(x^\alpha e^{-x}\le C_\alpha\),
+\[
+ x^\alpha\mathfrak s_j^2
+ \le C_\alpha\mathfrak s_j.
+\]
+Consequently
+\[
+\begin{aligned}
+ \|\psi_j\|_{\dot H^\alpha}^2
+ &=
+ \int |\xi|^{2\alpha}
+ \mathfrak s_j^2|\widehat u(t_j)|^2\,d\xi\\
+ &\le
+ C_\alpha(r_j^{\mathrm L})^{-2\alpha}
+ \int\mathfrak s_j|\widehat u(t_j)|^2\,d\xi\\
+ &=
+ 2C_\alpha\gamma(r_j^{\mathrm L})^{-2\alpha}.
+\end{aligned}
+\]
+\end{proof}
+
+\begin{lemma}[Critical nonlinear dual estimate]
+For every solenoidal \(v\in H^1(\R^3)\),
+\[
+ \|\mathbb P\nabla\!\cdot(v\otimes v)\|_{\dot H^{-1/2}}
+ \lesssim
+ \|\nabla v\|_2^2.
+\]
+Hence, for solenoidal \(\phi\in\dot H^{1/2}\),
+\[
+ \left|\int_{\R^3}v\otimes v:\nabla\phi\,dx\right|
+ \lesssim
+ \|\nabla v\|_2^2\|\phi\|_{\dot H^{1/2}}.
+\]
+\end{lemma}
+
+\begin{proof}
+The Leray projector is a zero-order multiplier and
+\(\dot H^{-1/2}\nabla\) has order \(1/2\).  Thus
+\[
+ \|\mathbb P\nabla\!\cdot(v\otimes v)\|_{\dot H^{-1/2}}
+ \lesssim
+ \|v\otimes v\|_{\dot H^{1/2}}.
+\]
+The fractional Leibniz inequality, with spatial exponents \(3\) and \(6\),
+followed by Sobolev embedding, gives
+\[
+\begin{aligned}
+ \|v\otimes v\|_{\dot H^{1/2}}
+ &\lesssim
+ \|D^{1/2}v\|_3\|v\|_6\\
+ &\lesssim
+ \|\nabla v\|_2^2.
+\end{aligned}
+\]
+Duality proves the final assertion.
+\end{proof}
+
+\section{The common weighted budget}
+
+Put
+\[
+ I_j=[t_j,t_{j+1}],
+ \qquad
+ h_j=t_{j+1}-t_j,
+ \qquad
+ r_j=r_j^{\mathrm L},
+\]
+and abbreviate
+\(\WN_j=\WN_{j,t_{j+1}}\),
+\(\WV_j=\WV_{j,t_{j+1}}\).
+
+\begin{theorem}[Common consecutive-record budget]
+\[
+\boxed{
+ \sum_j\left[
+ \nu\sqrt{\frac{r_j}{\gamma}}\,|\WN_j|
+ +
+ \frac{r_j^2|\WV_j|^2}{\gamma\nu h_j}
+ \right]
+ \lesssim
+ \D_*.
+}
+\]
+\end{theorem}
+
+\begin{proof}
+The preceding lemmas yield
+\[
+\begin{aligned}
+ |\WN_j|
+ &\lesssim
+ \|\psi_j\|_{\dot H^{1/2}}
+ \int_{I_j}\|\nabla u(t)\|_2^2\,dt\\
+ &\lesssim
+ \sqrt{\frac{\gamma}{r_j}}\,
+ \frac{\D(I_j)}{\nu}.
+\end{aligned}
+\]
+Therefore
+\[
+ \nu\sqrt{\frac{r_j}{\gamma}}\,|\WN_j|
+ \lesssim \D(I_j).
+\]
+For viscosity, Cauchy--Schwarz in time gives
+\[
+\begin{aligned}
+ |\WV_j|
+ &\le
+ \nu\|\nabla\psi_j\|_2
+ h_j^{1/2}
+ \left(\int_{I_j}\|\nabla u(t)\|_2^2\,dt\right)^{1/2}\\
+ &\lesssim
+ \frac{\sqrt\gamma}{r_j}
+ \sqrt{\nu h_j\D(I_j)}.
+\end{aligned}
+\]
+Hence
+\[
+ \frac{r_j^2|\WV_j|^2}{\gamma\nu h_j}
+ \lesssim\D(I_j).
+\]
+The intervals \(I_j\) are pairwise disjoint, so their dissipation measures
+sum to at most \(\D_*\).
+\end{proof}
+
+\begin{corollary}[Additive correlation-loss charges]
+Let
+\[
+ \mathcal L=\{j:\Cband_j(t_{j+1})<\gamma\}.
+\]
+There is a disjoint partition
+\(\mathcal L=\mathcal N\mathbin{\dot\cup}\mathcal V\) such that
+\[
+ |\WN_j|\ge\gamma/2\quad(j\in\mathcal N),
+ \qquad
+ |\WV_j|\ge\gamma/2\quad(j\in\mathcal V),
+\]
+and
+\[
+\boxed{
+ \sum_{j\in\mathcal N}\nu\sqrt{\gamma r_j}
+ +
+ \sum_{j\in\mathcal V}
+ \frac{\gamma r_j^2}{\nu h_j}
+ \lesssim
+ \D_*.
+}
+\]
+In particular,
+\[
+ \sum_{j\in\mathcal L}
+ \min\left\{
+ \nu\sqrt{\gamma r_j},
+ \frac{\gamma r_j^2}{\nu h_j}
+ \right\}
+ <\infty.
+\]
+\end{corollary}
+
+\begin{proof}
+For \(j\in\mathcal L\), the exact correlation identity gives
+\[
+ |\WN_j+\WV_j|>\gamma.
+\]
+Assign the event to a term of magnitude at least \(\gamma/2\), then invoke
+the theorem.
+\end{proof}
+
+\begin{remark}
+The theorem genuinely uses one physical quantity, \(\D_*\), for every
+event-dependent test.  It does not bound \(\sum_j|\WN_j|\): the critical
+dual norm necessarily contributes \(r_j^{-1/2}\).
+\end{remark}
+
+\section{First-death lifetimes}
+
+Because \(r_j^{\mathrm H}\to0\), choose an infinite subsequence, relabelled
+by \(k\), for which
+\[
+ r_{k+1}^{\mathrm H}<r_k^{\mathrm L}.
+\]
+
+\begin{lemma}[Exact Gaussian Bessel packing]
+For every \(f\in L^2(\R^3)\),
+\[
+ \sum_k\|B_kf\|_2^2\le\|f\|_2^2.
+\]
+\end{lemma}
+
+\begin{proof}
+The multiplier has the heat-scale representation
+\[
+ \mathfrak s_k(\xi)
+ =
+ \int_{(r_k^{\mathrm L})^2}^{(r_k^{\mathrm H})^2}
+ |\xi|^2e^{-a|\xi|^2}\,da.
+\]
+The integration intervals are disjoint, so
+\[
+ \sum_k\mathfrak s_k(\xi)
+ \le
+ \int_0^\infty|\xi|^2e^{-a|\xi|^2}\,da
+ =1.
+\]
+Apply Plancherel.
+\end{proof}
+
+Define the first death time
+\[
+ \sigma_k
+ :=
+ \inf\{t\in(t_k,T^*):\Cband_k(t)\le\gamma\},
+\]
+with \(\sigma_k=T^*\) if the set is empty.  The band is alive on
+\([t_k,\sigma_k)\).
+
+\begin{theorem}[Bounded-overlap lifetime budget]
+At each \(t<T^*\), at most
+\[
+ M:=\left\lceil\frac{4E_*}{\gamma}\right\rceil
+\]
+separated bands are alive.  At most \(M\) never die.  The finite lifetime
+intervals \(J_k=[t_k,\sigma_k]\) have overlap at most \(M\), and
+\[
+\boxed{
+ \sum_k\left[
+ \nu\sqrt{\frac{r_k^{\mathrm L}}{\gamma}}\,
+ |\WN_{k,\sigma_k}|
+ +
+ \frac{
+ (r_k^{\mathrm L})^2|\WV_{k,\sigma_k}|^2
+ }{
+ \gamma\nu(\sigma_k-t_k)
+ }
+ \right]
+ \lesssim
+ M\D_*.
+}
+\]
+After assigning every finite death to a work floor,
+\[
+\boxed{
+ \sum_{k\in\mathcal N_{\rm death}}
+ \nu\sqrt{\gamma r_k^{\mathrm L}}
+ +
+ \sum_{k\in\mathcal V_{\rm death}}
+ \frac{
+ \gamma(r_k^{\mathrm L})^2
+ }{
+ \nu(\sigma_k-t_k)
+ }
+ \lesssim
+ M\D_*.
+}
+\]
+\end{theorem}
+
+\begin{proof}
+If \(k\) is alive at \(t\), Cauchy--Schwarz and
+\(\|B_ku(t_k)\|_2^2=2\gamma\) imply
+\[
+ \|B_ku(t)\|_2^2>\frac\gamma2.
+\]
+The Bessel lemma and \(\|u(t)\|_2^2\le2E_*\) therefore give
+\[
+ \frac\gamma2\,\#\{k:k\text{ alive at }t\}
+ <
+ \sum_{k:\,\mathrm{alive}}\|B_ku(t)\|_2^2
+ \le2E_*.
+\]
+This proves the count and the bound on immortal bands.  It also bounds the
+overlap of the finite \(J_k\).
+
+At finite death, continuity gives
+\(\Cband_k(\sigma_k)=\gamma\), so one work has magnitude at least
+\(\gamma/2\).  The proof of the consecutive-record theorem applies on
+each \(J_k\).  Finally,
+\[
+ \sum_k\D(J_k)\le M\D_*.
+\]
+\end{proof}
+
+\section{The square-function ceiling}
+
+\begin{lemma}[Uniform multiplicative band width]
+Every fixed-gap quantile band obeys
+\[
+ \frac{r_j^{\mathrm H}}{r_j^{\mathrm L}}
+ \ge
+ \Lambda
+ :=
+ \left(1+\frac{e\gamma}{E_*}\right)^{1/2}>1.
+\]
+\end{lemma}
+
+\begin{proof}
+Put \(\rho=r_j^{\mathrm H}/r_j^{\mathrm L}\).  For \(x\ge0\),
+\[
+ e^{-x}-e^{-\rho^2x}
+ =
+ \int_1^{\rho^2}xe^{-sx}\,ds
+ \le
+ (\rho^2-1)xe^{-x}
+ \le
+ \frac{\rho^2-1}{e}.
+\]
+It follows that
+\[
+ 2\gamma
+ \le
+ \frac{\rho^2-1}{e}\|u(t_j)\|_2^2
+ \le
+ \frac{2E_*(\rho^2-1)}{e}.
+\]
+\end{proof}
+
+For the separated subsequence,
+\[
+ r_{k+1}^{\mathrm H}
+ <
+ r_k^{\mathrm L}
+ \le
+ \Lambda^{-1}r_k^{\mathrm H}.
+\]
+Thus
+\[
+ \sum_k\sqrt{r_k^{\mathrm L}}<\infty.
+\]
+The extraction required for exact Bessel packing therefore makes the
+critical nonlinear death charge automatically summable.  Bessel packing,
+the energy identity, and critical fractional duality alone cannot exclude
+infinitely many nonlinear deaths.
+
+\section{Audit of the exact power survivor}
+
+The current representative has
+\[
+ r_j^{\mathrm L}\asymp2^{-5j},
+ \qquad
+ h_j\asymp\frac{2^{-11j}}j,
+ \qquad
+ \nu=1.
+\]
+Its nonlinear and viscous death charges are respectively
+\[
+ \nu\sqrt{\gamma r_j^{\mathrm L}}
+ \asymp
+ \sqrt\gamma\,2^{-5j/2},
+\]
+and
+\[
+ \frac{\gamma(r_j^{\mathrm L})^2}{\nu h_j}
+ \asymp
+ \gamma j2^j.
+\]
+Therefore
+\[
+ \sum_j\sqrt{r_j^{\mathrm L}}<\infty,
+ \qquad
+ \sum_j\frac{(r_j^{\mathrm L})^2}{h_j}=\infty.
+\]
+All but finitely many correlation deaths in that ledger must be nonlinear.
+The old abstract Hilbert rotation remains compatible with this assignment:
+its residence reservoir \(c_j\asymp2^{-j}/j\) dominates the new
+\(2^{-5j/2}\) charge.  The rotation is still not a Navier--Stokes velocity.
+
+\section{Robust findings, subject to review}
+
+\begin{enumerate}
+\item Frozen Gaussian tests have exact scale-adapted fractional Sobolev
+ceilings determined by their fixed energy gap.
+\item Critical \(\dot H^{-1/2}\)--\(\dot H^{1/2}\) duality converts all
+changing nonlinear tests into one weighted dissipation budget.
+\item Viscous works possess a simultaneous quadratic weighted budget.
+\item Gaussian heat-scale separation gives an exact Bessel inequality and a
+finite bound on simultaneous correlation lifetimes.
+\item The fixed gap forces uniform logarithmic band width, so elementary
+spectral thinning cannot make the nonlinear charge nonsummable.
+\item The \(q_j=4\) survivor is forced into the nonlinear-death branch.
+\end{enumerate}
+
+The constituent inequalities are standard or proved above.  Their assembly
+for this Type-II record stack has not received external mathematical review;
+no literature-novelty claim is made here.
+
+\section{Conjectures and open obligations}
+
+\begin{conjecture}[Unthinned heat-scale Carleson law]
+The complete, overlapping family of first-record heat-scale intervals obeys
+a same-trajectory Carleson or variation estimate that retains event density
+without the geometric thinning used by the Bessel theorem.
+\end{conjecture}
+
+\begin{conjecture}[Triadic rotation obstruction]
+The Navier--Stokes quadratic interaction cannot realise infinitely many
+fixed-gap nonlinear correlation deaths while paying only the summable
+\(\sqrt{r_j}\) dissipation charges allowed by critical fractional duality.
+\end{conjecture}
+
+\begin{conjecture}[Critical sharpness]
+Without additional trajectory, spatial, or sign structure, the
+half-derivative loss and the resulting \(\sqrt{r_j}\) event charge cannot be
+improved by energy-class estimates.
+\end{conjecture}
+
+The next obligations are:
+\begin{enumerate}
+\item analyse the unthinned overlap multiplicity as a measure on logarithmic
+heat scale;
+\item seek a temporal variation or adjoint cancellation beyond the critical
+fractional product estimate;
+\item otherwise build or exclude an actual NSE triadic analogue of the
+nonlinear rotation;
+\item separately retain spatial recentering, coherent-trace rigidity, and
+the divergent-normalised-energy cells.
+\end{enumerate}
+
+\section{Epistemic conclusion}
+
+This round closes the existence of a common \emph{weighted} band-work
+budget and closes the elementary scale-separated Bessel route negatively.
+It does not give an unweighted work sum, rule out the remaining nonlinear
+rotation, establish regularity or breakdown, or prove any Clay alternative
+A--D.
+
+The proof-owning note is stored as
+\begin{center}
+\small
+\texttt{dossier/experiments/}\\
+\texttt{type-ii-band-dissipation-budget.md}.
+\end{center}
+Canonical route and experiment metadata remain in
+\texttt{dossier/records/}.  The public repository is
+\url{https://github.com/Bingham-Research-Center/brc-navier-stokes}.
+
+\end{document}
