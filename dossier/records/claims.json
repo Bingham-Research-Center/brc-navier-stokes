@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "claims": [
     {
       "id": "CLM-STATUS-001",
@@ -113,6 +113,22 @@
       "depends_on": [],
       "audit": "This is strong L3, not weak-L3.",
       "last_checked": "2026-07-23"
+    },
+    {
+      "id": "CLM-PRODI-SERRIN-001",
+      "plain": "Finite mixed velocity norms on the Prodi-Serrin line prevent blow-up.",
+      "formal": "Under the classical weak-solution hypotheses, u in Lp in time and Lq in space with 2/p+3/q at most 1 and q greater than 3 is a regularity class.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "Leray_weak",
+      "assumptions": ["Velocity in a strong mixed Lebesgue class Lp in time and Lq in space", "2/p+3/q is at most 1", "q is greater than 3"],
+      "conclusion": "The solution is regular through the terminal time.",
+      "scaling": "critical_or_subcritical",
+      "status": "established",
+      "source_ids": ["SRC-SERRIN-1962"],
+      "depends_on": ["CLM-WEAK-001"],
+      "audit": "The equality-line pair p=5/2 and q=15 is included. This is a strong mixed norm, not the weak-L3 endpoint.",
+      "last_checked": "2026-07-24"
     },
     {
       "id": "CLM-LORENTZ-001",
@@ -369,8 +385,8 @@
       "status": "established",
       "source_ids": ["SRC-BARKER-2024-HIGHER-INTEGRABILITY"],
       "depends_on": ["CLM-WEAK-001"],
-      "audit": "For a critical radius-R packet over its parabolic lifetime, the L(2+delta) gradient cost has exact radius power 1-2delta. The imported theorem does not assert a uniform delta at least one half, and its stated gain tends to zero for large M, so this claim alone cannot count arbitrary scale depth.",
-      "last_checked": "2026-07-23"
+      "audit": "The proof constructs delta_B=C5/(4M+2C5), strictly below one half for every admissible sufficiently large M. A critical radius-R packet has gradient cost power 1-2delta_B greater than zero, while the corresponding Sobolev velocity pair has 2/p+3/q greater than one. Thus this claim alone neither counts arbitrary scale depth nor supplies a subcritical Oseen time margin.",
+      "last_checked": "2026-07-24"
     },
     {
       "id": "CLM-SINGULARITY-PERSISTENCE-001",

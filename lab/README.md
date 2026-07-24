@@ -71,6 +71,29 @@ not convert passing unit tests into mathematical truth.
 | **adjoint_pressure_feedback_shells.py** | Dyadic exterior-pressure summation, inverse-cubic source localisation, stretched-exponential escape, and the three-scale clock map | Two-scale retention of the Besov detector inside the source-localised Oseen interaction |
 | **adjoint_pressure_feedback_frequency.py** | Small primitive-tensor factorisation, vanishing subparabolic pressure frequencies, and the \(\sigma\sqrt h\) non-collapsing descendant | Factor-frequency and spatial distribution of the high-pass packet, treated by the subsequent dust module |
 | **adjoint_pressure_feedback_dust.py** | Inner local-energy saturation, factor-frequency splitting, and \(h^{-7/2}\) versus \(h^{-21/2}\) descendant-cell counts | An aggregate signed law or summable cost for the resulting frequency/spatial dust |
+| **adjoint_pressure_temporal.py** | Quadratic Kato scale, weighted time capture, terminal-edge powers, and finite-band time--space density exponents | Slice-to-slice coherence, a limiting Oseen balance, or a finite same-trajectory functional |
+| **adjoint_pressure_polar_vacuum.py** | First-hitting polar volume, moving-grid capture, inverse-ninth regularisation, pressure-probability vacuum, and sharp source-volume powers | Amplitude-normalised Oseen compactness, a strict sub-\(h^9\) cascade cost, or a same-trajectory telescope |
+| **adjoint_pressure_balanced_polar.py** | Balanced \(h^9\) cell scales, Kato/pressure/Orlicz action tails, polar curvature algebra, Aubin--Lions budget, and the residual moving-trace defect | Elimination of amplitude concentration and pressure-trace defects, or a finite charge for the strict sub-\(h^9\) branch |
+| **adjoint_pressure_amplitude_window.py** | Softened-polar modular gain, Bernstein \(\alpha^5\) cell cost, \(L^{-1/11}\) pairing tail, compact relative-amplitude window, and dyadic amplitude telescope | Exclusion of the moving pressure-trace defect and closure of uncharged Oseen concentration, or a finite charge for the strict sub-\(h^9\) branch |
+| **adjoint_pressure_trace_participation.py** | Finite-band spacetime \(L^2\) pressure, \(h^{-1}\) charged-window volume, \(h^7\) source participation, \(h^8\) mean duty clock, and the sharp moving-tube ledger | Oseen exclusion or same-trajectory compactification of the moving-tube schedule |
+| **adjoint_pressure_skew_compression.py** | Exact skew/Hodge block identities, constant and linear-zero-trace critical feedback residuals, real coupling stability, and linear-versus-squared unitary leakage | An actual heat-linked spatial Oseen realisation, use of the coefficient's Navier--Stokes evolution, or a Clay resolution |
+| **adjoint_pressure_frequency_colligation.py** | Fixed-band factorial Oseen and pressure-depth ledgers, exact integer Fourier backtracking geometry, heat lifetime, and coefficient-action scaling | Summation over changing frequency bands, unprojected pressure recombination, a same-trajectory frequency law, or a Clay resolution |
+| **adjoint_pressure_frequency_zeno.py** | Dyadic cross-band transition masses, summable exponential heat clocks, persistent strong-trace terminal pressure, and critical packet energy/dissipation ledgers | Realisation by one vector Oseen drift, compatible packet geometry, same-trajectory Navier--Stokes evolution, or a Clay resolution |
+| **adjoint_pressure_terminal_return.py** | High--high-to-low \(S/L\) gain, quadratic coefficient-tail toll, physical scaling, and the logarithmic-depth ancestry ceiling | A stronger top-frequency law, quantitative tail non-reuse, or actual event ancestry |
+| **adjoint_pressure_ancestry_survivor.py** | Exact dyadic next-event ancestry, nested terminal tail masses, kill frequency, and the \(3/2\) stretched-depth boundary | A PDE inter-event gap, kill-frequency ascent, or a non-reusable signed/vector charge |
+| **adjoint_pressure_spatial_frequency.py** | Annular off-diagonal localisation, \(S/F\) terminal return, logarithmic shell amplification, and the \(7/4+\beta\) cost exponent | Proof that the complete pressure packet enters the growing terminal high-state tail, or control of returned-low histories |
+| **adjoint_pressure_amplified_ancestry.py** | Exact ancestry after replacing \(h^{-7/4}\) by \(h^{-(7/4+\beta)}\), finite nested mass, and the unchanged \(3/2\) boundary | A lower zoom bound or genuinely non-reusable PDE charge beyond scalar cost amplification |
+| **adjoint_pressure_one_return.py** | Annular heat-clock gain, one-return prefactor, piecewise stretched exponent, and its \(9/4\) parabolic minimum | Participation, no-separated-return histories, or superparabolic LP capture |
+| **adjoint_pressure_multistage_path.py** | Exact frequency-ratio telescoping, exponential-sum heat clocks, dyadic slow-clock suppression, and fixed/logarithmic-depth exponent ledgers for one prescribed Oseen itinerary | Participation, no-separated-return histories, or superparabolic LP capture |
+| **adjoint_pressure_corridor_sum.py** | Infinite dyadic heat-rate entropy, exact weighted-path and depth summation, arbitrary in-corridor jumps, and the aggregate subparabolic/parabolic exponent | Participation, no-separated-return histories, or superparabolic LP capture |
+| **adjoint_pressure_corridor_identification.py** | Fractional Volterra convergence, exact corridor/exit word splitting, all-starting-band entropy, and the parabolic capture exponent | Uniform parabolic spectral tightness, participation of the separated-return block, or a charge for gradual descent |
+| **adjoint_pressure_last_return.py** | Last-separated-return renewal, exact Dyson-word partition, and complete feedback frequency trichotomy | Exclusion of the complementary no-return block or superparabolic capture |
+| **adjoint_pressure_no_return.py** | Starting-band entropy, complementary path summation, and parabolic no-return exclusion | Physical identification of the superparabolic capture branch |
+| **adjoint_pressure_parabolic_coefficient_tail.py** | Low-coefficient resolvent, last-high insertion identity, and actual superparabolic coefficient-dissipation tail | Event-index non-reuse or next-event coupling |
+| **adjoint_pressure_parabolic_ancestry.py** | Fixed-parabolic next-event coupling, sharp \(7/6\) log-scale ceiling, and smooth kinematic nested-tail survivor | An NSE-specific annular, flux, cascade-speed, or intervening-event theorem |
+| **adjoint_pressure_parabolic_flux.py** | Smooth-to-sharp tail conversion, exact high-pass NSE trichotomy, conservative shell balances, and Zeno cascade ledger | A quantitative NSE flux decrement, locality, cascade-speed, inherited-state ancestry, or event-index telescope |
+| **adjoint_pressure_inherited_ancestry.py** | Fixed-time \(H^1\) tail exclusion, last-hitting ancestry, adaptive annulus squeeze, and terminal signed-flux floor | Event-index freshness, flux decrement, locality, or a non-Zeno terminal cascade law |
+| **adjoint_pressure_spectral_pairing.py** | Exact spectral primal--adjoint commutator flux, shell telescope, pressure blindness, and same-trajectory Beltrami spectral gap | A pressure-visible \(L^1\)-polar, spatial-flux, divergence-defect, or direct ancestry functional |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -152,6 +175,36 @@ From the repository root:
     make adjoint-pressure-feedback-shells
     make adjoint-pressure-feedback-frequency
     make adjoint-pressure-feedback-dust
+    make adjoint-pressure-temporal
+    make adjoint-pressure-polar-vacuum
+    make adjoint-pressure-balanced-polar
+    make adjoint-pressure-amplitude-window
+    make adjoint-pressure-trace-participation
+    make adjoint-pressure-product-trace
+    make adjoint-pressure-intermediate-localization
+    make adjoint-pressure-stretched-history
+    make adjoint-pressure-second-interaction
+    make adjoint-pressure-interaction-depth
+    make adjoint-pressure-critical-volterra
+    make adjoint-pressure-skew-compression
+    make adjoint-pressure-frequency-colligation
+    make adjoint-pressure-frequency-zeno
+    make adjoint-pressure-terminal-return
+    make adjoint-pressure-ancestry-survivor
+    make adjoint-pressure-spatial-frequency
+    make adjoint-pressure-amplified-ancestry
+    make adjoint-pressure-one-return
+    make adjoint-pressure-multistage-path
+    make adjoint-pressure-corridor-sum
+    make adjoint-pressure-corridor-identification
+    make adjoint-pressure-last-return
+    make adjoint-pressure-no-return
+    make adjoint-pressure-parabolic-coefficient-tail
+    make adjoint-pressure-parabolic-ancestry
+    make adjoint-pressure-parabolic-flux
+    make adjoint-pressure-inherited-ancestry
+    make adjoint-pressure-spectral-pairing
+    make adjoint-pressure-spatial-pairing
     make strain
     make fetch-2607
     make compile-2607

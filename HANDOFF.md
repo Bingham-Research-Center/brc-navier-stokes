@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T04:05:03Z
+**Updated:** 2026-07-24T15:41:30Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -651,9 +651,10 @@ one physical trajectory the three scales are
 with interaction clock \(h^7\) and dissipation clock at most \(h^{14}\).
 [Independent adversarial review](dossier/review-response-adjoint-pressure-feedback-shells-2026-07-24.md)
 found all twelve partition, shell, convergence, inversion, and scale-map
-links valid in scope. Ordinary polynomial feedback is now
-source-localised; exterior escape is stretched-exponential. Neither
-resulting object is compactified or excluded.
+links valid in scope. At that stage ordinary polynomial feedback was
+source-localised and exterior escape was stretched-exponential. The
+intermediate-localisation theorem recorded below subsequently eliminates
+the source-localised child.
 
 The source-localised branch now has a finer reviewed descendant. Since
 \(\nabla\cdot r=0\), the local feedback pressure is an order-one
@@ -744,10 +745,314 @@ profiles compact in \(C^\infty_{\rm loc}\).
 [Independent adversarial review](dossier/review-response-adjoint-pressure-signed-aggregate-2026-07-24.md)
 accepted all thirteen links after the recorded repairs.
 
-This is a selection-dependent decorated pressure law, not an invariant
-law or a nonzero PDE profile. The next object is now a temporal or
-same-trajectory coherence theorem turning its positive alignment into a
-bounded telescope, finite critical budget, or limiting Oseen rigidity.
+The time coordinate of that law is now quantitative. A mass-gain stopping
+refinement forces every selected terminal polar regularisation to obey
+\[
+\varepsilon_h\lesssim h^2.
+\]
+Its regularised adjoint-difference cloud needs \(h^{-2}\) volume and
+\(h^{-7/2}\) descendant cells. A band-resolved solenoidal kinematic model
+shows that the available adjoint energy ledgers still permit arbitrarily
+many effective-polar time flips; it is not a PDE construction.
+
+For the actual charged laws, retaining the scaled time second moment gives
+\[
+\nu_h^{\rm hi}(A)^2
+\lesssim
+\left(\int_A s^2\,ds\right)\eta_h(A).
+\]
+Thus every limiting high-coefficient pressure density satisfies
+\(g_{\rm hi}/s\in L^2\), coupled to an absolutely continuous part of the
+high-frequency energy-time law, and its terminal-edge mass is
+\(O(\delta^{3/2})\). The finite-band law satisfies
+\[
+\Gamma^{\rm fb}(A\times E\times\mathfrak M)
+\lesssim
+\left(
+|A|\int_A s^2\,ds
+\right)^{1/2}|E|^{1/6}.
+\]
+Its disintegration has \(g_{\rm fb}(s)\lesssim s\), almost-every-time
+weak-\(L^{6/5}\) spatial slices of norm at most \(Cs\), terminal-edge mass
+\(O(\delta^2)\), and positive alignment on a positive-measure time set.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-temporal-disintegration-2026-07-24.md)
+accepted the complete chain and weighted-time sharpening.
+
+Canonical first hitting sharpens the finite-band child again. Stopping at
+the first fixed regularised \(L^1\)-mass gain bounds the whole preceding
+polar volume, and the finite-band capture estimate follows measurable
+moving descendant grids. Positive polar work then forces enough local
+polar \(L^2\) mass that
+\[
+\varepsilon_h\lesssim h^9.
+\]
+At the same pressure-selected roots the complete adjoint is zero after
+\(h^2\) normalisation in local \(L^2\), in probability, while its
+effective polar retains positive alignment. Thus the naive nonzero
+quadratic-scale Oseen profile is closed: this is a vacuum polarisation,
+not continuity of the polar graph at a nonzero state.
+
+Writing \(\theta_h=\varepsilon_h/h^9\), every subsequence now has the exact
+fork
+\[
+\liminf\theta_h>0
+\quad\hbox{or}\quad
+\theta_h\to0.
+\]
+The first branch has pressure-probability tightness of a linear-growth
+modular for the amplitude-normalised adjoint, but not amplitude
+compactness. The second is a strict sub-\(h^9\) amplitude cascade with no
+known finite charge. A source-volume kinematic carrier saturates every
+new power, so the exponent cannot be improved from the present ledgers
+alone.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-polar-vacuum-2026-07-24.md)
+accepted the complete conditional finite-band chain after the recorded
+measurability, detector-core, and sharpness repairs.
+
+The norm-gated balanced path now has genuine bulk temporal compactness.
+Rejecting the direct and exterior \(L^1\)-norm children bounds the full
+adjoint-pressure packet. First hitting therefore also bounds total Kato
+dissipation. Under \(\varepsilon_h\asymp h^9\), the rooted modular, Kato,
+and full-pressure actions each cost \(h^{21/2}\) per descendant cell,
+exactly cancelling the \(h^{-21/2}\) source-cell count in the pressure
+capture law. Their bad-action probabilities are \(O(L^{-1/6})\).
+
+The transformed polar equation has
+\[
+|\nabla\mathsf Z|^2\le\mathcal K_\Phi(A),
+\qquad
+|D^3\Phi(A)[v,v]|
+\le4\,v\cdot D^2\Phi(A)v.
+\]
+It bounds \(\partial_s\mathsf Z\) locally in
+\(L^1_sW^{-1,6/5}_y\). Aubin--Lions therefore makes the pushed-forward
+polar-profile laws tight on strong full-time, local-in-space \(L^2\);
+their bulk time translations vanish in pressure probability. This is
+tightness of laws, not convergence on a common probability space.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-balanced-polar-2026-07-24.md)
+accepted the theorem after restricting it to the norm-gated path and
+separating strong profile topology from amplitude convergence.
+
+A further amplitude resolution now prevents the signed charge from
+escaping entirely to infinite relative amplitude. For
+\[
+\zeta_h^{(L)}
+=
+\frac{a_h}{\sqrt{|a_h|^2+(L\varepsilon_h)^2}},
+\]
+first-hitting mass gives an \(L^{-1}\) gain in spatial polar \(L^2\).
+Bernstein balls cost \(\alpha^5K^{-3}\) per active descendant cell.
+Moving-grid capture and \(\alpha=L^{-1/11}\) therefore give
+\[
+\left|\int\zeta_h^{(L)}\cdot H_h\right|
+\le CL^{-1/11}.
+\]
+Subtracting one fixed sufficiently softened polar and applying fixed
+small- and large-relative-amplitude cutoffs produces a smooth compactly
+supported weighted observable \(W_h\) with
+\[
+-\int W_h\cdot H_h\ge p_{\rm pol}/2.
+\]
+It is a fixed smooth map of the compact polar. Thus infinite-amplitude
+concentration is not the sole carrier of the positive mark in the net
+signed, vague-amplitude sense.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-amplitude-window-2026-07-24.md)
+accepted the exponent chain after correcting the support notation and
+making the signed-observable semantics explicit. No decay of absolute
+large-amplitude pressure mass or positivity of a raw
+indicator-truncated polar is claimed.
+
+Linear-growth modular control can still permit uncharged amplitude
+concentration in the full Oseen products. Compactness alone also permits
+an abstract moving-time bump with a nonzero self-weighted trace.
+
+The finite-band annulus and moving capture now rule out the pure
+zero-profile version of that bump. For every
+\(F\subset(0,h)\times B_{BR}\), a reproducing-kernel density split gives
+\[
+\int_F|H_h|
+\lesssim
+\min\left\{
+1,
+\left(\frac{|F|}{hR^3}\right)^{1/7}
+\right\}.
+\]
+The thresholded positive \(W_h\)-alignment consequently obeys
+\[
+|E_h|\gtrsim hR^3\asymp h^{-8},
+\]
+matching the first-hitting upper scale. A fixed positive fraction of
+pressure roots sees a compact-window profile bounded away from zero in
+strong full-time, local-in-space \(L^2\), and every limiting
+window-profile law retains that nonzero fraction.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-trace-participation-2026-07-24.md)
+accepted the theorem after the full-time-topology repair. The withdrawn
+\(h^7\)-duty moving-tube model violates moving capture by the factor
+\(h^{-7/6}\).
+
+The subsequent product-law theorem roots profiles uniformly in the source
+ball and adjoins independent full-layer time. The base laws are exactly
+\(ds\otimes\rho_h\), while every limiting pushed-forward finite-band
+pressure has
+\[
+d\boldsymbol\nu
+=
+\boldsymbol f\,ds\,d\rho,
+\qquad
+\boldsymbol f\in L^{7/6,\infty}(ds\,d\rho).
+\]
+Exact spatial reproduction and temporal mollification retain the complete
+compact-window mark as a strictly positive product-law pairing.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-product-trace-2026-07-24.md)
+accepted the theorem after the Polish-space and vector-total-variation
+repairs.
+
+That complete finite-band chain remains valid as a conditional analysis of
+a source-localised payer. A later reviewed theorem now reaches back to its
+antecedent and eliminates it. Split the already inverse-cubic-cut
+coefficient \(c_h=b_h^{\rm in}\) once more at
+\(L=h^{-\alpha}\). Centre-uniform local energy and CLMS give
+\[
+P_{\rm near}
+\lesssim
+h^{3/2}L^{1/2}+h^2L^{-1/2},
+\]
+while a Bogovskii exterior correction, the reviewed remainder tail, and
+\(\int_0^h\|\nabla c_h\|_2^2\lesssim h^{-3}\) give
+\[
+P_{\rm far}
+\lesssim
+h^{1/4}L^{-1/2}+h^{-1/4}L^{-15/2}.
+\]
+Every term vanishes when \(1/30<\alpha<3\). At
+\(\alpha=1/10\), the four powers are
+\[
+\frac{29}{20},\qquad
+\frac{41}{20},\qquad
+\frac3{10},\qquad
+\frac12.
+\]
+This contradicts the fixed source-localised pressure floor.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-intermediate-localization-2026-07-24.md)
+confirmed the cutoff geometry, exterior solenoidal replacement, exponent
+interval, and exhaustive conclusion.
+
+Therefore the source-localised feedback payer is empty. Every later
+frequency, dust, polar, amplitude-window, participation, and product-law
+descendant above remains a correct conditional theorem, but its antecedent
+is empty within this reviewed branch tree. Unwindowed Oseen-product closure
+is no longer a live requirement on that branch. Every selected zero-data
+feedback sequence instead satisfies
+\[
+D_b(h)\ge h^{-3}\exp(c_{\rm sh}h^{-7/4}).
+\]
+The exact surviving feedback question is whether same-trajectory clock or
+genealogy geometry can prevent the physical zoom from outrunning this
+stretched-exponential lower bound, or convert it into a finite
+physical-history charge. This is a genuine possibility-node closure, not
+an exclusion of feedback itself or a Clay conclusion.
+
+A reviewed scalar ledger-realisation theorem now closes the simplest
+version of that history hope. For any \(a>1\), the choices
+\[
+\begin{aligned}
+D_j&=h_j^{-3}e^{ch_j^{-7/4}},&
+\sigma_j&=h_j^3e^{-ach_j^{-7/4}},\\
+\rho_j&=e^{-(a-1)ch_j^{-7/4}},&
+|I_j|&=h_j^7e^{-2ach_j^{-7/4}}
+\end{aligned}
+\]
+obey every exact scale and clock identity. One nonnegative
+\(e\in L^1\) can realise all nested terminal masses
+\[
+\int_0^{|I_j|}e(s)\,ds=\rho_j=\sigma_jD_j.
+\]
+The fresh increments telescope to one finite total even though every
+cumulative packet has scale-critical normalisation one. Thus finite raw
+dissipation, absolute continuity, terminal nesting, and the physical scale
+map cannot by themselves exclude the accelerated zoom.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-stretched-history-2026-07-24.md)
+confirmed the infinite interpolation, little-\(o\) relation, scale
+identities, and exact non-PDE scope.
+
+The causal interaction alternative is now quantitatively sharper.  Write
+\[
+u_0=q,\qquad u_m=T_b^mq,
+\qquad
+(T_bz)(t)=\int_0^t
+e^{\nu(t-s)\Delta}\mathbb P\operatorname{div}(z\otimes b)(s)\,ds.
+\]
+The independently reviewed
+[interaction-depth theorem](dossier/experiments/adjoint-pressure-divergent-interaction-depth.md)
+proves
+\[
+A_m=\frac74-\frac32\,3^{-m},\qquad
+B_m=\frac54-\frac12\,3^{-m},\qquad
+\beta_m=\frac{11}{2}-3^{-(m-1)},
+\]
+propagates the strong exterior Stokes tail through every order, and
+bounds all order-\(m\) constants exponentially.  The two nested radius
+losses give the exact threshold \(R\ge C_\nu4^m\).  Optimising the
+intermediate split at \(L=h^{-1/4}\) yields
+\[
+\int_0^h\|\mathcal T(u_m,b)\|_1\,dt
+\le C\Lambda^mh^{11/8}.
+\]
+Hence, for one \(c_{\rm dep}>0\),
+\[
+N(h)=\left\lfloor c_{\rm dep}\log\frac1h\right\rfloor,
+\qquad
+R_{N(h)+1}=r-\sum_{m=1}^{N(h)}u_m=T_b^{N(h)}r
+\]
+retains at least half the fixed pressure floor, while the removed
+pressure is \(O(h^{33/32})\).  Independent review caught and repaired an
+initial \(2^m\) versus \(4^m\) radius error, then accepted the corrected
+constant ledger and logarithmic-depth conclusion.
+
+Thus every bounded-depth payer, and indeed every payer of depth below
+\(c_{\rm dep}\log(1/h)\), is excluded.  The live causal gate is stronger:
+prove a summable or quasi-nilpotent critical Oseen time-ordering law, or
+another genuinely PDE mechanism excluding pressure that persists beyond
+logarithmically divergent interaction depth.  The parallel history inputs
+remain a PDE zoom--history relation, a non-reusable signed/vector charge,
+or actual next-event ancestry.
+
+The norm-only version of that causal gate is now closed.  The independently
+reviewed
+[critical Oseen--Volterra audit](dossier/experiments/adjoint-pressure-critical-volterra.md)
+has two exact sides.  The positive scale-critical scalar operator
+\[
+(\mathsf H_\gamma f)(t)
+=B(\gamma,1-\gamma)^{-1}
+\int_0^t(t-s)^{\gamma-1}s^{-\gamma}f(s)\,ds
+\]
+obeys \(\mathsf H_\gamma^m1=1\) at every depth and is not
+quasi-nilpotent, while every positive time-power perturbation has
+\(C^m/(m!)^\gamma\) decay.  On the PDE side,
+\(\nabla b\in L^{2+\delta}_{x,t}\) gives the exact same-space Oseen
+margin
+\[
+\varepsilon_{\rm O}
+=\frac{2\delta-1}{2(2+\delta)}.
+\]
+Barker's published proof constructs
+\[
+\delta_B
+=\frac{C_{5,\rm univ}}{4M+2C_{5,\rm univ}}<\frac12,
+\qquad
+\varepsilon_{\rm O}(\delta_B)
+=-\frac{2M}{8M+5C_{5,\rm univ}}<0.
+\]
+Weak-\(L^3\) interpolation stays super-Serrin, and a changing
+Lebesgue-exponent staircase only adds a bounded telescoping endpoint
+correction to the negative linear depth term.  At \(\delta=1/2\), the
+generated pair is already
+\(L^{5/2}_tL^{15}_x\), exactly on the Prodi--Serrin regularity line.
+Thus reaching the missing half exponent would itself be a major
+regularity theorem.  The remaining causal gate must instead exploit
+Oseen-specific solenoidal/tensor or pressure cancellation, actual
+same-trajectory ancestry, or comparably strong PDE structure.  The
+scalar model is not an Oseen or Navier--Stokes counterexample.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2579,27 +2884,412 @@ Next deliverable:
 > alternative now has a reviewed direct-response versus feedback split.
 > The direct branch has coefficient dissipation at least inverse-\(15/4\),
 > strict depth \(\sigma_j=o(h_j^{15/4})\), and ancestor clock
-> \(h_j^{17/2}\). In the feedback branch, ordinary polynomial
-> dissipation forces a fixed pressure-source fraction inside the physical
-> interaction scale
-> \(\lambda_j=\sigma_jh_j^{-3}\); exterior payment instead forces
-> \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\). On the local branch, exact
-> pressure factorisation now forces inner local-energy saturation
-> \(D_{\rm in}(h_j)\asymp h_j^{-3}\) and a positive-clock descendant at
-> \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\). A single centred profile has
-> been excluded: either a fixed \(h_j^{-3}\) localised-coefficient energy
-> fraction remains above the descendant frequency, or finite-band
-> pressure requires \(h_j^{-21/2}\) descendant cells. The Kato-polar
-> stopping identity now gives a signed event-normalised law for both
-> objects. It retains positive causal alignment; in the finite-band branch
-> its source-scale marginal is diffuse weak \(L^{6/5}\), and its effective
-> polar decoration is spatially compact at descendant scale. Prove
-> temporal or same-trajectory coherence strong enough to turn that
-> alignment into a bounded telescope, finite critical budget, or limiting
-> Oseen rigidity. Separately exclude the
-> stretched-exponential branch using one-trajectory history. The actual
-> dissipation scale \(\rho_j=\sigma_jD_b(h_j)\) lies strictly above
-> \(\lambda_j\), with clock at most \(h_j^{14}\). In parallel, prove a
+> \(h_j^{17/2}\). In the feedback branch, the reviewed intermediate
+> localisation theorem eliminates the inverse-cubic source payer:
+> splitting \(b_h^{\rm in}\) at \(L=h^{-1/10}\) makes its four pressure
+> ceilings decay with powers \(29/20\), \(41/20\), \(3/10\), and \(1/2\).
+> Hence every selected zero-data feedback sequence must obey
+> \[
+> D_b(h_j)\ge
+> h_j^{-3}\exp(c_{\rm sh}h_j^{-7/4}).
+> \]
+> The entire finite-band, Kato-polar, amplitude-window, participation,
+> and product-law chain is retained as correct conditional mathematics,
+> but its source-localised antecedent is empty and it is not a live route
+> to an Oseen profile. The surviving feedback task is now solely
+> same-trajectory history: either prevent \(\sigma_j\) from shrinking
+> faster than the reciprocal stretched exponential, or turn the
+> dissipation scale
+> \(\rho_j=\sigma_jD_b(h_j)\) and its clock
+> \[
+> \frac{|I_j|}{\rho_j^2}
+> \le
+> h_j^7\exp(-2c_{\rm sh}h_j^{-7/4})
+> \]
+> into a finite charge which cannot recur at every event. The reviewed
+> stretched-history ledger proves that finite raw dissipation, absolute
+> continuity, nested terminal intervals, and these scale identities still
+> permit \(\sigma_j\) to outrun the reciprocal exponential: one
+> nonnegative \(L^1\) history can realise every cumulative packet while
+> its fresh increments telescope. Therefore the missing charge must use
+> a PDE coupling, a non-reusable signed/vector increment, actual
+> next-event ancestry, or improve the now-reviewed causal ledger.  For
+> \(u_m=T_b^mq\), the first
+> \[
+> N(h)=\left\lfloor c_{\rm dep}\log\frac1h\right\rfloor
+> \]
+> iterates have total pressure \(O(h^{33/32})\), and the exact remainder
+> \(T_b^{N(h)}r\) retains the packet.  The live interaction problem is
+> an Oseen-specific summability or quasi-nilpotence law beyond this
+> logarithmic depth, not a fixed later iterate: a reviewed critical
+> scalar causal majorant retains spectral radius one, Barker's current
+> higher-integrability gain leaves a strictly negative Oseen time
+> margin, interpolation remains super-Serrin, and a Lebesgue-exponent
+> staircase telescopes.  The first abstract solenoidal-pressure test is
+> now closed too.  Writing \(A_b=PB_bP\) and \(C_b=QB_bP\), \(A_b\) is
+> skew and \(C_b\) is exactly the discarded pressure component, but
+> \(-PB_b^2P=A_b^*A_b+C_b^*C_b\) is not an interaction-depth telescope.
+> A reviewed critical skew-compression model has unit residual pressure
+> at every depth despite real-coupling energy stability.  A unitary-step
+> telescope controls only squared leakage; in the exact small-step limit
+> the linear leakage tends to two while the squared defect tends to zero.
+> Its independently reviewed exact monomial refinement takes
+> \(r_\eta(t)=t^\eta e_1\) and rescales the skew block by the reciprocal
+> Hardy eigenvalue; \(\eta=1\) gives a genuine linear zero right trace
+> with the same nondecay.  The first actual heat-linked spatial block is
+> now closed: the reviewed frequency-colligation theorem gives every
+> repeatedly re-filtered parabolic annulus a factorial \(L^1\)
+> pressure-depth tail, and this still vanishes at
+> \(N(h)\asymp\log(1/h)\) after any fixed polynomial input loss.
+> The multiscale positive-majorant test is now closed too.  The reviewed
+> dyadic Zeno path has cross-band transition mass \(R/S\): every upward
+> step loses \(1/2\), but the heat clocks have total mean \(1/3\), and
+> one terminal low-band Hodge observation gains the reciprocal \(2^m\).
+> Its finite-horizon pressure retains a depth-uniform positive floor at
+> every fixed algebraic strong zero-trace order.  The matching packet
+> ledger has bounded weak-\(L^3\) charge and finite energy and
+> dissipation.  Exact finite-depth complex Fourier modes realise the
+> selected divergence-free Leray blocks and terminal Hodge return, so
+> elementary polarisation compatibility does not exclude the path.
+> They are global torus modes, not one uniformly weak-\(L^3\), spatially
+> localised \(\mathbb R^3\) drift, and do not control the full
+> cross-interaction sum or solve Oseen/Navier--Stokes.  The first
+> genuinely same-trajectory multiscale estimate is now reviewed.  The
+> complete high--high state tail above \(L\), returned to pressure below
+> \(S\), is at most
+> \[
+> C\frac SL\sqrt T\,
+> \|z\|_{L^\infty_tL^2_x}D_{b,>L}^{1/2}.
+> \]
+> Exact adjoint energy therefore makes an order-one terminal return cost
+> \(D_{b,>L}\gtrsim L^2\) on a fixed unit window, and the terminal
+> remainder costs \(L^2h^{-3}\).  Under physical pullback the charge is
+> \(\sigma L^2h^{-3}\), with normalised band \(R\) corresponding to
+> physical frequency \(R/\sigma\).  This closes the scalar reciprocal
+> terminal gain for fixed finite dissipation.  Global physical
+> high-frequency dissipation tails vanish, so the terminal branch must
+> satisfy
+> \[
+> \sigma_jL_j^2h_j^{-3}\to0.
+> \]
+> With
+> \(L_j=2^{\lfloor c_{\rm dep}\log(1/h_j)\rfloor}\), this is the explicit
+> ancestry ceiling
+> \[
+> \sigma_j=o\!\left(h_j^{3+2c_{\rm dep}\log2}\right).
+> \]
+> Successive tails remain nested and can reuse finer dissipation.
+> The reviewed exact ancestry-survivor theorem now shows that the bare
+> coupling is still insufficient.  With \(x=h^{-7/4}\), it selects the
+> next event so that
+> \[
+> \sigma_{j+1}=\sigma_j/L_j,
+> \qquad
+> L_j/\sigma_j=1/\sigma_{j+1},
+> \]
+> while one finite scalar time--frequency history pays the full
+> \(A\sigma_jL_j^2h_j^{-3}\) tail charge above
+> \(1/\sigma_{j+1}\) at every event.  Both that charge and its fraction
+> of total physical dissipation vanish.  The current
+> \(L(h)\asymp h^{-c_{\rm dep}\log2}\) is only polynomial, whereas the
+> order-one-charge threshold is
+> \[
+> L_{\rm kill}=h^{3/2}/\sqrt{\sigma}
+> =e^{ac h^{-7/4}/2}.
+> \]
+> Under exact ancestry, \(q_j=x_{j+1}/x_j=3/2\) already leaves fixed
+> positive charge; the survivor has \(q_j\to1\).  Therefore contradict
+> the ceiling with a PDE top-frequency law approaching
+> \(L_{\rm kill}\), an inter-event inequality violating the exact
+> \(q_j\)-continuity condition, or a quantitatively non-reusable
+> signed/vector tail.
+>
+> The independently reviewed spatial--frequency amplification theorem
+> now sharpens the high-tail child.  For fixed output band \(S\), a
+> fixed low-pressure fraction carried by state frequencies above
+> \(F(h)\to\infty\) forces
+> \[
+> D_b(h)
+> \ge
+> h^{-3}
+> \exp\!\left(c\frac{F(h)}S h^{-7/4}\right).
+> \]
+> Hence \(F=h^{-\beta}\) raises the stretched exponent from \(7/4\) to
+> \(7/4+\beta\), and the hypothetical dyadic causal top gives
+> \(7/4+c_{\rm dep}\log2\).  On one physical trajectory this requires
+> \[
+> \sigma_h
+> =
+> o\!\left[
+> h^3
+> \exp\!\left(-c\frac{F(h)}S h^{-7/4}\right)
+> \right].
+> \]
+> The theorem does not infer its high-state pressure floor from the
+> complete feedback floor or from causal depth.  The next exact task is
+> therefore an exhaustive frequency-itinerary decomposition: force
+> terminal high-state participation, or charge paths which visited high
+> frequency but returned below \(F\) before the terminal observation.
+>
+> The independently reviewed amplified-ancestry survivor now closes the
+> proposal that this stronger exponent becomes contradictory after bare
+> next-event identification.  For \(F=h^{-\beta}\), put
+> \[
+> y=h^{-(7/4+\beta)},\quad
+> D=h^{-3}e^{cy},\quad
+> \sigma=h^3e^{-acy},\quad a>1.
+> \]
+> The event sequence can be chosen exactly so that
+> \[
+> \sigma_{j+1}=\sigma_j/F_j,
+> \qquad
+> F_j/\sigma_j=1/\sigma_{j+1},
+> \]
+> while one finite nonnegative time--frequency history pays both the
+> total amplified cost and the complete quadratic high-frequency tail
+> toll.  The total physical mass and the tail fraction still vanish,
+> and the polynomial \(F\) remains stretched-exponentially below
+> \(F_{\rm kill}=e^{acy/2}\).  Thus no further exponent bootstrap from
+> spatial frequency plus bare ancestry can close the branch: the next
+> theorem must force terminal high-state participation, charge the
+> complementary returned-low histories, prevent the accelerated
+> physical zoom, or extract a non-reusable signed/vector increment.
+>
+> The independently reviewed one-return theorem now charges the first
+> genuine returned-low component.  If the state tail above \(64F\)
+> makes one heat--Leray Oseen interaction into the annulus \(F\) and
+> that state immediately produces pressure below fixed \(S\), then
+> \[
+> \mathfrak R^{(1)}_{S,F}(h)
+> \lesssim
+> M\frac SF\min\{1,F^2h\}
+> \left\{
+> 1+h^{7/4}
+> [1+\log_+(D_b(h)h^3)]+o(1)
+> \right\}.
+> \]
+> A fixed one-return pressure fraction with \(F=h^{-\beta}\) therefore
+> forces
+> \[
+> D_b(h)\ge
+> h^{-3}\exp\!\left(c h^{-\gamma_1(\beta)}\right),
+> \qquad
+> \gamma_1(\beta)
+> =\frac94+\left|\beta-\frac12\right|
+> \ge\frac94.
+> \]
+> Thus one separated return cannot evade amplification.  Any remaining
+> returned-low itinerary must make another state interaction after the
+> return or descend through several comparable bands without one
+> separated final downcrossing.  The independently reviewed
+> multistage-path theorem now controls any one prescribed continuation
+> \(R_0\to\cdots\to R_m\to S\):
+> \[
+> \mathfrak R_{\boldsymbol R}(h)
+> \lesssim
+> A^{m+1}\frac S{R_0}
+> \mathbb P(X_0+\cdots+X_m\le h)
+> \mathcal B(h,R_0).
+> \]
+> The intermediate scale ratios telescope exactly.  Fixed depth
+> retains the one-return exponent, while a dyadic descent with \(n\)
+> slow clocks has ceiling \(2^{-n(n-1)}/n!\), beating every fixed
+> interaction constant at logarithmic depth.  No individual path can
+> hide the inverse initial-frequency loss in intermediate ratios.
+>
+> The independently reviewed full-corridor theorem now also sums the
+> aggregate.  For an initial return at \(F\) and any ceiling \(U\),
+> every finite path with \(R_j\le U\), including arbitrary jumps and
+> arbitrary depth, has absolutely summable recombined pressure:
+> \[
+> \int_0^h\|\mathcal P^{\rm corr}_{S,F}\|_1\,dt
+> \lesssim
+> \frac SF
+> L_F\frac{e^{AH_U}-1}{H_U}
+> \mathcal B(h,F),
+> \quad
+> L_F=c\nu F^2h,\quad
+> H_U=h\sum_{Q\le U}c\nu Q^2.
+> \]
+> The countably infinite lower-band entropy is harmless because the
+> dyadic heat-rate sum is geometric.  For \(F=h^{-\beta}\),
+> \(0<\beta\le1/2\), all paths below a parabolic ceiling are summable,
+> and a fixed aggregate floor forces exponent
+> \(11/4-\beta\ge9/4\).
+>
+> The independently reviewed smooth-layer identification theorem now
+> closes the qualitative LP--Dyson topology gap for this
+> separated-return block.  Fractional Volterra time ordering converges
+> in \(C_tL^2_x\), the pressure of the truncated mild continuation is
+> exactly the corridor series, and summing every separated starting
+> band below a parabolic ceiling still gives only
+> \[
+> C_\kappa Sh^{1/2}\mathcal B_0(h)
+> +C_\kappa(S/F_*)h^7.
+> \]
+> A fixed floor therefore forces
+> \(D_b(h)\ge h^{-3}e^{c h^{-9/4}}\).
+>
+> The independently reviewed last-separated-return renewal theorem now
+> removes the participation antecedent.  On a fixed smooth layer,
+> split \(T_b=\mathsf A_b+\mathsf B_b\), where \(\mathsf B_b\)
+> contains exactly the chargeable separated downcross filters.  Then
+> \[
+> r
+> =
+> (I-\mathsf A_b)^{-1}g
+> +(I-\mathsf A_b)^{-1}\mathsf B_br.
+> \]
+> The first term contains the feedback words with no chargeable return
+> after \(g=T_bq\); the second contains every other word once, grouped
+> by its last return.  A complete feedback pressure floor puts at least
+> half its pressure in one term.  The last-return term always has a
+> finite layerwise capture ceiling.  Therefore the exhaustive
+> collapsing-sequence alternatives are now a fixed
+> no-chargeable-feedback-return pressure floor, superparabolic
+> LP--Dyson capture escape, or
+> \[
+> D_b(h)\ge h^{-3}e^{c h^{-9/4}}.
+> \]
+>
+> The independently reviewed no-return parabolic-exclusion theorem now
+> controls the complementary block.  The reviewed direct source obeys
+> \(\|q(t)\|_{L^{3/2,1}}\lesssim t^{3/4}\).  Its band-\(F\) first
+> feedback source has a normalised \(F\)-heat clock and an \(F^{-1}\)
+> prefactor.  Every later complementary frequency ratio telescopes
+> against the final low-pressure factor, and summing the starting band
+> together with every later band below \(U\) gives
+> \[
+> \|\mathscr P_{S,b}r_{{\rm no},U}\|_1
+> \le
+> CSh^{7/4}(e^{A_{\rm no}H_U}-1).
+> \]
+> It vanishes for \(U\lesssim h^{-1/2}\).  Hence a fixed no-return
+> pressure floor also forces superparabolic capture.  The complete live
+> frequency dichotomy is now superparabolic LP--Dyson capture escape
+> of a pressure-bearing renewal block, or
+> \[
+> D_b(h)\ge h^{-3}e^{c h^{-9/4}}.
+> \]
+>
+> The independently reviewed parabolic coefficient-tail theorem now
+> converts the complete selected feedback pressure floor directly into
+> a same-trajectory physical charge.  At
+> \(V=\kappa h^{-1/2}\), the exact last-high-coefficient comparison
+> gives
+> \[
+> D_{b,>V}^{\chi}(h)
+> \ge c_{p_0}e^{-2A\kappa^2}h^{-3}.
+> \]
+> Choosing
+> \(\kappa^2=(\varepsilon/(2A))\log(1/h)\) reaches the genuinely
+> superparabolic cutoff
+> \(V\asymp h^{-1/2}\sqrt{\log(1/h)}\) with tail
+> \(D_{b,>V}^{\chi}\gtrsim_\varepsilon h^{-3+\varepsilon}\).
+> Exact pullback places this payment in the actual common physical
+> coefficient.  The frequency-identification gap is closed.
+>
+> The independently reviewed parabolic tail-ancestry theorem now
+> resolves bare next-event coupling.  If a fixed-parabolic cutoff
+> reaches the reciprocal next event scale, physical tail continuity
+> forces
+> \[
+> \frac{\sigma_j^7}{\sigma_{j+1}^6}\to0,
+> \qquad
+> \limsup
+> \frac{\log(1/\sigma_{j+1})}{\log(1/\sigma_j)}
+> \le\frac76.
+> \]
+> The \(7/6\) relative log-scale ceiling is sharp and still permits a
+> divergent empirical roof mean.  A smooth-for-positive-time
+> divergence-free finite-energy kinematic path realises terminal
+> physical-scale marks, exact cutoff matching, uniform weak \(L^3\),
+> finite enstrophy, strong terminal \(L^2\), and every nested
+> inverse-cubic tail payment by putting the mass arbitrarily far above
+> the cutoff.  It is not an NSE solution and does not realise the
+> pressure antecedent.
+>
+> The independently reviewed parabolic tail-to-flux theorem now
+> extracts the exact NSE consequence of that far placement.  After
+> converting the smooth tail to a sharp tail, every farther factor
+> \(R>1\) forces comparable-annulus dissipation, inherited entrance
+> energy above \(R\Lambda_j\), or positive signed nonlinear input into
+> \(>R\Lambda_j\), with absolute thresholds \(T_j/2\),
+> \(\nu T_j/2\), and \(\nu T_j/4\).  This is a genuine
+> same-trajectory PDE trichotomy.  An exact conservative shell ledger
+> nevertheless carries one near-lossless cumulative flux through
+> arbitrarily many boundaries, while the corresponding geometric heat
+> clocks form a Zeno sum within one event.  It is not an NSE
+> construction, but it closes ordinary high-pass balances and
+> cumulative flux positivity as sufficient.
+>
+> The subsequent independently reviewed
+> [terminal signed-flux ancestry theorem](dossier/experiments/adjoint-pressure-inherited-ancestry.md)
+> now removes inherited entrance energy and a comparable annulus as
+> terminal bookkeeping alternatives at an event-adaptive boundary.
+> A fixed-time \(H^1\) tail cannot support the entrance threshold
+> because
+> \[
+> \nu T_jK_j^2
+> \asymp R_j^2\sigma_j^{-1}h_j^{-4}\to\infty.
+> \]
+> Its last hitting therefore has positive pre-event flux and approaches
+> \(T^*\).  Continuity from above of the finite sharp
+> Fourier-dissipation measure then permits \(R_j\to1\) with annular
+> cost below \(T_j/4\).  The exact high-pass identity gives, for every
+> sufficiently late event,
+> \[
+> \frac{K_j}{\Lambda_j}\to1,
+> \qquad
+> \alpha_j,\beta_j\to T^*,
+> \qquad
+> \Phi_{K_j}((\alpha_j,\beta_j))
+> \ge\frac{\nu T_j}{4}.
+> \]
+> This is a genuine same-trajectory positive theorem, but the flux is
+> still cumulative and the terminal intervals may overlap.  Therefore
+> the new exact target is event-index freshness through a quantitative
+> NSE flux decrement, frequency-locality theorem, non-Zeno
+> cascade-speed law, intervening actual event, or genuinely
+> event-index telescoping functional.  The \(9/4\) cost branch still
+> feeds the already isolated clock/zoom problem.
+>
+> The independently reviewed
+> [spectral primal--adjoint pairing audit](dossier/experiments/adjoint-pressure-spectral-pairing.md)
+> now closes the bare \(L^2\) telescope candidate.  Componentwise
+> Fourier frequency localisation produces an exact signed
+> transport-commutator identity, and its nested shell increments
+> telescope perfectly.  Yet the pressure contribution pairs to zero
+> against the divergence-free projected fields at every shell; the
+> projected pressure gradient itself can remain nonzero.  Exact
+> periodic same-trajectory Beltrami examples exhibit both an
+> above-input spectral gap and a high--high-to-fixed-low pressure
+> return with identically zero localised pairing.  The fixed-low family
+> lacks a uniform frequency-index energy/dissipation budget and is not
+> a Clay trajectory.  Therefore do not return to the unaugmented
+> spectral primal--adjoint pairing.  The live functional must retain a
+> pressure-visible \(L^1\)-polar term, spatial pressure boundary flux,
+> controlled divergence defect, or direct ancestry coupling.  A
+> genuinely mixed functional is not excluded.
+>
+> The independently reviewed
+> [spatial primal--adjoint cutoff-flux audit](dossier/experiments/adjoint-pressure-spatial-pairing.md)
+> closes the bare spatial-current candidate too.  The conservation law
+> itself was already recorded.  Its new exact Beltrami audit shows that,
+> in the displayed pressure gauges, adjoint plus primal pressure flux
+> cancels transport pointwise and the viscous Wronskian vanishes.  In
+> every pressure gauge the current divergence and every fixed-cutoff
+> flux remain zero while the adjoint-pressure history is positive.  The
+> high--high-to-fixed-low family has the same cancellation but no uniform
+> frequency-index energy/dissipation budget.  Do not return to the
+> unseparated spatial current.  Isolate the pressure-polar or pressure
+> component and prove cancellation control, use a canonically gauge-fixed
+> current norm, retain a summable divergence defect, or bypass pressure
+> by direct same-trajectory ancestry.
+> Do not return to trace order,
+> another abstract skew model, freely normalised Fourier backtracking, or
+> another positive-norm majorant. In parallel,
+> compactify or exclude the inverse-\(15/4\) direct ancestor and prove a
 > finite-secondary-index/vector-valued estimate for the alternative
 > pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
 > uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so

@@ -753,5 +753,9 @@ stretched-exponential branch, event-index summation, rough endpoint
 adjoint, ancient Liouville theorem, regularity theorem, breakdown
 theorem, or Clay alternative A--D is asserted.
 
-The source-localised branch is sharpened by the reviewed
-[non-collapsing frequency descendant](adjoint-pressure-feedback-frequency.md).
+The source-localised branch was subsequently sharpened by the reviewed
+[non-collapsing frequency descendant](adjoint-pressure-feedback-frequency.md)
+and its conditional successors. The later reviewed
+[intermediate-localisation theorem](adjoint-pressure-intermediate-localization.md)
+then eliminates that branch at its root. Item 2 above is therefore the
+only live feedback alternative within this reviewed branch tree.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "sources": [
     {
       "id": "SRC-CLAY-STATUS",
@@ -79,6 +79,19 @@
       "status": "peer_reviewed",
       "last_checked": "2026-07-23",
       "notes": "Velocity L-infinity in time, L3 in space endpoint regularity."
+    },
+    {
+      "id": "SRC-SERRIN-1962",
+      "title": "On the interior regularity of weak solutions of the Navier-Stokes equations",
+      "authors": ["James Serrin"],
+      "year": 1962,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1007/BF00253344",
+      "version": "Arch. Rational Mech. Anal. 9, 187-195",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-24",
+      "notes": "Classical Prodi-Serrin mixed-norm regularity criterion. The equality-line pair p=5/2 in time and q=15 in space has 2/p+3/q=1 with q>3."
     },
     {
       "id": "SRC-CF-1993",
@@ -389,8 +402,8 @@
       "version": "Proc. Amer. Math. Soc. Ser. B 11, 436-451; matching arXiv:2111.14776v2",
       "primary": true,
       "status": "peer_reviewed",
-      "last_checked": "2026-07-23",
-      "notes": "Corollary 1 gives a positive small higher-integrability exponent for the velocity gradient near a first blow-up time under a global weak-L3 Type-I ceiling. The published abstract records the gain as 2+O(1/M). The scale-hull audit uses only that stated large-M order, not an unstated endpoint exponent."
+      "last_checked": "2026-07-24",
+      "notes": "Corollary 1 gives a positive small higher-integrability exponent for the velocity gradient near a first blow-up time under a global weak-L3 Type-I ceiling. The proof constructs delta_B=3C5/(12M+6C5)=C5/(4M+2C5), strictly below one half for every admissible sufficiently large M. The published abstract records the gain as 2+O(1/M)."
     },
     {
       "id": "SRC-SEREGIN-2021-LOCAL-WEAK-L3",

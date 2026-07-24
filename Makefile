@@ -1,7 +1,8 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet moving-band tree-budget band-increment fresh-detector frequency-energy scale-defect two-scale-sync fixed-shell-clock continuation-clock fixed-shell-local singular-clock-centering terminal-satellite-tower terminal-satellite-compactness terminal-besov-ancestry terminal-outer-profile terminal-distance-profile terminal-satellite-packing terminal-cluster-packing terminal-logscale-survivor scale-hull-balance parabolic-scale-hull defect-event-suspension adjoint-pressure-history adjoint-pressure-packets adjoint-pressure-initial-layer adjoint-pressure-bandlimit adjoint-pressure-enstrophy adjoint-pressure-cubic adjoint-pressure-direct adjoint-pressure-feedback adjoint-pressure-feedback-shells adjoint-pressure-feedback-frequency adjoint-pressure-feedback-dust defect-event-hull strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet moving-band tree-budget band-increment fresh-detector frequency-energy scale-defect two-scale-sync fixed-shell-clock continuation-clock fixed-shell-local singular-clock-centering terminal-satellite-tower terminal-satellite-compactness terminal-besov-ancestry terminal-outer-profile terminal-distance-profile terminal-satellite-packing terminal-cluster-packing terminal-logscale-survivor scale-hull-balance parabolic-scale-hull defect-event-suspension adjoint-pressure-history adjoint-pressure-packets adjoint-pressure-initial-layer adjoint-pressure-bandlimit adjoint-pressure-enstrophy adjoint-pressure-cubic adjoint-pressure-direct adjoint-pressure-feedback adjoint-pressure-feedback-shells adjoint-pressure-feedback-frequency adjoint-pressure-feedback-dust adjoint-pressure-temporal adjoint-pressure-polar-vacuum adjoint-pressure-balanced-polar adjoint-pressure-amplitude-window adjoint-pressure-trace-participation adjoint-pressure-product-trace adjoint-pressure-intermediate-localization adjoint-pressure-stretched-history adjoint-pressure-second-interaction adjoint-pressure-interaction-depth adjoint-pressure-critical-volterra adjoint-pressure-skew-compression adjoint-pressure-frequency-colligation adjoint-pressure-frequency-zeno defect-event-hull strain fetch-2607 compile-2607
+.PHONY: adjoint-pressure-terminal-return adjoint-pressure-ancestry-survivor adjoint-pressure-spatial-frequency adjoint-pressure-amplified-ancestry adjoint-pressure-one-return adjoint-pressure-multistage-path adjoint-pressure-corridor-sum adjoint-pressure-corridor-identification adjoint-pressure-last-return adjoint-pressure-no-return adjoint-pressure-parabolic-coefficient-tail adjoint-pressure-parabolic-ancestry adjoint-pressure-parabolic-flux adjoint-pressure-inherited-ancestry adjoint-pressure-spectral-pairing adjoint-pressure-spatial-pairing
 
 check: records links markup test
 
@@ -220,6 +221,96 @@ adjoint-pressure-feedback-frequency:
 
 adjoint-pressure-feedback-dust:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_feedback_dust
+
+adjoint-pressure-temporal:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_temporal
+
+adjoint-pressure-polar-vacuum:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_polar_vacuum
+
+adjoint-pressure-balanced-polar:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_balanced_polar
+
+adjoint-pressure-amplitude-window:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_amplitude_window
+
+adjoint-pressure-trace-participation:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_trace_participation
+
+adjoint-pressure-product-trace:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_product_trace
+
+adjoint-pressure-intermediate-localization:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_intermediate_localization
+
+adjoint-pressure-stretched-history:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_stretched_history
+
+adjoint-pressure-second-interaction:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_second_interaction
+
+adjoint-pressure-interaction-depth:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_interaction_depth
+
+adjoint-pressure-critical-volterra:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_critical_volterra
+
+adjoint-pressure-skew-compression:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_skew_compression
+
+adjoint-pressure-frequency-colligation:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_frequency_colligation
+
+adjoint-pressure-frequency-zeno:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_frequency_zeno
+
+adjoint-pressure-terminal-return:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_terminal_return
+
+adjoint-pressure-ancestry-survivor:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_ancestry_survivor
+
+adjoint-pressure-spatial-frequency:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_spatial_frequency
+
+adjoint-pressure-amplified-ancestry:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_amplified_ancestry
+
+adjoint-pressure-one-return:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_one_return
+
+adjoint-pressure-multistage-path:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_multistage_path
+
+adjoint-pressure-corridor-sum:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_corridor_sum
+
+adjoint-pressure-corridor-identification:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_corridor_identification
+
+adjoint-pressure-last-return:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_last_return
+
+adjoint-pressure-no-return:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_no_return
+
+adjoint-pressure-parabolic-coefficient-tail:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_parabolic_coefficient_tail
+
+adjoint-pressure-parabolic-ancestry:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_parabolic_ancestry
+
+adjoint-pressure-parabolic-flux:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_parabolic_flux
+
+adjoint-pressure-inherited-ancestry:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_inherited_ancestry
+
+adjoint-pressure-spectral-pairing:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_spectral_pairing
+
+adjoint-pressure-spatial-pairing:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_spatial_pairing
 
 defect-event-hull: defect-event-suspension
 

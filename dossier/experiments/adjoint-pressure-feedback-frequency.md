@@ -9,6 +9,12 @@
 - **Input:** independently reviewed
   [feedback shell dichotomy](adjoint-pressure-feedback-shells.md)
 
+> **Successor boundary.** The later reviewed
+> [intermediate-localisation theorem](adjoint-pressure-intermediate-localization.md)
+> eliminates the source-localised antecedent used below. This theorem
+> and all of its descendants remain valid conditional implications, but
+> this child is empty within the reviewed feedback branch tree.
+
 The preceding theorem leaves two possibilities on the drift-feedback
 branch:
 
