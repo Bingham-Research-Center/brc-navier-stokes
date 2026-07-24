@@ -27,5 +27,12 @@ another link only to discharge the live obligation.
 - Preserve source versions/anchors. Keep source and PDF caches ignored.
 - Put superseded chronology and one-use correspondence in Git, not live
   context. Add code only for a nontrivial falsifiable finite claim.
+- Every commit batch includes a new self-contained
+  `dossier/rounds/YYYY-MM-DD-<slug>.tex` report: formal statements/proofs,
+  conjectures, robust novel findings subject to review, and open obligations.
+  Compile it into ignored `lab/cache/` before committing.
+- New commits use John’s configured identity plus
+  `Co-authored-by: Codex <codex@openai.com>`. Push `main` to the public `brc`
+  remote and verify the remote tip after every commit.
 - Progress closes an obligation or possibility node, not a prose quota.
 - Before reporting or committing: `make check` and `git diff --check`.

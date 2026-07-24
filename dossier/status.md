@@ -176,7 +176,12 @@ or the gap pays
 An exact \(q_j=4\) power ledger with bounded quantile width keeps residence,
 clock, and worst weak-\(L^3\) occupation charges summable. Persistence of an
 energy amount therefore does not yet identify a packet or make its charge
-fresh.
+fresh. The
+[frozen-band theorem](experiments/type-ii-cross-record-correlation.md)
+upgrades this to actual old-band correlation or fixed nonlinear/viscous
+replacement work. Its nonlinear clock loses \(q_j^2\), but an orthogonal
+Hilbert rotation shows that fixed works against changing event tests still
+lack a common finite budget.
 Under separate self-similar
 hypotheses, the current preprint and a favourable-viscosity repository
 adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
@@ -184,9 +189,9 @@ outgoing or axisymmetric smooth Euler profiles are excluded under the
 preprint's exact assumptions. A divergence-free kinematic path satisfies the
 listed energy and necessary vorticity ledgers in that window but is not NSE.
 
-R3C now needs a non-reuse or one-way-transfer law, a stronger record-clock or
-spatial-recentring charge, coherent-trace rigidity, and separate control of
-the divergent-normalised-energy cells.
+R3C now needs a common adjoint/square-function budget for frozen-band works,
+long-lived correlated-band accumulation, spatial recentering,
+coherent-trace rigidity, and separate control of divergent normalised energy.
 
 ### Frozen R3B boundary
 

@@ -3936,6 +3936,40 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-CROSS-RECORD-CORRELATION-001",
+      "title": "Frozen Type-II bands retain correlation or pay fixed replacement work",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001"
+      ],
+      "hypothesis": "The positive energy gap between two physical Type-II subgrid quantiles may define a frozen spectral band whose two-time correlation distinguishes retained old content from replacement work.",
+      "invariants": [
+        "The difference of the two squared Gaussian filters is a positive self-adjoint band operator",
+        "The squared norm of the band component at its creation record is exactly twice the fixed physical quantile gap",
+        "Pairing physical Navier-Stokes with the frozen band gives an exact signed identity between two-time correlation, nonlinear work, and viscous work",
+        "At the next selected record either old-band correlation remains at least half its initial value or one work term has fixed magnitude at least half the quantile gap",
+        "Correlation survival retains a fixed positive kinetic-energy amount in the actual old Gaussian band",
+        "The endpoint Lorentz estimate bounds nonlinear correlation work with two powers of the next-to-current record ratio",
+        "Nonlinear decorrelation forces a clock tau_j ell_j divided by q_j squared and the endpoint logarithm",
+        "Viscous decorrelation forces a clock tau_j ell_j squared divided by effective viscosity and the normalized terminal dissipation tail",
+        "An exact orthogonal Hilbert rotation moves one fixed energy quantum through successive bands and pays every fixed old-band work event without energy accumulation",
+        "The exact q_j=4 power ledger keeps nonlinear clocks, weak-L3 occupation, residence action, and terminal dissipation tail summable",
+        "The Hilbert rotation is not a velocity field and does not realize the Navier-Stokes quadratic nonlinearity",
+        "No common work budget, non-reuse theorem, coherent-trace rigidity, divergent-energy control, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Take the positive square root of the difference between the low- and high-quantile squared Gaussian filters, freeze the resulting band test at one record, pair it exactly with the physical Navier-Stokes equation until the next record, split correlation loss between nonlinear and viscous work, estimate the two work rates using endpoint Lorentz and terminal-dissipation bounds, and test additivity with an exact orthogonal Hilbert rotation plus the existing scalar power ledger.",
+      "certificate": "A written analytic reduction whose Gaussian positivity, exact band energy, correlation signs, trichotomy constants, q_j squared nonlinear clock, viscous clock, and survivor exponents were adversarially recomputed by a separate same-system reviewer with no fatal or major defect. This is not external mathematical confirmation and no executable certificate is claimed.",
+      "success_criterion": "Upgrade scalar cross-record energy persistence to actual old-band correlation or a fixed replacement-work event, then determine whether those work events sum against one finite same-trajectory budget.",
+      "failure_interpretation": "The Gaussian band positivity, two-time pairing sign, retained-energy constant, Lorentz band-gradient bound, record-ratio power, viscous Cauchy estimate, carrier conversion, or Hilbert rotation survivor is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-cross-record-correlation.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",
