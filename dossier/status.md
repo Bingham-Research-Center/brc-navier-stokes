@@ -100,6 +100,17 @@ For a compact solenoidal test \(\psi\),
 has the proved event lower bound. No genealogy-uniform finite upper budget,
 intrinsic rough-state adjoint, or event-index sum is known.
 
+The [conditional annular cost theorem](experiments/adjoint-pressure-annular-cost.md)
+removes the divergent global-\(L^2\) coefficient factor from the upper
+audit. It bounds the pressure by centre-uniform local energy times exterior
+adjoint tails. The known tail is exactly \(R^{-1/2}\), so each dyadic shell
+may still cost order one: an \(\ell^1\) shell secondary index is needed,
+while the current theorem supplies only \(\ell^\infty\). Under physical
+rescaling the equivalent strong-gradient threshold is exactly
+\(L^{5/2}_{t,x}\); the available \(L^{2+\delta_B}\), with
+\(\delta_B<1/2\), remains on the wrong side. External mathematical review
+of this localisation is pending.
+
 ### 4. Feedback pressure becomes a physical coefficient tail
 
 The source-localised feedback payer is empty by
@@ -181,9 +192,10 @@ survivors occur in Navier--Stokes.
 
 ### Primary R3B gates
 
-1. **Uniform adjoint cost.** Replace the fixed-member global-\(L^2\) upper
-   estimate by a genealogy-uniform local/tail estimate, or construct a sharp
-   obstruction satisfying the actual genealogy axioms.
+1. **Uniform adjoint cost.** Upgrade the annular \(R^{-1/2}\)
+   exterior-adjoint tail from an \(\ell^\infty\) shell action to a finite
+   \(\ell^1\) secondary index, gain any positive tail power, or derive an
+   equivalent critical \(L^{5/2}\)-type one-trajectory estimate.
 2. **Event-index freshness.** Prove bounded time-frequency overlap, a
    scale-zero floor, non-Zeno speed, an intervening event, or a
    pressure-visible telescope for the forced lower-band decrements.
@@ -228,9 +240,11 @@ survivors occur in Navier--Stokes.
 
 ## Current work order
 
-1. Audit the uniform adjoint-pressure cost before adding another floor.
+1. Attack the exact annular tail secondary index; the global-energy factor is
+   no longer the obstruction.
 2. If finite, test whether event packets or lower-band decrements embed in it
-   additively. If not finite, record the sharp same-trajectory obstruction.
+   additively. If the endpoint tail survives, test event freshness against
+   that precise shell profile.
 3. Stop after five unsuccessful frontier attempts and consolidate for external
    review.
 4. Prepare external review packets for the cost theorem, the

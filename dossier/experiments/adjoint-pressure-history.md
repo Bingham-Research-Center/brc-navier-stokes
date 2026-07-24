@@ -2,8 +2,8 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-HISTORY-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional genealogical
-  adjoint-pressure reduction
+- **Status:** conditional genealogical adjoint-pressure reduction;
+  same-system adversarial recomputation recorded
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Review:**
@@ -659,9 +659,13 @@ v\left(T^*+\frac{\rho_n^2}{\nu_{\rm phys}}s\right)
 \]
 
 Thus the exact open problem is a finite upper bound after the genealogy
-lower limit, not finiteness for each smooth member.  Any successful
-estimate must replace the diverging global energy factor by local/tail
-Oseen control or by additional one-trajectory structure.
+lower limit, not finiteness for each smooth member.  The subsequent
+[annular localisation theorem](adjoint-pressure-annular-cost.md) removes
+the diverging global energy factor completely.  It replaces that crude
+bound by a shell sum of exterior adjoint tails against centre-uniform
+local coefficient energy.  The recorded \(R^{-1/2}\) tail gives only an
+\(\ell^\infty\) shell action, whereas a finite cost requires the
+corresponding \(\ell^1\) secondary index.
 
 ### 7.2 The endpoint summation gap
 

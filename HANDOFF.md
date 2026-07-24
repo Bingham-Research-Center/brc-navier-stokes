@@ -4,7 +4,7 @@
 
 **Clay status:** unsolved
 
-**Mathematical checkpoint:** `a7ae140`
+**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-ANNULAR-COST-001`
 
 **Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
 
@@ -99,20 +99,36 @@ at the required event scales, or prove a sharp obstruction. The lower bound is
 already established in
 [adjoint-pressure history](dossier/experiments/adjoint-pressure-history.md).
 
-For each fixed smooth member, CLMS and adjoint energy give the elementary
-upper estimate
+For each fixed smooth member, CLMS and adjoint energy give a finite but
+nonuniform global-\(L^2\) upper estimate. The
+[conditional annular cost theorem](dossier/experiments/adjoint-pressure-annular-cost.md)
+now removes that global factor. With \(R_k=L^kR_0\) and
 
 \[
-\frac1{\sqrt{\nu T}}
-\int_0^T\|\nabla\pi^*_{n,\psi}\|_1\,dt
-\lesssim
-\frac{\|u_n\|_{L^\infty_tL^2_x}\|\psi\|_2}{\nu}.
+\mathcal A_{n,k}(T)
+=
+\left(\int_0^T
+\|a_{n,\psi}\|_{L^2(|x|>2R_k)}^2\,dt\right)^{1/2},
 \]
 
-It is not genealogy-uniform: physical rescaling permits the global \(L^2\)
-factor to grow like \(\rho_n^{-1/2}\). The required advance must replace
-global energy by a local/tail Oseen estimate, exploit one-trajectory
-structure, or demonstrate that the present genealogy axioms cannot do so.
+the pressure history is bounded by an inner term plus
+
+\[
+C\sum_k\mathcal A_{n,k}(T)
+\left[
+\left(R_k+\frac{\nu T}{R_k}\right)^{1/2}
++M\left(\frac{T}{R_k}\right)^{1/2}
+\right].
+\]
+
+The proved feedback tail has exactly
+\(\mathcal A_{n,k}\lesssim R_k^{-1/2}\): it gives an
+\(\ell^\infty\) shell action, while finiteness needs the corresponding
+\(\ell^1\) secondary index. Any positive extra tail power would sum.
+Equivalently, this localisation closes under a genealogy-uniform
+\(\nabla u\in L^p_{t,x}\) budget, but physical scaling makes \(p=5/2\)
+the exact threshold; the known \(p=2+\delta_B<5/2\) gain does not reach it.
+External mathematical review of this new localisation is pending.
 
 ### B. Event-index freshness
 
@@ -157,9 +173,10 @@ The broader failure catalogue is indexed in
 
 ## Next actions
 
-1. Finish the uniform adjoint-cost audit before opening another mechanism.
-2. If a finite budget exists, test whether the decrement packets embed in it
-   additively; if it fails, record the sharp survivor and freeze this child.
+1. Seek a positive exterior-adjoint tail power or finite shell secondary
+   index; do not return to the now-removed global-energy obstruction.
+2. If that budget closes, test whether decrement packets embed additively;
+   otherwise test event freshness against the exact borderline shell profile.
 3. Allow at most five new frontier attempts without a cost/freshness theorem,
    an unconditional NSE statement, or a decisive no-go; then consolidate.
 4. Prepare fresh-context external review packets for the adjoint-cost theorem,

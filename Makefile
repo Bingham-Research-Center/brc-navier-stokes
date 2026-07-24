@@ -3,6 +3,7 @@ PYTHONPATH := lab
 
 .PHONY: check context records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet moving-band tree-budget band-increment fresh-detector frequency-energy scale-defect two-scale-sync fixed-shell-clock continuation-clock fixed-shell-local singular-clock-centering terminal-satellite-tower terminal-satellite-compactness terminal-besov-ancestry terminal-outer-profile terminal-distance-profile terminal-satellite-packing terminal-cluster-packing terminal-logscale-survivor scale-hull-balance parabolic-scale-hull defect-event-suspension adjoint-pressure-history adjoint-pressure-packets adjoint-pressure-initial-layer adjoint-pressure-bandlimit adjoint-pressure-enstrophy adjoint-pressure-cubic adjoint-pressure-direct adjoint-pressure-feedback adjoint-pressure-feedback-shells adjoint-pressure-feedback-frequency adjoint-pressure-feedback-dust adjoint-pressure-temporal adjoint-pressure-polar-vacuum adjoint-pressure-balanced-polar adjoint-pressure-amplitude-window adjoint-pressure-trace-participation adjoint-pressure-product-trace adjoint-pressure-intermediate-localization adjoint-pressure-stretched-history adjoint-pressure-second-interaction adjoint-pressure-interaction-depth adjoint-pressure-critical-volterra adjoint-pressure-skew-compression adjoint-pressure-frequency-colligation adjoint-pressure-frequency-zeno defect-event-hull strain fetch-2607 compile-2607
 .PHONY: adjoint-pressure-terminal-return adjoint-pressure-ancestry-survivor adjoint-pressure-spatial-frequency adjoint-pressure-amplified-ancestry adjoint-pressure-one-return adjoint-pressure-multistage-path adjoint-pressure-corridor-sum adjoint-pressure-corridor-identification adjoint-pressure-last-return adjoint-pressure-no-return adjoint-pressure-parabolic-coefficient-tail adjoint-pressure-parabolic-ancestry adjoint-pressure-parabolic-flux adjoint-pressure-inherited-ancestry adjoint-pressure-flux-decrement adjoint-pressure-spectral-pairing adjoint-pressure-spatial-pairing
+.PHONY: adjoint-pressure-annular-cost
 
 check: context records links markup test
 
@@ -317,6 +318,9 @@ adjoint-pressure-spectral-pairing:
 
 adjoint-pressure-spatial-pairing:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_spatial_pairing
+
+adjoint-pressure-annular-cost:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_annular_cost
 
 defect-event-hull: defect-event-suspension
 

@@ -1939,6 +1939,7 @@
         "The value of the relaxed cost is not proved intrinsic to every rough hull state and no intrinsic rough endpoint Oseen adjoint is asserted",
         "For each smooth finite-energy genealogy member, the L2 CLMS estimate and adjoint energy give a finite pressure-history upper bound proportional to its global L2 norm",
         "The physical outer-profile scaling lets that global L2 upper bound grow like rho_n^(-1/2), so fixed-member finiteness supplies no genealogy-uniform ceiling",
+        "The subsequent annular localisation removes the global L2 factor but the recorded inverse-square-root exterior adjoint tail gives only an l-infinity shell action rather than the required l1 secondary index",
         "The adjoint histories at different scale points overlap and no event-index summation or bounded telescope is proved",
         "The adjoint L2 energy controls neither the Kato pressure source nor the missing L(3/2,1) gradient norm",
         "No sub-square-root pressure-history theorem, ancient-profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
@@ -3597,6 +3598,44 @@
         "dossier/review-response-adjoint-pressure-spatial-pairing-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_spatial_pairing.py",
         "lab/tests/test_adjoint_pressure_spatial_pairing.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
+      "id": "EXP-ADJOINT-PRESSURE-ANNULAR-COST-001",
+      "title": "Annular adjoint-pressure localisation and the L5/2 threshold",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001",
+        "CLM-WEAK-L3-HIGHER-INTEGRABILITY-001"
+      ],
+      "hypothesis": "The divergent global L2 norm in the fixed-member adjoint-pressure upper bound can be removed by annular localisation, leaving a precise exterior-adjoint secondary-index condition that can be compared with the available one-trajectory gradient integrability.",
+      "invariants": [
+        "Moving the pressure derivative to the coefficient gives a CLMS bound by adjoint L2 times coefficient-gradient L2",
+        "An exterior Bogovskii correction is divergence free, equals the adjoint on the relevant outer coefficient support, and costs only the exterior adjoint L2 tail",
+        "A telescoping annular coefficient partition removes every global kinetic-energy and global coefficient-dissipation norm",
+        "Repeated Barker-Prange restarts bound coefficient dissipation on a radius-R annulus over duration T by C times R plus nu T divided by R",
+        "The annular pressure cost is bounded by the exterior adjoint tail times the square root of R plus nu T divided by R, plus the weak-L3 cutoff term",
+        "A finite l1 secondary index of square-root R times the exterior adjoint tail is sufficient for finite genealogy-level pressure cost",
+        "The recorded full-feedback exterior tail is exactly inverse square-root R and therefore supplies only an l-infinity shell bound",
+        "Any positive extra tail power makes the annular cost geometrically summable",
+        "A uniform rescaled spacetime gradient Lp budget with 2 less than p less than 3 sums the endpoint exterior tail",
+        "Physical parabolic scaling gives gradient Lp power 2p minus 5, so p equals 5/2 is the exact one-trajectory threshold",
+        "The available p equals 2 plus delta_B with delta_B less than 1/2 remains supercritical for this cost",
+        "A static critical cell cloud saturates the weak-L3, inverse-square-root adjoint, square-root coefficient-gradient, and scale-zero bilinear powers but is not claimed to solve either PDE",
+        "The theorem neither proves actual cost divergence nor supplies the missing secondary index, event sum, ancient-profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution"
+      ],
+      "method": "Use the dual adjoint-pressure factorisation, telescope the coefficient through widely separated radial cutoffs, replace the adjoint by an exterior Bogovskii correction on each coefficient shell, apply CLMS and repeated centre-uniform local-energy restarts, then compare the resulting shell sum with the recorded feedback tail and exact physical Lp rescaling.",
+      "certificate": "A written conditional annular localisation theorem and executable ledgers for local-energy weights, geometric tail sums, endpoint cell powers, and the 5/2 scaling threshold; external mathematical review is pending.",
+      "success_criterion": "Remove the false global-energy obstruction from the uniform adjoint-cost audit and identify the exact finite-secondary-index or critical-gradient theorem still required.",
+      "failure_interpretation": "The dual pressure indices, cutoff telescope, exterior Bogovskii support, repeated local-energy restart, shell summation, feedback-tail import, or physical Lp scaling exponent is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-annular-cost.md",
+        "lab/navier_lab/adjoint_pressure_annular_cost.py",
+        "lab/tests/test_adjoint_pressure_annular_cost.py"
       ],
       "last_run": "2026-07-24"
     },
