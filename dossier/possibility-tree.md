@@ -398,6 +398,26 @@ non-Zeno cascade-speed, intervening-event, or telescoping theorem.  The
 other branch is the \(9/4\) coefficient cost, which still requires the
 same-trajectory clock/zoom closure.
 The independently reviewed
+[weak-\(L^3\) lower-band decrement theorem](experiments/adjoint-pressure-flux-decrement.md)
+now closes the near-lossless flux-decrement child.  At each charged
+terminal boundary, a smooth far-low/high/comparable-band split and the
+weak-\(L^3\) ceiling force
+\[
+\nu
+\int_{\widetilde J_j}
+\|\nabla
+Q_{\eta K_j<|\xi|\le K_j}v\|_2^2\,dt
+\gtrsim
+\left(\frac{\nu}{M}\right)^2
+\Phi_{K_j}(\widetilde J_j).
+\]
+Thus the conservative survivor with relative shell loss tending to zero
+is not compatible with the conditional NSE trajectory.  The live child
+is narrower: different event bands and intervals may overlap, and a
+fresh infinite chain may retain geometrically decaying rather than
+near-constant flux.  Bounded overlap, a scale-zero event floor, an
+intervening selected event, or a cross-event telescope is still needed.
+The independently reviewed
 [spectral primal--adjoint pairing audit](experiments/adjoint-pressure-spectral-pairing.md)
 closes the bare \(L^2\) version of the event-index telescope.  Its
 frequency-localised pairing and shell increments telescope exactly, but

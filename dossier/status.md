@@ -1994,6 +1994,40 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > isolated above.
 >
 > The independently reviewed
+> [weak-\(L^3\) lower-band decrement theorem](experiments/adjoint-pressure-flux-decrement.md)
+> now closes the asymptotically lossless version of that flux reuse.
+> Writing
+> \[
+> h=Q_{>K}v,\qquad
+> u=S_{\eta K}v,\qquad
+> m=P_{\le K}v-S_{\eta K}v,
+> \]
+> exact Fourier and divergence-free cancellations split sharp flux into
+> far-low strain and a remainder containing \(m\).  The terminal
+> weak-\(L^3\) ceiling makes far-low strain viscosity-small, while
+> Lorentz--Sobolev gives
+> \[
+> \nu
+> \int_{\widetilde J_j}
+> \|\nabla
+> Q_{\eta K_j<|\xi|\le K_j}v\|_2^2\,dt
+> \ge
+> c
+> \left(\frac{\nu}{M}\right)^2
+> \Phi_{K_j}(\widetilde J_j)
+> \gtrsim
+> \frac{\nu^3}{M^2}T_j.
+> \]
+> The fixed ratio \(\eta=\eta(\nu/M)>0\) and \(c>0\) are
+> event-independent.  Hence the prior distinct-shell survivor with
+> relative loss tending to zero is excluded for this conditional NSE
+> flux.  The theorem does not make different event bands or time
+> intervals fresh.  An infinite geometrically decaying cascade and
+> summable physical floors remain possible, so bounded overlap, a
+> scale-zero event charge, an intervening selected event, or a
+> cross-event telescope is now the narrower live gate.
+>
+> The independently reviewed
 > [spectral primal--adjoint pairing audit](experiments/adjoint-pressure-spectral-pairing.md)
 > closes the most direct version of that final proposal.  A fixed
 > componentwise Fourier frequency projector gives an exact signed
@@ -2117,10 +2151,13 @@ The coequal breakdown question remains:
    \(\Phi_{K_j}(J_j)\ge\nu T_j/4\) for every late event.  The exact
    shell and Zeno ledgers still show that ordinary high-pass balances,
    flux positivity, and one natural heat time per geometric step
-   permit arbitrary finite depth.  Close the remaining event-index
-   gap with a quantitative flux-decrement, frequency-locality,
-   non-Zeno cascade-speed, intervening-event, or event-index
-   telescoping theorem;
+   permit arbitrary finite depth.  The reviewed weak-\(L^3\)
+   lower-band theorem now supplies a uniform decrement at each charged
+   boundary and excludes the near-lossless shell ledger, but does not
+   make different event charges fresh.  Close the remaining event-index
+   gap with bounded time-frequency overlap, a scale-zero lower floor,
+   a non-Zeno cascade-speed or intervening-event theorem, or an
+   event-index telescope;
    alternatively, drive the top frequency towards
    \(L_{\rm kill}=h^{3/2}/\sqrt{\sigma}\), forcing the stretched-depth
    ratio \(x_{j+1}/x_j\) to violate the exact tail-continuity condition,

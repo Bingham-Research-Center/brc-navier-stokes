@@ -804,10 +804,10 @@ At every farther factor, the actual trajectory must pay in a comparable
 annulus, inherit enough high-frequency entrance energy, or receive
 positive signed nonlinear input.  An exact conservative shell ledger
 and Zeno heat-clock schedule show that the last input is cumulative and
-need not be fresh under the ordinary high-pass balances alone.  The
-remaining theorem must quantify flux decrement, frequency locality,
-non-Zeno cascade speed, inherited-state ancestry, or event-index
-telescoping.
+need not be fresh under the ordinary high-pass balances alone.  At that
+stage the remaining theorem had to quantify flux decrement, frequency
+locality, non-Zeno cascade speed, inherited-state ancestry, or
+event-index telescoping.
 
 The subsequent independently reviewed
 [terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
@@ -822,6 +822,15 @@ flux, while an event-adaptive sharp-annulus squeeze gives
 on terminal intervals for every sufficiently late event.  What
 remains is event-index freshness of that forced flux, not its
 existence.
+
+The subsequent independently reviewed
+[weak-\(L^3\) lower-band decrement theorem](adjoint-pressure-flux-decrement.md)
+then closes the near-lossless shell-ledger alternative.  Every late
+charged boundary pays a fixed fraction of its signed input in a lower
+frequency band.  It does not yet make those bands or intervals fresh
+across event indices, and therefore leaves bounded overlap, a
+scale-zero floor, non-Zeno speed, an intervening event, or a
+cross-event telescope as the live gate.
 
 ## 6. Executable ledger
 

@@ -683,6 +683,17 @@ question is no longer “where did the inherited state come from?” but
 “can the resulting terminal signed-flux ancestors overlap and reuse
 one cascade without limit?”
 
+The subsequent independently reviewed
+[weak-\(L^3\) lower-band decrement theorem](adjoint-pressure-flux-decrement.md)
+closes the asymptotically lossless version of that reuse.  Uniform
+weak-\(L^3\) control splits every forced sharp flux into
+viscosity-small far-low strain and a remainder containing a comparable
+lower-band factor.  Every late event consequently dissipates at least
+\(c\nu^2M^{-2}T_j\) in
+\(\eta K_j\le|\xi|\le K_j\), for one fixed
+\(\eta=\eta(\nu/M)>0\).  Cross-event band and interval overlap, and an
+infinite geometrically decaying cascade, remain open.
+
 ## 7. Executable certificate
 
 The companion module checks:

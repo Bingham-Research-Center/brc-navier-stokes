@@ -203,6 +203,7 @@ From the repository root:
     make adjoint-pressure-parabolic-ancestry
     make adjoint-pressure-parabolic-flux
     make adjoint-pressure-inherited-ancestry
+    make adjoint-pressure-flux-decrement
     make adjoint-pressure-spectral-pairing
     make adjoint-pressure-spatial-pairing
     make strain

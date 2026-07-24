@@ -3488,6 +3488,43 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-FLUX-DECREMENT-001",
+      "title": "Weak-L3 viscosity forces a lower-band flux decrement",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [],
+      "hypothesis": "The uniform weak-L3 velocity ceiling may prevent the reviewed terminal signed flux from crossing its parabolic boundary through an arbitrarily near-lossless far-low to far-high transfer.",
+      "invariants": [
+        "The physical trajectory is smooth and finite energy before the candidate first singular time and has a uniform terminal weak-L3 velocity bound M",
+        "The sharp high field h, smooth far-low field u, and lower comparable-band field m satisfy v equals u plus m plus h exactly",
+        "The sharp projectors are used only in L2; no sharp ball-multiplier bound on weak L3 is assumed",
+        "Fourier support removes the low-low to high term when four L is below K",
+        "Divergence-free cancellation leaves far-low strain acting on high energy plus a remainder containing the lower-band factor",
+        "Lorentz Holder and Sobolev bound the remainder by C M times the product of the high and lower-band gradient norms",
+        "Smooth low-pass Lorentz Bernstein bounds far-low strain by C M (L/K)^2 times high dissipation",
+        "A fixed ratio eta depending only on nu/M makes the far-low contribution at most one twelfth of the viscous term",
+        "On a low-entrance interval the lower-band dissipation is at least 3 nu F divided by 16 C squared M squared",
+        "On a half-to-full hitting interval the lower-band dissipation is at least 121 nu F divided by 144 C squared M squared",
+        "Every sufficiently late pressure-tail event forces sharp dissipation at least c nu squared T_j divided by M squared in eta K_j less than frequency less than or equal to K_j",
+        "The lower-band theorem excludes the specific distinct-shell ledger whose relative loss tends to zero",
+        "Cross-event interval and band freshness, a scale-zero event floor, and exclusion of an infinite geometrically decaying cascade remain open",
+        "No ancient Liouville theorem, regularity theorem, breakdown theorem, or Clay alternative is proved"
+      ],
+      "method": "Split the sharp high-pass flux using a smooth far-low velocity and the exact lower comparable-band remainder. Use Fourier support and incompressibility to isolate far-low strain, Lorentz endpoint estimates to force every remaining interaction through the lower band, and viscosity to absorb a fixed fraction of far-low strain. Apply the resulting decrement to the low-entrance event interval and to the first half-to-full hitting interval in the high-entrance branch.",
+      "certificate": "An independently reviewed conditional same-trajectory theorem after five precision repairs, plus nine executable tests for the cutoff ratio, viscosity fraction, both interval constant ledgers, the pressure-tail corollary, and geometric retention under fresh repeated decrements.",
+      "success_criterion": "Prove a scale-invariant positive lower-band dissipation fraction for every forced terminal flux event and determine whether the near-lossless conservative shell survivor remains compatible with the conditional weak-L3 Navier-Stokes trajectory.",
+      "failure_interpretation": "The high-pass sign, support cancellation, tensor expansion, endpoint Lorentz estimate, far-low viscosity absorption, interval constants, historical weak-L3 scope, or claimed restriction to the near-lossless distinct-shell ledger is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-flux-decrement.md",
+        "dossier/review-letter-adjoint-pressure-flux-decrement-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-flux-decrement-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_flux_decrement.py",
+        "lab/tests/test_adjoint_pressure_flux_decrement.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ADJOINT-PRESSURE-SPECTRAL-PAIRING-001",
       "title": "Frequency-localised primal-adjoint pairing telescopes but supplies no pressure term",
       "kind": "analytic_reduction_and_counterexample",

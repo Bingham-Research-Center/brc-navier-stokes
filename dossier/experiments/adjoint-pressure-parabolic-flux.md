@@ -728,7 +728,12 @@ allows an event-adaptive \(R_j\to1\), yielding terminal intervals
 \Phi_{R_j\Lambda_j}(J_j)\ge\frac{\nu T_j}{4}.
 \]
 This does not make the intervals disjoint or the cumulative flux
-event-index fresh; items 1--3 and 5 remain live in that stricter form.
+event-index fresh.  The subsequent independently reviewed
+[weak-\(L^3\) lower-band decrement theorem](adjoint-pressure-flux-decrement.md)
+does close the near-lossless version of item 1: every charged terminal
+boundary dissipates a fixed fraction of its flux in a comparable band
+immediately below the cutoff.  Items 2--3 and 5 remain live, as does
+cross-event reuse by an infinite geometrically decaying cascade.
 
 ## 9. Executable certificate
 
