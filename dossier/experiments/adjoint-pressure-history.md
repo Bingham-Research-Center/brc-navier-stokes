@@ -7,7 +7,7 @@
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Review:**
-  [valid in scope](../review-response-adjoint-pressure-history-2026-07-23.md)
+  [valid in scope](../review-ledger.md)
 - **Inputs:** [defect-event suspension](defect-event-suspension.md),
   [parabolic scale hull](parabolic-scale-hull.md), and
   [coherent weak-\(L^3\) ancestry](terminal-besov-ancestry.md)

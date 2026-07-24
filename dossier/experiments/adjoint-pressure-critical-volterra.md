@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-CRITICAL-VOLTERRA-001
 - **Route:** ROUTE-R3B
 - **Status:** analytic countermodel and conditional index reduction;
-  [independently reviewed valid after two precision repairs](../review-response-adjoint-pressure-critical-volterra-2026-07-24.md)
+  [adversarially recomputed valid after two precision repairs](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** the independently reviewed
+- **Inputs:** the adversarially recomputed
   [logarithmic interaction-depth theorem](adjoint-pressure-divergent-interaction-depth.md)
   and Barker's published higher-integrability theorem
   `CLM-WEAK-L3-HIGHER-INTEGRABILITY-001`

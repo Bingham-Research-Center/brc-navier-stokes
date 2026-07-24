@@ -1,7 +1,7 @@
 # Exact Biot–Savart strain contraction
 
 **Experiment:** EXP-STRAIN-001
-**Status:** independently derived; finite-dimensional identity mechanically checked
+**Status:** derived in-repository; finite-dimensional identity mechanically checked
 **Scope warning:** this closes the tensor cancellation only. It does not establish
 the later Jones extension, commutator, or Lorentz estimates.
 

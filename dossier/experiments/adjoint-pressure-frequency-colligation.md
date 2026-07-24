@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-FREQUENCY-COLLIGATION-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed proof-level fixed-band theorem and
+- **Status:** adversarially recomputed proof-level fixed-band theorem and
   exact Fourier counter-audit
 - **Domain:** \(\mathbb R^3\) for the fixed-band theorem;
   \(\mathbb T^3\) for the integer-frequency geometry
 - **Clay status:** unsolved
-- **Input:** the independently reviewed
+- **Input:** the adversarially recomputed
   [skew-compression theorem](adjoint-pressure-skew-compression.md)
-- **Review:** [accepted after two scope precisions](../review-response-adjoint-pressure-frequency-colligation-2026-07-24.md)
+- **Review:** [accepted after two scope precisions](../review-ledger.md)
 
 The preceding theorem showed that abstract skew transport, Hodge
 orthogonality, real-coupling stability, prescribed algebraic zero trace,

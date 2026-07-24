@@ -3,12 +3,12 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-ANCESTRY-SURVIVOR-001
 - **Route:** ROUTE-R3B
 - **Status:** analytic scalar time--frequency ledger counterexample;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-ancestry-survivor-2026-07-24.md);
+  [adversarially recomputed valid in scope](../review-ledger.md);
   not a Navier--Stokes construction
 - **Domain:** one nested terminal dissipation history with an exact
   event-scale/frequency genealogy
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [stretched-history ledger theorem](adjoint-pressure-stretched-history.md),
   [causal interaction-depth theorem](adjoint-pressure-divergent-interaction-depth.md),
   and [terminal-return theorem](adjoint-pressure-terminal-return.md)

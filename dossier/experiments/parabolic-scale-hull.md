@@ -9,7 +9,7 @@
 - **Inputs:** [terminal outer profile](terminal-outer-profile.md) and
   [renormalised balance audit](scale-hull-balance.md)
 - **Review:**
-  [independent response](../review-response-parabolic-scale-hull-2026-07-23.md)
+  [review-ledger summary](../review-ledger.md)
 - **Imported compactness:** Barker, Seregin, and Šverák,
   [*On Stability of Weak Navier--Stokes Solutions with Large
   \(L^{3,\infty}\) Initial Data*](https://doi.org/10.1080/03605302.2018.1449219),

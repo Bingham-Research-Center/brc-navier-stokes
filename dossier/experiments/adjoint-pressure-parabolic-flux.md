@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-PARABOLIC-FLUX-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional same-trajectory theorem
+- **Status:** adversarially recomputed conditional same-trajectory theorem
   plus exact algebraic shell-ledger obstruction
 - **Review:** [valid and nonduplicative after two precision
-  repairs](../review-response-adjoint-pressure-parabolic-flux-2026-07-24.md)
+  repairs](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [parabolic coefficient-tail theorem](adjoint-pressure-parabolic-coefficient-tail.md),
   [parabolic tail-ancestry theorem](adjoint-pressure-parabolic-ancestry.md),
   and the earlier
@@ -705,7 +705,7 @@ No such theorem is proved here.  In particular, this note does not
 exclude the conditional ancient profile, prove regularity or breakdown,
 or establish any Clay alternative A--D.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [spectral primal--adjoint pairing audit](adjoint-pressure-spectral-pairing.md)
 closes the bare version of item 5: the shell pairing telescopes exactly,
 but pressure contributes no scalar term because it is orthogonal to the
@@ -716,7 +716,7 @@ that merely replacing Fourier localisation by the unseparated local
 current is also insufficient: pressure can cancel transport exactly in
 every gauge-invariant cutoff flux.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
 does close item 4 at the level needed to remove inherited energy as an
 unaccounted resource.  A fixed-time \(H^1\) tail and last-hitting
@@ -728,7 +728,7 @@ allows an event-adaptive \(R_j\to1\), yielding terminal intervals
 \Phi_{R_j\Lambda_j}(J_j)\ge\frac{\nu T_j}{4}.
 \]
 This does not make the intervals disjoint or the cumulative flux
-event-index fresh.  The subsequent independently reviewed
+event-index fresh.  The subsequent adversarially recomputed
 [weak-\(L^3\) lower-band decrement theorem](adjoint-pressure-flux-decrement.md)
 does close the near-lossless version of item 1: every charged terminal
 boundary dissipates a fixed fraction of its flux in a comparable band

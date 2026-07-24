@@ -2,15 +2,15 @@
 
 - **Experiment:** EXP-TERMINAL-SATELLITE-PACKING-001
 - **Route:** ROUTE-R3B
-- **Status:** complete conditional analytic reduction; independently
-  reviewed as valid in stated scope
+- **Status:** complete conditional analytic reduction; same-system
+  adversarial recomputation accepted the stated scope
 - **Domain:** \(\mathbb R^3\)
 - **Solution class:** one chosen global suitable Leray--Hopf continuation,
   smooth before a first singular time
 - **Clay status:** unsolved
 - **Input:** [terminal satellite tower](terminal-satellite-tower.md)
 - **Single-profile input:** [terminal distance profile](terminal-distance-profile.md)
-- **Review:** [independent response](../review-response-terminal-satellite-packing-2026-07-23.md)
+- **Review:** [review-ledger summary](../review-ledger.md)
 - **Imported persistence theorem:** Albritton and Barker,
   [*On Local Type I Singularities of the Navier--Stokes Equations and
   Liouville Theorems*](https://doi.org/10.1007/s00021-019-0448-z),

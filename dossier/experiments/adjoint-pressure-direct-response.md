@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-DIRECT-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-direct-response-2026-07-24.md)
+  [adversarially recomputed valid in scope](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** independently reviewed
+- **Input:** adversarially recomputed
   [inverse-cubic terminal layer](adjoint-pressure-cubic-layer.md)
 
 The inverse-cubic theorem proves that the full adjoint difference

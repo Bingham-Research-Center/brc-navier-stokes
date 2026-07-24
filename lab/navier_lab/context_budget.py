@@ -9,10 +9,10 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 
 LINE_BUDGETS = {
-    "AGENTS.md": 60,
-    "HANDOFF.md": 170,
-    "dossier/status.md": 360,
-    "dossier/possibility-tree.md": 180,
+    "AGENTS.md": 55,
+    "HANDOFF.md": 120,
+    "dossier/status.md": 350,
+    "dossier/possibility-tree.md": 160,
 }
 
 REQUIRED_TEXT = {

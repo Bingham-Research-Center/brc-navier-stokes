@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-DIVERGENT-INTERACTION-DEPTH-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after repair](../review-response-adjoint-pressure-divergent-interaction-depth-2026-07-24.md)
+  [adversarially recomputed valid after repair](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [direct-response decomposition](adjoint-pressure-direct-response.md),
   [feedback-tail theorem](adjoint-pressure-feedback-tail.md),
   [intermediate-localisation theorem](adjoint-pressure-intermediate-localization.md),

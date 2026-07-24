@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-LAST-RETURN-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed valid in the stated smooth-layer
+- **Status:** adversarially recomputed valid in the stated smooth-layer
   conditional scope
 - **Review:** [accepted after filter-topology, source-scope, and
-  quantifier repairs](../review-response-adjoint-pressure-last-return-2026-07-24.md)
+  quantifier repairs](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [feedback Dyson identity](adjoint-pressure-divergent-interaction-depth.md),
   [one-return theorem](adjoint-pressure-one-return.md),
   [full-corridor theorem](adjoint-pressure-corridor-sum.md), and
@@ -782,14 +782,14 @@ does not exclude either branch 1 or branch 2, produce a singular
 solution, prove regularity or breakdown, or establish any Clay
 alternative A--D.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [no-return parabolic-exclusion theorem](adjoint-pressure-no-return-parabolic.md)
 eliminates branch 1 below every uniformly parabolic ceiling.  Thus the
 two renewal blocks now have one common unresolved frequency branch:
 superparabolic LP--Dyson capture escape.  The captured last-return branch
 still pays the \(9/4\) stretched-exponential coefficient cost.
 
-The later independently reviewed
+The later adversarially recomputed
 [parabolic coefficient-tail theorem](adjoint-pressure-parabolic-coefficient-tail.md)
 closes that frequency-identification gap.  Every selected complete
 feedback packet forces actual coefficient dissipation above

@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-NO-RETURN-PARABOLIC-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed valid in the stated smooth-layer
+- **Status:** adversarially recomputed valid in the stated smooth-layer
   conditional scope
 - **Review:** [accepted with no fatal flaw after two precision
-  additions](../review-response-adjoint-pressure-no-return-parabolic-2026-07-24.md)
+  additions](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [first-feedback theorem](adjoint-pressure-second-interaction.md),
   [full-corridor theorem](adjoint-pressure-corridor-sum.md),
   [smooth-layer identification theorem](adjoint-pressure-corridor-identification.md),
@@ -679,7 +679,7 @@ limiting hull.  Equation (8) is a necessary coefficient cost; the
 physical zoom may still outrun it.  No singular solution, regularity
 theorem, breakdown theorem, or Clay alternative A--D is proved.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [parabolic coefficient-tail theorem](adjoint-pressure-parabolic-coefficient-tail.md)
 now removes the first two qualifications for every selected complete
 feedback packet: it forces an actual same-layer coefficient-dissipation

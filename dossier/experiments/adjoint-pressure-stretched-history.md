@@ -3,11 +3,11 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-STRETCHED-HISTORY-001
 - **Route:** ROUTE-R3B
 - **Status:** analytic ledger-realisation theorem;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-stretched-history-2026-07-24.md);
+  [adversarially recomputed valid in scope](../review-ledger.md);
   not a Navier--Stokes construction
 - **Domain:** scalar history ledger induced by the physical scale map
 - **Clay status:** unsolved
-- **Input:** independently reviewed
+- **Input:** adversarially recomputed
   [intermediate-localisation theorem](adjoint-pressure-intermediate-localization.md)
 
 The reviewed feedback reduction now forces every selected zero-data

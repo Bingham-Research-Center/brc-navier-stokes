@@ -2,12 +2,12 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-CUBIC-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional analytic reduction
+- **Status:** adversarially recomputed conditional analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Review:**
-  [valid in scope](../review-response-adjoint-pressure-cubic-layer-2026-07-24.md)
-- **Input:** independently reviewed
+  [valid in scope](../review-ledger.md)
+- **Input:** adversarially recomputed
   [coefficient-enstrophy terminal layer](adjoint-pressure-enstrophy-layer.md)
   and [band-limited detector reduction](adjoint-pressure-bandlimited-layer.md)
 
@@ -128,7 +128,7 @@ D_b(h)
 \tag{5}
 \]
 
-The independently reviewed preceding theorem supplies three inputs.
+The adversarially recomputed preceding theorem supplies three inputs.
 First, pressure is bilinear in its adjoint and coefficient entries, and
 the frozen-detector part obeys
 

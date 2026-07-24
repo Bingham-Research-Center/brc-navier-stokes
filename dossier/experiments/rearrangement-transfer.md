@@ -5,7 +5,7 @@
 **Pinned TeX SHA-256:**
 `78def86604f31114d64a47bf376a881633ce19276d061dbe0c93f3ecbd471663`
 **Source locus:** L489–566
-**Status:** independently reconstructed with cutoffs and a velocity-normalisation
+**Status:** reconstructed in-repository with cutoffs and a velocity-normalisation
 repair
 **Scope warning:** this artifact closes O2607-11 and O2607-12 only and assumes no
 endgame conclusion. The sparse-analyticity stage is audited separately.

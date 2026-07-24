@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-SECOND-INTERACTION-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-second-interaction-2026-07-24.md)
+  [adversarially recomputed valid in scope](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [direct-response decomposition](adjoint-pressure-direct-response.md),
   [feedback-tail theorem](adjoint-pressure-feedback-tail.md),
   [feedback-shell theorem](adjoint-pressure-feedback-shells.md), and

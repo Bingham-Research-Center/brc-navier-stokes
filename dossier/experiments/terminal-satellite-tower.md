@@ -16,8 +16,8 @@
   (2021), 717--792
 - **Source anchors:** published equations (9)--(10) and Corollary 4.3;
   matching arXiv:2003.06717
-- **Independent review:**
-  [qualified pass with bounded repairs](../review-response-terminal-satellite-tower-2026-07-23.md)
+- **Same-system adversarial recomputation:**
+  [qualified pass with bounded repairs](../review-ledger.md)
 
 The centering-escape branch has a stronger exact consequence than two
 disjoint fixed-mass packets. The parent shell has essentially no time to

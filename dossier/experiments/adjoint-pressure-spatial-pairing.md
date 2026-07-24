@@ -2,15 +2,15 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-SPATIAL-PAIRING-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed same-trajectory cancellation of
+- **Status:** adversarially recomputed same-trajectory cancellation of
   every gauge-invariant cutoff flux for the previously recorded local
   conservation identity, valid after gauge repair
 - **Review:** [valid after gauge and scope
-  repairs](../review-response-adjoint-pressure-spatial-pairing-2026-07-24.md)
+  repairs](../review-ledger.md)
 - **Domains:** identity on \(\mathbb R^3\) or \(\mathbb T^3\);
   counterexamples on \(\mathbb T^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [adjoint-pressure history](adjoint-pressure-history.md),
   [skew-compression obstruction](adjoint-pressure-skew-compression.md),
   [parabolic tail-to-flux theorem](adjoint-pressure-parabolic-flux.md),
@@ -606,7 +606,7 @@ The next target is no longer a bare conserved pairing.  It must either:
 4. bypass pressure pairing through a direct same-trajectory
    frequency/spatial ancestry theorem.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
 implements item 4 at the cumulative level.  Fixed-time \(H^1\),
 last-hitting ancestry, and an event-adaptive sharp-annulus squeeze

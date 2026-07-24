@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-AMPLITUDE-WINDOW-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after scope repair](../review-response-adjoint-pressure-amplitude-window-2026-07-24.md)
+  [adversarially recomputed valid after scope repair](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [first-hitting polar-vacuum theorem](adjoint-pressure-polar-vacuum.md)
   and, for the strong profile conclusion, the norm-gated
   [balanced Kato-polar compactness theorem](adjoint-pressure-balanced-polar.md)

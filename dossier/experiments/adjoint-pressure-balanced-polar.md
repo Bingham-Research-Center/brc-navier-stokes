@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-BALANCED-POLAR-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after scope repair](../review-response-adjoint-pressure-balanced-polar-2026-07-24.md)
+  [adversarially recomputed valid after scope repair](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [signed aggregate](adjoint-pressure-signed-aggregate.md),
   [temporal disintegration](adjoint-pressure-temporal-disintegration.md),
   and [first-hitting polar vacuum](adjoint-pressure-polar-vacuum.md)

@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-PRODUCT-TRACE-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after Polish-space and vector-variation repairs](../review-response-adjoint-pressure-product-trace-2026-07-24.md)
+  [adversarially recomputed valid after Polish-space and vector-variation repairs](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [balanced Kato-polar compactness theorem](adjoint-pressure-balanced-polar.md),
   [finite-amplitude window theorem](adjoint-pressure-amplitude-window.md),
   and [bulk-participation theorem](adjoint-pressure-trace-participation.md)

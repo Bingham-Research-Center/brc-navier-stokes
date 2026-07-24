@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-FREQUENCY-ZENO-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed analytic cross-band countermodel,
+- **Status:** adversarially recomputed analytic cross-band countermodel,
   critical packet ledger, and finite-depth Fourier/Leray colligation
 - **Domain:** scalar Littlewood--Paley path majorant motivated by
   \(\mathbb R^3\) Oseen estimates
 - **Clay status:** unsolved
-- **Input:** the independently reviewed
+- **Input:** the adversarially recomputed
   [fixed-band frequency-colligation theorem](adjoint-pressure-frequency-colligation.md)
-- **Review:** [accepted after four precision repairs](../review-response-adjoint-pressure-frequency-zeno-2026-07-24.md)
+- **Review:** [accepted after four precision repairs](../review-ledger.md)
 
 The fixed-band theorem forces every logarithmically deep pressure packet
 to leave each fixed comparable-frequency corridor.  The next question is

@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-INHERITED-ANCESTRY-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional same-trajectory theorem
+- **Status:** adversarially recomputed conditional same-trajectory theorem
 - **Review:** [valid and nonduplicative after two scope repairs; adaptive
-  annulus squeeze and strengthened constant accepted](../review-response-adjoint-pressure-inherited-ancestry-2026-07-24.md)
+  annulus squeeze and strengthened constant accepted](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** the independently reviewed
+- **Inputs:** the adversarially recomputed
   [parabolic tail-to-flux theorem](adjoint-pressure-parabolic-flux.md)
-  and its independently reviewed
+  and its adversarially recomputed
   [parabolic coefficient-tail input](adjoint-pressure-parabolic-coefficient-tail.md)
 
 The reviewed tail-to-flux theorem left three possibilities at every
@@ -683,7 +683,7 @@ question is no longer “where did the inherited state come from?” but
 “can the resulting terminal signed-flux ancestors overlap and reuse
 one cascade without limit?”
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [weak-\(L^3\) lower-band decrement theorem](adjoint-pressure-flux-decrement.md)
 closes the asymptotically lossless version of that reuse.  Uniform
 weak-\(L^3\) control splits every forced sharp flux into

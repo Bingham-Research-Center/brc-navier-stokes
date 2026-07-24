@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-ONE-RETURN-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional analytic reduction
+- **Status:** adversarially recomputed conditional analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [spatial--frequency amplification theorem](adjoint-pressure-spatial-frequency.md),
   [terminal-return theorem](adjoint-pressure-terminal-return.md), and
   [feedback-shell theorem](adjoint-pressure-feedback-shells.md)
-- **Review:** [valid in the stated conditional scope](../review-response-adjoint-pressure-one-return-2026-07-24.md)
+- **Review:** [valid in the stated conditional scope](../review-ledger.md)
 
 The spatial--frequency theorem charges pressure observed while the
 zero-data Oseen state is still above a growing frequency \(F\).  Its

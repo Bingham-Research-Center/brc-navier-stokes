@@ -1,6 +1,6 @@
 # Sparse-analyticity endgame for arXiv:2607.08866v2
 
-**Artifact type:** independent analytic audit
+**Artifact type:** in-repository analytic audit
 **Pinned source:** arXiv:2607.08866v2
 **Pinned TeX SHA-256:**
 `78def86604f31114d64a47bf376a881633ce19276d061dbe0c93f3ecbd471663`

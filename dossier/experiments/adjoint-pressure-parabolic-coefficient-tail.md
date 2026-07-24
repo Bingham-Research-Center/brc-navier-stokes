@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-PARABOLIC-COEFFICIENT-TAIL-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed proof-level smooth-layer conditional
+- **Status:** adversarially recomputed proof-level smooth-layer conditional
   theorem
 - **Review:** [valid in scope with no fatal or repairable
-  gap](../review-response-adjoint-pressure-parabolic-coefficient-tail-2026-07-24.md)
+  gap](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [direct-response decomposition](adjoint-pressure-direct-response.md),
   [feedback-tail energy bounds](adjoint-pressure-feedback-tail.md),
   [last-return renewal theorem](adjoint-pressure-last-return-renewal.md),
@@ -191,7 +191,7 @@ r_b=T_bq_b+T_br_b.
 \tag{9}
 \]
 
-The independently reviewed estimates give
+The adversarially recomputed estimates give
 
 \[
 \|q_b(t)\|_{L^{3/2,1}}
@@ -850,7 +850,7 @@ The next theorem must couple the frequency
 or prove that the nested physical tail payments in (58) cannot be
 reused with the weights forced by (53).
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [parabolic tail-ancestry theorem and kinematic survivor](adjoint-pressure-parabolic-ancestry.md)
 now resolves the bare coupling proposal.  If a fixed-parabolic cutoff
 reaches the reciprocal next event scale, then
@@ -869,7 +869,7 @@ far above the cutoff.  The remaining theorem must therefore be
 NSE-specific: comparable-annulus localisation, signed frequency flux,
 a cascade-speed ceiling, or an intervening-event law.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [parabolic tail-to-flux theorem](adjoint-pressure-parabolic-flux.md)
 now proves the exact NSE alternative.  At every farther cutoff the
 payment lies in a comparable annulus, is inherited as entrance

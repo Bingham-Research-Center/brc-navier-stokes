@@ -43,8 +43,16 @@ No status is upgraded by prose alone. Add evidence and rerun **make check**.
 
 ## Review hygiene
 
-Proof notes and these records are canonical.  Completed one-use review
-requests are removed once their corrections are incorporated; their full text
-is recoverable at Git checkpoint `c277792`.  Review responses are retained
-when they record verdicts or repairs.  New external review packets should be
-generated from the current proof rather than a stale request.
+Proof notes and these records are canonical.  Incorporated review
+correspondence is removed; the compact
+[review ledger](../review-ledger.md) preserves high-consequence dispositions
+and exact Git recovery points.  Same-system review is adversarial
+recomputation, never external confirmation.  Generate any new external packet
+from the current proof rather than stale correspondence.
+
+## Churn rule
+
+The default new frontier result changes one proof note, one experiment record,
+and only the smallest necessary status/handoff surface.  Add executable
+artefacts only when they can catch a nontrivial finite error; link rather than
+copy a derivation into another narrative file.

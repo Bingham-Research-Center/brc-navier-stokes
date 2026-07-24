@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-FEEDBACK-SHELLS-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-feedback-shells-2026-07-24.md)
+  [adversarially recomputed valid in scope](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** independently reviewed
+- **Input:** adversarially recomputed
   [feedback-localisation theorem](adjoint-pressure-feedback-tail.md)
 
 The preceding theorem proves that a fixed pressure packet in the zero-data

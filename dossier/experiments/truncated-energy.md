@@ -5,7 +5,7 @@
 **Pinned TeX SHA-256:**
 `78def86604f31114d64a47bf376a881633ce19276d061dbe0c93f3ecbd471663`
 **Source locus:** L197–202 and L381–491
-**Status:** independently reconstructed with one interval repair
+**Status:** reconstructed in-repository with one interval repair
 **Scope warning:** this artifact closes O2607-08 through O2607-10 only and assumes no
 downstream conclusion. Rearrangement and the endgame are audited separately.
 

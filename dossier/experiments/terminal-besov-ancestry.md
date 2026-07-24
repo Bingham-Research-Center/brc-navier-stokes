@@ -2,8 +2,8 @@
 
 - **Experiment:** EXP-TERMINAL-BESOV-ANCESTRY-001
 - **Route:** ROUTE-R3B
-- **Status:** complete conditional analytic reduction; independently
-  reviewed in stated scope
+- **Status:** complete conditional analytic reduction; same-system
+  adversarial recomputation accepted the stated scope
 - **Domain:** \(\mathbb R^3\)
 - **Solution class:** one chosen global suitable Leray--Hopf continuation,
   smooth before a first singular time
@@ -17,8 +17,8 @@
   [*On Local Type I Singularities of the Navier--Stokes Equations and
   Liouville Theorems*](https://doi.org/10.1007/s00021-019-0448-z),
   Theorem 4.1 and its proof
-- **Independent review:**
-  [valid in stated scope](../review-response-terminal-besov-ancestry-2026-07-23.md)
+- **Same-system adversarial recomputation:**
+  [valid in stated scope](../review-ledger.md)
 
 The detached terminal profile inherits more than suitability and local
 energy. At almost every negative restart time it is a weak
@@ -480,7 +480,7 @@ This reduction closes:
 It does not close:
 
 1. a verbatim published correction or erratum for the source-notation issue
-   in (2); independent review validated the proof-level repair but found no
+   in (2); same-system adversarial recomputation validated the proof-level repair but found no
    published erratum;
 2. a frequency-annular or strain mark at the ancestor scale;
 3. evolution or suitability of a terminal blow-down limit;

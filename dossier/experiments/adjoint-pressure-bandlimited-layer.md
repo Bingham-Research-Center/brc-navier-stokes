@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-BANDLIMIT-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional analytic reduction
+- **Status:** adversarially recomputed conditional analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Input:** [finite adjoint-pressure packets](adjoint-pressure-packets.md)
   and [terminal initial-layer escape](adjoint-pressure-initial-layer.md)
 - **Review:**
-  [valid in scope](../review-response-adjoint-pressure-bandlimited-layer-2026-07-24.md)
+  [valid in scope](../review-ledger.md)
 
 The terminal initial-layer theorem used only the full adjoint energy
 ceiling. That gave a coefficient \(L^2\) floor \(ch^{-1/2}\), escape

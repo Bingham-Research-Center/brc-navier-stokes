@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-TEMPORAL-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after sharpening](../review-response-adjoint-pressure-temporal-disintegration-2026-07-24.md)
+  [adversarially recomputed valid after sharpening](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [Kato-polar signed aggregate](adjoint-pressure-signed-aggregate.md),
   [direct-response reduction](adjoint-pressure-direct-response.md), and
   [frequency-or-maximal-dust reduction](adjoint-pressure-feedback-dust.md)

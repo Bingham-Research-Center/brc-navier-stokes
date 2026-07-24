@@ -5,7 +5,7 @@
 **Pinned TeX SHA-256:**
 `78def86604f31114d64a47bf376a881633ce19276d061dbe0c93f3ecbd471663`
 **Source locus:** L232–371
-**Status:** independently reconstructed with repairs
+**Status:** reconstructed in-repository with repairs
 **Scope warning:** this artifact closes O2607-05 through O2607-07 only and assumes no
 downstream conclusion. The later stages are audited in their separately linked
 artifacts.

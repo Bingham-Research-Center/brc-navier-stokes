@@ -264,7 +264,7 @@
     },
     {
       "id": "CLM-GRUJIC-001",
-      "plain": "A 2026 preprint conditionally excludes a structured critical point singularity under log-weighted vorticity-direction control; the full proof chain has been independently reconstructed here with explicit repairs.",
+      "plain": "A 2026 preprint conditionally excludes a structured critical point singularity under log-weighted vorticity-direction control; the full proof chain has been reconstructed in-repository here with explicit repairs.",
       "formal": "For a normalized projected mild solution, uniform weak-L(3/2) vorticity, uniform high-level fixed-centre localization, and a global unit direction extension with uniform bmo_(1/|log r|) control on one terminal interval imply that the proposed T-star is not singular.",
       "domain": "R3",
       "forcing": "zero",
@@ -287,7 +287,7 @@
         "SRC-RANSFORD-1995"
       ],
       "depends_on": ["CLM-GEOM-001"],
-      "audit": "O2607-01 through O2607-16 are closed by independent analytic reconstructions. The proof survives after documented repairs to profile and direction quantifiers, weak-Lorentz commutator interpolation, shell endpoints, the terminal interval, slowly varying inversions, velocity normalization, escape-time selection, slit-domain harmonic measure, and the final supremum logic.",
+      "audit": "O2607-01 through O2607-16 are closed by in-repository analytic reconstructions. The proof survives after documented repairs to profile and direction quantifiers, weak-Lorentz commutator interpolation, shell endpoints, the terminal interval, slowly varying inversions, velocity normalization, escape-time selection, slit-domain harmonic measure, and the final supremum logic.",
       "last_checked": "2026-07-23"
     },
     {

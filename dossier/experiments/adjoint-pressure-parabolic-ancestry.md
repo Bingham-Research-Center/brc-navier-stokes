@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-PARABOLIC-ANCESTRY-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional same-trajectory
+- **Status:** adversarially recomputed conditional same-trajectory
   theorem plus smooth kinematic countermodel
 - **Review:** [valid and nonduplicative in the stated
-  scope](../review-response-adjoint-pressure-parabolic-ancestry-2026-07-24.md)
+  scope](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** independently reviewed
+- **Input:** adversarially recomputed
   [parabolic coefficient-tail theorem](adjoint-pressure-parabolic-coefficient-tail.md)
 
 The reviewed coefficient-tail theorem says more than
@@ -797,7 +797,7 @@ The exact next theorem must therefore add at least one of:
 Bare next-scale identification is now closed as a route to
 contradiction.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [parabolic tail-to-flux theorem](adjoint-pressure-parabolic-flux.md)
 now extracts the exact NSE consequence absent from this kinematic path.
 At every farther factor, the actual trajectory must pay in a comparable
@@ -809,7 +809,7 @@ stage the remaining theorem had to quantify flux decrement, frequency
 locality, non-Zeno cascade speed, inherited-state ancestry, or
 event-index telescoping.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
 now resolves the inherited-state bookkeeping alternative.  A
 fixed-time \(H^1\) tail and last hitting force pre-event cumulative
@@ -823,7 +823,7 @@ on terminal intervals for every sufficiently late event.  What
 remains is event-index freshness of that forced flux, not its
 existence.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [weak-\(L^3\) lower-band decrement theorem](adjoint-pressure-flux-decrement.md)
 then closes the near-lossless shell-ledger alternative.  Every late
 charged boundary pays a fixed fraction of its signed input in a lower

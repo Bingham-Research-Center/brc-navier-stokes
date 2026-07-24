@@ -1239,13 +1239,12 @@
         "No tower construction or exclusion, suitability theorem, rigidity theorem, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Separate each parent detector radius R from its carrier radius r, split the genealogy into internal and bridge edges, audit the common-subsequence quantifiers, retain the generic cocycle and cutoff covariance only for actual nodes, condition the counting and shift compactification on a coherent array, and include the prelimit detector commutators in the tensor history identity.",
-      "certificate": "An independent adversarial review response, a corrected two-scale conditional reduction, and exact Fraction tests for internal and bridge ratio identities, intrinsic detector collapse and external recovery, generic parabolic cocycle composition, Navier-Stokes scaling weights, matched-cutoff covariance, counting and empirical moments, log-scale escape, empirical shift boundary error, and the signed history-square identity.",
+      "certificate": "A same-system adversarial recomputation response, a corrected two-scale conditional reduction, and exact Fraction tests for internal and bridge ratio identities, intrinsic detector collapse and external recovery, generic parabolic cocycle composition, Navier-Stokes scaling weights, matched-cutoff covariance, counting and empirical moments, log-scale escape, empirical shift boundary error, and the signed history-square identity.",
       "success_criterion": "The earliest invalid one-radius implication is withdrawn, the exact algebra that survives review is retained, and the coherent two-scale genealogical diagonal-selection lemma is isolated before any no-neck or stationary-process rigidity claim.",
       "failure_interpretation": "A common nested diagonal array follows automatically from the cited levelwise subsequences, the carrier Young measure is actually intrinsic to the parent detector scale, or the two edge ratios can be collapsed without losing detector provenance or transition data.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/scale-indexed-defect.md",
-        "dossier/review-response-2026-07-23.md",
         "lab/navier_lab/scale_defect.py",
         "lab/tests/test_scale_defect.py"
       ],
@@ -1272,13 +1271,12 @@
         "No carrier-to-next-parent spatial nesting, compact inter-event offsets, parabolic event cocycle, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Start from the single terminal carrier diagonal, choose a recursive sparse parent-scale subsequence, define each fresh broad annulus using its retained predecessor, transfer the detector inequality directly on the prelimit carrier set, take one joint compactness subsequence without regrouping the bands, and use bounded Fourier overlap to sum the resulting scale-critical occupations.",
-      "certificate": "A written synchronisation theorem, an independent adversarial second-pass verdict finding no fatal flaw in the stated scope, and exact Fraction tests for recursive event selection, internal and parent ratios, fresh-detector error and moment floors, disjoint cutoff intervals, preservation under later index thinning, and linear divergence of the critical block occupation.",
+      "certificate": "A written synchronisation theorem, a same-system adversarial second-pass verdict finding no fatal flaw in the stated scope, and exact Fraction tests for recursive event selection, internal and parent ratios, fresh-detector error and moment floors, disjoint cutoff intervals, preservation under later index thinning, and linear divergence of the critical block occupation.",
       "success_criterion": "The common-subsequence objection is closed for the actual carrier and fresh-band event sequence, while the stronger unproved recursive genealogy is cleanly separated from what the terminal-excess diagonal supplies.",
       "failure_interpretation": "The original carrier construction does not provide one sequence with uniform constants, sparse parent selection destroys the carrier inequalities, defining a fresh band changes the carrier limit, or later compactness extraction destroys the nominal interval separation or uniform Fourier-overlap bound.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/two-scale-synchronization.md",
-        "dossier/review-response-2026-07-23.md",
         "lab/navier_lab/two_scale_synchronization.py",
         "lab/tests/test_two_scale_synchronization.py"
       ],
@@ -1297,7 +1295,7 @@
         "For fixed sufficiently small theta, the noncommutative squared-detector error is at most half the carrier threshold on the same prelimit carrier sets",
         "One sparse thinning separates the enlarged smooth supports of the fixed top shells while preserving all carrier inequalities and compactness errors",
         "Every fixed top shell retains one positive critical L five halves spacetime occupation and the separated block sum diverges",
-        "A subsequent independently reviewed theorem uses the fixed shell Schwartz tails to localize the carrier and the strong critical divergence on R three",
+        "A subsequent adversarially recomputed theorem uses the fixed shell Schwartz tails to localize the carrier and the strong critical divergence on R three",
         "Each parent rescaling has an ancient backward domain and a compactified forward horizon Theta equal to the terminal gap divided by the squared parent radius",
         "The exhaustive forward-clock limits are a terminal layer, a finite positive forward horizon, and an eternal horizon",
         "Current compactness yields only a nonzero fixed-top-shell marked distributional candidate on compact subsets inside the limiting parent domain, not suitability or mildness",
@@ -1375,18 +1373,17 @@
         "In a zero parent-clock branch, either a fixed parent neighborhood carries a positive fraction of the global essential velocity supremum or approximate essential-supremum maximizers escape to infinity in parent coordinates",
         "The parent-local branch retains a nonzero inverse-amplitude clock but proves no local mild lifespan or Fourier scale, does not place the point inside the subnatural tensor carrier, and does not transfer its detector",
         "The spatially split branch leaves two terminal profiles whose critical endpoint and energy costs do not add under current bounds",
-        "Independent adversarial review found no fatal analytic flaw after the R three scope, common-frame, safe-lifespan, essential-supremum, and inverse-amplitude wording repairs",
+        "Same-system adversarial recomputation found no fatal analytic flaw after the R three scope, common-frame, safe-lifespan, essential-supremum, and inverse-amplitude wording repairs",
         "The subsequent singular clock-centering theorem proves the reviewed local restart inequality under bounded carrier-to-singular-point centering and reduces every remaining failure to centering escape",
         "No carrier-to-continuation tensor bridge, split-profile exclusion, suitability theorem, rigidity theorem, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
       ],
       "method": "On R three and in one normalized velocity frame, split the fixed-shell Schwartz convolutions into near and far parts, use critical Lorentz Holder estimates to absorb the far tails, infer local weak strain and velocity atoms, localize the separated block occupation with one fixed cutoff around a carrier cluster point, and diagonalize the ratio of carrier-neighborhood to global essential velocity suprema.",
-      "certificate": "A written spatial-localization and bridge-dichotomy theorem, an independent adversarial review response, and exact Fraction tests for critical kernel scaling, normalized far errors, retained local weak floors, physical supremum floors, derivative persistence from strain to velocity, and the local versus global inverse-amplitude ledger.",
+      "certificate": "A written spatial-localization and bridge-dichotomy theorem, a same-system adversarial recomputation response, and exact Fraction tests for critical kernel scaling, normalized far errors, retained local weak floors, physical supremum floors, derivative persistence from strain to velocity, and the local versus global inverse-amplitude ledger.",
       "success_criterion": "The fixed-shell mark is proved to be a genuine local physical event, clustered carriers force local critical divergence, and the terminal-layer continuation bridge is reduced to exhaustive parent-local and spatially split branches.",
       "failure_interpretation": "A fixed-shell Schwartz tail can retain order-one normalized size at arbitrary distance under the endpoint bound, the derivative mark need not create a nearby velocity-block floor, one fixed cutoff destroys frequency separation, or the local-to-global velocity ratios have a third limiting branch.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/fixed-shell-spatial-localization.md",
-        "dossier/review-response-local-continuation-2026-07-23.md",
         "lab/navier_lab/fixed_shell_localization.py",
         "lab/tests/test_fixed_shell_localization.py"
       ],
@@ -1467,7 +1464,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-satellite-tower.md",
-        "dossier/review-response-terminal-satellite-tower-2026-07-23.md",
         "lab/navier_lab/terminal_satellite_tower.py",
         "lab/tests/test_terminal_satellite_tower.py"
       ],
@@ -1534,7 +1530,7 @@
         "The source weak-L3 stability estimate depends only on the common initial weak-L3 bound and elapsed time rather than the diverging rescaled global energy",
         "Strong local spacetime and almost-every-time slice convergence identify every stability limit with the already selected detached profile",
         "The Albritton-Barker Theorem 4.1 proof uses mildness to supply weak-L3 solution structure on each zoomed interval; the repository extension replaces only that use by inherited coherence",
-        "The displayed source definition of the Besov blow-down subspace suppresses the critical amplitude factor, while the proof requires the Navier-Stokes critical dilation; independent adversarial review validated this proof-level repair and found no published erratum",
+        "The displayed source definition of the Besov blow-down subspace suppresses the critical amplitude factor, while the proof requires the Navier-Stokes critical dilation; same-system adversarial recomputation validated this proof-level repair and found no published erratum",
         "The nonzero terminal shell contradicts the zero conclusion and forces a uniform positive terminal Besov distance",
         "At every good restart time, a zero trace would force zero future evolution through the weak-L3 correction energy inequality, so the same Besov defect persists",
         "Strong L3 belongs to the critical-blow-down-vanishing subspace, hence every coherent time slice has infinite strong L3 norm",
@@ -1549,7 +1545,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-besov-ancestry.md",
-        "dossier/review-response-terminal-besov-ancestry-2026-07-23.md",
         "lab/navier_lab/terminal_besov_ancestry.py",
         "lab/tests/test_terminal_besov_ancestry.py"
       ],
@@ -1568,7 +1563,7 @@
       ],
       "hypothesis": "The nonvanishing terminal Besov blow-down is necessarily only a static trace and need not produce an evolved same-trajectory Navier-Stokes ancestor.",
       "invariants": [
-        "The theorem is conditional on the independently reviewed detached satellite and coherent terminal Besov ancestry reductions",
+        "The theorem is conditional on the adversarially recomputed detached satellite and coherent terminal Besov ancestry reductions",
         "Every selected good restart is inherited from a global finite-energy suitable approximant and supplies a global weak-L3 continuation, rather than only a bare local restriction",
         "The critical terminal pairing is continuous in the dilation factor through L(3/2,1) test-function continuity",
         "A full-measure set of factors simultaneously maps every negative rational output time to a good Barker-Seregin-Sverak restart",
@@ -1590,7 +1585,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-outer-profile.md",
-        "dossier/review-response-terminal-outer-profile-2026-07-23.md",
         "lab/navier_lab/terminal_outer_profile.py",
         "lab/tests/test_terminal_outer_profile.py"
       ],
@@ -1632,7 +1626,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-distance-profile.md",
-        "dossier/review-response-terminal-distance-profile-2026-07-23.md",
         "lab/navier_lab/terminal_distance_profile.py",
         "lab/tests/test_terminal_distance_profile.py"
       ],
@@ -1674,7 +1667,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-satellite-packing.md",
-        "dossier/review-response-terminal-satellite-packing-2026-07-23.md",
         "lab/navier_lab/terminal_satellite_packing.py",
         "lab/tests/test_terminal_satellite_packing.py"
       ],
@@ -1752,7 +1744,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-logscale-survivor.md",
-        "dossier/review-response-terminal-logscale-survivor-2026-07-23.md",
         "lab/navier_lab/terminal_logscale_survivor.py",
         "lab/tests/test_terminal_logscale_survivor.py"
       ],
@@ -1799,7 +1790,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/scale-hull-balance.md",
-        "dossier/review-response-scale-hull-balance-2026-07-23.md",
         "lab/navier_lab/scale_hull_balance.py",
         "lab/tests/test_scale_hull_balance.py"
       ],
@@ -1848,7 +1838,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/parabolic-scale-hull.md",
-        "dossier/review-response-parabolic-scale-hull-2026-07-23.md",
         "lab/navier_lab/parabolic_scale_hull.py",
         "lab/tests/test_parabolic_scale_hull.py"
       ],
@@ -1895,7 +1884,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/defect-event-suspension.md",
-        "dossier/review-response-defect-event-suspension-2026-07-23.md",
         "lab/navier_lab/defect_event_suspension.py",
         "lab/tests/test_defect_event_suspension.py"
       ],
@@ -1943,7 +1931,6 @@
       "artifacts": [
         "dossier/experiments/adjoint-pressure-history.md",
         "dossier/adjoint-pressure-cost-reviewer.tex",
-        "dossier/review-response-adjoint-pressure-history-2026-07-23.md",
         "lab/navier_lab/adjoint_pressure_history.py",
         "lab/tests/test_adjoint_pressure_history.py"
       ],
@@ -1982,7 +1969,6 @@
       "artifacts": [
         "dossier/experiments/adjoint-pressure-packets.md",
         "dossier/adjoint-pressure-cost-reviewer.tex",
-        "dossier/review-response-adjoint-pressure-packets-2026-07-23.md",
         "lab/navier_lab/adjoint_pressure_packets.py",
         "lab/tests/test_adjoint_pressure_packets.py"
       ],
@@ -2023,7 +2009,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-initial-layer.md",
-        "dossier/review-response-adjoint-pressure-initial-layer-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_initial_layer.py",
         "lab/tests/test_adjoint_pressure_initial_layer.py"
       ],
@@ -2057,13 +2042,12 @@
         "No detector transfer from an earlier packet, terminal-layer exclusion, event-index summation, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Replace the compact event detector by one fixed band-limited Lorentz-predual approximation, project the reversed Oseen equation to that fixed Fourier ball, use critical Lorentz Holder and Bernstein estimates to prove an O(h) low-frequency increment, convert it to O(h) adjoint dissipation by the exact energy identity, and rerun the Hardy, finite-volume, scaling, and weak-endpoint ledgers.",
-      "certificate": "An independently reviewed conditional theorem and exact Fraction tests for the low-frequency increment, energy-deficit conversion, inverse-time coefficient floor, quadratic physical zoom, inverse-square escape, inverse-sixth capture and reservoir volumes, inverse-fifteen-halves heat-cell count, and sharp adjoint-cloud powers.",
+      "certificate": "An adversarially recomputed conditional theorem and exact Fraction tests for the low-frequency increment, energy-deficit conversion, inverse-time coefficient floor, quadratic physical zoom, inverse-square escape, inverse-sixth capture and reservoir volumes, inverse-fifteen-halves heat-cell count, and sharp adjoint-cloud powers.",
       "success_criterion": "The terminal initial-layer alternative for the preferred band-limited detector is narrowed to an inverse-time coefficient at quadratic physical genealogy depth, coupled to centre-uniform adjoint escape almost at inverse-square radius and matching inverse-sixth-volume adjoint and velocity reservoirs.",
       "failure_interpretation": "Band-limited approximation loses the event pairing, terminal convergence does not extend to Schwartz tests, the Leray-divergence low-frequency multiplier fails at L(6/5,2), the low-frequency norm does not control the energy deficit, or any improved scaling exponent is incorrect.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-bandlimited-layer.md",
-        "dossier/review-response-adjoint-pressure-bandlimited-layer-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_bandlimit.py",
         "lab/tests/test_adjoint_pressure_bandlimit.py"
       ],
@@ -2098,13 +2082,12 @@
         "No compactification or exclusion of the dissipation ancestor, terminal-layer exclusion, event-index summation, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Move the derivative in the adjoint pressure source from the adjoint to the coefficient, split the adjoint into its fixed Schwartz detector and an O(sqrt h) L2 error, apply Barker-Prange local energy and an explicit weighted unit-cube H1 decomposition to the frozen term, and pull the resulting inverse-square dissipation floor back through the exact parabolic scaling on one physical trajectory.",
-      "certificate": "An independently reviewed conditional theorem and exact Fraction tests for the master pressure estimate, inverse-square coefficient dissipation, fresh reversed energy gain, enstrophy tail, heat-cell entropy, physical depth ratio, dissipation-ancestor scale and clock, and sharp static-cloud powers.",
+      "certificate": "An adversarially recomputed conditional theorem and exact Fraction tests for the master pressure estimate, inverse-square coefficient dissipation, fresh reversed energy gain, enstrophy tail, heat-cell entropy, physical depth ratio, dissipation-ancestor scale and clock, and sharp static-cloud powers.",
       "success_criterion": "The band-limited terminal initial-layer alternative is narrowed from an inverse-time coefficient at merely quadratic genealogy depth to inverse-square coefficient dissipation, strict superquadratic physical depth, and a nonzero scale-critical dissipation ancestor on one common trajectory.",
       "failure_interpretation": "The dual pressure identity has the wrong sign or indices, the full L2 adjoint continuity does not follow, Barker-Prange local energy is not uniform in the needed scaling, the weighted H1 decomposition fails, the pressure split loses an h factor, or the common-trajectory pullback and absolute-continuity argument have an incorrect scale.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-enstrophy-layer.md",
-        "dossier/review-response-adjoint-pressure-enstrophy-layer-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_enstrophy.py",
         "lab/tests/test_adjoint_pressure_enstrophy.py"
       ],
@@ -2139,13 +2122,12 @@
         "No causal exclusion of the inverse-cubic dust, ancestor compactification, terminal-layer exclusion, event-index summation, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Subtract the fixed Schwartz detector before estimating the Oseen adjoint, use critical Lorentz Holder and the zero-data difference energy identity to gain a full time factor, insert that gain into the reviewed dual pressure splitting, and pull the resulting inverse-cubic dissipation and energy floors back through one physical trajectory.",
-      "certificate": "An independently reviewed conditional theorem and executable power-ledger tests for the O(h) difference norm, O(h squared) difference dissipation, inverse-cubic coefficient floor, enstrophy tail and cover entropy, low-amplitude velocity reservoir, cubic physical zoom, strict depth ratio, ancestor clock, and sharp static-cloud powers.",
+      "certificate": "An adversarially recomputed conditional theorem and executable power-ledger tests for the O(h) difference norm, O(h squared) difference dissipation, inverse-cubic coefficient floor, enstrophy tail and cover entropy, low-amplitude velocity reservoir, cubic physical zoom, strict depth ratio, ancestor clock, and sharp static-cloud powers.",
       "success_criterion": "The preferred band-limited terminal initial-layer alternative is narrowed from inverse-square coefficient dissipation at strict superquadratic depth to inverse-cubic dissipation, strict supercubic physical depth, and a scale-critical dissipation ancestor on clock h to the seventh.",
       "failure_interpretation": "The difference equation or skew-energy identity has the wrong sign, the endpoint Lorentz product does not land in L2, the pressure error loses the full time factor, the inverse-cubic scaling powers are wrong, or the physical energy and absolute-continuity pullbacks do not justify the supercubic depth.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-cubic-layer.md",
-        "dossier/review-response-adjoint-pressure-cubic-layer-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_cubic.py",
         "lab/tests/test_adjoint_pressure_cubic.py"
       ],
@@ -2171,7 +2153,7 @@
         "Inner cubes cost at most C h to the three-quarters R cubed by the centre-uniform local-energy restart",
         "Outer cubes cost at most C times h to the three-halves R to minus three-halves plus h to the three-quarters R to minus eleven-halves, multiplied by sqrt(D_b(h))",
         "Optimising at R comparable to (h to the three-quarters sqrt(D_b)) to the two-ninths gives direct pressure at most C times h to the five-quarters D_b to the one-third plus h to the one-sixth",
-        "The independently reviewed inverse-cubic floor makes the rapid-tail term vanish uniformly",
+        "The adversarially recomputed inverse-cubic floor makes the rapid-tail term vanish uniformly",
         "A fixed direct-response pressure fraction forces D_b(h) at least a constant times inverse h to the fifteen-quarters",
         "If the direct response does not pay that fraction, pressure linearity forces a fixed packet in the zero-data drift-feedback remainder",
         "The feedback remainder has squared-L2 supremum plus integrated gradient energy O(h squared)",
@@ -2181,13 +2163,12 @@
         "No branch exclusion, rough endpoint adjoint, event-index summation, ancient Liouville theorem, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Use cancellation and pointwise heat-Leray kernel bounds to localise the direct detector response cube by cube, combine its weighted Hardy pressure factorisation with centre-uniform local energy and global coefficient dissipation, optimise the spatial split, and assign any unpaid pressure to the exact zero-data drift-feedback remainder.",
-      "certificate": "An independently reviewed conditional dichotomy, a written heat-Leray dipole and weighted H1 cube proof, and executable tests for every optimisation, dissipation, entropy, physical-depth, and ancestor-clock exponent.",
+      "certificate": "An adversarially recomputed conditional dichotomy, a written heat-Leray dipole and weighted H1 cube proof, and executable tests for every optimisation, dissipation, entropy, physical-depth, and ancestor-clock exponent.",
       "success_criterion": "The causal Oseen frontier is narrowed from an unspecified inverse-cubic dust to an exhaustive alternative: inverse-15/4 direct-response dissipation or a fixed pressure packet that has passed through at least one critical drift interaction.",
       "failure_interpretation": "The detector forcing lacks the asserted cancellation or weighted endpoint bounds, the heat-Leray tail loses a time or spatial power, the H1 cube estimate imports global energy, the spatial optimisation is not uniform, or pressure splitting does not isolate the feedback remainder.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-direct-response.md",
-        "dossier/review-response-adjoint-pressure-direct-response-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_direct.py",
         "lab/tests/test_adjoint_pressure_direct.py"
       ],
@@ -2223,13 +2204,12 @@
         "No branch exclusion, event-index summation, rough endpoint adjoint, ancient Liouville theorem, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Use the zero-data feedback equation, the reviewed fourth-power direct-response tail, a nonprojected L2 pressure estimate, exterior cutoff energy, an annular Bogovskii correction, and an inner-exterior Hardy pressure split; optimise the resulting radius-dependent estimate and pull the forced dissipation through one physical trajectory.",
-      "certificate": "An independently reviewed conditional theorem and executable power-ledger tests for the exterior tail, pressure optimisation, inverse-13/2 dissipation floor, inverse-cubic interaction radius, entropy powers, physical depth, and ancestor clock.",
+      "certificate": "An adversarially recomputed conditional theorem and executable power-ledger tests for the exterior tail, pressure optimisation, inverse-13/2 dissipation floor, inverse-cubic interaction radius, entropy powers, physical depth, and ancestor clock.",
       "success_criterion": "The feedback half of the causal Oseen dichotomy is no longer a cost-free remainder: a retained pressure packet forces inverse-13/2 coefficient dissipation at an inverse-cubic interaction radius.",
       "failure_interpretation": "The nonprojected pressure estimate, exterior cutoff energy, Lorentz tail, Bogovskii correction, Hardy pressure split, optimisation, or physical pullback loses one of the stated powers or imports an unavailable global energy bound.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-feedback-tail.md",
-        "dossier/review-response-adjoint-pressure-feedback-tail-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_feedback.py",
         "lab/tests/test_adjoint_pressure_feedback.py"
       ],
@@ -2265,13 +2245,12 @@
         "No compact interaction profile, Besov-mark transfer, exclusion of either branch, event-index summation, rough endpoint adjoint, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Partition the coefficient outside h^-3 into dyadic annuli, combine centre-uniform local energy with shellwise weak-L3 cutoff control, localise the zero-data remainder solenoidally on each shell, sum the CLMS pressure bounds logarithmically, and translate the resulting local-payer versus stretched-exponential alternative to one physical trajectory.",
-      "certificate": "An independently reviewed conditional theorem and executable tests for the logarithmic shell lemma, exterior-pressure powers, stretched-exponential inversion, three physical scales, and both collapsing clocks.",
+      "certificate": "An adversarially recomputed conditional theorem and executable tests for the logarithmic shell lemma, exterior-pressure powers, stretched-exponential inversion, three physical scales, and both collapsing clocks.",
       "success_criterion": "Ordinary polynomial-dissipation feedback cannot pay from spatial infinity: its bilinear pressure source is forced inside the inverse-cubic event ball, while exterior escape has an explicit stretched-exponential cost.",
       "failure_interpretation": "The dyadic partition loses the transition shell, local energy does not control each annulus, the Bogovskii localisation changes the source, the logarithmic shell lemma fails, the infinite pressure series does not converge, or the physical scale map loses one of its exact powers.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-feedback-shells.md",
-        "dossier/review-response-adjoint-pressure-feedback-shells-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_feedback_shells.py",
         "lab/tests/test_adjoint_pressure_feedback_shells.py"
       ],
@@ -2305,13 +2284,12 @@
         "No exclusion of the stretched-exponential branch, event-index summation, rough endpoint adjoint, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Factor the local feedback pressure through the primitive tensor r tensor b_in, combine zero-data feedback energy with finite-volume weak-L3 control, apply the L1 kernel estimate for a smooth low-pass order-one multiplier, and pull the forced high-frequency threshold back to its physical scale and clock.",
-      "certificate": "An independently reviewed conditional theorem and executable tests for the primitive h^(1/2) bound, low-frequency K h^(1/2) cost, h^-1/2 threshold, positive descendant clock, and all four physical scale ratios.",
+      "certificate": "An adversarially recomputed conditional theorem and executable tests for the primitive h^(1/2) bound, low-frequency K h^(1/2) cost, h^-1/2 threshold, positive descendant clock, and all four physical scale ratios.",
       "success_criterion": "The source-localised feedback branch forces a fixed pressure fraction at physical scales no larger than sigma sqrt(h), where the selected layer has a uniform positive normalised clock.",
       "failure_interpretation": "The divergence-free factorisation fails, the primitive tensor imports unavailable global energy, the truncated multiplier kernel is not integrable, the low-pass estimate loses its h or K power, or the physical scale and clock map is inconsistent.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-feedback-frequency.md",
-        "dossier/review-response-adjoint-pressure-feedback-frequency-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_feedback_frequency.py",
         "lab/tests/test_adjoint_pressure_feedback_frequency.py"
       ],
@@ -2347,13 +2325,12 @@
         "No invariant aggregate law, additive event budget, signed pressure retention, branch exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Use CLMS to prove two-sided inner local-energy saturation, split the two pressure factors at fixed multiples of the parabolic descendant frequency, control the high-factor terms by feedback energy, and combine the finite-band kernel with a Lorentz capture weight to obtain the sixth-root vector-valued cell law.",
-      "certificate": "An independently reviewed conditional theorem and executable tests for inverse-cubic inner saturation, the high-factor split, h^-7/2 dissipation cells, h^-21/2 pressure cells, physical scale ratios, and the static saturation ledger.",
+      "certificate": "An adversarially recomputed conditional theorem and executable tests for inverse-cubic inner saturation, the high-factor split, h^-7/2 dissipation cells, h^-21/2 pressure cells, physical scale ratios, and the static saturation ledger.",
       "success_criterion": "A single centred positive-clock pressure profile is removed from the feedback frontier: the local branch is reduced to fixed high-frequency coefficient energy or a finite-band pressure cloud with maximal interaction-volume cardinality.",
       "failure_interpretation": "The inner cutoff imports global energy, CLMS does not invert the pressure floor, the high-factor Hardy estimates lose their powers, the finite-band kernel is not local at K_h^-1, or the Lorentz capture weight does not give the N^(1/6) law.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-feedback-dust.md",
-        "dossier/review-response-adjoint-pressure-feedback-dust-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_feedback_dust.py",
         "lab/tests/test_adjoint_pressure_feedback_dust.py"
       ],
@@ -2394,13 +2371,12 @@
         "No event-index telescope, finite critical budget, aggregate rigidity, stretched-exponential exclusion, finite-secondary-index estimate, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Regularise the vector modulus, derive its exact Oseen Kato-polar balance, select a signed stopping time from the running-L1 floor, formulate a genealogy-aware signed early-late alternative, carry the fixed polar functional through every exact L1 pressure split, charge-select the high-coefficient versus finite-band children, normalise their pressure mass to a marked Young law, convert the cell capture estimate to a source-scale Frostman bound, prove macro-tightness by off-diagonal kernel decay, and project the polar witness to the finite pressure band to obtain descendant-scale spatial compactness.",
-      "certificate": "An independently reviewed conditional theorem, review request and response covering thirteen links, and executable tests for the regularised Kato Hessian, stopping charge, norm-one branch lift, inverse-cubic high-frequency floor, source-coordinate mesh, Frostman exponent, probability alignment, and scale-zero effective-polar derivatives.",
+      "certificate": "An adversarially recomputed conditional theorem, incorporated scope corrections and executable tests for the regularised Kato Hessian, stopping charge, norm-one branch lift, inverse-cubic high-frequency floor, source-coordinate mesh, Frostman exponent, probability alignment, and scale-zero effective-polar derivatives.",
       "success_criterion": "The positive-clock feedback frontier has a nonzero signed causal aggregate in both remaining local branches, with a diffuse weak-L(6/5) source-scale marginal and compact effective polar decoration in the finite-band branch; the next missing implication is a same-trajectory telescope, finite budget, or rigidity for that aggregate.",
       "failure_interpretation": "The Kato sign is wrong, the running-L1 floor cannot be stopped with positive work, the event and genealogy quantifiers do not yield an exhaustive early-late split, a discarded L1 component can erase the fixed polar charge, the charged factor split loses its energy floor, pressure-mass normalisation loses alignment, the macro capture powers or tightness fail, or the effective polar projection changes the pairing.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-signed-aggregate.md",
-        "dossier/review-response-adjoint-pressure-signed-aggregate-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_signed_aggregate.py",
         "lab/tests/test_adjoint_pressure_signed_aggregate.py"
       ],
@@ -2438,13 +2414,12 @@
         "The disintegration supplies no temporal continuity, limiting Oseen equation, event telescope, finite budget, branch exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution"
       ],
       "method": "Strengthen the signed stopping selection by tracking regularised mass gain; combine the fixed Schwartz tail with the O(h) adjoint-difference L2 bound to force a quadratic regularisation ceiling and diffuse Kato cloud; stop the feedback energy estimate at arbitrary times; retain the exact scaled time second moment when restricting the Hardy and weighted Lorentz capture arguments; pass the coupled pressure-energy law and finite-band rectangle bounds through weak limits and source-scale tightness; then disintegrate over Lebesgue time.",
-      "certificate": "An independently reviewed conditional theorem, review request and response covering thirteen links, and executable tests for the quadratic regularisation ceiling, inverse-square capture volume, inverse-seven-halves cell count, three-halves high-branch terminal-edge capture, quadratic finite-band terminal-edge capture, weak density exponents, and the sharp band-resolved kinematic power ledger.",
+      "certificate": "An adversarially recomputed conditional theorem, incorporated scope corrections and executable tests for the quadratic regularisation ceiling, inverse-square capture volume, inverse-seven-halves cell count, three-halves high-branch terminal-edge capture, quadratic finite-band terminal-edge capture, weak density exponents, and the sharp band-resolved kinematic power ledger.",
       "success_criterion": "Time atoms and vanishing terminal-edge concentration no longer explain loss of the signed aggregate: the high branch has a pressure density divided by time in L2, and the finite-band branch has density at most C times scaled time, diffuse almost-every-time spatial slices, and positive alignment on a positive-measure time set; the remaining gate is time-translation coherence or a same-trajectory functional.",
       "failure_interpretation": "The stopping proof does not retain mass gain, the Schwartz tail cannot isolate the adjoint difference, the epsilon inequality is reversed, the arbitrary-time feedback energy estimate fails, the restricted weighted capture loses a time factor, source-scale tightness does not give fixed support, or the rectangle law does not pass to the asserted disintegration and slice estimates.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-temporal-disintegration.md",
-        "dossier/review-response-adjoint-pressure-temporal-disintegration-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_temporal.py",
         "lab/tests/test_adjoint_pressure_temporal.py"
       ],
@@ -2481,13 +2456,12 @@
         "No lower epsilon bound, amplitude-normalised Oseen compactness, temporal polar modulus, event telescope, finite budget, branch exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Replace each mass-gain terminal interval by the first half-threshold hitting interval and rerun the reviewed signed branch tree; convert its uniform Kato mass into an L2 polar-volume ceiling; extend the finite-band kernel argument to measurable moving cube families; localise the projected polar with the Schwartz multiplier kernel; compare the resulting polar-active cell ceiling with the moving pressure capture floor; use the pointwise O(h) adjoint-difference estimate to prove pressure-probability vacuum at quadratic amplitude; then normalise by epsilon to isolate the balanced Orlicz branch from the strict sub-h^9 cascade.",
-      "certificate": "An independently reviewed conditional theorem, review request and response covering fourteen links and eight precision repairs, plus executable tests for the moving-grid power, inverse-ninth ceiling, inverse-twenty-one-halves cell count, h^(7/6) vacuum probability, balanced Orlicz tail, source-cell pressure normalisation, and the sharp two-mode source-volume kinematic ledger.",
+      "certificate": "An adversarially recomputed conditional theorem, eight incorporated precision repairs and executable tests for the moving-grid power, inverse-ninth ceiling, inverse-twenty-one-halves cell count, h^(7/6) vacuum probability, balanced Orlicz tail, source-cell pressure normalisation, and the sharp two-mode source-volume kinematic ledger.",
       "success_criterion": "The naive quadratic-scale limiting Oseen profile is removed from the finite-band frontier: every charged first-hitting finite-band child has epsilon at most C h^9 and a nonzero effective-polar decoration over a zero h^2-normalised adjoint state, leaving only amplitude-renormalised Oseen compactness, a strict sub-h^9 cascade cost, or a same-trajectory telescope.",
       "failure_interpretation": "First hitting does not preserve the signed branch input, regularised mass fails to control polar L2 volume, the fixed finite-band capture proof cannot follow time-dependent grid sets, projected polar localisation loses a cell-count factor, the inverse-ninth algebra is wrong, or the detector and zero-data adjoint do not vanish under the pressure law.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-polar-vacuum.md",
-        "dossier/review-response-adjoint-pressure-polar-vacuum-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_polar_vacuum.py",
         "lab/tests/test_adjoint_pressure_polar_vacuum.py"
       ],
@@ -2520,13 +2494,12 @@
         "No amplitude-normalised Oseen limit, pressure-trace closure, strict sub-h^9 cascade cost, event telescope, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Sum the exact pressure components along the finite-band branch to obtain a full L1 packet upper bound; insert it into the first-hitting Kato identity; convert global regularised mass, Kato dissipation, and pressure into descendant-rooted actions; count action-bad cubes and apply finite-band capture; transform the amplitude-normalised Oseen equation through the regularised polar map; use its Hessian and third-derivative inequalities with Aubin-Lions-Simon compactness; and isolate the remaining pressure-trace defect with an explicit moving-bump model.",
-      "certificate": "An independently reviewed conditional theorem with five recorded scope repairs, plus executable tests for all three h^(21/2) cell scales, scale-free L^-1/6 tails, exact Hessian and third-derivative formulas, the polar time-derivative budget, and the residual moving-trace model.",
+      "certificate": "An adversarially recomputed conditional theorem with five recorded scope repairs, plus executable tests for all three h^(21/2) cell scales, scale-free L^-1/6 tails, exact Hessian and third-derivative formulas, the polar time-derivative budget, and the residual moving-trace model.",
       "success_criterion": "The balanced norm-gated finite-band branch advances from one-time linear-growth modular tightness to tightness of the regularised-polar profile laws on strong full-time, local-in-space L2, leaving only amplitude concentration and pressure-trace identification before an honest amplitude-normalised Oseen limit can be asserted.",
       "failure_interpretation": "The full pressure packet is not uniformly bounded on the selected branch, the Kato upper budget or one rooted scaling factor is wrong, the polar curvature is not controlled by Kato dissipation, the time derivative does not lie in a valid Aubin-Lions space, or pressure-probability action tails do not imply profile-law tightness.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-balanced-polar.md",
-        "dossier/review-response-adjoint-pressure-balanced-polar-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_balanced_polar.py",
         "lab/tests/test_adjoint_pressure_balanced_polar.py"
       ],
@@ -2558,13 +2531,12 @@
         "Only infinite-amplitude concentration as sole carrier of the net signed observable is excluded here in the vague-amplitude sense; the subsequent bulk-participation theorem excludes source-volume-vanishing traces, but conditional signed-trace identification, uncharged Oseen product concentration, the strict sub-h^9 cascade, and Clay A-D resolution remain open"
       ],
       "method": "Compare the L-epsilon polar with the first-hitting modular; count its projected alpha-high descendant cubes using Bernstein balls and a fixed grid colouring; apply the reviewed moving-grid finite-band capture estimate; optimise the threshold; subtract the vanishing softened tail; cut off the residual at fixed small and large relative amplitudes; and express the retained window as a smooth map of the compact regularised polar.",
-      "certificate": "An independently reviewed conditional theorem with two recorded scope repairs, plus executable tests for modular domination, inverse-softening L2 mass, the h^-21/2 active-cell count, exact cancellation of the layer-time powers, the L^-1/11 optimisation, the polar window map, compact amplitude support, and the dyadic telescope.",
+      "certificate": "An adversarially recomputed conditional theorem with two recorded scope repairs, plus executable tests for modular domination, inverse-softening L2 mass, the h^-21/2 active-cell count, exact cancellation of the layer-time powers, the L^-1/11 optimisation, the polar window map, compact amplitude support, and the dyadic telescope.",
       "success_criterion": "A fixed compactly supported smooth weighted relative-amplitude observable carries a uniform positive fraction of the balanced finite-band net signed pressure charge, so escape to infinite adjoint amplitude is no longer a possible sole carrier of that signed observable.",
       "failure_interpretation": "The softened-polar modular gain is false, the Bernstein-ball cell count loses a power, moving-grid capture does not apply to the threshold family, the L^-1/11 optimisation is incorrect, or the compact amplitude cutoff loses the positive charge or fails to inherit strong polar-profile compactness.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-amplitude-window.md",
-        "dossier/review-response-adjoint-pressure-amplitude-window-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_amplitude_window.py",
         "lab/tests/test_adjoint_pressure_amplitude_window.py"
       ],
@@ -2601,13 +2573,12 @@
         "Nonzero compact-window profile-law occupation does not identify the signed point trace, close unwindowed Oseen products, close the strict sub-h^9 branch, or resolve Clay A-D"
       ],
       "method": "Retain the valid Ch finite-band pressure L2-squared estimate as a preliminary bound; reproduce the annular pressure with a scale-K Schwartz kernel; split an arbitrary source-cylinder set into low-density and high-density cells; control the former by kernel overlap and the latter by the full moving-grid theorem; optimise the density threshold; apply the resulting one-seventh absolute-continuity modulus to the thresholded positive compact-window charge; and convert bulk alignment duty into nonzero pressure-root window-profile occupation.",
-      "certificate": "An independently reviewed conditional theorem with one full-time-topology repair, plus executable tests for the Ch pressure L2-squared preliminary scale, the exact critical cancellation, the D^(1/7) density-split modulus, the fixed bulk-participation inversion, and rejection of the former moving-tube model by its h^(7/6) moving-selector ceiling.",
+      "certificate": "An adversarially recomputed conditional theorem with one full-time-topology repair, plus executable tests for the Ch pressure L2-squared preliminary scale, the exact critical cancellation, the D^(1/7) density-split modulus, the fixed bulk-participation inversion, and rejection of the former moving-tube model by its h^(7/6) moving-selector ceiling.",
       "success_criterion": "The compact-window charge cannot disappear into any source-volume-vanishing moving layer, and every limiting strong compact-window profile law retains uniformly positive probability of a nonzero profile. The successor product-trace theorem conditionally identifies the signed compact-window pairing, leaving closure of the unwindowed Oseen products.",
       "failure_interpretation": "The finite-band child lacks the asserted upper Fourier support, the reproducing-kernel cell weights are not summable, the variable-count moving-grid theorem cannot be applied to density-selected cells, the critical scale cancellation or one-seventh optimisation is wrong, or pressure-root profile nonvanishing does not follow from the full-duty cell split.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-trace-participation.md",
-        "dossier/review-response-adjoint-pressure-trace-participation-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_trace_participation.py",
         "lab/tests/test_adjoint_pressure_trace_participation.py"
       ],
@@ -2640,13 +2611,12 @@
         "The theorem identifies the compact-window trace but does not close unwindowed amplitude, drift, or pressure products, the strict sub-h^9 branch, or Clay A-D"
       ],
       "method": "Average the reviewed rooted actions against uniform source-space roots; apply Markov and full-time Aubin-Lions compactness; independently adjoin uniform scaled time; push the vector finite-band pressure through this decorated product space; pass the one-seventh absolute-continuity modulus and obtain a weak-L(7/6) density; use the exact spatial reproducing multiplier to define an L2-time window observable; approximate its time evaluation by continuous mollifications; and use the modulus to pass the positive signed pairing.",
-      "certificate": "An independently reviewed conditional theorem after explicit Polish-space and vector-total-variation repairs, plus executable tests for the three scale-free uniform-root means, the one-seventh to seven-sixths exponent conversion, product rooting, graph-neighbourhood exclusion, and the temporal-mollification error split.",
+      "certificate": "An adversarially recomputed conditional theorem after explicit Polish-space and vector-total-variation repairs, plus executable tests for the three scale-free uniform-root means, the one-seventh to seven-sixths exponent conversion, product rooting, graph-neighbourhood exclusion, and the temporal-mollification error split.",
       "success_criterion": "Conditionally on the source-localised finite-band ancestor, the residual moving-trace defect is closed: the complete compact-window signed mark is represented by an actual full-layer time-profile pairing against a weak-L(7/6) product-law pressure density. The later intermediate-localisation theorem eliminates that ancestor, so unwindowed Oseen closure is no longer a live route gate.",
       "failure_interpretation": "Uniform-root actions lose a source-volume or descendant-length factor, the decorated base law is not an exact product, the pressure modulus does not survive pushforward or weak convergence, the reproducing observable is not continuous into L2 time, or temporal mollification cannot pass the pressure-weighted pairing.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-product-trace.md",
-        "dossier/review-response-adjoint-pressure-product-trace-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_product_trace.py",
         "lab/tests/test_adjoint_pressure_product_trace.py"
       ],
@@ -2679,13 +2649,12 @@
         "No same-trajectory sum, physical zoom lower bound, other branch exclusion, or Clay A-D follows"
       ],
       "method": "Choose an intermediate radius L=h^-alpha; split the already inverse-cubic-cut coefficient into near and far pieces; use centre-uniform local energy and CLMS for the near interaction; replace the remainder by its reviewed solenoidal exterior truncation on the far interaction; combine the exterior remainder tail with the C h^-3 source-coefficient budget; and choose alpha in the overlap 1/30<alpha<3 to contradict the source-localised pressure floor.",
-      "certificate": "An independently reviewed conditional theorem plus executable tests for the sharp exponent interval, the four concrete one-tenth powers, strict separation from the source radius, and decay of the combined pressure ceiling.",
+      "certificate": "An adversarially recomputed conditional theorem plus executable tests for the sharp exponent interval, the four concrete one-tenth powers, strict separation from the source radius, and decay of the combined pressure ceiling.",
       "success_criterion": "The inverse-cubic source-localised pressure payer vanishes and is excluded, forcing every reviewed zero-data feedback sequence into the stretched-exponential exterior-dissipation branch.",
       "failure_interpretation": "The exterior-tail field and feedback-shell field are not the same remainder, the source-cutoff gradient ceiling is unavailable, the intermediate cutoff does not lie inside the source plateau, the Bogovskii replacement misses part of the far coefficient gradient support, or CLMS incurs an unrecorded cutoff or pressure term.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-intermediate-localization.md",
-        "dossier/review-response-adjoint-pressure-intermediate-localization-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_intermediate_localization.py",
         "lab/tests/test_adjoint_pressure_intermediate_localization.py"
       ],
@@ -2715,13 +2684,12 @@
         "No regularity, breakdown, or Clay A-D conclusion follows"
       ],
       "method": "Choose an accelerated zoom with exponent multiplier a>1; compute every physical scale and clock exactly; interpolate the decreasing nodes (delta_j,rho_j) by one increasing piecewise-affine cumulative dissipation function; and differentiate it to obtain a nonnegative integrable history density whose nested terminal masses realise every event.",
-      "certificate": "An independently reviewed proof-level scalar construction plus executable tests for the stretched-exponential equality, both scale ratios, both clocks, accelerated zoom, positive history slopes, exact recovery of every nested mass, and finite telescoping total.",
+      "certificate": "An adversarially recomputed proof-level scalar construction plus executable tests for the stretched-exponential equality, both scale ratios, both clocks, accelerated zoom, positive history slopes, exact recovery of every nested mass, and finite telescoping total.",
       "success_criterion": "Close finite physical dissipation, absolute continuity, nested terminal intervals, and the raw scalar energy telescope as candidate exclusions of the stretched-exponential feedback branch, thereby isolating a genuinely PDE, signed non-reusable, ancestry, or causal interaction-order input.",
       "failure_interpretation": "The physical nodes are not monotone, the piecewise-affine history is not absolutely continuous or positive, a scale or clock identity fails, or the construction implicitly claims a Navier-Stokes trajectory rather than only compatibility of the scalar ledgers.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-stretched-history.md",
-        "dossier/review-response-adjoint-pressure-stretched-history-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_stretched_history.py",
         "lab/tests/test_adjoint_pressure_stretched_history.py"
       ],
@@ -2752,13 +2720,12 @@
         "No uniform interaction-depth estimate, feedback exclusion, or Clay A-D conclusion follows"
       ],
       "method": "Interpolate the reviewed q bounds to L(3/2,1); split the Stokes Duhamel source q tensor b into spatially inner and outer pieces; use off-diagonal fourth-power kernel decay for the inner source and the reviewed q tail for the outer source; combine the resulting strong r[1] tail with intermediate coefficient localisation and dyadic exterior local energy; and subtract r[1] exactly from the full feedback equation.",
-      "certificate": "An independently reviewed conditional reduction plus executable tests for all three strong-tail exponent pairs, the five intermediate pressure powers, the sharp alpha interval, the three exterior shell powers, and decay of the complete pressure ceiling.",
+      "certificate": "An adversarially recomputed conditional reduction plus executable tests for all three strong-tail exponent pairs, the five intermediate pressure powers, the sharp alpha interval, the three exterior shell powers, and decay of the complete pressure ceiling.",
       "success_criterion": "Exclude the first heat-mediated feedback response as the terminal pressure payer and force every surviving selected feedback packet to causal drift depth at least two.",
       "failure_interpretation": "The q interpolation loses its time power, the Stokes off-diagonal kernel estimate is inapplicable to the projected divergence source, the inner or outer source split misses a nonlocal term, the Bogovskii truncation does not cover a coefficient-gradient support, or pressure does not split linearly with the feedback response.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-second-interaction.md",
-        "dossier/review-response-adjoint-pressure-second-interaction-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_second_interaction.py",
         "lab/tests/test_adjoint_pressure_second_interaction.py"
       ],
@@ -2793,13 +2760,12 @@
         "No infinite Dyson summation, feedback exclusion, or Clay A-D conclusion follows"
       ],
       "method": "Iterate the zero-data Stokes-Duhamel operator; close exact global L1, L2, and Lorentz time exponents; propagate a simultaneous exterior gradient, Lorentz-Sobolev, and L2 tail using differentiated off-diagonal Stokes kernels, zero-data Stokes energy, and time-space Young convolution; insert the tail into the reviewed intermediate-localisation and exterior-shell pressure estimates; and subtract every fixed finite Dyson truncation exactly.",
-      "certificate": "An independently reviewed proof-level interaction induction plus executable tests for the exact A_m and B_m recurrences, beta_m monotonicity, all intermediate and exterior-shell pressure powers, fixed-order pressure decay, alpha=1/4 optimisation, conservative logarithmic depth, the corrected 4^m radius ledger, and the vanishing partial-sum envelope.",
+      "certificate": "An adversarially recomputed proof-level interaction induction plus executable tests for the exact A_m and B_m recurrences, beta_m monotonicity, all intermediate and exterior-shell pressure powers, fixed-order pressure decay, alpha=1/4 optimisation, conservative logarithmic depth, the corrected 4^m radius ledger, and the vanishing partial-sum envelope.",
       "success_criterion": "Force the terminal feedback pressure payer beyond c log(1/h) causal Stokes-Duhamel interactions and isolate summability or quasi-nilpotence of critical Oseen time ordering as the next feedback gate.",
       "failure_interpretation": "The energy or Lorentz induction loses a time power, the differentiated Stokes kernel has a slower projection tail, the simultaneous exterior induction is circular, source restriction invalidates maximal regularity, a Bogovskii support fails at later order, the Dyson remainder indexing is wrong, or the conclusion silently requires uniformity in interaction order.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-divergent-interaction-depth.md",
-        "dossier/review-response-adjoint-pressure-divergent-interaction-depth-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_interaction_depth.py",
         "lab/tests/test_adjoint_pressure_interaction_depth.py"
       ],
@@ -2832,13 +2798,12 @@
         "No global adjoint-pressure L1 summation, feedback exclusion, or Clay A-D conclusion follows"
       ],
       "method": "Diagonalise a normalised critical Hardy-Volterra operator on monomials by the beta integral; perturb its coefficient by a positive time power and use gamma-ratio asymptotics; derive the exact Sobolev, differentiated heat-kernel, Hölder, interpolation, variable-space, packet-scaling, and Barker exponents; and compare the half-integrability threshold with the classical Prodi-Serrin line.",
-      "certificate": "An independently reviewed analytic reduction plus executable exact-rational tests for the Sobolev pair, Serrin index, Oseen kernel and time margins, Barker exponent, endpoint interpolation, variable-space telescoping, critical scalar eigenvalue, and subcritical beta-product decay.",
+      "certificate": "An adversarially recomputed analytic reduction plus executable exact-rational tests for the Sobolev pair, Serrin index, Oseen kernel and time margins, Barker exponent, endpoint interpolation, variable-space telescoping, critical scalar eigenvalue, and subcritical beta-product decay.",
       "success_criterion": "Close the norm-only critical-causality shortcut and show that the existing higher-integrability theorem cannot sum the post-logarithmic interaction chain by standard Oseen heat-kernel estimates.",
       "failure_interpretation": "The scalar beta model is outside its declared function space, positivity does not determine its spectral radius, the subcritical beta product is not factorially summable, homogeneous Sobolev is misnormalised, the projected heat-kernel or time margin is wrong, a changing spatial exponent avoids telescoping, Barker's exact exponent crosses one half, or the Prodi-Serrin comparison is false.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-critical-volterra.md",
-        "dossier/review-response-adjoint-pressure-critical-volterra-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_critical_volterra.py",
         "lab/tests/test_adjoint_pressure_critical_volterra.py"
       ],
@@ -2868,13 +2833,12 @@
         "No feedback exclusion, regularity theorem, or Clay A-D conclusion follows"
       ],
       "method": "Identify the PDE pressure as the gradient projection defect of skew transport; derive the exact block-compression and nonlinear pressure-derivative identities; tensor an exact finite-dimensional skew compression with the critical Hardy-Volterra time operator; rescale the compression by the exact monomial Hardy eigenvalue to retain any prescribed algebraic zero-trace order; solve the feedback and coupling equations in closed form; and compare the linear and squared leakage of a rational small-step unitary compression.",
-      "certificate": "An independently reviewed proof-level structural theorem, including the accepted strong-trace strengthening, plus exact-rational executable tests for skewness, compression identities, persistent critical residual pressure with constant and linear zero-trace modes, real coupling energy, rational unitarity, the squared defect telescope, and the surviving linear leakage.",
+      "certificate": "An adversarially recomputed proof-level structural theorem, including the accepted strong-trace strengthening, plus exact-rational executable tests for skewness, compression identities, persistent critical residual pressure with constant and linear zero-trace modes, real coupling energy, rational unitarity, the squared defect telescope, and the surviving linear leakage.",
       "success_criterion": "Close the abstract skew, Hodge, real-coupling, fixed algebraic zero-trace, and projection-energy shortcuts and reduce the live infinite-depth gate to a genuinely heat-linked spatial Oseen commutator, a same-trajectory signed law, or an actual event ancestry theorem.",
       "failure_interpretation": "The PDE tensor orientations differ, a block sign is wrong, the finite-dimensional matrix is not skew, the Hardy monomial eigenvalue or reciprocal compression is wrong, the strong-trace feedback residual is misindexed, real coupling is not stable, the unitary leakage formulas or limits fail, or the note overclaims an actual Oseen counterexample.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-skew-compression.md",
-        "dossier/review-response-adjoint-pressure-skew-compression-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_skew_compression.py",
         "lab/tests/test_adjoint_pressure_skew_compression.py"
       ],
@@ -2900,13 +2864,12 @@
         "The theorem controls only paths projected back to one annulus and does not sum changing-band paths or the unprojected pressure"
       ],
       "method": "Combine smooth annular multiplier kernels, Lorentz Holder, and Lorentz Bernstein to bound the band-restricted Oseen operator by a scalar Volterra integral with coefficient K M R squared; integrate its ordered time simplices exactly; then derive a rational two-frequency Leray family to separate freely normalized angle and heat geometry from the actual coefficient-time action.",
-      "certificate": "An independently reviewed proof-level fixed-band factorial theorem after two scope precisions, plus executable exact-rational and asymptotic tests for scale-zero parabolic action, factorial depth, logarithmic-depth tail decay, rational tail domination, one-sided ray leakage, integer Fourier angles, unbounded normalized backtracking leakage, effective parabolic lifetime, supercritical unit-step drift, and critical microstep action.",
+      "certificate": "An adversarially recomputed proof-level fixed-band factorial theorem after two scope precisions, plus executable exact-rational and asymptotic tests for scale-zero parabolic action, factorial depth, logarithmic-depth tail decay, rational tail domination, one-sided ray leakage, integer Fourier angles, unbounded normalized backtracking leakage, effective parabolic lifetime, supercritical unit-step drift, and critical microstep action.",
       "success_criterion": "Exclude unbounded-depth persistence inside one comparable-frequency block and reduce the live spatial Oseen gate to summing genuinely multiscale frequency itineraries, controlling L1 pressure-band recombination, or proving a same-trajectory frequency ancestry law.",
       "failure_interpretation": "The annular L1 multiplier bound fails, the Lorentz Bernstein step has the wrong scale, the time-simplex factorial is misindexed, the pressure observation loses another frequency power, the Fourier angles or heat lifetime are wrong, the coefficient audit is not scale-critical, or the note overclaims the unprojected changing-band operator.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-frequency-colligation.md",
-        "dossier/review-response-adjoint-pressure-frequency-colligation-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_frequency_colligation.py",
         "lab/tests/test_adjoint_pressure_frequency_colligation.py"
       ],
@@ -2932,13 +2895,12 @@
         "Selected complex torus Fourier/Leray links and the terminal Hodge return are realised algebraically at every finite depth, but no single uniformly weak-L3, spatially localised R3 drift with controlled mode-sum cross-interactions, Oseen solution, or Navier-Stokes trajectory is asserted"
       ],
       "method": "Extract the sharp positive cross-band kernel from annular L1 multipliers, Lorentz Holder, and Bernstein; follow a dyadic upward frequency path; identify its convolution with the density of a sum of independent exponential heat clocks; cancel its geometric path mass with a terminal high-high-to-low pressure weight; use Jensen for a depth-uniform finite-horizon floor; realise the selected finite-depth transport and terminal Hodge coefficients with exact complex torus modes; and audit the corresponding critical packet volume, energy, enstrophy-time, and weak-L3 powers.",
-      "certificate": "An independently reviewed exact scalar cross-band countermodel, exact finite-depth complex Fourier/Leray colligation, and executable Fraction tests for dyadic heat scales, half-mass transitions, terminal cancellation, the finite Zeno clock, arbitrary algebraic strong trace, persistent pressure floors, Fourier divergence and projection identities, weak-L3 tail charge, and summable energy and dissipation.",
+      "certificate": "An adversarially recomputed exact scalar cross-band countermodel, exact finite-depth complex Fourier/Leray colligation, and executable Fraction tests for dyadic heat scales, half-mass transitions, terminal cancellation, the finite Zeno clock, arbitrary algebraic strong trace, persistent pressure floors, Fourier divergence and projection identities, weak-L3 tail charge, and summable energy and dissipation.",
       "success_criterion": "Close the norm-only multiscale-frequency shortcut and reduce the live Oseen gate to compatibility of one physical drift with the accelerating scale path, terminal pressure return, packet overlap and polarisation, or a same-trajectory scale-flux or ancestry law.",
       "failure_interpretation": "The cross-band kernel has the wrong scale, its mass is not R/S, the convolution probability representation or trace order is wrong, the terminal pressure weight is not the reciprocal scale factor, Jensen is inapplicable, the packet powers diverge, or the note overclaims a vector Oseen or Navier-Stokes realisation.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-frequency-zeno.md",
-        "dossier/review-response-adjoint-pressure-frequency-zeno-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_frequency_zeno.py",
         "lab/tests/test_adjoint_pressure_frequency_zeno.py"
       ],
@@ -2966,13 +2928,12 @@
         "The logarithmic-depth dyadic terminal-return branch forces sigma to be little-o of h to the power three plus two c_dep log two"
       ],
       "method": "Resolve the high state tail and its resonant drift factor into comparable dyadic bands, use the low-output pressure multiplier kernel bound, L2 Holder, annular Bernstein, Littlewood-Paley square orthogonality, and Cauchy-Schwarz in time; invert the estimate, apply exact adjoint energy, audit the critical packet scaling, pull the forced band charge back to physical variables, and squeeze it by the vanishing global physical dissipation tail.",
-      "certificate": "An independently reviewed proof-level high-high-to-low pressure-tail theorem and physical-tail ceiling, plus exact Fraction tests for the squared ceiling, inverse dissipation toll, energy-normalised and scalar-Zeno packet ledgers, terminal-layer and physical-tail exponents, and physical scaling.",
+      "certificate": "An adversarially recomputed proof-level high-high-to-low pressure-tail theorem and physical-tail ceiling, plus exact Fraction tests for the squared ceiling, inverse dissipation toll, energy-normalised and scalar-Zeno packet ledgers, terminal-layer and physical-tail exponents, and physical scaling.",
       "success_criterion": "Close the reciprocal terminal-gain mechanism for one fixed energy-bounded finite-dissipation Oseen window, prove the exact logarithmic-depth ancestry ceiling from global physical tail continuity, and reduce the live route to contradicting that ceiling by a lower frequency law, quantitative non-reuse, or actual event ancestry.",
       "failure_interpretation": "Low output can receive non-comparable input frequencies, the pressure multiplier lacks an L1 kernel, the dyadic square sum loses the S over L factor, adjoint energy does not apply, the critical packet contradicts the bound, or physical scaling has the wrong sigma power.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-terminal-return.md",
-        "dossier/review-response-adjoint-pressure-terminal-return-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_terminal_return.py",
         "lab/tests/test_adjoint_pressure_terminal_return.py"
       ],
@@ -3001,13 +2962,12 @@
         "This is a scalar ledger counterexample, not a coefficient field, Oseen solution, suitable solution, Navier-Stokes trajectory, or Clay conclusion"
       ],
       "method": "Work in the stretched coordinate x=h^(-7/4); recursively solve the exact dyadic event-ancestry identity; compare the quadratic terminal-return charge with the existing cumulative physical dissipation; split the latter into separately decreasing bulk and high-tail masses; and place their fresh increments on nested terminal time annuli at one fixed bulk frequency and the exact reciprocal next-event frequencies.",
-      "certificate": "An independently reviewed proof-level scalar time-frequency construction plus high-precision Decimal tests for the dyadic bounds, exact recurrence, physical next-scale identity, vanishing tail fraction, kill-frequency gap, exact three-halves boundary, positive nested bulk/tail split, exact telescoping recovery, and frequency nesting.",
+      "certificate": "An adversarially recomputed proof-level scalar time-frequency construction plus high-precision Decimal tests for the dyadic bounds, exact recurrence, physical next-scale identity, vanishing tail fraction, kill-frequency gap, exact three-halves boundary, positive nested bulk/tail split, exact telescoping recovery, and frequency nesting.",
       "success_criterion": "Close the bare next-event scale identity, even when combined with the reviewed terminal-return toll, as a sufficient scalar contradiction and expose the necessary stretched-exponential kill frequency or equivalent quantitative inter-event separation.",
       "failure_interpretation": "The recurrence fails to exist or lacks the stated asymptotics, the physical frequency is not the reciprocal next-event scale, the required tail mass does not fit inside the finite history, either cumulative component is non-monotone, the time-frequency measure misses a tail threshold, or the note promotes scalar ledger compatibility to a PDE construction.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-ancestry-survivor.md",
-        "dossier/review-response-adjoint-pressure-ancestry-survivor-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_ancestry_survivor.py",
         "lab/tests/test_adjoint_pressure_ancestry_survivor.py"
       ],
@@ -3038,13 +2998,12 @@
         "No frequency ascent is inferred from interaction depth, and no Oseen or Navier-Stokes singularity or Clay conclusion is claimed"
       ],
       "method": "Refine the terminal-return Littlewood-Paley proof by spatial off-diagonal kernel localisation on each coefficient shell; combine its S/F gain with the reviewed state exterior tail, shell-local dissipation cap, and logarithmic shell sum; control the source cutoff separately by its inverse-cubic gradient budget; then invert the complete high-state pressure ceiling.",
-      "certificate": "An independently reviewed proof-level conditional spatial-frequency estimate, accepted after six precision repairs, plus exact Fraction tests for the exponent addition, critical boundary, vanishing old-floor contribution, inner tail, off-diagonal error, quadratic toll, and physical zoom prefactor.",
+      "certificate": "An adversarially recomputed proof-level conditional spatial-frequency estimate, accepted after six precision repairs, plus exact Fraction tests for the exponent addition, critical boundary, vanishing old-floor contribution, inner tail, off-diagonal error, quadratic toll, and physical zoom prefactor.",
       "success_criterion": "Prove that a terminal packet cannot simultaneously use a growing high state frequency and the exterior spatial genealogy at only the old stretched-exponential cost, thereby reducing the live branch to a stronger spatial-frequency dissipation law or a below-threshold frequency itinerary.",
       "failure_interpretation": "The annular off-diagonal Littlewood-Paley estimate loses spatial state localisation, the K^-1 sum gives less than F^-1, the inner cutoff budget is unavailable, the shell error does not sum, the inversion has the wrong F or h power, or the note infers an unproved frequency ascent from causal depth.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-spatial-frequency.md",
-        "dossier/review-response-adjoint-pressure-spatial-frequency-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_spatial_frequency.py",
         "lab/tests/test_adjoint_pressure_spatial_frequency.py"
       ],
@@ -3072,13 +3031,12 @@
         "The construction does not realise the high-state pressure antecedent, a coefficient field, an Oseen solution, a Navier-Stokes trajectory, or a Clay conclusion"
       ],
       "method": "Absorb the polynomial frequency factor into the amplified stretched coordinate y=h^(-(7/4+beta)); saturate the reviewed total-cost law; accelerate the physical zoom in the same coordinate; solve the exact next-event ancestry recurrence; split total physical mass into monotone bulk and quadratic tail components; and place their fresh increments on nested terminal time annuli.",
-      "certificate": "An independently reviewed proof-level scalar ancestry construction, plus high-precision Decimal tests for exponent amplification, exact cost and ancestry identities, small relative increments, physical tail decay, kill-frequency separation, nested mass recovery, and the generalised three-halves boundary.",
+      "certificate": "An adversarially recomputed proof-level scalar ancestry construction, plus high-precision Decimal tests for exponent amplification, exact cost and ancestry identities, small relative increments, physical tail decay, kill-frequency separation, nested mass recovery, and the generalised three-halves boundary.",
       "success_criterion": "Close spatial-frequency cost amplification plus bare next-event ancestry as an arithmetic contradiction, and reduce the live branch to a lower physical-zoom bound, terminal high-state participation theorem, returned-low-history charge, or non-reusable signed/vector increment.",
       "failure_interpretation": "The amplified coordinate does not equal F h^-7/4, the exact ancestry recurrence fails, the physical mass or tail does not vanish, the nested measure misses a threshold, the three-halves boundary changes incorrectly, or the note promotes scalar compatibility to a PDE construction.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-amplified-ancestry.md",
-        "dossier/review-response-adjoint-pressure-amplified-ancestry-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_amplified_ancestry.py",
         "lab/tests/test_adjoint_pressure_amplified_ancestry.py"
       ],
@@ -3103,13 +3061,12 @@
         "No coefficient field, Oseen singularity, Navier-Stokes singularity, or Clay conclusion is constructed"
       ],
       "method": "Apply the spatially local high-tail lemma with the intermediate annulus as output, propagate it through one annular heat-Leray return, use Lorentz Bernstein and the weak-L3 coefficient ceiling for the final low-pressure observation, integrate the heat clock exactly, and invert a fixed one-return pressure floor.",
-      "certificate": "An independently reviewed proof-level conditional one-return estimate, plus exact rational tests for the heat-clock prefactor, piecewise stretched exponent, parabolic minimum, and physical zoom law.",
+      "certificate": "An adversarially recomputed proof-level conditional one-return estimate, plus exact rational tests for the heat-clock prefactor, piecewise stretched exponent, parabolic minimum, and physical zoom law.",
       "success_criterion": "Extend the reviewed exp(c F h^-7/4) cost from terminal high-state pressure to one separated high-to-intermediate Oseen return followed by low pressure, reducing the returned-low gate to multistage descent.",
       "failure_interpretation": "The heat-Leray kernel loses annular decay, the tensor orientation invalidates the shell estimate, the final weak-L3 pressure bound has a different frequency power, or the inversion exponent is incorrect.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-one-return.md",
-        "dossier/review-response-adjoint-pressure-one-return-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_one_return.py",
         "lab/tests/test_adjoint_pressure_one_return.py"
       ],
@@ -3123,7 +3080,7 @@
       "claim_ids": [],
       "hypothesis": "A sequence of further heat-Leray frequency transitions after the reviewed separated return may recover the inverse initial-frequency loss before the final low-pressure observation.",
       "invariants": [
-        "The initial high-to-annular source is the independently reviewed one-return component",
+        "The initial high-to-annular source is the adversarially recomputed one-return component",
         "Every subsequent transition is an actual annular heat-Leray Oseen block bounded by the reviewed weak-L3 cross-band kernel",
         "Each heat kernel is normalised as an exponential probability density",
         "All intermediate frequency ratios telescope exactly",
@@ -3136,13 +3093,12 @@
         "The theorem does not sum different itineraries, control pressure-band recombination, or prove the component participation floor"
       ],
       "method": "Iterate the sharp annular cross-band L1 estimate after the reviewed one-return source, normalise each heat kernel to unit mass, telescope the input/output frequency ratios against the final pressure multiplier, and retain the exact convolution probability and simplex ceiling.",
-      "certificate": "An independently reviewed proof-level conditional path estimate and exact Fraction tests for frequency telescoping, exponential-clock normalisation, the dyadic clock product, slow-clock suppression, and the fixed/logarithmic-depth exponent ledger.",
+      "certificate": "An adversarially recomputed proof-level conditional path estimate and exact Fraction tests for frequency telescoping, exponential-clock normalisation, the dyadic clock product, slow-clock suppression, and the fixed/logarithmic-depth exponent ledger.",
       "success_criterion": "Show that no single finite multistage comparable-band descent can erase the S/F cost; isolate itinerary entropy and recombination, rather than pathwise scale gain, as the remaining obstruction.",
       "failure_interpretation": "A cross-band factor has the wrong orientation, heat normalisation leaves an uncancelled frequency, the final pressure factor does not telescope, or the finite-window probability/exponent ledger is incorrect.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-multistage-path.md",
-        "dossier/review-response-adjoint-pressure-multistage-path-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_multistage_path.py",
         "lab/tests/test_adjoint_pressure_multistage_path.py"
       ],
@@ -3156,7 +3112,7 @@
       "claim_ids": [],
       "hypothesis": "Although each prescribed multistage path retains S/F, the countably infinite dyadic path entropy and pressure recombination inside a subparabolic corridor may erase that gain at unbounded interaction depth.",
       "invariants": [
-        "The initial component is the independently reviewed high-to-F one-return state",
+        "The initial component is the adversarially recomputed high-to-F one-return state",
         "Every later state transition is resolved by the same fixed dyadic Littlewood-Paley partition",
         "The corridor ceiling U may grow relative to F but stays at most parabolic",
         "Arbitrary dyadic upcrossings and downcrossings are allowed below the corridor ceiling",
@@ -3171,13 +3127,12 @@
         "The theorem itself excludes neither an excursion above the corridor nor failure of the full LP-Dyson identification and proves no participation floor; the subsequent smooth-layer identification experiment closes only the qualitative topology issue"
       ],
       "method": "Insert one fixed dyadic partition after every post-return Oseen interaction, retain every band below a ceiling U no larger than parabolic, combine the reviewed prescribed-path bound with the ordered-simplex clock product, sum the infinite dyadic entropy through the geometric heat-rate series, and then sum the resulting exponential generating function over depth.",
-      "certificate": "An independently reviewed proof-level conditional aggregate estimate and exact tests for dyadic heat-rate entropy, factorial weighted-path terms, the exponential generating series, and the subparabolic inversion ledger.",
+      "certificate": "An adversarially recomputed proof-level conditional aggregate estimate and exact tests for dyadic heat-rate entropy, factorial weighted-path terms, the exponential generating series, and the subparabolic inversion ledger.",
       "success_criterion": "Prove absolute L1 summability of the pressure from every arbitrary-depth, arbitrary-jump path inside a subparabolic corridor, reducing the aggregate frequency gate to corridor exits, full LP-Dyson identification, and participation.",
       "failure_interpretation": "The finite LP truncation identity is wrong, the dyadic heat-rate entropy or Tonelli factorisation diverges, the exponential series is mis-indexed, or pressure recombination is not controlled by absolute summability.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-corridor-sum.md",
-        "dossier/review-response-adjoint-pressure-corridor-sum-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_corridor_sum.py",
         "lab/tests/test_adjoint_pressure_corridor_sum.py"
       ],
@@ -3211,7 +3166,6 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-corridor-identification.md",
-        "dossier/review-response-adjoint-pressure-corridor-identification-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_corridor_identification.py",
         "lab/tests/test_adjoint_pressure_corridor_identification.py"
       ],
@@ -3243,13 +3197,12 @@
         "The theorem does not charge the first two alternatives or establish any Clay alternative"
       ],
       "method": "Split the smooth-layer Oseen Volterra operator into chargeable separated-downcross and complementary output-band filters, prove the nested-tail fractional kernel and inverse-linear high-output tail, apply the exact last-chronological-return renewal identity, identify the B source with all reviewed one-return bands, dominate the filtered A continuation by the reviewed full-corridor sum with an enlarged per-depth constant, and extract the pressure and capture trichotomy.",
-      "certificate": "An independently reviewed proof-level smooth-layer conditional renewal theorem plus exact tests for the noncommutative binary-word partition, scalar resolvent identity, separated heat-rate entropy, inverse-linear high-output tail, and parabolic 9/4 exponent.",
+      "certificate": "An adversarially recomputed proof-level smooth-layer conditional renewal theorem plus exact tests for the noncommutative binary-word partition, scalar resolvent identity, separated heat-rate entropy, inverse-linear high-output tail, and parabolic 9/4 exponent.",
       "success_criterion": "Replace the separated-return participation antecedent by an exhaustive decomposition of the complete selected feedback pressure into no-chargeable-return pressure or a finitely capturable last-return block, with the latter paying either superparabolic capture escape or the reviewed 9/4 cost.",
       "failure_interpretation": "The A/B filters fail to partition the Oseen operator, the nested high-pass sum has an extra multiplicity, the ultraviolet operator tail is not inverse linear, the renewal words are missing or duplicated, filtered paths lose the corridor estimate, or the pressure/capture alternatives are not exhaustive.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-last-return-renewal.md",
-        "dossier/review-response-adjoint-pressure-last-return-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_last_return.py",
         "lab/tests/test_adjoint_pressure_last_return.py"
       ],
@@ -3281,13 +3234,12 @@
         "Capture escape is not yet an instantaneous Fourier tail or a physical dissipation charge"
       ],
       "method": "Localise the reviewed first feedback source g=T_b q by output band, use Lorentz Holder and the t^(3/4) direct-response gain to normalise one starting heat clock, telescope every later complementary cross-band ratio against the final pressure frequency, sum the starting and continuation band entropies simultaneously through the ordered-simplex product, identify the absolutely convergent filtered path series with the truncated no-return mild resolvent, and contradict a fixed floor under parabolic capture.",
-      "certificate": "An independently reviewed proof-level smooth-layer conditional parabolic-exclusion theorem plus exact tests for the source time power, dyadic infrared heat entropy, frequency telescope, factorial depth terms, and parabolic 7/4 pressure power.",
+      "certificate": "An adversarially recomputed proof-level smooth-layer conditional parabolic-exclusion theorem plus exact tests for the source time power, dyadic infrared heat entropy, frequency telescope, factorial depth terms, and parabolic 7/4 pressure power.",
       "success_criterion": "Eliminate uniformly parabolic LP-Dyson capture as a way for the exact no-chargeable-feedback-return block to carry fixed pressure, reducing the complete feedback frequency gate to superparabolic capture escape or the reviewed 9/4 coefficient cost.",
       "failure_interpretation": "The first source lacks the t^(3/4) Lorentz gain, its heat normalisation has the wrong frequency, a continuation ratio fails to telescope, the starting-band entropy diverges, the path series does not identify with the mild resolvent, or the capture contradiction is not exhaustive.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-no-return-parabolic.md",
-        "dossier/review-response-adjoint-pressure-no-return-parabolic-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_no_return.py",
         "lab/tests/test_adjoint_pressure_no_return.py"
       ],
@@ -3318,13 +3270,12 @@
         "The theorem does not prove event-index additivity, rough-hull regularity, breakdown, or any Clay alternative"
       ],
       "method": "Split the actual smooth coefficient at V=kappa h^(-1/2), sum the full low-coefficient Oseen resolvent in L1_t L^(3/2,1)_x, subtract the low-coefficient auxiliary feedback equation from the original equation, group the exact difference by the last high-coefficient insertion, estimate that insertion by O'Neil products and the reviewed energy bounds, use reverse Bernstein to convert high-coefficient L2 mass into a gradient tail, and invert the complete feedback pressure floor.",
-      "certificate": "An independently reviewed proof-level smooth-layer conditional theorem plus eight exact tests for the half-order resolvent exponent, low-pressure and comparison powers, reverse-Bernstein cancellation, logarithmic cutoff, tail exponent, and physical scaling.",
+      "certificate": "An adversarially recomputed proof-level smooth-layer conditional theorem plus eight exact tests for the half-order resolvent exponent, low-pressure and comparison powers, reverse-Bernstein cancellation, logarithmic cutoff, tail exponent, and physical scaling.",
       "success_criterion": "Convert the complete selected feedback pressure floor, including either former frequency branch, into an actual same-trajectory coefficient-dissipation tail above h^(-1/2) sqrt(log(1/h)), leaving only event-index reuse or next-event coupling rather than an operator-label ambiguity.",
       "failure_interpretation": "The low-coefficient resolvent has worse than exponential kappa-squared growth, the exact last-high insertion identity fails, an endpoint Lorentz product is unavailable, the kappa cancellation is false, or the physical scaling does not charge the actual trajectory Fourier tail.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-parabolic-coefficient-tail.md",
-        "dossier/review-response-adjoint-pressure-parabolic-coefficient-tail-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_parabolic_coefficient_tail.py",
         "lab/tests/test_adjoint_pressure_parabolic_coefficient_tail.py"
       ],
@@ -3356,13 +3307,12 @@
         "The smooth survivor is not a Navier-Stokes solution, does not realise the feedback pressure antecedent or the inherited Albritton-Barker event process, and proves no Clay alternative"
       ],
       "method": "Combine the reviewed fixed-parabolic physical tail floor with global Fourier-tail continuity and a cutoff-to-next-event comparison, then invert the scale powers to obtain the seven-sixths relative log-scale ceiling. Prove sharpness with the exact power-law recursion sigma=h^q. Upgrade the scalar survivor to a smooth-for-positive-time divergence-free path by joining a compact annular terminal event tower to disjoint time-annulus band-limited corrections whose cumulative high-pass masses telescope and whose carrier frequencies are chosen large enough to preserve weak-L3 and terminal L2 control.",
-      "certificate": "An independently reviewed conditional same-trajectory theorem and smooth kinematic countermodel, plus ten executable tests for exact cutoff ancestry, the inverse-cubic distortion identity, seven-sixths sharpness, divergent empirical roof mean, tail telescoping, carrier-frequency control, and shrinking physical scales.",
+      "certificate": "An adversarially recomputed conditional same-trajectory theorem and smooth kinematic countermodel, plus ten executable tests for exact cutoff ancestry, the inverse-cubic distortion identity, seven-sixths sharpness, divergent empirical roof mean, tail telescoping, carrier-frequency control, and shrinking physical scales.",
       "success_criterion": "Quantify the exact reward of coupling the fixed-parabolic tail to the next event and decide whether that coupling alone prevents nested tail reuse.",
       "failure_interpretation": "The cutoff inequality has the wrong direction, physical tail continuity does not imply the scale distortion, the seven-sixths exponent is incorrect, the power survivor violates the tail floor, or the smooth path loses its detector marks, weak-L3 ceiling, terminal trace, finite enstrophy, or cumulative high-pass payments.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-parabolic-ancestry.md",
-        "dossier/review-response-adjoint-pressure-parabolic-ancestry-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_parabolic_ancestry.py",
         "lab/tests/test_adjoint_pressure_parabolic_ancestry.py"
       ],
@@ -3393,13 +3343,12 @@
         "The result does not make flux event-index fresh, exclude the conditional ancient profile, or prove any Clay alternative"
       ],
       "method": "Use Plancherel to dominate the reviewed smooth coefficient tail by a sharp high-pass tail, split the sharp dissipation at an arbitrary farther cutoff, and apply the exact forward-time NSE high-pass energy identity. If neither comparable-annulus dissipation nor inherited entrance energy is large, nonnegative terminal energy forces positive signed nonlinear input. Then construct an exact geometric finite-shell energy ledger and a Zeno heat-clock schedule to test whether cumulative flux and ordinary energy balances alone prevent arbitrarily deep reuse.",
-      "certificate": "An independently reviewed conditional same-trajectory theorem plus exact algebraic obstruction and ten executable tests for the multiplier comparison, high-pass sign, trichotomy constants, physical scaling, shell balances, cumulative telescope, near-lossless limit, and Zeno clock.",
+      "certificate": "An adversarially recomputed conditional same-trajectory theorem plus exact algebraic obstruction and ten executable tests for the multiplier comparison, high-pass sign, trichotomy constants, physical scaling, shell balances, cumulative telescope, near-lossless limit, and Zeno clock.",
       "success_criterion": "Convert arbitrary far-frequency placement into an exhaustive actual-NSE annulus, inherited-state, or signed-flux alternative, and determine whether the resulting cumulative flux is automatically a fresh event-index charge.",
       "failure_interpretation": "The smooth-to-sharp inequality has the wrong direction, the forward-time high-pass sign or constants fail, the physical pullback loses the inverse-cubic floor, or ordinary integrated shell balances themselves impose a uniform decrement or non-Zeno depth ceiling.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-parabolic-flux.md",
-        "dossier/review-response-adjoint-pressure-parabolic-flux-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_parabolic_flux.py",
         "lab/tests/test_adjoint_pressure_parabolic_flux.py"
       ],
@@ -3429,13 +3378,12 @@
         "No intervening Besov event, non-Zeno depth law, regularity, breakdown, or Clay alternative is proved"
       ],
       "method": "Use the fixed-time H1 Fourier-tail bound and the exact high-pass energy identity to turn any late entrance-energy threshold into a last-hitting pre-event flux ancestor whose starting time approaches T*. Then use continuity from above of each finite sharp frequency-dissipation measure to choose an event-adaptive factor R_j tending to one with annular cost below T_j/4. The remaining farther dissipation and an entrance split at nu T_j force event or historical signed flux with the common floor nu T_j/4.",
-      "certificate": "An independently reviewed conditional same-trajectory theorem, including the adaptive-annulus strengthening and exact nu T_j/4 floor, plus eight executable tests for the fixed-time tail, parabolic scale product, last-hitting constant, vanishing-floor comparison, and strengthened terminal-flux constant.",
+      "certificate": "An adversarially recomputed conditional same-trajectory theorem, including the adaptive-annulus strengthening and exact nu T_j/4 floor, plus eight executable tests for the fixed-time tail, parabolic scale product, last-hitting constant, vanishing-floor comparison, and strengthened terminal-flux constant.",
       "success_criterion": "Replace both inherited-state and comparable-annulus bookkeeping by genuine positive signed nonlinear input on a terminal interval across a cutoff asymptotic to the reviewed parabolic frequency.",
       "failure_interpretation": "The fixed-time H1 tail does not undercut the entrance threshold, the last-hitting sign or constant fails, the hitting times need not approach T*, the sharp annulus cannot be squeezed event by event, or an index-dependent cutoff is incompatible with the exact high-pass identity.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-inherited-ancestry.md",
-        "dossier/review-response-adjoint-pressure-inherited-ancestry-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_inherited_ancestry.py",
         "lab/tests/test_adjoint_pressure_inherited_ancestry.py"
       ],
@@ -3465,13 +3413,12 @@
         "No ancient Liouville theorem, regularity theorem, breakdown theorem, or Clay alternative is proved"
       ],
       "method": "Split the sharp high-pass flux using a smooth far-low velocity and the exact lower comparable-band remainder. Use Fourier support and incompressibility to isolate far-low strain, Lorentz endpoint estimates to force every remaining interaction through the lower band, and viscosity to absorb a fixed fraction of far-low strain. Apply the resulting decrement to the low-entrance event interval and to the first half-to-full hitting interval in the high-entrance branch.",
-      "certificate": "An independently reviewed conditional same-trajectory theorem after five precision repairs, plus nine executable tests for the cutoff ratio, viscosity fraction, both interval constant ledgers, the pressure-tail corollary, and geometric retention under fresh repeated decrements.",
+      "certificate": "An adversarially recomputed conditional same-trajectory theorem after five precision repairs, plus nine executable tests for the cutoff ratio, viscosity fraction, both interval constant ledgers, the pressure-tail corollary, and geometric retention under fresh repeated decrements.",
       "success_criterion": "Prove a scale-invariant positive lower-band dissipation fraction for every forced terminal flux event and determine whether the near-lossless conservative shell survivor remains compatible with the conditional weak-L3 Navier-Stokes trajectory.",
       "failure_interpretation": "The high-pass sign, support cancellation, tensor expansion, endpoint Lorentz estimate, far-low viscosity absorption, interval constants, historical weak-L3 scope, or claimed restriction to the near-lossless distinct-shell ledger is incorrect.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-flux-decrement.md",
-        "dossier/review-response-adjoint-pressure-flux-decrement-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_flux_decrement.py",
         "lab/tests/test_adjoint_pressure_flux_decrement.py"
       ],
@@ -3501,13 +3448,12 @@
         "No regularity, breakdown, or Clay alternative is proved"
       ],
       "method": "Differentiate the frequency-localised primal-adjoint pairing, use self-adjointness, derivative commutation, divergence-free transport, and pressure orthogonality to isolate the exact commutator. Telescope nested projectors. Then construct one-radius and paired equal-radius periodic Beltrami trajectories with reciprocal heat amplitudes to separate nonzero adjoint pressure from identically zero localised pairing at both high and fixed-low output frequencies.",
-      "certificate": "An independently reviewed exact identity and two same-trajectory periodic spectral separations, plus thirteen executable tests for commutator signs, nonzero projected-pressure orthogonality, telescoping, Beltrami identities, Fourier gaps, fixed-low return, and pressure-history constants.",
+      "certificate": "An adversarially recomputed exact identity and two same-trajectory periodic spectral separations, plus thirteen executable tests for commutator signs, nonzero projected-pressure orthogonality, telescoping, Beltrami identities, Fourier gaps, fixed-low return, and pressure-history constants.",
       "success_criterion": "Determine whether the bare frequency-localised primal-adjoint pairing supplies a pressure-visible event-index telescope and, if not, identify exactly which additional coupling a viable functional must retain.",
       "failure_interpretation": "The reversed-time signs, viscous cancellation, pressure orthogonality, commutator signs, telescope, Beltrami pressures, Fourier supports, fixed-low coefficient, or scope boundary is incorrect.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-spectral-pairing.md",
-        "dossier/review-response-adjoint-pressure-spectral-pairing-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_spectral_pairing.py",
         "lab/tests/test_adjoint_pressure_spectral_pairing.py"
       ],
@@ -3537,13 +3483,12 @@
         "The periodic examples are not finite-energy R3 trajectories, do not realise the Besov-event genealogy, and prove no Clay alternative"
       ],
       "method": "Re-derive the recorded local conservation current to fix all signs, then insert reciprocal heat amplitudes of a periodic Beltrami eigenfield. In the displayed pressure gauges the viscous Wronskian is zero and adjoint plus primal pressure flux cancels transport pointwise. Track gauge shifts to retain the invariant conclusion that the current divergence and every cutoff-gradient pairing vanish. Apply the same calculation to the one-radius and high-high-to-fixed-low Beltrami families.",
-      "certificate": "An independently reviewed same-trajectory cancellation of the recorded spatial current, plus eight executable tests for reciprocal amplitudes, current coefficients, pressure-transport cancellation, positive pressure history, and the nonuniform paired-family budget.",
+      "certificate": "An adversarially recomputed same-trajectory cancellation of the recorded spatial current, plus eight executable tests for reciprocal amplitudes, current coefficients, pressure-transport cancellation, positive pressure history, and the nonuniform paired-family budget.",
       "success_criterion": "Determine whether the bare gauge-invariant spatial cutoff-current telescope coerces adjoint-pressure history and, if not, isolate the additional pressure-component, sign, transversality, gauge-fixing, divergence-defect, or ancestry input a viable functional requires.",
       "failure_interpretation": "Any sign in the recorded current or cutoff identity is wrong, the reciprocal Beltrami amplitudes do not solve the two equations, the displayed-gauge pointwise cancellation fails, gauge shifts alter the cutoff flux, the imported pressure floors fail, or the claimed scope exceeds the bare cutoff-current telescope.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-spatial-pairing.md",
-        "dossier/review-response-adjoint-pressure-spatial-pairing-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_spatial_pairing.py",
         "lab/tests/test_adjoint_pressure_spatial_pairing.py"
       ],

@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-FEEDBACK-DUST-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-feedback-dust-2026-07-24.md)
+  [adversarially recomputed valid in scope](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** independently reviewed
+- **Input:** adversarially recomputed
   [positive-clock frequency descendant](adjoint-pressure-feedback-frequency.md)
 
 The reviewed source-localised branch provides

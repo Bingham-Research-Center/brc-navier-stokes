@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-TRACE-PARTICIPATION-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after topology repair](../review-response-adjoint-pressure-trace-participation-2026-07-24.md)
+  [adversarially recomputed valid after topology repair](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [temporal-disintegration theorem](adjoint-pressure-temporal-disintegration.md),
   [first-hitting polar-vacuum theorem](adjoint-pressure-polar-vacuum.md),
   [balanced Kato-polar compactness theorem](adjoint-pressure-balanced-polar.md),
@@ -873,7 +873,7 @@ The exact balanced question is now:
 > mark with the nonzero compact-window profile law, and then close the
 > remaining unwindowed Oseen products?
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [product-law pressure-trace theorem](adjoint-pressure-product-trace.md)
 answers the first clause conditionally: the complete spatially
 reproduced compact-window mark survives as a positive pairing against a

@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-CORRIDOR-SUM-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional analytic reduction
+- **Status:** adversarially recomputed conditional analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [one-return theorem](adjoint-pressure-one-return.md),
   [prescribed multistage-path theorem](adjoint-pressure-multistage-path.md),
   and [fixed-band factorial theorem](adjoint-pressure-frequency-colligation.md)
-- **Review:** [valid after topology and scope repairs](../review-response-adjoint-pressure-corridor-sum-2026-07-24.md)
+- **Review:** [valid after topology and scope repairs](../review-ledger.md)
 
 The prescribed-path theorem shows that intermediate cross-band scale
 ratios telescope, but it does not sum the number of paths.  The
@@ -687,13 +687,13 @@ reviewed high-state, one-return, or full-corridor components.  This note
 does not prove such participation, a singular Oseen or Navier--Stokes
 solution, or any Clay alternative.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [smooth-layer identification theorem](adjoint-pressure-corridor-identification.md)
 closes the qualitative topology issue for the specified
 separated-return block and sums every separated starting band.  It does
 not retroactively supply global participation, control histories with
 no separated return, or charge superparabolic LP--Dyson capture escape.
-The later independently reviewed
+The later adversarially recomputed
 [last-separated-return renewal theorem](adjoint-pressure-last-return-renewal.md)
 then removes global participation as an antecedent by partitioning the
 complete feedback pressure into the exact no-chargeable-return block or

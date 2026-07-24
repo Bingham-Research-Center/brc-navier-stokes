@@ -2,15 +2,15 @@
 
 - **Experiment:** EXP-TERMINAL-DISTANCE-PROFILE-001
 - **Route:** ROUTE-R3B
-- **Status:** complete conditional analytic reduction; independently
-  reviewed as valid in stated scope
+- **Status:** complete conditional analytic reduction; same-system
+  adversarial recomputation accepted the stated scope
 - **Domain:** \(\mathbb R^3\)
 - **Solution class:** one chosen global suitable Leray--Hopf continuation,
   smooth before a first singular time
 - **Clay status:** unsolved
 - **Input:** [terminal satellite tower](terminal-satellite-tower.md)
 - **Compactness input:** [suitable satellite compactification](terminal-satellite-compactness.md)
-- **Review:** [independent response](../review-response-terminal-distance-profile-2026-07-23.md)
+- **Review:** [review-ledger summary](../review-ledger.md)
 - **Imported restart theorem:** Barker and Prange,
   [*Quantitative Regularity for the Navier--Stokes Equations Via Spatial
   Concentration*](https://doi.org/10.1007/s00220-021-04122-x),

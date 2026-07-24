@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-PACKETS-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional finite-window reduction
+- **Status:** adversarially recomputed conditional finite-window reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Input:** [adjoint-pressure history](adjoint-pressure-history.md) and
   [defect-event suspension](defect-event-suspension.md)
 - **Review:**
-  [valid in scope](../review-response-adjoint-pressure-packets-2026-07-23.md)
+  [valid in scope](../review-ledger.md)
 
 The preceding adjoint theorem assigned every Besov regeneration bridge a
 positive pressure-history cost by sending the adjoint horizon to infinity.

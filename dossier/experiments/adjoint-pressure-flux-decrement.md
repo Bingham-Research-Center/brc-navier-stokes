@@ -2,12 +2,12 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-FLUX-DECREMENT-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional same-trajectory theorem
+- **Status:** adversarially recomputed conditional same-trajectory theorem
 - **Review:** [valid and nonduplicative after five precision
-  repairs](../review-response-adjoint-pressure-flux-decrement-2026-07-24.md)
+  repairs](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** the independently reviewed
+- **Input:** the adversarially recomputed
   [terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
 
 The terminal-flux theorem forces positive nonlinear input across a sharp

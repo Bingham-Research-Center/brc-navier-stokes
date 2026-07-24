@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-SPECTRAL-PAIRING-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed exact pairing identity and
+- **Status:** adversarially recomputed exact pairing identity and
   same-trajectory periodic counterexamples, valid after precision repairs
 - **Review:** [valid after six precision
-  repairs](../review-response-adjoint-pressure-spectral-pairing-2026-07-24.md)
+  repairs](../review-ledger.md)
 - **Domains:** identity on \(\mathbb R^3\) or \(\mathbb T^3\);
   counterexample on \(\mathbb T^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [adjoint-pressure history](adjoint-pressure-history.md),
   [skew-compression obstruction](adjoint-pressure-skew-compression.md),
   and [parabolic tail-to-flux theorem](adjoint-pressure-parabolic-flux.md)
@@ -789,7 +789,7 @@ pressure telescope.  Candidates must use at least one of:
 4. a direct ancestry/locality theorem which bypasses the adjoint
    pressure telescope altogether.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [spatial cutoff-flux audit](adjoint-pressure-spatial-pairing.md) closes
 the bare version of item 2: for reciprocal amplitudes of an exact
 periodic Beltrami NSE field, pressure cancels transport in the local
@@ -797,7 +797,7 @@ current, and every gauge-invariant cutoff flux vanishes despite positive
 adjoint-pressure history.  A viable spatial functional must separate
 the pressure component or add cancellation control.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
 does realise item 4 far enough to force positive cumulative nonlinear
 input on a terminal interval across some

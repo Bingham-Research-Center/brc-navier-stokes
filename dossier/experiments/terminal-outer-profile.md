@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-TERMINAL-OUTER-PROFILE-001
 - **Route:** ROUTE-R3B
-- **Status:** complete conditional analytic reduction; independently
-  reviewed as valid in stated scope
+- **Status:** complete conditional analytic reduction; same-system
+  adversarial recomputation accepted the stated scope
 - **Domain:** \(\mathbb R^3\)
 - **Solution class:** one chosen global suitable Leray--Hopf continuation,
   smooth before a first singular time
 - **Clay status:** unsolved
 - **Input:** [coherent terminal Besov ancestry](terminal-besov-ancestry.md)
-- **Review:** [independent response](../review-response-terminal-outer-profile-2026-07-23.md)
+- **Review:** [review-ledger summary](../review-ledger.md)
 - **Imported stability theorem:** Barker, Seregin, and Šverák,
   [*On Stability of Weak Navier--Stokes Solutions with Large
   \(L^{3,\infty}\) Initial Data*](https://doi.org/10.1080/03605302.2018.1449219),

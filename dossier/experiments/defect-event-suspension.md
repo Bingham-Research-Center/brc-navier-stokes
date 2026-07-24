@@ -10,7 +10,7 @@
   [parabolic scale hull](parabolic-scale-hull.md), and
   [scale-indexed defect audit](scale-indexed-defect.md)
 - **Review:**
-  [independent response](../review-response-defect-event-suspension-2026-07-23.md)
+  [review-ledger summary](../review-ledger.md)
 
 The unmarked scale-time average can converge to the zero trajectory, but
 the Albritton--Barker defect supplies more structure than that average

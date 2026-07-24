@@ -2,15 +2,15 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-AMPLIFIED-ANCESTRY-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed analytic scalar time--frequency
+- **Status:** adversarially recomputed analytic scalar time--frequency
   ledger counterexample; not a Navier--Stokes construction
 - **Domain:** one nested terminal dissipation history with an exact
   polynomial-frequency event ancestry
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [spatial--frequency amplification theorem](adjoint-pressure-spatial-frequency.md)
   and [exact ancestry-survivor theorem](adjoint-pressure-ancestry-survivor.md)
-- **Review:** [accepted after two precision repairs](../review-response-adjoint-pressure-amplified-ancestry-2026-07-24.md)
+- **Review:** [accepted after two precision repairs](../review-ledger.md)
 
 The spatial--frequency theorem proves the conditional implication
 

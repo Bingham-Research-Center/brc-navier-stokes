@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-INTERMEDIATE-LOCALIZATION-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-intermediate-localization-2026-07-24.md)
+  [adversarially recomputed valid in scope](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [feedback-tail theorem](adjoint-pressure-feedback-tail.md) and
   [feedback-shell theorem](adjoint-pressure-feedback-shells.md)
 
@@ -113,7 +113,7 @@ The arbitrary-terminal-time energy estimate gives
 \tag{6}
 \]
 
-The independently reviewed feedback-tail theorem gives, for every
+The adversarially recomputed feedback-tail theorem gives, for every
 \(L\ge2\),
 
 \[

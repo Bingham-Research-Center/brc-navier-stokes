@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-SPATIAL-FREQUENCY-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after repair](../review-response-adjoint-pressure-spatial-frequency-2026-07-24.md)
+  [adversarially recomputed valid after repair](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [feedback-shell theorem](adjoint-pressure-feedback-shells.md),
   [intermediate-localisation theorem](adjoint-pressure-intermediate-localization.md),
   and [terminal-return theorem](adjoint-pressure-terminal-return.md)

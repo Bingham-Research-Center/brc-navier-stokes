@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-TERMINAL-RETURN-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed proof-level high--high-to-low
+- **Status:** adversarially recomputed proof-level high--high-to-low
   pressure-tail theorem
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** the independently reviewed
+- **Input:** the adversarially recomputed
   [dyadic Zeno-frequency countermodel](adjoint-pressure-frequency-zeno.md)
-- **Review:** [accepted after two precision repairs and a tail-continuity audit](../review-response-adjoint-pressure-terminal-return-2026-07-24.md)
+- **Review:** [accepted after two precision repairs and a tail-continuity audit](../review-ledger.md)
 
 The Zeno countermodel identifies the sharp failure of a positive
 weak-\(L^3\), \(L^1\)-state majorant: an upward path loses \(R_0/R_m\),

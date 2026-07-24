@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-SIGNED-AGGREGATE-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid after repair](../review-response-adjoint-pressure-signed-aggregate-2026-07-24.md)
+  [adversarially recomputed valid after repair](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [adjoint-pressure history](adjoint-pressure-history.md),
   [finite packets](adjoint-pressure-packets.md), and
   [frequency-or-maximal-dust reduction](adjoint-pressure-feedback-dust.md)

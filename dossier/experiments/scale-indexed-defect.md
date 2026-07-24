@@ -7,7 +7,7 @@
 - **Inputs:** [frequency-energy audit](frequency-energy-flux.md),
   [fresh-detector transfer](fresh-detector-transfer.md),
   [microbubble decoration](microbubble-decoration-rigidity.md), and the
-  [accepted review response](../review-response-2026-07-23.md);
+  [review-ledger disposition](../review-ledger.md);
   the request is archived in Git at `c277792`
 
 The first formulation of this experiment collapsed two different scales.
@@ -620,7 +620,7 @@ be retained without additional tightness.
 
 ## Corrected consequence for ROUTE-R3B
 
-The external review leaves the following results intact:
+The same-system adversarial recomputation leaves the following results intact:
 
 1. the parent-to-carrier detector scaling (3)--(4);
 2. the finite-dimensional fresh-detector transfer estimate;

@@ -9,10 +9,10 @@
   [fresh-detector transfer](fresh-detector-transfer.md), and
   [two-scale genealogy audit](scale-indexed-defect.md)
 
-The common-subsequence objection from the external review is real for a
-recursive carrier-to-next-parent genealogy. It is not an obstruction to
-attaching fresh parent bands to the carriers actually produced by the
-terminal-excess argument.
+The common-subsequence objection from the same-system adversarial
+recomputation is real for a recursive carrier-to-next-parent genealogy. It is
+not an obstruction to attaching fresh parent bands to the carriers actually
+produced by the terminal-excess argument.
 
 Nonzero terminal alignment excess already gives **one physical diagonal**
 

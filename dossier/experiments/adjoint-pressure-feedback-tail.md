@@ -3,10 +3,10 @@
 - **Experiment:** EXP-ADJOINT-PRESSURE-FEEDBACK-001
 - **Route:** ROUTE-R3B
 - **Status:** conditional analytic reduction;
-  [independently reviewed valid in scope](../review-response-adjoint-pressure-feedback-tail-2026-07-24.md)
+  [adversarially recomputed valid in scope](../review-ledger.md)
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** independently reviewed
+- **Input:** adversarially recomputed
   [direct-response dichotomy](adjoint-pressure-direct-response.md)
 
 The preceding theorem separates the selected adjoint difference as

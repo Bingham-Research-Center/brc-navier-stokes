@@ -314,8 +314,7 @@ survivors occur in Navier--Stokes.
 ## Epistemic and validation rules
 
 - “Adversarial recomputation” by another same-system agent is not independent
-  external review. Historical files may retain the older label; do not copy it
-  into new summaries.
+  external review; see the compact [review ledger](review-ledger.md).
 - Executable ledgers check exact arithmetic, scaling, and stated finite models.
   They do not prove Fourier support, compactness, Lorentz estimates, or PDE
   theorems.

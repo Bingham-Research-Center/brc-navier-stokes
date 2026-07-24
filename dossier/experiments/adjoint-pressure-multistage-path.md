@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-MULTISTAGE-PATH-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional analytic reduction
+- **Status:** adversarially recomputed conditional analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [one-return theorem](adjoint-pressure-one-return.md) and
   [cross-band kernel theorem](adjoint-pressure-frequency-zeno.md)
-- **Review:** [valid in the stated conditional scope](../review-response-adjoint-pressure-multistage-path-2026-07-24.md)
+- **Review:** [valid in the stated conditional scope](../review-ledger.md)
 
 The one-return theorem controls a high state which makes one
 heat--Leray return to an annulus \(R_0\), then immediately generates

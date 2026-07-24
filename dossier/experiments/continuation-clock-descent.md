@@ -7,8 +7,8 @@
 - **Inputs:** [fixed-shell clock compactification](fixed-shell-clock-compactification.md),
   [sparse analyticity endgame](sparse-analyticity-endgame.md), and
   [ancient compactness](ancient-commutator-compactness.md)
-- **Independent review:**
-  [common-frame and safe-lifespan repairs accepted](../review-response-local-continuation-2026-07-23.md)
+- **Same-system adversarial recomputation:**
+  [common-frame and safe-lifespan repairs accepted](../review-ledger.md)
 
 Fix one zero-background or Galilean-normalised frame and write \(v\) for
 the resulting velocity. For finite-energy Clay data on \(\mathbb R^3\),

@@ -2,11 +2,11 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-ENSTROPHY-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional analytic reduction
+- **Status:** adversarially recomputed conditional analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Review:**
-  [valid in scope](../review-response-adjoint-pressure-enstrophy-layer-2026-07-24.md)
+  [valid in scope](../review-ledger.md)
 - **Input:** [band-limited terminal layer](adjoint-pressure-bandlimited-layer.md)
   and the established
   [local-energy restart claim](../records/claims.json)

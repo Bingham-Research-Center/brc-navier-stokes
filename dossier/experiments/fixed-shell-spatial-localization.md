@@ -8,8 +8,8 @@
 - **Inputs:** [continuation-clock descent](continuation-clock-descent.md),
   [fixed-shell clock compactification](fixed-shell-clock-compactification.md),
   and [single-diagonal synchronisation](two-scale-synchronization.md)
-- **Independent review:**
-  [scope and frame repairs accepted](../review-response-local-continuation-2026-07-23.md)
+- **Same-system adversarial recomputation:**
+  [scope and frame repairs accepted](../review-ledger.md)
 
 Work throughout in one zero-background or Galilean-normalised frame and
 write \(v\) for the resulting velocity. For finite-energy Clay data on
@@ -795,7 +795,7 @@ It does not close:
 5. suitability and rigidity of the marked limiting profiles; or
 6. regularity, blow-up, or any Clay alternative A--D.
 
-The independent review identified the local restart estimate
+The same-system adversarial recomputation identified the local restart estimate
 
 \[
 (T^*-t_j)

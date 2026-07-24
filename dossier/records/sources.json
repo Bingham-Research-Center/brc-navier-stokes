@@ -429,7 +429,7 @@
       "primary": true,
       "status": "peer_reviewed",
       "last_checked": "2026-07-23",
-      "notes": "Published Theorem 1.1 characterizes existence of a suitable Type-I singular point by existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity. Theorem 1.2 proves that a mild ancient solution with uniformly bounded strong L3 norm along one sequence of times tending to minus infinity is identically zero. Proposition 2.3 is the interior persistence-of-singularities compactness result used to retain a singular point under suitable weak convergence. The stronger Theorem 4.1 uses weak-L3 stability to give a quantitative terminal Besov-distance Liouville criterion. Its displayed blow-down-subspace definition suppresses the critical amplitude factor, while the proof's Navier-Stokes rescaling requires lambda f(lambda dot); independent review validated the repository's proof-consistent repair and found no published erratum. Lemma 2.5 converts weak Serrin control, including uniform weak L3, into the source Type-I bounds for suitable solutions."
+      "notes": "Published Theorem 1.1 characterizes existence of a suitable Type-I singular point by existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity. Theorem 1.2 proves that a mild ancient solution with uniformly bounded strong L3 norm along one sequence of times tending to minus infinity is identically zero. Proposition 2.3 is the interior persistence-of-singularities compactness result used to retain a singular point under suitable weak convergence. The stronger Theorem 4.1 uses weak-L3 stability to give a quantitative terminal Besov-distance Liouville criterion. Its displayed blow-down-subspace definition suppresses the critical amplitude factor, while the proof's Navier-Stokes rescaling requires lambda f(lambda dot); same-system adversarial recomputation validated the repository's proof-consistent repair and found no published erratum. Lemma 2.5 converts weak Serrin control, including uniform weak L3, into the source Type-I bounds for suitable solutions."
     },
     {
       "id": "SRC-GRUJIC-2026",
@@ -442,7 +442,7 @@
       "primary": true,
       "status": "preprint",
       "last_checked": "2026-07-23",
-      "notes": "All sixteen v2 proof obligations are independently closed with documented repairs. Pinned v2 archive SHA-256: 05eb5078deb9c981c7745ba3d084b122b379570e8d770983ed51bc9c371e7488."
+      "notes": "All sixteen v2 proof obligations are closed by in-repository audit with documented repairs. Pinned v2 archive SHA-256: 05eb5078deb9c981c7745ba3d084b122b379570e8d770983ed51bc9c371e7488."
     },
     {
       "id": "SRC-HWY-2026",

@@ -2,13 +2,13 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-INITIAL-LAYER-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional necessary reduction
+- **Status:** adversarially recomputed conditional necessary reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Input:** [finite adjoint-pressure packets](adjoint-pressure-packets.md)
   and [adjoint-pressure history](adjoint-pressure-history.md)
 - **Review:**
-  [valid in scope](../review-response-adjoint-pressure-initial-layer-2026-07-24.md)
+  [valid in scope](../review-ledger.md)
 
 The finite-packet theorem left two exhaustive possibilities. This note
 sharpens the terminal initial-layer branch. It does not exclude that branch.

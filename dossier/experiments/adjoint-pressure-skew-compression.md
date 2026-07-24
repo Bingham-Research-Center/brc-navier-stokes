@@ -2,12 +2,12 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-SKEW-COMPRESSION-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed proof-level structural theorem,
+- **Status:** adversarially recomputed proof-level structural theorem,
   including the strong-zero-trace refinement
 - **Domain:** \(\mathbb R^3\) for the PDE identities; finite-dimensional
   Hilbert space for the countermodel
 - **Clay status:** unsolved
-- **Input:** the independently reviewed
+- **Input:** the adversarially recomputed
   [critical Oseen--Volterra audit](adjoint-pressure-critical-volterra.md)
 
 The scalar Volterra audit showed that critical causality alone need not
@@ -744,7 +744,7 @@ Abstract skewness, Hodge orthogonality, real coupling energy, any fixed
 algebraic zero-trace order, and a squared projection-defect telescope are
 now excluded as sufficient inputs.
 
-The later independently reviewed
+The later adversarially recomputed
 [spatial cutoff-flux audit](adjoint-pressure-spatial-pairing.md) tests
 (42) directly.  Reciprocal amplitudes of an exact periodic Beltrami NSE
 field make its displayed-gauge current vanish pointwise and make every

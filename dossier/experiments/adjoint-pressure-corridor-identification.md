@@ -2,14 +2,14 @@
 
 - **Experiment:** EXP-ADJOINT-PRESSURE-CORRIDOR-IDENTIFICATION-001
 - **Route:** ROUTE-R3B
-- **Status:** independently reviewed conditional analytic reduction
+- **Status:** adversarially recomputed conditional analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** independently reviewed
+- **Inputs:** adversarially recomputed
   [one-return theorem](adjoint-pressure-one-return.md),
   [multistage-path theorem](adjoint-pressure-multistage-path.md), and
   [full-corridor theorem](adjoint-pressure-corridor-sum.md)
-- **Review:** [valid after one smooth-layer source repair](../review-response-adjoint-pressure-corridor-identification-2026-07-24.md)
+- **Review:** [valid after one smooth-layer source repair](../review-ledger.md)
 
 The full-corridor theorem deliberately withheld the infinite
 Littlewood--Paley identity.  The weak-\(L^3\) ceiling does not by itself
@@ -707,12 +707,12 @@ It is a statement about LP insertions in this Dyson continuation, not
 by itself an instantaneous Fourier-energy tail, spatial escape, or a
 spectral theorem on the rough limiting hull.
 
-The subsequent independently reviewed
+The subsequent adversarially recomputed
 [last-separated-return renewal theorem](adjoint-pressure-last-return-renewal.md)
 removes item 3 as a standalone participation antecedent.  It partitions
 the complete feedback pressure exactly into a no-chargeable-return
 block and a last-return block.  The latter has the finite capture
-ceiling proved here.  The subsequent independently reviewed
+ceiling proved here.  The subsequent adversarially recomputed
 [no-return parabolic-exclusion theorem](adjoint-pressure-no-return-parabolic.md)
 also proves that the exact complementary block is \(O(h^{7/4})\) below
 every uniformly parabolic ceiling.  The current exhaustive frequency
