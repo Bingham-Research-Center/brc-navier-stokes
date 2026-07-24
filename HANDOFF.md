@@ -4,7 +4,7 @@
 
 **Clay status:** unsolved
 
-**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-PARABOLIC-REGENERATION-001`
+**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-SPATIAL-HIGHPASS-PAYER-001`
 
 **Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
 
@@ -118,9 +118,26 @@ where \(\mathfrak Q_n\) is the high-frequency nonlinear Duhamel action on
 shells \(\rho_nR_k\le r_\bullet\), using only the preceding heat time
 \(R_k^2/\nu\). Divergent pressure histories force this aggregate action to
 diverge below every fixed admissible \(r_\bullet\); a further diagonal reaches
-scale zero. This gives no individual charged shell, directed cascade, causal
-independence from earlier history, spatial source localisation, sign, or
-event-index freshness. External mathematical review remains pending.
+scale zero.
+
+The new
+[spatial high-pass payer theorem](dossier/experiments/adjoint-pressure-spatial-highpass-payer.md)
+uses an exact local filtered-energy identity to prove
+
+\[
+\mathfrak Q_n\le C+C\mathfrak E_n+C\mathfrak F_n,
+\]
+
+where \(\mathfrak E_n\) is entrance high-pass energy and
+\(\mathfrak F_n\) is positive spatially cut-off nonlinear work, both with
+the endpoint adjoint square-root weights. Spatial diffusion-boundary leakage
+is summable. Divergent pressure histories force
+\(\mathfrak E_n+\mathfrak F_n\to\infty\) below every fixed physical cutoff.
+An exact endpoint-weighted scalar array shows why finite physical quadratic
+payer totals, proportional decrements, and natural heat clocks still yield
+neither one charged block nor event freshness. The array is not an NSE,
+Duhamel, or adjoint construction; source localisation, non-diffuse structure,
+and external review remain open.
 
 ### B. Event-index freshness
 
@@ -144,7 +161,7 @@ can cancel in every gauge.
 - The proof-consistent critical-amplitude reading of Albritton--Barker
   Theorem 4.1 still needs external mathematical confirmation.
 - The selected Besov-event and feedback-pressure genealogy is conditional.
-- No finite one-heat-time aggregate secondary index or event-index sum is known.
+- No finite payer index, non-diffuse block theorem, or event-index sum is known.
 
 ## Closed shortcuts: do not retry unchanged
 
@@ -158,6 +175,7 @@ can cancel in every gauge.
 | Source-localised feedback payer | [Intermediate localisation](dossier/experiments/adjoint-pressure-intermediate-localization.md) makes its antecedent empty. |
 | Bare next-event cutoff matching | The sharp \(7/6\) log-scale ceiling still allows infinite mean. |
 | Near-lossless shell cascade | The new lower-band decrement excludes it, but geometric decay survives. |
+| Bare local high-pass payer identity | An abstract endpoint-weighted array has divergent square-root action but vanishing individual and total physical quadratic charges. |
 
 The broader failure catalogue is indexed in
 [`dossier/status.md`](dossier/status.md) and the canonical
@@ -165,11 +183,12 @@ The broader failure catalogue is indexed in
 
 ## Next actions
 
-1. Derive a spatially local high-pass identity for the one-heat-time
-   aggregate action, then bound its secondary index or extract individual
-   blocks with fresh signed flux/decrement charges.
-2. If that budget closes, test whether decrement packets embed additively;
-   otherwise test freshness against the exact regenerated endpoint profile.
+1. Seek an NSE-specific non-diffusion estimate, active-block bound, source
+   coherence law, entrance ancestry, or signed cross-event telescope for
+   \(\mathfrak E_n+\mathfrak F_n\).
+2. If one yields fixed blocks, test whether their decrement packets embed
+   additively; otherwise test the diffuse ledger against the regenerated
+   endpoint profile.
 3. Allow at most five new frontier attempts without a cost/freshness theorem,
    an unconditional NSE statement, or a decisive no-go; then consolidate.
 4. Prepare fresh-context external review packets for the adjoint-cost theorem,

@@ -119,7 +119,7 @@ and remote inherited high frequencies cost at most
 non-summable shell action must therefore lie in a high-frequency nonlinear
 Duhamel regeneration field on the same trajectory.
 
-The latest
+The
 [parabolic scale-zero reduction](experiments/adjoint-pressure-parabolic-regeneration.md)
 localises the upper-audit representation to one-heat-time integrals and
 fixed physical cutoffs. One-heat-time inheritance
@@ -128,10 +128,21 @@ physical \(r_\bullet>0\), all shells with
 \(\rho_nR_k>r_\bullet\) contribute \(o(1)\) by terminal enstrophy absolute
 continuity. Divergent pressure histories therefore force the aggregate
 one-heat-time Duhamel action below every fixed admissible \(r_\bullet\) to
-diverge; a further diagonal reaches scale zero. This does not identify one
-charged shell, cross-shell transfer, or causal independence from earlier
-history. Its secondary index, spatial source, sign, and event freshness
-remain open. External review is pending.
+diverge; a further diagonal reaches scale zero.
+
+The latest
+[spatial high-pass payer reduction](experiments/adjoint-pressure-spatial-highpass-payer.md)
+applies an exact local filtered-energy identity to that action. Spatial
+diffusion-boundary leakage is summable, and divergent pressure histories
+force the sum of two adjoint-weighted square-root aggregates to diverge:
+entrance high-pass energy or positive spatially cut-off nonlinear work. An
+abstract endpoint-weighted diffuse array satisfies the scalar identity while
+every individual action, total physical quadratic payer, and total natural
+clock vanishes. It is not an NSE, Duhamel, or adjoint construction, but it
+closes the bare local identity and physical quadratic budgets as sufficient
+routes to a fixed block. What remains is non-diffuse NSE structure: an
+active-block bound, source coherence, entrance ancestry, or signed
+event-index telescope. External review is pending.
 
 ### 4. Feedback pressure becomes a physical coefficient tail
 

@@ -3712,6 +3712,36 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-SPATIAL-HIGHPASS-PAYER-001",
+      "title": "Spatial high-pass identity exposes two aggregate payers",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The one-heat-time nonlinear Duhamel aggregate left by parabolic regeneration may be controlled by an exact spatially cut-off high-pass energy identity, revealing a summable boundary action and the remaining positive payers.",
+      "invariants": [
+        "The forward filtered velocity at time minus tau is exactly the backward genealogy high-pass and hence equals the inherited field plus the one-heat-time Duhamel field",
+        "The local filtered-energy identity retains the entrance and terminal energies, positive viscosity, and the signed Laplacian-cutoff boundary term with exact factors one-half",
+        "Weak L3 and finite support bound the absolute diffusion-boundary action by a constant times M squared T divided by shell radius",
+        "The inverse-square-root exterior adjoint tail turns the square root of the boundary action into a summable reciprocal-radius series",
+        "Divergent pressure histories force the sum of the entrance-energy and positive spatially cut-off nonlinear-work square-root aggregates to diverge below every fixed admissible physical cutoff",
+        "The projected nonlinear source remains spatially nonlocal and the positive work is not asserted to telescope over event index",
+        "After exact physical-to-normalised pullback, a finite endpoint-weighted scalar array has divergent aggregate action with vanishing individual actions, physical quadratic payer totals, proportional physical decrements, and natural clocks",
+        "The diffuse ledger is not a Navier-Stokes field or an adjoint realisation and no regularity, breakdown, or Clay conclusion is asserted"
+      ],
+      "method": "Filter the forward genealogy above reciprocal shell scale, pair with a smooth annular cutoff, and integrate the exact local energy identity. Use Lorentz finite-volume embedding to sum the cutoff-Laplacian term against the endpoint adjoint tail, then insert the one-heat-time inherited-plus-Duhamel decomposition. Test fixed-block extraction with exact physical-to-normalised scaling and abstract saturated inverse-square-root weights on finitely many geometric physical shells.",
+      "certificate": "A written conditional same-genealogy reduction, an explicit scalar sharpness ledger, and adversarial same-system recomputation; external mathematical review is pending.",
+      "success_criterion": "Expose every remaining aggregate payer after spatial boundary leakage is summed, state the exact pressure-divergence quantifier, and determine whether the bare local identity and quadratic budgets extract one fresh block.",
+      "failure_interpretation": "The time reversal, filtered-energy sign, cutoff geometry, Lorentz local-energy estimate, boundary summation, Duhamel insertion, divergence quantifier, or critical diffuse ledger is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-spatial-highpass-payer.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

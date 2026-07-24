@@ -622,11 +622,14 @@ It does not prove:
 7. a non-Zeno speed bound or exclusion of the coherent ancient profile;
 8. regularity, breakdown, or any Clay alternative A--D.
 
-The next target is:
-
-> Derive a spatially local high-pass identity for the aggregate action
-> (6). Then either prove its finite secondary index or extract
-> individual blocks with fresh signed flux/decrement charges.
+The next target has now been resolved as an exact reduction in
+[spatial high-pass payer](adjoint-pressure-spatial-highpass-payer.md).
+Its local filtered-energy identity leaves divergent entrance-energy or
+positive-work square-root aggregates.  Its abstract endpoint-weighted
+scalar arrays show that bare physical quadratic budgets still permit
+diffuse blocks; they are not NSE or adjoint realisations.  The remaining
+target is therefore an NSE-specific non-diffusion, active-block,
+coherence, ancestry, or cross-event telescoping theorem.
 
 The horizon, reciprocal-shell, physical scaling, and macroscopic
 Cauchy--Schwarz ledgers are checked in
