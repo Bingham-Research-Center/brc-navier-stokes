@@ -1,0 +1,456 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\D}{\mathcal D}
+\newcommand{\Plo}[1]{P_{\le #1}}
+
+\title{A Carrier-Turnover Clock for Type-II Navier--Stokes Records}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 24 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round proves an energy-only low-frequency temporal estimate for smooth
+three-dimensional Navier--Stokes flow and applies it to the active Type-II
+programme.  If energy-normalised carrier profiles form a nonzero compact
+subset of \(L^2(\R^3)\), replacing a radius-\(R\) carrier by a sufficiently
+smaller carrier requires time at least \(cR^{5/2}\), uniformly in moving
+centres.  The exact representative \(q=4\) ledger has
+\(R_j\asymp2^{-4j}\) but record gaps
+\(\asymp2^{-11j}/j=o(R_j^{5/2})\).  It therefore has no infinite nonzero
+strongly \(L^2\)-precompact carrier-profile subsequence on one NSE trajectory.
+The result is conditional
+on that representative schedule and compactness; it forces the surviving
+branch into nested microstructure, spatial escape, fragmentation, or another
+loss of compactness.  It does not solve the Clay problem.
+\end{abstract}
+
+\section{Scope and change from the preceding round}
+
+The preceding round constructed, for each small scale separately, a smooth
+compact NSE packet with fixed Gaussian-band work on its \(r^{5/2}\) turnover
+time and only \(O(\sqrt r)\) dissipation.  It showed that the local
+half-radius work charge is sharp, but did not place successive packets on
+one trajectory.
+
+This report tests the most literal concatenation: a single trajectory whose
+energy-normalised carrier states remain in a compact nonzero family while
+their radii shrink on the exact surviving record schedule.  That
+configuration is impossible.  The proof has two ingredients:
+
+\begin{enumerate}
+\item strict \(L^2\)-critical dilation evacuates every fixed low-frequency
+window, uniformly on compact profile families and uniformly in translations;
+\item the projected NSE equation bounds the speed of any low-frequency
+change using only the kinetic-energy ceiling.
+\end{enumerate}
+
+All claims below are theorem-level relative to their displayed assumptions
+but await external mathematical review.  They are new within this
+repository; no literature-novelty claim is made.
+
+\section{Uniform low-frequency separation}
+
+For \(R>0\) and \(z\in\R^3\), define
+\[
+ (\D_{R,z}f)(x)
+ :=
+ R^{-3/2}f\!\left(\frac{x-z}{R}\right).
+\]
+This action is unitary on \(L^2(\R^3)\).
+
+Fix a radial function \(\chi\in C_c^\infty(\R^3)\) satisfying
+\[
+ 0\le\chi\le1,\qquad
+ \chi=1\ \hbox{on }B_1,\qquad
+ \operatorname{supp}\chi\subset B_2,
+\]
+and let \(\Plo{\Lambda}\) be the Fourier multiplier
+\(\chi(\xi/\Lambda)\).
+
+\begin{lemma}[Compact profiles separate from strict dilations]
+\label{lem:separation}
+Let \(\mathcal K\subset L^2(\R^3)\) be relatively compact and suppose
+\[
+ d:=\inf_{f\in\mathcal K}\|f\|_2>0.
+\]
+There are \(K<\infty\), \(\lambda_0\in(0,1)\), and \(\delta>0\) such that
+for all \(f,g\in\mathcal K\), all \(z\in\R^3\), and all
+\(0<\lambda\le\lambda_0\),
+\[
+ \left\|
+ \Plo K\bigl(f-\D_{\lambda,z}g\bigr)
+ \right\|_2
+ \ge\delta.
+\]
+\end{lemma}
+
+\begin{proof}
+The strong convergence \(\Plo K\to I\) as \(K\to\infty\) is uniform on
+compact subsets of \(L^2\).  Choose \(K\) so that
+\[
+ \sup_{f\in\mathcal K}
+ \|(I-\Plo K)f\|_2\le\frac d8.
+\]
+Then
+\[
+ \inf_{f\in\mathcal K}\|\Plo Kf\|_2\ge\frac{7d}{8}.
+\]
+
+With a unitary Fourier transform,
+\[
+ \widehat{\D_{\lambda,z}g}(\xi)
+ =
+ \lambda^{3/2}e^{-iz\cdot\xi}\widehat g(\lambda\xi).
+\]
+Changing variables gives
+\[
+\begin{aligned}
+ \|\Plo K\D_{\lambda,z}g\|_2^2
+ &=
+ \int_{\R^3}
+ \left|\chi\!\left(\frac{\eta}{\lambda K}\right)\right|^2
+ |\widehat g(\eta)|^2\,d\eta\\
+ &\le
+ \int_{|\eta|\le2\lambda K}|\widehat g(\eta)|^2\,d\eta.
+\end{aligned}
+\]
+The right-hand side is independent of \(z\), tends to zero for each \(g\),
+and does so uniformly on \(\mathcal K\).  For the last assertion, cover the
+compact closure by a finite \(L^2\) net and use the uniform operator bound
+\(\|\Plo K\D_{\lambda,z}\|_{2\to2}\le1\).  Thus
+\[
+ \sup_{g\in\overline{\mathcal K},\,z\in\R^3}
+ \|\Plo K\D_{\lambda,z}g\|_2
+ \longrightarrow0.
+\]
+Choose \(\lambda_0\) so that this supremum is at most \(d/8\).  The triangle
+inequality then gives the assertion with \(\delta=3d/4\).
+\end{proof}
+
+\begin{remark}
+The uniformity in \(z\) is important.  A carrier cannot evade the conclusion
+merely by moving its spatial centre between records.
+\end{remark}
+
+\section{An energy-only NSE low-pass clock}
+
+Let \(u\) be a smooth divergence-free solution on \([s,t]\) of
+\[
+ \partial_tu+\mathbb P\nabla\!\cdot(u\otimes u)
+ =
+ \nu\Delta u
+\]
+on \(\R^3\), and write
+\[
+ E_*:=\sup_{\tau\in[s,t]}\frac12\|u(\tau)\|_2^2.
+\]
+
+\begin{theorem}[Low-frequency temporal Lipschitz bound]
+\label{thm:lowpass}
+For every \(\Lambda>0\),
+\[
+ \boxed{
+ \|\Plo{\Lambda}(u(t)-u(s))\|_2
+ \le
+ C_\chi
+ \left(
+ E_*\Lambda^{5/2}
+ +
+ \nu\sqrt{E_*}\Lambda^2
+ \right)(t-s).
+ }
+\]
+\end{theorem}
+
+\begin{proof}
+Integrating the Leray-projected equation,
+\[
+\begin{aligned}
+ \Plo{\Lambda}(u(t)-u(s))
+ ={}&
+ -\int_s^t
+ \Plo{\Lambda}\mathbb P\nabla\!\cdot(u\otimes u)(\tau)\,d\tau\\
+ &+
+ \nu\int_s^t\Plo{\Lambda}\Delta u(\tau)\,d\tau.
+\end{aligned}
+\]
+Each component of the nonlinear operator has multiplier
+\[
+ \chi(\xi/\Lambda)i\xi_\ell
+ \left(\delta_{im}-\frac{\xi_i\xi_m}{|\xi|^2}\right).
+\]
+By Plancherel its convolution kernel has \(L^2\) norm
+\(C_\chi\Lambda^{5/2}\).  Young's convolution inequality therefore gives
+\[
+\begin{aligned}
+ \|\Plo{\Lambda}\mathbb P\nabla\!\cdot(u\otimes u)\|_2
+ &\le
+ C_\chi\Lambda^{5/2}\|u\otimes u\|_1\\
+ &\le
+ C_\chi\Lambda^{5/2}\|u\|_2^2
+ \le
+ 2C_\chi E_*\Lambda^{5/2}.
+\end{aligned}
+\]
+The viscous multiplier has magnitude at most \(C_\chi\Lambda^2\), whence
+\[
+ \nu\|\Plo{\Lambda}\Delta u\|_2
+ \le
+ C_\chi\nu\Lambda^2\|u\|_2
+ \le
+ C_\chi\nu\sqrt{2E_*}\Lambda^2.
+\]
+Integration in time and enlargement of \(C_\chi\) prove the estimate.
+\end{proof}
+
+\begin{corollary}[Carrier-turnover lower bound]
+\label{cor:clock}
+If \(R>0\) and
+\[
+ \|\Plo{K/R}(u(t)-u(s))\|_2\ge\delta,
+\]
+then
+\[
+ t-s
+ \ge
+ \frac{\delta R^{5/2}}
+ {C_\chi\left(
+ E_*K^{5/2}
+ +
+ \nu\sqrt{E_*}K^2R^{1/2}
+ \right)}.
+\]
+For fixed data and \(R\downarrow0\), this is at least \(cR^{5/2}\).
+\end{corollary}
+
+\begin{proof}
+Set \(\Lambda=K/R\) in Theorem~\ref{thm:lowpass} and rearrange.
+\end{proof}
+
+\section{The compact-carrier theorem}
+
+Let \(t_j\uparrow T^*\), \(R_j\downarrow0\), and let \(x_j\in\R^3\) be
+arbitrary.  Define the exact energy-normalised carrier profiles
+\[
+ F_j(y)
+ :=
+ R_j^{3/2}u(x_j+R_jy,t_j).
+\]
+Equivalently,
+\[
+ u(\cdot,t_j)=\D_{R_j,x_j}F_j,
+ \qquad
+ \|F_j\|_2=\|u(t_j)\|_2.
+\]
+
+\begin{theorem}[Compact carriers cannot outrun turnover]
+\label{thm:carrier}
+Suppose \(\{F_j\}\) is relatively compact in \(L^2(\R^3)\) and
+\[
+ \inf_j\|F_j\|_2>0.
+\]
+There exist \(\lambda_0,c>0\) such that, for all sufficiently large
+\(j<k\) satisfying \(R_k/R_j\le\lambda_0\),
+\[
+ \boxed{t_k-t_j\ge cR_j^{5/2}.}
+\]
+The constants are independent of \(x_j\) and \(x_k\).
+\end{theorem}
+
+\begin{proof}
+Apply Lemma~\ref{lem:separation} to the closure of \(\{F_j\}\).  In the old
+carrier coordinates,
+\[
+ \D_{R_j,x_j}^{-1}\D_{R_k,x_k}F_k
+ =
+ \D_{\lambda,z}F_k,
+ \quad
+ \lambda=\frac{R_k}{R_j},
+ \quad
+ z=\frac{x_k-x_j}{R_j}.
+\]
+Low-pass covariance and unitarity yield
+\[
+\begin{aligned}
+ &\left\|
+ \Plo{K/R_j}\bigl(u(t_j)-u(t_k)\bigr)
+ \right\|_2\\
+ &\qquad=
+ \left\|
+ \Plo K\bigl(F_j-\D_{\lambda,z}F_k\bigr)
+ \right\|_2
+ \ge\delta.
+\end{aligned}
+\]
+Corollary~\ref{cor:clock} gives
+\[
+ t_k-t_j
+ \ge
+ \frac{\delta R_j^{5/2}}
+ {C_\chi\left(
+ E_*K^{5/2}
+ +
+ \nu\sqrt{E_*}K^2R_j^{1/2}
+ \right)}.
+\]
+The energy ceiling is fixed and \(R_j\to0\), so the denominator is uniformly
+bounded for large \(j\).
+\end{proof}
+
+\section{The exact \texorpdfstring{\(q=4\)}{q=4} representative}
+
+The existing joint power ledger takes, up to fixed comparison constants,
+\[
+ R_j=2^{-4j},
+ \qquad
+ t_{j+1}-t_j=\frac{c_t2^{-11j}}j.
+\]
+
+\begin{corollary}[No compact-profile subsequence for the \(q=4\) ledger]
+\label{cor:q4}
+No smooth finite-energy NSE trajectory can obey this scale and time schedule
+while an infinite subsequence of its profiles \(F_j\) is relatively compact
+in \(L^2\) and bounded away from zero.
+\end{corollary}
+
+\begin{proof}
+Suppose such a subsequence exists and apply Theorem~\ref{thm:carrier} to it.
+For every sufficiently large retained index \(j\), choose a later retained
+\(k\) such that
+\[
+ \frac{R_k}{R_j}\le\lambda_0.
+\]
+Theorem~\ref{thm:carrier} requires
+\[
+ t_k-t_j\ge cR_j^{5/2}=c2^{-10j}.
+\]
+But
+\[
+ t_k-t_j
+ \le
+ T^*-t_j
+ =
+ \sum_{n\ge j}\frac{c_t2^{-11n}}n
+ \le
+ C\frac{2^{-11j}}j,
+\]
+so
+\[
+ \frac{t_k-t_j}{R_j^{5/2}}
+ \le
+ C\frac{2^{-j}}j
+ \longrightarrow0.
+\]
+This is a contradiction.  The proof is unchanged when the displayed powers
+hold with fixed two-sided comparison constants.
+\end{proof}
+
+In the carrier notation already used in the dossier,
+\[
+ v_j(y,0)
+ =
+ \frac1{a_j}u(x_j+R_jy,t_j),
+ \qquad
+ b_j=a_j^2R_j^3,
+\]
+and therefore
+\[
+ F_j=\sqrt{b_j}\,v_j(\cdot,0).
+\]
+The amplitude layer in an energy-efficient cell bounds \(\|F_j\|_2\) away
+from zero.  Thus even subsequential strong \(L^2\) compactness of the carrier
+states, after the usual scalar subsequence for \(b_j\), is excluded by
+Corollary~\ref{cor:q4}.
+
+\section{Why the subgrid branch survives}
+
+The conclusion concerns compactness at the carrier radius \(R_j\).  The
+actual defect band in the representative ledger has
+\[
+ r_j=R_j\ell_j\asymp2^{-5j}.
+\]
+Its fixed-energy local turnover time is
+\[
+ r_j^{5/2}\asymp2^{-25j/2},
+\]
+whereas the record gap is \(2^{-11j}/j\).  Hence
+\[
+ \frac{2^{-11j}/j}{r_j^{5/2}}
+ =
+ \frac{2^{3j/2}}j
+ \longrightarrow\infty.
+\]
+A sufficiently small packet already present below the carrier scale has
+ample local turnover time.  The theorem therefore does not contradict the
+preceding sharp packet construction.  It forces any fast survivor to hide
+the next event in noncompact subgrid structure rather than generating a
+fresh compact carrier after the preceding event.
+
+\section{Findings, limitations, and open obligations}
+
+\subsection*{Robust findings, subject to review}
+
+\begin{enumerate}
+\item Bounded kinetic energy gives the unconditional low-pass temporal bound
+of Theorem~\ref{thm:lowpass}.
+\item Compact nonzero \(L^2\) carrier families have a uniform
+translation-independent low-frequency mismatch after sufficient strict
+dilation.
+\item Combining the two facts forces the \(R^{5/2}\) carrier clock.
+\item The exact \(q=4\) representative outruns that clock by
+\(2^{-j}/j\), so it has no infinite nonzero strongly precompact
+carrier-profile subsequence.
+\end{enumerate}
+
+\subsection*{Things still to prove}
+
+\begin{enumerate}
+\item Derive a usable profile decomposition for the forced failure of
+\(L^2\) compactness.
+\item Separate frequency ancestry from spatial escape and fragmentation.
+\item Prove a nonsummable charge, rigidity theorem, or energy-vanishing
+alternative for every resulting defect branch.
+\item Treat schedules other than the representative \(q=4\) powers.
+\item Keep the divergent-normalised-energy carrier cells separate.
+\end{enumerate}
+
+\begin{conjecture}[Nested-ancestry charge]
+For an energy-efficient first-record Type-II sequence satisfying
+\[
+ t_{j+N}-t_j=o(R_j^{5/2})
+\]
+across a fixed nontrivial scale contraction, the noncompact part of the
+carrier profile decomposition contains either a spatial-import event with a
+fixed physical cost or a nested high-frequency descendant.  Along an
+infinite descendant chain, those costs cannot all be summable against the
+finite energy-dissipation budget.
+\end{conjecture}
+
+The first sentence of this conjecture is motivated by the theorem but is not
+proved by it; the nonsummability assertion is the major open step.
+
+\section{Epistemic conclusion}
+
+This round closes one concrete subbranch: naive compact-profile
+concatenation cannot realise the exact fast survivor.  It does not exclude a
+noncompact same-trajectory cascade, produce a singularity, prove regularity
+or breakdown, or establish any Clay alternative A--D.  The Clay problem
+remains unsolved.
+
+\end{document}

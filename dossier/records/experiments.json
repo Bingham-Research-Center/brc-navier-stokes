@@ -4041,6 +4041,40 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-COMPACT-CARRIER-CLOCK-001",
+      "title": "A low-pass NSE clock excludes compact carriers on the q=4 schedule",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001"
+      ],
+      "hypothesis": "The exact q=4 Type-II power survivor may lift to one smooth finite-energy trajectory with an infinite strongly precompact nonzero L2 subsequence of energy-normalized carrier profiles.",
+      "invariants": [
+        "L2-critical dilation by a factor tending to zero evacuates every fixed low-frequency window uniformly on compact profile families and uniformly in translations",
+        "A smooth bounded-energy NSE solution changes frequencies below Lambda at rate at most C times energy times Lambda to the five-halves plus viscosity times square-root energy times Lambda squared",
+        "An order-one low-frequency carrier replacement at radius R therefore needs at least c R to the five-halves time",
+        "The exact carrier profile F_j(y)=R_j to the three-halves u(x_j+R_j y,t_j) represents the complete physical velocity and preserves its L2 norm",
+        "After sufficiently many q=4 generations, compact nonzero profiles have a uniform old-scale low-frequency mismatch regardless of moving centres",
+        "The representative carrier radius R_j comparable to 2 to the minus 4j has turnover R_j to the five-halves comparable to 2 to the minus 10j",
+        "Its entire remaining record time is at most C 2 to the minus 11j divided by j and is little-o of that turnover",
+        "No one-trajectory realization of the representative ledger can have an infinite strongly precompact nonzero subsequence of energy-normalized carrier profiles",
+        "The smaller physical defect radius r_j comparable to 2 to the minus 5j still has turnover 2 to the minus 25j over 2, which fits inside the record gap",
+        "The theorem therefore forces loss of carrier compactness but does not exclude prestored subgrid ancestry, spatial escape, fragmentation, or another noncompact defect",
+        "No universal Type-II schedule, nonsummable ancestry charge, coherent-trace rigidity, divergent-energy control, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Prove uniform low-frequency evacuation for strict L2-critical dilations of a compact nonzero profile family, integrate the Leray-projected NSE equation and bound its low-pass nonlinear kernel from L1 to L2 at the exact Lambda to the five-halves scale, transfer the resulting clock through the exact carrier dilation, and compare it with the entire terminal tail of the representative q=4 record schedule.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report cover the compact-family Fourier lemma, the energy-only NSE low-pass estimate, covariance under moving carrier centres, the cross-scale clock, and the exact q=4 asymptotic contradiction. A separate same-system adversarial recomputation found no fatal or major defect after minor wording repairs; this is not external mathematical confirmation. No executable artefact is claimed.",
+      "success_criterion": "Decide whether the locally sharp packet transfers can be concatenated on the exact fast survivor while retaining any infinite strongly precompact nonzero carrier subsequence, and identify the precise loss of compactness forced if not.",
+      "failure_interpretation": "The compact-family convergence is not uniform, translation changes the low-frequency norm, the Leray low-pass kernel has the wrong Lambda power, the carrier covariance is incorrect, the q=4 terminal time tail is not little-o of R_j to the five-halves, or the conclusion is overstated beyond strong carrier compactness.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-compact-carrier-clock.md",
+        "dossier/rounds/2026-07-24-type-ii-compact-carrier-clock.tex"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

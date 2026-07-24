@@ -8,10 +8,8 @@
 
 **Live handoff:** [root handoff](../HANDOFF.md)
 
-This page is a compact result and frontier index. It does not reproduce
-proofs or live sequencing; the latter belongs only in `HANDOFF.md`. Follow a
-link to the experiment note and then its canonical record.
-The former chronological version is recoverable with
+This page is a compact result/frontier index; proofs and live sequencing stay
+in the linked experiment and `HANDOFF.md`. Recover the former chronology with
 `git show a7ae140:dossier/status.md`.
 
 ## Verdict
@@ -33,9 +31,8 @@ the active frontier, and the breakdown routes remain open.
 | ROUTE-B | open | No smooth-data or admissibly forced singularity has been constructed. |
 | ROUTE-B3 | open | Singular-data mechanisms have not been bridged to Clay data. |
 
-Exact questions, success conditions, and kill criteria are in
-[routes.json](records/routes.json). The complete visual split is the
-[possibility tree](possibility-tree.md).
+Exact questions, success and kill criteria are in [routes.json](records/routes.json);
+the complete split is the [possibility tree](possibility-tree.md).
 
 ## Durable results
 
@@ -186,20 +183,23 @@ viscous works with \(r_j^2/\Delta t_j\) weights against one physical
 dissipation budget. Scale-disjoint bands have bounded-overlap lifetimes, but
 fixed widths force geometric radii and summable nonlinear charges. The
 [triad-packet theorem](experiments/type-ii-triad-packet-sharpness.md)
-constructs smooth compact NSE packets with fixed \(r^{5/2}\)-time band work
-but only \(O(\sqrt r)\) dissipation and weak-\(L^3\) occupation, proving the
-charge locally sharp across different trajectories. The exact \(q_j=4\)
-survivor is eventually nonlinear because its viscous charges diverge.
-Under separate self-similar
-hypotheses, the current preprint and a favourable-viscosity repository
-adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
-outgoing or axisymmetric smooth Euler profiles are excluded under the
-preprint's exact assumptions. A divergence-free kinematic path satisfies the
-listed energy and necessary vorticity ledgers in that window but is not NSE.
+constructs smooth compact NSE packets with fixed \(r^{5/2}\)-time band work,
+but only \(O(\sqrt r)\) dissipation and weak-\(L^3\) occupation, so the charge
+is locally sharp across different trajectories. The
+[compact-carrier clock](experiments/type-ii-compact-carrier-clock.md)
+proves the low-pass rate
+\(C(E\Lambda^{5/2}+\nu\sqrt E\Lambda^2)\). A nonzero strongly compact
+radius-\(R_j\) carrier therefore needs \(cR_j^{5/2}\) to shrink through a
+fixed scale block. The exact \(q_j=4\) gaps are \(o(R_j^{5/2})\), so that
+representative has no infinite nonzero \(L^2\)-precompact carrier subsequence.
+Its smaller defect packets still fit; pre-stored microstructure or escape remains open.
+Under separate self-similar hypotheses, the current preprint and a repository
+adaptation restrict \(2/5\le\gamma<1/2\); outgoing or axisymmetric smooth
+Euler profiles are excluded under its assumptions. A matching kinematic path
+obeys the listed necessary ledgers but is not NSE.
 
-R3C now needs a same-trajectory concatenation obstruction or unthinned
-Carleson/variation law, plus spatial recentering, coherent-trace rigidity,
-and separate control of divergent normalised energy.
+R3C now needs a profile decomposition and nonsummable charge for the forced
+noncompactness, coherent-trace rigidity, and separate divergent-energy control.
 
 ### Frozen R3B boundary
 

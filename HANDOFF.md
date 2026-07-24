@@ -1,40 +1,42 @@
-# Handoff: R3C same-trajectory triad recycling
+# Handoff: R3C forced carrier noncompactness
 
 **Updated:** 2026-07-24 · **Clay status:** unsolved
 
-**Live route:** `ROUTE-R3C` · **Checkpoint:** `EXP-TYPE-II-TRIAD-PACKET-SHARPNESS-001`
+**Live route:** `ROUTE-R3C` · **Checkpoint:** `EXP-TYPE-II-COMPACT-CARRIER-CLOCK-001`
 
 ## Load only
 
-- [Triad packet theorem](dossier/experiments/type-ii-triad-packet-sharpness.md)
+- [Compact-carrier clock](dossier/experiments/type-ii-compact-carrier-clock.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
 ## Exact live question
 
-Can one first-record NSE trajectory concatenate the locally sharp packet
-transfers while reusing one fixed energy quantum?
+Can the forced failure of carrier \(L^2\) compactness be decomposed and
+charged nonsummably on one first-record trajectory?
 
-## Live result
+## Live theorem
 
-An explicit Gaussian-band triad has
+For a nonzero \(L^2\)-precompact carrier family,
 
 \[
-\langle U,S_*U\rangle_{\rm av}=\frac{651}{2048},
-\qquad
-\langle U\otimes U,\nabla S_*U\rangle_{\rm av}
-=-\frac{109}{2048}.
+t_k-t_j\gtrsim R_j^{5/2}
+\quad\text{once}\quad R_k/R_j\ll1.
 \]
 
-Compact smooth \(\mathbb R^3\) NSE packets built from it have fixed band
-energy and fixed nonlinear work on time \(r^{5/2}\), while both dissipation
-and weak-\(L^3\) fourth-power occupation are \(O(\sqrt r)\). Thus the
-half-radius charge is locally sharp. Each scale uses a different regular
-trajectory; this is not a cascade or singularity.
+The exact \(q=4\) ledger instead has
+\[
+R_j^{5/2}\asymp2^{-10j},
+\qquad
+T^*-t_j\asymp2^{-11j}/j.
+\]
+It therefore has no infinite nonzero \(L^2\)-precompact carrier subsequence
+on one trajectory. Moving centres do not evade the estimate. Subgrid packets at
+\(r_j\asymp2^{-5j}\) still fit inside the gap.
 
 ## Next bounded cycle
 
-Do not seek a stronger one-event radius exponent or repeat Bessel thinning.
-Identify the transition cost for recycling one packet through consecutive
-first records on the same trajectory: terminal-state mismatch, spatial
-transport, or temporal variation. Keep coherent trace and divergent energy
+Decompose the forced \(L^2\) noncompactness into frequency ancestry versus
+spatial escape/fragmentation. Seek one physical detector and a nonsummable
+same-trajectory charge. Do not revisit the local half-radius exponent,
+compact concatenation, or Bessel thinning; keep divergent normalised energy
 separate.

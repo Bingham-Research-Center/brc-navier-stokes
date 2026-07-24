@@ -120,11 +120,11 @@ subsequence alternatives record energy efficiency, diffuse/partial/tight
 geometry, and the remaining turnover horizon. The
 [defect theorem](experiments/type-ii-carrier-defect-compactness.md) removes
 fixed-interval normalised viscous dissipation from every energy-efficient
-cell. Extendible packet clouds defeat finite-window nonzero compactness in
-every geometry and truncated clock analogue. The live fork is
-common-trajectory/terminal transport to a nonzero ancient Euler object, or a
-non-reusable flux, persistence, escape, fragmentation, or energy-vanishing
-charge.
+cell. The [carrier clock](experiments/type-ii-compact-carrier-clock.md)
+excludes every infinite nonzero \(L^2\)-precompact carrier subsequence of the
+exact fast \(q=4\) survivor. The live fork is coherent ancient-Euler rigidity or a nonsummable
+charge for its mandatory subgrid ancestry, escape, fragmentation, or other
+loss of compactness.
 
 ### Breakdown side
 

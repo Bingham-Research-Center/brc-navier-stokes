@@ -31,8 +31,8 @@ another link only to discharge the live obligation.
   `dossier/rounds/YYYY-MM-DD-<slug>.tex` report: formal statements/proofs,
   conjectures, robust novel findings subject to review, and open obligations.
   Compile it into ignored `lab/cache/` before committing.
-- New commits use John’s configured identity plus
-  `Co-authored-by: Codex <codex@openai.com>`. Push `main` to the public `brc`
-  remote and verify the remote tip after every commit.
+- Use terse, detailed commit messages with John’s configured identity plus
+  `Co-authored-by: Codex <codex@openai.com>`. Push `main` to both public
+  `brc` and `origin` remotes and verify both tips after every commit.
 - Progress closes an obligation or possibility node, not a prose quota.
 - Before reporting or committing: `make check` and `git diff --check`.
