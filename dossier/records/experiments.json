@@ -3742,6 +3742,38 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-STAGGERED-ENTRANCE-ANCESTRY-001",
+      "title": "Staggered heat ancestry re-expresses entrance energy as zero-data work",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The entrance high-pass energy left by the spatial payer identity may be traced backwards for a scale-dependent number of heat times while all physical lookbacks remain inside one fixed terminal horizon.",
+      "invariants": [
+        "Numbering shells inward from a fixed physical cutoff and using gamma times j plus one heat times gives uniformly bounded physical lookback because j plus one times L to the minus 2j is bounded",
+        "The inherited high-pass endpoint gains exponential decay in the inward index and is summable against the inverse-square-root adjoint weight",
+        "Every remaining entrance field is the terminal value of an exact zero-data high-pass Stokes response on the same smooth genealogy",
+        "Work into each response is nonnegative by its own forced-heat energy identity, but this is auxiliary bookkeeping rather than a new Navier-Stokes flux sign",
+        "Lorentz interpolation, Sobolev, and the zero-data energy identity bound this work by the coefficient dissipation on the same staggered interval",
+        "Exact physical pullback converts the response aggregate into a nested critical dissipation action summing the square roots of physical dissipation divided by physical radius",
+        "The pressure upper audit is bounded by current spatially cut-off nonlinear work plus this nested critical dissipation action",
+        "A terminal dissipation power modulus s to alpha bounds the nested action for every alpha greater than one half",
+        "A triangular scalar history with a uniform square-root modulus has divergent nested action, so the power threshold is sharp for scalar histories but is neither a one-trajectory NSE survivor nor a general-modulus threshold",
+        "No finite current-work budget, critical nested-action bound, fresh event charge, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Assign successively longer heat lookbacks to successively smaller shells, erase the inherited high-pass endpoint by the heat multiplier, represent the remainder as an exact zero-data response, apply its energy identity and a same-trajectory Lorentz-Sobolev dissipation ceiling, pull the result to physical variables, and test the resulting nested critical action against terminal power moduli.",
+      "certificate": "A written conditional same-genealogy reduction and scalar power-modulus audit, accepted after adversarial same-system recomputation; no executable certificate is claimed and external mathematical review is pending.",
+      "success_criterion": "Remove entrance high-pass energy as an independent bookkeeping branch and isolate the exact current-work or nested-critical-dissipation fork, including the sharp scalar power-law boundary of the latter.",
+      "failure_interpretation": "The staggered horizon geometry, heat-kernel erasure, zero-data response identity, Lorentz-Sobolev ceiling, physical scaling, nested-interval geometry, pressure insertion, or power-modulus calculation is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-staggered-entrance-ancestry.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

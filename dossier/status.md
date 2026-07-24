@@ -140,9 +140,29 @@ abstract endpoint-weighted diffuse array satisfies the scalar identity while
 every individual action, total physical quadratic payer, and total natural
 clock vanishes. It is not an NSE, Duhamel, or adjoint construction, but it
 closes the bare local identity and physical quadratic budgets as sufficient
-routes to a fixed block. What remains is non-diffuse NSE structure: an
-active-block bound, source coherence, entrance ancestry, or signed
-event-index telescope. External review is pending.
+routes to a fixed block.
+
+The
+[staggered-entrance theorem](experiments/adjoint-pressure-staggered-entrance-ancestry.md)
+then removes entrance energy as an independent branch. Successively smaller
+shells look back for successively more heat times; all physical lookbacks fit
+one fixed terminal horizon, while inherited high frequencies become
+exponentially summable. The zero-data remainder has exact positive auxiliary
+work and a same-trajectory dissipation ceiling. Thus the pressure upper audit
+now stops at current spatially cut-off nonlinear work or the nested critical
+physical action
+
+\[
+\mathfrak D_n^{\rm stag}
+=
+\sum_k\sqrt{\delta_{n,k}/r_{n,k}}.
+\]
+
+Every terminal dissipation power modulus \(s^\alpha\), \(\alpha>1/2\),
+controls this action. A triangular scalar family survives at
+\(\alpha=1/2\); this is sharp only among scalar power moduli and is not one
+NSE trajectory. Adversarial same-system recomputation accepted the repaired
+reduction; external review is pending.
 
 ### 4. Feedback pressure becomes a physical coefficient tail
 
@@ -225,10 +245,11 @@ survivors occur in Navier--Stokes.
 
 ### Primary R3B gates
 
-1. **One-heat-time aggregate cost.** Derive a spatially local high-pass
-   identity for the aggregate Duhamel action. Bound its secondary index or
-   extract individual blocks with fresh signed flux/decrement charges.
-   Direct linear inheritance and macroscopic shell ranges are no longer live.
+1. **Current work or nested dissipation.** Bound the spatially cut-off
+   nonlinear-work aggregate, control the nested critical dissipation action
+   at the \(s^{1/2}\) endpoint, or extract fresh signed blocks. Entrance
+   energy, direct linear inheritance, and macroscopic shell ranges are no
+   longer independent branches.
 2. **Event-index freshness.** Prove bounded time-frequency overlap, a
    scale-zero floor, non-Zeno speed, an intervening event, or a
    pressure-visible telescope for the forced lower-band decrements.
@@ -273,11 +294,10 @@ survivors occur in Navier--Stokes.
 
 ## Current work order
 
-1. Attack the exact annular tail secondary index; the global-energy factor is
-   no longer the obstruction.
-2. If finite, test whether event packets or lower-band decrements embed in it
-   additively. If the endpoint tail survives, test event freshness against
-   that precise shell profile.
+1. Test spatial source coherence or active-block control for the current
+   nonlinear-work aggregate.
+2. Test whether actual NSE structure improves the critical nested terminal
+   dissipation modulus or prevents reuse of its overlapping intervals.
 3. Stop after five unsuccessful frontier attempts and consolidate for external
    review.
 4. Prepare external review packets for the cost theorem, the

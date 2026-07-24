@@ -95,8 +95,8 @@ shell survivor is closed.
 The remaining survivor may reuse overlapping intervals and bands while its
 flux and physical floors decay geometrically. R3B closes only if one obtains:
 
-- a non-diffuse estimate, active-block bound, source-coherence law, entrance
-  ancestry, or signed telescope for the spatial high-pass payer aggregates;
+- a bound for current spatially cut-off nonlinear work or the nested critical
+  physical dissipation action left by staggered entrance ancestry;
 - bounded time-frequency overlap or a scale-zero decrement;
 - a non-Zeno/intervening-event theorem;
 - a pressure-visible cross-event telescope; or

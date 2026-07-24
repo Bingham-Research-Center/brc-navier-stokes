@@ -4,211 +4,144 @@
 
 **Clay status:** unsolved
 
-**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-SPATIAL-HIGHPASS-PAYER-001`
+**Checkpoint:** `EXP-ADJOINT-PRESSURE-STAGGERED-ENTRANCE-ANCESTRY-001`
 
 **Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
 
-This file is current state, not chronology. Canonical metadata lives in
-[`dossier/records/`](dossier/records/README.md), proof detail in the linked
-experiment notes, and the pre-slim narrative remains recoverable with
-
-```bash
-git show a7ae140:HANDOFF.md
-git show a7ae140:dossier/status.md
-```
+This is replace-not-append current state.  Use
+[`dossier/status.md`](dossier/status.md) for durable results,
+[`dossier/records/`](dossier/records/README.md) for canonical metadata, and
+one linked experiment for proof detail.  Pre-slim chronology is recoverable
+with `git show a7ae140:HANDOFF.md`.
 
 ## State in one minute
 
-The project has not solved any Clay alternative. The active branch assumes a
-smooth finite-energy trajectory before a candidate first singular time,
-together with a uniform terminal weak-\(L^3\) bound and the conditional
-Besov-event genealogy constructed in the R3B chain. Closing this branch would
-be a substantial Type-I theorem, not a Clay solution; Type II remains in
-ROUTE-R3C.
+No Clay alternative A--D is proved.  R3B starts from a smooth finite-energy
+trajectory before a candidate first singular time, a uniform terminal
+weak-\(L^3\) bound, and the conditional Besov-event genealogy.  Its structural
+chain yields a nonzero coherent ancient suitable weak-\(L^3\) distance
+profile with two terminal singular points and recurring positive Besov
+defect.  Even a complete R3B exclusion would leave Type II in ROUTE-R3C.
 
-The structural reduction produces a nonzero coherent ancient suitable
-weak-\(L^3\) distance profile with two locally finite terminal singular
-points and a recurring positive Albritton--Barker quotient defect. The
-shortest proof route is:
-
-1. [terminal Besov ancestry](dossier/experiments/terminal-besov-ancestry.md);
-2. [ancient outer profile](dossier/experiments/terminal-outer-profile.md);
-3. [two-point distance profile](dossier/experiments/terminal-distance-profile.md);
-4. [parabolic scale hull](dossier/experiments/parabolic-scale-hull.md);
-5. [defect-event suspension](dossier/experiments/defect-event-suspension.md).
-
-Every event forces a finite-window
-[adjoint-pressure packet](dossier/experiments/adjoint-pressure-packets.md).
-The exhaustive feedback analysis then forces a physical coefficient tail
-above a superparabolic cutoff:
+Every selected event forces a positive finite-window adjoint-pressure cost.
+The current upper audit now gives, for every sufficiently small fixed physical
+cutoff \(r_\bullet\),
 
 \[
-D_{b,>\,h^{-1/2}\sqrt{\log(1/h)}}^\chi(h)
-\gtrsim_\varepsilon h^{-3+\varepsilon}.
+P_n(T)
+\le
+C
++C\mathfrak F_n(T;r_\bullet)
++C\mathfrak D_n^{\rm stag}(T;r_\bullet)
++o_n(1).
 \]
 
-The latest same-trajectory chain converts that tail into a sharper physical
-statement:
+Here:
 
-- [tail-to-flux](dossier/experiments/adjoint-pressure-parabolic-flux.md)
-  gives annular dissipation, inherited entrance energy, or positive signed
-  high-pass input;
-- [terminal flux ancestry](dossier/experiments/adjoint-pressure-inherited-ancestry.md)
-  removes the first two bookkeeping alternatives at an adaptive boundary;
-- [weak-\(L^3\) flux decrement](dossier/experiments/adjoint-pressure-flux-decrement.md)
-  forces a fixed fractional loss in the lower comparable band.
+- \(\mathfrak F_n\) is adjoint-weighted positive nonlinear work into
+  spatially cut-off high-pass velocity on the current window;
+- \(\mathfrak D_n^{\rm stag}\) is the nested physical action
+  \[
+  \sum_{\rho_nR_k\le r_\bullet}
+  \left(\frac{\delta_{n,k}}{\rho_nR_k}\right)^{1/2},
+  \]
+  with \(\delta_{n,k}\) the physical dissipation on a common-endpoint
+  staggered ancestry interval.
 
-For every sufficiently late event there are terminal intervals
-\(\widetilde J_j\), cutoffs \(K_j/\Lambda_j\to1\), and floors \(T_j>0\)
-such that
+The new
+[staggered-ancestry theorem](dossier/experiments/adjoint-pressure-staggered-entrance-ancestry.md)
+uses \(\gamma(j+1)\) heat times on the \(j\)-th inward shell.  The physical
+lookbacks remain uniformly bounded because
+\((j+1)L^{-2j}\) is bounded, while inherited high frequencies decay
+exponentially in \(j\).  Entrance high-pass energy is therefore no longer an
+independent payer.
+
+The remaining zero-data response has exact nonnegative auxiliary work and the
+same-trajectory ceiling
 
 \[
-\Phi_{K_j}(\widetilde J_j)\ge\frac{\nu T_j}{4},
-\qquad
-\nu\int_{\widetilde J_j}
-\|\nabla Q_{\eta K_j<|\xi|\le K_j}v\|_2^2\,dt
-\ge
-c\left(\frac{\nu}{M}\right)^2
-\Phi_{K_j}(\widetilde J_j).
+\Psi_{n,k}\lesssim \frac{M^2}{\nu}\Delta_{n,k}.
 \]
 
-This excludes the near-lossless distinct-shell ledger. It does not make
-different events fresh: the intervals and bands can overlap, \(T_j\to0\),
-and an infinite geometrically decaying cascade may still have finite total
-physical cost.
+This is forced-heat bookkeeping, not a new NSE flux sign.  After physical
+pullback it yields \(\mathfrak D_n^{\rm stag}\).  A terminal dissipation
+modulus \(s^\alpha\) controls this action for every \(\alpha>1/2\).  A
+triangular scalar family survives at \(\alpha=1/2\), so the power boundary is
+sharp for scalar histories; it is not a one-trajectory NSE counterexample or
+a classification of critical logarithmic moduli.
+
+Adversarial same-system recomputation accepted the theorem after correcting
+the nesting calculation and threshold scope.  External mathematical review
+is pending.
 
 ## Exact live fork
 
-Do not enumerate another pressure mechanism before addressing one of these
-two gates.
-
 ### A. Uniform adjoint-cost budget
 
-For the physical genealogy \(\mathcal G=\{(u_n,H_n)\}\), determine whether
+Obtain at least one genuinely NSE-specific estimate:
 
-\[
-\mathfrak p^\mathcal G_{\psi,T}
-=
-\liminf_{\substack{n\to\infty\\H_n\ge T}}
-\frac1{\sqrt{\nu T}}
-\int_0^T\|\nabla\pi^*_{n,\psi}\|_1\,dt
-\]
+1. bound \(\mathfrak F_n\) through source coherence, an active-block law, or a
+   signed spatial transfer;
+2. bound \(\mathfrak D_n^{\rm stag}\) at the critical \(s^{1/2}\) endpoint,
+   perhaps with a logarithmic gain or non-reuse of nested intervals; or
+3. convert divergence of either aggregate into individually fresh event
+   charges paid by one finite same-trajectory budget.
 
-has a finite upper bound for one nontrivial compact solenoidal test, uniformly
-at the required event scales, or prove a sharp obstruction. The lower bound is
-already established in
-[adjoint-pressure history](dossier/experiments/adjoint-pressure-history.md).
-
-The [conditional annular cost theorem](dossier/experiments/adjoint-pressure-annular-cost.md)
-removes the nonuniform global-\(L^2\) factor and leaves an exact
-\(R_k^{-1/2}\) exterior-adjoint endpoint. The subsequent
-[nonlinear-regeneration theorem](dossier/experiments/adjoint-pressure-nonlinear-regeneration.md)
-removes passive low frequencies and remote linear inheritance. The latest
-[parabolic-regeneration theorem](dossier/experiments/adjoint-pressure-parabolic-regeneration.md)
-replaces the common remote horizon by one shell heat time and removes every
-aggregate shell range staying at positive physical radius. For any fixed
-admissible \(r_\bullet>0\),
-
-\[
-\int_0^T\|\nabla\pi^*_{n,\psi}\|_1\,dt
-\le C+C\mathfrak Q_n(T;r_\bullet)+o(1),
-\]
-
-where \(\mathfrak Q_n\) is the high-frequency nonlinear Duhamel action on
-shells \(\rho_nR_k\le r_\bullet\), using only the preceding heat time
-\(R_k^2/\nu\). Divergent pressure histories force this aggregate action to
-diverge below every fixed admissible \(r_\bullet\); a further diagonal reaches
-scale zero.
-
-The new
-[spatial high-pass payer theorem](dossier/experiments/adjoint-pressure-spatial-highpass-payer.md)
-uses an exact local filtered-energy identity to prove
-
-\[
-\mathfrak Q_n\le C+C\mathfrak E_n+C\mathfrak F_n,
-\]
-
-where \(\mathfrak E_n\) is entrance high-pass energy and
-\(\mathfrak F_n\) is positive spatially cut-off nonlinear work, both with
-the endpoint adjoint square-root weights. Spatial diffusion-boundary leakage
-is summable. Divergent pressure histories force
-\(\mathfrak E_n+\mathfrak F_n\to\infty\) below every fixed physical cutoff.
-An exact endpoint-weighted scalar array shows why finite physical quadratic
-payer totals, proportional decrements, and natural heat clocks still yield
-neither one charged block nor event freshness. The array is not an NSE,
-Duhamel, or adjoint construction; source localisation, non-diffuse structure,
-and external review remain open.
+Do not reintroduce entrance energy, remote linear inheritance, macroscopic
+shells, or diffusion-boundary leakage as separate branches; those are
+summed or re-expressed by the current chain.
 
 ### B. Event-index freshness
 
-Use the forced lower-band decrement to prove one of:
+Use the already forced terminal flux and lower-band decrement to prove:
 
-1. bounded time-frequency overlap;
-2. a scale-zero event floor;
-3. a non-Zeno cascade-speed bound;
-4. an intervening selected Besov event; or
-5. a genuinely pressure-visible cross-event telescope.
+- bounded time-frequency overlap;
+- a scale-zero event floor;
+- a non-Zeno/intervening-event law; or
+- a pressure-visible cross-event telescope.
 
-Bare spectral and spatial primal--adjoint telescopes are closed:
-[spectral pairing](dossier/experiments/adjoint-pressure-spectral-pairing.md)
-is pressure-blind, while the
-[spatial current](dossier/experiments/adjoint-pressure-spatial-pairing.md)
-can cancel in every gauge.
+The current decrement excludes a near-lossless distinct-shell cascade but
+still permits overlapping geometrically decaying events.
 
-## Standing assumptions not yet derived
+## Standing assumptions
 
-- The R3B branch begins inside a weak-\(L^3\) Type-I scenario.
-- The proof-consistent critical-amplitude reading of Albritton--Barker
-  Theorem 4.1 still needs external mathematical confirmation.
-- The selected Besov-event and feedback-pressure genealogy is conditional.
-- No finite payer index, non-diffuse block theorem, or event-index sum is known.
+- The weak-\(L^3\) Type-I hypothesis is not derived for arbitrary Clay data.
+- The Albritton--Barker critical-amplitude repair awaits external
+  confirmation.
+- The Besov-event and feedback-pressure genealogy is conditional.
+- No finite current-work budget, critical nested-action bound, fresh payer
+  index, or event-index sum is known.
 
-## Closed shortcuts: do not retry unchanged
+## Closed shortcuts
 
-| Shortcut | Exact obstruction |
+| Do not retry unchanged | Obstruction |
 |---|---|
-| Raw energy, absolute continuity, or terminal nesting | Positive physical costs can be summable. |
+| Raw energy, absolute continuity, or terminal nesting | Scalar nested histories retain divergent critical action. |
+| Natural heat time per scale | Geometric scales have a Zeno clock. |
+| Adjoint \(L^2\) energy | It stops at the square-root secondary-index law. |
 | Positive cumulative flux | One reservoir can pay many nested boundaries. |
-| Natural heat time per frequency step | Geometric frequencies have a Zeno clock. |
-| Adjoint \(L^2\) energy | It stops at the missing Lorentz secondary index and square-root law. |
-| Critical positive scalar majorants | Their Volterra spectral radius stays order one. |
-| Source-localised feedback payer | [Intermediate localisation](dossier/experiments/adjoint-pressure-intermediate-localization.md) makes its antecedent empty. |
-| Bare next-event cutoff matching | The sharp \(7/6\) log-scale ceiling still allows infinite mean. |
-| Near-lossless shell cascade | The new lower-band decrement excludes it, but geometric decay survives. |
-| Bare local high-pass payer identity | An abstract endpoint-weighted array has divergent square-root action but vanishing individual and total physical quadratic charges. |
-
-The broader failure catalogue is indexed in
-[`dossier/status.md`](dossier/status.md) and the canonical
-[experiment ledger](dossier/records/experiments.json).
+| Bare local high-pass identity | Diffuse endpoint-weighted arrays have no charged block. |
+| Bare spectral or spatial primal--adjoint telescope | The former is pressure-blind; the latter can cancel in every gauge. |
 
 ## Next actions
 
-1. Seek an NSE-specific non-diffusion estimate, active-block bound, source
-   coherence law, entrance ancestry, or signed cross-event telescope for
-   \(\mathfrak E_n+\mathfrak F_n\).
-2. If one yields fixed blocks, test whether their decrement packets embed
-   additively; otherwise test the diffuse ledger against the regenerated
-   endpoint profile.
-3. Allow at most five new frontier attempts without a cost/freshness theorem,
-   an unconditional NSE statement, or a decisive no-go; then consolidate.
-4. Prepare fresh-context external review packets for the adjoint-cost theorem,
-   the Albritton--Barker repair, and the terminal flux/decrement pair.
-5. Revisit ROUTE-R3C explicitly before describing any R3B closure as movement
-   close to Clay.
+1. Test whether spatial localisation of the staggered source controls
+   \(\mathfrak F_n\) or creates bounded overlap with
+   \(\mathfrak D_n^{\rm stag}\).
+2. Analyse critical and logarithmically improved terminal dissipation moduli
+   using actual NSE structure, not another free scalar ledger.
+3. If neither closes a payer, consolidate for fresh-context external review
+   before another long theorem chain.
 
-## Other routes, on demand
-
-- Repaired 2607 conditional theorem:
-  [audit](dossier/papers/2607.08866-audit.md) and
-  [proof map](dossier/papers/2607.08866-proof-map.md).
-- Full route tree: [possibility tree](dossier/possibility-tree.md).
-- Breakdown/HWY bridge:
-  [2509.25116 note](dossier/papers/2509.25116-bridge-note.md).
+Other routes: [2607 audit](dossier/papers/2607.08866-audit.md),
+[possibility tree](dossier/possibility-tree.md), and
+[HWY bridge](dossier/papers/2509.25116-bridge-note.md).
 
 ## Control rules
 
-- Same-system agent review is adversarial recomputation, not independent
-  external review.
-- Tests certify only the exact algebra and bookkeeping they exercise.
-- Replace stale handoff text; never append a research diary here.
-- Before reporting or committing, run `make check` and `git diff --check`.
+- Same-system review is adversarial recomputation, not independent external
+  review.
+- Tests certify only the algebra and finite bookkeeping they exercise.
+- Progress closes an obligation or possibility node; prose volume is not
+  progress.
+- Before reporting or committing: `make check` and `git diff --check`.
