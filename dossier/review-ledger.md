@@ -15,6 +15,7 @@ correspondence, control the current statements.
 | [Pressure trace participation](experiments/adjoint-pressure-trace-participation.md) | The first \(h^7\) participation argument and its moving-tube countermodel were rejected.  The repaired finite-band density split gives fixed positive source-cylinder participation. |
 | [Terminal satellite tower](experiments/terminal-satellite-tower.md) | Retained only in the stated mild/suitable, first-singular-time, \(\mathbb R^3\) scope after bounded source and localisation clarifications. |
 | [Terminal dissipation collapse](experiments/adjoint-pressure-terminal-dissipation-collapse.md) | The projected pairing, Young absorption, and physical scaling were recomputed.  The terminal pullback includes the vanishing genealogy shift \(\varepsilon_n\); this was incorporated before checkpoint `4bc2e6a`. |
+| [Logarithmic heat schedule](experiments/adjoint-pressure-logarithmic-heat-schedule.md) | The schedule, Dini exponents, fixed scalar history, and disjoint-packet powers were recomputed with no fatal or major defect.  “Minimal” is restricted to what the heat-kernel majorant certifies; general necessity is not claimed. |
 
 Other recorded recomputations accepted only the theorem text's stated
 conditional or countermodel scope after their corrections were folded into

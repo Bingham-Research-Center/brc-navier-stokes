@@ -3699,6 +3699,43 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-LOGARITHMIC-HEAT-SCHEDULE-001",
+      "title": "Logarithmic heat ancestry gives the exact critical Dini gate",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-WEAK-L3-HIGHER-INTEGRABILITY-001"
+      ],
+      "hypothesis": "The linear staggered heat lookback can be reduced to the smallest asymptotic order certified by the inherited-endpoint heat-kernel majorant, yielding an exact sufficient Dini criterion for the surviving nested terminal action that can be tested against the published weak-L3 higher-integrability gain.",
+      "invariants": [
+        "A near-borderline logarithmic number of heat times makes the inherited endpoint cost summable like one over j times log j to power greater than one",
+        "Any lookback sequence of order little-o log j fails to make the same positive heat-kernel majorant summable",
+        "The logarithmic lookbacks fit one fixed physical terminal horizon and retain nested common-endpoint intervals",
+        "Every projected-work, signed-absorption, and physical-pullback step of the terminal-collapse theorem is unchanged",
+        "A square-root terminal modulus times omega controls the action whenever the displayed weighted discrete Dini series is finite",
+        "For regular monotone moduli the discrete series has a continuous Dini form with a log-log weight to power one quarter",
+        "The displayed log and log-log family has a scalar-sharp series threshold at beta greater than two or beta equal to two with eta greater than five halves",
+        "One fixed absolutely continuous scalar terminal history saturates every divergent side of this log and log-log classification",
+        "Disjoint divergence-free spatial packets realise the same scalar node history while retaining a uniform energy norm, uniform weak L3, and finite global spacetime gradient Lp for every p greater than two",
+        "The packet history is kinematic and does not solve Navier-Stokes or satisfy its energy inequality",
+        "Barker's global exponent delta_B below one half cannot imply the Dini gate by a norm-only argument",
+        "Even hypothetical parabolic source localisation gives positive radius power only above delta one half and still needs secondary-index control at equality",
+        "The lower-band decrement is a lower charge and does not provide the required upper summability without freshness or bounded overlap",
+        "No NSE Dini gain, fresh event sum, ancient-profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Replace the linear heat-time schedule by a logarithmic plus supercritical log-log schedule, rerun the schedule-independent terminal-collapse proof, convert the exact pullback depth into a discrete Dini series, classify regular logarithmic moduli by the integral test, construct one saturating scalar history, and use disjoint compact solenoidal packets on disjoint time slabs to test the available global norm bundle.",
+      "certificate": "A written conditional same-genealogy reduction and explicit kinematic sharpness construction accepted by adversarial same-system recomputation after scope clarifications; external mathematical review is pending and no executable certificate is claimed.",
+      "success_criterion": "Determine the least asymptotic heat-lookback order, the exact critical Dini threshold it exposes, and whether the published weak-L3 higher-integrability or lower-band decrement supplies that threshold.",
+      "failure_interpretation": "The heat-kernel summability boundary, genealogy horizon, interval nesting, terminal-depth pullback, Dini conversion, logarithmic series test, packet scaling, or comparison with the global and local higher-integrability exponents is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-logarithmic-heat-schedule.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

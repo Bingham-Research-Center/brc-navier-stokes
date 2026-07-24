@@ -4,7 +4,7 @@
 
 **Clay status:** unsolved
 
-**Checkpoint:** `EXP-ADJOINT-PRESSURE-TERMINAL-DISSIPATION-COLLAPSE-001`
+**Checkpoint:** `EXP-ADJOINT-PRESSURE-LOGARITHMIC-HEAT-SCHEDULE-001`
 
 **Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
 
@@ -34,11 +34,23 @@ P_n(T)\le C+C\widehat{\mathfrak D}_n(T;r_\bullet)+o_n(1),
 \sqrt{\frac{\widehat\delta_{n,k}}{\rho_nR_k}}.
 \]
 
-Here \(\widehat\delta_{n,k}\) is global physical dissipation on nested
-common-endpoint intervals spanning the staggered prehistory and current
-window.  A terminal modulus \(s^\alpha\) controls the action for
-\(\alpha>1/2\).  Scalar nested histories still diverge at \(\alpha=1/2\);
-that is a sharp scalar obstruction, not an NSE trajectory.
+The [latest theorem](dossier/experiments/adjoint-pressure-logarithmic-heat-schedule.md)
+reduces the linear lookback to the minimal logarithmic order certified by the
+heat-kernel majorant.  If \(\mu(s)\le\sqrt{s}\,\omega(s)\), it gives the exact
+sufficient condition
+
+\[
+\sum_j Q_j^{1/4}
+\omega(CQ_jr_\bullet^2L^{-2j})^{1/2}<\infty,
+\qquad Q_j\asymp1+\log(j+2).
+\]
+
+For the saturated log--log family with powers \((\beta,\eta)\), this holds
+exactly when \(\beta>2\), or
+\(\beta=2,\eta>5/2\).  One fixed scalar history saturates the boundary.
+Disjoint solenoidal packets show that Barker's global
+\(L^{2+\delta_B}_{t,x}\) gradient gain, even with the energy norm and weak-\(L^3\),
+cannot imply it by norms alone; those packets are not NSE solutions.
 
 The separate actual-NSE flux theorem forces a positive terminal high-pass
 flux and a fixed fractional lower-band dissipation decrement at every late
@@ -49,16 +61,15 @@ prevent reuse of overlapping intervals and bands.
 
 ### A. Uniform adjoint-cost budget
 
-Control \(\widehat{\mathfrak D}_n\) at the critical \(s^{1/2}\) endpoint by
-one genuinely NSE-specific input:
+Control \(\widehat{\mathfrak D}_n\) by one genuinely NSE-specific input:
 
-1. a logarithmic/Dini terminal dissipation gain;
+1. the classified logarithmic/Dini terminal dissipation gain;
 2. non-reuse or bounded overlap of the nested intervals;
 3. the already forced lower-band decrement; or
 4. fresh event charges paid by one finite same-trajectory budget.
 
-Do not reopen the older payer branches; the current theorem already absorbs
-them.
+Global higher integrability alone is now closed as a shortcut.  Do not reopen
+older payer branches; the terminal-collapse theorem already absorbs them.
 
 ### B. Event-index freshness
 
@@ -69,14 +80,10 @@ geometrically decaying overlapping events survive.
 
 ## Next bounded cycle
 
-1. Replace the linear heat-lookback schedule by the smallest summable one and
-   derive the exact critical Dini series.
-2. Determine the sharp logarithmic threshold with one fixed scalar history.
-3. Test whether the available weak-\(L^3\) higher-integrability or decrement
-   implies that threshold on the actual trajectory.
-4. If it does not, record the precise missing PDE estimate and stop this
-   branch for fresh-context external review rather than generate another
-   chain of equivalent ledgers.
+1. Test one direct coupling of event ancestry to bounded time-frequency
+   multiplicity; do not derive another equivalent dissipation ledger.
+2. If no coupling exists, freeze this R3B subbranch for external review and
+   rotate to a genuinely different open gate.
 
 ## Guardrails
 
@@ -94,6 +101,7 @@ geometrically decaying overlapping events survive.
 | Shortcut | Recorded obstruction |
 |---|---|
 | Energy, absolute continuity, or nesting alone | Finite scalar histories retain divergent critical action. |
+| Barker global \(L^{2+\delta_B}\) gradient gain | Disjoint kinematic packets retain arbitrary critical terminal histories. |
 | One natural heat time per scale | Geometric frequencies have a Zeno clock. |
 | Adjoint \(L^2\) energy | It stops at the square-root secondary-index law. |
 | Positive cumulative flux | One reservoir may pay many nested boundaries. |

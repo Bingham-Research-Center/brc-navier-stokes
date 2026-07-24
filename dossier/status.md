@@ -166,11 +166,23 @@ one extended nested critical action:
 P_n(T)\le C+C\widehat{\mathfrak D}_n+o_n(1).
 \]
 
-Every terminal dissipation power modulus \(s^\alpha\), \(\alpha>1/2\),
-controls this action. A triangular scalar family survives at
-\(\alpha=1/2\); this is sharp only among scalar power moduli and is not one
-NSE trajectory. Adversarial same-system recomputation accepted the repaired
-reductions; external review is pending.
+The
+[logarithmic-schedule theorem](experiments/adjoint-pressure-logarithmic-heat-schedule.md)
+reduces the lookback to the minimal logarithmic order certified by the
+heat-kernel majorant and classifies the critical endpoint. If
+\(\mu(s)\le\sqrt{s}\omega(s)\), the exact sufficient series is
+
+\[
+\sum_j(1+\log(j+2))^{1/4}
+\omega(Cr_\bullet^2L^{-2j}(1+\log(j+2)))^{1/2}<\infty.
+\]
+
+For regular log--log moduli the threshold is \(\beta>2\), or
+\(\beta=2,\eta>5/2\). One fixed scalar history saturates it. Disjoint
+solenoidal packets prove that the global energy norm, weak-\(L^3\), and Barker's
+\(L^{2+\delta_B}_{t,x}\) gradient gain do not imply this modulus by a norm
+inequality. The packets are kinematic, not NSE; an NSE-specific theorem is
+still missing. External review is pending.
 
 ### 4. Feedback pressure becomes a physical coefficient tail
 
@@ -253,10 +265,9 @@ survivors occur in Navier--Stokes.
 
 ### Primary R3B gates
 
-1. **Critical nested dissipation.** Control the extended nested physical
-   action at the \(s^{1/2}\) endpoint through a logarithmic/Dini gain,
-   lower-band decrement, or non-reuse; alternatively extract fresh signed
-   blocks. All earlier pressure payers are absorbed into this action.
+1. **Critical nested dissipation.** Prove the classified Dini gain by NSE
+   structure, or obtain non-reuse/fresh signed blocks. Global
+   higher-integrability alone is now excluded as a norm shortcut.
 2. **Event-index freshness.** Prove bounded time-frequency overlap, a
    scale-zero floor, non-Zeno speed, an intervening event, or a
    pressure-visible telescope for the forced lower-band decrements.
@@ -301,13 +312,9 @@ survivors occur in Navier--Stokes.
 
 ## Current work order
 
-1. Classify the exact critical logarithmic/Dini modulus summing the extended
-   nested terminal action.
-2. Test that condition against actual weak-\(L^3\) higher integrability,
-   lower-band decrement, and interval reuse.
-3. Stop after five unsuccessful frontier attempts and consolidate for external
-   review.
-4. Prepare external review packets for the cost theorem, the
+1. Test one event-ancestry route to bounded time-frequency multiplicity.
+2. If it fails, freeze this subbranch and consolidate for external review.
+4. Prepare review packets for the cost theorem, the
    Albritton--Barker repair, and the terminal flux/decrement pair.
 5. Re-open ROUTE-R3C before making any proximity-to-Clay claim.
 
