@@ -21,6 +21,9 @@ dependency-free validator is **lab/navier_lab/records.py**.
 ### Claims
 
 - **established:** supported by a primary peer-reviewed theorem.
+- **repaired_source_theorem:** a peer-reviewed proof supports the recorded
+  corrected statement, but the statement is not a verbatim published theorem
+  and external confirmation of the repair is pending.
 - **conditional_preprint:** a conditional theorem stated in a preprint; the record's
   audit field says whether independent checking is pending or complete.
 - **preprint_claim:** a preprint's reported result, not yet independently reproduced here.

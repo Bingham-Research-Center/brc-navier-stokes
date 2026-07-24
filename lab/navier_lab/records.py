@@ -86,6 +86,7 @@ CLAIM_STATUSES = {
     "official_status",
     "definition",
     "established",
+    "repaired_source_theorem",
     "conditional_preprint",
     "preprint_claim",
     "open",

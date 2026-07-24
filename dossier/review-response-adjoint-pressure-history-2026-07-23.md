@@ -105,6 +105,25 @@ one of:
 Either would be a new rigidity theorem. Neither follows from the current
 adjoint \(L^2\) energy law or the inherited weak endpoint bounds.
 
+## Subsequent fixed-member clarification
+
+A 2026-07-24 review synthesis correctly separated two questions
+that the original response left implicit.  For each fixed smooth
+finite-energy genealogy member, \(L^2\times L^2\) CLMS and adjoint energy
+give
+
+\[
+\int_0^T\|\nabla\pi^*_{n,\psi}\|_1\,dt
+\le
+\frac{C}{\sqrt{2\nu}}
+\|u_n\|_{L^\infty_tL^2_x}\|\psi\|_2\sqrt T
+<\infty.
+\]
+
+Thus the lower bound is not vacuous at fixed \(n\).  The unresolved issue is
+uniformity after \(n\to\infty\): the physical outer-profile scaling permits
+the displayed global \(L^2\) factor to grow like \(\rho_n^{-1/2}\).
+
 ## Validation
 
 - Standalone LaTeX: clean four-page build.

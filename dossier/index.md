@@ -7,7 +7,8 @@ drift apart.
 
 1. [Plain-language explanation](plain-language.md)
 2. [Exact Clay target](clay-target.md)
-3. [Current status](status.md)
+3. [Current handoff](../HANDOFF.md)
+4. [Current status](status.md)
 
 ## Thirty minutes
 

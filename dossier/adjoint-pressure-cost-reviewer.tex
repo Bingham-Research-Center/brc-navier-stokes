@@ -134,7 +134,28 @@ Thus, with \(C_{\rm adj}=C_{\rm Lor}C_*\),
   \frac{|\langle u_n(0),\psi\rangle|}
        {C_{\rm adj}M}\sqrt{\nu T}.
 \]
-Finally, the vector Kato inequality for \eqref{eq:adjoint} gives
+For this fixed smooth finite-energy member, CLMS div--curl and the
+Hardy-to-\(L^1\) pressure projection give
+\[
+  \|\nabla\pi^*_{n,\psi}(\tau)\|_1
+  \le C_{\rm CLMS}
+      \|b_n(\tau)\|_2
+      \|\nabla a_{n,\psi}(\tau)\|_2.
+\]
+Thus \eqref{eq:energy} gives
+\[
+  \int_0^T\|\nabla\pi^*_{n,\psi}(\tau)\|_1\,d\tau
+  \le
+  \frac{C_{\rm CLMS}}{\sqrt{2\nu}}
+  \|b_n\|_{L^\infty(0,T;L^2)}
+  \|\psi\|_2\sqrt T
+  <\infty.
+\]
+This bound is not uniform in \(n\), because the physical genealogy may
+have diverging global \(L^2\) norm.  It establishes fixed-member
+finiteness only.
+
+The vector Kato inequality for \eqref{eq:adjoint} now gives
 \[
   \frac{d}{d\tau}\|a_{n,\psi}(\tau)\|_1
   \le\|\nabla\pi^*_{n,\psi}(\tau)\|_1.
@@ -142,7 +163,8 @@ Finally, the vector Kato inequality for \eqref{eq:adjoint} gives
 Taking the running supremum and using
 \(\|a_{n,\psi}(0)\|_1=\|\psi\|_1\) proves
 \eqref{eq:finite-horizon}.  If either \(B_n(T)\) or the pressure integral
-is infinite, the corresponding inequality holds in the extended sense.
+were infinite, the lower-bound step would still hold in the extended
+sense; the displayed CLMS estimate rules this out for each fixed member.
 \end{proof}
 
 \paragraph{Definition of the finite-window cost.}

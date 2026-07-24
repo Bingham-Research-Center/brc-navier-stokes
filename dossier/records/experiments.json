@@ -1937,12 +1937,14 @@
         "Lower Lebesgue integration avoids assuming measurability or continuity of the genealogy-relaxed cost",
         "The detector and dilation-generator costs transfer the full variation-or-occupation dichotomy to a fixed positive adjoint-pressure cost on every event bridge",
         "The value of the relaxed cost is not proved intrinsic to every rough hull state and no intrinsic rough endpoint Oseen adjoint is asserted",
+        "For each smooth finite-energy genealogy member, the L2 CLMS estimate and adjoint energy give a finite pressure-history upper bound proportional to its global L2 norm",
+        "The physical outer-profile scaling lets that global L2 upper bound grow like rho_n^(-1/2), so fixed-member finiteness supplies no genealogy-uniform ceiling",
         "The adjoint histories at different scale points overlap and no event-index summation or bounded telescope is proved",
         "The adjoint L2 energy controls neither the Kato pressure source nor the missing L(3/2,1) gradient norm",
         "No sub-square-root pressure-history theorem, ancient-profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
-      "method": "Choose a solenoidal Besov detector, derive smooth finite-horizon primal-adjoint pairing conservation and adjoint energy dissipation, combine Lorentz duality with Nash and exact real interpolation, use vector Kato to identify the pressure-gradient L1 cost, pass only through the smooth physical genealogy by a double lower limit, verify exact parabolic covariance, and integrate the resulting pointwise lower bounds across each actual same-orbit event bridge.",
-      "certificate": "A written conditional genealogical theorem, a standalone compilable LaTeX reviewer note, and Fraction tests for test-norm powers, Nash interpolation, scale-zero normalisation, finite-horizon pressure floor, genealogy charge, and both event-bridge alternatives.",
+      "method": "Choose a solenoidal Besov detector, derive smooth finite-horizon primal-adjoint pairing conservation and adjoint energy dissipation, combine Lorentz duality with Nash and exact real interpolation, use vector Kato to identify the pressure-gradient L1 cost, record the fixed-member L2 CLMS upper bound and its non-uniform physical scaling, pass only through the smooth physical genealogy by a double lower limit, verify exact parabolic covariance, and integrate the resulting pointwise lower bounds across each actual same-orbit event bridge.",
+      "certificate": "A written conditional genealogical theorem with a fixed-member finiteness clarification, a standalone compilable LaTeX reviewer note, and Fraction tests for test-norm powers, Nash interpolation, scale-zero normalisation, finite-horizon pressure floor, genealogy charge, and both event-bridge alternatives.",
       "success_criterion": "A genuine PDE-derived quantity on the physical ancestral sequence has a fixed positive lower bound on every Besov regeneration bridge, and the remaining closure problem is isolated as either a sub-square-root adjoint-pressure theorem or an event-index summation of overlapping histories.",
       "failure_interpretation": "The smooth adjoint signs or pairing are wrong, Nash and Lorentz interpolation do not force square-root L1 growth, vector Kato has another positive source, the physical diagonal does not supply smooth expanding genealogies, scaling is not critical, the bridge dichotomy does not transfer, or the rough-state passage silently assumes an unavailable endpoint transposition theorem.",
       "status": "complete",
@@ -1954,7 +1956,7 @@
         "lab/navier_lab/adjoint_pressure_history.py",
         "lab/tests/test_adjoint_pressure_history.py"
       ],
-      "last_run": "2026-07-23"
+      "last_run": "2026-07-24"
     },
     {
       "id": "EXP-ADJOINT-PRESSURE-PACKETS-001",

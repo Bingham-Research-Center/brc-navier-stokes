@@ -613,6 +613,58 @@ The charge in (31) is nonlocal twice:
    history \(\tau\to\infty\); and
 2. adjacent scale points generate overlapping adjoint histories.
 
+### 7.1 Fixed-member finiteness is not genealogy uniformity
+
+There is no fixed-member vacuity.  For every smooth finite-energy
+genealogy member, the \(L^2\times L^2\) CLMS div--curl estimate and the
+Hardy-to-\(L^1\) pressure projection give
+
+\[
+\|\nabla\pi^*_{n,\psi}(\tau)\|_1
+\le
+C_{\rm CLMS}
+\|u_n(-\tau)\|_2
+\|\nabla a_{n,\psi}(\tau)\|_2.
+\tag{32a}
+\]
+
+Consequently the adjoint energy identity implies
+
+\[
+\boxed{
+\int_0^T
+\|\nabla\pi^*_{n,\psi}(\tau)\|_1\,d\tau
+\le
+\frac{C_{\rm CLMS}}{\sqrt{2\nu}}
+\|u_n\|_{L^\infty(-T,0;L^2)}
+\|\psi\|_2\sqrt T
+<\infty.
+}
+\tag{32b}
+\]
+
+After division by \(\sqrt{\nu T}\), the right side is
+\(C\|u_n\|_{L^\infty L^2}\|\psi\|_2/\nu\).  This is not uniform along
+the physical outer-profile genealogy: the scaling in
+`terminal-outer-profile.md` permits
+
+\[
+\|V_n(s)\|_2
+=
+\frac{1}{\nu_{\rm phys}\sqrt{\rho_n}}
+\left\|
+v\left(T^*+\frac{\rho_n^2}{\nu_{\rm phys}}s\right)
+\right\|_2.
+\tag{32c}
+\]
+
+Thus the exact open problem is a finite upper bound after the genealogy
+lower limit, not finiteness for each smooth member.  Any successful
+estimate must replace the diverging global energy factor by local/tail
+Oseen control or by additional one-trajectory structure.
+
+### 7.2 The endpoint summation gap
+
 The energy law (12) is finite for each terminal test, but it controls
 \(\nabla a\) in \(L^2_{t,x}\), whereas the Kato source in (19) is the
 \(L^1_x\) norm of the adjoint pressure gradient. At the current endpoint,

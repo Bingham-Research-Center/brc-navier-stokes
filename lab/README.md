@@ -7,6 +7,7 @@ not convert passing unit tests into mathematical truth.
 
 | Module | What it checks | What it does not check |
 |---|---|---|
+| **context_budget.py** | Active router, handoff, and status size plus required scope labels | Whether the compressed mathematical summary is correct or complete |
 | **scaling.py** | Exact rational scaling exponents | Existence or regularity estimates |
 | **log_chain.py** | Distribution/rearrangement exponent bookkeeping used in the 2607 audit | O'Neil's theorem or its hypotheses |
 | **multicore.py** | Exact two-core weak-L(3/2) tail and covering geometry | PDE consistency of the scalar example |
