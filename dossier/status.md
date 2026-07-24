@@ -167,8 +167,16 @@ uses it to define a canonical first-crossing defect scale \(\ell_j\), prove
 residence for carrier time
 \(\gtrsim\ell_j/\log(e+C/\ell_j)\), and force
 \(\varepsilon_j/[\ell_j\log(e+C/\ell_j)]\to0\).
-An accelerating power ledger keeps the resulting viscous charges summable,
-so residence alone does not supply cross-carrier freshness.
+The
+[cross-record theorem](experiments/type-ii-cross-record-quantile.md)
+then fixes two physical subgrid-energy quantiles. Between selected first
+records, either the next low quantile lies below the previous high boundary,
+or the gap pays
+\(\gtrsim\tau_j\ell_j/[q_j^3\log(e+C/(q_j^2\ell_j))]\).
+An exact \(q_j=4\) power ledger with bounded quantile width keeps residence,
+clock, and worst weak-\(L^3\) occupation charges summable. Persistence of an
+energy amount therefore does not yet identify a packet or make its charge
+fresh.
 Under separate self-similar
 hypotheses, the current preprint and a favourable-viscosity repository
 adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
@@ -176,9 +184,9 @@ outgoing or axisymmetric smooth Euler profiles are excluded under the
 preprint's exact assumptions. A divergence-free kinematic path satisfies the
 listed energy and necessary vorticity ledgers in that window but is not NSE.
 
-R3C now needs a cross-event scale genealogy, fresh physical charge, or
-spatial-recentring law, coherent-trace rigidity, and separate control of the
-divergent-normalised-energy cells.
+R3C now needs a non-reuse or one-way-transfer law, a stronger record-clock or
+spatial-recentring charge, coherent-trace rigidity, and separate control of
+the divergent-normalised-energy cells.
 
 ### Frozen R3B boundary
 
