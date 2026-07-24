@@ -4,7 +4,7 @@
 
 **Clay status:** unsolved
 
-**Checkpoint:** `EXP-ADJOINT-PRESSURE-STAGGERED-ENTRANCE-ANCESTRY-001`
+**Checkpoint:** `EXP-ADJOINT-PRESSURE-TERMINAL-DISSIPATION-COLLAPSE-001`
 
 **Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
 
@@ -31,48 +31,39 @@ cutoff \(r_\bullet\),
 P_n(T)
 \le
 C
-+C\mathfrak F_n(T;r_\bullet)
-+C\mathfrak D_n^{\rm stag}(T;r_\bullet)
++C\widehat{\mathfrak D}_n(T;r_\bullet)
 +o_n(1).
 \]
 
-Here:
-
-- \(\mathfrak F_n\) is adjoint-weighted positive nonlinear work into
-  spatially cut-off high-pass velocity on the current window;
-- \(\mathfrak D_n^{\rm stag}\) is the nested physical action
-  \[
-  \sum_{\rho_nR_k\le r_\bullet}
-  \left(\frac{\delta_{n,k}}{\rho_nR_k}\right)^{1/2},
-  \]
-  with \(\delta_{n,k}\) the physical dissipation on a common-endpoint
-  staggered ancestry interval.
-
-The new
-[staggered-ancestry theorem](dossier/experiments/adjoint-pressure-staggered-entrance-ancestry.md)
-uses \(\gamma(j+1)\) heat times on the \(j\)-th inward shell.  The physical
-lookbacks remain uniformly bounded because
-\((j+1)L^{-2j}\) is bounded, while inherited high frequencies decay
-exponentially in \(j\).  Entrance high-pass energy is therefore no longer an
-independent payer.
-
-The remaining zero-data response has exact nonnegative auxiliary work and the
-same-trajectory ceiling
-
 \[
-\Psi_{n,k}\lesssim \frac{M^2}{\nu}\Delta_{n,k}.
+\widehat{\mathfrak D}_n
+=
+\sum_{\rho_nR_k\le r_\bullet}
+\left(
+\frac{\widehat\delta_{n,k}}{\rho_nR_k}
+\right)^{1/2},
 \]
 
-This is forced-heat bookkeeping, not a new NSE flux sign.  After physical
-pullback it yields \(\mathfrak D_n^{\rm stag}\).  A terminal dissipation
-modulus \(s^\alpha\) controls this action for every \(\alpha>1/2\).  A
-triangular scalar family survives at \(\alpha=1/2\), so the power boundary is
-sharp for scalar histories; it is not a one-trajectory NSE counterexample or
-a classification of critical logarithmic moduli.
+where \(\widehat\delta_{n,k}\) is global physical dissipation on nested
+common-endpoint intervals extending from the staggered prehistory through the
+current window.
 
-Adversarial same-system recomputation accepted the theorem after correcting
-the nesting calculation and threshold scope.  External mathematical review
-is pending.
+The
+[terminal-dissipation theorem](dossier/experiments/adjoint-pressure-terminal-dissipation-collapse.md)
+rewrites current spatially cut-off nonlinear work as an exact projected
+gradient pairing.  Weak-\(L^3\) interpolation bounds it by coefficient
+dissipation; the signed local filtered-energy identity absorbs the otherwise
+unknown local high-pass dissipation.  Exact physical scaling then merges
+current work and staggered entrance ancestry into the single action above.
+
+Thus entrance energy, current nonlinear work, remote inheritance,
+macroscopic shells, and diffusion-boundary leakage are no longer independent
+upper-audit branches.  A terminal modulus \(s^\alpha\) controls the action
+for every \(\alpha>1/2\).  A triangular scalar family survives at
+\(\alpha=1/2\), so the power boundary is sharp only for scalar histories;
+critical logarithmic moduli and one-trajectory NSE non-reuse remain open.
+Adversarial same-system recomputation accepted the theorem.  External
+mathematical review is pending.
 
 ## Exact live fork
 
@@ -80,16 +71,14 @@ is pending.
 
 Obtain at least one genuinely NSE-specific estimate:
 
-1. bound \(\mathfrak F_n\) through source coherence, an active-block law, or a
-   signed spatial transfer;
-2. bound \(\mathfrak D_n^{\rm stag}\) at the critical \(s^{1/2}\) endpoint,
-   perhaps with a logarithmic gain or non-reuse of nested intervals; or
-3. convert divergence of either aggregate into individually fresh event
+1. bound \(\widehat{\mathfrak D}_n\) at the critical \(s^{1/2}\) endpoint
+   through a logarithmic/Dini gain or non-reuse of nested intervals;
+2. compare it with the already forced lower-band decrement; or
+3. convert its divergence into individually fresh event
    charges paid by one finite same-trajectory budget.
 
-Do not reintroduce entrance energy, remote linear inheritance, macroscopic
-shells, or diffusion-boundary leakage as separate branches; those are
-summed or re-expressed by the current chain.
+Do not reintroduce current nonlinear work or the earlier payer branches; all
+are absorbed into \(\widehat{\mathfrak D}_n\).
 
 ### B. Event-index freshness
 
@@ -109,8 +98,8 @@ still permits overlapping geometrically decaying events.
 - The Albritton--Barker critical-amplitude repair awaits external
   confirmation.
 - The Besov-event and feedback-pressure genealogy is conditional.
-- No finite current-work budget, critical nested-action bound, fresh payer
-  index, or event-index sum is known.
+- No critical nested-action bound, fresh payer index, or event-index sum is
+  known.
 
 ## Closed shortcuts
 
@@ -125,11 +114,10 @@ still permits overlapping geometrically decaying events.
 
 ## Next actions
 
-1. Test whether spatial localisation of the staggered source controls
-   \(\mathfrak F_n\) or creates bounded overlap with
-   \(\mathfrak D_n^{\rm stag}\).
-2. Analyse critical and logarithmically improved terminal dissipation moduli
-   using actual NSE structure, not another free scalar ledger.
+1. Classify the exact critical logarithmic/Dini modulus required to sum
+   \(\widehat{\mathfrak D}_n\).
+2. Test that condition against the weak-\(L^3\) lower-band decrement and
+   local higher-integrability theorem on the actual trajectory.
 3. If neither closes a payer, consolidate for fresh-context external review
    before another long theorem chain.
 

@@ -774,11 +774,11 @@ It does not prove:
 8. exclusion of the coherent ancient profile; or
 9. regularity, breakdown, or any Clay alternative A--D.
 
-The next theorem must use NSE structure beyond the global zero-data
-energy identity: spatial source coherence, active-block control,
-control of the nested critical dissipation action, comparison of the
-staggered windows with selected Besov events, or a signed cross-event
-functional.
+The subsequent
+[terminal-dissipation collapse](adjoint-pressure-terminal-dissipation-collapse.md)
+absorbs the current nonlinear-work branch and extends (28g) through the
+current window.  The remaining live gate is control or non-reuse of that
+extended critical nested action.
 
 No executable certificate is claimed for the multiplier, Lorentz, or
 PDE steps.

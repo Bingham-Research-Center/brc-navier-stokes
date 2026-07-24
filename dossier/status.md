@@ -148,21 +148,29 @@ then removes entrance energy as an independent branch. Successively smaller
 shells look back for successively more heat times; all physical lookbacks fit
 one fixed terminal horizon, while inherited high frequencies become
 exponentially summable. The zero-data remainder has exact positive auxiliary
-work and a same-trajectory dissipation ceiling. Thus the pressure upper audit
-now stops at current spatially cut-off nonlinear work or the nested critical
-physical action
+work and a same-trajectory dissipation ceiling.
+
+The subsequent
+[terminal-dissipation collapse](experiments/adjoint-pressure-terminal-dissipation-collapse.md)
+rewrites the remaining current nonlinear work as a projected global gradient
+pairing and absorbs its local high-pass dissipation through the signed
+filtered-energy identity. Exact physical pullback merges current and
+prehistory coefficient dissipation. The complete upper audit now stops at
+one extended nested critical action:
 
 \[
-\mathfrak D_n^{\rm stag}
+\widehat{\mathfrak D}_n
 =
-\sum_k\sqrt{\delta_{n,k}/r_{n,k}}.
+\sum_k\sqrt{\widehat\delta_{n,k}/r_{n,k}},
+\qquad
+P_n(T)\le C+C\widehat{\mathfrak D}_n+o_n(1).
 \]
 
 Every terminal dissipation power modulus \(s^\alpha\), \(\alpha>1/2\),
 controls this action. A triangular scalar family survives at
 \(\alpha=1/2\); this is sharp only among scalar power moduli and is not one
 NSE trajectory. Adversarial same-system recomputation accepted the repaired
-reduction; external review is pending.
+reductions; external review is pending.
 
 ### 4. Feedback pressure becomes a physical coefficient tail
 
@@ -245,11 +253,10 @@ survivors occur in Navier--Stokes.
 
 ### Primary R3B gates
 
-1. **Current work or nested dissipation.** Bound the spatially cut-off
-   nonlinear-work aggregate, control the nested critical dissipation action
-   at the \(s^{1/2}\) endpoint, or extract fresh signed blocks. Entrance
-   energy, direct linear inheritance, and macroscopic shell ranges are no
-   longer independent branches.
+1. **Critical nested dissipation.** Control the extended nested physical
+   action at the \(s^{1/2}\) endpoint through a logarithmic/Dini gain,
+   lower-band decrement, or non-reuse; alternatively extract fresh signed
+   blocks. All earlier pressure payers are absorbed into this action.
 2. **Event-index freshness.** Prove bounded time-frequency overlap, a
    scale-zero floor, non-Zeno speed, an intervening event, or a
    pressure-visible telescope for the forced lower-band decrements.
@@ -294,10 +301,10 @@ survivors occur in Navier--Stokes.
 
 ## Current work order
 
-1. Test spatial source coherence or active-block control for the current
-   nonlinear-work aggregate.
-2. Test whether actual NSE structure improves the critical nested terminal
-   dissipation modulus or prevents reuse of its overlapping intervals.
+1. Classify the exact critical logarithmic/Dini modulus summing the extended
+   nested terminal action.
+2. Test that condition against actual weak-\(L^3\) higher integrability,
+   lower-band decrement, and interval reuse.
 3. Stop after five unsuccessful frontier attempts and consolidate for external
    review.
 4. Prepare external review packets for the cost theorem, the

@@ -3722,6 +3722,38 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-TERMINAL-DISSIPATION-COLLAPSE-001",
+      "title": "Current nonlinear work collapses into nested terminal dissipation",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The current spatially cut-off high-pass nonlinear-work payer may be absorbed through its exact projected pairing and local filtered-energy identity, leaving only coefficient dissipation on extended nested terminal intervals.",
+      "invariants": [
+        "Self-adjointness moves the high-pass Leray projection onto the cut-off filtered velocity before spatial integration by parts",
+        "Weak L3 interpolation and Sobolev bound the global quadratic coefficient in L2 by M times the global gradient L2 norm",
+        "The projected test gradient is bounded by local filtered dissipation plus a summable cutoff term",
+        "Young's inequality spends one quarter of local filtered dissipation, which the exact signed energy identity converts into one quarter of positive nonlinear work and then absorbs",
+        "Each positive current-work payer is bounded by entrance energy, current global coefficient dissipation, and a reciprocal shell-radius term",
+        "Extending every staggered prehistory interval through the current window creates nested common-endpoint physical intervals",
+        "The inverse-square-root adjoint weight and exact physical pullback convert both prehistory and current dissipation into one critical action summing square roots of physical dissipation divided by radius",
+        "The complete pressure upper audit is bounded by this single extended nested critical dissipation action",
+        "Every terminal dissipation power modulus s to alpha with alpha greater than one half controls the action; the existing triangular scalar survivor remains at alpha one half",
+        "No critical action bound, logarithmic gain, fresh event sum, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Rewrite the spatially cut-off nonlinear work as a global projected gradient pairing, estimate it by Lorentz interpolation and coefficient dissipation, absorb local filtered dissipation through the exact signed energy identity, sum against the exterior adjoint tail, and pull the resulting extended intervals to the physical trajectory.",
+      "certificate": "A written conditional same-genealogy reduction accepted by adversarial same-system recomputation, including exact signs, Young absorption, physical scaling, and terminal pullback depth; no executable certificate is claimed and external mathematical review is pending.",
+      "success_criterion": "Remove current nonlinear work as an independent upper-audit payer and reduce every surviving adjoint-pressure cost branch to one nested critical physical-dissipation action.",
+      "failure_interpretation": "The projected integration by parts, Lorentz product bound, cutoff-gradient estimate, signed absorption, weighted shell sum, physical pullback, interval nesting, or terminal modulus calculation is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-terminal-dissipation-collapse.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",
