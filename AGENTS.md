@@ -1,38 +1,31 @@
 # Agent router
 
-Start with `HANDOFF.md`. Load only its named proof note and canonical route;
-follow another link only when the live obligation requires it.
+Read `HANDOFF.md`, then only its named proof note and route record. Follow
+another link only to discharge the live obligation.
 
-## Lookup routes
+## Other entry points
 
-- Claim, route, experiment, or source:
-  `dossier/records/README.md` → one JSON entry → named artefact.
-- Closed 2607 audit: `dossier/papers/2607.08866-audit.md` →
-  `dossier/records/paper-2607-obligations.json` →
-  `dossier/papers/2607.08866-proof-map.md`.
-- Exact 2607 source: `make fetch-2607`, then only
+- Records/status work: `dossier/records/README.md` → one JSON record → artefact.
+- 2607 audit: `dossier/papers/2607.08866-audit.md` →
+  `dossier/records/paper-2607-obligations.json` → proof map.
+- Exact 2607 source: `make fetch-2607`; read only
   `lab/cache/arxiv/2607.08866v2/source/chaos_sphere.tex`.
 - Executable certificate: `lab/README.md` → one module/test.
-- Clay/other route: `dossier/clay-target.md` → `dossier/possibility-tree.md`.
+- Clay tree: `dossier/clay-target.md` → `dossier/possibility-tree.md`.
 - Breakdown/HWY: `dossier/papers/2509.25116-bridge-note.md`.
 - Human orientation: `README.md`.
 
-## Discipline
+## Rules
 
-- The Clay problem is unsolved. Match any resolution to exact alternative
-  A--D; closing a conditional route is not a Clay resolution.
-- The 2607 chain is only a repaired projected-mild conditional theorem; its
-  geometric hypotheses are not derived for arbitrary Clay data.
-- Label theorem, conditional theorem, source claim, computation, and heuristic
-  exactly.  Same-system review is adversarial recomputation, not external
-  review.
-- `dossier/records/` is canonical and one proof note owns each derivation.
-  Routine work updates that pair and `HANDOFF.md`; change `status.md` or the
-  possibility tree only when durable route state changes.
-- `HANDOFF.md` is replace-not-append. Incorporate review corrections into
-  canonical artefacts; leave one-use correspondence and superseded chronology
-  to Git.
-- Add code only when it can falsify or certify a nontrivial finite claim.
-- Preserve source versions and line anchors; keep source/PDF caches ignored.
+- The Clay problem is unsolved. Match any resolution to exact alternative A--D.
+- The repaired 2607 result is conditional; its geometry is not known for
+  arbitrary Clay data.
+- Distinguish theorem, conditional theorem, source claim, computation, and
+  heuristic. Same-system review is not external confirmation.
+- `dossier/records/` is canonical; one proof note owns each derivation.
+  Routine work changes only that pair and replace-not-append `HANDOFF.md`.
+- Preserve source versions/anchors. Keep source and PDF caches ignored.
+- Put superseded chronology and one-use correspondence in Git, not live
+  context. Add code only for a nontrivial falsifiable finite claim.
 - Progress closes an obligation or possibility node, not a prose quota.
 - Before reporting or committing: `make check` and `git diff --check`.
