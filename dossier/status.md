@@ -237,10 +237,14 @@ c\left(\frac{\nu}{M}\right)^2
 \Phi_{K_j}(\widetilde J_j).
 \]
 
-This is a conditional same-trajectory theorem. It excludes the specific
-near-lossless distinct-shell ledger. It does not exclude an infinite
-geometrically decaying cascade because \(T_j\to0\) and different intervals
-or bands may overlap.
+The
+[frequency-freshness theorem](experiments/adjoint-pressure-freshness-without-floor.md)
+shows that a sparse infinite set of these bands is automatically disjoint,
+so time overlap is harmless and \(\sum_mT_{j_m}<\infty\). Even full
+next-event matching would give only bounded multiplicity and
+\(\sum_jT_j<\infty\). The exact ancestry survivor permits that conclusion
+with super-exponential decay. A nonsummable floor, not overlap alone, is the
+missing input.
 
 ## Closed shortcuts and surviving lessons
 
@@ -256,6 +260,7 @@ or bands may overlap.
 | Bare frequency-localised primal--adjoint pairing | [Spectral pairing](experiments/adjoint-pressure-spectral-pairing.md) telescopes but is pressure-blind. |
 | Bare spatial primal--adjoint current | [Spatial pairing](experiments/adjoint-pressure-spatial-pairing.md) can cancel in every pressure gauge. |
 | Asymptotically lossless shell crossing | Closed by the lower-band decrement; geometrically decaying crossing survives. |
+| Bounded lower-band overlap | It sums the shrinking \(T_j\), but exact ancestry permits that sum to be finite. |
 | Endpoint scalar Kato control from weak strain alone | [Coefficient stacks](experiments/adjoint-kato-defect.md) violate the sufficient Kato condition; they are not one NSE trajectory. |
 
 These are route closures, not proofs that the corresponding kinematic
@@ -268,9 +273,9 @@ survivors occur in Navier--Stokes.
 1. **Critical nested dissipation.** Prove the classified Dini gain by NSE
    structure, or obtain non-reuse/fresh signed blocks. Global
    higher-integrability alone is now excluded as a norm shortcut.
-2. **Event-index freshness.** Prove bounded time-frequency overlap, a
-   scale-zero floor, non-Zeno speed, an intervening event, or a
-   pressure-visible telescope for the forced lower-band decrements.
+2. **Event-index floor.** Prove a nonsummable scale-zero charge, non-Zeno
+   rigidity, or a pressure-visible fixed-increment telescope. Bounded
+   frequency overlap alone is closed.
 3. **Clock/zoom coupling.** Prevent the physical zoom from outrunning the
    \(9/4\) or stronger coefficient cost.
 4. **Direct-response branch.** Exclude or absorb the
@@ -312,11 +317,10 @@ survivors occur in Navier--Stokes.
 
 ## Current work order
 
-1. Test one event-ancestry route to bounded time-frequency multiplicity.
-2. If it fails, freeze this subbranch and consolidate for external review.
-4. Prepare review packets for the cost theorem, the
-   Albritton--Barker repair, and the terminal flux/decrement pair.
-5. Re-open ROUTE-R3C before making any proximity-to-Clay claim.
+1. Freeze the R3B pressure subbranch for fresh external review.
+2. Prepare packets for the cost theorem, Albritton--Barker repair, and
+   terminal flux/decrement pair.
+3. Open ROUTE-R3C and classify Type-II entrance alternatives.
 
 ## Epistemic and validation rules
 

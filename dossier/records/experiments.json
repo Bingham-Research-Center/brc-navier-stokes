@@ -3736,6 +3736,38 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-FRESHNESS-WITHOUT-FLOOR-001",
+      "title": "Frequency freshness without a scale-zero floor is insufficient",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The forced lower-band decrements may become a contradictory finite-budget charge if event ancestry makes their time-frequency supports fresh or of bounded multiplicity.",
+      "invariants": [
+        "The forced sharp lower-band cutoff K_j tends to infinity along the actual conditional trajectory",
+        "Recursive thinning makes an infinite subsequence of the fixed-ratio lower annuli pairwise disjoint",
+        "Plancherel and Tonelli sum the thinned lower-band dissipation even when every selected time interval overlaps",
+        "The resulting actual same-trajectory conclusion is summability of the retained physical floors T_j",
+        "If pressure boundaries are uniformly comparable to the next event frequencies, fixed positive logarithmic event gaps give bounded frequency multiplicity for the full retained gap-separated event family",
+        "Full bounded multiplicity likewise implies only summability of all physical floors T_j",
+        "The exact power-law ancestry survivor has next-event matching, eventually disjoint comparable bands, and a super-exponentially summable T_j sequence",
+        "The kinematic survivor does not solve Navier-Stokes or realise the lower-band flux theorem",
+        "A fixed fractional decrement remains compatible with a geometrically or super-geometrically decaying signed-flux chain",
+        "No next-event pressure-boundary coupling, scale-zero floor, nonsummable physical charge, ancient-profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Thin the divergent pressure-boundary sequence until its fixed-ratio lower annuli are disjoint, sum the actual decrement charges by Plancherel and Tonelli, derive an all-event multiplicity bound under explicit next-event comparability, and compare both conclusions with the exact power-law ancestry recurrence.",
+      "certificate": "A written conditional same-trajectory summation theorem and exact comparison with the recorded power survivor, accepted by adversarial same-system recomputation after scope clarifications; external mathematical review is pending and no executable certificate is claimed.",
+      "success_criterion": "Determine whether bounded time-frequency multiplicity itself turns the lower-band decrement into a contradiction, and identify the stronger event-floor or rigidity theorem required if it does not.",
+      "failure_interpretation": "The sparse annulus selection, Plancherel-Tonelli sum, all-event multiplicity count, event-scale conversion, or power-survivor summability calculation is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-freshness-without-floor.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

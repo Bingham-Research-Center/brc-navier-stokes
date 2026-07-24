@@ -92,16 +92,15 @@ with \(K_j/\Lambda_j\to1\). Thus each late event has positive terminal
 signed flux and a fixed fractional lower-band decrement. The near-lossless
 shell survivor is closed.
 
-The remaining survivor may reuse overlapping intervals and bands while its
-flux and physical floors decay geometrically. The heat-kernel majorant
-certifies logarithmic lookback as the minimal order. Its critical Dini gate
-has log-power threshold \(>2\), or borderline log--log power \(>5/2\);
-Barker's global higher integrability does not imply it by norms alone. R3B
-closes only if one obtains:
+Sparse lower bands are automatically frequency-disjoint, and even full
+next-event matching would only make the vanishing physical floors summable.
+The exact ancestry permits that. The heat-kernel majorant's critical Dini
+gate has log-power threshold \(>2\), or borderline log--log power \(>5/2\).
+R3B closes only if one obtains:
 
 - the classified Dini gain from NSE structure, or a non-reuse law controlling
   the single extended nested critical dissipation action;
-- bounded time-frequency overlap or a scale-zero decrement;
+- a nonsummable scale-zero floor or fixed unnormalised fresh charge;
 - a non-Zeno/intervening-event theorem;
 - a pressure-visible cross-event telescope; or
 - a clock/zoom law making the stretched coefficient cost nonsummable.

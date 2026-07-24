@@ -4,9 +4,10 @@
 
 **Clay status:** unsolved
 
-**Checkpoint:** `EXP-ADJOINT-PRESSURE-LOGARITHMIC-HEAT-SCHEDULE-001`
+**Checkpoint:** `EXP-ADJOINT-PRESSURE-FRESHNESS-WITHOUT-FLOOR-001`
 
-**Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
+**Transition:** freeze the R3B pressure subbranch for external review, then
+open ROUTE-R3C
 
 This is replace-not-append working memory.  Durable results live in
 [`dossier/status.md`](dossier/status.md), exact metadata in
@@ -52,38 +53,38 @@ Disjoint solenoidal packets show that Barker's global
 \(L^{2+\delta_B}_{t,x}\) gradient gain, even with the energy norm and weak-\(L^3\),
 cannot imply it by norms alone; those packets are not NSE solutions.
 
-The separate actual-NSE flux theorem forces a positive terminal high-pass
-flux and a fixed fractional lower-band dissipation decrement at every late
-event.  It has not yet been coupled to the action above strongly enough to
-prevent reuse of overlapping intervals and bands.
+The [freshness theorem](dossier/experiments/adjoint-pressure-freshness-without-floor.md)
+shows that an infinite subsequence of the forced lower bands is automatically
+frequency-disjoint; time overlap is harmless and its physical floors satisfy
+\(\sum_mT_{j_m}<\infty\).  Even granting next-event scale matching gives only
+bounded multiplicity and \(\sum_jT_j<\infty\).  The exact power ancestry
+permits this with super-exponential decay.  Overlap alone is not the missing
+theorem.
 
 ## Exact live fork
 
 ### A. Uniform adjoint-cost budget
 
-Control \(\widehat{\mathfrak D}_n\) by one genuinely NSE-specific input:
+Closing this conditional subbranch now requires one genuinely NSE-specific
+major theorem:
 
-1. the classified logarithmic/Dini terminal dissipation gain;
-2. non-reuse or bounded overlap of the nested intervals;
-3. the already forced lower-band decrement; or
-4. fresh event charges paid by one finite same-trajectory budget.
-
-Global higher integrability alone is now closed as a shortcut.  Do not reopen
-older payer branches; the terminal-collapse theorem already absorbs them.
+1. the classified terminal Dini gain;
+2. a nonsummable scale-zero floor or fixed unnormalised fresh charge;
+3. rigidity excluding an infinite decaying signed-flux cascade; or
+4. a pressure-visible telescope with an event increment not proportional to
+   \(T_j\).
 
 ### B. Event-index freshness
 
-Prove a scale-zero event floor, bounded time-frequency overlap,
-non-Zeno/intervening-event law, or pressure-visible cross-event telescope.
-The decrement excludes only a near-lossless distinct-shell cascade;
-geometrically decaying overlapping events survive.
+Global higher integrability alone is now closed as a shortcut.  Do not reopen
+older payer or overlap branches; the recorded theorems already absorb them.
 
 ## Next bounded cycle
 
-1. Test one direct coupling of event ancestry to bounded time-frequency
-   multiplicity; do not derive another equivalent dissipation ledger.
-2. If no coupling exists, freeze this R3B subbranch for external review and
-   rotate to a genuinely different open gate.
+1. Keep this R3B pressure subbranch frozen pending fresh external review.
+2. Read the Clay target and possibility tree for ROUTE-R3C only.
+3. Formulate the first exhaustive Type-II entrance alternative without
+   importing the weak-\(L^3\) Type-I ceiling.
 
 ## Guardrails
 
@@ -102,6 +103,7 @@ geometrically decaying overlapping events survive.
 |---|---|
 | Energy, absolute continuity, or nesting alone | Finite scalar histories retain divergent critical action. |
 | Barker global \(L^{2+\delta_B}\) gradient gain | Disjoint kinematic packets retain arbitrary critical terminal histories. |
+| Bounded frequency overlap | It only sums the vanishing \(T_j\); exact event ancestry permits \(\sum_jT_j<\infty\). |
 | One natural heat time per scale | Geometric frequencies have a Zeno clock. |
 | Adjoint \(L^2\) energy | It stops at the square-root secondary-index law. |
 | Positive cumulative flux | One reservoir may pay many nested boundaries. |

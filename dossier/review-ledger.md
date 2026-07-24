@@ -16,6 +16,7 @@ correspondence, control the current statements.
 | [Terminal satellite tower](experiments/terminal-satellite-tower.md) | Retained only in the stated mild/suitable, first-singular-time, \(\mathbb R^3\) scope after bounded source and localisation clarifications. |
 | [Terminal dissipation collapse](experiments/adjoint-pressure-terminal-dissipation-collapse.md) | The projected pairing, Young absorption, and physical scaling were recomputed.  The terminal pullback includes the vanishing genealogy shift \(\varepsilon_n\); this was incorporated before checkpoint `4bc2e6a`. |
 | [Logarithmic heat schedule](experiments/adjoint-pressure-logarithmic-heat-schedule.md) | The schedule, Dini exponents, fixed scalar history, and disjoint-packet powers were recomputed with no fatal or major defect.  “Minimal” is restricted to what the heat-kernel majorant certifies; general necessity is not claimed. |
+| [Frequency freshness](experiments/adjoint-pressure-freshness-without-floor.md) | Sparse disjoint-band summation, the conditional full retained gap-separated multiplicity bound, and power-survivor summability were recomputed with no fatal or major defect.  The survivor is kinematic and does not realise the NSE lower-band theorem. |
 
 Other recorded recomputations accepted only the theorem text's stated
 conditional or countermodel scope after their corrections were folded into
