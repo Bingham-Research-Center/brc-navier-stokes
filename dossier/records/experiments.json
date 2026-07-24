@@ -3868,6 +3868,40 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-RECORD-RESIDENCE-001",
+      "title": "Record-high Type-II carriers force logarithmic subgrid residence",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001"
+      ],
+      "hypothesis": "Choosing Type-II sampling times as first weak-L3 record highs may turn a terminal trace defect into a canonical subgrid scale with an NSE-specific residence and viscosity-separation law.",
+      "invariants": [
+        "Continuity of the preterminal weak-L3 norm permits first-record sampling and gives a uniform weak-L3 ceiling over every carrier's entire ancient past",
+        "The near-extremising amplitude-layer bounds normalise the terminal weak-L3 carrier norm between fixed positive constants",
+        "Gaussian global subgrid energy is continuous and monotone in filter length and is bounded above by one half the filter length squared times enstrophy",
+        "A positive local terminal trace defect defines a canonical first-crossing global subgrid scale ell_j tending to zero",
+        "Weak Lorentz stress paired with a three-norm L3,1 filtered-gradient estimate bounds instantaneous global flux by C ell^-1 log(e+C ell^-1)",
+        "The exact global subgrid balance and nonnegative viscous variance force half of the canonical defect energy to reside for carrier time at least c ell_j divided by log(e+C/ell_j)",
+        "The residence interval forces normalised viscous action at least c epsilon_j divided by ell_j log(e+C/ell_j)",
+        "One-trajectory terminal dissipation collapse therefore sends epsilon_j divided by ell_j log(e+C/ell_j) to zero",
+        "At the physical canonical length r_j this is divergence of the local Reynolds number times log(e+C R_j/r_j)",
+        "A power ledger with ell_j=2^-j and epsilon_j=2^-2j retains summable viscous action, so the theorem does not exclude an accelerating cross-carrier Zeno genealogy",
+        "The power ledger is not a Navier-Stokes solution or a proved ancestry between carrier events",
+        "No coherent-trace rigidity, divergent-energy control, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Choose first record highs of the physical weak-L3 norm, retain the exact amplitude-layer normalisation, define the first Gaussian-filter scale carrying a fixed amount of terminal subgrid energy, prove an endpoint Lorentz global-flux ceiling, integrate the exact global subgrid balance backwards to obtain residence, pull terminal physical dissipation collapse through the carrier scaling, and test sharpness of the resulting necessary law with an accelerating power ledger.",
+      "certificate": "A written analytic reduction with explicit rearrangement, Fourier-filter, balance-law, residence, and scaling calculations. No executable certificate or external mathematical review is claimed.",
+      "success_criterion": "Turn a terminal trace defect into a canonical NSE-specific residence law and decide whether that law alone defeats same-packet Zeno reuse across successive Type-II carriers.",
+      "failure_interpretation": "Weak-L3 continuity at first record times, amplitude-layer normalisation, first-crossing scale existence, the Lorentz endpoint flux estimate, the global subgrid-energy sign, terminal dissipation pullback, physical Reynolds conversion, or the surviving power ledger is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-record-flux-residence.md"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

@@ -160,9 +160,15 @@ Euler--Reynolds/terminal-trace ledger. The
 [subgrid-transport theorem](experiments/type-ii-subgrid-transport.md)
 turns every positive terminal trace defect into inherited microstructure,
 positive signed nonlinear transfer, or positive signed spatial import, with
-an order-\(e_j\) physical floor. An exact Zeno shell ledger shows that the
-same packet can pay every increasing-scale flux floor with finite
-dissipation, so sign and disjoint time intervals do not supply freshness.
+an order-\(e_j\) physical floor. Choosing first weak-\(L^3\) record times
+also gives a uniform ancient-past critical ceiling. The
+[record-residence theorem](experiments/type-ii-record-flux-residence.md)
+uses it to define a canonical first-crossing defect scale \(\ell_j\), prove
+residence for carrier time
+\(\gtrsim\ell_j/\log(e+C/\ell_j)\), and force
+\(\varepsilon_j/[\ell_j\log(e+C/\ell_j)]\to0\).
+An accelerating power ledger keeps the resulting viscous charges summable,
+so residence alone does not supply cross-carrier freshness.
 Under separate self-similar
 hypotheses, the current preprint and a favourable-viscosity repository
 adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
@@ -170,8 +176,8 @@ outgoing or axisymmetric smooth Euler profiles are excluded under the
 preprint's exact assumptions. A divergence-free kinematic path satisfies the
 listed energy and necessary vorticity ledgers in that window but is not NSE.
 
-R3C now needs an NSE-specific flux-residence, freshness, or spatial-ancestry
-law, coherent-trace rigidity, and separate control of the
+R3C now needs a cross-event scale genealogy, fresh physical charge, or
+spatial-recentring law, coherent-trace rigidity, and separate control of the
 divergent-normalised-energy cells.
 
 ### Frozen R3B boundary

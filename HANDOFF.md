@@ -1,4 +1,4 @@
-# Handoff: R3C flux residence and freshness
+# Handoff: R3C cross-carrier scale genealogy
 
 **Updated:** 2026-07-24
 
@@ -6,11 +6,11 @@
 
 **Live route:** `ROUTE-R3C`
 
-**Checkpoint:** `EXP-TYPE-II-SUBGRID-TRANSPORT-001`
+**Checkpoint:** `EXP-TYPE-II-RECORD-RESIDENCE-001`
 
 ## Load only
 
-- [Current subgrid theorem](dossier/experiments/type-ii-subgrid-transport.md).
+- [Current residence theorem](dossier/experiments/type-ii-record-flux-residence.md).
 - [Canonical R3C record](dossier/records/routes.json).
 
 Everything else is durable in [status](dossier/status.md) or
@@ -19,44 +19,43 @@ input or external review.
 
 ## Exact live question
 
-Can actual NSE flux geometry prevent one energy packet from traversing
-infinitely many increasing carrier subscales with finite viscous action?
+Can actual NSE dynamics relate successive canonical defect scales strongly
+enough to prevent an accelerating, finitely dissipative Zeno genealogy?
 
 ## Progress marker
 
-Entrance remains the \(2\times3\times3\) ledger. In all nine
-energy-efficient cells, normalised viscous dissipation vanishes on every
-fixed interval and the whole remaining forward horizon.
+Choose Type-II times as first records of the physical weak-\(L^3\) norm.
+Every rescaled carrier then has one uniform critical ceiling over its whole
+past. For a positive terminal trace defect, the first Gaussian-filter scale
+\(\ell_j\) carrying a fixed global subgrid energy satisfies
 
-For the terminal-microstructure branch, positive convolution subgrid energy
-recovers exactly half the trace-defect measure. Its smooth local-energy
-balance gives, one fixed carrier time backwards:
+\[
+\ell_j\to0,\qquad
+h_j\gtrsim\frac{\ell_j}{\log(e+C/\ell_j)},\qquad
+\frac{\varepsilon_j}{\ell_j\log(e+C/\ell_j)}\to0.
+\]
 
-1. inherited nonnegative subgrid energy;
-2. positive signed nonlinear transfer; or
-3. positive signed spatial import through the cutoff.
-
-Every integrated term pulls back by \(b_j\asymp e_j\ge c>0\), so either
-transfer branch has a fixed physical energy floor on a shrinking interval.
+Thus the canonical defect lies in a logarithmically corrected inertial
+range. This is a necessary one-trajectory NSE residence law.
 
 ## Known unknown
 
-An exact adjacent-shell Zeno ledger moves the same positive surviving energy
-through infinitely many increasing boundaries on disjoint intervals while
-paying finite total dissipation and a vanishing terminal dissipation tail.
-Thus signed fixed flux is not fresh merely because times and scales differ.
+A compatible accelerating ledger
+\(\ell_j=2^{-j}\), \(\varepsilon_j=2^{-2j}\) makes the theorem's forced
+viscous lower charge only \(\asymp2^{-j}/j\) per carrier. Residence therefore
+still permits a summable cross-carrier Zeno history at the level of these
+inequalities. The ledger is not NSE and supplies no actual ancestry.
 
 The coherent weak trace still needs propagation and Euler rigidity. The
 divergent-normalised-energy branch still lacks global compactness.
 
 ## Next bounded cycle
 
-1. Derive the sharpest NSE flux-rate/residence bound at filter
-   \(\ell_j\), using the terminal normalisation
-   \(\|v_j(0)\|_{L^{3,\infty}}\asymp1\).
-2. Split \(\ell_j\) against \(\varepsilon_j\) and the next carrier scale:
-   forced viscous residence, fresh onward transfer, or a Zeno survivor.
-3. Turn positive spatial import into a recentered ancestry alternative and
-   test whether moving cutoffs can reuse the same packet.
+1. Compare consecutive first-crossing scales and carrier normalisations on
+   the same physical trajectory.
+2. Seek a fresh-energy/enstrophy assignment or bounded-reuse theorem for
+   their order-one physical transfers.
+3. Recenter global canonical microstructure on the retained amplitude layer;
+   keep coherent-trace rigidity and divergent-energy cells separate.
 
 Before reporting or committing: `make check` and `git diff --check`.
