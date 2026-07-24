@@ -23,9 +23,9 @@ REQUIRED_TEXT = {
     ),
     "HANDOFF.md": (
         "Clay status:** unsolved",
-        "Exact live fork",
-        "Uniform adjoint-cost budget",
-        "Event-index freshness",
+        "Live route:**",
+        "Exact live question",
+        "Next bounded cycle",
     ),
     "dossier/status.md": (
         "Clay status:** unsolved",
@@ -35,8 +35,8 @@ REQUIRED_TEXT = {
     ),
     "dossier/possibility-tree.md": (
         "Closure rule",
-        "R3B: active",
-        "R3C: Type II",
+        "R3B:",
+        "R3C:",
         "Adversarial coverage test",
     ),
 }

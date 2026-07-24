@@ -1,116 +1,86 @@
-# Handoff: current Navier--Stokes moonshot gate
+# Handoff: Type-II entrance
 
 **Updated:** 2026-07-24
 
 **Clay status:** unsolved
 
-**Checkpoint:** `EXP-ADJOINT-PRESSURE-FRESHNESS-WITHOUT-FLOOR-001`
+**Live route:** `ROUTE-R3C`
 
-**Transition:** freeze the R3B pressure subbranch for external review, then
-open ROUTE-R3C
+**Previous checkpoint:** `EXP-ADJOINT-PRESSURE-FRESHNESS-WITHOUT-FLOOR-001`
 
-This is replace-not-append working memory.  Durable results live in
+This is replace-not-append working memory. Durable results live in
 [`dossier/status.md`](dossier/status.md), exact metadata in
 [`dossier/records/`](dossier/records/README.md), and derivations in their
 named experiment notes.
 
-## State in one minute
+## Load only
 
-R3B assumes a smooth finite-energy trajectory before a candidate first
-singular time, a uniform terminal weak-\(L^3\) bound, and the conditional
-Besov-event genealogy.  None is derived for arbitrary Clay data; Type II is
-the separate open ROUTE-R3C.
+- [Clay target](dossier/clay-target.md).
+- [R3C in the possibility tree](dossier/possibility-tree.md#r3c-type-ii).
+- [Canonical R3C record](dossier/records/routes.json).
+- For overlap with prior work only:
+  [natural-frequency cascade](dossier/experiments/natural-frequency-cascade.md),
+  [packet lifetime](dossier/experiments/packet-lifetime.md), and
+  [sparse-analyticity endgame](dossier/experiments/sparse-analyticity-endgame.md).
 
-Every selected event has a positive finite-window adjoint-pressure cost.  The
-[current theorem](dossier/experiments/adjoint-pressure-terminal-dissipation-collapse.md)
-absorbs entrance energy, current nonlinear work, remote inheritance,
-macroscopic shells, and diffusion-boundary leakage into one physical action:
+Do not load the R3B chain unless a new theorem or external review directly
+reopens it. Its result, assumptions, gates, failed shortcuts, and proof links
+are preserved in the
+[durable R3B status](dossier/status.md#2-conditional-r3b-profile-reduction).
+
+## Exact live question
+
+Starting only from a smooth finite-energy solution before a putative first
+singular time, give an exhaustive Type-II entrance alternative that survives
+moving centres, multiple cores, changing scales, oscillation, and loss of
+profile compactness. Do not import R3B's uniform weak-\(L^3\) bound or
+conditional Besov genealogy.
+
+## Checked starting ledger
+
+Write \(m(t)=\|u(t)\|_{L^{3,\infty}}\) and \(E_0=\sup_t\|u(t)\|_2^2\).
+Energy and Sobolev give
 
 \[
-P_n(T)\le C+C\widehat{\mathfrak D}_n(T;r_\bullet)+o_n(1),
+m(t)^4\lesssim E_0\|\nabla u(t)\|_2^2,
 \qquad
-\widehat{\mathfrak D}_n
-=
-\sum_{\rho_nR_k\le r_\bullet}
-\sqrt{\frac{\widehat\delta_{n,k}}{\rho_nR_k}}.
+\int_0^{T^*}m(t)^4\,dt\lesssim E_0^2/\nu.
 \]
 
-The [latest theorem](dossier/experiments/adjoint-pressure-logarithmic-heat-schedule.md)
-reduces the linear lookback to the minimal logarithmic order certified by the
-heat-kernel majorant.  If \(\mu(s)\le\sqrt{s}\,\omega(s)\), it gives the exact
-sufficient condition
+Thus Type-II weak-\(L^3\) growth is permitted only on a finite
+\(m^4\)-occupation budget; this is not regularity.
+
+For a near-extremising dyadic amplitude layer with energy \(e(t)\), the scale
+ledger is
 
 \[
-\sum_j Q_j^{1/4}
-\omega(CQ_jr_\bullet^2L^{-2j})^{1/2}<\infty,
-\qquad Q_j\asymp1+\log(j+2).
+a\asymp m^3/e,\qquad R\asymp e/m^2,\qquad
+\|\nabla u\|_2^2\gtrsim m^4/e.
 \]
 
-For the saturated log--log family with powers \((\beta,\eta)\), this holds
-exactly when \(\beta>2\), or
-\(\beta=2,\eta>5/2\).  One fixed scalar history saturates the boundary.
-Disjoint solenoidal packets show that Barker's global
-\(L^{2+\delta_B}_{t,x}\) gradient gain, even with the energy norm and weak-\(L^3\),
-cannot imply it by norms alone; those packets are not NSE solutions.
+Along any \(m\to\infty\) sequence, the first candidate exhaustive split is:
 
-The [freshness theorem](dossier/experiments/adjoint-pressure-freshness-without-floor.md)
-shows that an infinite subsequence of the forced lower bands is automatically
-frequency-disjoint; time overlap is harmless and its physical floors satisfy
-\(\sum_mT_{j_m}<\infty\).  Even granting next-event scale matching gives only
-bounded multiplicity and \(\sum_jT_j<\infty\).  The exact power ancestry
-permits this with super-exponential decay.  Overlap alone is not the missing
-theorem.
+1. \(E_0/e\) remains bounded: an energy-efficient coherent carrier;
+2. \(E_0/e\to\infty\): a vanishing-energy carrier.
 
-## Exact live fork
-
-### A. Uniform adjoint-cost budget
-
-Closing this conditional subbranch now requires one genuinely NSE-specific
-major theorem:
-
-1. the classified terminal Dini gain;
-2. a nonsummable scale-zero floor or fixed unnormalised fresh charge;
-3. rigidity excluding an infinite decaying signed-flux cascade; or
-4. a pressure-visible telescope with an event increment not proportional to
-   \(T_j\).
-
-### B. Event-index freshness
-
-Global higher integrability alone is now closed as a shortcut.  Do not reopen
-older payer or overlap branches; the recorded theorems already absorb them.
+This split is a reduction to prove and stress-test, not yet a route closure.
+The high-consequence unknown is whether actual NSE dynamics force enough
+compactness or rigidity in either branch; scalar energy and clock budgets
+alone allow Zeno concentration.
 
 ## Next bounded cycle
 
-1. Keep this R3B pressure subbranch frozen pending fresh external review.
-2. Read the Clay target and possibility tree for ROUTE-R3C only.
-3. Formulate the first exhaustive Type-II entrance alternative without
-   importing the weak-\(L^3\) Type-I ceiling.
+1. Prove the layer reduction with exact constants and quantifiers.
+2. Test both branches against Type-II rates, moving/multiple centres,
+   oscillatory scales, and compactness loss.
+3. Record either one exhaustive entrance theorem or the sharp survivor that
+   prevents it; then update R3C's canonical record and compact status.
 
-## Guardrails
+## Frozen boundary
 
-- The Albritton--Barker critical-amplitude repair is proof-consistent but
-  awaits external confirmation.
-- Besov-event and feedback-pressure ancestry remain conditional.
-- No critical nested-action bound, fresh payer index, event-index sum, or
-  Clay alternative A--D is proved.
-- Same-system review is adversarial recomputation, not independent external
-  review.
-- Tests certify only the finite algebra and bookkeeping they exercise.
-
-## Do not retry unchanged
-
-| Shortcut | Recorded obstruction |
-|---|---|
-| Energy, absolute continuity, or nesting alone | Finite scalar histories retain divergent critical action. |
-| Barker global \(L^{2+\delta_B}\) gradient gain | Disjoint kinematic packets retain arbitrary critical terminal histories. |
-| Bounded frequency overlap | It only sums the vanishing \(T_j\); exact event ancestry permits \(\sum_jT_j<\infty\). |
-| One natural heat time per scale | Geometric frequencies have a Zeno clock. |
-| Adjoint \(L^2\) energy | It stops at the square-root secondary-index law. |
-| Positive cumulative flux | One reservoir may pay many nested boundaries. |
-| Bare spectral/spatial primal--adjoint telescope | One is pressure-blind; the other can cancel in every gauge. |
-
-Other routes: [2607 audit](dossier/papers/2607.08866-audit.md),
-[possibility tree](dossier/possibility-tree.md), and
-[HWY bridge](dossier/papers/2509.25116-bridge-note.md).
+R3B remains a conditional weak-\(L^3\) Type-I branch pending independent
+external review. No critical nested-action bound, fresh fixed event charge,
+event-index contradiction, or Clay alternative A--D is proved. The
+Albritton--Barker critical-amplitude repair also awaits external confirmation.
 
 Before reporting or committing: `make check` and `git diff --check`.

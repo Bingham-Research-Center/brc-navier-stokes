@@ -15,11 +15,11 @@ The former chronological version is recoverable with
 
 ## Verdict
 
-No Clay alternative A--D has been proved. The strongest active programme,
-ROUTE-R3B, is conditional on a weak-\(L^3\) Type-I genealogy. It has forced a
-hypothetical singularity into a highly constrained ancient-profile and
-terminal-cascade mechanism, but has not derived a contradiction. ROUTE-R3C
-(Type II) and the breakdown routes remain open.
+No Clay alternative A--D has been proved. The deepest conditional programme,
+ROUTE-R3B, has forced a hypothetical weak-\(L^3\) Type-I singularity into a
+highly constrained ancient-profile and terminal-cascade mechanism without a
+contradiction; it is frozen pending external review. ROUTE-R3C (Type II) is
+the active frontier, and the breakdown routes remain open.
 
 ## Route dashboard
 
@@ -27,8 +27,8 @@ terminal-cascade mechanism, but has not derived a contradiction. ROUTE-R3C
 |---|---|---|
 | ROUTE-R | open | Global regularity for arbitrary Clay-admissible data is unproved. |
 | ROUTE-R3A | closed in its conditional chain | The audited 2607 theorem no longer needs its extra single-ball/component geometry. |
-| ROUTE-R3B | open, active | Exclude the coherent weak-\(L^3\) ancient distance profile or its terminal cascade. |
-| ROUTE-R3C | open | Extend beyond weak-\(L^3\) Type-I scaling to Type-II dynamics. |
+| ROUTE-R3B | open, frozen | Exclude the coherent weak-\(L^3\) ancient distance profile or its terminal cascade. |
+| ROUTE-R3C | open, active | Extend beyond weak-\(L^3\) Type-I scaling to Type-II dynamics. |
 | ROUTE-B | open | No smooth-data or admissibly forced singularity has been constructed. |
 | ROUTE-B3 | open | Singular-data mechanisms have not been bridged to Clay data. |
 
@@ -317,10 +317,9 @@ survivors occur in Navier--Stokes.
 
 ## Current work order
 
-1. Freeze the R3B pressure subbranch for fresh external review.
-2. Prepare packets for the cost theorem, Albritton--Barker repair, and
-   terminal flux/decrement pair.
-3. Open ROUTE-R3C and classify Type-II entrance alternatives.
+1. Keep R3B frozen until a new theorem or fresh external review changes it.
+2. Classify exhaustive R3C Type-II entrance alternatives.
+3. Generate external-review packets from canonical proofs only when requested.
 
 ## Epistemic and validation rules
 

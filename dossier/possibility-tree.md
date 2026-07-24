@@ -20,8 +20,8 @@ CLAY
 │   │   └── R2C  backward uniqueness / Liouville rigidity
 │   └── R3   Remove assumptions from conditional criteria
 │       ├── R3A  single point to arbitrary cores       [conditional closure]
-│       ├── R3B  imposed geometry to derived geometry  [active]
-│       └── R3C  critical profile to Type-II dynamics  [open]
+│       ├── R3B  imposed geometry to derived geometry  [frozen]
+│       └── R3C  critical profile to Type-II dynamics  [active]
 └── B   Finite-time breakdown
     ├── B1   unforced smooth-data singularity
     │   ├── B1A  similarity mechanism
@@ -69,7 +69,7 @@ chain. They do not derive its vorticity-direction depletion from arbitrary
 NSE data. See the [audit](papers/2607.08866-audit.md) and
 [proof map](papers/2607.08866-proof-map.md).
 
-### R3B: active weak-\(L^3\) Type-I branch
+### R3B: frozen weak-\(L^3\) Type-I branch
 
 The conditional structural reduction retains a nonzero coherent ancient
 suitable distance profile with two terminal singular points, no exact
