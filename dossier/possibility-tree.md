@@ -113,18 +113,18 @@ exclusion would leave Type-II and oscillatory concentration. A Clay
 regularity proof must cover R3C or prove that all first singularities enter
 the R3B class.
 
-The [entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md) turns
-any \(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) sequence into a
-vanishing-viscosity carrier with an ancient rescaled past. Its
-subsequence alternatives record energy efficiency, diffuse/partial/tight
-geometry, and the remaining turnover horizon. The
+The [entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md) maps
+\(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) to ancient vanishing-viscosity
+carriers and records energy, geometry, and turnover alternatives. The
 [defect theorem](experiments/type-ii-carrier-defect-compactness.md) removes
-fixed-interval normalised viscous dissipation from every energy-efficient
-cell. The [carrier clock](experiments/type-ii-compact-carrier-clock.md)
-excludes every infinite nonzero \(L^2\)-precompact carrier subsequence of the
-exact fast \(q=4\) survivor. The live fork is coherent ancient-Euler rigidity or a nonsummable
-charge for its mandatory subgrid ancestry, escape, fragmentation, or other
-loss of compactness.
+fixed-interval normalised viscous dissipation; the
+[carrier clock](experiments/type-ii-compact-carrier-clock.md) excludes an
+infinite nonzero \(L^2\)-precompact subsequence of the exact fast \(q=4\)
+survivor. The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
+makes its selected layer diffuse or fixed-energy ultraviolet above
+\(K_j/R_j\), \(K_j\to\infty\). The retained case has zero terminal trace and
+positive trace defect, but no causal link to a later record. The live fork is
+later-carrier transport versus import; diffuse and divergent-energy remain.
 
 ### Breakdown side
 

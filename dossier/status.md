@@ -192,14 +192,14 @@ proves the low-pass rate
 radius-\(R_j\) carrier therefore needs \(cR_j^{5/2}\) to shrink through a
 fixed scale block. The exact \(q_j=4\) gaps are \(o(R_j^{5/2})\), so that
 representative has no infinite nonzero \(L^2\)-precompact carrier subsequence.
-Its smaller defect packets still fit; pre-stored microstructure or escape remains open.
-Under separate self-similar hypotheses, the current preprint and a repository
-adaptation restrict \(2/5\le\gamma<1/2\); outgoing or axisymmetric smooth
-Euler profiles are excluded under its assumptions. A matching kinematic path
-obeys the listed necessary ledgers but is not NSE.
-
-R3C now needs a profile decomposition and nonsummable charge for the forced
-noncompactness, coherent-trace rigidity, and separate divergent-energy control.
+The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
+makes the selected layer either diffuse or fixed-energy ultraviolet above
+\(K_j/R_j\), \(K_j\to\infty\). The latter forces \(K_j^2/R_j^2\) enstrophy,
+zero terminal carrier trace, and positive trace defect. Its future-scale
+depth is unbounded but not causal ancestry. Separate self-similar results
+restrict \(2/5\le\gamma<1/2\) under their stated hypotheses.
+R3C now asks whether the detector transports into a later first record or
+forces fixed spatial import; diffuse and divergent-energy cells remain open.
 
 ### Frozen R3B boundary
 

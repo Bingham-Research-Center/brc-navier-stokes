@@ -4075,6 +4075,39 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-TERMINAL-INFRARED-EVACUATION-001",
+      "title": "Fast Type-II records evacuate every carrier-local infrared mode",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001"
+      ],
+      "hypothesis": "A smooth finite-energy Type-II record sequence with terminal tail little-o of R_j to the five-halves may retain a bounded-frequency nonzero core in energy-normalised carrier coordinates.",
+      "invariants": [
+        "For every fixed positive carrier frequency K, the carrier low pass freezes in L2 to the rescaled weak terminal trace with error bounded by C_K times energy plus viscosity times square-root energy times R_j to the one-half, multiplied by the super-turnover ratio",
+        "Every fixed low pass of the rescaled L2 terminal trace retains its global norm asymptotically but vanishes in every fixed carrier ball uniformly in moving centres",
+        "Every bounded carrier frequency of the complete carrier state vanishes locally, and the carrier states converge to zero distributionally and strongly in local negative Sobolev spaces",
+        "The geometry split is exhaustive only for the selected energy-efficient amplitude layer: it is either diffuse in carrier space or has a fixed local energy floor",
+        "Every partial or tight selected layer has a staircase K_j tending to infinity whose physical high pass above K_j divided by R_j has a fixed L2 floor in one carrier ball",
+        "The detected high-pass floor forces enstrophy at least a fixed multiple of K_j squared divided by R_j squared",
+        "For the exact q=4 radii the detector lies beyond an unbounded number of future scheduled carrier scales, but this frequency depth identifies no causal descendant or later carrier",
+        "The exact q=4 terminal tail has super-turnover ratio comparable to 2 to the minus j divided by j",
+        "In every retained-core super-turnover cell the terminal weak carrier trace is zero and the selected layer floor lies in the positive terminal trace defect",
+        "No rate for K_j, next-carrier identification, residence, freshness, nonsummable charge, diffuse-branch exclusion, divergent-energy control, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Pass the energy-only low-pass clock to the weak terminal trace, rescale it at arbitrary moving carrier centres, prove local infrared evacuation, apply the canonical selected-layer concentration split, diagonalize the fixed-frequency limits into an ultraviolet staircase, and translate its support into an enstrophy and future-scale frequency-depth lower bound.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report cover terminal freezing, moving-centre trace scaling, local negative-Sobolev convergence, the selected-layer geometry split, the ultraviolet staircase, enstrophy, and terminal trace defect. A same-system adversarial review found no fatal defect and its causal-language, positive-cutoff, diagonal, and local-to-global norm corrections were incorporated; this is not external mathematical confirmation. No executable artefact is claimed.",
+      "success_criterion": "Determine whether the forced ultraviolet detector transports into a later first-record carrier, or else forces a fixed signed spatial-import event that can be charged nonsummably on one trajectory.",
+      "failure_interpretation": "The weak terminal trace cannot be used at the moving cutoff, rescaling covariance or local trace escape is incorrect, the selected layer does not supply the claimed local floor, the ultraviolet diagonal fails, the high-pass multiplier does not yield the stated enstrophy bound, or the result is overstated as causal packet ancestry.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-terminal-infrared-evacuation.md",
+        "dossier/rounds/2026-07-24-type-ii-terminal-infrared-evacuation.tex"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

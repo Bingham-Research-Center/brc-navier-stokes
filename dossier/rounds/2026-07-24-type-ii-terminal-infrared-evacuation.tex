@@ -1,0 +1,498 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Plo}[1]{P_{\le #1}}
+\newcommand{\PhiHi}[1]{P_{>#1}}
+
+\title{Terminal Infrared Evacuation in Fast Type-II Carriers}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 24 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round decomposes the loss of carrier compactness forced in the preceding
+round.  For any smooth finite-energy Navier--Stokes record sequence with
+terminal tail \(o(R_j^{5/2})\), every fixed-frequency component of the
+energy-normalised carrier vanishes in every fixed carrier ball.  Globally,
+that low-pass component converges in norm to the terminal \(L^2\) trace,
+which therefore escapes spatially after carrier rescaling.  In the canonical
+geometry ledger, the diffuse cell remains spatial escape, whereas every
+partial or tight cell contains fixed local energy above
+\(K_j/R_j\) for some \(K_j\to\infty\).  This forces a \(K_j^2\) enstrophy
+excess, Fourier support beyond an unbounded number of future \(q=4\)
+carrier scales, zero terminal weak carrier trace, and a positive terminal
+trace defect.  No causal relation to a later carrier, residence, or
+nonsummable charge is yet proved, and the Clay problem remains unsolved.
+\end{abstract}
+
+\section{Epistemic scope}
+
+The preceding compact-carrier clock excludes every infinite nonzero strongly
+\(L^2\)-precompact carrier subsequence on the exact fast \(q=4\) schedule.
+The present report identifies the mandatory failure of compactness.  Its
+statements are analytic theorems under the displayed smoothness,
+finite-energy, terminal-trace, energy-efficient, and super-turnover
+assumptions.  They await external mathematical review.  They are new within
+this repository; no claim of literature novelty is made.
+
+\section{Setup}
+
+Let \(u\) solve
+\[
+ \partial_tu+\mathbb P\nabla\!\cdot(u\otimes u)
+ =
+ \nu\Delta u,
+ \qquad
+ \nabla\cdot u=0
+\]
+smoothly on \(\R^3\times[0,T^*)\), with
+\[
+ \sup_{t<T^*}\frac12\|u(t)\|_2^2\le E_0.
+\]
+In the first-singular-time setting, a Leray--Hopf continuation supplies the
+weak \(L^2\) trace
+\[
+ u_*\in L^2(\R^3)
+\]
+at \(T^*\).
+
+Let
+\[
+ t_j\uparrow T^*,
+ \qquad
+ R_j\downarrow0,
+ \qquad
+ x_j\in\R^3,
+\]
+and assume the super-turnover condition
+\[
+ \boxed{
+ h_j:=\frac{T^*-t_j}{R_j^{5/2}}\longrightarrow0.
+ }
+\]
+Define the complete carrier state and the rescaled terminal trace by
+\[
+ F_j(y):=R_j^{3/2}u(x_j+R_jy,t_j),
+\]
+\[
+ G_j(y):=R_j^{3/2}u_*(x_j+R_jy).
+\]
+Fix a smooth radial multiplier \(\Plo{\Lambda}\), with symbol in \([0,1]\),
+equal to the identity on frequencies at most \(\Lambda\) and zero above
+\(2\Lambda\), and put
+\[
+ \PhiHi K:=I-\Plo K.
+\]
+
+\section{Freezing to the terminal trace}
+
+\begin{proposition}[Terminal low-pass freezing]
+\label{prop:freezing}
+For every fixed \(K>0\),
+\[
+ \boxed{
+ \|\Plo K(F_j-G_j)\|_2
+ \le
+ C_K
+ \left(E_0+\nu\sqrt{E_0}R_j^{1/2}\right)h_j
+ \longrightarrow0.
+ }
+\]
+\end{proposition}
+
+\begin{proof}
+The energy-only low-pass estimate from the preceding round states that, for
+\(t_j<t<T^*\),
+\[
+\begin{aligned}
+ &\left\|
+ \Plo{K/R_j}\bigl(u(t)-u(t_j)\bigr)
+ \right\|_2\\
+ &\quad\le
+ C\left(
+ E_0K^{5/2}R_j^{-5/2}
+ +
+ \nu\sqrt{E_0}K^2R_j^{-2}
+ \right)(t-t_j).
+\end{aligned}
+\]
+As \(t\uparrow T^*\), weak \(L^2\) convergence and lower semicontinuity give
+the same upper bound with \(u(t)\) replaced by \(u_*\).  Equivalently, for
+this fixed physical cutoff, the estimate makes the low-pass trajectory
+strongly Cauchy and its weak limit identifies its strong limit.  Thus
+\[
+\begin{aligned}
+ &\left\|
+ \Plo{K/R_j}\bigl(u_*-u(t_j)\bigr)
+ \right\|_2\\
+ &\quad\le
+ C\left(
+ E_0K^{5/2}
+ +
+ \nu\sqrt{E_0}K^2R_j^{1/2}
+ \right)h_j.
+\end{aligned}
+\]
+Low-pass covariance under the unitary carrier dilation proves the claim.
+\end{proof}
+
+\section{Scaling of the terminal trace}
+
+\begin{proposition}[Global retention and local escape]
+\label{prop:trace}
+For every fixed \(K,A>0\),
+\[
+ \boxed{\|\Plo K G_j\|_2\longrightarrow\|u_*\|_2,}
+\]
+whereas
+\[
+ \boxed{
+ \|\mathbf1_{B_A}\Plo K G_j\|_2\longrightarrow0.
+ }
+\]
+\end{proposition}
+
+\begin{proof}
+Carrier covariance gives
+\[
+ \|\Plo K G_j\|_2
+ =
+ \|\Plo{K/R_j}u_*\|_2.
+\]
+Since \(K/R_j\to\infty\), the low passes converge strongly to the identity.
+
+For the local statement,
+\[
+\begin{aligned}
+ \|\mathbf1_{B_A}\Plo K G_j\|_2
+ &=
+ \left\|
+ \mathbf1_{B_{AR_j}(x_j)}
+ \Plo{K/R_j}u_*
+ \right\|_2\\
+ &\le
+ \|\mathbf1_{B_{AR_j}(x_j)}u_*\|_2
+ +
+ \|\Plo{K/R_j}u_*-u_*\|_2.
+\end{aligned}
+\]
+The second term tends to zero.  Since \(|u_*|^2\in L^1\), uniform absolute
+continuity gives
+\[
+ \sup_{x\in\R^3}
+ \int_{B_{AR_j}(x)}|u_*|^2\,dx
+ \longrightarrow0.
+\]
+This also proves uniformity in the moving centres.
+\end{proof}
+
+\section{Infrared evacuation}
+
+\begin{theorem}[Carrier-local infrared vacuum]
+\label{thm:vacuum}
+For every fixed \(K,A>0\),
+\[
+ \boxed{
+ \|\mathbf1_{B_A}\Plo K F_j\|_2\longrightarrow0,
+ }
+\]
+while
+\[
+ \boxed{
+ \|\Plo K F_j\|_2\longrightarrow\|u_*\|_2.
+ }
+\]
+Consequently
+\[
+ F_j\longrightarrow0
+ \quad\hbox{in }\mathcal D'(\R^3)
+\]
+and strongly in \(H^{-s}_{\mathrm{loc}}(\R^3)\) for every \(s>0\).
+\end{theorem}
+
+\begin{proof}
+The two norm statements follow from
+Propositions~\ref{prop:freezing} and \ref{prop:trace}.
+
+For \(\varphi\in C_c^\infty(\R^3)\), self-adjointness gives
+\[
+\begin{aligned}
+ |\langle F_j,\varphi\rangle|
+ &\le
+ \|\mathbf1_{\operatorname{supp}\varphi}\Plo K F_j\|_2
+ \|\varphi\|_2\\
+ &\quad+
+ \sup_j\|F_j\|_2
+ \|(I-\Plo K)\varphi\|_2.
+\end{aligned}
+\]
+First send \(j\to\infty\), then \(K\to\infty\).  This proves
+distributional convergence.  On each fixed ball, the sequence is bounded in
+\(L^2\), which embeds compactly into \(H^{-s}\).  Every strong
+\(H^{-s}\) subsequential limit is the unique distributional limit zero.
+\end{proof}
+
+\begin{remark}
+If \(u_*=0\), every fixed global carrier low pass vanishes, so all retained
+energy escapes to dimensionless frequency infinity.  If \(u_*\ne0\), the
+global low-pass norm tends to \(\|u_*\|_2\), but the entire component escapes
+every fixed carrier ball.  In neither case can bounded carrier frequency
+support a local core.
+\end{remark}
+
+\section{The canonical geometry split}
+
+For the energy-efficient amplitude layer, recall
+\[
+ A_j=\{a_j<|u(t_j)|\le2a_j\},
+ \qquad
+ e_j=\int_{A_j}|u(t_j)|^2\,dx,
+ \qquad
+ e_j\ge c_0>0.
+\]
+Let \(\theta\in[0,1]\) be its carrier-scale concentration parameter.
+
+\begin{theorem}[Diffuse escape or a fixed ultraviolet core]
+\label{thm:split}
+After the canonical geometry subsequence, exactly one of the following
+occurs.
+\begin{enumerate}
+\item If \(\theta=0\), no fixed carrier ball around any moving centre
+captures a positive fraction of the layer energy.
+\item If \(\theta>0\), then for every \(0<\eta<\theta\) there are fixed
+\(A<\infty\), centres \(x_j\), \(\gamma=\eta c_0>0\), and
+\(K_j\to\infty\) such that
+\[
+ \int_{B_A}|F_j|^2\,dy\ge\gamma
+\]
+and
+\[
+ \boxed{
+ \int_{B_A}|\PhiHi{K_j}F_j|^2\,dy
+ \ge\frac{\gamma}{4}.
+ }
+\]
+Equivalently,
+\[
+ \boxed{
+ \int_{B_{AR_j}(x_j)}
+ \left|
+ \PhiHi{K_j/R_j}u(x,t_j)
+ \right|^2\,dx
+ \ge\frac{\gamma}{4}.
+ }
+\]
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The first statement is the definition of diffuse geometry.  If
+\(\theta>0\), the concentration function supplies fixed \(A\) and centres
+such that
+\[
+ \frac1{e_j}
+ \int_{A_j\cap B_{AR_j}(x_j)}
+ |u(x,t_j)|^2\,dx
+ \ge\eta
+\]
+eventually.  Hence
+\[
+ \int_{B_A}|F_j|^2\,dy
+ =
+ \int_{B_{AR_j}(x_j)}|u(x,t_j)|^2\,dx
+ \ge\gamma.
+\]
+For every fixed \(K\), Theorem~\ref{thm:vacuum} gives
+\[
+\begin{aligned}
+ \|\mathbf1_{B_A}\PhiHi K F_j\|_2
+ &\ge
+ \|\mathbf1_{B_A}F_j\|_2
+ -
+ \|\mathbf1_{B_A}\Plo K F_j\|_2\\
+ &\ge\sqrt\gamma-o_j(1).
+\end{aligned}
+\]
+For each integer \(n\ge1\), choose strictly increasing thresholds
+\(J_n\to\infty\) after which the last low-pass norm is at most
+\(\sqrt\gamma/2\) for \(K=n\).  For \(j\ge J_1\), the staircase
+\[
+ K_j:=\max\{n:J_n\le j\}
+\]
+tends to infinity and gives the \(\gamma/4\) floor; give it arbitrary
+positive values before \(J_1\).  Carrier and Fourier covariance give the
+physical statement.
+\end{proof}
+
+\begin{corollary}[Unbounded future-scale frequency depth and enstrophy excess]
+\label{cor:depth}
+In the retained-core alternative,
+\[
+ \boxed{
+ \|\nabla u(t_j)\|_2^2
+ \ge
+ \frac{\gamma}{4}\frac{K_j^2}{R_j^2}.
+ }
+\]
+If \(R_j=2^{-4j}\), there are integers \(N_j\to\infty\) such that the
+detected component is supported beyond the carrier frequency of record
+\(j+N_j\).
+\end{corollary}
+
+\begin{proof}
+The multiplier \(\PhiHi{K_j/R_j}\) is supported at frequencies at least
+\(K_j/R_j\) and has magnitude at most one.  Plancherel and
+Theorem~\ref{thm:split} give
+\[
+ \|\nabla u(t_j)\|_2^2
+ \ge
+ \frac{K_j^2}{R_j^2}
+ \|\PhiHi{K_j/R_j}u(t_j)\|_2^2
+ \ge
+ \frac{K_j^2}{R_j^2}
+ \|\mathbf1_{B_{AR_j}(x_j)}
+ \PhiHi{K_j/R_j}u(t_j)\|_2^2
+ \ge
+ \frac{\gamma}{4}\frac{K_j^2}{R_j^2}.
+\]
+Set \(N_j=\lfloor\log_{16}K_j\rfloor\).  Then \(N_j\to\infty\) and
+\[
+ \frac{K_j}{R_j}
+ \ge
+ \frac{16^{N_j}}{R_j}
+ =
+ \frac1{R_{j+N_j}}.
+\]
+This is schedule-relative frequency depth only: it identifies neither a
+causal descendant nor any later carrier.
+\end{proof}
+
+\begin{remark}
+The enstrophy estimate is instantaneous.  Without a residence time for the
+detected tail, it is not a spacetime dissipation contradiction.
+\end{remark}
+
+\section{Terminal carrier trace}
+
+Recall the carrier normalisation
+\[
+ F_j=\sqrt{b_j}\,v_j(\cdot,0),
+ \qquad
+ 0<c\le b_j\le C.
+\]
+
+\begin{corollary}[The retained core is terminal trace defect]
+\label{cor:defect}
+In every partial or tight energy-efficient cell satisfying the
+super-turnover condition,
+\[
+ \boxed{V(0)=0.}
+\]
+For the ball selected in Theorem~\ref{thm:split}, the retained layer obeys
+\[
+ \boxed{\mathcal T_0(B_{A+1})\ge\eta.}
+\]
+\end{corollary}
+
+\begin{proof}
+After a scalar subsequence \(b_j\to b>0\).
+Theorem~\ref{thm:vacuum} gives \(v_j(\cdot,0)\to0\) in distributions, so
+the weak carrier trace is \(V(0)=0\).  The carrier-defect theorem states
+\[
+ \int_{B_{A+1}}|V(0)|^2\,dy+\mathcal T_0(B_{A+1})\ge\eta.
+\]
+The first term vanishes.
+\end{proof}
+
+This eliminates the nonzero terminal coherent-trace alternative, but it
+does not prove that an ancient weak carrier field vanishes at negative
+times.
+
+\section{Exact representative audit}
+
+For the \(q=4\) ledger,
+\[
+ R_j=2^{-4j},
+ \qquad
+ T^*-t_j\asymp\frac{2^{-11j}}j.
+\]
+Hence
+\[
+ h_j\asymp\frac{2^{-j}}j\longrightarrow0.
+\]
+The nonlinear and viscous errors in Proposition~\ref{prop:freezing} are,
+respectively,
+\[
+ E_0K^{5/2}\frac{2^{-j}}j,
+ \qquad
+ \nu\sqrt{E_0}K^2\frac{2^{-3j}}j.
+\]
+Both vanish for fixed \(K\).  All preceding conclusions therefore apply to
+any smooth energy-efficient trajectory realising this exact schedule.
+
+The canonical defect radius is only
+\[
+ r_j=R_j\ell_j\asymp2^{-5j}.
+\]
+The theorem proves a fixed energy tail at some \(R_j/K_j=o(R_j)\), but
+provides no rate for \(K_j\).  It does not yet identify that tail with the
+defect scale \(r_j\) or with the next record carrier.
+
+\section{Robust findings and open obligations}
+
+\subsection*{Findings, subject to review}
+
+\begin{enumerate}
+\item Super-turnover terminal tails freeze every old-scale low pass to the
+terminal \(L^2\) trace.
+\item The rescaled terminal trace is globally retained but locally escapes.
+\item Every bounded carrier frequency therefore vanishes locally.
+\item For the selected amplitude layer, diffuse geometry remains spatial
+escape and every retained core is a fixed-energy ultraviolet tail; the
+split says nothing about unrelated local energy.
+\item That tail lies beyond an unbounded number of future \(q=4\) carrier
+frequencies and forces a \(K_j^2\) enstrophy excess.
+\item Every retained-core terminal carrier trace is zero; its layer floor is
+positive trace defect.
+\end{enumerate}
+
+\subsection*{Things still to prove}
+
+\begin{enumerate}
+\item Obtain a quantitative lower rate for \(K_j\).
+\item Identify the detected tail with the next first-record carrier or force
+spatial import.
+\item Prove residence, freshness, or orthogonality for successive tails.
+\item Convert the instantaneous enstrophy excess into a nonsummable
+spacetime charge.
+\item Exclude the diffuse and divergent-normalised-energy branches.
+\end{enumerate}
+
+\begin{conjecture}[Ultraviolet ancestry or import]
+For a first-record sequence in the retained-core super-turnover branch, the
+fixed ultraviolet component at \(t_j\) either contains a fixed fraction of
+the next carrier's energy after transport to \(t_{j+1}\), or the local
+subgrid balance pays a fixed signed spatial-import event across the
+radius-\(R_j\) boundary.  Along an infinite sequence, one of these
+alternatives has a nonsummable physical cost.
+\end{conjecture}
+
+No part of the conjecture is proved here.  This round proves neither
+regularity nor breakdown and establishes no Clay alternative A--D.
+
+\end{document}
