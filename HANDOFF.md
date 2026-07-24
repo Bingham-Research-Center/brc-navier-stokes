@@ -4,7 +4,7 @@
 
 **Clay status:** unsolved
 
-**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-NONLINEAR-REGENERATION-001`
+**Mathematical checkpoint:** `EXP-ADJOINT-PRESSURE-PARABOLIC-REGENERATION-001`
 
 **Live route:** ROUTE-R3B, conditional weak-\(L^3\) Type-I regularity
 
@@ -103,26 +103,24 @@ The [conditional annular cost theorem](dossier/experiments/adjoint-pressure-annu
 removes the nonuniform global-\(L^2\) factor and leaves an exact
 \(R_k^{-1/2}\) exterior-adjoint endpoint. The subsequent
 [nonlinear-regeneration theorem](dossier/experiments/adjoint-pressure-nonlinear-regeneration.md)
-splits each coefficient shell at frequency \(R_k^{-1}\). Reciprocal-or-lower
-frequencies have a summable \(R_k^{-1}\) action, while the remotely inherited
-high-frequency action is
-
-\[
-O\!\left(\mathcal E_n(\nu L_n)^{-3/4}\right)
-=O(\rho_n)\longrightarrow0
-\]
-
-on the physical genealogy. Consequently
+removes passive low frequencies and remote linear inheritance. The latest
+[parabolic-regeneration theorem](dossier/experiments/adjoint-pressure-parabolic-regeneration.md)
+replaces the common remote horizon by one shell heat time and removes every
+aggregate shell range staying at positive physical radius. For any fixed
+admissible \(r_\bullet>0\),
 
 \[
 \int_0^T\|\nabla\pi^*_{n,\psi}\|_1\,dt
-\le C+C\mathfrak R_n(T)+o(1),
+\le C+C\mathfrak Q_n(T;r_\bullet)+o(1),
 \]
 
-where \(\mathfrak R_n\) is the shell-weighted high-frequency nonlinear
-Duhamel regeneration action. Its finiteness, sign, recency, and event-index
-freshness remain unproved. External mathematical review of both new
-localisations is pending.
+where \(\mathfrak Q_n\) is the high-frequency nonlinear Duhamel action on
+shells \(\rho_nR_k\le r_\bullet\), using only the preceding heat time
+\(R_k^2/\nu\). Divergent pressure histories force this aggregate action to
+diverge below every fixed admissible \(r_\bullet\); a further diagonal reaches
+scale zero. This gives no individual charged shell, directed cascade, causal
+independence from earlier history, spatial source localisation, sign, or
+event-index freshness. External mathematical review remains pending.
 
 ### B. Event-index freshness
 
@@ -146,7 +144,7 @@ can cancel in every gauge.
 - The proof-consistent critical-amplitude reading of Albritton--Barker
   Theorem 4.1 still needs external mathematical confirmation.
 - The selected Besov-event and feedback-pressure genealogy is conditional.
-- No finite nonlinear-regeneration secondary index or event-index sum is known.
+- No finite one-heat-time aggregate secondary index or event-index sum is known.
 
 ## Closed shortcuts: do not retry unchanged
 
@@ -167,9 +165,9 @@ The broader failure catalogue is indexed in
 
 ## Next actions
 
-1. Bound the nonlinear Duhamel regeneration action, or prove that its
-   non-summable shells force fresh signed flux/decrement events; do not return
-   to passive low-frequency or remote-inheritance explanations.
+1. Derive a spatially local high-pass identity for the one-heat-time
+   aggregate action, then bound its secondary index or extract individual
+   blocks with fresh signed flux/decrement charges.
 2. If that budget closes, test whether decrement packets embed additively;
    otherwise test freshness against the exact regenerated endpoint profile.
 3. Allow at most five new frontier attempts without a cost/freshness theorem,

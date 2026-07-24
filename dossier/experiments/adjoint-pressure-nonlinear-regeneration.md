@@ -525,12 +525,17 @@ It does not prove:
 6. exclusion of the coherent ancient profile;
 7. regularity, breakdown, or any Clay alternative A--D.
 
-The next target is no longer an arbitrary shell tail:
+The subsequent
+[parabolic scale-zero reduction](adjoint-pressure-parabolic-regeneration.md)
+shows that one-heat-time inheritance is summable and every shell range at a
+fixed positive physical radius vanishes. Divergent pressure histories then
+force an aggregate one-heat-time Duhamel action below every fixed admissible
+physical cutoff to diverge. This does not prove causal independence from
+earlier history or isolate an individual shell. The narrowed target is:
 
-> Prove a finite secondary index for the high-frequency nonlinear
-> Duhamel regeneration action (5), or show that infinitely many
-> non-summable regeneration shells force fresh signed flux/decrement
-> events on the same physical trajectory.
+> Derive a spatially local high-pass identity for the aggregate
+> one-heat-time action, then prove a finite secondary index or extract
+> individual blocks with fresh signed flux/decrement charges.
 
 The reciprocal-frequency, heat-erasure, physical-scaling, and horizon
 ledgers are checked in

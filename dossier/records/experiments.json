@@ -3676,6 +3676,42 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-PARABOLIC-REGENERATION-001",
+      "title": "Annular pressure remainder localises to one heat time and scale zero",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The upper-audit remainder left by annular localisation may be represented by one-heat-time nonlinear Duhamel actions below every fixed admissible physical cutoff, after all macroscopic annular ranges are removed using the actual genealogy scaling.",
+      "invariants": [
+        "Every radius-R shell whose base physical radius is below a fixed admissible cutoff has an exact same-genealogy Duhamel formula over one heat time R squared divided by viscosity",
+        "The one-heat-time inherited high-frequency multiplier maps weak L3 to a local shell gradient L2 ceiling proportional to R inverse one-half",
+        "Multiplication by the inverse-square-root exterior adjoint tail makes the inherited shell cost proportional to R inverse",
+        "The one-heat-time inherited shell action and the reciprocal-or-lower frequency action are geometric sums",
+        "The rescaled coefficient dissipation on a shell equals physical shell dissipation divided by physical viscosity times the zoom radius",
+        "The adjoint half-power and dissipation scaling cancel the zoom radius, leaving physical shell weight r inverse one-half",
+        "Physical coefficient annuli have uniformly bounded overlap and reciprocal physical radii have a geometric sum above every fixed positive cutoff",
+        "Cauchy-Schwarz bounds the full macroscopic shell action by the square root of dissipation on the shrinking terminal physical interval",
+        "Leray dissipation absolute continuity makes every shell range at fixed positive physical radius vanish",
+        "If pressure histories diverge, the aggregate one-heat-time Duhamel action below every fixed admissible physical cutoff diverges, and a countable diagonal can send those cutoffs to zero",
+        "A finite secondary index for the aggregate one-heat-time action is sufficient for finite genealogy-level pressure cost",
+        "The theorem gives no individual charged shell, cross-shell transfer, directed cascade, causal independence from earlier history, spatial source localisation, sign, event freshness, ancient-profile exclusion, or Clay resolution"
+      ],
+      "method": "Split the annular coefficient action at a fixed physical shell radius. On smaller shells use the exact one-heat-time Duhamel formula, Lorentz heat-multiplier scaling, and reciprocal-frequency summation. Pull larger shells back to the original physical trajectory, apply shell-index Cauchy-Schwarz and bounded overlap, then use absolute continuity of the terminal Leray dissipation.",
+      "certificate": "A written conditional same-genealogy one-heat-time aggregate theorem, adversarial same-system recomputation accepting the analytic core after scope repairs, and executable ledgers for one-heat-time powers, geometric inherited costs, exact physical zoom cancellation, the macroscopic Cauchy-Schwarz ceiling, and horizon admissibility; external mathematical review is pending.",
+      "success_criterion": "Replace the common remote look-back by shellwise one-heat-time Duhamel actions, eliminate every fixed-positive-radius annular range, and state the exact aggregate scale-zero quantifier without inferring an individual shell or cascade.",
+      "failure_interpretation": "The one-heat-time Lorentz multiplier estimate, exact Duhamel horizon, physical dissipation scaling, shell overlap, reciprocal-radius sum, terminal absolute continuity, or insertion into the annular CLMS estimate is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-parabolic-regeneration.md",
+        "lab/navier_lab/adjoint_pressure_parabolic_regeneration.py",
+        "lab/tests/test_adjoint_pressure_parabolic_regeneration.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

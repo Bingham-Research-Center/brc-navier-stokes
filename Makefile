@@ -5,6 +5,7 @@ PYTHONPATH := lab
 .PHONY: adjoint-pressure-terminal-return adjoint-pressure-ancestry-survivor adjoint-pressure-spatial-frequency adjoint-pressure-amplified-ancestry adjoint-pressure-one-return adjoint-pressure-multistage-path adjoint-pressure-corridor-sum adjoint-pressure-corridor-identification adjoint-pressure-last-return adjoint-pressure-no-return adjoint-pressure-parabolic-coefficient-tail adjoint-pressure-parabolic-ancestry adjoint-pressure-parabolic-flux adjoint-pressure-inherited-ancestry adjoint-pressure-flux-decrement adjoint-pressure-spectral-pairing adjoint-pressure-spatial-pairing
 .PHONY: adjoint-pressure-annular-cost
 .PHONY: adjoint-pressure-nonlinear-regeneration
+.PHONY: adjoint-pressure-parabolic-regeneration
 
 check: context records links markup test
 
@@ -325,6 +326,9 @@ adjoint-pressure-annular-cost:
 
 adjoint-pressure-nonlinear-regeneration:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_nonlinear_regeneration
+
+adjoint-pressure-parabolic-regeneration:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_parabolic_regeneration
 
 defect-event-hull: defect-event-suspension
 

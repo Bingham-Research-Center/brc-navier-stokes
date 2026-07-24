@@ -117,9 +117,21 @@ Coefficient frequencies at or below reciprocal shell scale are summable,
 and remote inherited high frequencies cost at most
 \(\mathcal E_n(\nu L_n)^{-3/4}=O(\rho_n)\to0\). Any surviving
 non-summable shell action must therefore lie in a high-frequency nonlinear
-Duhamel regeneration field on the same trajectory. Its secondary index,
-sign, recency, and event freshness remain open. External mathematical
-review of both localisations is pending.
+Duhamel regeneration field on the same trajectory.
+
+The latest
+[parabolic scale-zero reduction](experiments/adjoint-pressure-parabolic-regeneration.md)
+localises the upper-audit representation to one-heat-time integrals and
+fixed physical cutoffs. One-heat-time inheritance
+costs \(R_k^{-1}\) after the adjoint weight and is summable. For every fixed
+physical \(r_\bullet>0\), all shells with
+\(\rho_nR_k>r_\bullet\) contribute \(o(1)\) by terminal enstrophy absolute
+continuity. Divergent pressure histories therefore force the aggregate
+one-heat-time Duhamel action below every fixed admissible \(r_\bullet\) to
+diverge; a further diagonal reaches scale zero. This does not identify one
+charged shell, cross-shell transfer, or causal independence from earlier
+history. Its secondary index, spatial source, sign, and event freshness
+remain open. External review is pending.
 
 ### 4. Feedback pressure becomes a physical coefficient tail
 
@@ -202,11 +214,10 @@ survivors occur in Navier--Stokes.
 
 ### Primary R3B gates
 
-1. **Nonlinear regeneration cost.** Bound the shell-weighted nonlinear
-   Duhamel regeneration action, or prove that non-summable regeneration
-   forces fresh signed flux/decrement events. A positive adjoint-tail power
-   or critical \(L^{5/2}\)-type estimate remains sufficient, but passive
-   low modes and remote heat inheritance are no longer live obstructions.
+1. **One-heat-time aggregate cost.** Derive a spatially local high-pass
+   identity for the aggregate Duhamel action. Bound its secondary index or
+   extract individual blocks with fresh signed flux/decrement charges.
+   Direct linear inheritance and macroscopic shell ranges are no longer live.
 2. **Event-index freshness.** Prove bounded time-frequency overlap, a
    scale-zero floor, non-Zeno speed, an intervening event, or a
    pressure-visible telescope for the forced lower-band decrements.
