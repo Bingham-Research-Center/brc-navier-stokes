@@ -9,7 +9,8 @@
 **Live handoff:** [root handoff](../HANDOFF.md)
 
 This page is a compact result and frontier index. It does not reproduce
-proofs. Follow a link to the experiment note and then its canonical record.
+proofs or live sequencing; the latter belongs only in `HANDOFF.md`. Follow a
+link to the experiment note and then its canonical record.
 The former chronological version is recoverable with
 `git show a7ae140:dossier/status.md`.
 
@@ -75,176 +76,45 @@ proof-consistent but not externally confirmed by an erratum or independent
 human review. The imported claim must not be presented as a verbatim published
 statement.
 
-### 3. Adjoint-pressure event payment
+### 3. Frozen R3B pressure endpoint
 
-A compact solenoidal detector and the reversed Oseen adjoint give a conserved
-pairing. Nash decay, Lorentz duality, and the vector Kato inequality force
-square-root adjoint-pressure growth. Every Besov event therefore pays a
-positive finite-window pressure packet along the same smooth physical
-genealogy.
+The [history theorem](experiments/adjoint-pressure-history.md) gives every
+conditional Besov event a positive finite-window adjoint-pressure cost; its
+exact definition and single-event estimate are also in the
+[standalone reviewer note](adjoint-pressure-cost-reviewer.tex). No uniform
+genealogy budget or event-index sum is known.
 
-- [History theorem](experiments/adjoint-pressure-history.md)
-- [Finite-window packets](experiments/adjoint-pressure-packets.md)
-- [Standalone reviewer note](adjoint-pressure-cost-reviewer.tex)
-
-For a compact solenoidal test \(\psi\),
-
-\[
-\mathfrak p^\mathcal G_{\psi,T}(X)
-=
-\liminf_{\substack{n\to\infty\\H_n\ge T}}
-\frac1{\sqrt{\nu T}}
-\int_0^T\|\nabla\pi^*_{n,\psi}\|_1\,dt
-\]
-
-has the proved event lower bound. No genealogy-uniform finite upper budget,
-intrinsic rough-state adjoint, or event-index sum is known.
-
-The [conditional annular cost theorem](experiments/adjoint-pressure-annular-cost.md)
-removes the divergent global-\(L^2\) coefficient factor from the upper
-audit. It bounds the pressure by centre-uniform local energy times exterior
-adjoint tails. The known tail is exactly \(R^{-1/2}\), so each dyadic shell
-may still cost order one: an \(\ell^1\) shell secondary index is needed,
-while the current theorem supplies only \(\ell^\infty\). Under physical
-rescaling the equivalent strong-gradient threshold is exactly
-\(L^{5/2}_{t,x}\); the available \(L^{2+\delta_B}\), with
-\(\delta_B<1/2\), remains on the wrong side.
-
-The subsequent
-[conditional nonlinear-regeneration theorem](experiments/adjoint-pressure-nonlinear-regeneration.md)
-shows that this endpoint cannot be passive on the physical genealogy.
-Coefficient frequencies at or below reciprocal shell scale are summable,
-and remote inherited high frequencies cost at most
-\(\mathcal E_n(\nu L_n)^{-3/4}=O(\rho_n)\to0\). Any surviving
-non-summable shell action must therefore lie in a high-frequency nonlinear
-Duhamel regeneration field on the same trajectory.
-
-The
-[parabolic scale-zero reduction](experiments/adjoint-pressure-parabolic-regeneration.md)
-localises the upper-audit representation to one-heat-time integrals and
-fixed physical cutoffs. One-heat-time inheritance
-costs \(R_k^{-1}\) after the adjoint weight and is summable. For every fixed
-physical \(r_\bullet>0\), all shells with
-\(\rho_nR_k>r_\bullet\) contribute \(o(1)\) by terminal enstrophy absolute
-continuity. Divergent pressure histories therefore force the aggregate
-one-heat-time Duhamel action below every fixed admissible \(r_\bullet\) to
-diverge; a further diagonal reaches scale zero.
-
-The latest
-[spatial high-pass payer reduction](experiments/adjoint-pressure-spatial-highpass-payer.md)
-applies an exact local filtered-energy identity to that action. Spatial
-diffusion-boundary leakage is summable, and divergent pressure histories
-force the sum of two adjoint-weighted square-root aggregates to diverge:
-entrance high-pass energy or positive spatially cut-off nonlinear work. An
-abstract endpoint-weighted diffuse array satisfies the scalar identity while
-every individual action, total physical quadratic payer, and total natural
-clock vanishes. It is not an NSE, Duhamel, or adjoint construction, but it
-closes the bare local identity and physical quadratic budgets as sufficient
-routes to a fixed block.
-
-The
-[staggered-entrance theorem](experiments/adjoint-pressure-staggered-entrance-ancestry.md)
-then removes entrance energy as an independent branch. Successively smaller
-shells look back for successively more heat times; all physical lookbacks fit
-one fixed terminal horizon, while inherited high frequencies become
-exponentially summable. The zero-data remainder has exact positive auxiliary
-work and a same-trajectory dissipation ceiling.
-
-The subsequent
-[terminal-dissipation collapse](experiments/adjoint-pressure-terminal-dissipation-collapse.md)
-rewrites the remaining current nonlinear work as a projected global gradient
-pairing and absorbs its local high-pass dissipation through the signed
-filtered-energy identity. Exact physical pullback merges current and
-prehistory coefficient dissipation. The complete upper audit now stops at
-one extended nested critical action:
+The completed upper audit is owned by the
+[terminal-dissipation theorem](experiments/adjoint-pressure-terminal-dissipation-collapse.md).
+It absorbs the intermediate shell, regeneration, entrance, and current-work
+branches into one nested physical action:
 
 \[
 \widehat{\mathfrak D}_n
-=
-\sum_k\sqrt{\widehat\delta_{n,k}/r_{n,k}},
+=\sum_k\sqrt{\widehat\delta_{n,k}/r_{n,k}},
 \qquad
 P_n(T)\le C+C\widehat{\mathfrak D}_n+o_n(1).
 \]
 
-The
-[logarithmic-schedule theorem](experiments/adjoint-pressure-logarithmic-heat-schedule.md)
-reduces the lookback to the minimal logarithmic order certified by the
-heat-kernel majorant and classifies the critical endpoint. If
-\(\mu(s)\le\sqrt{s}\omega(s)\), the exact sufficient series is
+The [logarithmic schedule](experiments/adjoint-pressure-logarithmic-heat-schedule.md)
+classifies the sufficient Dini gate. For regular log--log moduli its sharp
+scalar threshold is \(\beta>2\), or \(\beta=2,\eta>5/2\). Kinematic histories
+and packets show that energy, weak-\(L^3\), and the available gradient
+integrability do not imply it by norms alone.
 
-\[
-\sum_j(1+\log(j+2))^{1/4}
-\omega(Cr_\bullet^2L^{-2j}(1+\log(j+2)))^{1/2}<\infty.
-\]
+Separately, actual NSE evolution forces a positive terminal high-pass flux
+and fixed fractional lower-band dissipation through the
+[flux/decrement theorem](experiments/adjoint-pressure-flux-decrement.md).
+The [freshness theorem](experiments/adjoint-pressure-freshness-without-floor.md)
+makes an infinite retained set frequency-disjoint, but the associated physical
+floors may be summable; exact ancestry realises super-exponential decay.
+Thus overlap alone gives no contradiction.
 
-For regular log--log moduli the threshold is \(\beta>2\), or
-\(\beta=2,\eta>5/2\). One fixed scalar history saturates it. Disjoint
-solenoidal packets prove that the global energy norm, weak-\(L^3\), and Barker's
-\(L^{2+\delta_B}_{t,x}\) gradient gain do not imply this modulus by a norm
-inequality. The packets are kinematic, not NSE; an NSE-specific theorem is
-still missing. External review is pending.
-
-### 4. Feedback pressure becomes a physical coefficient tail
-
-The source-localised feedback payer is empty by
-[intermediate localisation](experiments/adjoint-pressure-intermediate-localization.md).
-The exhaustive renewal/corridor analysis leaves superparabolic capture or a
-\(9/4\) stretched-exponential coefficient cost. The
-[parabolic coefficient-tail theorem](experiments/adjoint-pressure-parabolic-coefficient-tail.md)
-then places the surviving payment in the actual common coefficient:
-
-\[
-D_{b,>\,h^{-1/2}\sqrt{\log(1/h)}}^\chi(h)
-\gtrsim_\varepsilon h^{-3+\varepsilon}.
-\]
-
-The earlier finite-band, product-trace, polar, and source-localised descendants
-remain correct only under their now-empty antecedent; they are not live route
-children.
-
-### 5. The latest terminal flux and decrement theorem
-
-The current load-bearing chain is:
-
-1. [parabolic tail ancestry](experiments/adjoint-pressure-parabolic-ancestry.md):
-   cutoff reach forces the sharp relative log-scale ceiling \(7/6\), which
-   still permits infinite empirical roof mean;
-2. [tail-to-flux](experiments/adjoint-pressure-parabolic-flux.md):
-   actual NSE evolution forces comparable-annulus dissipation, inherited
-   entrance energy, or positive signed high-pass input;
-3. [terminal flux ancestry](experiments/adjoint-pressure-inherited-ancestry.md):
-   fixed-time \(H^1\), last hitting, and an adaptive annulus remove the first
-   two terminal bookkeeping alternatives;
-4. [weak-\(L^3\) lower-band decrement](experiments/adjoint-pressure-flux-decrement.md):
-   far-low strain is viscosity-small and every other interaction contains a
-   comparable lower-band factor.
-
-Consequently every sufficiently late event has a terminal interval
-\(\widetilde J_j\) and \(K_j/\Lambda_j\to1\) with
-
-\[
-\Phi_{K_j}(\widetilde J_j)\ge\frac{\nu T_j}{4}
-\]
-
-and
-
-\[
-\nu
-\int_{\widetilde J_j}
-\|\nabla Q_{\eta K_j<|\xi|\le K_j}v\|_2^2\,dt
-\ge
-c\left(\frac{\nu}{M}\right)^2
-\Phi_{K_j}(\widetilde J_j).
-\]
-
-The
-[frequency-freshness theorem](experiments/adjoint-pressure-freshness-without-floor.md)
-shows that a sparse infinite set of these bands is automatically disjoint,
-so time overlap is harmless and \(\sum_mT_{j_m}<\infty\). Even full
-next-event matching would give only bounded multiplicity and
-\(\sum_jT_j<\infty\). The exact ancestry survivor permits that conclusion
-with super-exponential decay. A nonsummable floor, not overlap alone, is the
-missing input.
+The source-localised feedback branch is empty, while its surviving alternative
+is the [physical coefficient tail](experiments/adjoint-pressure-parabolic-coefficient-tail.md).
+The remaining Dini/non-reuse, event-floor, clock, direct-response, and
+finite-secondary-index gates are canonical in the
+[R3B route record](records/routes.json). External review remains pending.
 
 ## Closed shortcuts and surviving lessons
 
@@ -308,12 +178,6 @@ linked proof notes; do not reopen them without new input or external review.
 - The HWY route still requires independent certificate reproduction and a
   smooth-prehistory or admissible-force bridge; see the
   [HWY bridge note](papers/2509.25116-bridge-note.md).
-
-## Current work order
-
-1. Keep R3B frozen until a new theorem or fresh external review changes it.
-2. Attack R3C carrier compactness versus a chargeable defect.
-3. Generate external-review packets from canonical proofs only on request.
 
 ## Epistemic and validation rules
 

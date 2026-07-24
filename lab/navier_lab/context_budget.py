@@ -9,9 +9,9 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 
 LINE_BUDGETS = {
-    "AGENTS.md": 55,
-    "HANDOFF.md": 120,
-    "dossier/status.md": 350,
+    "AGENTS.md": 40,
+    "HANDOFF.md": 70,
+    "dossier/status.md": 240,
     "dossier/possibility-tree.md": 160,
 }
 

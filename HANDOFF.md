@@ -1,4 +1,4 @@
-# Handoff: Type-II compactness defect
+# Handoff: R3C compactness defect
 
 **Updated:** 2026-07-24
 
@@ -8,21 +8,14 @@
 
 **Checkpoint:** `EXP-TYPE-II-INVISCID-CARRIER-001`
 
-This is replace-not-append working memory. Durable results live in
-[`dossier/status.md`](dossier/status.md), exact metadata in
-[`dossier/records/`](dossier/records/README.md), and derivations in their
-named experiment notes.
-
 ## Load only
 
-- [Clay target](dossier/clay-target.md).
 - [Current carrier theorem](dossier/experiments/type-ii-inviscid-carrier-entrance.md).
 - [Canonical R3C record](dossier/records/routes.json).
 
-Do not load the R3B chain unless a new theorem or external review directly
-reopens it. Its result, assumptions, gates, failed shortcuts, and proof links
-are preserved in the
-[durable R3B status](dossier/status.md#2-conditional-r3b-profile-reduction).
+Everything else is durable in [status](dossier/status.md) or
+[records](dossier/records/README.md). Do not load frozen R3B without new
+input or external review.
 
 ## Exact live question
 
@@ -31,38 +24,29 @@ contradiction: either by strong compactness with trace persistence to a rigid
 nonzero ancient Euler object, or by charging every failure of compactness to
 one finite physical budget?
 
-## State in one minute
+## Progress marker
 
-For every sequence with
-\(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\), the current theorem selects an
-amplitude layer with
+Entrance is classified; no PDE cell is eliminated. Every weak-\(L^3\)
+Type-II sequence has a carrier normalisation with viscosity tending to zero,
+an arbitrarily long past, and an exhaustive first \(2\times3\times3\) ledger:
 
-\[
-a_j\asymp m_j^3/e_j,\qquad
-R_j\asymp e_j/m_j^2,\qquad
-\tau_j=R_j/a_j\asymp e_j^2/m_j^5.
-\]
+1. bounded/divergent normalised energy;
+2. diffuse/partial/tight carrier energy;
+3. zero/finite/infinite forward horizon.
 
-Carrier normalisation gives viscosity
-\(\varepsilon_j\asymp\nu/m_j\to0\) and an arbitrarily long past. After a
-subsequence, the exact first ledger is:
+The coherent self-similar subbranch is restricted to
+\(2/5\le\gamma<1/2\) under additional stated hypotheses. Scalar energy,
+scaling, and necessary vorticity tests cannot close it: the proof note gives a
+sharp divergence-free kinematic survivor which is not an NSE solution.
 
-1. bounded or divergent \(E_0/e_j\);
-2. diffuse, partially concentrated, or tight layer energy at scale \(R_j\);
-3. zero, finite-positive, or infinite forward turnover horizon.
+## Known unknown
 
-In the bounded-energy, spatially retained branch, strong
-\(L^2_{\mathrm{loc}}\) space-time compactness would pass the nonlinearity to a
-finite-energy ancient Euler solution; trace persistence is additionally
-needed to make it nonzero. The precise survivors are Reynolds stress,
-anomalous dissipation, temporal-trace loss, vector/frequency oscillation,
-fragmentation, and energy escape.
-
-A current v3 preprint claims exclusion of outgoing and axisymmetric smooth
-stationary Euler profiles in the subparabolic similarity range under its
-exact assumptions. It does not control the defect branches. A sharp
-divergence-free kinematic path satisfies energy equality and the listed
-necessary vorticity ledger but is not a Navier--Stokes solution.
+In the bounded-energy retained branch, strong
+\(L^2_{\mathrm{loc}}\) space-time compactness passes the nonlinearity, but a
+nonzero ancient Euler limit also needs trace persistence. The alternatives
+are Reynolds stress, anomalous dissipation, temporal-trace loss,
+vector/frequency oscillation, fragmentation, energy escape, and the three
+forward-clock cells.
 
 ## Next bounded cycle
 
@@ -73,12 +57,5 @@ necessary vorticity ledger but is not a Navier--Stokes solution.
    summable.
 3. Stress-test both outcomes against partial concentration and
    zero/infinite-horizon cells before claiming exhaustiveness.
-
-## Frozen boundary
-
-R3B remains a conditional weak-\(L^3\) Type-I branch pending independent
-external review. No critical nested-action bound, fresh fixed event charge,
-event-index contradiction, or Clay alternative A--D is proved. The
-Albritton--Barker critical-amplitude repair also awaits external confirmation.
 
 Before reporting or committing: `make check` and `git diff --check`.

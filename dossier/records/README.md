@@ -52,7 +52,8 @@ from the current proof rather than stale correspondence.
 
 ## Churn rule
 
-The default new frontier result changes one proof note, one experiment record,
-and only the smallest necessary status/handoff surface.  Add executable
-artefacts only when they can catch a nontrivial finite error; link rather than
-copy a derivation into another narrative file.
+A routine frontier result changes one proof note, its canonical record, and
+`HANDOFF.md`.  Change `status.md` only for a durable result or gate, and the
+possibility tree only when a node changes.  Never mirror a derivation across
+those surfaces.  Add executable artefacts only when they can catch a
+nontrivial finite error.
