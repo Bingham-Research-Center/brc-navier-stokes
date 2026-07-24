@@ -1,42 +1,40 @@
-# Handoff: R3C unthinned band stack
+# Handoff: R3C same-trajectory triad recycling
 
 **Updated:** 2026-07-24 · **Clay status:** unsolved
 
-**Live route:** `ROUTE-R3C` · **Checkpoint:** `EXP-TYPE-II-BAND-DISSIPATION-BUDGET-001`
+**Live route:** `ROUTE-R3C` · **Checkpoint:** `EXP-TYPE-II-TRIAD-PACKET-SHARPNESS-001`
 
 ## Load only
 
-- [Critical band budget](dossier/experiments/type-ii-band-dissipation-budget.md)
+- [Triad packet theorem](dossier/experiments/type-ii-triad-packet-sharpness.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
 ## Exact live question
 
-Can the unthinned first-record bands be counted across logarithmic scale, or
-can NSE triads realise the remaining nonlinear rotation?
+Can one first-record NSE trajectory concatenate the locally sharp packet
+transfers while reusing one fixed energy quantum?
 
 ## Live result
 
-Successive frozen-band works share the physical dissipation budget:
+An explicit Gaussian-band triad has
 
 \[
-\sum_j\left[
-\nu\sqrt{\frac{r_j}{\gamma}}|W_j^{N}|
-+
-\frac{r_j^2|W_j^\nu|^2}{\gamma\nu\Delta t_j}
-\right]
-\lesssim
-\nu\int_0^{T^*}\|\nabla u\|_2^2.
+\langle U,S_*U\rangle_{\rm av}=\frac{651}{2048},
+\qquad
+\langle U\otimes U,\nabla S_*U\rangle_{\rm av}
+=-\frac{109}{2048}.
 \]
 
-Scale-separated bands have bounded-overlap correlation lifetimes. But their
-fixed width forces geometric radii, so the nonlinear
-\(\sum_j\sqrt{r_j}\) charge converges automatically. The \(q_j=4\) ledger's
-viscous charges diverge; any survivor is eventually nonlinear.
+Compact smooth \(\mathbb R^3\) NSE packets built from it have fixed band
+energy and fixed nonlinear work on time \(r^{5/2}\), while both dissipation
+and weak-\(L^3\) fourth-power occupation are \(O(\sqrt r)\). Thus the
+half-radius charge is locally sharp. Each scale uses a different regular
+trajectory; this is not a cascade or singularity.
 
 ## Next bounded cycle
 
-Do not re-run elementary Bessel thinning. Seek a Carleson/variation estimate
-for overlapping heat-scale intervals without discarding event density.
-Otherwise test whether actual NSE triads can implement the critical
-nonlinear rotation. Keep recentering, coherent trace, and divergent energy
+Do not seek a stronger one-event radius exponent or repeat Bessel thinning.
+Identify the transition cost for recycling one packet through consecutive
+first records on the same trajectory: terminal-state mismatch, spatial
+transport, or temporal variation. Keep coherent trace and divergent energy
 separate.

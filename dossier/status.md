@@ -183,11 +183,13 @@ replacement work. The
 [critical band-budget theorem](experiments/type-ii-band-dissipation-budget.md)
 now sums the changing nonlinear works with \(\sqrt{r_j}\) weights and the
 viscous works with \(r_j^2/\Delta t_j\) weights against one physical
-dissipation budget. Scale-disjoint Gaussian bands also have bounded-overlap
-correlation lifetimes. Their fixed multiplicative widths, however, force
-geometric radii and automatically summable nonlinear charges. In the exact
-\(q_j=4\) ledger the viscous charges diverge, so the surviving rotation must
-be eventually nonlinear.
+dissipation budget. Scale-disjoint bands have bounded-overlap lifetimes, but
+fixed widths force geometric radii and summable nonlinear charges. The
+[triad-packet theorem](experiments/type-ii-triad-packet-sharpness.md)
+constructs smooth compact NSE packets with fixed \(r^{5/2}\)-time band work
+but only \(O(\sqrt r)\) dissipation and weak-\(L^3\) occupation, proving the
+charge locally sharp across different trajectories. The exact \(q_j=4\)
+survivor is eventually nonlinear because its viscous charges diverge.
 Under separate self-similar
 hypotheses, the current preprint and a favourable-viscosity repository
 adaptation restrict the Type-II exponent to \(2/5\le\gamma<1/2\);
@@ -195,9 +197,9 @@ outgoing or axisymmetric smooth Euler profiles are excluded under the
 preprint's exact assumptions. A divergence-free kinematic path satisfies the
 listed energy and necessary vorticity ledgers in that window but is not NSE.
 
-R3C now needs an unthinned logarithmic-scale Carleson/variation law or an NSE
-triadic obstruction to nonlinear band rotation, plus spatial recentering,
-coherent-trace rigidity, and separate control of divergent normalised energy.
+R3C now needs a same-trajectory concatenation obstruction or unthinned
+Carleson/variation law, plus spatial recentering, coherent-trace rigidity,
+and separate control of divergent normalised energy.
 
 ### Frozen R3B boundary
 

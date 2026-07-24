@@ -79,6 +79,13 @@ nonlinear charges converge.  Thus that survivor is no longer
 branch-agnostic: all but finitely many correlation deaths must be paid by
 nonlinear transfer.
 
+**Subsequent update.** The
+[triad-packet theorem](type-ii-triad-packet-sharpness.md) constructs compact
+smooth NSE packets that achieve fixed nonlinear Gaussian-band work with
+exactly \(O(\sqrt r)\) dissipation.  The half-radius exponent is therefore
+locally sharp across varying trajectories; any improvement must exploit the
+one-trajectory genealogy.
+
 ## 1. Setup
 
 Let \(u\) be a smooth finite-energy Navier--Stokes solution on

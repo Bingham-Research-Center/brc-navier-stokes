@@ -4005,6 +4005,42 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-TRIAD-PACKET-SHARPNESS-001",
+      "title": "Smooth NSE triad packets saturate the Type-II half-radius charge",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001"
+      ],
+      "hypothesis": "The square-root-radius nonlinear charge in the common frozen-band budget may be locally sharp for actual Navier-Stokes dynamics rather than an artifact of fractional duality.",
+      "invariants": [
+        "An explicit six-mode divergence-free torus field has normalized Gaussian-band flux exactly minus 109 over 2048",
+        "The same field has positive Gaussian-band pairing exactly 651 over 2048",
+        "Negating the field reverses nonlinear band work without changing band energy",
+        "A solenoidal cutoff of the periodic vector potential preserves nonzero band flux and positive band energy on R3 for a sufficiently large cutoff",
+        "Fixed-energy concentration at radius r has velocity amplitude r to minus three halves and weak-L3 size r to minus one half",
+        "The nonlinear turnover time is r to five halves and the nonlinear work rate is r to minus five halves",
+        "Rescaling physical NSE gives one fixed compact carrier datum with effective viscosity proportional to square root r",
+        "Smooth inviscid convergence on one fixed carrier interval preserves a fixed positive fraction of nonlinear frozen-band work",
+        "Physical dissipation on that interval is comparable to viscosity times square root r",
+        "Weak-L3 fourth-power occupation on the interval is also proportional to square root r",
+        "The construction uses a different smooth finite-energy trajectory for each r and does not concatenate events on one solution",
+        "No first-record genealogy, singularity, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Compute one exact Gaussian-band Fourier triad, localize its periodic vector potential by a solenoidal curl cutoff, concentrate the resulting compact R3 datum at fixed energy, rescale NSE to a fixed carrier with vanishing viscosity, use short-time smooth inviscid convergence to retain nonzero frozen-band work, and evaluate every radius power exactly.",
+      "certificate": "The written proof covers the triad formula, R3 localization, local inviscid limit, physical work and dissipation scaling, and one-event sharpness. The executable certificate enumerates all Fourier interactions exactly, verifies the dyadic heat multipliers, flux and energy fractions, and checks the radius ledger in eight unit tests. External mathematical review is pending.",
+      "success_criterion": "Determine whether a stronger local NSE estimate can replace the summable half-radius charge, or whether any improvement must use same-trajectory genealogy.",
+      "failure_interpretation": "The exact triad convolution, Gaussian multipliers, solenoidal localization, NSE rescaling, uniform local inviscid convergence, frozen-work pullback, dissipation power, or sharpness quantifiers are incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-triad-packet-sharpness.md",
+        "lab/navier_lab/type_ii_triad_packet.py",
+        "lab/tests/test_type_ii_triad_packet.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",
