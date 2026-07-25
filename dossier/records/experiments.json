@@ -4406,6 +4406,40 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-CROSS-FREQUENCY-CORRIDOR-001",
+      "title": "The q4 cross defect forces a moving frequency corridor",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001"
+      ],
+      "hypothesis": "The pressure-free commutator anomaly may force a summable anti-correlation between the weak-L3 drift amplitude and adjoint dissipation.",
+      "invariants": [
+        "The fixed-cutoff cross pairing vanishes at the terminal boundary while the full preterminal pairing equals one positive constant",
+        "The first dyadic half-pairing frequency is finite and tends to infinity at the terminal boundary",
+        "A coarse Lorentz commutator bound limits cross-frequency motion by N-squared times the terminal L1 weak-L3 clock",
+        "The unresolved high-frequency pairing is bounded by N-to-the-minus-two times the product of primal and adjoint gradient norms",
+        "The exact q4 clock forces a pointwise joint-enstrophy product of order tau-to-the-minus-nine-elevenths with the matching positive logarithm",
+        "The two terminal dissipation tails have product at least tau-to-the-four-elevenths with the matching logarithm",
+        "A refined Lorentz commutator bound splits the transition into a direct clock branch and an accumulated-adjoint corridor branch",
+        "At q4 records the minimum transition frequency is m-to-the-nine-fourths times square-root j and the direct nonlinear clock is m-to-the-seven-thirds times j-to-the-two-thirds",
+        "A scalar temporal frequency-front ledger saturates every derived norm inequality while retaining finite unweighted and infinite weak-L3-weighted adjoint dissipation",
+        "The scalar ledger is not a Navier-Stokes construction and does not discard unexploited phase or sign information in the exact identity",
+        "No corridor exclusion, q4 closure, energy equality, or Clay A-D resolution is asserted"
+      ],
+      "method": "Define the first dyadic low-pass carrying half of the conserved primal-adjoint pairing, bound its pressure-free commutator speed by coarse and refined Lorentz Bernstein estimates, bound the remaining high-frequency pairing by both gradients, insert the logarithmic q4 clock, derive the clock-versus-corridor dichotomy, and construct an exact scalar temporal moving-front saturation.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the terminal pairing limit, dyadic transition construction, both commutator bounds, high-frequency multiplier estimate, logarithmic clock integrations, joint dissipation-tail floor, record-frequency identification, corridor dichotomy, and synthetic scalar front. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Determine whether the pressure-free cross identity and q4 clock alone force summable amplitude anti-correlation, or replace that proposal by the exact surviving frequency mechanism.",
+      "failure_interpretation": "The terminal low-pass limit, dyadic minimality argument, Lorentz Bernstein power, high-frequency N-to-the-minus-two bound, clock integration, nine-elevenths or four-elevenths exponent, record-frequency identification, scalar saturation, or epistemic scope is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-cross-frequency-corridor.md",
+        "dossier/rounds/2026-07-25-type-ii-cross-frequency-corridor.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

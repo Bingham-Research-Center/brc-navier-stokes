@@ -1,54 +1,58 @@
-# Handoff: R3C amplitude-slab pincer
+# Handoff: R3C cross-frequency corridor
 
 **Updated:** 2026-07-25 · **Clay status:** unsolved
 
 **Live route:** `ROUTE-R3C` · **Checkpoint:**
-`EXP-TYPE-II-ADJOINT-AMPLITUDE-PINCER-001`
+`EXP-TYPE-II-CROSS-FREQUENCY-CORRIDOR-001`
 
 ## Load only
 
-- [Amplitude-slab pincer](dossier/experiments/type-ii-adjoint-amplitude-pincer.md)
+- [Cross-frequency corridor](dossier/experiments/type-ii-cross-frequency-corridor.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
 ## Exact q4 survivor
 
-- On every terminal interval, with
-  \(M=\|u\|_{L^{3,\infty}}\), \(Y=\|\nabla a\|_2\),
+- The first dyadic cutoff carrying half of the conserved cross pairing,
+  \(\kappa(\tau)\), tends to infinity at the terminal boundary.
+- With \(B_1=\int_0^\tau M\), \(B_2=\int_0^\tau M^2\), and
+  \(H=\int_0^\tau MY\),
   \[
-  |\{M>\lambda\}|\lesssim
-  \lambda^{-11/2}/\log(e+\lambda),\qquad
-  \int Y^2<\infty,\quad\int MY^2=\infty.
+  \kappa^2B_1\gtrsim1,\qquad
+  XY\gtrsim\kappa^2\gtrsim B_1^{-1},
   \]
-- The exact sufficient gate is
+  where \(X=\|\nabla u\|_2\), \(Y=\|\nabla a\|_2\).
+- Hence
   \[
-  \int_0^{|I|}s^{-2/11}
-  \log(e+|I|/s)^{-2/11}(Y_I^*(s))^2\,ds<\infty.
+  XY\gtrsim\tau^{-9/11}\log(1/\tau)^{2/11},\qquad
+  \Bigl(\int X^2\Bigr)\Bigl(\int Y^2\Bigr)
+  \gtrsim\tau^{4/11}\log(1/\tau)^{4/11}.
   \]
-- Every survivor instead has divergent slab cost
-  \(\sum 2^n\int_{\{2^n<M\le2^{n+1}\}}Y^2=\infty\) and adjoint-gradient
-  spikes essentially \(Y\gtrsim M^{9/4}\), up to summable logarithmic loss.
+- At q4 records, \(\kappa_j\gtrsim\mu_j=m_j^{9/4}j^{1/2}\), and either
+  \[
+  \kappa_j\gtrsim\Lambda_j=m_j^{7/3}j^{2/3}
+  \quad\text{or}\quad
+  \kappa_j\int_{s_j}^TMY\gtrsim1.
+  \]
 
 ## Exact live question
 
-Can the same-trajectory cross defect force the displayed gate to be finite,
-or equivalently force summable anti-correlation across the amplitude slabs?
+Can same-trajectory phase/sign prevent indefinite reuse of the sub-clock
+corridor \(\mu_j\lesssim\kappa_j\ll\Lambda_j\), or make clock-scale
+transitions pay a non-summable residence charge?
 
-## Closed shortcuts
+## Closed shortcut
 
-- \(L_t^{22/9,2}\) is sufficient but stronger than the exact gate; strong
-  \(L_t^{22/9}\) alone is insufficient.
-- Differentiated energy retains \(\|\nabla u\|_2^4\).
-- Generic heat smoothing gives no temporal \(2+\epsilon\) gain.
-- Current BMO-skew Meyers theory is nonuniform across record amplitudes and
-  meets projected pressure only at the base \(L^2\) forcing exponent.
+Absolute Lorentz norm bounds on the pressure-free identity do not force
+amplitude anti-correlation. A synthetic moving-front ledger saturates the
+corridor with \(X,Y\in L^2_t\) but \(\int MY^2=\infty\). It does not model
+Navier--Stokes phase, pressure, or genealogy.
 
 ## Next bounded cycle
 
-Use the pressure-free Fourier commutator identity from the
-[input round](dossier/experiments/type-ii-cross-current-anomaly.md) to seek
-a cross-defect-specific, summable anti-correlation between \(M\) and \(Y^2\)
-on high-amplitude slabs. Stop if the argument supplies only generic
-parabolic gain, local pressure \(L^2\), or another restatement of the gate.
+Compare signed \(K_N\) transitions across consecutive first-record blocks
+and nested cutoffs. Seek a non-reuse/telescoping charge before taking
+absolute values. If one reservoir can pay every transition, record the exact
+reuse mechanism and move to clock-branch residence.
 
 These are conditional repository theorems pending external review. Keep
 slower clocks, divergent normalised energy, and R3B separate. No Clay

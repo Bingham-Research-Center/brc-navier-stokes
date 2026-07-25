@@ -180,23 +180,23 @@ fixed-sign nonlinear clock-band events occur at order-one capacity, or the
 defect escapes to super-clock frequency with unbounded enstrophy.
 
 The Oseen [cross-current anomaly](experiments/type-ii-cross-current-anomaly.md)
-produces an energy-class \(a\), a non-\(H^{-1}\) cross measure, and a signed
-pressure-free commutator cascade whose sharpest consequence is
+produces an energy-class \(a\), a non-\(H^{-1}\) cross measure, and finite unweighted but infinite amplitude-weighted adjoint dissipation:
 \[
 \int_t^{T^*}\|u\|_{L^{3,\infty}}\|\nabla a\|_2^2\,ds=\infty
-\quad(t<T^*),
+\quad(t<T^*).
 \]
-although the unweighted adjoint dissipation is finite.
 The [amplitude-slab pincer](experiments/type-ii-adjoint-amplitude-pincer.md)
-uses the q4 clock to replace \(L_t^{22/9,2}L_x^2\) by a weaker Lorentz--Zygmund
-rearrangement norm. Every survivor must make that norm diverge, place a
-divergent first moment of adjoint dissipation on arbitrarily high drift
-slabs, and exhibit \(\|\nabla a\|_2\) spikes essentially of size
-\(\|u\|_{L^{3,\infty}}^{9/4}\). Strong \(L_t^{22/9}\) alone does not close
-the ledger. Differentiated energy, generic heat smoothing, and current
-BMO-skew reverse Hölder theory do not supply the missing gain; the live
-endpoint is a pressure-compatible, cross-defect-specific summable
-anti-correlation across the amplitude slabs.
+turns this into Lorentz--Zygmund divergence and near-\(M^{9/4}\) spikes. The
+[cross-frequency theorem](experiments/type-ii-cross-frequency-corridor.md)
+now defines the first half-pairing frequency \(\kappa\) and forces
+\[
+\|\nabla u\|_2\|\nabla a\|_2
+\gtrsim\tau^{-9/11}\log(1/\tau)^{2/11}.
+\]
+At records, either \(\kappa_j\gtrsim m_j^{7/3}j^{2/3}\), or transport pays a sub-clock corridor above
+\(m_j^{9/4}j^{1/2}\). A scalar moving-front ledger saturates the latter,
+so the live endpoint is phase-sensitive corridor non-reuse or clock-scale
+residence, not another absolute-norm anti-correlation.
 
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.

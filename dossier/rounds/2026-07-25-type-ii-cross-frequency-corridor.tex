@@ -1,0 +1,774 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\ip}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\esssup}{\operatorname*{ess\,sup}}
+\setlength{\emergencystretch}{2em}
+
+\title{The q4 Cross Defect Forces a Moving Frequency Corridor}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round tests whether the pressure-free primal--adjoint commutator
+anomaly, used through available Lorentz norm bounds, forces the summable
+amplitude anti-correlation sought in the preceding round.  It does not.
+Instead, the terminal cross defect defines a moving dyadic frequency at
+which half of its conserved pairing first appears.  The weak-\(L^3\)
+clock limits the speed of that frequency, while the unresolved
+high-frequency pairing forces a product of primal and adjoint enstrophy.
+
+For the exact q4 clock, the resulting pointwise lower bound is
+\[
+ \norm{\nabla u(T-\tau)}_2
+ \norm{\nabla a(T-\tau)}_2
+ \gtrsim
+ \tau^{-9/11}
+ \log(e+\tau_0/\tau)^{2/11}.
+\]
+The product of the two terminal dissipation tails is therefore at least
+of order
+\(\tau^{4/11}\log(e+\tau_0/\tau)^{4/11}\).
+
+A refined commutator estimate gives an exact alternative: the cross
+frequency either reaches the q4 nonlinear clock or remains in a
+sub-clock corridor paid by accumulated \(M\norm{\nabla a}_2\).
+An explicit scalar temporal ledger saturates the corridor, every energy
+budget, and the divergent weighted adjoint dissipation.  It is not a
+Navier--Stokes construction.  The live task is now to exclude corridor
+reuse using genuinely same-trajectory phase, sign, residence, or
+projected-pressure structure.  No Clay alternative is proved.
+\end{abstract}
+
+\section{Epistemic status and exact input}
+
+All theorems below are conditional on the repository's energy-efficient
+exact q4 branch and projected-Oseen entrance.  Those hypotheses are not
+derived for arbitrary Clay data, and external review is pending.
+
+Let \(T\) be the putative first singular time.  The input supplies smooth
+preterminal \(u\), an energy-class projected adjoint \(a\), and constants
+\[
+ U:=\sup_{t<T}\norm{u(t)}_2<\infty,
+ \qquad
+ A:=\sup_{t<T}\norm{a(t)}_2<\infty,
+\]
+such that
+\begin{equation}
+\label{eq:pairing}
+ \ip{u(t)}{a(t)}=c_0>0
+ \qquad(0<t<T),
+\end{equation}
+\[
+ u,a\in L^2_t\dot H^1_x,
+ \qquad
+ a(t)\rightharpoonup0
+ \quad(t\uparrow T).
+\]
+
+For reverse terminal time \(0<\tau<\tau_0\), put
+\begin{equation}
+\label{eq:MXY}
+ M(\tau):=\norm{u(T-\tau)}_{L^{3,\infty}},
+ \quad
+ X(\tau):=\norm{\nabla u(T-\tau)}_2,
+ \quad
+ Y(\tau):=\norm{\nabla a(T-\tau)}_2.
+\end{equation}
+The exact clock gives, for large \(\lambda\),
+\begin{equation}
+\label{eq:clock}
+ \left|
+ \left\{\tau:M(\tau)>\lambda\right\}
+ \right|
+ \lesssim
+ \frac{\lambda^{-11/2}}{\log(e+\lambda)}.
+\end{equation}
+
+Choose a real radial
+\(\psi\in C_c^\infty(\R^3)\) satisfying
+\[
+ \psi(\xi)=1\quad(|\xi|\leq1),
+ \qquad
+ \psi(\xi)=0\quad(|\xi|\geq2),
+\]
+and set
+\[
+ B_N:=\psi(D/N).
+\]
+The pressure-free identity from the preceding round is
+\begin{equation}
+\label{eq:comm-identity}
+ \frac d{dt}\ip{u}{B_Na}
+ =
+ \ip{[(u\cdot\nabla),B_N]u}{a}.
+\end{equation}
+For each fixed \(N\), its terminal pairing vanishes.  Define
+\begin{equation}
+\label{eq:KN}
+ K_N(\tau)
+ :=
+ \ip{u(T-\tau)}{B_Na(T-\tau)}.
+\end{equation}
+Then
+\begin{equation}
+\label{eq:KN-limits}
+ \lim_{\tau\downarrow0}K_N(\tau)=0,
+ \qquad
+ \lim_{N\to\infty}K_N(\tau)=c_0
+ \quad(\tau>0).
+\end{equation}
+
+The Clay problem remains unsolved.
+
+\section{The moving cross-pairing frequency}
+
+\begin{definition}
+\label{def:kappa}
+For almost every \(\tau>0\), define
+\begin{equation}
+\label{eq:kappa}
+ \boxed{
+ \kappa(\tau)
+ :=
+ \min
+ \left\{
+ 2^k:K_{2^k}(\tau)\geq c_0/2
+ \right\}.
+ }
+\end{equation}
+\end{definition}
+
+The two limits in \eqref{eq:KN-limits} show that this dyadic minimum is
+well-defined.
+
+Write
+\begin{equation}
+\label{eq:B1B2H}
+ B_1(\tau):=\int_0^\tau M(s)\,ds,
+ \quad
+ B_2(\tau):=\int_0^\tau M(s)^2\,ds,
+ \quad
+ H(\tau):=\int_0^\tau M(s)Y(s)\,ds.
+\end{equation}
+All fields under these integrals are evaluated at \(T-s\).
+
+\begin{lemma}[Coarse pressure-free speed limit]
+\label{lem:coarse-speed}
+For every \(N>0\),
+\begin{equation}
+\label{eq:coarse-speed}
+ \left|
+ \ip{[(u\cdot\nabla),B_N]u}{a}
+ \right|
+ \lesssim
+ UA\,N^2M.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Put \(T_u:=u\cdot\nabla\).  Lorentz H\"older and band-limited
+Bernstein give
+\[
+ \begin{aligned}
+ |\ip{T_uB_Nu}{a}|
+ &\leq
+ \norm{u}_{L^{3,\infty}}
+ \norm{\nabla B_Nu}_{L^{6,2}}
+ \norm{a}_2\\
+ &\lesssim
+ M N^2UA.
+ \end{aligned}
+\]
+For the second commutator term, self-adjointness and
+\(\nabla\cdot u=0\) give
+\[
+ \begin{aligned}
+ |\ip{B_NT_uu}{a}|
+ &=
+ |\ip{T_uu}{B_Na}|\\
+ &=
+ \left|
+ \int u_i u_j\partial_jB_Na_i
+ \right|\\
+ &\lesssim
+ \norm{u}_{L^{3,\infty}}\norm{u}_2
+ \norm{\nabla B_Na}_{L^{6,2}}\\
+ &\lesssim
+ M N^2UA.
+ \end{aligned}
+\]
+The viscous terms and both pressures have already cancelled in
+\eqref{eq:comm-identity}.
+\end{proof}
+
+\begin{theorem}[Cross-frequency motion]
+\label{thm:cross-motion}
+For almost every sufficiently small \(\tau\),
+\begin{equation}
+\label{eq:kappa-B1}
+ \boxed{
+ \kappa(\tau)^2B_1(\tau)\gtrsim1,
+ }
+\end{equation}
+\begin{equation}
+\label{eq:XY-kappa}
+ \boxed{
+ X(\tau)Y(\tau)\gtrsim\kappa(\tau)^2,
+ }
+\end{equation}
+and hence
+\begin{equation}
+\label{eq:XY-B1}
+ \boxed{
+ X(\tau)Y(\tau)\gtrsim B_1(\tau)^{-1}.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Integrating \eqref{eq:comm-identity} to the terminal boundary and using
+\eqref{eq:KN-limits} gives
+\[
+ K_N(\tau)
+ =
+ -\int_{T-\tau}^T
+ \ip{[(u\cdot\nabla),B_N]u}{a}\,dt.
+\]
+Lemma~\ref{lem:coarse-speed} therefore yields
+\[
+ |K_N(\tau)|
+ \lesssim
+ UA\,N^2B_1(\tau).
+\]
+At \(N=\kappa(\tau)\), the left side is at least \(c_0/2\).
+This proves \eqref{eq:kappa-B1}.
+
+Minimality in Definition~\ref{def:kappa} gives
+\[
+ K_{\kappa(\tau)/2}(\tau)<c_0/2.
+\]
+Subtract this from the full pairing \eqref{eq:pairing}:
+\begin{equation}
+\label{eq:high-cross}
+ \frac{c_0}{2}
+ <
+ \ip{u(T-\tau)}
+ {(I-B_{\kappa(\tau)/2})a(T-\tau)}.
+\end{equation}
+The multiplier in \eqref{eq:high-cross} vanishes on a ball of radius
+comparable to \(\kappa\).  Plancherel gives
+\[
+ \left|
+ \ip{u}{(I-B_{\kappa/2})a}
+ \right|
+ \lesssim
+ \kappa^{-2}\norm{\nabla u}_2\norm{\nabla a}_2
+ =
+ \kappa^{-2}XY.
+\]
+This proves \eqref{eq:XY-kappa}; combining it with
+\eqref{eq:kappa-B1} proves \eqref{eq:XY-B1}.
+\end{proof}
+
+\section{The logarithmic q4 consequence}
+
+Set
+\[
+ \ell(\tau):=\log(e+\tau_0/\tau).
+\]
+
+\begin{lemma}[Integrated q4 clock]
+\label{lem:clock-integrals}
+For all sufficiently small \(\tau\),
+\begin{equation}
+\label{eq:B1B2-clock}
+ \boxed{
+ B_1(\tau)
+ \lesssim
+ \tau^{9/11}\ell(\tau)^{-2/11},
+ \qquad
+ B_2(\tau)
+ \lesssim
+ \tau^{7/11}\ell(\tau)^{-4/11}.
+ }
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The decreasing rearrangement consequence of \eqref{eq:clock} is
+\[
+ M^*(s)
+ \lesssim
+ 1+s^{-2/11}\ell(s)^{-2/11}.
+\]
+Hardy--Littlewood and integration over \(0<s<\tau\) give the first
+estimate in \eqref{eq:B1B2-clock}.  Squaring the rearrangement gives the
+second.  A dyadic decomposition of \((0,\tau)\) controls the slowly
+varying logarithm.
+\end{proof}
+
+\begin{corollary}[Pointwise joint-enstrophy floor]
+\label{cor:pointwise-floor}
+For almost every sufficiently small \(\tau\),
+\begin{equation}
+\label{eq:pointwise-floor}
+ \boxed{
+ X(\tau)Y(\tau)
+ \gtrsim
+ \tau^{-9/11}\ell(\tau)^{2/11}.
+ }
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Combine Theorem~\ref{thm:cross-motion} and
+Lemma~\ref{lem:clock-integrals}.
+\end{proof}
+
+Define the two terminal dissipation tails
+\begin{equation}
+\label{eq:PD}
+ P(\tau):=\int_0^\tau X(s)^2\,ds,
+ \qquad
+ D(\tau):=\int_0^\tau Y(s)^2\,ds.
+\end{equation}
+
+\begin{corollary}[Joint terminal tail floor]
+\label{cor:tail-floor}
+For all sufficiently small \(\tau\),
+\begin{equation}
+\label{eq:PD-floor}
+ \boxed{
+ P(\tau)D(\tau)
+ \gtrsim
+ \tau^{4/11}\ell(\tau)^{4/11}.
+ }
+\end{equation}
+Consequently each of \(P,D\) has a lower floor of the displayed order,
+with a constant depending on the finite total tail of the other field.
+\end{corollary}
+
+\begin{proof}
+Integrating \eqref{eq:pointwise-floor} over
+\([\tau/2,\tau]\) gives
+\[
+ \int_0^\tau XY
+ \gtrsim
+ \tau^{2/11}\ell(\tau)^{2/11}.
+\]
+Cauchy--Schwarz gives
+\[
+ \int_0^\tau XY
+ \leq
+ P(\tau)^{1/2}D(\tau)^{1/2}.
+\]
+Squaring proves \eqref{eq:PD-floor}.  The individual statements follow
+from the finite upper bounds \(P(\tau_0),D(\tau_0)<\infty\).
+\end{proof}
+
+\begin{corollary}[Inverse-clock condition]
+\label{cor:inverse-clock}
+Every entrance satisfies
+\begin{equation}
+\label{eq:inverse-clock}
+ \boxed{
+ \int_0^{\tau_0}\frac{d\tau}{B_1(\tau)}<\infty.
+ }
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{thm:cross-motion} and Cauchy--Schwarz imply
+\[
+ \int_0^{\tau_0}\frac{d\tau}{B_1(\tau)}
+ \lesssim
+ \int_0^{\tau_0}XY\,d\tau
+ \leq
+ P(\tau_0)^{1/2}D(\tau_0)^{1/2}.
+\]
+\end{proof}
+
+\section{Clock branch versus cross-frequency corridor}
+
+\begin{lemma}[Refined pressure-free speed limit]
+\label{lem:refined-speed}
+For every \(N>0\),
+\begin{equation}
+\label{eq:refined-speed}
+ \boxed{
+ \left|
+ \ip{[(u\cdot\nabla),B_N]u}{a}
+ \right|
+ \lesssim
+ A N^{3/2}M^2
+ +
+ U NMY.
+ }
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Skew-adjointness of \(T_u\) gives
+\[
+ \begin{aligned}
+ |\ip{T_uB_Nu}{a}|
+ &=
+ |\ip{B_Nu}{T_ua}|\\
+ &\lesssim
+ \norm{B_Nu}_{L^{6,2}}
+ \norm{u}_{L^{3,\infty}}
+ \norm{\nabla a}_2\\
+ &\lesssim
+ UNMY.
+ \end{aligned}
+\]
+For the other term,
+\[
+ |\ip{B_NT_uu}{a}|
+ =
+ \left|
+ \int u_i u_j\partial_jB_Na_i
+ \right|.
+\]
+O'Neil H\"older gives
+\[
+ \norm{u\otimes u}_{L^{3/2,\infty}}\lesssim M^2.
+\]
+The band-limited estimate
+\[
+ \norm{\nabla B_Na}_{L^{3,1}}
+ \lesssim
+ N^{3/2}A
+\]
+follows by real interpolation between its \(L^2\) and \(L^\infty\)
+bounds.  These estimates prove \eqref{eq:refined-speed}.
+\end{proof}
+
+\begin{theorem}[Clock--corridor dichotomy]
+\label{thm:corridor}
+At almost every sufficiently small \(\tau\), at least one of the
+following alternatives holds:
+\begin{align}
+\label{eq:clock-branch}
+ \kappa(\tau)
+ &\gtrsim
+ B_2(\tau)^{-2/3},
+ &
+ X(\tau)Y(\tau)
+ &\gtrsim
+ B_2(\tau)^{-4/3};
+ \tag{C}\\
+\label{eq:corridor-branch}
+ \kappa(\tau)H(\tau)
+ &\gtrsim1,
+ &
+ H(\tau)^2X(\tau)Y(\tau)
+ &\gtrsim1.
+ \tag{R}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+Integrate Lemma~\ref{lem:refined-speed} to the terminal boundary and
+put \(N=\kappa(\tau)\):
+\[
+ \frac{c_0}{2}
+ \lesssim
+ A\kappa(\tau)^{3/2}B_2(\tau)
+ +
+ U\kappa(\tau)H(\tau).
+\]
+At least one term on the right is bounded below by a fixed positive
+constant.  If the first pays, then
+\(\kappa\gtrsim B_2^{-2/3}\).  If the second pays, then
+\(\kappa H\gtrsim1\).  In both cases
+Theorem~\ref{thm:cross-motion} supplies the corresponding lower bound
+for \(XY\).
+\end{proof}
+
+\subsection{Exact q4 record frequencies}
+
+On a retained q4 tail beginning at \(s_j\), the input clock gives
+\begin{equation}
+\label{eq:record-tails}
+ \int_{s_j}^T M\,dt
+ \lesssim
+ \frac{m_j^{-9/2}}j,
+ \qquad
+ \int_{s_j}^T M^2\,dt
+ \lesssim
+ \frac{m_j^{-7/2}}j.
+\end{equation}
+Put \(\kappa_j:=\kappa(T-s_j)\).  Theorem~\ref{thm:cross-motion} gives
+\begin{equation}
+\label{eq:mu}
+ \boxed{
+ \kappa_j
+ \gtrsim
+ \mu_j:=m_j^{9/4}j^{1/2}.
+ }
+\end{equation}
+The clock branch of Theorem~\ref{thm:corridor} is
+\begin{equation}
+\label{eq:Lambda}
+ \boxed{
+ \kappa_j
+ \gtrsim
+ \Lambda_j:=m_j^{7/3}j^{2/3}.
+ }
+\end{equation}
+Otherwise,
+\begin{equation}
+\label{eq:record-corridor}
+ \boxed{
+ \kappa_j
+ \int_{s_j}^T M(t)Y(t)\,dt
+ \gtrsim1.
+ }
+\end{equation}
+The pre-existing frequency gap is now an exact corridor:
+\begin{equation}
+\label{eq:frequency-gap}
+ \frac{\Lambda_j}{\mu_j}
+ \asymp
+ m_j^{1/12}j^{1/6}
+ \longrightarrow\infty.
+\end{equation}
+Here \(\mu_j\) is the minimum frequency at which the cross pairing can
+enter; \(\Lambda_j\) is where direct high--high nonlinear capacity can
+be order one.
+
+\section{Exact scalar endpoint saturation}
+
+Work on \(0<\tau<e^{-e}\), set
+\[
+ L(\tau):=\log(e/\tau),
+\]
+and define
+\begin{equation}
+\label{eq:scalar-functions}
+ M_0(\tau)
+ :=
+ \tau^{-2/11}L(\tau)^{-2/11},
+ \qquad
+ X_0(\tau)=Y_0(\tau)
+ :=
+ \tau^{-9/22}L(\tau)^{1/11}.
+\end{equation}
+Then \(X_0,Y_0\in L^2\), and direct integration gives
+\begin{align}
+\label{eq:scalar-integrals}
+ B_{1,0}(\tau)
+ &\asymp
+ \tau^{9/11}L(\tau)^{-2/11},
+ &
+ B_{2,0}(\tau)
+ &\asymp
+ \tau^{7/11}L(\tau)^{-4/11},
+ \\
+ H_0(\tau)
+ &\asymp
+ \tau^{9/22}L(\tau)^{-1/11},
+ &
+ P_0(\tau)=D_0(\tau)
+ &\asymp
+ \tau^{2/11}L(\tau)^{2/11}.
+\end{align}
+
+Define
+\begin{equation}
+\label{eq:scalar-kappa}
+ \kappa_0(\tau)
+ :=
+ B_{1,0}(\tau)^{-1/2}
+ \asymp
+ \tau^{-9/22}L(\tau)^{1/11}.
+\end{equation}
+The coarse laws and the corridor are saturated:
+\begin{equation}
+\label{eq:scalar-saturation}
+ X_0Y_0
+ \asymp
+ \kappa_0^2
+ \asymp
+ B_{1,0}^{-1},
+ \qquad
+ H_0^2X_0Y_0\asymp1,
+\end{equation}
+\[
+ P_0D_0
+ \asymp
+ \tau^{4/11}L(\tau)^{4/11}.
+\]
+
+The direct clock frequency is
+\[
+ \Lambda_0(\tau)
+ :=
+ B_{2,0}(\tau)^{-2/3}
+ \asymp
+ \tau^{-14/33}L(\tau)^{8/33}.
+\]
+It strictly exceeds the corridor:
+\begin{equation}
+\label{eq:below-clock}
+ \frac{\kappa_0(\tau)}{\Lambda_0(\tau)}
+ \asymp
+ \tau^{1/66}L(\tau)^{-5/33}
+ \longrightarrow0.
+\end{equation}
+Indeed,
+\begin{equation}
+\label{eq:direct-vanishes}
+ \kappa_0(\tau)^{3/2}B_{2,0}(\tau)
+ \asymp
+ \tau^{1/44}L(\tau)^{-5/22}
+ \longrightarrow0,
+\end{equation}
+whereas \(\kappa_0H_0\asymp1\).
+
+Finally,
+\begin{equation}
+\label{eq:weighted-divergence}
+ M_0Y_0^2=\tau^{-1},
+ \qquad
+ \int_0M_0Y_0^2\,d\tau=\infty.
+\end{equation}
+
+\subsection{A synthetic moving front}
+
+Choose a smooth nondecreasing
+\(\Phi:[0,\infty)\to[0,1]\) with
+\[
+ \Phi(z)=0\quad(z\leq1/2),
+ \qquad
+ \Phi(z)=1\quad(z\geq1),
+\]
+and define
+\begin{equation}
+\label{eq:synthetic-front}
+ K_N^0(\tau)
+ :=
+ c_0\Phi\left(\frac{N}{\kappa_0(\tau)}\right).
+\end{equation}
+Then
+\[
+ \lim_{\tau\downarrow0}K_N^0(\tau)=0,
+ \qquad
+ \lim_{N\to\infty}K_N^0(\tau)=c_0,
+\]
+and its first half-pairing frequency is comparable to \(\kappa_0\).
+The derivative is supported where \(N\asymp\kappa_0\), and there
+\begin{equation}
+\label{eq:synthetic-speed}
+ |\partial_\tau K_N^0|
+ \lesssim
+ \tau^{-1}
+ \asymp
+ N^2M_0
+ \asymp
+ NM_0Y_0.
+\end{equation}
+Thus this front saturates both the coarse speed limit and the corridor
+term, while the direct clock term vanishes by
+\eqref{eq:direct-vanishes}.
+
+\begin{remark}
+This is a scalar temporal ledger.  It has no spatial fields, pressure,
+cross measure, or Navier--Stokes dynamics.  It is not a counterexample
+to R3C, and \(K_N^0\) is not asserted to be a PDE pairing.  It proves
+that the clock, the two energy budgets, all norm-level transition
+inequalities derived here, and divergent weighted adjoint dissipation
+are mutually consistent at the exact endpoint.
+\end{remark}
+
+\section{What changed in this round}
+
+\subsection*{Formal findings, subject to external review}
+
+\begin{enumerate}
+\item The terminal cross defect defines a dyadic transition frequency
+\(\kappa(\tau)\to\infty\).
+\item The exact pressure-free identity gives
+\(\kappa^2B_1\gtrsim1\), while its unresolved high-frequency pairing
+gives \(XY\gtrsim\kappa^2\).
+\item The q4 clock therefore forces the pointwise joint-enstrophy law
+\eqref{eq:pointwise-floor}, the terminal tail floor
+\eqref{eq:PD-floor}, and the inverse-clock condition
+\eqref{eq:inverse-clock}.
+\item A sharper Lorentz estimate gives the clock--corridor dichotomy
+\eqref{eq:clock-branch}--\eqref{eq:corridor-branch}.
+\item The two record frequencies are exactly
+\(\mu_j=m_j^{9/4}j^{1/2}\) and
+\(\Lambda_j=m_j^{7/3}j^{2/3}\).
+\item The scalar ledger \eqref{eq:scalar-functions}, together with the
+synthetic front \eqref{eq:synthetic-front}, saturates the corridor, both
+speed bounds, and all energy exponents while retaining
+\eqref{eq:weighted-divergence}.
+\end{enumerate}
+
+\subsection*{Closed shortcut}
+
+The pressure-free cross identity, after taking only the Lorentz norm
+bounds and logarithmic clock used here, cannot force the preceding
+round's summable amplitude anti-correlation.  Those norm consequences
+have the opposite direction: persistent joint enstrophy concentration.
+No rearrangement of the proved scalar inequalities can exclude the
+exact saturation ledger.  Possible phase or sign information in the
+identity has not been discarded as a future route.
+
+\subsection*{Open obligations}
+
+\begin{enumerate}
+\item Exclude persistent sub-clock corridor transfer using
+same-trajectory phase, sign, genealogy, or projected-pressure structure.
+\item Alternatively force the clock branch on enough record blocks and
+turn its pointwise \(XY\) floor into a non-reusable residence or
+dissipation charge.
+\item Prove that successive order-one cross-pairing transitions cannot
+recycle one finite primal--adjoint energy reservoir.
+\item A finite Lorentz--Zygmund adjoint cost, commutator
+equiintegrability, removable total current, strong left \(L^2\)
+continuity, or energy equality still closes q4.
+\item Treat slower clocks, divergent normalised energy, and the other
+Clay alternatives separately.
+\end{enumerate}
+
+\begin{conjecture}[No persistent sub-clock cross corridor]
+Under the exact q4 hypotheses, one cannot have
+\[
+ \kappa_j=o(\Lambda_j)
+\]
+through infinitely many first-record blocks while
+\[
+ \kappa_j
+ \int_{s_j}^TM(t)Y(t)\,dt
+ \gtrsim1.
+\]
+\end{conjecture}
+
+The conjecture is not proved.  Even if it is proved, a residence or
+non-reuse theorem may still be needed to exclude the clock branch.  No
+Clay alternative is proved.
+
+\end{document}
