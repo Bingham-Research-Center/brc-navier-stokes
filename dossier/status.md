@@ -180,21 +180,23 @@ fixed-sign nonlinear clock-band events occur at order-one capacity, or the
 defect escapes to super-clock frequency with unbounded enstrophy.
 
 The [nonlinear-entrance theorem](experiments/type-ii-nonlinear-defect-entrance.md)
-reverses the aligned full defect into a forward field \(v\) with weak-zero
-vector trace, positive initial energy measure, strong-trace drift \(c\), and
-q4 amplitude. The
+reverses the defect into a weak-zero field \(v\), strong-trace drift \(c\),
+and positive initial energy measure. The
 [boundary heat-impulse theorem](experiments/type-ii-boundary-heat-impulse.md)
-now removes the linear boundary datum exactly:
+removes the linear datum and forces half- and quarter-order \(MY\) impulses
+and failure of every finite temporal \(L^{2,q}\) secondary index. The
+[diagonal Gaussian-flux theorem](experiments/type-ii-diagonal-heat-flux-recycling.md)
+then makes its pressure-free work current-time:
 \[
-v(\tau)=-\int_0^\tau e^{\nu(\tau-s)\Delta}
-\mathbb P(((v+c)\cdot\nabla)v)(s)\,ds.
+\frac12\|v(\tau)\|_2^2
+=\int_0^\tau-\langle\mathbb P((U\cdot\nabla)v)(s),
+e^{2\nu(\tau-s)\Delta}v(s)\rangle\,ds.
 \]
-Its energy is an exact pressure-free heat-deviation work retaining endpoint
-transport cancellation. It forces a non-vanishing half-order \(MY\) impulse,
-failure of every finite temporal \(L^{2,q}\) secondary index, and a q4
-quarter-order amplitude impulse. A power--log ledger satisfies all scalar
-constraints. The live gate is sign/orthogonality or non-reuse of that work,
-not mild uniqueness from the small terminal \(M^2\) tail alone.
+Nested detectors recycle exactly, while disjoint heat-age bands have an
+\(\ell^1\) budget \(\int MY^2\), which q4 forces to diverge. A coherent
+scalar kernel meets every resulting constraint and reuses arbitrarily much
+early work. The live gate is an actual-quadratic triad restriction or finite
+same-trajectory charge, not abstract Gaussian orthogonality.
 
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.

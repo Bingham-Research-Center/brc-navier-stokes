@@ -4553,6 +4553,41 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-DIAGONAL-HEAT-FLUX-RECYCLING-001",
+      "title": "The q4 boundary work is a diagonal Gaussian flux with an exact recycling law",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001",
+        "CLM-PARTIAL-001"
+      ],
+      "hypothesis": "The exact heat-deviation work may become non-reusable after rewriting it as a current-time Gaussian flux and separating disjoint heat-age bands.",
+      "invariants": [
+        "The moving heat field exp(nu times terminal-minus-current time times Delta)v evolves only by the filtered projected nonlinearity because viscosity cancels exactly",
+        "Half of the entrance energy is the exact diagonal Gaussian flux, defined as minus the pairing of P((U dot grad)v) with exp(2 nu r Delta)v",
+        "The flux vanishes at zero heat age by instantaneous transport cancellation and is an accumulated signed Gaussian heat band",
+        "Two nested terminal detectors obey an exact recycling identity whose terms are the shifted shared-history band, new-block flux, and viscous loss",
+        "Pairwise disjoint positive Gaussian heat-age bands have an l1 pairing budget bounded by M times gradient-v squared at each time",
+        "The total absolute recycling variation over adjacent terminal blocks is bounded by the integral of M times gradient-v squared",
+        "The natural orthogonality budget is unusable for closure because q4 already forces its integral to diverge on every initial interval",
+        "A positive coherent scalar kernel satisfies the endpoint, diagonal energy, recycling, heat-magnitude, band-variation, and power-log constraints while reusing an arbitrarily large fraction of shared early history",
+        "Only the constant-energy core of that scalar kernel is shown to have an exact signed Laguerre heat-spectrum representation",
+        "The scalar kernel is not a velocity field, quadratic Navier-Stokes triad, pressure coupling, or one-trajectory construction",
+        "No exclusion of coherent actual-quadratic reuse, q4 closure, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Differentiate the moving heat field, integrate its energy from the weak-zero boundary, compare two terminal detectors, use positive Gaussian multipliers and H-minus-one to H-one duality for disjoint-band orthogonality, and stress-test the resulting constraints against a coherent power-log kernel with a signed Laguerre representation of its constant-energy core.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the viscosity cancellation, diagonal flux identity, continuous heat-band formula, exact recycling law, Gaussian l1 band theorem, divergent-budget obstruction, coherent scalar reuse kernel, core Laguerre transform, conjecture, and open obligations. External review is pending; no executable PDE artefact is claimed.",
+      "success_criterion": "Determine whether Gaussian heat-band orthogonality alone prevents nested q4 work reuse, and if not isolate the precise actual-quadratic or finite-charge theorem still missing.",
+      "failure_interpretation": "The moving-heat derivative or boundary limit is wrong, the diagonal or recycling sign is incorrect, Gaussian band symbols fail the disjoint l1 estimate, the budget is not the claimed M-weighted dissipation, the scalar kernel misses an exact constraint, the Laguerre formula is overstated beyond its core, or the epistemic scope is overstated.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-diagonal-heat-flux-recycling.md",
+        "dossier/rounds/2026-07-25-type-ii-diagonal-heat-flux-recycling.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

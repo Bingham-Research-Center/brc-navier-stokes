@@ -678,3 +678,13 @@ while the unweighted dissipation remains finite.
 The conjecture is not proved.  The scalar ledger does not test its sign,
 phase, or same-trajectory non-reuse content.  No Clay alternative is
 proved.
+
+## Downstream disposition
+
+The subsequent
+[diagonal Gaussian-flux reduction](type-ii-diagonal-heat-flux-recycling.md)
+rewrites this future-dependent work as a current-time moving-heat flux,
+proves its exact nested recycling law and disjoint-band \(\ell^1\)
+estimate, and shows why that estimate still does not close q4.  The
+theorems above remain inputs; their former non-reuse conjecture is now
+replaced by the sharper actual-quadratic Gaussian-reuse gate there.
