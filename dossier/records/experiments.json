@@ -4479,6 +4479,43 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-NONLINEAR-DEFECT-ENTRANCE-001",
+      "title": "The full q4 defect is a nonlinear entrance from frequency infinity",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001",
+        "CLM-PARTIAL-001"
+      ],
+      "hypothesis": "After full-defect alignment, terminal reversal may convert the missing Oseen component into a genuine forward nonlinear field and expose a sharper boundary-energy obstruction than the positive spectral clock alone.",
+      "invariants": [
+        "Writing u=a+b and reversing time with v=-a and c=-b gives the exact perturbed Navier-Stokes equation v_tau-nu Delta v+P(((v+c) dot grad)v)=0",
+        "The nonlinear field v has weak vector trace zero, the drift c has strong L2 trace minus u star, and the exact boundary energy is d",
+        "Along the exact q4 records the initial energy measures of v converge to the positive kinetic defect theta supported on the Hausdorff-one-null terminal singular slice",
+        "The smooth positive-time local energy equality passes to an exact measure-valued initial trace with datum theta over two",
+        "Strong convergence of the remainder on shrinking q4 layers forces v to retain fixed layer energy and weak-L3 amplitude at least a constant times m",
+        "The original-time relative density a dot b has zero terminal measure because the positive primal-adjoint and adjoint-energy defects cancel",
+        "The relative-current law has source minus two nu times gradient-a squared and total mass equal to the future adjoint dissipation tail",
+        "Subtracting the adjoint low-pass energy identity from the cross identity gives an exact pressure-free spectral relative balance",
+        "The relative commutator is bounded by weak-L3 u times gradient-b times gradient-a, but current hypotheses provide neither a sign nor a clock-uniform integrable majorant",
+        "Strong L2 convergence of the remainder gives a compact terminal path and uniformly vanishing high-frequency L2 tails but no clock-relative rate after Bernstein amplification",
+        "The exact q4 Zeno ledger has order-one nonlinear clock capacity on every block, finite unweighted clock action, and infinite amplitude-weighted action",
+        "A Hilbert-frequency ledger realises every scalar boundary-energy and relative-overlap budget with a strongly convergent remainder, but is not a spatial PDE construction",
+        "No zero-trace entrance exclusion, q4 closure, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Reverse the canonically aligned full-defect Oseen component, derive its perturbed forward Navier-Stokes and local energy laws, identify the positive initial energy measure, transfer the shrinking-layer amplitude from the primal field, subtract cross and adjoint-energy balances locally and spectrally, estimate the surviving commutator, and stress-test every scalar conclusion against an exact Zeno and Hilbert-frequency ledger.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the reversal signs and pressure, measure-valued local energy trace, amplitude inheritance, exact relative current, exact spectral relative balance, both commutator estimates, compactness limitation, Zeno arithmetic, Hilbert scalar survivor, conjecture, and open obligations. External review is pending; no executable PDE artefact is claimed.",
+      "success_criterion": "Reformulate the full-defect q4 gate as an exact same-trajectory nonlinear entrance problem and determine whether relative energy or strong drift trace already supplies a coercive contradiction.",
+      "failure_interpretation": "The reversed equation or pressure has the wrong sign, the local energy flux does not pass to the measure trace, the nonlinear component does not inherit the q4 layer, the relative current or spectral commutator identity is incorrect, the compactness limitation is overstated, the Zeno ledger fails an exact exponent, or the epistemic scope is overstated.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-nonlinear-defect-entrance.md",
+        "dossier/rounds/2026-07-25-type-ii-nonlinear-defect-entrance.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

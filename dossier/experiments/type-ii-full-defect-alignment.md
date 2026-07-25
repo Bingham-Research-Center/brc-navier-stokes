@@ -1041,3 +1041,10 @@ while the common positive defect measure is supported on an
 The conjecture is not proved.  The result above closes only the sub-clock
 corridor inside the conditional energy-efficient exact q4 branch.  No
 Clay alternative is proved.
+
+## Downstream disposition
+
+The [nonlinear-defect entrance theorem](type-ii-nonlinear-defect-entrance.md)
+keeps every result above as input and replaces this live frontier by an
+exact forward perturbed-Navier--Stokes entrance problem.  Use that note,
+not this section, for the current ROUTE-R3C gate.

@@ -1,0 +1,831 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Pp}{\mathbb P}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\ip}[2]{\left\langle #1,#2\right\rangle}
+\newcommand{\weakto}{\rightharpoonup}
+\newcommand{\weakstarto}{\overset{*}{\rightharpoonup}}
+\newcommand{\diver}{\mathop{\rm div}}
+\newcommand{\supp}{\mathop{\rm supp}}
+\setlength{\emergencystretch}{2em}
+
+\title{The Full q4 Defect as a Nonlinear Entrance\\
+from Frequency Infinity}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round sharpens the conditional energy-efficient exact q4 branch.
+The preceding full-defect construction splits the velocity as \(u=a+b\),
+where \(a\) is a projected backward Oseen entrance carrying the entire
+downward kinetic-energy jump and \(b\) converges strongly to the terminal
+trace.  On reversing terminal time and changing both signs,
+\[
+ v(\tau):=-a(T-\tau),\qquad c(\tau):=-b(T-\tau),
+\]
+the missing component satisfies the forward nonlinear equation
+\[
+ \partial_\tau v-\nu\Delta v+
+ \Pp(((v+c)\cdot\nabla)v)=0.
+\]
+It has weak vector trace zero, positive limiting energy \(d\), and initial
+energy measure equal to the positive terminal defect \(\vartheta\).
+Moreover, it retains fixed energy on every selected q4 amplitude layer and
+\(\norm{v(\tau_j)}_{L^{3,\infty}}\gtrsim m_j\).
+
+Exact local and spectral relative-energy identities are derived.  They do
+not close the branch: the two positive defect measures cancel in the
+relative density, and the surviving commutator has no sign or
+clock-integrable majorant supplied by the current hypotheses.  An exact
+Zeno ledger realises order-one nonlinear clock capacity with finite
+unweighted but infinite amplitude-weighted action.  Thus the next gate is
+a genuinely new zero-trace nonlinear-entrance, boundary-energy,
+inverse-cascade, or quantitative compactness theorem.  Every result is
+conditional on the repository's q4 chain and awaits external review.  No
+Clay alternative is proved.
+\end{abstract}
+
+\section{Epistemic status and inherited hypotheses}
+
+Let \(u\) be a smooth finite-energy solution of
+\begin{equation}
+\label{eq:nse}
+ \partial_tu-\nu\Delta u+(u\cdot\nabla)u+\nabla p=0,
+ \qquad \diver u=0,
+\end{equation}
+on \(\R^3\times(0,T)\), with a Leray--Hopf continuation through the
+putative first singular time \(T\).  This report works only inside the
+conditional energy-efficient exact q4 cell established in preceding
+rounds.  In particular, write
+\begin{equation}
+\label{eq:defect}
+ E_-:=\lim_{t\uparrow T}\norm{u(t)}_2^2,\qquad
+ u_*:=u(T),\qquad
+ d:=E_--\norm{u_*}_2^2>0.
+\end{equation}
+
+The full-defect projected-Oseen theorem supplies a solenoidal field
+\[
+ a\in L^\infty(0,T;L^2_\sigma)
+ \cap L^2(0,T;\dot H^1_\sigma)
+\]
+satisfying, in pressure form,
+\begin{equation}
+\label{eq:adjoint}
+ \partial_ta+\nu\Delta a+(u\cdot\nabla)a+\nabla q=0,
+ \qquad \diver a=0,
+\end{equation}
+and
+\begin{align}
+\label{eq:pair}
+ \ip{u(t)}{a(t)}&=d,\\
+\label{eq:aweak}
+ a(t)&\weakto0\quad\hbox{in }L^2\quad(t\uparrow T),\\
+\label{eq:aenergy}
+ \norm{a(t)}_2^2+
+ 2\nu\int_t^T\norm{\nabla a(s)}_2^2\,ds&=d.
+\end{align}
+If
+\begin{equation}
+\label{eq:bdef}
+ b:=u-a,
+\end{equation}
+then
+\begin{equation}
+\label{eq:bstrong}
+ b(t)\longrightarrow u_*
+ \quad\hbox{strongly in }L^2
+ \quad(t\uparrow T).
+\end{equation}
+
+There is an exact first-record sequence \(t_j\uparrow T\), with
+\(\tau_j:=T-t_j\), amplitudes \(m_j\to\infty\), and layers
+\begin{equation}
+\label{eq:layers}
+ A_j:=\{\alpha_j<|u(t_j)|\leq2\alpha_j\}
+\end{equation}
+such that, for fixed \(e_0>0\),
+\begin{equation}
+\label{eq:layer-data}
+ \int_{A_j}|u(t_j)|^2\,dx\geq e_0,\qquad
+ R_j:=|A_j|^{1/3}\asymp m_j^{-2}.
+\end{equation}
+Along this sequence,
+\begin{equation}
+\label{eq:measure-input}
+ |a(t_j)|^2\,dx\weakstarto\vartheta,
+\end{equation}
+where
+\begin{equation}
+\label{eq:theta}
+ \vartheta\geq0,\qquad
+ \vartheta(\R^3)=d,\qquad
+ \supp\vartheta\subset\sigma,\qquad
+ \mathcal H^1(\sigma)=0.
+\end{equation}
+These are hypotheses of this round, not conclusions about arbitrary
+Clay-admissible data.
+
+\section{Terminal reversal produces a nonlinear entrance}
+
+\begin{theorem}[Forward perturbed Navier--Stokes entrance]
+\label{thm:reverse}
+For \(\tau=T-t\), define
+\begin{equation}
+\label{eq:vc}
+ v(\tau):=-a(T-\tau),\qquad
+ c(\tau):=-b(T-\tau).
+\end{equation}
+Then
+\begin{equation}
+\label{eq:v-projected}
+ \partial_\tau v-\nu\Delta v+
+ \Pp(((v+c)\cdot\nabla)v)=0,
+ \qquad \diver v=\diver c=0.
+\end{equation}
+Equivalently,
+\begin{equation}
+\label{eq:v-pressure}
+ \partial_\tau v-\nu\Delta v+
+ ((v+c)\cdot\nabla)v+\nabla Q=0,
+\end{equation}
+where \(Q(\tau):=q(T-\tau)\) and
+\begin{equation}
+\label{eq:pressure}
+ -\Delta Q=
+ \partial_i\partial_\ell\bigl((v_\ell+c_\ell)v_i\bigr).
+\end{equation}
+At the initial boundary,
+\begin{align}
+\label{eq:vweak}
+ v(\tau)&\weakto0,\\
+\label{eq:cstrong}
+ c(\tau)&\longrightarrow-u_*
+ \quad\hbox{strongly in }L^2,\\
+\label{eq:venergy}
+ \norm{v(\tau)}_2^2+
+ 2\nu\int_0^\tau\norm{\nabla v(s)}_2^2\,ds&=d.
+\end{align}
+\end{theorem}
+
+\begin{proof}
+Since \(u=a+b\), equation \eqref{eq:adjoint} reads
+\[
+ \partial_ta+\nu\Delta a+
+ ((a+b)\cdot\nabla)a+\nabla q=0.
+\]
+The definitions \eqref{eq:vc} imply
+\[
+ u(T-\tau)=-(v+c),\qquad
+ \partial_ta(T-\tau)=\partial_\tau v,\qquad
+ \Delta a(T-\tau)=-\Delta v.
+\]
+Substitution gives \eqref{eq:v-pressure}; Leray projection gives
+\eqref{eq:v-projected}.  Taking divergence of
+\eqref{eq:v-pressure}, using both divergence constraints, gives
+\eqref{eq:pressure}.
+
+Equations \eqref{eq:vweak} and \eqref{eq:cstrong} are
+\eqref{eq:aweak} and \eqref{eq:bstrong} after the change of variables.
+The same change of variables in \eqref{eq:aenergy} proves
+\eqref{eq:venergy}.
+\end{proof}
+
+\begin{remark}[The precise boundary failure]
+For \(0<\varepsilon<\tau\), equation \eqref{eq:venergy} gives
+\begin{equation}
+\label{eq:positive-energy}
+ \norm{v(\tau)}_2^2+
+ 2\nu\int_\varepsilon^\tau\norm{\nabla v(s)}_2^2\,ds
+ =\norm{v(\varepsilon)}_2^2.
+\end{equation}
+Thus \(v\) obeys the ordinary dissipative equality away from zero, but
+\[
+ v(\tau)\weakto0,\qquad
+ \lim_{\tau\downarrow0}\norm{v(\tau)}_2^2=d>0.
+\]
+Extending the ordinary energy inequality to \(\tau=0\) with datum zero
+would force \(v\equiv0\).  No such extension has been proved under the
+present supercritical drift regularity.
+\end{remark}
+
+\section{The positive initial energy measure}
+
+Put \(e_v:=|v|^2/2\) and
+\begin{equation}
+\label{eq:flux}
+ F_v:=(v+c)e_v+Qv-\nu\nabla e_v.
+\end{equation}
+
+\begin{proposition}[Local energy law with measure trace]
+\label{prop:local-energy}
+For every positive time,
+\begin{equation}
+\label{eq:local-energy}
+ \partial_\tau e_v+\diver F_v=-\nu|\nabla v|^2.
+\end{equation}
+Moreover, for every \(\phi\in C_c^\infty(\R^3)\) and fixed \(\tau>0\),
+\begin{equation}
+\label{eq:measure-law}
+ \frac12\int_{\R^3}\phi\,d\vartheta
+ =
+ \int_{\R^3}\phi e_v(\tau)\,dx
+ +\nu\int_0^\tau\!\!\int_{\R^3}
+       \phi|\nabla v|^2\,dx\,ds
+ -\int_0^\tau\!\!\int_{\R^3}
+       F_v\cdot\nabla\phi\,dx\,ds.
+\end{equation}
+Equivalently, as spatial distributions,
+\begin{equation}
+\label{eq:measure-distribution}
+ \frac12\vartheta
+ =
+ e_v(\tau)\,dx+
+ \nu\int_0^\tau|\nabla v(s)|^2\,ds\,dx+
+ \diver\int_0^\tau F_v(s)\,ds.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Dot \eqref{eq:v-pressure} with \(v\).  The divergence constraints give
+\[
+ v\cdot((v+c)\cdot\nabla v)
+ =\diver((v+c)e_v),\qquad
+ v\cdot\nabla Q=\diver(Qv).
+\]
+The diffusion identity
+\[
+ -\nu v\cdot\Delta v
+ =-\nu\Delta e_v+\nu|\nabla v|^2
+\]
+then proves \eqref{eq:local-energy}.
+
+The energy-class interpolation
+\[
+ L^\infty_\tau L^2_x\cap L^2_\tau L^6_x
+ \subset L^{10/3}_{\tau,x}
+\]
+holds for \(v\), \(c\), and \(v+c\).  Hence the cubic flux belongs
+locally to \(L^{10/9}_{\tau,x}\).  Equation \eqref{eq:pressure} and
+Calderon--Zygmund boundedness give \(Q\in L^{5/3}_{\tau,x}\), so
+\(Qv\in L^{10/9}_{\tau,x}\).  Finally,
+\(\nabla e_v=v_i\nabla v_i\) is locally integrable.  Thus all flux
+integrals below are absolutely continuous at the lower time boundary.
+
+Integrate \eqref{eq:local-energy} from
+\(\varepsilon=\tau_j\) to \(\tau\) against \(\phi\).  By
+\eqref{eq:measure-input},
+\[
+ |v(\tau_j)|^2\,dx=|a(t_j)|^2\,dx
+ \weakstarto\vartheta.
+\]
+Letting \(j\to\infty\) proves \eqref{eq:measure-law}.
+The definition of distributional divergence gives
+\eqref{eq:measure-distribution}.
+\end{proof}
+
+\begin{remark}
+The weak vector datum is zero, but the scalar energy datum is
+\(\vartheta/2\).  A successful boundary theorem must therefore use more
+than the vector barycentre of the escaping oscillations.
+\end{remark}
+
+\section{The entrance inherits the q4 amplitude layer}
+
+\begin{lemma}[Finite-volume weak-\(L^3\) estimate]
+\label{lem:lorentz}
+For every measurable \(E\subset\R^3\) of finite measure and every
+\(f\in L^{3,\infty}(\R^3)\),
+\begin{equation}
+\label{eq:lorentz-set}
+ \int_E|f|^2\,dx
+ \leq C|E|^{1/3}\norm{f}_{L^{3,\infty}}^2.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Let \(K:=\norm{f}_{L^{3,\infty}}\).  The distribution function obeys
+\[
+ |\{|f|>\lambda\}|\leq K^3\lambda^{-3}.
+\]
+Using the layer-cake formula on \(E\) and splitting at
+\(\lambda_0:=K|E|^{-1/3}\) gives
+\[
+ \int_E|f|^2
+ \leq
+ 2\int_0^{\lambda_0}\lambda|E|\,d\lambda+
+ 2\int_{\lambda_0}^{\infty}\lambda K^3\lambda^{-3}\,d\lambda
+ \leq C K^2|E|^{1/3}.
+\]
+\end{proof}
+
+\begin{theorem}[q4 amplitude inheritance]
+\label{thm:amplitude}
+For all sufficiently large \(j\),
+\begin{equation}
+\label{eq:carrier-energy}
+ \int_{A_j}|v(\tau_j)|^2\,dx\geq\frac{e_0}{4},
+\end{equation}
+and
+\begin{equation}
+\label{eq:weak-l3}
+ \norm{v(\tau_j)}_{L^{3,\infty}}\gtrsim m_j.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Since \(b(t_j)\to u_*\) strongly in \(L^2\),
+\[
+ \int_{A_j}|b(t_j)|^2\,dx
+ \leq
+ 2\norm{b(t_j)-u_*}_2^2+
+ 2\int_{A_j}|u_*|^2\,dx.
+\]
+The first term tends to zero.  The second does too because
+\(|A_j|=R_j^3\to0\) and \(|u_*|^2\in L^1\).  Therefore
+\[
+ \norm{a(t_j)}_{L^2(A_j)}
+ \geq
+ \norm{u(t_j)}_{L^2(A_j)}
+ -\norm{b(t_j)}_{L^2(A_j)}
+ \geq\sqrt{e_0}-o(1).
+\]
+Since \(v(\tau_j)=-a(t_j)\), this proves
+\eqref{eq:carrier-energy}.  Lemma~\ref{lem:lorentz},
+\eqref{eq:layer-data}, and \(|A_j|^{1/3}=R_j\asymp m_j^{-2}\)
+then imply
+\[
+ \frac{e_0}{4}
+ \lesssim R_j\norm{v(\tau_j)}_{L^{3,\infty}}^2,
+\]
+which is \eqref{eq:weak-l3}.
+\end{proof}
+
+\section{Exact relative-current cancellation}
+
+Subtracting \eqref{eq:adjoint} from \eqref{eq:nse} gives
+\begin{equation}
+\label{eq:b-equation}
+ \partial_tb-\nu\Delta b+(u\cdot\nabla)b+\nabla(p-q)
+ =2\nu\Delta a.
+\end{equation}
+Define
+\begin{equation}
+\label{eq:r}
+ r:=a\cdot b
+\end{equation}
+and, using repeated-index summation,
+\begin{equation}
+\label{eq:relative-current}
+ \begin{aligned}
+ \mathcal J_k^{\rm rel}:={}&
+ u_kr+(p-q)a_k+qb_k\\
+ &+\nu\left(
+ u_i\partial_ka_i-a_i\partial_ku_i
+ -2a_i\partial_ka_i
+ \right).
+ \end{aligned}
+\end{equation}
+
+\begin{theorem}[Local relative-current law]
+\label{thm:relative-local}
+For every preterminal time,
+\begin{equation}
+\label{eq:relative-law}
+ \partial_tr+\diver\mathcal J^{\rm rel}
+ =-2\nu|\nabla a|^2.
+\end{equation}
+At the terminal boundary,
+\begin{equation}
+\label{eq:r-zero}
+ r(t)\,dx\weakto0
+\end{equation}
+as a locally finite signed measure, while
+\begin{equation}
+\label{eq:r-total}
+ \int_{\R^3}r(t)\,dx
+ =2\nu\int_t^T\norm{\nabla a(s)}_2^2\,ds.
+\end{equation}
+Consequently, for every \(\phi\in C_c^\infty(\R^3)\),
+\begin{equation}
+\label{eq:relative-representation}
+ 2\nu\int_t^T\!\!\int_{\R^3}\phi|\nabla a|^2\,dx\,ds
+ =
+ \int_{\R^3}\phi\,a(t)\cdot b(t)\,dx
+ +\int_t^T\!\!\int_{\R^3}
+ \mathcal J^{\rm rel}\cdot\nabla\phi\,dx\,ds.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The primal--adjoint cross identity is
+\[
+ \partial_t(u\cdot a)+\diver J^{\rm cross}=0,
+\]
+where
+\[
+ J_k^{\rm cross}
+ =
+ u_k(u\cdot a)+pa_k+qu_k
+ -\nu(\partial_ku_i\,a_i-u_i\partial_ka_i).
+\]
+Directly from \eqref{eq:adjoint},
+\[
+ \partial_t|a|^2+
+ \diver\left(u|a|^2+2qa+2\nu a_i\nabla a_i\right)
+ =2\nu|\nabla a|^2.
+\]
+Subtract the second identity from the first and use
+\(u\cdot a-|a|^2=a\cdot b\).  The resulting flux is precisely
+\eqref{eq:relative-current}, proving \eqref{eq:relative-law}.
+
+For compactly supported \(\phi\),
+\[
+ \int\phi\,a\cdot b
+ =
+ \ip{a}{\phi(b-u_*)}+\ip{a}{\phi u_*}.
+\]
+The first term tends to zero by \eqref{eq:bstrong} and the boundedness
+of \(a\) in \(L^2\); the second tends to zero by \eqref{eq:aweak}.
+This proves \eqref{eq:r-zero}.  Globally,
+\[
+ \int r=\ip{a}{u}-\norm{a}_2^2
+ =d-\norm{a}_2^2,
+\]
+so \eqref{eq:aenergy} proves \eqref{eq:r-total}.  Finally, integrate
+\eqref{eq:relative-law} from \(t\) to \(T\), test against \(\phi\),
+and use \eqref{eq:r-zero} to obtain
+\eqref{eq:relative-representation}.
+\end{proof}
+
+\begin{remark}[Why positivity disappears]
+Along the q4 records, both \(u\cdot a\,dx\) and
+\(|a|^2\,dx\) converge to the same positive measure
+\(\vartheta\).  Their difference \(r\,dx\) therefore has zero terminal
+measure.  The remaining local current in
+\eqref{eq:relative-representation} has no known sign.
+\end{remark}
+
+\section{Exact pressure-free spectral balance}
+
+Let \(B_N=\psi(D/N)\), where \(0\leq\psi\leq1\) is smooth, radial,
+nonincreasing in frequency, equal to one on the unit ball, and supported
+in the ball of radius two.  Thus \(B_N\) is self-adjoint and commutes with
+derivatives and the Leray projection.  Put
+\[
+ D_u:=u\cdot\nabla,\qquad
+ [D_u,B_N]:=D_uB_N-B_ND_u
+\]
+and
+\begin{equation}
+\label{eq:RN}
+ R_N(t):=\ip{b(t)}{B_Na(t)}.
+\end{equation}
+
+\begin{theorem}[Spectral relative-energy identity]
+\label{thm:spectral}
+For every \(N>0\),
+\begin{equation}
+\label{eq:RN-derivative}
+ \frac{d}{dt}R_N
+ =
+ \ip{[D_u,B_N]b}{a}
+ -2\nu\ip{\nabla a}{B_N\nabla a}.
+\end{equation}
+Moreover,
+\begin{equation}
+\label{eq:RN-zero}
+ \sup_{N>0}|R_N(t)|\longrightarrow0
+ \qquad(t\uparrow T),
+\end{equation}
+and hence
+\begin{equation}
+\label{eq:RN-integrated}
+ \begin{aligned}
+ R_N(t)
+ ={}&
+ 2\nu\int_t^T\ip{\nabla a}{B_N\nabla a}\,ds\\
+ &-\int_t^T\ip{[D_u,B_N]b}{a}\,ds.
+ \end{aligned}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The exact low-pass cross identity is
+\begin{equation}
+\label{eq:cross-low}
+ \frac{d}{dt}\ip{u}{B_Na}
+ =\ip{[D_u,B_N]u}{a}.
+\end{equation}
+Indeed, the two viscous terms and both pressures cancel, while
+the skew-adjointness of \(D_u\) converts the transport terms into the
+commutator.  Similarly,
+\begin{equation}
+\label{eq:a-low}
+ \frac{d}{dt}\ip{a}{B_Na}
+ =
+ 2\nu\ip{\nabla a}{B_N\nabla a}
+ +\ip{[D_u,B_N]a}{a}.
+\end{equation}
+Since
+\[
+ R_N=\ip{u}{B_Na}-\ip{a}{B_Na},
+\]
+subtracting \eqref{eq:a-low} from \eqref{eq:cross-low} proves
+\eqref{eq:RN-derivative}.
+
+For completeness, \eqref{eq:RN-zero} also follows directly from the
+strong--weak terminal decomposition.  Write
+\[
+ R_N=\ip{b-u_*}{B_Na}+\ip{B_Nu_*}{a}.
+\]
+The first term tends to zero uniformly in \(N\).  The set
+\[
+ \{B_Nu_*:0<N<\infty\}\cup\{0,u_*\}
+\]
+is norm compact in \(L^2\): the multiplier orbit is norm-continuous,
+with limits zero as \(N\downarrow0\) and \(u_*\) as \(N\uparrow\infty\).
+Weak convergence of the bounded family \(a(t)\) is uniform on this
+compact set, so the second term also tends uniformly to zero.
+Integrating \eqref{eq:RN-derivative} to \(T\) gives
+\eqref{eq:RN-integrated}.  With \(B_N\) replaced by the identity, the
+commutator vanishes and the formula reduces to
+\eqref{eq:r-total}; there is no additional global positive charge.
+\end{proof}
+
+\begin{lemma}[Available commutator estimates]
+\label{lem:commutator}
+For almost every time set
+\[
+ M:=\norm{u}_{L^{3,\infty}},\qquad
+ Y:=\norm{\nabla a}_2,\qquad
+ Z:=\norm{\nabla b}_2.
+\]
+Then
+\begin{equation}
+\label{eq:MZY}
+ \left|\ip{[D_u,B_N]b}{a}\right|
+ \lesssim MZY.
+\end{equation}
+If
+\[
+ A:=\sup_{t<T}\norm{a(t)}_2,\qquad
+ B:=\sup_{t<T}\norm{b(t)}_2,
+\]
+then also
+\begin{equation}
+\label{eq:bernstein-comm}
+ \left|\ip{[D_u,B_N]b}{a}\right|
+ \lesssim BNMY+ABN^2M.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+By skew-adjointness, Lorentz Holder, and the endpoint Sobolev embedding,
+\[
+ \begin{aligned}
+ |\ip{D_uB_Nb}{a}|
+ &=
+ |\ip{B_Nb}{D_ua}|\\
+ &\lesssim
+ \norm{B_Nb}_{L^{6,2}}\,M\,Y
+ \lesssim MZY.
+ \end{aligned}
+\]
+Likewise,
+\[
+ \begin{aligned}
+ |\ip{B_ND_ub}{a}|
+ &=
+ |\ip{b}{D_uB_Na}|\\
+ &\lesssim
+ \norm{b}_{L^{6,2}}\,M\,\norm{\nabla B_Na}_2
+ \lesssim MZY.
+ \end{aligned}
+\]
+This proves \eqref{eq:MZY}.  Alternatively,
+\[
+ \norm{B_Nb}_{L^{6,2}}\lesssim NB,\qquad
+ \norm{\nabla B_Na}_{L^{6,2}}\lesssim N^2A.
+\]
+Use the first bound in the first commutator term and pair the second
+term in \(L^2\) to obtain \eqref{eq:bernstein-comm}.
+\end{proof}
+
+\begin{remark}[Exact limitation]
+The energy class gives \(Y^2,Z^2\in L^1_t\), while the q4 chain has
+unbounded \(M\) and forces \(\int_t^TMY^2=\infty\).  This does
+\emph{not} prove that the relative commutator diverges.  It proves that
+\eqref{eq:MZY} and \eqref{eq:bernstein-comm} furnish no
+clock-uniform integrable majorant.  Strong convergence of \(b\) makes
+its terminal path norm compact and its high-frequency \(L^2\) tail
+uniformly small, but supplies no rate after multiplication by \(N\) or
+\(N^2\), nor a high-frequency gradient modulus.
+\end{remark}
+
+\section{The sharp Zeno survivor}
+
+\begin{proposition}[Exact q4 clock ledger]
+\label{prop:zeno}
+Let
+\begin{equation}
+\label{eq:zeno-def}
+ m_j:=2^{2j},\qquad
+ \delta_j:=\frac{2^{-11j}}{j},\qquad
+ \Lambda_j:=2^{14j/3}j^{2/3}.
+\end{equation}
+Then
+\begin{equation}
+\label{eq:capacity}
+ m_j^2\Lambda_j^{3/2}\delta_j=1.
+\end{equation}
+If \(q_j:=\delta_j\Lambda_j^2\), then
+\begin{equation}
+\label{eq:qj}
+ q_j=2^{-5j/3}j^{1/3},\qquad
+ \sum_jq_j<\infty,
+\end{equation}
+but
+\begin{equation}
+\label{eq:weighted-qj}
+ m_jq_j=2^{j/3}j^{1/3},\qquad
+ \sum_jm_jq_j=\infty.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The powers in \eqref{eq:capacity} are
+\[
+ 2^{4j}\left(2^{14j/3}j^{2/3}\right)^{3/2}
+ \frac{2^{-11j}}j
+ =
+ 2^{4j+7j-11j}j^{1-1}=1.
+\]
+Squaring \(\Lambda_j\) gives
+\[
+ q_j=
+ \frac{2^{-11j}}j\,2^{28j/3}j^{4/3}
+ =2^{-5j/3}j^{1/3},
+\]
+which is summable.  Multiplication by \(m_j=2^{2j}\) gives
+\eqref{eq:weighted-qj}.
+\end{proof}
+
+\begin{proposition}[Hilbert-frequency scalar survivor]
+\label{prop:hilbert}
+Let \(\{e_j\}\) be an orthonormal sequence in an infinite-dimensional
+Hilbert space, assigned frequencies \(\Lambda_j\).  Put
+\[
+ D_j:=\sum_{k\geq j}q_k,\qquad
+ A_j:=(d-2\nu D_j)^{1/2}
+\]
+for sufficiently large \(j\), and define the record states
+\[
+ v_j:=A_je_j.
+\]
+Choose a fixed \(c_*\) orthogonal to every \(e_j\), and set
+\[
+ c_j:=c_*+\beta_je_j,\qquad
+ \beta_j:=\frac{2\nu D_j}{A_j}.
+\]
+Then
+\begin{align}
+\label{eq:hilbert-weak}
+ v_j&\weakto0,&
+ \norm{v_j}_2^2+2\nu D_j&=d,\\
+\label{eq:hilbert-strong}
+ c_j&\longrightarrow c_*\quad\hbox{strongly},&
+ \ip{v_j}{c_j}&=2\nu D_j.
+\end{align}
+\end{proposition}
+
+\begin{proof}
+Since \(q_j\) is summable, \(D_j\downarrow0\), so
+\(A_j\to\sqrt d\).  Bounded coefficients multiplying an orthonormal
+sequence converge weakly to zero, proving the first part of
+\eqref{eq:hilbert-weak}; the second is the definition of \(A_j\).
+Also \(\beta_j\to0\), which proves strong convergence in
+\eqref{eq:hilbert-strong}, while
+\(\ip{v_j}{c_j}=A_j\beta_j=2\nu D_j\).
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:hilbert} realises, at the scalar record level, a
+weak-zero positive-energy boundary, a strongly convergent remainder,
+the exact relative overlap, and frequency escape.  Together with
+Proposition~\ref{prop:zeno}, it defeats any contradiction using only
+those scalar budgets.  It supplies neither spatial fields nor a pressure,
+a continuous path, a local current, or a Navier--Stokes solution.  Genuine
+one-event smooth triad packets from the preceding sharpness round also
+vary the trajectory from event to event.  A same-trajectory PDE theorem
+remains essential.
+\end{remark}
+
+\section{What changed in this round}
+
+\subsection*{Robust conditional findings, subject to external review}
+
+\begin{enumerate}
+ \item The entire missing kinetic component is a forward nonlinear
+ perturbed-Navier--Stokes field after terminal reversal, not merely a
+ remote dual detector.
+ \item Its vector trace is weakly zero, its drift trace is strongly
+ prescribed, and its scalar initial energy is the positive measure
+ \(\vartheta/2\).
+ \item The nonlinear entrance inherits fixed carrier energy and the
+ diverging q4 weak-\(L^3\) amplitude.
+ \item The local relative-current law
+ \eqref{eq:relative-law} and spectral identity
+ \eqref{eq:RN-integrated} are exact and pressure-consistent.
+ \item Relative subtraction cancels the two copies of
+ \(\vartheta\); it does not reveal a second fixed positive reservoir.
+ \item Present commutator estimates expose a quantitative compactness
+ gap rather than a contradiction.
+ \item The Zeno and Hilbert ledgers satisfy all currently used scalar
+ energy, clock, overlap, and action constraints without being a PDE
+ counterexample.
+\end{enumerate}
+
+\subsection*{Closed shortcut}
+
+Strong \(L^2\) convergence of \(b\) alone does not make the relative
+commutator summable.  It gives qualitative compactness without the
+clock-relative decay rate needed to absorb the factors \(N\) or \(N^2\).
+Likewise, subtracting the common positive defect removes its positivity
+from the relative balance.
+
+\subsection*{Open obligations}
+
+\begin{enumerate}
+ \item Prove a zero-trace nonlinear-entrance theorem under the exact q4
+ same-trajectory hypotheses, forcing \(d=0\).
+ \item Equivalently, extend \eqref{eq:positive-energy} to an energy
+ inequality at \(\tau=0\), using the strong-trace drift and the q4
+ coupling rather than assuming strong initial convergence.
+ \item Force a non-summable inverse-cascade, residence,
+ projective-motion, capacity, or pressure charge.
+ \item Obtain a quantitative clock-relative compactness modulus for
+ \(c\), or an integrable estimate for the commutator in
+ \eqref{eq:RN-integrated}.
+ \item Exclude \(\vartheta\) using its \(\mathcal H^1\)-null support or
+ the coupled pressure equation.
+ \item Subject the inherited full-defect alignment and every theorem in
+ this report to independent external mathematical review.
+ \item Treat slower clocks, divergent normalised energy, R3B, and the
+ other Clay alternatives separately.
+\end{enumerate}
+
+\begin{conjecture}[No q4 nonlinear entrance from infinity]
+\label{conj:no-entrance}
+Suppose
+\[
+ v,c\in
+ L^\infty(0,\tau_0;L^2_\sigma)
+ \cap L^2(0,\tau_0;\dot H^1_\sigma)
+\]
+satisfy \eqref{eq:v-projected}, with
+\[
+ v(\tau)\weakto0,\qquad
+ c(\tau)\to c_0\ \hbox{strongly in }L^2,\qquad
+ \lim_{\tau\downarrow0}\norm{v(\tau)}_2^2=d.
+\]
+If \(v+c\) is the exact reversal of one smooth Navier--Stokes trajectory
+in the energy-efficient q4 first-record cell, and \(v\) carries the q4
+layers \eqref{eq:carrier-energy}--\eqref{eq:weak-l3}, then \(d=0\).
+\end{conjecture}
+
+\begin{remark}[Scope of the conjecture]
+The same-trajectory and q4 clauses are essential.  The Hilbert ledger
+shows that the scalar boundary data alone do not force \(d=0\), and this
+report makes no assertion that generic weak solutions with rough drift
+have the proposed boundary rigidity.  Conjecture~\ref{conj:no-entrance}
+is not proved.
+\end{remark}
+
+\section*{Conclusion}
+
+The conditional q4 problem has been converted into a sharper and more
+recognisable PDE question: can a nonlinear viscous field come down from
+frequency infinity with zero weak vector trace but a positive singular
+energy trace, while its coupled drift converges strongly?  The conversion,
+measure law, amplitude inheritance, and relative identities are proved
+under the inherited branch assumptions.  The decisive boundary theorem is
+not.  Accordingly, the Clay problem remains unsolved.
+
+\end{document}
