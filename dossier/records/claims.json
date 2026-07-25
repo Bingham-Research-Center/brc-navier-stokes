@@ -664,6 +664,25 @@
       "depends_on": ["CLM-ENERGY-001"],
       "audit": "The published Introduction states the open problem immediately after equations (1.2)-(1.3). Theorem 1.1 and Corollary 1.2 are sufficient-condition results and are not silently promoted to the exact q=4 branch.",
       "last_checked": "2026-07-25"
+    },
+    {
+      "id": "CLM-PRESSURE-SINGULAR-DIMENSION-001",
+      "plain": "Suitable supercritical or scale-invariant mixed pressure control can reduce the terminal singular-set dimension at a first Navier-Stokes blow-up time.",
+      "formal": "Barker-Wang Theorem 1 assumes pi in strong Lr_t Lp_x with 2/r+3/p=2+gamma, 0<gamma<1/2, delta>3gamma/(2+2gamma), and its stated additional parameter restrictions, and concludes H^(2delta)(sigma)=0. Their Theorem 2 assumes the scale-invariant weak mixed-Lorentz pressure condition with 2/r+3/s=2 and concludes H^(2delta)(sigma)=0 for every 0<delta<1/2.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "Leray_Hopf_regular_before_first_blowup",
+      "assumptions": [
+        "A first possible blow-up time with the source's smoothness formulation",
+        "The pressure integrability and all parameter restrictions of Barker-Wang Theorem 1 or Theorem 2"
+      ],
+      "conclusion": "The terminal spatial singular set has the corresponding zero Hausdorff measure and reduced dimension.",
+      "scaling": "pressure_supercritical_or_critical",
+      "status": "established",
+      "source_ids": ["SRC-BARKER-WANG-2023"],
+      "depends_on": ["CLM-PARTIAL-001"],
+      "audit": "Pinned arXiv v2 source lines 230-306 match the peer-reviewed article. The exact q=4 pressure hull is audited separately and is not claimed to satisfy either theorem.",
+      "last_checked": "2026-07-25"
     }
   ]
 }

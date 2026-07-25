@@ -1,0 +1,855 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\EE}{\mathcal E}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\weakto}{\rightharpoonup}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\dimH}{dim_{\mathrm H}}
+
+\title{Exact q4 Terminal Dimension Pincer and Spectral Alternative}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round audits the energy-equality route forced by the preceding
+critical-clock theorem.  The exact first-record schedule gives the
+endpoint distribution
+\[
+ \|u(t)\|_{L^{3,\infty}}
+ \in L_t^{11/2,\infty}
+ \cap\bigcap_{r>11/2}L_t^{11/2,r}.
+\]
+Even after granting the additional favourable surrogate assumption
+\(L_t^{11/2,\infty}B^0_{3,\infty}\), the complete interpolation hull
+with the Leray energy class misses every relevant
+Cheskidov--Luo Besov threshold.  The refined Leslie--Shvydkoy
+first-time threshold has sharp hull supremum \(3/5\).  Combining this
+with the previously proved nonzero terminal energy defect shows,
+conditionally and subject to external review, that its terminal
+singular slice must satisfy
+\[
+ \frac35\leq\dimH\sigma\leq1,
+ \qquad \HH^1(\sigma)=0.
+\]
+The pressure associated with the same clock has direct-interpolation
+supercriticality at least \(8/11\), whereas the Barker--Wang theorem
+could enter the dimension-closing region only below \(1/4\).
+Finally, an exhaustive spectral reduction gives at least one of two
+alternatives.  The defect can force infinitely many disjoint fixed-sign
+nonlinear correlation events in a bounded clock band; if that alternative
+fails, it escapes beyond every bounded multiple of the clock frequency and
+amplifies the pointwise enstrophy.
+Neither survivor is contradicted by the current budgets.  No Clay
+alternative is proved.
+\end{abstract}
+
+\section{Epistemic scope and source anchors}
+
+The solution and exact \(q=4\) schedule below are conditional.  The
+endpoint-clock conversion, convex-hull optimisations, terminal
+dimension pincer, pressure comparison, and spectral alternative are
+repository deductions and await external mathematical review.
+
+The imported energy-equality criteria are from Cheskidov and
+Luo~\cite{CL20}.  Their arXiv v2 source states the weak-in-time theorem
+at lines 194--200 and the four classical interpolation thresholds at
+lines 349--357.  The imported concentration-dimension theorem is from
+Leslie and Shvydkoy~\cite{LS18}; its accepted arXiv v4 source gives the
+Navier--Stokes regions and function \(f\) at lines 1183--1210 and the
+theorem at lines 1241--1252.  The pressure singular-set theorem is from
+Barker and Wang~\cite{BW23}; its arXiv v2 source gives Theorems 1--2 at
+lines 230--306.  These three results are peer reviewed.
+
+The statement \(\HH^1(\sigma)=0\) is the classical
+Caffarelli--Kohn--Nirenberg conclusion~\cite{CKN82}.  General
+Leray--Hopf energy equality remains open.  Same-system adversarial
+recomputation is not independent external review.  The Clay problem
+remains unsolved.
+
+\section{Conditional setting}
+
+Let \(u\) be a smooth divergence-free finite-energy solution of
+\[
+ \partial_tu+u\cdot\nabla u=-\nabla\pi+\nu\Delta u,
+ \qquad \nabla\cdot u=0
+ \quad\hbox{on }\R^3\times[0,T^*),
+\]
+where \(T^*<\infty\) is its first possible singular time.  Assume a
+weakly continuous Leray--Hopf continuation through \(T^*\), and write
+\[
+ u_*:=u(T^*).
+\]
+
+Put
+\[
+ M(t):=\|u(t)\|_{L^{3,\infty}}.
+\]
+Let \(t_j\uparrow T^*\) be exact \(q=4\) first-record times, so that
+\begin{equation}
+ \label{eq:q4}
+ m_j:=M(t_j)\asymp2^{2j},
+ \qquad
+ t_{j+1}-t_j\asymp\frac{2^{-11j}}j,
+ \qquad
+ M(t)\leq m_j\quad(0\leq t\leq t_j).
+\end{equation}
+Assume the energy-efficient diffuse selected-layer hypotheses of the
+critical-clock theorem.  That theorem supplies a fixed block length,
+an endpoint sequence \(s_j\uparrow T^*\), and frequencies
+\begin{equation}
+ \label{eq:Lambda}
+ \Lambda_j\asymp m_j^{7/3}j^{2/3}
+\end{equation}
+such that
+\begin{equation}
+ \label{eq:old-floor}
+ \|P_{>\Lambda_j}u(s_j)\|_2\geq c_0>0.
+\end{equation}
+It also gives the terminal energy defect
+\begin{equation}
+ \label{eq:energy-defect}
+ E_--\|u_*\|_2^2\geq d_0>0,
+ \qquad
+ E_-:=\lim_{t\uparrow T^*}\|u(t)\|_2^2.
+\end{equation}
+Changing \(j\) by the fixed block length changes none of the powers
+used below.
+
+\section{The exact temporal endpoint}
+
+\begin{lemma}[Logarithmically improved endpoint distribution]
+\label{lem:endpoint}
+For all sufficiently large \(\lambda\),
+\begin{equation}
+ \label{eq:distribution}
+ \bigl|\{t<T^*:M(t)>\lambda\}\bigr|
+ \leq
+ \frac{C\lambda^{-11/2}}{\log(e+\lambda)}.
+\end{equation}
+Consequently,
+\begin{equation}
+ \label{eq:lorentz-endpoint}
+ M\in L^{11/2,\infty}(0,T^*)
+ \cap
+ \bigcap_{r>11/2}L^{11/2,r}(0,T^*).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Choose \(j\) so that \(m_j\leq\lambda<m_{j+1}\).  The first-record
+property in \eqref{eq:q4} gives
+\[
+ \{M>\lambda\}\subset(t_j,T^*).
+\]
+The geometric record tail obeys
+\[
+ T^*-t_j
+ \lesssim
+ \sum_{k\geq j}\frac{2^{-11k}}k
+ \lesssim\frac{2^{-11j}}j.
+\]
+Since \(\lambda\asymp2^{2j}\) and
+\(j\asymp\log(e+\lambda)\), this is
+\eqref{eq:distribution}.
+
+Let \(p_*=11/2\) and denote the distribution function by
+\(\mu_M\).  Equation \eqref{eq:distribution} gives
+\[
+ \sup_{\lambda>0}\lambda^{p_*}\mu_M(\lambda)<\infty,
+\]
+which is the weak endpoint.  For finite \(r\), the
+distribution-function formula gives
+\[
+ \|M\|_{L^{p_*,r}}^r
+ \asymp
+ \int_0^\infty
+ \left[\lambda\mu_M(\lambda)^{1/p_*}\right]^r
+ \frac{d\lambda}{\lambda}.
+\]
+The terminal tail is at most
+\[
+ C\int^\infty
+ \frac{d\lambda}
+ {\lambda[\log(e+\lambda)]^{r/p_*}},
+\]
+which converges when \(r>p_*\).  Smoothness controls the remaining
+part.  At \(r=p_*\), this estimate is harmonic and makes no strong
+\(L^{11/2}\) claim.
+\end{proof}
+
+\section{Direct Besov interpolation obstruction}
+
+No embedding comparison between the actual endpoint
+\(L_x^{3,\infty}\) and \(B^0_{3,\infty}\) is used here.  We instead grant
+the additional favourable surrogate assumption
+\[
+ C=L_t^{11/2,\infty}B^0_{3,\infty}
+\]
+and combine it with
+\[
+ A=L_t^\infty B^0_{2,2},
+ \qquad
+ B=L_t^2B^1_{2,2}.
+\]
+Let \(a,b,c\geq0\), \(a+b+c=1\), be interpolation weights on
+\(A,B,C\).  The optimistic available triple is
+\begin{equation}
+ \label{eq:hull-triple}
+ \frac1\beta=\frac b2+\frac{2c}{11},
+ \qquad
+ \frac1p=\frac12-\frac c6,
+ \qquad
+ \alpha_{\rm av}=b.
+\end{equation}
+
+Cheskidov and Luo record the following sufficient spatial smoothness
+across the four classical interpolation regions:
+\begin{equation}
+ \label{eq:CL-four}
+ \alpha_{\rm req}=
+ \begin{cases}
+ \dfrac2\beta+\dfrac2p-1,
+  &\beta\geq3,\ p\geq\beta,\\[1mm]
+ \dfrac1\beta+\dfrac3p-1,
+  &\beta\geq3,\ p\leq\beta,\\[1mm]
+ \dfrac5{2\beta}+\dfrac3p-\dfrac32,
+  &\beta\leq3,\ \dfrac1\beta+\dfrac2p\geq1,\\[1mm]
+ \dfrac2\beta+\dfrac2p-1,
+  &\beta\leq3,\ \dfrac1\beta+\dfrac2p\leq1.
+ \end{cases}
+\end{equation}
+Their weak-in-time theorem has the same smoothness as the first line
+under its strict parameter hypotheses.
+
+\begin{proposition}[Strict four-region gap]
+\label{prop:CL-gap}
+No applicable point in \eqref{eq:hull-triple} reaches
+\eqref{eq:CL-four}.  In the four regions, respectively,
+\begin{equation}
+ \label{eq:four-gaps}
+ \alpha_{\rm req}-\alpha_{\rm av}
+ =
+ \begin{cases}
+ c/33,\\[1mm]
+ a/2+2c/11,\\[1mm]
+ b/4-c/22,\\[1mm]
+ c/33.
+ \end{cases}
+\end{equation}
+Every applicable expression is strictly positive.
+\end{proposition}
+
+\begin{proof}
+Direct substitution of \eqref{eq:hull-triple} into
+\eqref{eq:CL-four} gives \eqref{eq:four-gaps}.
+In the third region,
+\[
+ \frac1\beta+\frac2p\geq1
+ \quad\Longrightarrow\quad
+ \frac b2+\frac{2c}{11}\geq\frac c3
+ \quad\Longrightarrow\quad
+ b\geq\frac{10c}{33}.
+\]
+Therefore
+\[
+ \frac b4-\frac c{22}\geq\frac c{33}.
+\]
+If \(c=0\), the third-region condition forces \(b>0\), and the
+original expression \(b/4\) is positive.
+
+In the first and fourth lines, equality would require \(c=0\), hence
+\(p=2\).  This contradicts \(p\geq\beta\geq3\) in the first line.  In
+the fourth line, its second region inequality then forces \(b=0\),
+which contradicts \(\beta\leq3\).  Equality in the second line would
+require the pure \(B\) point, but that point has \(\beta=p=2\), outside
+the second region.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:CL-gap} excludes only direct interpolation from
+the stated norms.  It does not exclude a new structural estimate,
+pressure cancellation, or another route to energy equality.
+
+The calculation also covers the standard post-interpolation
+Sobolev/Besov embeddings.  Spending \(h\geq0\) units of reciprocal
+spatial integrability changes
+\[
+ \frac1p\longmapsto\frac1p-h,
+ \qquad
+ \alpha_{\rm av}\longmapsto\alpha_{\rm av}-3h.
+\]
+In the four lines of \eqref{eq:CL-four}, the gap in
+\eqref{eq:four-gaps} respectively increases by \(h\), stays fixed,
+stays fixed, or increases by \(h\).  Lowering the time exponent on the
+finite interval only raises the required smoothness.  Thus the no-go
+includes, for example, the embedding
+\(L_t^2H_x^1\subset L_t^2L_x^6\).
+\end{remark}
+
+\section{Sharp Leslie--Shvydkoy hull ceiling}
+
+Use reciprocal mixed-norm coordinates
+\[
+ x:=\frac1p,\qquad y:=\frac1q.
+\]
+The closure of the available strong interior points lies in the convex
+hull of
+\begin{equation}
+ \label{eq:mixed-hull}
+ A_0=\left(\frac12,0\right),
+ \qquad
+ B_0=\left(\frac16,\frac12\right),
+ \qquad
+ C_0=\left(\frac13,\frac2{11}\right).
+\end{equation}
+The endpoint \(C_0\) itself is weak in time and space, but it controls
+the closure.
+
+In Leslie--Shvydkoy Regions I--II,
+\begin{equation}
+ \label{eq:f12}
+ f(p,q)
+ =
+ 3-\frac{2y}{1-2x-y}.
+\end{equation}
+In Region III,
+\begin{equation}
+ \label{eq:f3}
+ f(p,q)
+ =
+ 3-
+ \frac{2y(6x-1)}
+ {(2-3x-3y)(1-2x)}.
+\end{equation}
+
+\begin{proposition}[Exact \(3/5\) optimisation]
+\label{prop:three-fifths}
+Every Leslie--Shvydkoy-admissible point in the hull
+\eqref{eq:mixed-hull} satisfies
+\[
+ f(p,q)\leq\frac35.
+\]
+The supremum \(3/5\) occurs at the weak endpoint \(C_0\) and is
+approached by strong interior points.
+\end{proposition}
+
+\begin{proof}
+Every vertex in \eqref{eq:mixed-hull} satisfies \(x+y\geq1/2\);
+equality occurs only at \(A_0\), which fails the other Region IV
+condition.  Hence the hull does not enter Regions IV--V.
+
+Suppose first that \(x\leq1/3\), so \(p\geq3\) and Regions I--II are
+the relevant ones.  The affine inequality
+\begin{equation}
+ \label{eq:affine-six}
+ 12x+11y\geq6
+\end{equation}
+holds at all three vertices and hence throughout the hull.  In the
+positive-denominator region of \eqref{eq:f12},
+\eqref{eq:affine-six} is equivalent to
+\[
+ \frac{2y}{1-2x-y}\geq\frac{12}{5}.
+\]
+Thus \(f\leq3/5\).
+
+Now suppose \(1/3<x<1/2\).  The hull lies above its edge
+\(A_0C_0\):
+\begin{equation}
+ \label{eq:lower-edge}
+ y\geq\frac6{11}(1-2x).
+\end{equation}
+Only Region III is relevant.  For fixed \(x\), the quotient subtracted
+in \eqref{eq:f3} increases with \(y\), so \(f\) is maximised at equality
+in \eqref{eq:lower-edge}.  Put \(z=1-2x\in(0,1/3)\).  Substitution gives
+\[
+ f
+ =
+ 3-\frac{24(2-3z)}{11-3z}.
+\]
+This is strictly increasing in \(z\), and its limit at \(z=1/3\),
+the vertex \(C_0\), equals \(3/5\).
+\end{proof}
+
+\section{The terminal dimension pincer}
+
+Let \(\EE\) be a weak-star limit of
+\(|u(s_j)|^2\,dx\).  The uniform spatial tightness proved in the
+preceding temporal theorem gives
+\begin{equation}
+ \label{eq:mass-tight}
+ \EE(\R^3)=E_-.
+\end{equation}
+Weak continuity gives
+\begin{equation}
+ \label{eq:weak-terminal}
+ u(s_j)\weakto u_*
+ \quad\hbox{in }L^2.
+\end{equation}
+Convex lower semicontinuity on nonnegative compactly supported tests
+therefore gives the positive measure
+\begin{equation}
+ \label{eq:defect-measure}
+ \vartheta:=\EE-|u_*|^2\,dx\geq0.
+\end{equation}
+Equations \eqref{eq:energy-defect} and \eqref{eq:mass-tight} give
+\begin{equation}
+ \label{eq:defect-mass}
+ \vartheta(\R^3)
+ =
+ E_--\|u_*\|_2^2
+ \geq d_0>0.
+\end{equation}
+
+Define the terminal singular set
+\[
+ \sigma
+ :=
+ \{x:(x,T^*)\hbox{ is a singular point of the continuation}\}.
+\]
+
+\begin{lemma}[Support of the defect]
+\label{lem:support}
+\[
+ \supp\vartheta\subset\sigma.
+\]
+\end{lemma}
+
+\begin{proof}
+Let \(K\Subset\R^3\setminus\sigma\).  Finitely many regular
+parabolic neighbourhoods cover \(K\times\{T^*\}\).  Local regularity
+in smaller cylinders gives strong \(L^2(K)\) convergence of \(u(t)\)
+to the weak trace \(u_*\) as \(t\uparrow T^*\).  Therefore
+\[
+ \EE\lfloor_K=|u_*|^2\,dx\lfloor_K.
+\]
+Exhaust the regular open set by compact subsets.
+\end{proof}
+
+\begin{theorem}[Terminal dimension pincer]
+\label{thm:pincer}
+Every Leray--Hopf continuation in the conditional energy-efficient
+exact \(q=4\) branch satisfies
+\begin{equation}
+ \label{eq:pincer}
+ \boxed{
+ \frac35\leq\dimH\sigma\leq1,
+ \qquad
+ \HH^1(\sigma)=0.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The temporal five-power result and
+Proposition~\ref{prop:three-fifths} give the
+Leslie--Shvydkoy concentration-dimension bound
+\[
+ D(\EE)\geq\frac35.
+\]
+Consequently, \(\EE(S)=0\) for every Borel set with
+\(\dimH S<3/5\).  Since \(0\leq\vartheta\leq\EE\), the same holds for
+\(\vartheta\).
+
+If \(\dimH\sigma<3/5\), Lemma~\ref{lem:support} and
+\eqref{eq:defect-mass} would give
+\[
+ 0<\vartheta(\R^3)=\vartheta(\sigma)=0,
+\]
+a contradiction.  This proves the lower bound.  The
+Caffarelli--Kohn--Nirenberg theorem gives \(\HH^1(\sigma)=0\), hence
+the upper bound.
+\end{proof}
+
+\begin{remark}
+The strict interval from \(3/5\) to \(1\) is not closed by the current
+information.  Theorem~\ref{thm:pincer} is a necessary property of the
+conditional survivor, not a proof that such a survivor exists.
+\end{remark}
+
+\section{Pressure audit}
+
+For the whole-space pressure representative
+\[
+ \pi=\mathcal R_a\mathcal R_b(u_au_b),
+\]
+Lorentz Calder\'on--Zygmund bounds and
+Lemma~\ref{lem:endpoint} imply
+\begin{equation}
+ \label{eq:pressure-endpoint}
+ \pi\in
+ L_t^{11/4,\infty}L_x^{3/2,\infty}.
+\end{equation}
+Its pressure scaling index is
+\begin{equation}
+ \label{eq:pressure-gamma}
+ \frac2{11/4}+\frac3{3/2}
+ =
+ 2+\frac8{11}.
+\end{equation}
+The ordinary energy class generates the pressure line
+\[
+ \frac2r+\frac3p=3.
+\]
+Every direct interpolation between that line and
+\eqref{eq:pressure-endpoint} therefore satisfies
+\begin{equation}
+ \label{eq:gamma-lower}
+ \frac2r+\frac3p=2+\gamma,
+ \qquad
+ \gamma\geq\frac8{11}.
+\end{equation}
+
+Barker and Wang's supercritical theorem assumes
+\[
+ 0<\gamma<\frac12,
+ \qquad
+ \delta>\frac{3\gamma}{2+2\gamma},
+\]
+as well as its further \(p,r,\delta,\gamma\) restrictions, and then
+concludes \(\HH^{2\delta}(\sigma)=0\).  The direct q4 hull
+\eqref{eq:gamma-lower} is already outside the theorem.
+
+Moreover, entering the pincer-closing range \(2\delta<3/5\) would
+require, before the further restrictions,
+\[
+ \frac{3\gamma}{1+\gamma}<\frac35
+ \quad\Longleftrightarrow\quad
+ \gamma<\frac14.
+\]
+Thus the direct pressure interpolation misses this necessary closing
+range by at least
+\begin{equation}
+ \label{eq:pressure-gap}
+ \boxed{
+ \frac8{11}-\frac14=\frac{21}{44}.
+ }
+\end{equation}
+This does not preclude a structural pressure-cancellation or
+pressure-oscillation gain.
+
+\section{Clock-band correlation or super-clock escape}
+
+Set
+\[
+ w_j:=u(s_j)-u_*.
+\]
+Then \(w_j\weakto0\) in \(L^2\).  Since the high-frequency tail of the
+fixed \(u_*\) vanishes, \eqref{eq:old-floor} gives, after harmless
+fixed cutoff changes,
+\begin{equation}
+ \label{eq:w-tail}
+ \|\Pi_{>\Lambda_j}w_j\|_2\geq d_1>0.
+\end{equation}
+Here \(\Pi\) is the sharp orthogonal Fourier projection.  It dominates
+the smooth high-pass multiplier used to obtain
+\eqref{eq:old-floor}.
+
+\begin{theorem}[Exhaustive spectral alternative]
+\label{thm:spectral}
+At least one of the following holds; mutual exclusivity is not asserted.
+
+\medskip
+\noindent
+\textbf{A. Bounded clock band.}
+There are fixed \(A>1\), \(\eta>0\), and infinitely many \(j\) such
+that
+\begin{equation}
+ \label{eq:clock-band}
+ \left\|
+ \Pi_{\Lambda_j<|\xi|\leq A\Lambda_j}w_j
+ \right\|_2^2
+ \geq\eta.
+\end{equation}
+For a further subsequence \(j_k\), define
+\[
+ g_k
+ :=
+ \Pi_{\Lambda_{j_k}<|\xi|\leq A\Lambda_{j_k}}w_{j_k},
+ \qquad
+ I_k=[s_{j_k},s_{j_{k+1}}].
+\]
+The intervals are disjoint and, for all large \(k\),
+\begin{equation}
+ \label{eq:signed-work}
+ \boxed{
+ \int_{I_k}\!\!\int_{\R^3}
+ u\otimes u:\nabla g_k\,dx\,dt
+ \leq-\frac{\eta}{4}.
+ }
+\end{equation}
+The corresponding viscous work tends to zero:
+\begin{equation}
+ \label{eq:viscous-zero}
+ \left|
+ \nu\int_{I_k}\!\!\int_{\R^3}
+ \nabla u:\nabla g_k\,dx\,dt
+ \right|\longrightarrow0.
+\end{equation}
+
+\medskip
+\noindent
+\textbf{B. Super-clock escape.}
+If Alternative A fails, there are \(A_k\to\infty\) and a subsequence
+\(j_k\) such that
+\begin{equation}
+ \label{eq:superclock-tail}
+ \left\|
+ \Pi_{>A_k\Lambda_{j_k}}u(s_{j_k})
+ \right\|_2
+ \geq\eta_0>0.
+\end{equation}
+Consequently,
+\begin{equation}
+ \label{eq:superclock-enstrophy}
+ \boxed{
+ \|\nabla u(s_{j_k})\|_2^2
+ \gtrsim
+ A_k^2\Lambda_{j_k}^2.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Assume first that \eqref{eq:clock-band} holds.  For each fixed
+\(g_k\), weak convergence \(w_j\weakto0\) permits the next index to be
+chosen so far out that
+\[
+ |\langle w_{j_{k+1}},g_k\rangle|
+ \leq\frac{\eta}{4}.
+\]
+Because \(g_k\) is an orthogonal projection of \(w_{j_k}\),
+\begin{align}
+ \label{eq:correlation-drop}
+ \left\langle
+ u(s_{j_{k+1}})-u(s_{j_k}),g_k
+ \right\rangle
+ &=
+ \langle w_{j_{k+1}},g_k\rangle-\|g_k\|_2^2\\
+ &\leq-\frac{3\eta}{4}.\nonumber
+\end{align}
+Pair the smooth equation on \(I_k\) with the fixed divergence-free
+field \(g_k\):
+\begin{align}
+ \label{eq:work-identity}
+ \left\langle
+ u(s_{j_{k+1}})-u(s_{j_k}),g_k
+ \right\rangle
+ ={}&
+ \int_{I_k}\!\!\int u\otimes u:\nabla g_k\\
+ &-
+ \nu\int_{I_k}\!\!\int\nabla u:\nabla g_k.\nonumber
+\end{align}
+
+The exact record tail gives
+\begin{equation}
+ \label{eq:two-tail-bounds}
+ T^*-s_j\lesssim\frac{m_j^{-11/2}}j,
+ \qquad
+ \int_{s_j}^{T^*}M(t)^2\,dt
+ \lesssim\frac{m_j^{-7/2}}j.
+\end{equation}
+Band-limited Lorentz Bernstein gives
+\[
+ \|\nabla g_k\|_{L^{3,1}}
+ \lesssim
+ (A\Lambda_{j_k})^{3/2}\|g_k\|_2.
+\]
+Lorentz H\"older and \eqref{eq:two-tail-bounds} therefore yield
+\begin{align}
+ \label{eq:critical-capacity}
+ \int_{s_j}^{T^*}
+ \left|\int u\otimes u:\nabla g_j\right|dt
+ &\lesssim
+ (A\Lambda_j)^{3/2}
+ \int_{s_j}^{T^*}M(t)^2\,dt\\
+ &\lesssim A^{3/2},\nonumber
+\end{align}
+because
+\(\Lambda_j^{3/2}\asymp m_j^{7/2}j\).
+The nonlinear capacity is exactly order one per event.
+
+Set
+\[
+ D_j^\nu
+ :=
+ \nu\int_{s_j}^{T^*}\|\nabla u(t)\|_2^2\,dt.
+\]
+Absolute continuity gives \(D_j^\nu\to0\).  Cauchy--Schwarz,
+\eqref{eq:two-tail-bounds}, and
+\(\|\nabla g_j\|_2\leq A\Lambda_j\|g_j\|_2\) give
+\begin{align}
+ \label{eq:viscous-tail}
+ \left|
+ \nu\int_{s_j}^{T^*}\!\!\int\nabla u:\nabla g_j
+ \right|
+ &\lesssim
+ A\Lambda_j(T^*-s_j)^{1/2}(D_j^\nu)^{1/2}\\
+ &\lesssim
+ A\,m_j^{-5/12}j^{1/6}(D_j^\nu)^{1/2}
+ \longrightarrow0.\nonumber
+\end{align}
+Equations \eqref{eq:correlation-drop}--\eqref{eq:viscous-tail}
+give \eqref{eq:signed-work}--\eqref{eq:viscous-zero}.
+
+If Alternative A fails, then for each fixed \(A>1\),
+\[
+ \left\|
+ \Pi_{\Lambda_j<|\xi|\leq A\Lambda_j}w_j
+ \right\|_2\longrightarrow0.
+\]
+Combine this with \eqref{eq:w-tail} and choose
+\(A_k\to\infty\) diagonally to obtain
+\[
+ \|\Pi_{>A_k\Lambda_{j_k}}w_{j_k}\|_2
+ \geq d_1/2.
+\]
+Since \(A_k\Lambda_{j_k}\to\infty\),
+\[
+ \|\Pi_{>A_k\Lambda_{j_k}}u_*\|_2\longrightarrow0.
+\]
+The triangle inequality proves \eqref{eq:superclock-tail}, and
+Plancherel proves \eqref{eq:superclock-enstrophy}.
+\end{proof}
+
+\begin{remark}[Why Alternative A does not yet sum]
+The work in \eqref{eq:signed-work} has a fixed sign on disjoint
+intervals, but every test \(g_k\) changes with the event.  The capacity
+\eqref{eq:critical-capacity} is order one on every interval, so the
+current norms do not furnish one finite common budget for the
+unweighted sum.  A transported adjoint or a genuine square-function
+estimate would have to exploit more than separate Lorentz duality.
+\end{remark}
+
+\begin{remark}[Why Alternative B does not yet dissipate]
+Equation \eqref{eq:superclock-enstrophy} is pointwise.  No lower
+residence time is known at the frequency
+\(A_k\Lambda_{j_k}\), and the factor \(A_k\) may be accompanied by an
+arbitrarily shorter interval.  Thus the enstrophy amplification is not
+an integrated dissipation contradiction.
+\end{remark}
+
+\section{What changed in this round}
+
+\subsection*{Formal findings, subject to external review}
+
+\begin{enumerate}
+\item The exact q4 record clock reaches weak
+\(L_t^{11/2}\) and every Lorentz refinement
+\(L_t^{11/2,r}\), \(r>11/2\).
+\item Even under the additional favourable surrogate assumption
+\(L_t^{11/2,\infty}B^0_{3,\infty}\), the Cheskidov--Luo Besov threshold
+is missed throughout the complete direct interpolation hull.
+\item The Leslie--Shvydkoy threshold has exact hull supremum \(3/5\).
+\item The nonzero terminal energy defect is supported on the terminal
+singular set and forces the pincer \eqref{eq:pincer}.
+\item Direct pressure interpolation has
+\(\gamma\geq8/11\) and misses the Barker--Wang
+dimension-closing necessary range \(\gamma<1/4\) by \(21/44\).
+\item The terminal defect obeys the exhaustive clock-band or
+super-clock alternative of Theorem~\ref{thm:spectral}.
+\end{enumerate}
+
+\subsection*{Closed shortcuts}
+
+\begin{enumerate}
+\item Endpoint weak time integrability alone does not close energy
+equality: the missing spatial Besov smoothness is explicit in
+\eqref{eq:four-gaps}.
+\item Reoptimising all direct energy-class mixed norms cannot raise the
+Leslie--Shvydkoy threshold above \(3/5\).
+\item Squaring the q4 velocity bound into a pressure bound does not
+enter the Barker--Wang parameter region.
+\item Orthogonal or signed defect correlations alone are not additive,
+because their tests change and the nonlinear capacity is exactly
+critical.
+\item A larger pointwise enstrophy floor alone is not an integrated
+charge without residence.
+\end{enumerate}
+
+\subsection*{Things left to prove}
+
+\begin{enumerate}
+\item Sum or cancel the event-dependent nonlinear works in
+\eqref{eq:signed-work} against one finite same-trajectory budget.
+\item Turn super-clock escape into a positive residence or dissipation
+lower bound.
+\item Derive a structural pressure cancellation or oscillation gain
+that crosses the direct \(21/44\) deficit.
+\item Prove strong left \(L^2\) continuity or energy equality at
+\(T^*\).
+\item Control the divergent-normalised-energy branch and schedules at
+or below the temporal five-power barrier.
+\item Prove one complete Clay alternative for arbitrary admissible
+data.
+\end{enumerate}
+
+\begin{conjecture}[The pincer is empty]
+No first singular time arising from smooth finite-energy data supports
+a nonzero anomalous energy defect on a terminal singular set of
+Hausdorff dimension in \([3/5,1]\).
+\end{conjecture}
+
+Theorem~\ref{thm:pincer} proves that every energy-efficient exact q4
+survivor would have precisely such a defect.  It does not prove the
+conjecture, a global regularity theorem, a breakdown construction, or
+any Clay alternative.
+
+\begin{thebibliography}{9}
+\raggedright
+
+\bibitem{BW23}
+T.~Barker and W.~Wang,
+\emph{Estimates of the singular set for the Navier--Stokes equations
+with supercritical assumptions on the pressure},
+J. Differential Equations \textbf{365} (2023), 379--407.
+\href{https://doi.org/10.1016/j.jde.2023.04.007}
+{doi:10.1016/j.jde.2023.04.007};
+arXiv:2111.15444v2.
+
+\bibitem{CKN82}
+L.~Caffarelli, R.~Kohn, and L.~Nirenberg,
+\emph{Partial regularity of suitable weak solutions of the
+Navier--Stokes equations},
+Comm. Pure Appl. Math. \textbf{35} (1982), 771--831.
+\href{https://doi.org/10.1002/cpa.3160350604}
+{doi:10.1002/cpa.3160350604}.
+
+\bibitem{CL20}
+A.~Cheskidov and X.~Luo,
+\emph{Energy equality for the Navier--Stokes equations in weak-in-time
+Onsager spaces},
+Nonlinearity \textbf{33} (2020), 1388--1403.
+\href{https://doi.org/10.1088/1361-6544/ab60d3}
+{doi:10.1088/1361-6544/ab60d3};
+arXiv:1802.05785v2.
+
+\bibitem{LS18}
+T.~M. Leslie and R.~Shvydkoy,
+\emph{The energy measure for the Euler and Navier--Stokes equations},
+Arch. Ration. Mech. Anal. \textbf{230} (2018), 459--492.
+\href{https://doi.org/10.1007/s00205-018-1250-4}
+{doi:10.1007/s00205-018-1250-4};
+arXiv:1705.04420v4.
+
+\end{thebibliography}
+
+\end{document}

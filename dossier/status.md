@@ -1,6 +1,6 @@
 # Current status
 
-**Updated:** 2026-07-24
+**Updated:** 2026-07-25
 
 **Clay status:** unsolved
 
@@ -163,10 +163,26 @@ floor, and enstrophy
 conditional branch has a fixed downward kinetic-energy jump at \(T^*\).
 Energy equality there would exclude the branch, but general Leray--Hopf
 energy equality is open and no sufficient criterion follows yet from the
-record ledger. All current q4 gap weights remain summable. R3C now targets
-terminal energy equality or non-reuse of a prestored ultraviolet reservoir;
-divergent normalised energy, slower clocks, and
-\(2/5\le\gamma<1/2\) self-similar schedules remain open.
+record ledger.
+
+The
+[terminal-dimension pincer](experiments/type-ii-terminal-dimension-pincer.md)
+sharpens that survivor. The clock reaches weak \(L_t^{11/2}\), but the full
+direct Cheskidov--Luo interpolation hull misses energy equality. Its
+Leslie--Shvydkoy threshold is exactly \(3/5\), so the nonzero terminal defect
+forces
+\[
+3/5\le\dim_{\rm H}\sigma\le1,\qquad\mathcal H^1(\sigma)=0.
+\]
+Direct pressure interpolation has supercriticality at least \(8/11\), outside
+the Barker--Wang theorem and \(21/44\) above its necessary pincer-closing
+range. At least one spectral alternative holds: fixed-sign nonlinear
+clock-band events occur at exactly order-one capacity; if that alternative
+fails, the defect escapes to super-clock frequency with an unbounded
+enstrophy factor. R3C now targets a common adjoint or square-function budget
+for the first branch and residence for the second.
+All current q4 gap weights remain summable; divergent normalised energy,
+slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.
 
 ### Frozen R3B boundary
 

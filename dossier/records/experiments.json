@@ -4259,6 +4259,45 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-TERMINAL-DIMENSION-PINCER-001",
+      "title": "Exact q4 terminal dimension pincer and spectral defect alternative",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-PARTIAL-001",
+        "CLM-ENERGY-MEASURE-NO-ATOMS-001",
+        "CLM-LERAY-ENERGY-EQUALITY-OPEN-001",
+        "CLM-PRESSURE-SINGULAR-DIMENSION-001"
+      ],
+      "hypothesis": "The exact q=4 endpoint clock may directly meet a known energy-equality or pressure singular-dimension theorem, or the terminal ultraviolet defect may evade any sharper same-trajectory spectral alternative.",
+      "invariants": [
+        "The first-record tail has distribution at most lambda to the minus eleven-halves divided by log lambda",
+        "The endpoint weak-L3 norm belongs to weak L eleven-halves in time and to endpoint Lorentz L eleven-halves comma r for every r above eleven-halves",
+        "The full Cheskidov-Luo Besov interpolation hull is audited under an additional favourable B zero three infinity surrogate assumption, without asserting an embedding comparison with the actual weak-L3 endpoint",
+        "All four Cheskidov-Luo interpolation regions retain a strictly positive available-smoothness deficit",
+        "The convex hull of the energy and endpoint mixed-norm exponent points has Leslie-Shvydkoy threshold supremum exactly three-fifths",
+        "The terminal defect measure is positive, nonzero, dominated by the terminal energy measure, and supported on the terminal singular slice",
+        "The exact q=4 terminal singular slice has Hausdorff dimension at least three-fifths while Caffarelli-Kohn-Nirenberg gives zero one-dimensional Hausdorff measure",
+        "The q=4 pressure endpoint has supercriticality eight-elevenths and every direct energy-class pressure interpolation has at least that supercriticality",
+        "Barker-Wang requires gamma below one-half, while its lower delta restriction can enter dimension below three-fifths only if gamma is below one-quarter",
+        "The direct pressure interpolation therefore misses the necessary pincer-closing gamma range by twenty-one forty-fourths",
+        "A bounded clock-band defect subsequence forces fixed-sign nonlinear correlation work on disjoint intervals and vanishing viscous work",
+        "The nonlinear Lorentz capacity of each bounded clock-band event is exactly order one rather than summable",
+        "Failure of bounded clock-band mass forces fixed energy above A_j Lambda_j for A_j tending to infinity and a corresponding A_j squared enstrophy amplification",
+        "No common nonlinear-work budget, super-clock residence theorem, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Convert first-record tails into endpoint Lorentz control, optimise the Cheskidov-Luo and Leslie-Shvydkoy exponent hulls, localise the nonzero terminal defect to the singular slice, audit Barker-Wang pressure scaling, and prove an exhaustive, not necessarily exclusive, alternative between bounded clock-band correlation events and diagonal super-clock escape.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the endpoint distribution, four-region Besov gaps, exact three-fifths optimisation, terminal defect support and dimension proof, pinned Barker-Wang theorem and pressure arithmetic, signed work identity, critical nonlinear capacity, vanishing viscous term, and super-clock diagonal argument. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Determine whether known energy-equality or pressure-dimension criteria close the q=4 energy defect, and if not replace the vague ultraviolet-reuse question by an exhaustive quantitative spectral alternative.",
+      "failure_interpretation": "The endpoint distribution, Lorentz conclusion, interpolation coordinates, four-region algebra, Leslie-Shvydkoy optimisation, defect support, pressure scaling, Barker-Wang comparison, spectral alternative, work sign, tail powers, or scope label is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-terminal-dimension-pincer.md",
+        "dossier/rounds/2026-07-25-type-ii-terminal-dimension-pincer.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

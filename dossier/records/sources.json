@@ -512,6 +512,19 @@
       "status": "peer_reviewed",
       "last_checked": "2026-07-25",
       "notes": "Published Introduction equations (1.2)-(1.3) and the sentence immediately following state that energy equality for arbitrary Leray-Hopf or general weak solutions remains open. Theorem 1.1 gives a weak-in-time Besov sufficient condition, and Corollary 1.2 excludes energy loss for its stated Type-I Besov rate. The repository does not claim that the exact q=4 record ledger meets either sufficient condition."
+    },
+    {
+      "id": "SRC-BARKER-WANG-2023",
+      "title": "Estimates of the singular set for the Navier-Stokes equations with supercritical assumptions on the pressure",
+      "authors": ["Tobias Barker", "Wendong Wang"],
+      "year": 2023,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1016/j.jde.2023.04.007",
+      "version": "Journal of Differential Equations 365, 379-407; arXiv:2111.15444v2",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-25",
+      "notes": "Pinned arXiv v2 single-file gzip archive SHA-256: 8931a244ab07696e68c64743a2464dde48460f8c4f228e9f3761c8067d561be9; uncompressed TeX SHA-256: 5e9d7d484f538f6de7fab9aec5ffc61b9e61de67ac1851cca023bb085718b124. Exact source is pressurehausdorffrevisedARXIV.tex: Theorem 1 at lines 230-262 assumes 2/r+3/p=2+gamma with 0<gamma<1/2, delta>3gamma/(2+2gamma), and the stated additional parameter restrictions, then gives zero 2delta-dimensional Hausdorff measure of the first-time singular set. Theorem 2 at lines 290-306 gives arbitrarily small positive Hausdorff dimension under the scale-invariant weak mixed-Lorentz pressure condition."
     }
   ]
 }
