@@ -4298,6 +4298,42 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-OSEEN-ENTRANCE-001",
+      "title": "Exact q4 terminal defect as a zero-trace projected-Oseen entrance state",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-PARTIAL-001",
+        "CLM-DIVERGENCE-FREE-DRIFT-SUPERCRITICAL-001"
+      ],
+      "hypothesis": "The q4 ultraviolet defect may be bundled by one same-trajectory projected backward adjoint, or literal eventwise adjoint sewing may have finite jump cost.",
+      "invariants": [
+        "Every fixed high-pass L2 floor admits an individually finite upper cutoff retaining fixed terminal detector mass",
+        "The finite-band terminal detectors converge weakly to zero because their lower Fourier cutoffs diverge",
+        "The projected backward Oseen adjoint has exact dissipative reverse-time L2 energy and exact constant pairing with the Navier-Stokes trajectory",
+        "Compact-time weak limits yield one energy-class projected-Oseen adjoint on the full open interval",
+        "The finite kinetic-energy bound alone forces the limiting adjoint to have zero weak terminal trace against every solenoidal Schwartz test",
+        "The constant primal-adjoint pairing forces a uniform positive adjoint L2 norm despite that zero weak terminal trace",
+        "A nonzero terminal cross-defect measure is supported on the same terminal singular slice as the primal energy defect",
+        "In the bounded clock-band alternative every canonical local-adjoint reset has a fixed L2 norm floor and the piecewise source variation grows linearly",
+        "Pure heat changes a bounded clock-band detector by a vanishing amount over the q4 terminal interval",
+        "The standard low-pass Lipschitz strain estimate reaches only m to the nine-fourths times j to the one-half, below the clock by m to the one-twelfth times j to the one-sixth",
+        "Strong scalar drift exponents approach parabolic index fifteen-elevenths from above and remain strictly supercritical",
+        "No projected-Oseen terminal strong-trace theorem, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Truncate the forced high-pass defect to finite bands, launch exact projected frozen-drift Oseen adjoints, use reverse energy and primal-pairing conservation, compactify on every preterminal interval, prove zero weak trace from finite kinetic energy, localise the resulting cross defect to the singular slice, and audit eventwise reset, heat, strain, pressure, and scalar-drift costs.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include detector extraction, frozen-drift adjoint nomenclature, adjoint signs, energy and pairing identities, compactness, the energy-only terminal weak-trace estimate, the norm floor, cross-defect support, the fixed reset theorem, exact q4 heat and strain powers, and pinned Qian-Xi source scope. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Replace the two spectral survivors by one same-trajectory linear terminal-trace obstruction and identify an exact theorem whose proof would exclude the entire q4 energy defect.",
+      "failure_interpretation": "Finite-band extraction, adjoint signs, compactness, weak terminal trace, nonzero pairing, cross-defect localisation, reset floor, heat or strain arithmetic, scalar-drift interpolation, or scope labelling is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-oseen-entrance.md",
+        "dossier/rounds/2026-07-25-type-ii-oseen-entrance.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

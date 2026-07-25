@@ -683,6 +683,25 @@
       "depends_on": ["CLM-PARTIAL-001"],
       "audit": "Pinned arXiv v2 source lines 230-306 match the peer-reviewed article. The exact q=4 pressure hull is audited separately and is not claimed to satisfy either theorem.",
       "last_checked": "2026-07-25"
+    },
+    {
+      "id": "CLM-DIVERGENCE-FREE-DRIFT-SUPERCRITICAL-001",
+      "plain": "Divergence-free scalar parabolic drifts admit Aronson-type upper estimates in part of the supercritical mixed-norm range, but the cited theorem does not provide supercritical weak-solution regularity or the projected-Oseen terminal trace needed by R3C.",
+      "formal": "Qian-Xi Theorem 1 gives a fundamental-solution upper estimate for smooth divergence-free b in L^ell_t L^q_x when ell>1, q>n/2, and 1<=2/ell+n/q<2. Their source explicitly leaves regularity open in the supercritical case and proves energy-class uniqueness in its later application only for the critical class L-infinity_t L^n_x.",
+      "domain": "Rn",
+      "forcing": "linear_divergence_free_drift",
+      "solution_class": "scalar_linear_parabolic",
+      "assumptions": [
+        "Uniformly elliptic scalar diffusion",
+        "A divergence-free drift satisfying the source's strong mixed-Lebesgue and smoothness hypotheses"
+      ],
+      "conclusion": "The stated fundamental-solution upper estimate holds; no supercritical projected-vector terminal strong-trace theorem is imported.",
+      "scaling": "critical_to_supercritical_drift",
+      "status": "established",
+      "source_ids": ["SRC-QIAN-XI-2019"],
+      "depends_on": [],
+      "audit": "Pinned arXiv v3 source lines 217-253 state the upper-bound theorem, lines 318-335 explicitly leave supercritical regularity open and restrict the uniqueness application to the critical case, and lines 1282-1390 prove that critical application.",
+      "last_checked": "2026-07-25"
     }
   ]
 }

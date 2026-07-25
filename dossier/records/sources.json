@@ -525,6 +525,19 @@
       "status": "peer_reviewed",
       "last_checked": "2026-07-25",
       "notes": "Pinned arXiv v2 single-file gzip archive SHA-256: 8931a244ab07696e68c64743a2464dde48460f8c4f228e9f3761c8067d561be9; uncompressed TeX SHA-256: 5e9d7d484f538f6de7fab9aec5ffc61b9e61de67ac1851cca023bb085718b124. Exact source is pressurehausdorffrevisedARXIV.tex: Theorem 1 at lines 230-262 assumes 2/r+3/p=2+gamma with 0<gamma<1/2, delta>3gamma/(2+2gamma), and the stated additional parameter restrictions, then gives zero 2delta-dimensional Hausdorff measure of the first-time singular set. Theorem 2 at lines 290-306 gives arbitrarily small positive Hausdorff dimension under the scale-invariant weak mixed-Lorentz pressure condition."
+    },
+    {
+      "id": "SRC-QIAN-XI-2019",
+      "title": "Parabolic equations with divergence-free drift in space L_t^ell L_x^q",
+      "authors": ["Zhongmin Qian", "Guangyu Xi"],
+      "year": 2019,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1512/iumj.2019.68.7685",
+      "version": "Indiana University Mathematics Journal 68(3), 761-797; arXiv:1704.02173v3",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-25",
+      "notes": "Pinned arXiv v3 archive SHA-256: cf19b869a03ef7554f2675b5dd3e6e9aa8f5041dc39ce4179199ef426e55f50d. Exact source is Divergence_free_Qian-Xi-2017-12-15.tex, SHA-256 5e590c76c8e381a0a7b669f9a05ac4179a4c06ce7c9d924c0b2c3b92df082331: the smooth divergence-free supercritical upper-bound theorem is at lines 217-253; lines 318-335 state that supercritical regularity remains open and identify the critical-only uniqueness application; that application is proved at lines 1282-1390."
     }
   ]
 }

@@ -1,0 +1,675 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Pj}{\mathbb P}
+\newcommand{\ip}[2]{\left\langle #1,#2\right\rangle}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\weakto}{\rightharpoonup}
+\setlength{\emergencystretch}{2em}
+
+\title{The q4 Terminal Defect Forces a Zero-Trace Oseen Entrance State}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round bundles the entire conditional q4 terminal energy defect into
+one same-trajectory projected-Oseen adjoint.  Finite-band terminal data
+\(g_j\weakto0\) are extracted from the forced ultraviolet energy floor.
+Their backward adjoints converge to
+\[
+ a\in L^\infty_tL^2_\sigma\cap L^2_t\dot H^1_\sigma
+\]
+with constant nonzero primal pairing
+\[
+ \ip{u(t)}{a(t)}=c_0>0,
+\]
+although \(a(t)\weakto0\) as \(t\uparrow T^*\).  Thus \(a\) is a
+reverse-time entrance state with zero weak trace and a fixed strong-trace
+defect; finite kinetic energy alone proves the weak trace.  The associated
+terminal cross-defect measure is nonzero and is supported on the same
+singular slice as the primal energy defect.
+
+For the bounded-band subcase, a literal piecewise adjoint has a fixed
+\(L^2\) reset cost at every event, so its source variation grows linearly.
+Pure heat is negligible at the clock band.  The elementary low-pass strain
+estimate controls only frequencies
+\(\mu_j\asymp m_j^{9/4}j^{1/2}\), below the clock
+\(\Lambda_j\asymp m_j^{7/3}j^{2/3}\) by
+\(m_j^{1/12}j^{1/6}\).  The remaining gate is a new terminal
+strong-trace theorem for the pressure-coupled, self-generated Oseen
+system.  No Clay alternative is proved.
+\end{abstract}
+
+\section{Epistemic status and inputs}
+
+The statements proved here are conditional repository theorems, subject
+to external mathematical review.  Their antecedent is the
+energy-efficient exact q4 branch of the repository's Type-II reduction.
+That branch is not known to follow from arbitrary smooth Clay data.
+
+The imported Navier--Stokes partial-regularity statement is the classical
+Caffarelli--Kohn--Nirenberg theorem~\cite{CKN82}.  The scalar
+divergence-free-drift comparison is from Qian and Xi~\cite{QX19}.
+Their peer-reviewed theorem is contextual only; the projected vector
+adjoint below is not their scalar equation.
+
+The Clay problem remains unsolved.
+
+\section{Terminal detector}
+
+Let \(u\) be smooth on \([0,T)\), with a Leray--Hopf continuation through
+the putative first singular time \(T\).  Put
+\[
+ u_*:=u(T),
+ \qquad
+ w_j:=u(s_j)-u_*,
+ \qquad
+ U_2:=\sup_{0<t<T}\norm{u(t)}_2.
+\]
+The preceding critical-clock theorem gives
+\begin{equation}
+ \label{eq:highpass}
+ \norm{\Pi_{>\Lambda_j}w_j}_2\geq d_1>0,
+ \qquad
+ \Lambda_j\longrightarrow\infty.
+\end{equation}
+
+\begin{lemma}[Finite-band terminal detector]
+\label{lem:detector}
+There are finite \(\Omega_j>\Lambda_j\) and solenoidal data
+\[
+ g_j
+ :=
+ \Pi_{\Lambda_j<|\xi|\leq\Omega_j}w_j
+\]
+such that
+\begin{equation}
+ \label{eq:g-floor}
+ \norm{g_j}_2\geq\frac{d_1}{2},
+ \qquad
+ g_j\weakto0
+ \quad\hbox{in }L^2.
+\end{equation}
+After extraction,
+\begin{equation}
+ \label{eq:terminal-pair}
+ \ip{u(s_j)}{g_j}\longrightarrow c_0,
+ \qquad
+ c_0\geq\frac{d_1^2}{4}>0.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For fixed \(j\), monotone convergence of the Fourier tail permits a
+finite \(\Omega_j\) for which \eqref{eq:g-floor} holds.  The lower
+Fourier support tends to infinity, so \(g_j\weakto0\).
+Furthermore, \(\norm{g_j}_2\leq\norm{w_j}_2\leq2U_2\).
+
+Orthogonality of the projection gives
+\[
+ \ip{u(s_j)}{g_j}
+ =
+ \norm{g_j}_2^2+\ip{u_*}{g_j}.
+\]
+Moreover,
+\[
+ |\ip{u_*}{g_j}|
+ \leq
+ \norm{\Pi_{>\Lambda_j}u_*}_2\norm{g_j}_2
+ \longrightarrow0.
+\]
+The pairings are bounded; select a convergent subsequence and use
+\eqref{eq:g-floor}.
+\end{proof}
+
+\begin{remark}
+The individual upper cutoffs may diverge arbitrarily quickly.  Therefore
+Lemma~\ref{lem:detector} uses only the high-pass floor and applies before
+choosing between bounded clock-band mass and super-clock escape.
+\end{remark}
+
+\section{Projected backward Oseen identities}
+
+For each \(j\), let \(a_j\) solve
+\begin{equation}
+ \label{eq:adjoint}
+ \partial_ta_j+\nu\Delta a_j
+ +\Pj\bigl((u\cdot\nabla)a_j\bigr)=0,
+ \qquad
+ \nabla\cdot a_j=0,
+ \qquad
+ a_j(s_j)=g_j.
+\end{equation}
+This is a stable parabolic problem in reverse time.  In pressure form,
+\begin{equation}
+ \label{eq:adjoint-pressure}
+ \partial_ta_j+\nu\Delta a_j
+ +(u\cdot\nabla)a_j+\nabla q_j=0,
+ \qquad
+ -\Delta q_j
+ =
+ \partial_i u_\ell\,\partial_\ell(a_j)_i.
+\end{equation}
+Here ``projected Oseen adjoint'' means the adjoint of the frozen-drift
+operator
+\[
+ \mathcal L_u v
+ :=
+ \partial_t v-\nu\Delta v+\Pj((u\cdot\nabla)v).
+\]
+It is not the adjoint of the full Fr\'echet linearisation of
+Navier--Stokes, which also varies the advecting field.
+
+\begin{lemma}[Energy and exact primal pairing]
+\label{lem:identities}
+For \(0\leq t\leq s_j\),
+\begin{equation}
+ \label{eq:adjoint-energy}
+ \boxed{
+ \norm{a_j(t)}_2^2
+ +2\nu\int_t^{s_j}\norm{\nabla a_j(\tau)}_2^2\,d\tau
+ =
+ \norm{g_j}_2^2
+ }
+\end{equation}
+and
+\begin{equation}
+ \label{eq:pairing}
+ \boxed{
+ \ip{u(t)}{a_j(t)}
+ =
+ \ip{u(s_j)}{g_j}.
+ }
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Pair \eqref{eq:adjoint-pressure} with \(a_j\).  The drift is skew
+because \(u\) is divergence free, and the pressure is orthogonal to
+\(a_j\).  Integration backwards from \(s_j\) gives
+\eqref{eq:adjoint-energy}.
+
+The projected Navier--Stokes equation is
+\[
+ \partial_tu
+ =
+ \nu\Delta u-\Pj((u\cdot\nabla)u).
+\]
+Differentiate \(\ip{u}{a_j}\).  The two diffusion terms cancel by
+self-adjointness, while
+\[
+ \ip{(u\cdot\nabla)u}{a_j}
+ =
+ -\ip{u}{(u\cdot\nabla)a_j}.
+\]
+All pressure pairings vanish.  Hence the derivative is zero.
+\end{proof}
+
+\section{One zero-trace entrance state}
+
+\begin{theorem}[Projected-Oseen entrance]
+\label{thm:entrance}
+After passing to a subsequence, there exists
+\[
+ a\in
+ L^\infty(0,T;L^2_\sigma(\R^3))
+ \cap
+ L^2(0,T;\dot H^1_\sigma(\R^3))
+\]
+which solves
+\begin{equation}
+ \label{eq:limit-adjoint}
+ \partial_ta+\nu\Delta a
+ +\Pj((u\cdot\nabla)a)=0
+\end{equation}
+distributionally on \((0,T)\), and satisfies
+\begin{equation}
+ \label{eq:constant-limit-pair}
+ \boxed{
+ \ip{u(t)}{a(t)}=c_0>0
+ \quad(0<t<T).
+ }
+\end{equation}
+Nevertheless,
+\begin{equation}
+ \label{eq:weak-zero}
+ \boxed{
+ a(t)\weakto0
+ \quad\hbox{in }L^2
+ \quad(t\uparrow T).
+ }
+\end{equation}
+In particular,
+\begin{equation}
+ \label{eq:norm-floor}
+ \boxed{
+ \inf_{0<t<T}\norm{a(t)}_2
+ \geq\frac{c_0}{U_2}>0.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The energy identity \eqref{eq:adjoint-energy} gives uniform bounds in
+\(L^\infty L^2\cap L^2\dot H^1\).  On
+\([0,T-\varepsilon]\), the coefficient \(u\) is smooth and the equation
+bounds \(\partial_ta_j\) in a negative Sobolev space.  Weak compactness,
+weak time continuity, and a diagonal extraction yield \(a\) and permit
+passage to \eqref{eq:limit-adjoint}.  Equations
+\eqref{eq:terminal-pair} and \eqref{eq:pairing} give
+\eqref{eq:constant-limit-pair}.
+
+Let \(h\) be a solenoidal Schwartz field.  Pair
+\eqref{eq:adjoint-pressure} with \(h\), integrate from \(t\) to \(s_j\),
+and integrate the drift by parts.  The energy bounds for both fields give
+\begin{align}
+ \label{eq:weak-trace-est}
+ |\ip{a_j(t)-g_j}{h}|
+ \leq{}&
+ C U_2\nu(s_j-t)\norm{\Delta h}_2
+ \nonumber\\
+ &+
+ C U_2^2(s_j-t)\norm{\nabla h}_\infty.
+\end{align}
+Indeed,
+\[
+ \norm{a_j}_2\leq2U_2,
+ \qquad
+ \norm{u\cdot\nabla h}_2
+ \leq U_2\norm{\nabla h}_\infty.
+\]
+
+Letting \(j\to\infty\), using \(g_j\weakto0\), yields
+\[
+ |\ip{a(t)}{h}|
+ \leq
+ C_h(T-t).
+\]
+This tends to zero as \(t\uparrow T\).  Density and the uniform \(L^2\)
+bound prove \eqref{eq:weak-zero}.
+
+Finally, \eqref{eq:constant-limit-pair} and Cauchy--Schwarz give
+\[
+ c_0
+ \leq
+ \norm{u(t)}_2\norm{a(t)}_2
+ \leq
+ U_2\norm{a(t)}_2,
+\]
+which is \eqref{eq:norm-floor}.
+\end{proof}
+
+\begin{remark}[Correct reverse-time interpretation]
+Writing \(\tau=T-t\) turns \eqref{eq:limit-adjoint} into a forward
+parabolic system.  Its weak initial trace is zero, but its interior
+\(L^2\) norm has the floor \eqref{eq:norm-floor}.  The theorem does not
+assert that the limit satisfies the initial energy inequality at
+\(\tau=0\).  Such an assertion would already give strong attainment of
+the zero datum and would rule the state out.
+\end{remark}
+
+\section{Cross defect on the singular slice}
+
+Let
+\[
+ \sigma
+ :=
+ \{x:(x,T)\text{ is singular for the continuation}\}.
+\]
+The preceding round proved, conditionally,
+\[
+ \frac35\leq\dim_{\rm H}\sigma\leq1,
+ \qquad
+ \mathcal H^1(\sigma)=0.
+\]
+
+\begin{proposition}[Terminal cross-defect measure]
+\label{prop:cross}
+After extraction along the record times, the signed measures
+\[
+ u(s_j)\cdot a(s_j)\,dx
+\]
+converge weak-star to a finite signed measure \(\zeta\) with
+\begin{equation}
+ \label{eq:cross}
+ \boxed{
+ \zeta(\R^3)=c_0,
+ \qquad
+ \supp\zeta\subset\sigma.
+ }
+\end{equation}
+If \(\mathcal A\) is a simultaneous local weak-star limit of
+\(|a(s_j)|^2dx\), then
+\begin{equation}
+ \label{eq:a-charges}
+ \mathcal A(\sigma)>0.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The cross measures have uniformly bounded total variation.  The q4
+terminal sequence is uniformly spatially tight in \(L^2\), so
+Cauchy--Schwarz makes the cross measures tight.  Their total mass is
+\(c_0\) by \eqref{eq:constant-limit-pair}.
+
+If \(K\Subset\R^3\setminus\sigma\), local regularity gives
+\[
+ u(s_j)\longrightarrow u_*
+ \quad\hbox{strongly in }L^2(K),
+\]
+whereas \eqref{eq:weak-zero} gives \(a(s_j)\weakto0\).  A compactly
+supported cutoff near \(K\) therefore makes the cross pairing tend to
+zero.  Exhausting the regular set proves the support statement.
+
+Simultaneous measure extraction and Cauchy--Schwarz give
+\[
+ |\zeta|(B)^2
+ \leq
+ \mathcal E(B)\mathcal A(B)
+\]
+for Borel \(B\), where \(\mathcal E\) is the primal terminal energy
+measure.  Since \(\zeta\neq0\) and is supported on \(\sigma\),
+\eqref{eq:a-charges} follows.
+\end{proof}
+
+\section{The fixed reset paid by a piecewise adjoint}
+
+Now restrict to the bounded clock-band alternative.  Its event detectors
+\(g_k\) and separated times satisfy
+\begin{equation}
+ \label{eq:event}
+ \ip{u(s_{k+1})-u(s_k)}{g_k}
+ \leq-\frac{3\eta}{4}.
+\end{equation}
+Let \(b_k\) solve the projected backward adjoint on
+\([s_k,s_{k+1}]\) with \(b_k(s_{k+1})=g_k\), and put
+\[
+ r_k:=g_k-b_k(s_k).
+\]
+
+\begin{proposition}[Reset floor]
+\label{prop:reset}
+For every event,
+\begin{equation}
+ \label{eq:reset-floor}
+ \boxed{
+ \ip{u(s_k)}{r_k}\geq\frac{3\eta}{4},
+ \qquad
+ \norm{r_k}_2\geq\frac{3\eta}{4U_2}.
+ }
+\end{equation}
+The canonical forced adjoint which resets at the first \(N\) events has
+\(L^2\)-valued source variation at least
+\begin{equation}
+ \label{eq:variation}
+ \sum_{k=1}^N\norm{r_k}_2
+ \geq
+ \frac{3\eta}{4U_2}N.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Lemma~\ref{lem:identities} on the \(k\)-th interval gives
+\[
+ \ip{u(s_k)}{b_k(s_k)}
+ =
+ \ip{u(s_{k+1})}{g_k}.
+\]
+Subtract from \(\ip{u(s_k)}{g_k}\) and use \eqref{eq:event}.
+Cauchy--Schwarz gives the norm floor.  Each reset is the impulse
+\(r_k\delta_{s_k}\) in the forced equation, and vector-measure total
+variation sums the norms.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:reset} excludes finite \(L^2\)-variation gluing.
+It does not exclude every weighted or cancellation-sensitive square
+function.  The unforced limit from Theorem~\ref{thm:entrance} avoids the
+jumps by carrying the terminal entrance defect instead.
+\end{remark}
+
+\section{Clock-scale cost audit}
+
+With
+\[
+ M(t):=\norm{u(t)}_{L^{3,\infty}},
+\]
+the exact record tail gives
+\begin{equation}
+ \label{eq:tails}
+ \int_{s_j}^TM(t)\,dt
+ \lesssim
+ \frac{m_j^{-9/2}}{j},
+ \qquad
+ T-s_j
+ \lesssim
+ \frac{m_j^{-11/2}}{j},
+\end{equation}
+and
+\begin{equation}
+ \label{eq:clock}
+ \Lambda_j\asymp m_j^{7/3}j^{2/3}.
+\end{equation}
+
+\subsection{Heat cannot make the bounded-band reset}
+
+In the bounded-band alternative, \(g_j\) is supported below
+\(A\Lambda_j\).  For the backward heat evolution \(H_j\) with terminal
+value \(g_j\),
+\begin{align}
+ \norm{H_j(s_j)-g_j}_2
+ &\leq
+ \nu(s_{j+1}-s_j)(A\Lambda_j)^2\norm{g_j}_2
+ \nonumber\\
+ &\lesssim
+ A^2m_j^{-5/6}j^{1/3}
+ \longrightarrow0.
+ \label{eq:heat-small}
+\end{align}
+Thus pure diffusion of the original clock band cannot account for
+\eqref{eq:reset-floor}.
+
+\subsection{The low-pass strain ceiling}
+
+Lorentz Bernstein gives
+\[
+ \norm{\nabla\Pi_{\leq\mu}u(t)}_\infty
+ \lesssim
+ \mu^2M(t).
+\]
+Therefore
+\begin{equation}
+ \label{eq:strain}
+ \int_{s_j}^T
+ \norm{\nabla\Pi_{\leq\mu}u(t)}_\infty\,dt
+ \lesssim
+ \mu^2\frac{m_j^{-9/2}}{j}.
+\end{equation}
+The largest frequency for which this upper estimate is order one is
+\[
+ \mu_j\asymp m_j^{9/4}j^{1/2}.
+\]
+Comparison with \eqref{eq:clock} gives
+\begin{equation}
+ \label{eq:strain-gap}
+ \boxed{
+ \frac{\Lambda_j}{\mu_j}
+ \asymp
+ m_j^{1/12}j^{1/6}
+ \longrightarrow\infty.
+ }
+\end{equation}
+At the clock itself, the right side of \eqref{eq:strain} is bounded only
+by
+\[
+ C m_j^{1/6}j^{1/3},
+\]
+which is not perturbatively small.  This is an upper estimate and not a
+claim that the actual strain is large.
+
+\subsection{Pressure}
+
+The pressure \(q_j\) in \eqref{eq:adjoint-pressure} does no global
+\(L^2\) work and leaves both exact identities unchanged.  Variable
+transport already mixes frequencies; pressure adds nonlocal component
+coupling through the enforcement of solenoidality.  A componentwise
+scalar maximum principle cannot simply be applied after deleting it.
+
+\section{Comparison with scalar drift theory}
+
+The q4 drift belongs to strong sub-endpoint spaces, but their parabolic
+indices remain strictly supercritical.  For \(0<\theta<1\), set
+\[
+ \frac1{q_\theta}
+ =
+ \frac{1-\theta}{2}+\frac{\theta}{3}.
+\]
+Interpolation gives
+\[
+ \norm{u(t)}_{q_\theta}
+ \lesssim
+ U_2^{1-\theta}M(t)^\theta,
+\]
+so
+\begin{equation}
+ \label{eq:strong-drift}
+ u\in L^\ell_tL^{q_\theta}_x
+ \qquad
+ \text{whenever }\theta\ell<\frac{11}{2}.
+\end{equation}
+At the limiting time exponent,
+\begin{equation}
+ \label{eq:scalar-index}
+ \frac2\ell+\frac3{q_\theta}
+ =
+ \frac32-\frac{3\theta}{22}
+ >
+ \frac{15}{11}
+ >1.
+\end{equation}
+
+Qian and Xi prove an Aronson-type upper bound for smooth
+divergence-free scalar drifts with index in \([1,2)\)
+under their stated assumptions~\cite{QX19}.  Their source explicitly
+leaves regularity open in the supercritical case and proves
+energy-class uniqueness in the critical \(L^\infty_tL^n_x\) case.
+Equations \eqref{eq:strong-drift}--\eqref{eq:scalar-index} do not enter
+that critical uniqueness theorem.  The projected vector pressure is an
+additional distinction.
+
+\section{What changed in this round}
+
+\subsection*{Formal findings, subject to external review}
+
+\begin{enumerate}
+\item The entire q4 high-pass defect admits finite-band terminal
+detectors with fixed \(L^2\) mass and weak limit zero.
+\item Their projected backward adjoints converge to one nonzero
+energy-class entrance field whose zero weak terminal trace follows from
+finite kinetic energy alone.
+\item The constant primal--adjoint pairing produces a nonzero terminal
+cross-defect measure supported on the singular slice.
+\item Literal piecewise-adjoint sewing pays a fixed \(L^2\) reset at
+every bounded-band event.
+\item Heat is negligible at the bounded clock band, while the standard
+low-pass strain estimate loses the factor
+\(m_j^{1/12}j^{1/6}\).
+\item The available scalar drift hull approaches parabolic index
+\(15/11\), strictly above the critical line.
+\end{enumerate}
+
+\subsection*{Closed shortcuts}
+
+\begin{enumerate}
+\item Finite \(L^2\)-variation jump gluing cannot bundle infinitely many
+event detectors.
+\item Pure heat evolution cannot generate the required bounded-band
+reset.
+\item A perturbative low-pass Lipschitz argument does not reach the
+clock frequency.
+\item Scalar critical-drift uniqueness cannot be imported at the q4
+exponents, and deleting the projected pressure changes the equation.
+\end{enumerate}
+
+\subsection*{Open obligations}
+
+\begin{enumerate}
+\item Prove terminal strong-trace rigidity for the self-generated
+projected Oseen adjoint.
+\item Alternatively, exclude a nonzero cross-defect measure supported
+on the Caffarelli--Kohn--Nirenberg terminal slice.
+\item Find a pressure-sensitive compactness or microlocal budget for the
+entrance state.
+\item Control divergent normalised energy and clocks at or below the
+five-power barrier.
+\item Prove one complete Clay alternative for arbitrary admissible data.
+\end{enumerate}
+
+\begin{conjecture}[Self-generated Oseen terminal rigidity]
+Let \(u\) be a smooth finite-energy Navier--Stokes trajectory before its
+first possible singular time and suppose the exact q4 record clock holds.
+If
+\[
+ a\in L^\infty_tL^2_\sigma\cap L^2_t\dot H^1_\sigma
+\]
+solves \eqref{eq:limit-adjoint} and
+\(a(t)\weakto0\) as \(t\uparrow T\), then
+\[
+ \norm{a(t)}_2\longrightarrow0.
+\]
+\end{conjecture}
+
+Theorem~\ref{thm:entrance} shows that this conjecture excludes the q4
+terminal energy defect.  It is not proved.
+
+\section*{Source provenance}
+
+The pinned arXiv v3 archive for Qian--Xi has SHA-256
+\[
+\texttt{cf19b869a03ef7554f2675b5dd3e6e9aa8f5041dc39ce4179199ef426e55f50d}.
+\]
+Its TeX member
+\texttt{Divergence\_free\_Qian-Xi-2017-12-15.tex} has SHA-256
+\[
+\texttt{5e590c76c8e381a0a7b669f9a05ac4179a4c06ce7c9d924c0b2c3b92df082331}.
+\]
+The supercritical upper-bound theorem is at source lines 217--253; the
+explicit supercritical regularity frontier and the critical-only
+uniqueness application are at lines 318--335 and 1282--1390.
+
+\begin{thebibliography}{9}
+\raggedright
+
+\bibitem{CKN82}
+L.~Caffarelli, R.~Kohn, and L.~Nirenberg,
+\emph{Partial regularity of suitable weak solutions of the
+Navier--Stokes equations},
+Communications on Pure and Applied Mathematics 35 (1982), 771--831.
+
+\bibitem{QX19}
+Z.~Qian and G.~Xi,
+\emph{Parabolic equations with divergence-free drift in space
+\(L_t^\ell L_x^q\)},
+Indiana University Mathematics Journal 68 (2019), 761--797,
+\href{https://doi.org/10.1512/iumj.2019.68.7685}
+{doi:10.1512/iumj.2019.68.7685}.
+
+\end{thebibliography}
+
+\end{document}

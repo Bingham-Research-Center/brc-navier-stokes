@@ -179,8 +179,25 @@ the Barker--Wang theorem and \(21/44\) above its necessary pincer-closing
 range. At least one spectral alternative holds: fixed-sign nonlinear
 clock-band events occur at exactly order-one capacity; if that alternative
 fails, the defect escapes to super-clock frequency with an unbounded
-enstrophy factor. R3C now targets a common adjoint or square-function budget
-for the first branch and residence for the second.
+enstrophy factor.
+
+The
+[Oseen-entrance theorem](experiments/type-ii-oseen-entrance.md)
+now unifies both alternatives. Finite-band truncations of the whole
+high-pass defect launch projected backward adjoints converging to one
+energy-class field \(a\) with
+\[
+\langle u(t),a(t)\rangle=c_0>0,\qquad
+a(t)\rightharpoonup0,\qquad
+\inf_{t<T^*}\|a(t)\|_2>0.
+\]
+Its nonzero terminal cross-defect measure is supported on \(\sigma\).
+Literal eventwise adjoint sewing pays a fixed \(L^2\) reset per event;
+pure heat is negligible, while the available low-pass strain estimate
+misses the clock by \(m_j^{1/12}j^{1/6}\). R3C now targets terminal
+strong-trace rigidity for this pressure-coupled, self-generated Oseen
+entrance state.
+
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.
 
