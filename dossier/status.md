@@ -195,11 +195,11 @@ The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation
 splits the exact \(q=4\) layer into diffuse or retained ultraviolet cells;
 the latter also forces multirecord signed import. The
 [temporal five-power theorem](experiments/type-ii-temporal-five-barrier.md)
-now converts the clock into \(L^s_tL^{3,\infty}_x\), \(s<11/2\), and
-interpolates past a peer-reviewed positive energy-dimension threshold.
-Fixed-energy shrinking balls would be terminal atoms, so every retained
-partial/tight energy-efficient \(q=4\) cell is empty; separate self-similar bounds retain \(2/5\le\gamma<1/2\).
-R3C now targets diffuse fragmentation; divergent-energy and slower-clock cells remain open.
+excludes every retained energy-efficient \(q=4\) cell. The
+[diffuse-fragmentation theorem](experiments/type-ii-diffuse-fragmentation.md)
+then forces the Morrey scale \(R_j^{27/26+o(1)}\), normalised perimeter
+\(R_j^{-1/26+o(1)}\), and normalised enstrophy \(R_j^{-1/13+o(1)}\), sharply.
+All q4 gap weights remain summable; the self-similar cell retains \(2/5\le\gamma<1/2\). R3C now targets spectral residence/freshness.
 
 ### Frozen R3B boundary
 

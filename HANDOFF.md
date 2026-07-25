@@ -1,43 +1,41 @@
-# Handoff: R3C diffuse-layer fragmentation
+# Handoff: R3C Morrey-scale spectral coherence
 
-**Updated:** 2026-07-24 · **Clay status:** unsolved
+**Updated:** 2026-07-25 · **Clay status:** unsolved
 
 **Live route:** `ROUTE-R3C` · **Checkpoint:**
-`EXP-TYPE-II-TEMPORAL-FIVE-BARRIER-001`
+`EXP-TYPE-II-DIFFUSE-FRAGMENTATION-001`
 
 ## Load only
 
-- [Temporal five-power theorem](dossier/experiments/type-ii-temporal-five-barrier.md)
+- [Diffuse-fragmentation theorem](dossier/experiments/type-ii-diffuse-fragmentation.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
 ## Exact live question
 
-Must a fixed-energy amplitude layer that is diffuse at its own volume radius
-pay a nonsummable interface, enstrophy, or pressure-transport charge, or can
-it be recentered into the now-excluded retained cell?
+At the canonical fragmentation scale
+\(\rho_j=R_j^{27/26+o(1)}\), must fixed selected-layer energy have a
+controlled low-frequency fraction, or does its failure force a fixed
+ultraviolet energy floor with enough residence/freshness to be nonsummable?
 
 ## Live theorem
 
-If
+The exact q4 clock plus the peer-reviewed terminal local-energy estimate
+forces, for every \(\varepsilon>0\),
 \[
-\|u(t)\|_{L^{3,\infty}}\in L^s(0,T^*)
-\quad\text{for some }s>5,
-\]
-then no shrinking ball can retain fixed kinetic energy at times approaching
-\(T^*\). The exact \(q=4\) clock gives every \(s<11/2\); explicitly,
-\[
-u\in L_t^{256/53}L_x^{96/31},
+\operatorname{Per}(A_j)\gtrsim_\varepsilon R_j^{51/26+\varepsilon},
 \qquad
-\int_{B_r(x)}|u(t)|^2\lesssim r^{1/29}
+\|\nabla u(t_j)\|_2^2
+\gtrsim_\varepsilon R_j^{-27/13+\varepsilon}.
 \]
-in its \(r^{72/29}\) terminal window. Hence every partial/tight
-energy-efficient exact \(q=4\) cell is empty. Its selected layer must be
-diffuse. Divergent-normalised energy, slower clocks, and Clay remain open.
+A divergence-free packet family saturates these static powers. Their
+strongest current q4 gap weights remain summable; no dynamical exclusion
+follows. Retained carriers are already empty. Divergent energy, slower
+clocks, and Clay remain open.
 
 ## Next bounded cycle
 
-Cover the diffuse selected layer at scale \(R_j\), quantify the necessary
-component count and amplitude interfaces, and test coarea/isoperimetry
-against enstrophy and pressure transport. Seek either a fixed local sublayer
-or one scale-zero nonsummable fragmentation charge. Do not reopen retained
-\(q=4\) transport genealogy.
+Build a masked-layer/Fourier dichotomy at \(\rho_j\). Test whether a fixed
+\(L^2\) fraction below \(C/\rho_j\) can feed the low-pass clock
+\(\Delta t_j=o(\rho_j^{5/2})\); otherwise seek a fixed high-pass energy
+floor, not merely large enstrophy. Then audit residence and fresh-budget
+weights. Do not reopen retained q4 genealogy or repeat the static cover.

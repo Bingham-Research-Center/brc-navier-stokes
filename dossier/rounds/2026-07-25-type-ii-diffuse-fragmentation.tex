@@ -1,0 +1,716 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Per}{\operatorname{Per}}
+
+\title{Sharp Morrey Fragmentation of Diffuse Fast Type-II Layers}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round quantifies the only energy-efficient exact \(q=4\) Type-II
+geometry left after retained shrinking carriers were excluded.  A
+peer-reviewed terminal local-energy estimate, combined with a
+cube-localised \(H^1\)-to-\(L^{10/3}\) inequality, forces an amplitude layer
+of volume radius \(R_j\) to fragment at the smaller Morrey scale
+\(\rho_j=R_j^{27/26+o(1)}\).  Its perimeter and enstrophy obey
+\[
+ \Per(A_j)\gtrsim_\varepsilon
+ R_j^{51/26+\varepsilon},
+ \qquad
+ \|\nabla u(t_j)\|_2^2\gtrsim_\varepsilon
+ R_j^{-27/13+\varepsilon}.
+\]
+In particular, both quantities diverge after normalisation by their
+single-carrier powers.  A smooth compactly supported divergence-free
+packet family saturates the exponents under all static hypotheses used.
+The exact \(q=4\) record gap nevertheless leaves every presently available
+enstrophy, interface, cubic-flux, cutoff-flux, and viscous-cutoff floor
+summable.  The live obstruction is therefore temporal and spectral:
+one must either detect fixed energy below frequency
+\(\rho_j^{-1}\), or make its ultraviolet failure time-resident.  The
+argument is a conditional reduction under a putative first-blow-up
+trajectory; it does not resolve a Clay alternative.
+\end{abstract}
+
+\section{Epistemic scope}
+
+The local energy estimate used below is a specialisation of the
+peer-reviewed energy-measure theorem of Leslie and Shvydkoy~\cite{LS18}.
+The amplitude-layer ledger, localisation lemma, optimised scale,
+perimeter and enstrophy deductions, sharp packet family, and summability
+audit are repository deductions and await external mathematical review.
+No claim of literature novelty is made.
+
+The conclusions are conditional: if one smooth finite-energy
+Navier--Stokes trajectory realises the energy-efficient exact \(q=4\)
+first-record ledger, then its selected layer obeys the displayed
+fragmentation bounds.  The packet family later in the report is
+kinematic and consists of different fields; it is not a Navier--Stokes
+trajectory.
+
+\section{Setting and imported local-energy control}
+
+Let \(u\) be a smooth divergence-free solution on
+\(\R^3\times[0,T^*)\) of
+\[
+ \partial_tu+u\cdot\nabla u=-\nabla p+\nu\Delta u,
+ \qquad
+ \nabla\cdot u=0,
+\]
+where \(T^*<\infty\) is its first possible singular time.  Assume the
+finite-energy bounds
+\[
+ \sup_{t<T^*}\|u(t)\|_2^2\le E_0,
+ \qquad
+ \int_0^{T^*}\|\nabla u(t)\|_2^2\,dt<\infty.
+\]
+
+Let \(t_j\uparrow T^*\) be exact \(q=4\) first-record times for
+\[
+ m_j:=\|u(t_j)\|_{L^{3,\infty}},
+\]
+so that
+\begin{equation}
+ \label{eq:q4-clock}
+ m_j\asymp2^{2j},
+ \qquad
+ t_{j+1}-t_j\asymp\frac{2^{-11j}}j,
+ \qquad
+ T^*-t_j\lesssim\frac{2^{-11j}}j.
+\end{equation}
+Choose the near-extremising amplitude layer
+\[
+ A_j:=\{a_j<|u(t_j)|\le2a_j\},
+ \qquad
+ e_j:=\int_{A_j}|u(t_j)|^2\,dx,
+ \qquad
+ R_j:=|A_j|^{1/3}.
+\]
+In the energy-efficient branch,
+\begin{equation}
+ \label{eq:energy-efficient}
+ 0<c_0\le e_j\le E_0.
+\end{equation}
+The amplitude-layer theorem gives
+\begin{equation}
+ \label{eq:layer-scaling}
+ a_j^2R_j^3\asymp e_j,
+ \qquad
+ a_j\asymp R_j^{-3/2},
+ \qquad
+ R_j\asymp m_j^{-2}\asymp2^{-4j}.
+\end{equation}
+
+The exact clock puts
+\(\|u(t)\|_{L^{3,\infty}}\) in every temporal \(L^s\) below \(11/2\).
+Interpolation with the energy-class \(L^2_tL^6_x\) bound and
+the theorem of Leslie--Shvydkoy gives the following explicit estimate:
+for every compact \(K\subset\R^3\),
+\begin{equation}
+ \label{eq:explicit-morrey}
+ \sup_{\substack{T^*-r^{72/29}<t<T^*\\x\in K}}
+ \int_{B_r(x)}|u(y,t)|^2\,dy
+ \le C_Kr^{1/29}
+\end{equation}
+for sufficiently small \(r\).  Uniform spatial tightness of the energy
+measures allows one fixed ball \(K_0\) such that
+\begin{equation}
+ \label{eq:compact-energy}
+ \int_{A_j\cap K_0}|u(t_j)|^2\,dx\ge\frac{c_0}{2}
+\end{equation}
+for all sufficiently large \(j\).
+
+\section{The local concentration inequality}
+
+\begin{lemma}[Cube-localised \(L^{10/3}\) estimate]
+\label{lem:local-10/3}
+There is an absolute constant \(C\) such that, for every
+\(f\in H^1(\R^3)\) and \(r>0\),
+\begin{equation}
+ \label{eq:local-10/3}
+ \|f\|_{10/3}^{10/3}
+ \le
+ C\left(
+ \sup_{x\in\R^3}\int_{B_{2r}(x)}|f|^2
+ \right)^{2/3}
+ \left(
+ \|\nabla f\|_2^2+r^{-2}\|f\|_2^2
+ \right).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Tile \(\R^3\) by disjoint cubes \(Q\) of side \(r\).  Interpolation on one
+cube gives
+\[
+ \|f\|_{L^{10/3}(Q)}^{10/3}
+ \le
+ \|f\|_{L^2(Q)}^{4/3}
+ \|f\|_{L^6(Q)}^2.
+\]
+The scaled Sobolev inequality on \(Q\) is
+\[
+ \|f\|_{L^6(Q)}^2
+ \le
+ C\left(
+ \|\nabla f\|_{L^2(Q)}^2
+ +r^{-2}\|f\|_{L^2(Q)}^2
+ \right).
+\]
+Every such cube lies in a ball of radius \(2r\).  Bound the first factor
+by the largest local \(L^2\) mass and sum over the disjoint cubes.
+\end{proof}
+
+\section{The optimised enstrophy surcharge}
+
+\begin{theorem}[Morrey fragmentation forces enstrophy]
+\label{thm:enstrophy}
+Suppose that at \(t_j\), on every fixed compact set,
+\begin{equation}
+ \label{eq:beta-morrey}
+ \sup_x\int_{B_r(x)}|u(y,t_j)|^2\,dy
+ \le C r^\beta
+\end{equation}
+for all sufficiently small \(r\), where \(0<\beta<3\).  Suppose the
+terminal time window of this estimate contains \(t_j\) at
+\begin{equation}
+ \label{eq:rho-def}
+ \rho_j:=L R_j^{3/(3-\beta)}.
+\end{equation}
+Then one sufficiently large fixed \(L\) gives
+\begin{equation}
+ \label{eq:enstrophy-beta}
+ \boxed{
+ \|\nabla u(t_j)\|_2^2
+ \ge c_{\beta,L}R_j^{-6/(3-\beta)}
+ }
+\end{equation}
+for all sufficiently large \(j\).
+\end{theorem}
+
+\begin{proof}
+Choose a fixed \(\chi\in C_c^\infty(\R^3)\) equal to one on \(K_0\), and
+write
+\[
+ f_j:=\chi u(t_j).
+\]
+Equations \eqref{eq:compact-energy} and \eqref{eq:layer-scaling} imply
+\begin{align}
+ \|f_j\|_{10/3}^{10/3}
+ &\ge
+ \int_{A_j\cap K_0}|u(t_j)|^{10/3}\,dx \notag\\
+ &\ge
+ a_j^{4/3}
+ \int_{A_j\cap K_0}|u(t_j)|^2\,dx
+ \ge cR_j^{-2}.
+ \label{eq:lower-10/3}
+\end{align}
+Only balls meeting the fixed support of \(\chi\) enter
+Lemma~\ref{lem:local-10/3}.  Therefore
+\[
+ \sup_x\int_{B_{2\rho_j}(x)}|f_j|^2
+ \le C\rho_j^\beta.
+\]
+The cutoff also gives
+\[
+ \|f_j\|_2^2\le E_0,
+ \qquad
+ \|\nabla f_j\|_2^2
+ \le C\bigl(\|\nabla u(t_j)\|_2^2+E_0\bigr).
+\]
+Applying \eqref{eq:local-10/3} at \(r=\rho_j\), and then using
+\eqref{eq:lower-10/3}, yields
+\[
+ cR_j^{-2}
+ \le
+ C\rho_j^{2\beta/3}
+ \left(
+ \|\nabla u(t_j)\|_2^2+C\rho_j^{-2}
+ \right).
+\]
+Hence
+\begin{equation}
+ \label{eq:enstrophy-rearranged}
+ \|\nabla u(t_j)\|_2^2
+ \ge
+ cR_j^{-2}\rho_j^{-2\beta/3}
+ -C\rho_j^{-2}.
+\end{equation}
+The two terms on the right have the same \(R_j\) power:
+\[
+ R_j^{-2}\rho_j^{-2\beta/3}
+ =L^{-2\beta/3}R_j^{-6/(3-\beta)},
+\]
+\[
+ \rho_j^{-2}
+ =L^{-2}R_j^{-6/(3-\beta)}.
+\]
+Since \(2>2\beta/3\), increasing the fixed \(L\) makes the first
+coefficient dominate the second.  This proves
+\eqref{eq:enstrophy-beta}.
+\end{proof}
+
+\begin{corollary}[Explicit \(q=4\) surcharge]
+\label{cor:explicit}
+For the explicit estimate \eqref{eq:explicit-morrey},
+\[
+ \rho_j=L R_j^{87/86},
+ \qquad
+ \|\nabla u(t_j)\|_2^2\gtrsim R_j^{-87/43}.
+\]
+In particular,
+\[
+ R_j^2\|\nabla u(t_j)\|_2^2
+ \gtrsim R_j^{-1/43}\longrightarrow\infty.
+\]
+\end{corollary}
+
+\begin{proof}
+Here
+\[
+ \beta=\frac1{29},
+ \qquad
+ \frac3{3-\beta}=\frac{87}{86},
+ \qquad
+ \frac6{3-\beta}=\frac{87}{43}.
+\]
+The terminal-window condition is satisfied because
+\[
+ \rho_j^{72/29}\asymp R_j^{108/43},
+\]
+whereas \eqref{eq:q4-clock} and \eqref{eq:layer-scaling} give
+\[
+ \frac{T^*-t_j}{\rho_j^{72/29}}
+ \lesssim
+ \frac1jR_j^{\,11/4-108/43}
+ =
+ \frac1jR_j^{41/172}
+ \longrightarrow0.
+\]
+\end{proof}
+
+\section{The optimised interface surcharge}
+
+For a measurable set \(A\), write
+\(\Per(A)\in[0,\infty]\) for its De Giorgi perimeter.  If an exact
+dyadic endpoint gives infinite perimeter, the next lower bound is
+automatic.
+
+\begin{theorem}[Morrey fragmentation forces interface]
+\label{thm:perimeter}
+Under the hypotheses of Theorem~\ref{thm:enstrophy},
+\begin{equation}
+ \label{eq:perimeter-beta}
+ \boxed{
+ \Per(A_j)
+ \ge
+ c_{\beta,L}
+ R_j^{\,2-\beta/(3-\beta)}.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Tile space by cubes \(Q\) of side \(\rho_j\), and retain the finitely many
+cubes meeting \(K_0\).  They all lie in one fixed larger compact set.  Put
+\[
+ v_Q:=|A_j\cap Q|.
+\]
+Since \(|u|>a_j\) on \(A_j\), the local energy estimate and
+\(a_j^{-2}\lesssim R_j^3\) give
+\begin{equation}
+ \label{eq:cube-volume}
+ v_Q
+ \le a_j^{-2}\int_Q|u(t_j)|^2\,dx
+ \le CR_j^3\rho_j^\beta.
+\end{equation}
+Conversely, \eqref{eq:compact-energy}, the upper layer amplitude
+\(|u|\le2a_j\), and \(a_j^{-2}\gtrsim R_j^3\) give
+\begin{equation}
+ \label{eq:total-volume}
+ \sum_Qv_Q
+ \ge |A_j\cap K_0|
+ \ge cR_j^3.
+\end{equation}
+The ratio of the last member of \eqref{eq:cube-volume} to
+\(|Q|=\rho_j^3\) is
+\[
+ CR_j^3\rho_j^{\beta-3}=CL^{\beta-3}.
+\]
+Increase the fixed \(L\), if necessary, so that \(v_Q\le|Q|/2\) for every
+retained cube.  Relative isoperimetry on each cube, followed by
+\eqref{eq:cube-volume} and \eqref{eq:total-volume}, yields
+\begin{align*}
+ \Per(A_j)
+ &\ge c\sum_Qv_Q^{2/3}\\
+ &\ge
+ c\bigl(R_j^3\rho_j^\beta\bigr)^{-1/3}
+ \sum_Qv_Q\\
+ &\ge
+ cR_j^2\rho_j^{-\beta/3}
+ =
+ c_{\beta,L}R_j^{\,2-\beta/(3-\beta)}.
+\end{align*}
+\end{proof}
+
+\begin{corollary}[Explicit \(q=4\) interface]
+\label{cor:explicit-perimeter}
+For \(\beta=1/29\),
+\[
+ \Per(A_j)\gtrsim R_j^{171/86},
+ \qquad
+ \frac{\Per(A_j)}{R_j^2}
+ \gtrsim R_j^{-1/86}\longrightarrow\infty.
+\]
+\end{corollary}
+
+\begin{remark}
+The absolute perimeter in Corollary~\ref{cor:explicit-perimeter} may tend
+to zero.  The theorem proves divergence only after normalisation by the
+perimeter \(R_j^2\) of one radius-\(R_j\) carrier.
+\end{remark}
+
+\section{Optimisation below the unavailable endpoint}
+
+The exact clock gives every temporal exponent \(s<11/2\).  In the
+Leslie--Shvydkoy interpolation, letting \(s\uparrow11/2\) while the
+energy-class interpolation parameter tends to zero makes the local
+energy and terminal-window exponents approach
+\begin{equation}
+ \label{eq:endpoint-pair}
+ \beta_*=\frac19,
+ \qquad
+ \alpha_*=\frac{22}{9}.
+\end{equation}
+No endpoint integrability claim is used.
+
+\begin{corollary}[Optimised fragmentation powers]
+\label{cor:optimized}
+For every \(0<b<1/9\),
+\[
+ \|\nabla u(t_j)\|_2^2
+ \gtrsim_b R_j^{-6/(3-b)},
+\]
+\[
+ \Per(A_j)
+ \gtrsim_b R_j^{\,2-b/(3-b)}.
+\]
+Equivalently, for every \(\varepsilon>0\),
+\begin{equation}
+ \label{eq:optimized-enstrophy}
+ \boxed{
+ \|\nabla u(t_j)\|_2^2
+ \gtrsim_\varepsilon
+ R_j^{-27/13+\varepsilon},
+ }
+\end{equation}
+\begin{equation}
+ \label{eq:optimized-perimeter}
+ \boxed{
+ \Per(A_j)
+ \gtrsim_\varepsilon
+ R_j^{51/26+\varepsilon}.
+ }
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Given \(b<1/9\), choose interpolation parameters sufficiently close to
+\eqref{eq:endpoint-pair} that the published local energy exponent exceeds
+\(b\).  For \(r<1\), its estimate can be weakened to \(Cr^b\).
+The corresponding terminal-window exponent \(\alpha\) can be kept
+arbitrarily close to \(22/9\).  At
+\[
+ \rho_j=L R_j^{3/(3-b)},
+\]
+the window still contains \(t_j\), because the limiting comparison is
+strict:
+\[
+ \frac{3\alpha_*}{3-\beta_*}
+ =\frac{33}{13}
+ <\frac{11}{4}.
+\]
+Apply Theorems~\ref{thm:enstrophy} and~\ref{thm:perimeter}, then let
+\(b\uparrow1/9\).  The limiting exponents are
+\[
+ \frac6{3-1/9}=\frac{27}{13},
+ \qquad
+ 2-\frac{1/9}{3-1/9}=\frac{51}{26}.
+\]
+\end{proof}
+
+The limiting scale and equal-piece ledger are
+\begin{equation}
+ \label{eq:limiting-ledger}
+ \rho_j=R_j^{27/26+o(1)},
+ \qquad
+ N_j:=\left(\frac{R_j}{\rho_j}\right)^3
+ =R_j^{-3/26+o(1)},
+ \qquad
+ N_j^{-1}=R_j^{3/26+o(1)}.
+\end{equation}
+No comparable-component hypothesis is used in the theorems;
+\eqref{eq:limiting-ledger} is the sharp equal-piece interpretation.
+
+\section{Sharp divergence-free packet family}
+
+\begin{proposition}[Static sharpness]
+\label{prop:sharpness}
+Fix \(0<b<3\).  There is a family
+\(U_R\in C_c^\infty(\R^3;\R^3)\), \(R\downarrow0\), such that
+\(\nabla\cdot U_R=0\),
+\[
+ \|U_R\|_2^2\asymp1,
+ \qquad
+ \|U_R\|_{L^{3,\infty}}\asymp R^{-1/2},
+\]
+and
+\[
+ \sup_x\int_{B_r(x)}|U_R|^2\,dx\lesssim r^b
+ \qquad(0<r\le1).
+\]
+A fixed regular amplitude band has energy \(\asymp1\), volume radius
+\(\asymp R\), and
+\[
+ \Per(A_R)\asymp R^{\,2-b/(3-b)},
+ \qquad
+ \|\nabla U_R\|_2^2\asymp R^{-6/(3-b)}.
+\]
+\end{proposition}
+
+\begin{proof}
+Choose a nonzero divergence-free
+\(\phi\in C_c^\infty(B_1;\R^3)\), with a fixed regular amplitude band of
+positive measure.  Set
+\[
+ N\asymp R^{-3b/(3-b)},
+ \qquad
+ \rho:=RN^{-1/3}\asymp R^{3/(3-b)},
+ \qquad
+ a:=R^{-3/2}.
+\]
+Place \(N\) centres \(x_k\) quasi-uniformly in a fixed unit cube, with
+separation
+\[
+ d\asymp N^{-1/3}\gg\rho,
+\]
+and define
+\begin{equation}
+ \label{eq:packet-family}
+ U_R(x):=
+ a\sum_{k=1}^N
+ \phi\left(\frac{x-x_k}{\rho}\right).
+\end{equation}
+The supports are disjoint, and divergence freedom is preserved.
+Direct scaling gives
+\[
+ \|U_R\|_2^2
+ \asymp a^2N\rho^3\asymp1,
+\]
+\[
+ \|U_R\|_{L^{3,\infty}}
+ \asymp a(N\rho^3)^{1/3}
+ \asymp R^{-1/2},
+\]
+\[
+ \|\nabla U_R\|_2^2
+ \asymp a^2N\rho
+ \asymp R^{-6/(3-b)}.
+\]
+Replicating the fixed regular amplitude band gives total volume
+\(\asymp N\rho^3\asymp R^3\), fixed energy, and perimeter
+\[
+ \asymp N\rho^2
+ \asymp R^{\,2-b/(3-b)}.
+\]
+
+It remains to check the local energy bound.  If \(r\le\rho\), boundedness
+of \(\phi\) gives
+\[
+ \int_{B_r(x)}|U_R|^2
+ \lesssim R^{-3}r^3\le r^b,
+\]
+because \(\rho^{3-b}=R^3\).  If \(\rho\le r\le d\), one ball meets only
+\(O(1)\) packets and has energy
+\[
+ O(N^{-1})=O(\rho^b)\le O(r^b).
+\]
+If \(d\le r\le1\), quasi-uniform packing gives at most
+\(O(1+Nr^3)\) packets, hence energy
+\[
+ O(N^{-1}+r^3)=O(r^b).
+\]
+This proves every assertion.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:sharpness} shows that the powers in
+Corollary~\ref{cor:optimized} are optimal under the static inputs used.
+It is not a same-trajectory Navier--Stokes construction and does not
+exclude a stronger dynamical theorem.
+\end{remark}
+
+\section{Exact \texorpdfstring{\(q=4\)}{q=4} summability audit}
+
+At the limiting power, the exact record gap satisfies
+\begin{equation}
+ \label{eq:gap}
+ \Delta t_j:=t_{j+1}-t_j
+ \asymp\frac{R_j^{11/4}}j.
+\end{equation}
+Even if the pointwise enstrophy floor persisted for the entire gap, its
+numerical contribution would be only
+\begin{equation}
+ \label{eq:enstrophy-gap}
+ \Delta t_jR_j^{-27/13+o(1)}
+ =
+ \frac1jR_j^{35/52+o(1)}.
+\end{equation}
+This series converges geometrically.  Equation
+\eqref{eq:enstrophy-gap} is not an integrated lower bound, since no such
+persistence has been proved.  Its significance is that even this
+optimistic persistence would not contradict the finite dissipation budget
+at the available exponent.
+
+Likewise, the limiting perimeter floor
+\[
+ R_j^{51/26+o(1)}
+\]
+is itself summable, and Proposition~\ref{prop:sharpness} attains that
+scale.  A large normalised interface is therefore not an absolute
+interface-budget contradiction.
+
+The packet family has
+\[
+ \|U_R\|_3^3\asymp a^3R^3\asymp R^{-3/2}.
+\]
+Thus the full-gap cubic-action scale is
+\begin{equation}
+ \label{eq:cubic-gap}
+ \Delta t_j\|U_{R_j}\|_3^3
+ \asymp\frac1jR_j^{5/4},
+\end{equation}
+and inserting one cutoff gradient at \(\rho_j\) gives
+\begin{equation}
+ \label{eq:flux-gap}
+ \frac{\Delta t_j}{\rho_j}\|U_{R_j}\|_3^3
+ \asymp\frac1jR_j^{11/52+o(1)}.
+\end{equation}
+For the whole-space pressure representative
+\[
+ p=\mathcal R_a\mathcal R_b(U_aU_b),
+\]
+Calder\'on--Zygmund and H\"older estimates give
+\[
+ \int_{\R^3}|p||U_R|
+ \le
+ \|p\|_{3/2}\|U_R\|_3
+ \le C\|U_R\|_3^3,
+\]
+so pressure transport has the same dimensional cutoff scale.  The
+viscous cutoff scale is
+\begin{equation}
+ \label{eq:viscous-gap}
+ \frac{\Delta t_j}{\rho_j^2}
+ \asymp\frac1jR_j^{35/52+o(1)}.
+\end{equation}
+All these powers are positive and summable.
+
+There is nevertheless a favourable clock inequality.  The energy-only
+low-pass estimate changes frequencies below \(\rho_j^{-1}\) on the time
+scale \(\rho_j^{5/2}\), whereas
+\begin{equation}
+ \label{eq:lowpass-gap}
+ \frac{\Delta t_j}{\rho_j^{5/2}}
+ =
+ \frac1jR_j^{\,11/4-135/52+o(1)}
+ =
+ \frac1jR_j^{2/13+o(1)}
+ \longrightarrow0.
+\end{equation}
+What is missing is a fixed energy fraction visible below a controlled
+multiple of \(\rho_j^{-1}\).  Spatial Morrey fragmentation alone does not
+give this: an arbitrarily small amount of energy can carry arbitrarily
+large enstrophy at frequencies far above \(\rho_j^{-1}\).
+
+\section{Findings, conjecture, and remaining obligations}
+
+\subsection*{Robust findings, subject to review}
+
+\begin{enumerate}
+\item The explicit local-energy exponent \(1/29\) forces
+\(\rho_j=R_j^{87/86}\), perimeter
+\(\gtrsim R_j^{171/86}\), and enstrophy
+\(\gtrsim R_j^{-87/43}\).
+\item Optimisation below the unavailable temporal endpoint improves these
+to \(\rho_j=R_j^{27/26+o(1)}\), normalized perimeter
+\(R_j^{-1/26+o(1)}\), and normalized enstrophy
+\(R_j^{-1/13+o(1)}\).
+\item A smooth compactly supported divergence-free packet family saturates
+all three static powers while obeying the local energy bound at every
+radius.
+\item Every currently available exact \(q=4\) gap-weighted static charge
+retains a positive, hence summable, power of \(R_j\).
+\item The low-pass clock at \(\rho_j\) is strictly longer than the record
+gap by the power \(R_j^{-2/13+o(1)}\).
+\end{enumerate}
+
+\subsection*{Things still to prove}
+
+\begin{enumerate}
+\item Prove that a fixed fraction of the selected layer energy is visible
+below \(C/\rho_j\), or turn its failure into a fixed ultraviolet
+\(L^2\)-energy floor rather than merely large enstrophy.
+\item Give that spectral alternative same-trajectory residence,
+freshness, sign, or orthogonality sufficient for a nonsummable charge.
+\item Control the divergent-normalised-energy branch.
+\item Treat slower Type-II schedules at or below the temporal five-power
+barrier.
+\item Prove regularity or construct admissible breakdown for the full
+Clay data class.
+\end{enumerate}
+
+\begin{conjecture}[Morrey-scale spectral dichotomy]
+For an energy-efficient exact \(q=4\) selected layer with
+\(\rho_j=R_j^{27/26+o(1)}\), either a fixed fraction of its energy is
+coherently visible below \(C/\rho_j\) for one fixed \(C\), or a fixed
+energy fraction lies above \(K_j/\rho_j\) for some \(K_j\to\infty\) and
+persists long enough to pay a nonsummable physical dissipation or
+transport charge.
+\end{conjecture}
+
+No part of this conjecture is proved here.  The Clay problem remains
+unsolved.
+
+\begin{thebibliography}{9}
+
+\bibitem{LS18}
+T.~M. Leslie and R. Shvydkoy,
+\emph{The Energy Measure for the Euler and Navier--Stokes Equations},
+Archive for Rational Mechanics and Analysis \textbf{230} (2018),
+459--492.
+\href{https://doi.org/10.1007/s00205-018-1250-4}
+{doi:10.1007/s00205-018-1250-4}.
+Accepted source: arXiv:1705.04420v4.
+
+\end{thebibliography}
+
+\end{document}

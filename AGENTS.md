@@ -25,8 +25,9 @@ another link only to discharge the live obligation.
 - `dossier/records/` is canonical; one proof note owns each derivation.
   Routine work changes only that pair and replace-not-append `HANDOFF.md`.
 - Preserve source versions/anchors. Keep source and PDF caches ignored.
-- Put superseded chronology and one-use correspondence in Git, not live
-  context. Add code only for a nontrivial falsifiable finite claim.
+- Do not seek deleted review correspondence; use `dossier/review-ledger.md`.
+  Keep superseded chronology in Git, not live context. Add code only for a
+  nontrivial falsifiable finite claim.
 - Every commit batch includes a new self-contained
   `dossier/rounds/YYYY-MM-DD-<slug>.tex` report: formal statements/proofs,
   conjectures, robust novel findings subject to review, and open obligations.

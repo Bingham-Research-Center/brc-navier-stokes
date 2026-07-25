@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "experiments": [
     {
       "id": "EXP-SCALING-001",
@@ -4177,6 +4177,44 @@
         "dossier/rounds/2026-07-24-type-ii-temporal-five-barrier.tex"
       ],
       "last_run": "2026-07-24"
+    },
+    {
+      "id": "EXP-TYPE-II-DIFFUSE-FRAGMENTATION-001",
+      "title": "Diffuse Type-II layers force sharp Morrey fragmentation",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001",
+        "CLM-ENERGY-MEASURE-NO-ATOMS-001"
+      ],
+      "hypothesis": "The diffuse energy-efficient exact q=4 selected layer may fragment while paying no quantitatively forced interface or enstrophy surcharge, or the available surcharge may already be nonsummable on the q=4 record clock.",
+      "invariants": [
+        "Uniform spatial tightness keeps a fixed fraction of the selected layer energy in one fixed compact set",
+        "The Leslie-Shvydkoy local energy estimate controls every sufficiently small ball in that compact throughout its stated terminal window",
+        "A cube-localised interpolation inequality bounds global L10/3 mass by the two-thirds power of the largest local L2 mass times enstrophy plus the scaled energy term",
+        "The fixed-energy amplitude layer has L10/3 mass bounded below by a constant times R_j to the minus two",
+        "Optimising the cube scale gives rho_j equal to a fixed large constant times R_j to the power 3 divided by 3 minus beta",
+        "For beta equal to 1/29, rho_j has power 87/86, perimeter has lower power 171/86, and enstrophy has lower inverse power 87/43",
+        "Using every temporal exponent below eleven halves gives, up to arbitrary epsilon losses, limiting fragmentation scale R_j to the 27/26, normalised perimeter factor R_j to the minus 1/26, and normalised enstrophy factor R_j to the minus 1/13",
+        "A relative isoperimetric cube sum proves the perimeter bound without assuming comparable connected components; infinite exact-level perimeter satisfies it automatically",
+        "Smooth compactly supported divergence-free packet fields distributed quasi-uniformly through a fixed region saturate the local Morrey, perimeter, and enstrophy powers at every spatial radius",
+        "The sharp packet construction is kinematic and varies with scale; it is not one Navier-Stokes trajectory",
+        "Multiplying the optimised pointwise enstrophy floor by the entire q=4 record gap leaves the summable power R_j to the 35/52 divided by j and is not itself an integrated lower bound",
+        "Natural global cubic action, fragmentation-cutoff pressure-plus-kinetic flux, and viscous cutoff scales retain positive summable q=4 powers",
+        "The q=4 gap is little-o of rho_j to the five-halves by the limiting factor R_j to the 2/13 divided by j",
+        "No fixed low-frequency energy fraction, time residence, event freshness, nonsummable charge, divergent-energy control, slower-clock exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Localise the selected layer inside the uniformly tight energy region, prove the cube-localised L10/3 concentration inequality, optimise its spatial scale against the terminal Morrey estimate, apply relative isoperimetry, pass through every sub-endpoint temporal exponent, construct a scale-sharp divergence-free packet family, and audit every resulting q=4 time and transport weight.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the local interpolation lemma, compact localisation, exact and optimised exponents, terminal-window checks, relative-isoperimetric perimeter proof, all-scale divergence-free sharpness family, pressure estimate, and q=4 summability ledger. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Determine the strongest interface and enstrophy powers forced by diffuse exact q=4 fragmentation from the present local-energy input, decide whether those powers are statically sharp, and test whether they alone produce a nonsummable physical charge.",
+      "failure_interpretation": "The local L10/3 inequality, compact energy floor, Morrey scale optimisation, terminal-window comparison, perimeter aggregation, packet sharpness construction, or exact q=4 exponent ledger is incorrect, or the conclusion is overstated as a dynamical or Clay exclusion.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-diffuse-fragmentation.md",
+        "dossier/rounds/2026-07-25-type-ii-diffuse-fragmentation.tex"
+      ],
+      "last_run": "2026-07-25"
     },
     {
       "id": "EXP-ZERO-DIRECTION-001",
