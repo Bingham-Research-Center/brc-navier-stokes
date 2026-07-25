@@ -180,22 +180,23 @@ fixed-sign nonlinear clock-band events occur at order-one capacity, or the
 defect escapes to super-clock frequency with unbounded enstrophy.
 
 The Oseen [cross-current anomaly](experiments/type-ii-cross-current-anomaly.md)
-now unifies both alternatives. One energy-class field \(a\) has
-\(\langle u(t),a(t)\rangle=c_0>0\), \(a(t)\rightharpoonup0\), and
-\(\inf_{t<T^*}\|a(t)\|_2>0\).
-Its cross measure is nonzero on the \(\mathcal H^1\)-null slice, so it
-is not in \(H^{-1}\) and forces divergent preterminal \(H^{-1}\) spectrum.
-Physical localisation gives an exact pressure current; Fourier localisation
-cancels both pressures and forces a signed order-one commutator cascade.
-Most sharply, the survivor requires
+produces an energy-class \(a\), a non-\(H^{-1}\) cross measure, and a signed
+pressure-free commutator cascade whose sharpest consequence is
 \[
 \int_t^{T^*}\|u\|_{L^{3,\infty}}\|\nabla a\|_2^2\,ds=\infty
 \quad(t<T^*),
 \]
-although the unweighted adjoint dissipation is finite. The sufficient
-closing target is
-\(\nabla a\in L_t^{22/9,2}L_x^2\). Direct current interpolation approaches
-only \(L_x^{21/16,7/5}\), below the \(L^2\) singular-slice capacity target.
+although the unweighted adjoint dissipation is finite.
+The [amplitude-slab pincer](experiments/type-ii-adjoint-amplitude-pincer.md)
+uses the q4 clock to replace \(L_t^{22/9,2}L_x^2\) by a weaker Lorentz--Zygmund
+rearrangement norm. Every survivor must make that norm diverge, place a
+divergent first moment of adjoint dissipation on arbitrarily high drift
+slabs, and exhibit \(\|\nabla a\|_2\) spikes essentially of size
+\(\|u\|_{L^{3,\infty}}^{9/4}\). Strong \(L_t^{22/9}\) alone does not close
+the ledger. Differentiated energy, generic heat smoothing, and current
+BMO-skew reverse Hölder theory do not supply the missing gain; the live
+endpoint is a pressure-compatible, cross-defect-specific summable
+anti-correlation across the amplitude slabs.
 
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.

@@ -4371,6 +4371,41 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-ADJOINT-AMPLITUDE-PINCER-001",
+      "title": "The q4 adjoint dissipation is pinned to high-amplitude drift slabs",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-DIVERGENCE-FREE-DRIFT-BMO-001",
+        "CLM-BMO-SKEW-PARABOLIC-REVERSE-HOLDER-001"
+      ],
+      "hypothesis": "The exact logarithmic q4 clock and amplitude-slab Caccioppoli estimates may improve the adjoint gradient enough to make its weak-L3-weighted dissipation finite.",
+      "invariants": [
+        "The q4 weak-L3 distribution has the exact inverse-eleven-halves power with one inverse logarithm",
+        "Hardy-Littlewood rearrangement converts that clock into a logarithmically relaxed Lorentz-Zygmund closing norm for the adjoint gradient",
+        "Every surviving entrance has finite unweighted but infinite amplitude-weighted adjoint dissipation on every terminal interval",
+        "Every positive summable slab threshold is exceeded infinitely often by the weighted adjoint dissipation",
+        "The resulting pointwise adjoint-gradient spikes have the exact drift-amplitude power nine-fourths up to arbitrarily slow summable losses",
+        "A scalar rearrangement ledger shows strong temporal L^(22/9) alone does not force finite weighted dissipation",
+        "Differentiated adjoint energy carries an X-to-the-fourth coefficient throughout the direct interpolation hull",
+        "The weak-L3 drift has a skew BMO vector potential with norm controlled by its instantaneous amplitude",
+        "Current BMO-skew reverse-Holder theory has no record-uniform exponent and requires higher integrability of the projected pressure forcing",
+        "A divergence-free heat-flow example rules out every generic temporal L^(2+epsilon) gradient gain from energy data",
+        "No Lorentz-Zygmund adjoint gain, q4 closure, energy equality, or Clay A-D resolution is asserted"
+      ],
+      "method": "Invert the logarithmically improved q4 distribution, apply Hardy-Littlewood rearrangement, construct a sharp endpoint scalar ledger, decompose weighted dissipation over dyadic amplitude slabs, derive the full differentiated-energy interpolation hull, represent weak-L3 drift by a skew BMO potential, audit the pinned parabolic-system reverse-Holder preprint including projected pressure, and construct a simultaneous all-p-greater-than-two heat-flow saturation.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the rearrangement inversion, Lorentz-Zygmund closure, endpoint saturation, amplitude-slab spike theorem, pointwise nine-fourths barrier, enstrophy exponent calculation, skew-potential BMO proof, pressure-forcing mismatch, heat-flow counterexample, and exact source provenance. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Replace the sufficient L-time-(22/9,2) target by the exact weaker logarithmic rearrangement gate and determine whether standard Caccioppoli or Meyers theory supplies it.",
+      "failure_interpretation": "The clock inversion, rearrangement weight, endpoint saturation, slab averaging, nine-fourths exponent, enstrophy interpolation, BMO representation, pressure scope, heat-flow construction, or epistemic label is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-adjoint-amplitude-pincer.md",
+        "dossier/rounds/2026-07-25-type-ii-adjoint-amplitude-pincer.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

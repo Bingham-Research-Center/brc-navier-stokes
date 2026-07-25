@@ -722,6 +722,26 @@
       "depends_on": [],
       "audit": "Pinned arXiv v2 source lines 1220-1238 give the energy inequality and uniqueness theorem, lines 1332-1337 explain strong L2 continuity follows from the energy regularity, and lines 1341-1372 state L2 well-posedness. The q4 route lacks the uniform terminal BMO coefficient hypothesis and has a projected vector pressure.",
       "last_checked": "2026-07-25"
+    },
+    {
+      "id": "CLM-BMO-SKEW-PARABOLIC-REVERSE-HOLDER-001",
+      "plain": "A current preprint claims local Caccioppoli and gradient reverse-Holder estimates with some exponent above two for parabolic systems whose skew coefficient is uniformly bounded in time with values in spatial BMO.",
+      "formal": "Zhang arXiv v5 Theorems 4.1 and 4.2 claim local space-time Lp estimates for the gradient, for p greater than but sufficiently close to 2, when the leading coefficient has a bounded Garding-elliptic part and a real block-diagonal skew part in L-infinity-time BMO-space; the exponent and constants depend on the uniform BMO norm, and divergence forcing must have the corresponding Lp regularity.",
+      "domain": "parabolic_cylinders_in_Rn",
+      "forcing": "inhomogeneous_divergence_form",
+      "solution_class": "local_weak_parabolic_system",
+      "assumptions": [
+        "A bounded Garding-elliptic symmetric part",
+        "A real block-diagonal skew coefficient in L-infinity-time BMO-space",
+        "The source and divergence forcing have the theorem's stated integrability"
+      ],
+      "conclusion": "The claimed local improved Caccioppoli and gradient reverse-Holder estimates hold for some p greater than 2 depending on the coefficient norm.",
+      "scaling": "critical_BMO_coefficient",
+      "status": "preprint_claim",
+      "source_ids": ["SRC-ZHANG-2025-BMO-SKEW"],
+      "depends_on": [],
+      "audit": "Pinned arXiv v5 source lines 367-381 state the hypotheses, local conclusions, and norm dependence; lines 607-630 state the reverse-Holder and improved Caccioppoli estimates; lines 717-719 invoke Gehring to obtain p greater than 2. The repository does not promote this to a peer-reviewed theorem or apply it to the q4 projected pressure.",
+      "last_checked": "2026-07-25"
     }
   ]
 }

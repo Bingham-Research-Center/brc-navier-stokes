@@ -1,0 +1,731 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\cZ}{\mathfrak Z}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\esssup}{\operatorname*{ess\,sup}}
+\setlength{\emergencystretch}{2em}
+
+\title{The q4 Adjoint Dissipation Is Pinned to
+High-Amplitude Drift Slabs}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round audits reverse-time Caccioppoli and Meyers improvement for the
+conditional exact q4 projected-Oseen entrance.  The exact logarithmic
+weak-\(L^3\) clock yields a Lorentz--Zygmund closing norm for the
+adjoint gradient that is strictly weaker than the previously recorded
+\(L_t^{22/9,2}L_x^2\) condition.  If the entrance survives, this norm
+must diverge on every terminal interval.
+
+Equivalently, finite unweighted adjoint dissipation is forced onto
+arbitrarily high drift-amplitude slabs with a divergent first moment.
+The resulting pointwise gradient spikes have the exact
+\(M^{9/4}\) power up to arbitrarily slow summable losses.
+
+Differentiated energy, current BMO-skew reverse H\"older theory, and
+generic parabolic smoothing do not close this endpoint.  The direct
+enstrophy hull always carries an unavailable fourth power of primal
+enstrophy; existing reverse H\"older exponents depend on a uniform BMO
+norm which diverges across q4 record blocks; projected pressure is known
+only at the base forcing exponent; and a heat-flow construction rules out
+every generic \(L_t^{2+\epsilon}L_x^2\) gradient gain from \(L^2\)
+boundary data.  No Clay alternative is proved.
+\end{abstract}
+
+\section{Epistemic status and exact input}
+
+Every repository theorem below is conditional on the energy-efficient
+exact q4 branch and its projected-Oseen entrance.  Those antecedents are
+not derived for arbitrary Clay data.  External mathematical review is
+pending.
+
+On every terminal interval \(I=(t_0,T)\), put
+\begin{equation}
+\label{eq:MY}
+ M(t):=\norm{u(t)}_{L^{3,\infty}},
+ \qquad
+ Y(t):=\norm{\nabla a(t)}_2,
+ \qquad
+ p_*:=\frac{11}{2}.
+\end{equation}
+The exact first-record clock gives, for large \(\lambda\),
+\begin{equation}
+\label{eq:clock}
+ \left|\set{t\in I:M(t)>\lambda}\right|
+ \lesssim
+ \frac{\lambda^{-p_*}}{\log(e+\lambda)}.
+\end{equation}
+The preceding weighted-renormalisation theorem gives
+\begin{equation}
+\label{eq:weighted-infinite}
+ \boxed{
+ \int_I M(t)Y(t)^2\,dt=\infty,
+ }
+\end{equation}
+although
+\begin{equation}
+\label{eq:unweighted-finite}
+ \int_IY(t)^2\,dt<\infty.
+\end{equation}
+
+The Clay problem remains unsolved.
+
+\section{The logarithmically relaxed closing norm}
+
+Let \(M_I^*\) and \(Y_I^*\) denote decreasing rearrangements on \(I\).
+For \(0<s<|I|\), set
+\begin{equation}
+\label{eq:ell}
+ \ell_I(s):=\log\left(e+\frac{|I|}{s}\right)
+\end{equation}
+and define
+\begin{equation}
+\label{eq:Znorm}
+ \boxed{
+ \cZ_I(Y)^2
+ :=
+ \int_0^{|I|}
+ s^{-2/11}\ell_I(s)^{-2/11}
+ \bigl(Y_I^*(s)\bigr)^2\,ds.
+ }
+\end{equation}
+
+\begin{lemma}[Clock inversion]
+\label{lem:clock-inversion}
+There is a constant \(C_I\) such that
+\begin{equation}
+\label{eq:Mstar}
+ M_I^*(s)
+ \leq
+ C_I\left[
+ 1+s^{-2/11}\ell_I(s)^{-2/11}
+ \right].
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Only small \(s\) matters.  For a constant \(A>1\), define
+\[
+ \lambda_s
+ :=
+ A s^{-1/p_*}\ell_I(s)^{-1/p_*}.
+\]
+For sufficiently small \(s\),
+\[
+ \log(e+\lambda_s)\asymp\ell_I(s).
+\]
+Consequently \eqref{eq:clock} gives
+\[
+ \left|\set{M>\lambda_s}\right|
+ \lesssim A^{-p_*}s.
+\]
+Choose \(A\) so that the last expression is at most \(s\).  The
+definition of decreasing rearrangement gives
+\(M_I^*(s)\leq\lambda_s\).  A constant controls the remaining compact
+range of \(s\).
+\end{proof}
+
+\begin{theorem}[Lorentz--Zygmund closure]
+\label{thm:Zclosure}
+If
+\[
+ \cZ_I(Y)<\infty,
+\]
+then
+\[
+ \int_I MY^2<\infty.
+\]
+Hence every q4 entrance satisfies
+\begin{equation}
+\label{eq:Zdivergence}
+ \boxed{\cZ_I(Y)=\infty}
+\end{equation}
+on every terminal interval.
+\end{theorem}
+
+\begin{proof}
+Hardy--Littlewood rearrangement and
+Lemma~\ref{lem:clock-inversion} give
+\begin{align*}
+ \int_I MY^2
+ &\leq
+ \int_0^{|I|}
+ M_I^*(s)\bigl(Y_I^*(s)\bigr)^2\,ds\\
+ &\lesssim_I
+ \int_IY^2+\cZ_I(Y)^2.
+\end{align*}
+Both terms on the last line are finite under the hypotheses.  This
+contradicts \eqref{eq:weighted-infinite} for an entrance.
+\end{proof}
+
+\begin{corollary}[Relation to the previous target]
+\label{cor:old-target}
+The condition
+\[
+ Y\in L^{22/9,2}(I)
+\]
+implies \(\cZ_I(Y)<\infty\), but the converse is false.
+\end{corollary}
+
+\begin{proof}
+The Lorentz norm satisfies
+\[
+ \norm{Y}_{L^{22/9,2}}^2
+ \asymp
+ \int_0^{|I|}
+ s^{9/11-1}\bigl(Y_I^*(s)\bigr)^2\,ds
+ =
+ \int_0^{|I|}
+ s^{-2/11}\bigl(Y_I^*(s)\bigr)^2\,ds.
+\]
+This dominates \eqref{eq:Znorm}.  For strictness, near \(s=0\) take
+\[
+ \bigl(Y_I^*(s)\bigr)^2
+ =
+ s^{-9/11}\bigl[\log(e/s)\bigr]^{-10/11}.
+\]
+The logarithm in \eqref{eq:Znorm} makes its integral convergent, while
+the displayed Lorentz integral diverges.
+\end{proof}
+
+\subsection{Strong \texorpdfstring{\(L^{22/9}\)}{L22/9} does not suffice}
+
+\begin{proposition}[Endpoint scalar saturation]
+\label{prop:scalar-saturation}
+The clock distribution \eqref{eq:clock} and
+\(Y\in L^{22/9}(I)\) do not, by themselves, imply
+\(\int_I MY^2<\infty\).
+\end{proposition}
+
+\begin{proof}
+Work on \(0<s<e^{-e}\) and write
+\[
+ L(s):=\log(e/s),
+ \qquad
+ L_2(s):=\log L(s).
+\]
+Define decreasing functions
+\[
+ M_0(s):=s^{-2/11}L(s)^{-2/11}
+\]
+and
+\[
+ Z_0(s)
+ :=
+ s^{-9/11}L(s)^{-9/11}L_2(s)^{-1},
+ \qquad
+ Y_0:=Z_0^{1/2}.
+\]
+Monotone inversion shows that \(M_0\) has distribution
+\(\lambda^{-11/2}/\log\lambda\), up to constants.  Moreover,
+\[
+ \int_0^{e^{-e}}Y_0^{22/9}\,ds
+ =
+ \int_0^{e^{-e}}
+ \frac{ds}{sL(s)L_2(s)^{11/9}}
+ <\infty.
+\]
+On the other hand,
+\[
+ \int_0^{e^{-e}}M_0Y_0^2\,ds
+ =
+ \int_0^{e^{-e}}
+ \frac{ds}{sL(s)L_2(s)}
+ =\infty.
+\]
+This is a scalar rearrangement ledger, not a Navier--Stokes example.
+\end{proof}
+
+\section{The amplitude-slab pincer}
+
+For large integers \(n\), set
+\begin{equation}
+\label{eq:slabs}
+ A_n:=\set{t\in I:2^n<M(t)\leq2^{n+1}},
+ \qquad
+ d_n:=\int_{A_n}Y(t)^2\,dt.
+\end{equation}
+
+\begin{theorem}[Forced high-amplitude dissipation]
+\label{thm:slab}
+The slab ledger satisfies
+\begin{equation}
+\label{eq:slab-ledger}
+ \sum_nd_n<\infty,
+ \qquad
+ \boxed{
+ \sum_{n\geq N}2^nd_n=\infty
+ \quad\text{for every }N.
+ }
+\end{equation}
+For every positive summable sequence \((\varepsilon_n)\), infinitely
+many \(n\) satisfy
+\begin{equation}
+\label{eq:dn-floor}
+ d_n\geq2^{-n}\varepsilon_n.
+\end{equation}
+For each such \(n\), some Lebesgue point \(t_n\in A_n\) satisfies
+\begin{equation}
+\label{eq:Y-spike}
+ \boxed{
+ Y(t_n)
+ \gtrsim
+ 2^{9n/4}(n\varepsilon_n)^{1/2}.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The first sum in \eqref{eq:slab-ledger} is bounded by
+\eqref{eq:unweighted-finite}.  Since \(M\leq2^{n+1}\) on \(A_n\),
+\[
+ \int_I MY^2
+ \leq
+ C_N\int_IY^2
+ +2\sum_{n\geq N}2^nd_n.
+\]
+Equation \eqref{eq:weighted-infinite} forces every tail series to
+diverge.
+
+If \eqref{eq:dn-floor} failed eventually, that tail would be bounded by
+\(\sum_n\varepsilon_n\).  Finally, \eqref{eq:clock} gives
+\[
+ |A_n|
+ \lesssim
+ \frac{2^{-11n/2}}{n}.
+\]
+At a Lebesgue point above a fixed fraction of the slab average,
+\[
+ Y(t_n)^2
+ \gtrsim
+ \frac{d_n}{|A_n|}
+ \gtrsim
+ n\varepsilon_n2^{9n/2},
+\]
+which proves \eqref{eq:Y-spike}.  The selected indices tend to infinity.
+Smoothness on every compact preterminal interval makes \(M\) locally
+bounded, so the corresponding times approach \(T\); after passing to a
+subsequence they increase to \(T\).
+\end{proof}
+
+\begin{corollary}[A concrete near-\texorpdfstring{\(M^{9/4}\)}{M9/4}
+spike]
+\label{cor:concrete-spike}
+There are times \(t_n\uparrow T\) such that
+\begin{equation}
+\label{eq:concrete-spike}
+ \boxed{
+ Y(t_n)
+ \gtrsim
+ \frac{M(t_n)^{9/4}}
+ {\log\log(e^e+M(t_n))}.
+ }
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Use
+\(\varepsilon_n=[n(\log n)^2]^{-1}\) in
+Theorem~\ref{thm:slab}.  This sequence is summable, and
+\(M(t_n)\asymp2^n\) on \(A_n\).
+\end{proof}
+
+\begin{corollary}[Pointwise amplitude barrier]
+\label{cor:pointwise-barrier}
+For every \(\beta>0\), \(C>0\), and terminal interval \(I\), the bound
+\begin{equation}
+\label{eq:pointwise-ceiling}
+ Y(t)^2
+ \leq
+ C\left[
+ 1+\frac{M(t)^{9/2}}{\log(e+M(t))^\beta}
+ \right]
+\end{equation}
+cannot hold almost everywhere.
+\end{corollary}
+
+\begin{proof}
+Layer cake and \eqref{eq:clock} give
+\[
+ \int_I
+ \frac{M^{11/2}}{\log(e+M)^\beta}\,dt
+ <\infty,
+\]
+because the high-amplitude integral is bounded by
+\[
+ C\int^\infty
+ \frac{d\lambda}
+ {\lambda[\log(e+\lambda)]^{1+\beta}}.
+\]
+Multiplying \eqref{eq:pointwise-ceiling} by \(M\) would contradict
+\eqref{eq:weighted-infinite}.
+\end{proof}
+
+\section{Differentiated-energy obstruction}
+
+In reverse time, write
+\begin{equation}
+\label{eq:reverse}
+ \partial_\tau v-\nu\Delta v
+ +(b\cdot\nabla)v+\nabla Q=0,
+ \qquad
+ \nabla\cdot b=\nabla\cdot v=0.
+\end{equation}
+Set
+\[
+ X:=\norm{\nabla b}_2,
+ \qquad
+ Y:=\norm{\nabla v}_2,
+ \qquad
+ Z:=\norm{\Delta v}_2.
+\]
+
+\begin{proposition}[The enstrophy hull retains \(X^4\)]
+\label{prop:X4}
+At smooth positive reverse times,
+\begin{equation}
+\label{eq:X4-basic}
+ \frac12\frac d{d\tau}Y^2
+ +\frac{\nu}{2}Z^2
+ \lesssim
+ \nu^{-3}X^4Y^2.
+\end{equation}
+More generally, for \(0<\alpha\leq1\), let
+\[
+ \frac1{r_\alpha}:=\frac13-\frac{\alpha}{6}.
+\]
+The interpolation
+\[
+ \norm{b}_{r_\alpha}
+ \lesssim M^{1-\alpha}X^\alpha
+\]
+produces the Gr\"onwall coefficient
+\begin{equation}
+\label{eq:full-X4}
+ \boxed{
+ M^{4/\alpha-4}X^4.
+ }
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Pair \eqref{eq:reverse} with \(-\Delta v\).  Pressure vanishes and
+\[
+ \int(b\cdot\nabla)v\cdot(-\Delta v)
+ =
+ \int
+ \partial_kb_\ell\,\partial_\ell v_i\,\partial_kv_i.
+\]
+Therefore
+\[
+ |\text{transport}|
+ \leq
+ X\norm{\nabla v}_4^2
+ \lesssim
+ XY^{1/2}Z^{3/2}.
+\]
+Young's inequality proves \eqref{eq:X4-basic}.
+
+For the full hull, choose \(q_\alpha\) by
+\[
+ \frac1{r_\alpha}+\frac1{q_\alpha}+\frac12=1.
+\]
+Then
+\[
+ \norm{\nabla v}_{q_\alpha}
+ \lesssim
+ Y^{1-\gamma_\alpha}Z^{\gamma_\alpha},
+ \qquad
+ \gamma_\alpha:=\frac3{r_\alpha}=1-\frac{\alpha}{2}.
+\]
+The transport work is at most
+\[
+ M^{1-\alpha}X^\alpha
+ Y^{1-\gamma_\alpha}Z^{1+\gamma_\alpha}.
+\]
+The Young exponent on the coefficient is
+\[
+ \frac2{1-\gamma_\alpha}=\frac4\alpha.
+\]
+This yields
+\[
+ \left(M^{1-\alpha}X^\alpha\right)^{4/\alpha}Y^2
+ =
+ M^{4/\alpha-4}X^4Y^2.
+\]
+\end{proof}
+
+\begin{remark}
+The q4 energy ledger gives \(X\in L^2_\tau\), not \(X\in L^4_\tau\).
+At the spatial endpoint \(r=3\), one instead obtains
+\[
+ |\text{transport}|\lesssim MZ^2,
+\]
+which is absorbable only for uniformly small \(M/\nu\).  The terminal
+record amplitudes diverge.  Thus direct differentiated energy does not
+reach Theorem~\ref{thm:Zclosure}.
+\end{remark}
+
+\section{BMO-skew reverse H\"older audit}
+
+\begin{lemma}[Weak-\(L^3\) drift has a skew BMO potential]
+\label{lem:BMO-potential}
+For a divergence-free \(b\in L^{3,\infty}(\R^3)\), define
+\begin{equation}
+\label{eq:D}
+ D_{ij}
+ :=
+ \partial_j(-\Delta)^{-1}b_i
+ -\partial_i(-\Delta)^{-1}b_j.
+\end{equation}
+Then \(D\) is skew,
+\[
+ \partial_iD_{ij}=b_j,
+\]
+and
+\begin{equation}
+\label{eq:BMO-bound}
+ \norm{D}_{\mathrm{BMO}}
+ \lesssim
+ \norm{b}_{L^{3,\infty}}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The algebraic statements follow from
+\(\nabla\cdot b=0\).  The kernel in \eqref{eq:D} has order \(-1\).
+For a ball \(B=B(x_0,r)\), split \(b\) into \(2B\) and its complement.
+The near contribution has mean oscillation at most
+\[
+ Cr^{-2}\int_{2B}|b|
+ \lesssim
+ \norm{b}_{L^{3,\infty}}.
+\]
+For the far contribution, subtract its value at \(x_0\).  On the
+\(k\)-th dyadic annulus the kernel difference is
+\(O(r/(2^kr)^3)\), while weak-\(L^3\) gives an \(L^1\) mass at most
+\(C\norm{b}_{L^{3,\infty}}(2^kr)^2\).  The resulting
+\(C2^{-k}\norm{b}_{L^{3,\infty}}\) series is summable.
+\end{proof}
+
+The pressure-free component equation can consequently be placed in
+divergence form with symmetric part \(\nu I\) and skew part \(D\).
+Zhang's current arXiv v5 preprint~\cite{ZhangBMO} claims local
+Caccioppoli and gradient reverse H\"older estimates for parabolic
+systems whose real block-diagonal skew part lies in
+\(L^\infty_t\mathrm{BMO}_x\).  It yields some \(p>2\) sufficiently
+close to two; the exponent and constants depend on the uniform BMO
+norm.
+
+\begin{proposition}[Why the preprint estimate does not close q4]
+\label{prop:BMO-mismatch}
+The cited local reverse H\"older claim does not imply
+\(\cZ_I(Y)<\infty\) from the current q4 ledger.
+\end{proposition}
+
+\begin{proof}
+On a first-record block with \(M\leq K\),
+Lemma~\ref{lem:BMO-potential} gives a uniform BMO norm \(O(K)\).
+Across terminal blocks \(K\to\infty\), so the source supplies no
+record-uniform exponent above two.
+
+The result is local in space-time, whereas \eqref{eq:Znorm} is a
+terminal mixed norm of the global \(L_x^2\) gradient.  Finally, the
+projected equation is
+\begin{equation}
+\label{eq:pressure-forcing}
+ \partial_\tau v
+ -\nabla\cdot((\nu I-D)\nabla v)
+ =
+ -\nabla Q
+ =
+ \nabla\cdot(-QI).
+\end{equation}
+Calder\'on--Zygmund and Lorentz Sobolev estimates give
+\begin{equation}
+\label{eq:Qbase}
+ \norm{Q(\tau)}_2
+ \lesssim
+ M(\tau)Y(\tau).
+\end{equation}
+Thus \(Q\in L^2_{\tau,x}\) on a block with \(M\leq K\).  The claimed
+\(p>2\) conclusion requires the divergence forcing in the corresponding
+\(L^p\) class.  Requiring \(Q\in L^p\) is already a
+higher-integrability input and is circular here.
+\end{proof}
+
+\section{Heat flow forbids a generic temporal gain}
+
+\begin{proposition}[Simultaneous heat-flow saturation]
+\label{prop:heat}
+There is a divergence-free \(f\in L^2(\R^3)\) such that
+\[
+ v(\tau):=e^{\nu\tau\Delta}f
+\]
+satisfies
+\begin{equation}
+\label{eq:heat-energy}
+ \int_0^\infty\norm{\nabla v(\tau)}_2^2\,d\tau<\infty,
+\end{equation}
+but for every \(p>2\),
+\begin{equation}
+\label{eq:heat-no-p}
+ \int_0^1\norm{\nabla v(\tau)}_2^p\,d\tau=\infty.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Choose mutually disjoint solenoidal Fourier annuli at frequencies
+\(N_k=4^k\), and choose \(f_k\) in those annuli with
+\(\norm{f_k}_2=k^{-1}\).  Orthogonality gives
+\[
+ f:=\sum_{k\geq1}f_k\in L^2.
+\]
+Plancherel and Tonelli give the exact energy integral
+\[
+ \int_0^\infty
+ \norm{\nabla e^{\nu\tau\Delta}f}_2^2\,d\tau
+ =
+ \frac1{2\nu}\norm{f}_2^2.
+\]
+
+There are disjoint time intervals \(J_k\), each of length comparable to
+\(N_k^{-2}\), on which the heat multiplier is bounded below on the
+\(k\)-th annulus.  Hence
+\[
+ \norm{\nabla e^{\nu\tau\Delta}f_k}_2
+ \gtrsim \frac{N_k}{k}
+ \qquad(\tau\in J_k).
+\]
+For \(p>2\), orthogonality and disjointness yield
+\[
+ \begin{aligned}
+ \int_0^1\norm{\nabla e^{\nu\tau\Delta}f}_2^p\,d\tau
+ &\geq
+ \sum_k\int_{J_k}
+ \norm{\nabla e^{\nu\tau\Delta}f_k}_2^p\,d\tau\\
+ &\gtrsim
+ \sum_kN_k^{p-2}k^{-p}
+ =\infty.
+ \end{aligned}
+\]
+\end{proof}
+
+\begin{remark}
+Taking \(b=0\) makes the drift a smooth self-generated
+Navier--Stokes trajectory and gives \(Q=0\).  The example has the
+nonzero strong trace \(f\), not the q4 zero weak trace.  It proves that
+parabolic smoothing and self-generation of the coefficient alone cannot
+give the desired temporal exponent.  A successful theorem must use the
+zero weak trace together with the nonzero same-trajectory cross defect.
+\end{remark}
+
+\section{What changed in this round}
+
+\subsection*{Formal findings, subject to external review}
+
+\begin{enumerate}
+\item The Lorentz--Zygmund norm \eqref{eq:Znorm}, strictly weaker than
+the previous \(L_t^{22/9,2}\) target, closes q4 conditionally.
+\item Every survivor has the divergent amplitude ledger
+\eqref{eq:slab-ledger} and the near-\(M^{9/4}\) spikes
+\eqref{eq:Y-spike}--\eqref{eq:concrete-spike}.
+\item Strong \(L_t^{22/9}\) alone is insufficient under the clock
+distribution, by Proposition~\ref{prop:scalar-saturation}.
+\item The full direct differentiated-energy hull retains the unavailable
+\(X^4\) factor \eqref{eq:full-X4}.
+\item The pinned BMO-skew reverse H\"older preprint does not cross the
+unbounded-record, mixed-norm, or projected-pressure gates.
+\item Even heat flow has no generic temporal
+\(L_t^{2+\epsilon}L_x^2\) gradient gain at an \(L^2\) boundary.
+\end{enumerate}
+
+\subsection*{Closed shortcuts}
+
+\begin{enumerate}
+\item Generic Caccioppoli or heat smoothing cannot prove the target.
+\item The BMO-skew reverse H\"older exponent cannot be treated as
+uniform across q4 record blocks.
+\item The base estimate \(Q\in L^2\) cannot be used as the \(L^p\),
+\(p>2\), forcing required to prove the same \(p\)-gain.
+\item Strong \(L^{22/9}\) cannot replace the exact rearrangement norm.
+\item The forced lower spikes are not upper estimates or contradictions
+by themselves.
+\end{enumerate}
+
+\subsection*{Open obligations}
+
+\begin{enumerate}
+\item Prove \(\cZ_I(Y)<\infty\) from the same-trajectory cross defect.
+\item Equivalently, prove a summable amplitude-slab anti-correlation.
+\item Develop a pressure-compatible boundary reverse H\"older estimate
+whose gain is uniform across the unbounded first-record coefficients,
+or obtain the missing pressure equiintegrability from the cross defect.
+\item Alternatively close the Fourier-commutator or
+\(\mathcal H^1\)-capacity routes from the preceding round.
+\item Treat slower clocks, divergent normalised energy, and the other
+Clay alternatives separately.
+\end{enumerate}
+
+\begin{conjecture}[Same-trajectory Lorentz--Zygmund gain]
+Under the exact q4 hypotheses, on some terminal interval \(I\),
+\[
+ \cZ_I\bigl(\norm{\nabla a}_2\bigr)<\infty.
+\]
+\end{conjecture}
+
+Theorem~\ref{thm:Zclosure} would then exclude the q4 terminal defect.
+The conjecture is not proved.
+
+\section*{Source provenance}
+
+The pinned arXiv v5 source archive for
+\cite{ZhangBMO} has SHA-256
+\[
+\texttt{98ba2c1b92ceff3946f5fb67e2ec992632c5f523da5861f1966fd01e467d17b1}.
+\]
+Its exact file \texttt{Gz967sa.tex} has SHA-256
+\[
+\texttt{02f6f3c055992464d99adf0ade44bd4e608bef768a85d0cd19dd5b84de12755c}.
+\]
+Source lines 367--381 state the uniform
+\(L^\infty_t\mathrm{BMO}_x\) assumption, the local \(p>2\)
+conclusions, and norm dependence.  Lines 607--630 give the improved
+Caccioppoli and reverse H\"older estimates.  Lines 717--719 perform the
+Gehring gain.  This is recorded as a preprint claim, not as an
+established peer-reviewed theorem.
+
+\begin{thebibliography}{9}
+\raggedright
+
+\bibitem{ZhangBMO}
+G.~Zhang,
+\emph{On regularity for nonhomogeneous parabolic systems with a
+skew-symmetric part in BMO},
+arXiv:2403.01741v5,
+\href{https://arxiv.org/abs/2403.01741}
+{arXiv:2403.01741}.
+
+\end{thebibliography}
+
+\end{document}

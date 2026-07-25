@@ -551,6 +551,19 @@
       "status": "peer_reviewed",
       "last_checked": "2026-07-25",
       "notes": "Pinned arXiv v2 single-file gzip archive SHA-256: 78af05bac214145c5b6d54c297867ab5f7d7c80d60dc6c40c3ae5518cdb06df2. Exact source is Aronson-Nonsymmetric-2017-02-18.tex, SHA-256 a8c65d4425496766a7acb2d25b30603f4e79fadf5f400d92f2d65da206538a36: lines 1220-1238 state the uniform-in-time BMO skew-coefficient energy inequality and L2 uniqueness theorem; lines 1332-1337 remove the redundant strong-continuity assumption; lines 1341-1372 state the fundamental-solution and L2 well-posedness theorem."
+    },
+    {
+      "id": "SRC-ZHANG-2025-BMO-SKEW",
+      "title": "On regularity for nonhomogeneous parabolic systems with a skew-symmetric part in BMO",
+      "authors": ["Guoming Zhang"],
+      "year": 2025,
+      "kind": "preprint",
+      "url": "https://arxiv.org/abs/2403.01741",
+      "version": "arXiv:2403.01741v5",
+      "primary": true,
+      "status": "preprint",
+      "last_checked": "2026-07-25",
+      "notes": "Pinned arXiv v5 single-file gzip archive SHA-256: 98ba2c1b92ceff3946f5fb67e2ec992632c5f523da5861f1966fd01e467d17b1. Exact source is Gz967sa.tex, SHA-256 02f6f3c055992464d99adf0ade44bd4e608bef768a85d0cd19dd5b84de12755c: lines 367-381 state the uniform L-infinity-time BMO skew-coefficient assumption, local p-greater-than-2 estimates, and norm dependence; lines 607-630 give the improved Caccioppoli and reverse-Holder step; lines 717-719 perform the Gehring gain."
     }
   ]
 }
