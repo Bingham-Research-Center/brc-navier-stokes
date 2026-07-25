@@ -137,69 +137,36 @@ survivors occur in Navier--Stokes.
 
 ### Active R3C gate
 
-The [Type-II carrier theorem](experiments/type-ii-inviscid-carrier-entrance.md)
-selects a near-extremising weak-\(L^3\) layer and rescales by its amplitude
-and volume radius. Every sequence with \(m_j\to\infty\) then has effective
-viscosity \(\varepsilon_j\asymp\nu/m_j\to0\), an arbitrarily long rescaled
-past, and an exhaustive \(2\times3\times3\) subsequence ledger:
+The [Type-II entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md)
+maps every \(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) sequence to an
+exhaustive energy/geometry/horizon carrier ledger with vanishing effective
+viscosity. The linked defect, subgrid, residence, cross-record, band-budget,
+and sharpness notes in the canonical experiment record show why inherited
+microstructure or fixed signed work still carries only summable scale
+weights; persistence alone does not make a charge fresh.
 
-- bounded/divergent normalised energy;
-- diffuse/partial/tight carrier geometry; and
-- zero/finite/infinite forward turnover horizon.
-
-Strong space-time compactness plus trace persistence would produce a nonzero
-finite-energy ancient Euler object. The
-[carrier-defect theorem](experiments/type-ii-carrier-defect-compactness.md)
-proves that normalised viscous dissipation vanishes on each fixed carrier
-interval and the entire remaining forward horizon in all nine
-energy-efficient cells, but leaves a positive-semidefinite
-Euler--Reynolds/terminal-trace ledger. The
-[subgrid-transport theorem](experiments/type-ii-subgrid-transport.md)
-turns every positive terminal trace defect into inherited microstructure,
-positive signed nonlinear transfer, or positive signed spatial import, with
-an order-\(e_j\) physical floor. Choosing first weak-\(L^3\) record times
-also gives a uniform ancient-past critical ceiling. The
-[record-residence theorem](experiments/type-ii-record-flux-residence.md)
-uses it to define a canonical first-crossing defect scale \(\ell_j\), prove
-residence for carrier time
-\(\gtrsim\ell_j/\log(e+C/\ell_j)\), and force
-\(\varepsilon_j/[\ell_j\log(e+C/\ell_j)]\to0\).
-The
-[cross-record theorem](experiments/type-ii-cross-record-quantile.md)
-then fixes two physical subgrid-energy quantiles. Between selected first
-records, either the next low quantile lies below the previous high boundary,
-or the gap pays
-\(\gtrsim\tau_j\ell_j/[q_j^3\log(e+C/(q_j^2\ell_j))]\).
-An exact \(q_j=4\) power ledger with bounded quantile width keeps residence,
-clock, and worst weak-\(L^3\) occupation charges summable. Persistence of an
-energy amount therefore does not yet identify a packet or make its charge
-fresh. The
-[frozen-band theorem](experiments/type-ii-cross-record-correlation.md)
-upgrades this to actual old-band correlation or fixed nonlinear/viscous
-replacement work. The
-[critical band-budget theorem](experiments/type-ii-band-dissipation-budget.md)
-sums changing nonlinear works with \(\sqrt{r_j}\) weights and viscous works with \(r_j^2/\Delta t_j\) weights against one physical
-dissipation budget. Scale-disjoint bands have bounded-overlap lifetimes, but
-fixed widths force geometric radii and summable nonlinear charges. The
-[triad-packet theorem](experiments/type-ii-triad-packet-sharpness.md)
-constructs smooth compact NSE packets with fixed \(r^{5/2}\)-time band work,
-but only \(O(\sqrt r)\) dissipation and weak-\(L^3\) occupation, so the charge
-is locally sharp across different trajectories. The
-[compact-carrier clock](experiments/type-ii-compact-carrier-clock.md)
-proves the low-pass rate
-\(C(E\Lambda^{5/2}+\nu\sqrt E\Lambda^2)\). A nonzero strongly compact
-radius-\(R_j\) carrier therefore needs \(cR_j^{5/2}\) to shrink through a
-fixed scale block. The exact \(q_j=4\) gaps are \(o(R_j^{5/2})\), so that
-representative has no infinite nonzero \(L^2\)-precompact carrier subsequence.
-The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
-splits the exact \(q=4\) layer into diffuse or retained ultraviolet cells;
-the latter also forces multirecord signed import. The
+For the exact \(q=4\) first-record cell, the
 [temporal five-power theorem](experiments/type-ii-temporal-five-barrier.md)
-excludes every retained energy-efficient \(q=4\) cell. The
+excludes every retained energy-efficient carrier. The
 [diffuse-fragmentation theorem](experiments/type-ii-diffuse-fragmentation.md)
-then forces the Morrey scale \(R_j^{27/26+o(1)}\), normalised perimeter
-\(R_j^{-1/26+o(1)}\), and normalised enstrophy \(R_j^{-1/13+o(1)}\), sharply.
-All q4 gap weights remain summable; the self-similar cell retains \(2/5\le\gamma<1/2\). R3C now targets spectral residence/freshness.
+forces the surviving layer to the sharp Morrey scale
+\(R_j^{27/26+o(1)}\), with normalised perimeter
+\(R_j^{-1/26+o(1)}\) and enstrophy \(R_j^{-1/13+o(1)}\).
+
+The
+[critical-clock theorem](experiments/type-ii-critical-clock-regeneration.md)
+now rules out low-frequency assembly across a fixed record block. It forces
+a signed increment above
+\(\Lambda_j\asymp R_j^{-7/6}j^{2/3}\), a fixed endpoint high-pass \(L^2\)
+floor, and enstrophy
+\(\gtrsim R_j^{-7/3}j^{4/3}\). Any Leray--Hopf continuation of this
+conditional branch has a fixed downward kinetic-energy jump at \(T^*\).
+Energy equality there would exclude the branch, but general Leray--Hopf
+energy equality is open and no sufficient criterion follows yet from the
+record ledger. All current q4 gap weights remain summable. R3C now targets
+terminal energy equality or non-reuse of a prestored ultraviolet reservoir;
+divergent normalised energy, slower clocks, and
+\(2/5\le\gamma<1/2\) self-similar schedules remain open.
 
 ### Frozen R3B boundary
 

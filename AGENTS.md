@@ -31,9 +31,10 @@ another link only to discharge the live obligation.
 - Every commit batch includes a new self-contained
   `dossier/rounds/YYYY-MM-DD-<slug>.tex` report: formal statements/proofs,
   conjectures, robust novel findings subject to review, and open obligations.
-  Compile it into ignored `lab/cache/` before committing.
-- Use terse, detailed commit messages with John’s configured identity plus
-  `Co-authored-by: Codex <codex@openai.com>`. Push `main` to both public
-  `brc` and `origin` remotes and verify both tips after every commit.
+  Compile it warning-free into ignored `lab/cache/rounds/` before committing.
+- Commit every trackable round change with a terse, detailed message, John’s
+  configured identity, and `Co-authored-by: Codex <codex@openai.com>`.
+  Ensure the Bingham Research Center repository and both remotes are public;
+  push `main` to `brc` and `origin`, then verify their exact SHA each time.
 - Progress closes an obligation or possibility node, not a prose quota.
 - Before reporting or committing: `make check` and `git diff --check`.

@@ -1,0 +1,772 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\Per}{\operatorname{Per}}
+
+\title{The Critical Weak-\(L^3\) Clock Forces an Ultraviolet Increment}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round closes the low-frequency side of the spectral dichotomy for
+an energy-efficient exact \(q=4\) first-record branch.  Finite-volume
+weak-\(L^3\) capacity makes the velocity on a future selected amplitude
+layer almost orthogonal to a fixed earlier record.  A new projected
+low-pass estimate,
+\[
+ \|P_{\leq\Lambda}(u(t)-u(s))\|_2
+ \lesssim
+ \bigl(M^2\Lambda^{3/2}
+       +\nu\sqrt E\,\Lambda^2\bigr)(t-s),
+\]
+then shows that the resulting fixed signed change cannot occur below
+\[
+ \Lambda_j\asymp
+ m_j^{7/3}j^{2/3}
+ \asymp R_j^{-7/6}j^{2/3}.
+\]
+A fixed \(L^2\) ultraviolet floor follows at one endpoint, together with
+\[
+ \|\nabla u(s_j)\|_2^2
+ \gtrsim R_j^{-7/3}j^{4/3}.
+\]
+For any Leray--Hopf continuation through the first singular time, this
+forces a fixed downward kinetic-energy jump.  Hence energy equality at
+that time conditionally excludes every energy-efficient exact \(q=4\)
+branch.  General Leray--Hopf energy equality remains open, so this is a
+conditional reduction rather than a Clay resolution.  Static packet and
+driver families show sharpness of the spatial and instantaneous clock
+powers under the inputs used; all presently available record-gap weights
+remain summable.
+\end{abstract}
+
+\section{Epistemic scope}
+
+All statements about the selected layer are conditional on one putative
+smooth finite-energy Navier--Stokes trajectory satisfying the exact
+\(q=4\) first-record ledger.  The low-pass lemma, ultraviolet increment,
+terminal energy-defect corollary, exponent ledger, and sharpness examples
+are repository deductions and await external mathematical review.
+
+The statement that energy equality for arbitrary Leray--Hopf solutions
+remains open, as well as representative sufficient Besov conditions, is
+recorded by Cheskidov and Luo~\cite{CL20}.  No such sufficient condition
+is derived from the hypotheses below.  The packet families in
+Section~\ref{sec:sharpness} vary with scale and are not one
+Navier--Stokes evolution.  The Clay problem remains unsolved.
+
+\section{Exact record setting and Fourier split}
+
+Let \(u\) be a smooth divergence-free solution on
+\(\R^3\times[0,T^*)\) of
+\[
+ \partial_tu+u\cdot\nabla u=-\nabla p+\nu\Delta u,
+ \qquad
+ \nabla\cdot u=0,
+\]
+where \(T^*<\infty\) is its first possible singular time.  Assume
+\begin{equation}
+ \label{eq:energy-bound}
+ \sup_{t<T^*}\|u(t)\|_2^2\leq E_0.
+\end{equation}
+
+Let \(t_j\uparrow T^*\) be exact \(q=4\) first-record times for
+\[
+ m_j:=\|u(t_j)\|_{L^{3,\infty}}.
+\]
+Thus
+\begin{equation}
+ \label{eq:q4}
+ m_j\asymp2^{2j},
+ \qquad
+ t_{j+1}-t_j\asymp\frac{2^{-11j}}j,
+ \qquad
+ \|u(t)\|_{L^{3,\infty}}\leq m_j
+ \quad(0\leq t\leq t_j).
+\end{equation}
+At \(t_j\), choose the near-extremising amplitude layer
+\[
+ A_j:=\{a_j<|u(t_j)|\leq2a_j\},
+ \qquad
+ e_j:=\int_{A_j}|u(t_j)|^2\,dx,
+ \qquad
+ R_j:=|A_j|^{1/3}.
+\]
+The energy-efficient branch is
+\begin{equation}
+ \label{eq:layer-energy}
+ 0<c_0\leq e_j\leq E_0,
+ \qquad
+ R_j\asymp m_j^{-2}.
+\end{equation}
+
+Choose a real radial \(\psi\in C_c^\infty(\R^3)\) such that
+\[
+ 0\leq\psi\leq1,\qquad
+ \psi=1\quad\hbox{on }B_1,\qquad
+ \psi=0\quad\hbox{outside }B_2,
+\]
+and define
+\begin{equation}
+ \label{eq:LP}
+ \widehat{P_{\leq\Lambda}f}(\xi)
+ =\psi(\xi/\Lambda)\widehat f(\xi),
+ \qquad
+ P_{>\Lambda}:=I-P_{\leq\Lambda}.
+\end{equation}
+Both are self-adjoint \(L^2\) contractions.  Since the second multiplier
+vanishes for \(|\xi|\leq\Lambda\),
+\begin{equation}
+ \label{eq:bernstein-high}
+ \|P_{>\Lambda}f\|_2
+ \leq\Lambda^{-1}\|\nabla f\|_2.
+\end{equation}
+
+\section{The two endpoint lemmas}
+
+\begin{lemma}[Finite-volume weak-\(L^3\) capacity]
+\label{lem:capacity}
+For every measurable \(E\subset\R^3\) of finite measure and every
+\(g\in L^{3,\infty}(\R^3)\),
+\begin{equation}
+ \label{eq:capacity}
+ \int_E|g|^2\,dx
+ \leq C|E|^{1/3}\|g\|_{L^{3,\infty}}^2.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Put \(M=\|g\|_{L^{3,\infty}}\) and
+\(\lambda_0=M|E|^{-1/3}\).  The distribution bound
+\[
+ |\{|g|>\lambda\}|\leq M^3\lambda^{-3}
+\]
+and the layer-cake formula give
+\begin{align*}
+ \int_E|g|^2\,dx
+ &=
+ \int_0^\infty
+ 2\lambda\,|E\cap\{|g|>\lambda\}|\,d\lambda\\
+ &\leq
+ \lambda_0^2|E|
+ +2M^3\int_{\lambda_0}^{\infty}\lambda^{-2}\,d\lambda\\
+ &\leq3M^2|E|^{1/3}.
+\end{align*}
+\end{proof}
+
+\begin{lemma}[Critical low-pass clock]
+\label{lem:clock}
+Let \(0\leq s<t<T^*\), and suppose
+\[
+ \sup_{s\leq\tau\leq t}
+ \|u(\tau)\|_{L^{3,\infty}}\leq M.
+\]
+Then
+\begin{equation}
+ \label{eq:clock}
+ \boxed{
+ \|P_{\leq\Lambda}(u(t)-u(s))\|_2
+ \leq
+ C\bigl(
+ M^2\Lambda^{3/2}
+ +\nu\sqrt{E_0}\Lambda^2
+ \bigr)(t-s).
+ }
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The projected equation is
+\begin{equation}
+ \label{eq:projected}
+ \partial_tu
+ =-\PP\nabla\cdot(u\otimes u)+\nu\Delta u.
+\end{equation}
+For a tensor \(F\in L^{3/2,\infty}\), Lorentz duality gives
+\begin{equation}
+ \label{eq:dual}
+ \|P_{\leq\Lambda}\PP\nabla\cdot F\|_2
+ \leq
+ C\|F\|_{3/2,\infty}
+ \sup_{\|h\|_2=1}
+ \|\nabla\PP P_{\leq\Lambda}h\|_{3,1}.
+\end{equation}
+Plancherel and Fourier Cauchy--Schwarz imply
+\[
+ \|\nabla\PP P_{\leq\Lambda}h\|_2
+ \leq C\Lambda\|h\|_2,
+\qquad
+ \|\nabla\PP P_{\leq\Lambda}h\|_\infty
+ \leq C\Lambda^{5/2}\|h\|_2.
+\]
+Real interpolation between these two estimates yields
+\begin{equation}
+ \label{eq:lorentz-bernstein}
+ \|\nabla\PP P_{\leq\Lambda}h\|_{3,1}
+ \leq C\Lambda^{3/2}\|h\|_2.
+\end{equation}
+Since
+\[
+ \|u\otimes u\|_{3/2,\infty}
+ \leq C\|u\|_{3,\infty}^2,
+\]
+the nonlinear term in \eqref{eq:projected}, after low-pass projection,
+has \(L^2\) norm at most \(CM^2\Lambda^{3/2}\).  The viscous term obeys
+\[
+ \|P_{\leq\Lambda}\Delta u\|_2
+ \leq C\Lambda^2\|u\|_2
+ \leq C\sqrt{E_0}\Lambda^2.
+\]
+Integrating \eqref{eq:projected} from \(s\) to \(t\) proves
+\eqref{eq:clock}.
+\end{proof}
+
+\begin{remark}
+The energy-only compact-carrier clock has a
+\(\Lambda^{5/2}\) nonlinear rate.  Lemma~\ref{lem:clock} gains one
+frequency power by using the first-record weak-\(L^3\) ceiling.  The
+estimate controls a global \(L^2\) increment; no spatial carrier
+compactness is assumed.
+\end{remark}
+
+\section{The fixed ultraviolet increment}
+
+\begin{theorem}[Critical-clock ultraviolet increment]
+\label{thm:increment}
+Under \eqref{eq:energy-bound}--\eqref{eq:layer-energy}, there are a fixed
+integer \(L\geq1\), a fixed \(\kappa>0\), and constants \(c>0\) and
+\(j_0\) such that, with
+\begin{equation}
+ \label{eq:block-gap}
+ \Delta_j^{(L)}:=t_j-t_{j-L}
+ \asymp_L\frac{m_j^{-11/2}}j
+\end{equation}
+and
+\begin{equation}
+ \label{eq:Lambda}
+ \Lambda_j
+ :=\kappa\bigl(m_j^2\Delta_j^{(L)}\bigr)^{-2/3},
+\end{equation}
+one has, for every \(j\geq j_0\),
+\begin{equation}
+ \label{eq:signed-high}
+ \boxed{
+ \left\langle
+ P_{>\Lambda_j}\bigl(u(t_j)-u(t_{j-L})\bigr),
+ u(t_j)\mathbf 1_{A_j}
+ \right\rangle
+ \geq c,
+ }
+\end{equation}
+and
+\begin{equation}
+ \label{eq:norm-high}
+ \boxed{
+ \left\|
+ P_{>\Lambda_j}\bigl(u(t_j)-u(t_{j-L})\bigr)
+ \right\|_2
+ \geq c.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Set \(i=j-L\) and
+\[
+ f_j:=u(t_j)\mathbf 1_{A_j}.
+\]
+Then \(\|f_j\|_2^2=e_j\).  Lemma~\ref{lem:capacity},
+\(m_{j-L}/m_j\lesssim2^{-2L}\), and \(R_jm_j^2\asymp1\) give
+\begin{equation}
+ \label{eq:early-empty}
+ \int_{A_j}|u(t_i)|^2\,dx
+ \leq CR_jm_i^2
+ \leq C2^{-4L}.
+\end{equation}
+Choose \(L\) sufficiently large, depending only on the fixed ledger
+constants, so that Cauchy--Schwarz implies
+\begin{equation}
+ \label{eq:old-pair}
+ |\langle u(t_i),f_j\rangle|
+ \leq\frac{c_0}{4}.
+\end{equation}
+On the other hand,
+\[
+ \langle u(t_j),f_j\rangle=e_j\geq c_0.
+\]
+Consequently,
+\begin{equation}
+ \label{eq:total-pair}
+ \langle u(t_j)-u(t_i),f_j\rangle
+ \geq\frac{3c_0}{4}
+ =:c_1.
+\end{equation}
+
+The first two relations in \eqref{eq:q4} give
+\eqref{eq:block-gap} by summing a fixed number of geometrically
+separated gaps.  The first-record property gives
+\[
+ \sup_{t_i\leq t\leq t_j}
+ \|u(t)\|_{3,\infty}\leq m_j.
+\]
+Apply Lemma~\ref{lem:clock} on this interval.  Definition
+\eqref{eq:Lambda} gives the exact nonlinear identity
+\begin{equation}
+ \label{eq:nonlinear-small}
+ m_j^2\Lambda_j^{3/2}\Delta_j^{(L)}
+ =\kappa^{3/2},
+\end{equation}
+whereas
+\begin{equation}
+ \label{eq:viscous-small}
+ \Delta_j^{(L)}\Lambda_j^2
+ \asymp_Lm_j^{-5/6}j^{1/3}
+ \longrightarrow0.
+\end{equation}
+Choose \(\kappa\) sufficiently small and then \(j\) sufficiently large.
+Equations \eqref{eq:clock}, \eqref{eq:nonlinear-small}, and
+\eqref{eq:viscous-small} then yield
+\begin{equation}
+ \label{eq:low-small}
+ \|P_{\leq\Lambda_j}(u(t_j)-u(t_i))\|_2
+ \leq\frac{c_1}{2\sqrt{E_0}}.
+\end{equation}
+Pair \eqref{eq:low-small} with \(f_j\) and subtract the result from
+\eqref{eq:total-pair}.  This proves \eqref{eq:signed-high}.
+Cauchy--Schwarz, together with \(\|f_j\|_2\leq\sqrt{E_0}\), proves
+\eqref{eq:norm-high}.
+\end{proof}
+
+\begin{corollary}[Endpoint energy and enstrophy floors]
+\label{cor:endpoint}
+For each sufficiently large \(j\), at least one
+\[
+ s_j\in\{t_{j-L},t_j\}
+\]
+satisfies
+\begin{equation}
+ \label{eq:endpoint-high}
+ \|P_{>\Lambda_j}u(s_j)\|_2\geq c
+\end{equation}
+and
+\begin{equation}
+ \label{eq:endpoint-enstrophy}
+ \boxed{
+ \|\nabla u(s_j)\|_2^2
+ \gtrsim
+ \Lambda_j^2
+ \asymp_L
+ m_j^{14/3}j^{4/3}
+ \asymp_L
+ R_j^{-7/3}j^{4/3}.
+ }
+\end{equation}
+The associated physical length is
+\begin{equation}
+ \label{eq:rclock}
+ r_j:=\Lambda_j^{-1}
+ \asymp_L
+ R_j^{7/6}j^{-2/3}.
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+The triangle inequality applied to \eqref{eq:norm-high} gives
+\eqref{eq:endpoint-high} at one endpoint.  Equation
+\eqref{eq:bernstein-high} then gives the first inequality in
+\eqref{eq:endpoint-enstrophy}.  Finally,
+\[
+ \Lambda_j
+ \asymp_Lm_j^{7/3}j^{2/3}
+ \asymp_LR_j^{-7/6}j^{2/3}
+\]
+follows from \eqref{eq:block-gap}, \eqref{eq:Lambda}, and
+\(R_j\asymp m_j^{-2}\).
+\end{proof}
+
+\begin{remark}
+The scale \(r_j\) lies strictly below the previous sharp Morrey
+fragmentation scale \(R_j^{27/26+o(1)}\).  The conclusion is a fixed
+high-pass \(L^2\) floor, not merely a large first derivative.
+\end{remark}
+
+\section{The forced terminal energy defect}
+
+\begin{corollary}[Anomalous loss at the first singular time]
+\label{cor:defect}
+Suppose the smooth solution has a Leray--Hopf continuation through
+\(T^*\), represented weakly continuously in \(L^2\), and put
+\[
+ u_*:=u(T^*).
+\]
+Then
+\begin{equation}
+ \label{eq:defect}
+ \boxed{
+ \lim_{t\uparrow T^*}\|u(t)\|_2^2-\|u_*\|_2^2
+ \geq c>0.
+ }
+\end{equation}
+Consequently, energy equality at \(T^*\), equivalently strong left
+\(L^2\) continuity there, excludes the energy-efficient exact \(q=4\)
+branch.
+\end{corollary}
+
+\begin{proof}
+Both possible endpoint sequences converge to \(T^*\).  Pass to an
+infinite subsequence using the same endpoint choice.  Weak continuity
+gives
+\begin{equation}
+ \label{eq:weak}
+ u(s_j)\rightharpoonup u_*
+ \quad\hbox{in }L^2.
+\end{equation}
+Since \(\Lambda_j\to\infty\) and \(u_*\in L^2\),
+\begin{equation}
+ \label{eq:trace-tail}
+ \|P_{>\Lambda_j}u_*\|_2\longrightarrow0.
+\end{equation}
+Equations \eqref{eq:endpoint-high} and \eqref{eq:trace-tail} give
+\begin{equation}
+ \label{eq:strong-defect}
+ \|u(s_j)-u_*\|_2
+ \geq
+ \|P_{>\Lambda_j}(u(s_j)-u_*)\|_2
+ \geq c-o(1).
+\end{equation}
+
+The smooth energy equality before \(T^*\) makes
+\(\|u(t)\|_2^2\) nonincreasing, so its left limit \(E_-\) exists.
+Weak convergence gives
+\[
+ \|u(s_j)-u_*\|_2^2
+ =
+ \|u(s_j)\|_2^2-\|u_*\|_2^2+o(1).
+\]
+Taking the limit in \eqref{eq:strong-defect} proves
+\(E_--\|u_*\|_2^2\geq c\).
+
+If energy equality held through \(T^*\), taking the limit in the smooth
+preterminal identity would instead give
+\[
+ E_-+2\nu\int_0^{T^*}\|\nabla u\|_2^2\,dt
+ =
+ \|u_*\|_2^2
+ +2\nu\int_0^{T^*}\|\nabla u\|_2^2\,dt,
+\]
+which contradicts \eqref{eq:defect}.
+\end{proof}
+
+\begin{remark}
+Corollary~\ref{cor:defect} does not assert an unconditional
+contradiction.  It identifies the remaining branch with the unresolved
+possibility of anomalous energy loss by a Leray--Hopf solution.  The
+general energy-equality question is explicitly open in
+\cite{CL20}; that paper proves equality under additional weak-in-time
+Besov hypotheses.  No claim that the present record schedule meets those
+hypotheses is made.
+\end{remark}
+
+\section{Sharp static ledgers}
+\label{sec:sharpness}
+
+\begin{proposition}[Packet-cloud sharpness]
+\label{prop:packets}
+Let \(m\to\infty\), retain the corresponding index \(j\), and set
+\begin{equation}
+ \label{eq:packet-ledger}
+ R=m^{-2},
+ \qquad
+ r=m^{-7/3}j^{-2/3},
+ \qquad
+ a=m^3,
+ \qquad
+ N\asymp(R/r)^3\asymp mj^2.
+\end{equation}
+There are smooth compactly supported divergence-free fields \(U_j\)
+for which
+\begin{equation}
+ \label{eq:packet-norms}
+ \|U_j\|_2^2\asymp1,
+ \qquad
+ \|U_j\|_{3,\infty}\asymp m,
+\end{equation}
+a fixed regular amplitude band has volume \(\asymp R^3\) and energy
+\(\asymp1\), and
+\begin{equation}
+ \label{eq:packet-costs}
+ \|\nabla U_j\|_2^2
+ \asymp r^{-2}
+ \asymp m^{14/3}j^{4/3},
+ \qquad
+ \Per(A_j)\asymp R^{11/6}j^{2/3}.
+\end{equation}
+For every fixed \(0<\beta<1/9\),
+\begin{equation}
+ \label{eq:packet-morrey}
+ \sup_x\int_{B_\rho(x)}|U_j|^2\,dx
+ \leq C_\beta\rho^\beta
+ \qquad(0<\rho\leq1).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Choose a nonzero
+\(\phi\in C_c^\infty(B_1;\R^3)\) with
+\(\nabla\cdot\phi=0\) and a regular amplitude band of positive measure.
+Place \(N\) centres quasi-uniformly in one fixed cube, with separation
+\(d\asymp N^{-1/3}\), and define
+\[
+ U_j(x):=
+ a\sum_{k=1}^N
+ \phi\left(\frac{x-x_k}{r}\right).
+\]
+Since \(r/d\to0\), the supports are disjoint.  Direct scaling gives
+\[
+ \|U_j\|_2^2\asymp Na^2r^3\asymp1,
+ \qquad
+ \|U_j\|_{3,\infty}\asymp a(Nr^3)^{1/3}\asymp m,
+\]
+and
+\[
+ \|\nabla U_j\|_2^2\asymp Na^2r\asymp r^{-2}.
+\]
+Replication of the regular band gives total volume
+\(Nr^3\asymp R^3\), fixed energy, and perimeter
+\[
+ Nr^2\asymp R^{11/6}j^{2/3}.
+\]
+
+For \(\rho\leq r\), boundedness of \(\phi\) gives
+\[
+ \int_{B_\rho(x)}|U_j|^2\,dx
+ \lesssim a^2\rho^3\leq C\rho^\beta.
+\]
+At \(\rho=r\), this uses
+\[
+ a^2r^3\asymp N^{-1}
+ \asymp m^{-1}j^{-2}\leq Cr^\beta
+\]
+for \(\beta<1/9\).  For \(r\leq\rho\leq d\), at most a bounded number of
+packets contributes, so the same endpoint estimate applies.  For
+\(d\leq\rho\leq1\), quasi-uniformity gives at most
+\(C(1+N\rho^3)\) packets and therefore energy
+\[
+ C(N^{-1}+\rho^3)\leq C\rho^\beta.
+\]
+\end{proof}
+
+\begin{proposition}[Instantaneous clock-rate sharpness]
+\label{prop:driver}
+At \(\Lambda=m^{7/3}j^{2/3}\), there are smooth compactly supported
+divergence-free cores \(w_j\), of radius \(\Lambda^{-1}\) and amplitude
+\[
+ b=m\Lambda=m^{10/3}j^{2/3},
+\]
+such that
+\begin{equation}
+ \label{eq:driver-norms}
+ \|w_j\|_{3,\infty}\asymp m,
+ \qquad
+ \|w_j\|_2^2
+ \asymp\frac{m^2}{\Lambda}
+ =m^{-1/3}j^{-2/3}\longrightarrow0,
+\end{equation}
+while, for a fixed cutoff multiple \(C\),
+\begin{equation}
+ \label{eq:driver-rate}
+ \|P_{\leq C\Lambda}
+ \PP\nabla\cdot(w_j\otimes w_j)\|_2
+ \asymp m^2\Lambda^{3/2}.
+\end{equation}
+The cores satisfy \eqref{eq:packet-morrey} for every
+\(\beta\leq1/7\).
+\end{proposition}
+
+\begin{proof}
+Choose a fixed smooth compactly supported divergence-free
+\(\phi\) for which
+\(\PP\nabla\cdot(\phi\otimes\phi)\not\equiv0\), and let
+\[
+ w_j(x):=b\phi(\Lambda x).
+\]
+The first two claims follow directly from scaling.  The complete
+nonlinear acceleration has \(L^2\) scale
+\[
+ b^2\Lambda\,\Lambda^{-3/2}
+ =b^2\Lambda^{-1/2}
+ =m^2\Lambda^{3/2}.
+\]
+Choose one fixed \(C\) large enough that the low-pass projection retains
+a fixed fraction of the nonzero base-profile acceleration; scaling gives
+\eqref{eq:driver-rate}.  The core energy at its own radius is
+\[
+ \frac{m^2}{\Lambda}
+ =m^{-1/3}j^{-2/3}
+ \leq C\Lambda^{-\beta}
+\]
+when \(\beta\leq1/7\).  The smaller- and larger-radius Morrey estimates
+then follow as in Proposition~\ref{prop:packets}.
+\end{proof}
+
+\begin{remark}
+Proposition~\ref{prop:packets} saturates the enstrophy power forced by
+Corollary~\ref{cor:endpoint}.  Proposition~\ref{prop:driver} saturates
+the \(m^2\Lambda^{3/2}\) instantaneous rate with vanishing energy.
+Neither is a same-trajectory counterexample, and neither realises the
+signed increment \eqref{eq:signed-high}.
+\end{remark}
+
+\section{Summability and residence audit}
+
+The endpoint floor is not an integrated enstrophy floor.  Multiplication
+by the entire fixed-block record gap gives only the formal scale
+\begin{equation}
+ \label{eq:enstrophy-weight}
+ \Delta_j^{(L)}\Lambda_j^2
+ \asymp R_j^{5/12}j^{1/3},
+\end{equation}
+which is summable.  Since
+\[
+ \int_{A_j}|u(t_j)|^3\,dx
+ \asymp m_j^3
+ \asymp R_j^{-3/2},
+\]
+the layer cubic and \(r_j\)-cutoff scales are
+\begin{equation}
+ \label{eq:cubic-weight}
+ \Delta_j^{(L)}
+ \int_{A_j}|u(t_j)|^3\,dx
+ \asymp\frac{R_j^{5/4}}j
+\end{equation}
+and
+\begin{equation}
+ \label{eq:flux-weight}
+ \Delta_j^{(L)}r_j^{-1}
+ \int_{A_j}|u(t_j)|^3\,dx
+ \asymp R_j^{1/12}j^{-1/3}.
+\end{equation}
+The viscous cutoff scale agrees with
+\eqref{eq:enstrophy-weight}.  These are dimensional exponent audits,
+not signed event lower bounds.  Every displayed sequence is
+geometrically summable.
+
+The physical turnover scale of the selected carrier is
+\[
+ \tau_j\asymp m_j^{-5}.
+\]
+In carrier coordinates, the forced ultraviolet length is
+\begin{equation}
+ \label{eq:ell-clock}
+ \ell_j^{\mathrm{clk}}
+ :=\frac{r_j}{R_j}
+ \asymp m_j^{-1/3}j^{-2/3}.
+\end{equation}
+A fixed high-pass floor gives a fixed heat-filter subgrid-energy floor
+at a comparable scale.  Thus a canonical first-crossing scale is no
+larger than \(\ell_j^{\mathrm{clk}}\), up to constants and a fixed
+reindexing if the earlier endpoint is selected.
+
+If that first-crossing scale is comparable to
+\(\ell_j^{\mathrm{clk}}\), the previously established record-residence
+estimate has physical duration
+\begin{equation}
+ \label{eq:residence}
+ \tau_j
+ \frac{\ell_j^{\mathrm{clk}}}
+ {\log(e+C/\ell_j^{\mathrm{clk}})}
+ \asymp
+ m_j^{-16/3}j^{-5/3}.
+\end{equation}
+The ratio of \eqref{eq:residence} to the record gap is
+\begin{equation}
+ \label{eq:residence-ratio}
+ \asymp m_j^{1/6}j^{-2/3}\longrightarrow\infty.
+\end{equation}
+The ultraviolet energy would then be prestored across the block.  This
+does not make its signed correlation fresh: phase or spatial alignment
+may be recycled while the energy persists.  If the canonical scale is
+far smaller than \eqref{eq:ell-clock}, even
+\eqref{eq:residence-ratio} is unavailable.
+
+\section{Findings, conjecture, and remaining obligations}
+
+\subsection*{Robust findings, subject to external review}
+
+\begin{enumerate}
+\item The critical weak-\(L^3\) ceiling improves the global low-pass
+nonlinear rate from the energy-only \(\Lambda^{5/2}\) power to
+\(m_j^2\Lambda^{3/2}\).
+\item A future fixed-energy amplitude layer is nearly empty at a fixed
+earlier record, producing an order-one signed increment.
+\item Frequencies below
+\(\Lambda_j\asymp R_j^{-7/6}j^{2/3}\) cannot carry that increment.
+\item One record endpoint has fixed ultraviolet \(L^2\) energy and
+enstrophy at least \(R_j^{-7/3}j^{4/3}\).
+\item Every Leray--Hopf continuation of this conditional branch loses a
+fixed amount of kinetic energy at the first singular time.
+\item The static packet and driver families show sharpness of the forced
+spatial power and instantaneous clock rate under the inputs used.
+\item All present exact \(q=4\) record-gap weights remain summable.
+\end{enumerate}
+
+\subsection*{Things still to prove}
+
+\begin{enumerate}
+\item Derive energy equality, or strong left \(L^2\) continuity, at
+\(T^*\) from the exact \(q=4\) schedule; alternatively contradict its
+failure using another Navier--Stokes law.
+\item Exclude repeated phase or spatial recycling of a prestored
+ultraviolet reservoir by a nonsummable signed, fresh, or orthogonal
+charge.
+\item Control canonical subgrid scales far below
+\(\ell_j^{\mathrm{clk}}\).
+\item Control the divergent-normalised-energy branch.
+\item Treat Type-II schedules at or below the temporal five-power
+barrier.
+\item Prove one complete Clay alternative for arbitrary admissible data.
+\end{enumerate}
+
+\begin{conjecture}[No anomalous-loss exact \(q=4\) branch]
+No Leray--Hopf continuation of a smooth finite-energy solution through
+its first singular time can simultaneously have the exact \(q=4\)
+first-record schedule and a fixed-energy near-extremising weak-\(L^3\)
+layer.
+\end{conjecture}
+
+Corollary~\ref{cor:defect} proves the conjecture conditional on energy
+equality at the first singular time.  That condition is not established
+here.  No Clay alternative is proved.
+
+\begin{thebibliography}{9}
+
+\bibitem{CL20}
+A.~Cheskidov and X.~Luo,
+\emph{Energy Equality for the Navier--Stokes Equations in Weak-in-Time
+Onsager Spaces},
+Nonlinearity \textbf{33} (2020), 1388--1403.
+\href{https://doi.org/10.1088/1361-6544/ab60d3}
+{doi:10.1088/1361-6544/ab60d3};
+arXiv:1802.05785v2.
+
+\end{thebibliography}
+
+\end{document}

@@ -115,16 +115,14 @@ the R3B class.
 
 The [entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md) maps
 \(m_j=\|u(t_j)\|_{L^{3,\infty}}\to\infty\) to ancient vanishing-viscosity carriers and records energy, geometry, and turnover alternatives. The
-[defect theorem](experiments/type-ii-carrier-defect-compactness.md) removes
-fixed-interval normalised viscous dissipation; the
-[carrier clock](experiments/type-ii-compact-carrier-clock.md) excludes an infinite
-nonzero \(L^2\)-precompact subsequence of the exact fast \(q=4\) survivor. The
-[terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
-splits its selected layer into diffuse or retained ultraviolet cells. The
 [temporal five-power theorem](experiments/type-ii-temporal-five-barrier.md)
-uses the exact clock and a peer-reviewed energy-dimension bound to exclude
-every retained partial/tight energy-efficient \(q=4\) cell. Diffuse
-fragmentation, slower clocks, and divergent-normalised energy remain.
+excludes retained energy-efficient exact \(q=4\) carriers. The
+[critical-clock theorem](experiments/type-ii-critical-clock-regeneration.md)
+forces the diffuse survivor above
+\(\Lambda_j\asymp R_j^{-7/6}j^{2/3}\) and makes every Leray--Hopf
+continuation lose fixed energy at \(T^*\). Closing this cell now requires
+terminal energy equality or a non-reuse law for the prestored ultraviolet
+reservoir. Slower clocks and divergent-normalised energy remain open.
 
 ### Breakdown side
 

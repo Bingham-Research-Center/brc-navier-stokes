@@ -4217,6 +4217,48 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-CRITICAL-CLOCK-REGENERATION-001",
+      "title": "Critical weak-L3 clock forces an ultraviolet increment and terminal energy defect",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001",
+        "CLM-LERAY-ENERGY-EQUALITY-OPEN-001"
+      ],
+      "hypothesis": "An energy-efficient exact q=4 first-record layer may be assembled across a fixed record block entirely by low frequencies at the Morrey fragmentation scale, or its ultraviolet alternative may remain compatible with strong left L2 continuity at the first singular time.",
+      "invariants": [
+        "On a finite-volume set, local L2 energy is bounded by a universal constant times the one-third power of the volume times the squared weak-L3 norm",
+        "At a fixed earlier record t_(j-L), the complete kinetic energy on the future selected layer tends to a fixed small bound as L is increased",
+        "The future layer test has a fixed positive pairing with u(t_j) minus u(t_(j-L))",
+        "The first-record property bounds the weak-L3 norm by m_j throughout the entire comparison interval",
+        "The projected nonlinear low-pass rate is bounded in L2 by a constant times m_j squared times Lambda to the three-halves",
+        "The projected viscous low-pass rate is bounded in L2 by a constant times viscosity times the square root of the energy times Lambda squared",
+        "At Lambda_j equal to a small fixed constant times the inverse two-thirds power of m_j squared times the block gap, both low-pass contributions are too small to carry the fixed pairing",
+        "The resulting high-pass increment has a fixed signed pairing with the future selected layer and a fixed L2 norm",
+        "At least one record endpoint has a fixed high-pass L2 floor and enstrophy at least Lambda_j squared",
+        "The exact powers are Lambda_j comparable to m_j to the seven-thirds times j to the two-thirds and enstrophy comparable to R_j to the minus seven-thirds times j to the four-thirds",
+        "For any weakly continuous Leray-Hopf continuation, the high-frequency tail of the terminal L2 trace vanishes while the endpoint high-pass floor persists",
+        "The monotone preterminal energy therefore has a fixed downward jump at the first singular time",
+        "Energy equality at the first singular time conditionally excludes the energy-efficient exact q=4 branch, but general Leray-Hopf energy equality is open and no sufficient criterion is derived from the present ledger",
+        "A quasi-uniform divergence-free packet cloud saturates the enstrophy power under every local Morrey exponent below one ninth",
+        "A vanishing-energy divergence-free core saturates the m_j squared Lambda to the three-halves instantaneous clock rate while respecting the same local Morrey input",
+        "The sharpness fields vary with scale and are not one Navier-Stokes trajectory",
+        "Formal q=4 gap-weighted enstrophy, cubic, cutoff-flux, and viscous scales retain positive geometrically summable powers",
+        "No ultraviolet freshness, phase non-reuse, nonsummable charge, divergent-energy control, slower-clock exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Use finite-volume Lorentz capacity to empty the future selected layer at one fixed earlier record, prove a Lorentz-duality low-pass clock from the first-record weak-L3 ceiling, optimise the cutoff frequency, extract a signed high-pass increment and endpoint floor, pass it against the Leray-Hopf terminal trace to force an energy jump, construct static sharpness ledgers, and audit residence and summability.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the capacity lemma, projected low-pass estimate, fixed-block comparison, exact frequency and enstrophy powers, terminal weak-limit argument, static packet and driver sharpness constructions, residence comparison, and q=4 charge ledger. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Decide the low-frequency versus ultraviolet alternative for the energy-efficient exact q=4 layer and identify the precise terminal property required to exclude the surviving ultraviolet branch.",
+      "failure_interpretation": "The Lorentz capacity estimate, first-record ceiling, projected low-pass estimate, block-gap arithmetic, signed pairing, endpoint extraction, terminal weak-limit argument, sharpness scaling, or summability ledger is incorrect, or the result is overstated as unconditional energy equality, regularity, or a Clay resolution.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-critical-clock-regeneration.md",
+        "dossier/rounds/2026-07-25-type-ii-critical-clock-regeneration.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

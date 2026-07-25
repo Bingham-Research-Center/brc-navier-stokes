@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "sources": [
     {
       "id": "SRC-CLAY-STATUS",
@@ -499,6 +499,19 @@
       "status": "peer_reviewed",
       "last_checked": "2026-07-24",
       "notes": "Pinned arXiv v4 archive SHA-256: c2eeace35d05ded3c3803190fcf7d0b0a3a2dc788480bfdee7d0126ac9374a51. Exact source is CD_accepted.tex, SHA-256 c8c2dccdae9b8bb37e4fb212bef17745a8e1c494ffc2aa812f72300abaf7643c: first-blow-up and Leray-Hopf continuation assumptions and energy-measure definition at lines 309-366; LqLp local-dimension proposition and exponents at lines 521-539; three-dimensional Navier-Stokes extension at lines 903-995; refined concentration regions and theorem at lines 1183-1252. Lines 916-924 print beta where the displayed equivalence and r^-2 comparison require alpha; the proposition at lines 993-995 states the resulting NSE extension, and the repository application independently checks alpha>2."
+    },
+    {
+      "id": "SRC-CHESKIDOV-LUO-2020",
+      "title": "Energy Equality for the Navier-Stokes Equations in Weak-in-Time Onsager Spaces",
+      "authors": ["Alexey Cheskidov", "Xiaoyutao Luo"],
+      "year": 2020,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1088/1361-6544/ab60d3",
+      "version": "Nonlinearity 33(4), 1388-1403; arXiv:1802.05785v2",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-25",
+      "notes": "Published Introduction equations (1.2)-(1.3) and the sentence immediately following state that energy equality for arbitrary Leray-Hopf or general weak solutions remains open. Theorem 1.1 gives a weak-in-time Besov sufficient condition, and Corollary 1.2 excludes energy loss for its stated Type-I Besov rate. The repository does not claim that the exact q=4 record ledger meets either sufficient condition."
     }
   ]
 }

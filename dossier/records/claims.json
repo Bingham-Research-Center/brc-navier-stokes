@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "claims": [
     {
       "id": "CLM-STATUS-001",
@@ -645,6 +645,25 @@
       "depends_on": [],
       "audit": "The local-dimension proposition is at exact accepted-source lines 521-539 and its three-dimensional NSE extension is stated at lines 993-995 after the viscous-term discussion at lines 903-924. The strict inequality makes beta positive. The paper's refined Region-II theorem at lines 1183-1252 gives stronger concentration-dimension bounds but is not needed for the no-atom claim.",
       "last_checked": "2026-07-24"
+    },
+    {
+      "id": "CLM-LERAY-ENERGY-EQUALITY-OPEN-001",
+      "plain": "It remains open whether every three-dimensional Leray-Hopf weak solution satisfies the global kinetic-energy equality.",
+      "formal": "For an arbitrary unforced three-dimensional Leray-Hopf weak solution, no theorem is known that replaces the energy inequality by equality at every time without an additional regularity, integrability, or structural hypothesis.",
+      "domain": "R3_or_T3",
+      "forcing": "zero",
+      "solution_class": "Leray_Hopf",
+      "assumptions": [
+        "Divergence-free finite-energy initial data",
+        "No additional Besov, mixed-norm, pressure, or singular-set hypothesis"
+      ],
+      "conclusion": "A downward kinetic-energy jump beyond viscous dissipation is not excluded by the general Leray-Hopf theory alone.",
+      "scaling": "energy_equality",
+      "status": "open",
+      "source_ids": ["SRC-CHESKIDOV-LUO-2020"],
+      "depends_on": ["CLM-ENERGY-001"],
+      "audit": "The published Introduction states the open problem immediately after equations (1.2)-(1.3). Theorem 1.1 and Corollary 1.2 are sufficient-condition results and are not silently promoted to the exact q=4 branch.",
+      "last_checked": "2026-07-25"
     }
   ]
 }
