@@ -1001,3 +1001,10 @@ The conjecture is not proved.  Its same-trajectory and q4 clauses are
 essential: the Hilbert ledger is a scalar obstruction, and generic weak
 solutions are not being claimed to satisfy terminal rigidity.  No Clay
 alternative is proved.
+
+## Downstream disposition
+
+The [boundary heat-impulse theorem](type-ii-boundary-heat-impulse.md)
+keeps this nonlinear entrance as input, removes its weak-zero linear heat
+datum exactly, and identifies the positive heat-deviation work that must
+be made non-reusable.  Use that note for the current ROUTE-R3C gate.

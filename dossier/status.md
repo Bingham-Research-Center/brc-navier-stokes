@@ -179,23 +179,22 @@ the Barker--Wang theorem and \(21/44\) above its pincer-closing range. Either
 fixed-sign nonlinear clock-band events occur at order-one capacity, or the
 defect escapes to super-clock frequency with unbounded enstrophy.
 
-The [full-defect theorem](experiments/type-ii-full-defect-alignment.md)
-aligns the Oseen component \(a\) with \(u-u_*\), makes \(u-a\to u_*\)
-strongly, identifies both adjoint and cross measures with the positive kinetic
-defect, and closes the sub-clock corridor. The
-[nonlinear-entrance theorem](experiments/type-ii-nonlinear-defect-entrance.md)
-now reverses \(a\) into a forward perturbed Navier--Stokes field \(v\):
+The [nonlinear-entrance theorem](experiments/type-ii-nonlinear-defect-entrance.md)
+reverses the aligned full defect into a forward field \(v\) with weak-zero
+vector trace, positive initial energy measure, strong-trace drift \(c\), and
+q4 amplitude. The
+[boundary heat-impulse theorem](experiments/type-ii-boundary-heat-impulse.md)
+now removes the linear boundary datum exactly:
 \[
-v_\tau-\nu\Delta v+\mathbb P(((v+c)\cdot\nabla)v)=0,\quad
-v(\tau)\rightharpoonup0,\quad c(\tau)\to-u_*,\quad
-\|v(\tau)\|_2^2+2\nu\!\int_0^\tau\|\nabla v\|_2^2=d.
+v(\tau)=-\int_0^\tau e^{\nu(\tau-s)\Delta}
+\mathbb P(((v+c)\cdot\nabla)v)(s)\,ds.
 \]
-Its positive initial energy measure is \(\vartheta\), and \(v\) owns the q4
-amplitude layer. Relative energy cancels the two copies of \(\vartheta\);
-the remaining commutator has no controlled clock-integrable majorant.
-The exact live gate is a zero-trace nonlinear entrance or boundary-energy
-theorem, a non-summable inverse-cascade charge, or a quantitative
-clock-relative compactness modulus for the strong drift.
+Its energy is an exact pressure-free heat-deviation work retaining endpoint
+transport cancellation. It forces a non-vanishing half-order \(MY\) impulse,
+failure of every finite temporal \(L^{2,q}\) secondary index, and a q4
+quarter-order amplitude impulse. A power--log ledger satisfies all scalar
+constraints. The live gate is sign/orthogonality or non-reuse of that work,
+not mild uniqueness from the small terminal \(M^2\) tail alone.
 
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.

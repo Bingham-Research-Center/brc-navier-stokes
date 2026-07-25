@@ -4516,6 +4516,43 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-BOUNDARY-HEAT-IMPULSE-001",
+      "title": "The q4 nonlinear entrance forces a critical boundary heat impulse",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001",
+        "CLM-PARTIAL-001"
+      ],
+      "hypothesis": "The weak-zero nonlinear entrance may be excluded directly by its boundary mild formulation and the small q4 terminal weak-L3 squared tail.",
+      "invariants": [
+        "The fixed-time heat evolution of the weak-zero boundary field vanishes and the entrance obeys an exact zero-boundary Duhamel formula in L2",
+        "Pairing the mild formula with the terminal field gives a pressure-free work identity equal to the full positive entrance energy",
+        "Subtracting the instantaneous transport pairing retains an exact heat-deviation factor that vanishes at the upper time endpoint",
+        "The work splits into self and strong-drift contributions but neither contribution has a known sign",
+        "Lorentz Holder and heat smoothing bound the L2 entrance by the half-order potential of M times gradient-v",
+        "The same argument bounds weak-L3 amplitude by the quarter-order potential of M times gradient-v",
+        "Positive boundary energy forces the integral of M times gradient-v over every initial interval to be at least a constant times its square-root length",
+        "The product of the M-squared tail and the v-dissipation tail is at least a constant times the interval length",
+        "M times gradient-v cannot have any finite L2,q temporal Lorentz secondary index at the boundary",
+        "The q4 amplitude layer forces a quarter-order impulse at least a constant times the record amplitude m",
+        "An exact power-log ledger matches the q4 M-squared tail, the known v-dissipation floor, infinite amplitude-weighted dissipation, and both fractional impulse requirements",
+        "The power-log ledger has no spatial field, sign, phase, projection, pressure, or same-trajectory content",
+        "No non-reuse theorem, zero-trace exclusion, q4 closure, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Pass the positive-time mild formula to the weak-zero boundary using strong convergence of the nonlinear heat integral, pair with the terminal field, subtract the exact instantaneous transport cancellation, apply Lorentz heat smoothing at L2 and weak-L3 outputs, integrate the half-order lower bound, exclude finite Lorentz secondary indices, and stress-test every consequence against an exact power-log q4 ledger.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the boundary Duhamel limit, heat-deviation work signs, self and drift split, Lorentz heat estimates, half- and quarter-order impulse theorems, tail-product floor, finite-secondary-index exclusion, exact power-log arithmetic, conjecture, and open obligations. External review is pending; no executable PDE artefact is claimed.",
+      "success_criterion": "Determine whether the weak-zero mild formulation and q4 terminal tail already exclude the nonlinear entrance, or isolate the exact signed same-trajectory work that still requires a non-reuse theorem.",
+      "failure_interpretation": "The boundary heat term does not vanish, the nonlinear integral does not converge strongly, the work sign or endpoint cancellation is wrong, a Lorentz heat exponent is incorrect, the finite-secondary-index conclusion does not follow, the power-log ledger misses a q4 exponent, or the epistemic scope is overstated.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-boundary-heat-impulse.md",
+        "dossier/rounds/2026-07-25-type-ii-boundary-heat-impulse.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

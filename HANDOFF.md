@@ -1,69 +1,70 @@
-# Handoff: R3C nonlinear entrance from infinity
+# Handoff: R3C boundary heat impulse
 
 **Updated:** 2026-07-25 · **Clay status:** unsolved
 
-**Live route:** `ROUTE-R3C` · `EXP-TYPE-II-NONLINEAR-DEFECT-ENTRANCE-001`
+**Live route:** `ROUTE-R3C` · `EXP-TYPE-II-BOUNDARY-HEAT-IMPULSE-001`
 
 ## Load only
 
-- [Nonlinear entrance](dossier/experiments/type-ii-nonlinear-defect-entrance.md)
+- [Boundary heat impulse](dossier/experiments/type-ii-boundary-heat-impulse.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
-## Exact reduction
+## Exact object
 
-The full-defect entrance splits \(u=a+b\), with \(b(t)\to u_*\) strongly.
-For \(\tau=T-t\), set \(v=-a(T-\tau)\), \(c=-b(T-\tau)\). Then
+For the reversed full-defect entrance, put \(U=v+c\),
+\(M=\|U\|_{3,\infty}\), and \(Y=\|\nabla v\|_2\). The weak-zero boundary
+term vanishes after fixed-time heat propagation:
 \[
-\partial_\tau v-\nu\Delta v+
-\mathbb P(((v+c)\cdot\nabla)v)=0,
+v(\tau)=-\int_0^\tau e^{\nu(\tau-s)\Delta}
+\mathbb P((U\cdot\nabla)v)(s)\,ds.
 \]
 \[
-\quad v(\tau)\rightharpoonup0,\qquad
-c(\tau)\to-u_*\ {\rm strongly},\qquad
-\|v(\tau)\|_2^2+2\nu\int_0^\tau\|\nabla v\|_2^2=d>0.
+\|v(\tau)\|_2^2
+=-\int_0^\tau\!\left\langle
+(U\cdot\nabla)v,\,
+e^{\nu(\tau-s)\Delta}v(\tau)-v(s)
+\right\rangle ds.
 \]
-Thus the lost component is itself a forward nonlinear flow entering from
-frequency infinity, with strong-trace drift.
+The subtraction retains \(\langle(U\cdot\nabla)v,v\rangle=0\). This
+nonlinear heat-deviation work tends to \(d\), but its density has no sign.
 
-At exact q4 records,
+## Forced impulse
+
+With \(f=MY\) and \(I_\alpha f(\tau)=\int_0^\tau(\tau-s)^{\alpha-1}f(s)\,ds\),
 \[
-|v(\tau_j)|^2dx\rightharpoonup^*\vartheta,\qquad
-\int_{A_j}|v(\tau_j)|^2\ge c,\qquad
-\|v(\tau_j)\|_{3,\infty}\gtrsim m_j.
+\|v(\tau)\|_2\lesssim\nu^{-1/2}I_{1/2}f(\tau),\qquad
+\|v(\tau)\|_{3,\infty}\lesssim\nu^{-3/4}I_{1/4}f(\tau).
 \]
-The local energy law starts from the positive measure \(\vartheta/2\),
-although the vector trace is weakly zero.
-
-## Closed shortcut
-
-For \(r=a\cdot b\), the two positive defect measures cancel:
+Hence every small \(h\) and every q4 record satisfy
 \[
-r(t)dx\rightharpoonup0,\qquad
-\int r(t)=2\nu\int_t^T\|\nabla a\|_2^2.
+\int_0^hMY\gtrsim\sqrt{\nu d\,h},\qquad
+\left(\int_0^hM^2\right)\left(\int_0^hY^2\right)\gtrsim\nu dh,\qquad
+I_{1/4}(MY)(\tau_j)\gtrsim\nu^{3/4}m_j.
 \]
-The exact spectral relative identity leaves
-\(\langle[(u\cdot\nabla),B_N]b,a\rangle\), bounded by
-\(\|u\|_{3,\infty}\|\nabla b\|_2\|\nabla a\|_2\).
-Current hypotheses give no integrable majorant or sign.
+In particular \(MY\notin L^{2,q}_\tau\) for every finite \(q\).
 
 ## Sharp survivor
 
-With \(m_j=2^{2j}\), \(\delta_j=2^{-11j}/j\), and
-\(\Lambda_j=2^{14j/3}j^{2/3}\),
+For \(\ell=\log(e/s)\),
 \[
-m_j^2\Lambda_j^{3/2}\delta_j=1,\quad
-\sum\delta_j\Lambda_j^2<\infty,\quad
-\sum m_j\delta_j\Lambda_j^2=\infty.
+M_\sharp=s^{-2/11}\ell^{-2/11},\qquad
+Y_\sharp=s^{-9/22}\ell^{1/11}
 \]
-A Hilbert ledger also realises the weak-zero/positive-energy boundary and
-strong remainder. It is not a PDE trajectory.
+saturates the q4 \(M^2\) tail and \(Y^2\) floor, has
+\(M_\sharp Y_\sharp^2=s^{-1}\), and satisfies both fractional impulses.
+It is scalar, with no sign, phase, pressure, or same-trajectory content.
+
+## Closed shortcut
+
+The mild formulation and small q4 \(L^2_\tau L^{3,\infty}_x\) tail do not
+force zero: the nonlinear impulse is necessarily critical and order one.
 
 ## Exact live question / Next bounded cycle
 
-Prove or falsify a zero-trace nonlinear entrance theorem: the exact q4
-same-trajectory coupling must force \(d=0\). Target a boundary energy
-inequality, non-summable inverse-cascade charge, clock-relative compactness
-modulus, or removability of the \(\mathcal H^1\)-null initial energy measure.
+Make the positive heat-deviation work non-reusable across nested q4
+detectors. Seek a finite temporal secondary index for \(MY\), an
+orthogonal signed frequency decomposition, or a rate making the
+strong-drift work negligible.
 
 All results are conditional and await external review. Keep slower clocks,
 divergent normalised energy, and R3B separate. No Clay alternative is proved.
