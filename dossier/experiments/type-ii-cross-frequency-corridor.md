@@ -7,6 +7,17 @@
 - **Clay status:** unsolved
 - **Input:** [amplitude-slab pincer](type-ii-adjoint-amplitude-pincer.md)
 
+## Downstream disposition
+
+The subsequent
+[full-defect alignment theorem](type-ii-full-defect-alignment.md) chooses
+the Oseen terminal data to exhaust the entire kinetic-energy jump.  For
+that canonical entrance, the cross spectrum becomes the positive primal
+defect-energy spectrum at records and the terminal low-pass clock forces
+\(\kappa_j\gtrsim\Lambda_j\).  Thus the corridor derived here remains a
+sharp theorem for an incompletely normalised entrance, but it is no longer
+the live R3C survivor.
+
 ## Verdict
 
 The pressure-free commutator anomaly, when used through the Lorentz norm
@@ -234,11 +245,11 @@ below the clock branch, and still has
 
 This is not a Navier--Stokes construction.  It proves that the clock,
 energy budgets, and all norm-level cross-pairing transition inequalities
-derived here are mutually consistent at the exact q4 endpoint.  A
-contradiction now requires unspent phase or sign information from the
-identity, or another genuinely trajectory-specific theorem excluding
-persistent corridor transfer or charging it non-reusably.  No Clay
-alternative is proved.
+derived here are mutually consistent at the exact q4 endpoint.  At this
+checkpoint a contradiction required unspent phase, sign, or genealogy.
+The downstream full-defect theorem supplies enough genealogy to remove
+the sub-clock case, leaving clock-scale residence.  No Clay alternative
+is proved.
 
 ## 1. Setting and terminal pairing
 

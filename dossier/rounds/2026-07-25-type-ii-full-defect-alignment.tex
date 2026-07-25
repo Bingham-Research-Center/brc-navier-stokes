@@ -1,0 +1,750 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\ip}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\weakto}{\rightharpoonup}
+\newcommand{\esssup}{\operatorname*{ess\,sup}}
+\setlength{\emergencystretch}{2em}
+
+\title{The Full q4 Defect Aligns the Oseen Entrance\\
+and Reaches the Nonlinear Clock}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round resolves the phase-sensitive sub-clock corridor left by the
+preceding cross-frequency theorem, inside the conditional
+energy-efficient exact q4 branch.  Uniform spatial tightness permits the
+terminal Oseen data to exhaust the entire downward kinetic-energy jump
+\(d\), not merely one ultraviolet portion.  The resulting entrance
+field \(a\) satisfies
+\[
+ \ip{u(t)}{a(t)}=d,\qquad
+ \norm{a(t)}_2^2\leq d,\qquad
+ a(t)\weakto0
+ \quad(t\uparrow T).
+\]
+At the selected record endpoints,
+\[
+ a(s_j)-\bigl(u(s_j)-u_*\bigr)\longrightarrow0
+ \quad\hbox{strongly in }L^2.
+\]
+Consequently \(u-a\to u_*\) strongly, while both the adjoint energy
+measure and the primal--adjoint cross measure equal the positive
+terminal kinetic-energy defect measure.
+
+Uniformly over every Fourier cutoff, the cross pairing is asymptotic to
+the positive spectral energy of \(a\), and at records to that of
+\(u(s_j)-u_*\).  The terminal weak-\(L^3\) low-pass clock then forces
+the median cross frequency to
+\[
+ \kappa_j\gtrsim
+ \Lambda_j=m_j^{7/3}j^{2/3}.
+\]
+Thus the previously open sub-clock corridor is empty for this canonical
+full-defect entrance.  A clock-scale packet still has geometrically
+summable unweighted residence, so q4 and the Clay problem remain open.
+Every theorem here is a conditional repository result pending external
+review.
+\end{abstract}
+
+\section{Epistemic status and hypotheses}
+
+No assertion below derives the exact q4 branch from arbitrary
+Clay-admissible data.  Let \(u\) be a smooth finite-energy
+Navier--Stokes solution on \(\R^3\times(0,T)\), continued weakly
+continuously in \(L^2\) through a putative first singular time \(T\).
+Write
+\begin{equation}
+\label{eq:defect}
+ E_-:=\lim_{t\uparrow T}\norm{u(t)}_2^2,\qquad
+ u_*:=u(T),\qquad
+ d:=E_--\norm{u_*}_2^2>0.
+\end{equation}
+The conditional q4 chain supplies selected record endpoints
+\(s_j\uparrow T\), record amplitudes \(m_j\to\infty\), uniform spatial
+tightness, and
+\begin{equation}
+\label{eq:q4tails}
+ \int_{s_j}^T
+ \norm{u(t)}_{L^{3,\infty}}^2\,dt
+ \lesssim \frac{m_j^{-7/2}}{j},
+ \qquad
+ T-s_j\lesssim\frac{m_j^{-11/2}}{j}.
+\end{equation}
+Put
+\begin{equation}
+\label{eq:wj}
+ w_j:=u(s_j)-u_*.
+\end{equation}
+Weak continuity and the energy limit give
+\begin{equation}
+\label{eq:wlimits}
+ w_j\weakto0,\qquad
+ \norm{w_j}_2^2\longrightarrow d.
+\end{equation}
+
+\section{A finite-band detector for the entire defect}
+
+\begin{lemma}[Fixed low-frequency compactness]
+\label{lem:fixed-low}
+For every fixed smooth compactly supported Fourier low pass
+\(\Pi_{\leq L}\),
+\[
+ \norm{\Pi_{\leq L}w_j}_2\longrightarrow0.
+\]
+\end{lemma}
+
+\begin{proof}
+Uniform spatial tightness of \(u(s_j)\), together with
+\(u_*\in L^2\), makes \(w_j\) uniformly tight.  The fields
+\(\Pi_{\leq L}w_j\) are uniformly bounded in \(H^1\).
+
+They remain uniformly tight after low-pass convolution.  Indeed, split
+\(w_j\) into its part inside a large ball and its uniformly small
+exterior part.  Young's inequality controls the latter, while the
+Schwartz tail of the convolution kernel controls the output of the
+interior part outside a still larger ball.  Rellich compactness on
+bounded balls and this tail estimate make
+\(\{\Pi_{\leq L}w_j\}\) precompact in global \(L^2\).  Its only weak
+limit is zero by \eqref{eq:wlimits}; hence the convergence is strong.
+\end{proof}
+
+\begin{lemma}[Full-defect detector]
+\label{lem:detector}
+There are
+\[
+ 1<L_j<\Omega_j<\infty,\qquad L_j\longrightarrow\infty,
+\]
+and solenoidal finite-band fields
+\[
+ g_j:=\Pi_{L_j<|\xi|\leq\Omega_j}w_j
+\]
+such that
+\begin{equation}
+\label{eq:detector}
+ \norm{g_j-w_j}_2\longrightarrow0,\qquad
+ \norm{g_j}_2^2\longrightarrow d,\qquad
+ \ip{u(s_j)}{g_j}\longrightarrow d.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Apply Lemma~\ref{lem:fixed-low} successively at integer cutoffs and
+choose a staircase \(L_j\uparrow\infty\) slowly enough that
+\[
+ \norm{\Pi_{\leq L_j}w_j}_2\longrightarrow0.
+\]
+For each \(j\), choose \(\Omega_j>L_j\) so that
+\(\norm{\Pi_{>\Omega_j}w_j}_2\leq j^{-1}\).
+Orthogonality of the three Fourier regions gives
+\(\norm{g_j-w_j}_2\to0\).  Therefore
+\(g_j\weakto0\) and \(\norm{g_j}_2^2\to d\).
+Finally,
+\[
+\begin{aligned}
+ \ip{u(s_j)}{g_j}
+ &=
+ \ip{u_*+w_j}{g_j}\\
+ &=
+ \ip{u_*}{g_j}
+ +\norm{w_j}_2^2
+ +\ip{w_j}{g_j-w_j}
+ \longrightarrow d.
+\end{aligned}
+\]
+Smooth annular cutoffs can replace the sharp projections after an
+arbitrarily small \(L^2\) approximation.
+\end{proof}
+
+\section{The aligned Oseen entrance}
+
+For each \(j\), solve the projected backward Oseen problem
+\begin{equation}
+\label{eq:adjoint-j}
+ \partial_ta_j+\nu\Delta a_j
+ +\mathbb P((u\cdot\nabla)a_j)=0,\qquad
+ \nabla\cdot a_j=0,\qquad
+ a_j(s_j)=g_j.
+\end{equation}
+The exact identities are
+\begin{equation}
+\label{eq:aj-energy}
+ \norm{a_j(t)}_2^2
+ +2\nu\int_t^{s_j}\norm{\nabla a_j(r)}_2^2\,dr
+ =\norm{g_j}_2^2
+\end{equation}
+and
+\begin{equation}
+\label{eq:aj-pair}
+ \ip{u(t)}{a_j(t)}
+ =\ip{u(s_j)}{g_j}.
+\end{equation}
+Compactness on every strict preterminal interval gives, after
+extraction,
+\[
+ a\in L^\infty(0,T;L^2_\sigma)
+ \cap L^2(0,T;\dot H^1_\sigma),
+\]
+solving \eqref{eq:adjoint-j} on \((0,T)\), such that
+\begin{equation}
+\label{eq:a-pair-trace}
+ \ip{u(t)}{a(t)}=d,\qquad
+ a(t)\weakto0\quad(t\uparrow T).
+\end{equation}
+
+\begin{theorem}[Full-defect terminal alignment]
+\label{thm:alignment}
+The entrance field satisfies
+\begin{equation}
+\label{eq:a-upper}
+ \norm{a(t)}_2^2\leq d\qquad(t<T),
+\end{equation}
+\begin{equation}
+\label{eq:a-terminal-norm}
+ \lim_{t\uparrow T}\norm{a(t)}_2^2=d,
+\end{equation}
+and
+\begin{equation}
+\label{eq:record-align}
+ \norm{a(s_j)-w_j}_2\longrightarrow0.
+\end{equation}
+Moreover, if \(b:=u-a\), then
+\begin{equation}
+\label{eq:b-strong}
+ b(t)\longrightarrow u_*
+ \quad\hbox{strongly in }L^2
+ \quad(t\uparrow T).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Weak lower semicontinuity in the compact-time limit and
+\eqref{eq:aj-energy} imply
+\[
+ \norm{a(t)}_2^2
+ \leq\liminf_j\norm{a_j(t)}_2^2
+ \leq\lim_j\norm{g_j}_2^2=d,
+\]
+which proves \eqref{eq:a-upper}.
+
+At \(t=s_j\), equations \eqref{eq:a-pair-trace} and
+\eqref{eq:wlimits} give
+\[
+\begin{aligned}
+ \ip{w_j}{a(s_j)}
+ &=
+ \ip{u(s_j)}{a(s_j)}
+ -\ip{u_*}{a(s_j)}\\
+ &=d-o(1).
+\end{aligned}
+\]
+Since \(\norm{w_j}_2\to\sqrt d\), Cauchy--Schwarz and
+\eqref{eq:a-upper} force
+\[
+ \norm{a(s_j)}_2\longrightarrow\sqrt d.
+\]
+Consequently
+\[
+\begin{aligned}
+ \norm{a(s_j)-w_j}_2^2
+ &=
+ \norm{a(s_j)}_2^2+\norm{w_j}_2^2
+ -2\ip{a(s_j)}{w_j}\\
+ &\longrightarrow d+d-2d=0.
+\end{aligned}
+\]
+
+The adjoint energy identity makes \(\norm{a(t)}_2\) nondecreasing as
+\(t\uparrow T\).  Its limit is at most \(\sqrt d\) by
+\eqref{eq:a-upper} and attains \(\sqrt d\) along \(s_j\); this proves
+\eqref{eq:a-terminal-norm}.
+
+Finally \(b=u-a\weakto u_*\), while
+\[
+\begin{aligned}
+ \norm{b(t)}_2^2
+ &=
+ \norm{u(t)}_2^2+\norm{a(t)}_2^2
+ -2\ip{u(t)}{a(t)}\\
+ &\longrightarrow E_-+d-2d
+ =\norm{u_*}_2^2.
+\end{aligned}
+\]
+Weak convergence and convergence of norms prove \eqref{eq:b-strong}.
+\end{proof}
+
+\begin{corollary}[Exact terminal splitting]
+\label{cor:splitting}
+For every \(t<T\),
+\begin{equation}
+\label{eq:a-tail-energy}
+ \norm{a(t)}_2^2
+ +2\nu\int_t^T\norm{\nabla a(r)}_2^2\,dr=d
+\end{equation}
+and
+\begin{equation}
+\label{eq:ab-tail}
+ \ip{a(t)}{b(t)}
+ =d-\norm{a(t)}_2^2
+ =2\nu\int_t^T\norm{\nabla a(r)}_2^2\,dr.
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Use the adjoint energy equality between \(t\) and \(r<T\), then let
+\(r\uparrow T\) and apply \eqref{eq:a-terminal-norm}.  The second
+identity follows from \(b=u-a\) and \(\ip{u}{a}=d\).
+\end{proof}
+
+\section{Equality of all terminal defect measures}
+
+Let
+\[
+ \mathcal E
+ :=\operatorname*{w^*\!-\!lim}_j
+ |u(s_j)|^2\,dx,\qquad
+ \vartheta:=\mathcal E-|u_*|^2\,dx.
+\]
+The input terminal-dimension theorem gives
+\[
+ \vartheta\geq0,\qquad
+ \vartheta(\R^3)=d,\qquad
+ \operatorname{supp}\vartheta\subset\sigma,
+\]
+where \(\mathcal H^1(\sigma)=0\).
+
+\begin{theorem}[Positive common defect measure]
+\label{thm:measures}
+Along the selected record sequence,
+\begin{equation}
+\label{eq:measure-equality}
+ |a(s_j)|^2\,dx
+ \overset{*}{\rightharpoonup}\vartheta,\qquad
+ u(s_j)\cdot a(s_j)\,dx
+ \overset{*}{\rightharpoonup}\vartheta.
+\end{equation}
+Thus the adjoint energy defect and the cross defect are exactly the
+positive primal kinetic-energy defect.
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:record-align} gives
+\[
+ \bigl\||a(s_j)|^2-|w_j|^2\bigr\|_1
+ \leq
+ \bigl(\norm{a(s_j)}_2+\norm{w_j}_2\bigr)
+ \norm{a(s_j)-w_j}_2
+ \longrightarrow0.
+\]
+Expanding \(|w_j|^2=|u(s_j)-u_*|^2\), using weak convergence against
+compactly supported multiples of \(u_*\), and using spatial tightness
+shows that \(|w_j|^2dx\overset{*}{\rightharpoonup}\vartheta\).
+This proves the first limit.
+
+For the second,
+\[
+ u(s_j)\cdot a(s_j)-|w_j|^2
+ =
+ w_j\cdot(a(s_j)-w_j)+u_*\cdot a(s_j).
+\]
+The first term tends to zero in \(L^1\).  The second tends weakly to
+zero as a measure because \(a(s_j)\weakto0\).  Its tails are uniformly
+small by Cauchy--Schwarz and \(u_*\in L^2\).  This proves the second
+limit.
+\end{proof}
+
+\section{Uniform positivity of the cross spectrum}
+
+Choose a real radial
+\(\psi\in C_c^\infty(\R^3)\), nonincreasing in \(|\xi|\), with
+\[
+ 0\leq\psi\leq1,\qquad
+ \psi=1\quad(|\xi|\leq1),\qquad
+ \psi=0\quad(|\xi|\geq2),
+\]
+and set \(B_N:=\psi(D/N)\).  Define
+\begin{equation}
+\label{eq:KN}
+ K_N(t):=\ip{u(t)}{B_Na(t)}.
+\end{equation}
+
+\begin{lemma}[Compact cutoff orbit]
+\label{lem:cutoff-orbit}
+For every \(f\in L^2\), the set
+\[
+ \{B_Nf:0<N<\infty\}\cup\{0,f\}
+\]
+is norm-compact in \(L^2\).
+\end{lemma}
+
+\begin{proof}
+The map \(N\mapsto B_Nf\) is norm-continuous by dominated convergence,
+tends to zero as \(N\downarrow0\), and tends to \(f\) as
+\(N\uparrow\infty\).  It therefore extends continuously to a compact
+parameter interval.
+\end{proof}
+
+\begin{theorem}[Asymptotically positive cross spectrum]
+\label{thm:positive-spectrum}
+Uniformly over all \(N>0\),
+\begin{equation}
+\label{eq:a-spectrum}
+ K_N(t)=\ip{a(t)}{B_Na(t)}+o_{t\uparrow T}(1),
+\end{equation}
+and, along the records,
+\begin{equation}
+\label{eq:w-spectrum}
+ K_N(s_j)=\ip{w_j}{B_Nw_j}+o_{j\to\infty}(1).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Since \(u=a+b\),
+\[
+ K_N-\ip{a}{B_Na}=\ip{b}{B_Na}.
+\]
+The part with \(b-u_*\) is uniformly bounded by
+\(\norm{b-u_*}_2\norm a_2\), which tends to zero by
+\eqref{eq:b-strong}.  The remaining part is
+\(\ip{B_Nu_*}{a}\).  Weak convergence \(a(t)\weakto0\) is uniform on
+the compact set from Lemma~\ref{lem:cutoff-orbit}, proving
+\eqref{eq:a-spectrum}.
+
+At \(s_j\),
+\[
+\begin{aligned}
+ K_N(s_j)-\ip{w_j}{B_Nw_j}
+ ={}&
+ \ip{u(s_j)}{B_N(a(s_j)-w_j)}\\
+ &+\ip{B_Nu_*}{w_j}.
+\end{aligned}
+\]
+The first term tends uniformly to zero by
+\eqref{eq:record-align}; the second does so because
+\(w_j\weakto0\) uniformly on the same compact cutoff orbit.
+\end{proof}
+
+\begin{remark}
+The functions \(N\mapsto\ip f{B_Nf}\) are nonnegative and
+nondecreasing.  Thus Theorem~\ref{thm:positive-spectrum} removes, up to
+a uniform \(o(1)\), the sign, phase, and nonmonotonicity ambiguity that
+created the earlier corridor.
+\end{remark}
+
+\section{The terminal low-pass clock}
+
+Put
+\[
+ M(t):=\norm{u(t)}_{L^{3,\infty}},\qquad
+ B_{2,j}:=\int_{s_j}^TM(t)^2\,dt,\qquad
+ \tau_j:=T-s_j,
+\]
+and \(U:=\sup_{t<T}\norm{u(t)}_2\).
+
+\begin{lemma}[Terminal weak-\(L^3\) low-pass estimate]
+\label{lem:terminal-clock}
+For every \(N>0\),
+\begin{equation}
+\label{eq:terminal-clock}
+ \norm{B_Nw_j}_2
+ \lesssim
+ N^{3/2}B_{2,j}
+ +\nu U N^2\tau_j.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Apply \(B_N\) to the projected Navier--Stokes equation.  Lorentz
+duality and Bernstein give
+\[
+ \norm{B_N\mathbb P\nabla\cdot(u\otimes u)}_2
+ \lesssim
+ N^{3/2}\norm{u\otimes u}_{L^{3/2,\infty}}
+ \lesssim N^{3/2}M(t)^2.
+\]
+The viscous term satisfies
+\[
+ \norm{B_N\Delta u(t)}_2\lesssim N^2U.
+\]
+Integrate from \(s_j\) to \(r<T\).  For fixed \(N\), the same
+integrable estimate makes \(B_Nu(r)\) strongly Cauchy as
+\(r\uparrow T\).  Its weak limit identifies the strong limit as
+\(B_Nu_*\).  Letting \(r\uparrow T\) proves
+\eqref{eq:terminal-clock}.
+\end{proof}
+
+Define the first dyadic half-pairing frequency
+\begin{equation}
+\label{eq:kappa}
+ \kappa_j
+ :=
+ \min\{2^k:K_{2^k}(s_j)\geq d/2\}.
+\end{equation}
+
+\begin{theorem}[Sub-clock corridor collapse]
+\label{thm:corridor-collapse}
+For all sufficiently large \(j\),
+\begin{equation}
+\label{eq:clock-frequency}
+ \boxed{
+ \kappa_j\gtrsim
+ \Lambda_j:=m_j^{7/3}j^{2/3}.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The uniform alignment \eqref{eq:w-spectrum} gives
+\[
+ \ip{w_j}{B_{\kappa_j}w_j}\geq d/3
+\]
+for large \(j\).  Since \(B_{2\kappa_j}=1\) on the Fourier support of
+the symbol of \(B_{\kappa_j}\),
+\[
+\begin{aligned}
+ \frac d3
+ &\leq
+ \ip{B_{2\kappa_j}w_j}{B_{\kappa_j}w_j}\\
+ &\leq
+ \norm{B_{2\kappa_j}w_j}_2\norm{w_j}_2.
+\end{aligned}
+\]
+The \(w_j\) norms tend to \(\sqrt d\).  Applying
+Lemma~\ref{lem:terminal-clock} at \(2\kappa_j\) yields
+\[
+ 1\lesssim
+ \kappa_j^{3/2}B_{2,j}
+ +\nu U\kappa_j^2\tau_j.
+\]
+If the first term pays, \eqref{eq:q4tails} gives
+\[
+ \kappa_j\gtrsim B_{2,j}^{-2/3}
+ \gtrsim m_j^{7/3}j^{2/3}.
+\]
+If the second pays, then
+\[
+ \kappa_j\gtrsim\tau_j^{-1/2}
+ \gtrsim m_j^{11/4}j^{1/2}.
+\]
+The latter exceeds \(\Lambda_j\), because
+\[
+ \frac{m_j^{11/4}j^{1/2}}
+ {m_j^{7/3}j^{2/3}}
+ =
+ m_j^{5/12}j^{-1/6}\longrightarrow\infty.
+\]
+Both cases prove \eqref{eq:clock-frequency}.
+\end{proof}
+
+\begin{remark}
+The proof uses more than the absolute commutator inequalities: it uses
+full capture of the kinetic defect, strong primal--adjoint alignment,
+and the terminal Navier--Stokes low-pass evolution.  The scalar
+sub-clock front from the preceding round lacks precisely these three
+facts.
+\end{remark}
+
+\section{Individual enstrophy floors}
+
+Use reverse terminal time \(\tau=T-t\), and put
+\[
+ M(\tau):=\norm{u(T-\tau)}_{L^{3,\infty}},\quad
+ X(\tau):=\norm{\nabla u(T-\tau)}_2,\quad
+ Y(\tau):=\norm{\nabla a(T-\tau)}_2,
+\]
+\[
+ B_1(\tau):=\int_0^\tau M(r)\,dr.
+\]
+The preceding coarse commutator theorem gives
+\begin{equation}
+\label{eq:coarse-front}
+ \kappa(\tau)^2B_1(\tau)\gtrsim1.
+\end{equation}
+
+\begin{proposition}[Individual moving-front cost]
+\label{prop:individual}
+For all sufficiently small \(\tau\),
+\begin{equation}
+\label{eq:individual}
+ X(\tau)^2\gtrsim\kappa(\tau)^2
+ \gtrsim B_1(\tau)^{-1},
+ \qquad
+ Y(\tau)^2\gtrsim\kappa(\tau)^2
+ \gtrsim B_1(\tau)^{-1}.
+\end{equation}
+If
+\(\ell(\tau):=\log(e+\tau_0/\tau)\), then
+\begin{equation}
+\label{eq:individual-tails}
+ \int_0^\tau X(r)^2\,dr
+ \gtrsim\tau^{2/11}\ell(\tau)^{2/11},
+ \qquad
+ \int_0^\tau Y(r)^2\,dr
+ \gtrsim\tau^{2/11}\ell(\tau)^{2/11}.
+\end{equation}
+Moreover,
+\begin{equation}
+\label{eq:weighted-both}
+ \int_0^{\tau_0}M(\tau)X(\tau)^2\,d\tau=\infty,
+ \qquad
+ \int_0^{\tau_0}M(\tau)Y(\tau)^2\,d\tau=\infty.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+At the dyadic predecessor \(N=\kappa(\tau)/2\), minimality and the full
+pairing \(d\) give
+\[
+ \frac d2<\ip{u}{(I-B_N)a}.
+\]
+The high-pass estimate
+\[
+ \norm{(I-B_N)f}_2\lesssim N^{-1}\norm{\nabla f}_2
+\]
+can be applied on either side of the pairing.  Together with
+\(\norm a_2\leq\sqrt d\) and the uniform \(L^2\) bound for \(u\), it
+gives separately
+\[
+ X(\tau)\gtrsim\kappa(\tau),\qquad
+ Y(\tau)\gtrsim\kappa(\tau).
+\]
+Combine this with \eqref{eq:coarse-front}.
+
+The q4 clock gives
+\[
+ B_1(\tau)
+ \lesssim
+ \tau^{9/11}\ell(\tau)^{-2/11}.
+\]
+Integrating \(B_1^{-1}\) proves
+\eqref{eq:individual-tails}.  Finally \(B_1'=M\) almost everywhere, so
+\[
+ \int_\epsilon^{\tau_0}\frac{M(\tau)}{B_1(\tau)}\,d\tau
+ =
+ \log B_1(\tau_0)-\log B_1(\epsilon)
+ \longrightarrow\infty
+\]
+as \(\epsilon\downarrow0\).  Equation \eqref{eq:individual} proves
+\eqref{eq:weighted-both}.
+\end{proof}
+
+\begin{corollary}
+At the selected q4 records,
+\[
+ \norm{\nabla u(s_j)}_2^2\gtrsim\Lambda_j^2,\qquad
+ \norm{\nabla a(s_j)}_2^2\gtrsim\Lambda_j^2.
+\]
+\end{corollary}
+
+\section{Sharp clock-scale survivor}
+
+Theorem~\ref{thm:corridor-collapse} is not q4 closure.  Take the exact
+representative powers
+\[
+ m_j:=2^{2j},\qquad
+ \delta_j:=\frac{2^{-11j}}j,\qquad
+ \Lambda_j:=2^{14j/3}j^{2/3}.
+\]
+Then
+\begin{equation}
+\label{eq:unweighted-ledger}
+ \delta_j\Lambda_j^2
+ =2^{-5j/3}j^{1/3},
+ \qquad
+ \sum_j\delta_j\Lambda_j^2<\infty,
+\end{equation}
+whereas
+\begin{equation}
+\label{eq:weighted-ledger}
+ m_j\delta_j\Lambda_j^2
+ =2^{j/3}j^{1/3},
+ \qquad
+ \sum_jm_j\delta_j\Lambda_j^2=\infty.
+\end{equation}
+Thus a packet moving at the nonlinear clock can retain finite primal
+and adjoint unweighted dissipation while satisfying the forced
+amplitude-weighted divergence.  This is a temporal-frequency scaling
+ledger, not a Navier--Stokes construction.
+
+\section{Round audit}
+
+\subsection*{Formal conditional results}
+
+\begin{enumerate}
+\item Finite annular terminal data can exhaust the entire kinetic defect
+      \(d\).
+\item The resulting Oseen entrance obeys
+      \(\norm a_2^2\leq d\), has terminal norm exactly \(\sqrt d\), and
+      aligns strongly with \(u(s_j)-u_*\).
+\item The complementary field \(u-a\) reaches \(u_*\) strongly.
+\item The adjoint energy measure and cross measure both equal the
+      positive kinetic defect \(\vartheta\).
+\item The cross spectrum is uniformly asymptotic to a positive energy
+      spectrum.
+\item The terminal low-pass clock forces
+      \(\kappa_j\gtrsim\Lambda_j\), closing the sub-clock corridor for
+      the full-defect entrance.
+\item The individual enstrophy tails satisfy the stronger
+      \(\tau^{2/11}\ell(\tau)^{2/11}\) floors, and both weighted actions
+      diverge.
+\end{enumerate}
+
+\subsection*{Closed proposal}
+
+Arbitrary phase or sign is not the q4 survivor.  The canonical entrance
+is positively aligned with the whole primal kinetic defect, and its
+cross front reaches the direct nonlinear clock.  Summing the resulting
+pointwise clock floors is nevertheless insufficient because
+\eqref{eq:unweighted-ledger} is geometrically summable.
+
+\subsection*{Open obligations}
+
+\begin{enumerate}
+\item Turn the clock-scale defect quantile into a non-reusable
+      residence, flux, or projective-motion charge.
+\item Exploit the positive identity between the adjoint, cross, and
+      primal defect measures in the local current or capacity equation.
+\item Use the strong component \(u-a\to u_*\) to obtain a coercive
+      relative-energy or projected-pressure identity.
+\item Prove strong left \(L^2\) continuity, energy equality, finite
+      weighted adjoint action, or another established closing criterion.
+\item Treat slower clocks, divergent normalised energy, and the other
+      Clay alternatives separately.
+\end{enumerate}
+
+\begin{conjecture}[No clock-scale full-defect entrance]
+No smooth finite-energy Navier--Stokes trajectory approaching its first
+singular time possesses a full-defect projected-Oseen entrance \(a\)
+such that
+\[
+ a(t)\weakto0,\qquad
+ u(t)-a(t)\to u_*\ \hbox{strongly},\qquad
+ \kappa_j\gtrsim\Lambda_j,
+\]
+while the common positive defect measure is supported on an
+\(\mathcal H^1\)-null terminal singular slice.
+\end{conjecture}
+
+The conjecture is not proved.  This round closes only the sub-clock
+corridor inside the conditional energy-efficient exact q4 branch.  No
+alternative A--D of the Clay problem is proved.
+
+\end{document}

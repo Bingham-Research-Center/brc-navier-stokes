@@ -1,59 +1,65 @@
-# Handoff: R3C cross-frequency corridor
+# Handoff: R3C full-defect clock front
 
 **Updated:** 2026-07-25 · **Clay status:** unsolved
 
-**Live route:** `ROUTE-R3C` · **Checkpoint:**
-`EXP-TYPE-II-CROSS-FREQUENCY-CORRIDOR-001`
+**Live route:** `ROUTE-R3C` · `EXP-TYPE-II-FULL-DEFECT-ALIGNMENT-001`
 
 ## Load only
 
-- [Cross-frequency corridor](dossier/experiments/type-ii-cross-frequency-corridor.md)
+- [Full-defect alignment](dossier/experiments/type-ii-full-defect-alignment.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
-## Exact q4 survivor
+## Exact q4 reduction
 
-- The first dyadic cutoff carrying half of the conserved cross pairing,
-  \(\kappa(\tau)\), tends to infinity at the terminal boundary.
-- With \(B_1=\int_0^\tau M\), \(B_2=\int_0^\tau M^2\), and
-  \(H=\int_0^\tau MY\),
-  \[
-  \kappa^2B_1\gtrsim1,\qquad
-  XY\gtrsim\kappa^2\gtrsim B_1^{-1},
-  \]
-  where \(X=\|\nabla u\|_2\), \(Y=\|\nabla a\|_2\).
-- Hence
-  \[
-  XY\gtrsim\tau^{-9/11}\log(1/\tau)^{2/11},\qquad
-  \Bigl(\int X^2\Bigr)\Bigl(\int Y^2\Bigr)
-  \gtrsim\tau^{4/11}\log(1/\tau)^{4/11}.
-  \]
-- At q4 records, \(\kappa_j\gtrsim\mu_j=m_j^{9/4}j^{1/2}\), and either
-  \[
-  \kappa_j\gtrsim\Lambda_j=m_j^{7/3}j^{2/3}
-  \quad\text{or}\quad
-  \kappa_j\int_{s_j}^TMY\gtrsim1.
-  \]
+Let \(u_*=u(T)\) and
+\(d=\lim_{t\uparrow T}\|u(t)\|_2^2-\|u_*\|_2^2>0\).
+Oseen terminal data can exhaust \(d\); the resulting entrance satisfies
+\[
+\langle u,a\rangle=d,\qquad
+a(t)\rightharpoonup0,\qquad
+\|a(t)\|_2^2+2\nu\int_t^T\|\nabla a\|_2^2=d.
+\]
+At selected q4 records,
+\(a(s_j)-(u(s_j)-u_*)\to0\) strongly in \(L^2\), and
+\(u-a\to u_*\) strongly at \(T\).  The adjoint-energy and cross
+measures both equal the positive kinetic defect \(\vartheta\).
+
+Uniformly over low-pass cutoffs,
+\(\langle u,B_Na\rangle=\langle a,B_Na\rangle+o(1)\); at records it equals
+\(\langle u(s_j)-u_*,B_N(u(s_j)-u_*)\rangle+o(1)\).
+The cross front is therefore a positive defect-energy quantile.
+
+The terminal weak-\(L^3\) low-pass clock forces
+\(\kappa_j\gtrsim\Lambda_j=m_j^{7/3}j^{2/3}\).
+The sub-clock corridor is closed for this full-defect entrance.  Separately,
+\[
+\|\nabla u\|_2^2,\ \|\nabla a\|_2^2
+\gtrsim B_1(\tau)^{-1},
+\]
+so both terminal dissipation tails have the
+\(\tau^{2/11}\log(1/\tau)^{2/11}\) floor and both \(M\)-weighted actions
+diverge.
 
 ## Exact live question
 
-Can same-trajectory phase/sign prevent indefinite reuse of the sub-clock
-corridor \(\mu_j\lesssim\kappa_j\ll\Lambda_j\), or make clock-scale
-transitions pay a non-summable residence charge?
+Can the positive clock-scale defect quantile pay a non-reusable residence,
+flux, projective-motion, relative-energy, or pressure charge?
 
-## Closed shortcut
+## Sharp survivor
 
-Absolute Lorentz norm bounds on the pressure-free identity do not force
-amplitude anti-correlation. A synthetic moving-front ledger saturates the
-corridor with \(X,Y\in L^2_t\) but \(\int MY^2=\infty\). It does not model
-Navier--Stokes phase, pressure, or genealogy.
+One q4 clock block costs only
+\[
+(T-s_j)\Lambda_j^2\asymp m_j^{-5/6}j^{1/3},
+\]
+which is geometrically summable.  Pointwise clock enstrophy is not closure.
 
 ## Next bounded cycle
 
-Compare signed \(K_N\) transitions across consecutive first-record blocks
-and nested cutoffs. Seek a non-reuse/telescoping charge before taking
-absolute values. If one reservoir can pay every transition, record the exact
-reuse mechanism and move to clock-branch residence.
+Use \(b=u-a\to u_*\) and
+\(\zeta=\mathcal A=\vartheta\) in the local cross/relative-energy balance.
+Seek a coercive clock-residence or capacity charge.  Stress-test it against
+the summable clock ledger before promoting it.
 
-These are conditional repository theorems pending external review. Keep
-slower clocks, divergent normalised energy, and R3B separate. No Clay
+These are conditional repository theorems pending external review.  Keep
+slower clocks, divergent normalised energy, and R3B separate.  No Clay
 alternative is proved.

@@ -4440,6 +4440,45 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-FULL-DEFECT-ALIGNMENT-001",
+      "title": "The full q4 defect aligns the Oseen entrance and reaches the nonlinear clock",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001",
+        "CLM-PARTIAL-001"
+      ],
+      "hypothesis": "The phase-sensitive sub-clock corridor may survive when the projected-Oseen terminal data are chosen to exhaust the entire downward kinetic-energy defect rather than one fixed ultraviolet portion.",
+      "invariants": [
+        "Uniform spatial tightness and weak convergence make every fixed low-frequency part of the terminal defect converge strongly to zero",
+        "A diagonal lower cutoff and an individual finite upper cutoff produce finite-band terminal data converging strongly to the complete kinetic defect",
+        "The full-defect terminal data have squared norm and primal pairing converging to the exact downward energy jump d",
+        "The projected-Oseen limit has constant primal pairing d, zero weak terminal trace, and L2 norm at most square-root d",
+        "At the selected record endpoints the entrance field converges strongly in L2 to u minus its Leray-Hopf terminal trace",
+        "The entrance norm tends to square-root d and the complementary field u minus a converges strongly to the terminal trace",
+        "The adjoint terminal energy measure and primal-adjoint cross measure both equal the positive primal kinetic-energy defect measure",
+        "The family of all low-pass images of one fixed L2 field is norm compact",
+        "Uniformly over every Fourier cutoff the cross spectrum becomes the positive adjoint energy spectrum, and at records the positive primal defect-energy spectrum",
+        "The terminal weak-L3 low-pass clock bounds the low-frequency primal defect by N-to-the-three-halves times the terminal M-squared clock plus the viscous N-squared tail",
+        "A half-pairing cutoff therefore lies at or above m-to-the-seven-thirds times j-to-the-two-thirds; the sub-clock corridor is empty for the full-defect entrance",
+        "One-derivative high-pass estimates force separate primal and adjoint enstrophy floors of order the square of the moving frequency",
+        "Both individual dissipation tails have the q4 floor tau-to-the-two-elevenths with its positive logarithm, and both weak-L3-weighted actions diverge",
+        "A clock-scale power ledger retains finite unweighted dissipation because the per-record charge m-to-the-minus-five-sixths times j-to-the-one-third is summable",
+        "No clock-residence theorem, q4 closure, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Use spatial tightness and fixed-band compactness to approximate the complete terminal kinetic defect by finite annuli, launch their projected backward Oseen adjoints, combine the exact pairing with the sharp terminal norm ceiling to prove strong primal-adjoint alignment, identify all terminal defect measures, remove phase uniformly over the compact low-pass orbit, and apply the terminal weak-L3 low-pass Navier-Stokes clock to the resulting positive energy quantile.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the diagonal full-defect detector, adjoint compactification and signs, exact norm alignment, strong remainder trace, equality of defect measures, compact cutoff-orbit argument, terminal low-pass clock, corridor collapse, separate enstrophy and weighted-action floors, and the sharp summable clock ledger. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Determine whether same-trajectory phase can sustain the sub-clock cross corridor after the Oseen entrance is canonically normalised to the whole kinetic defect, and sharpen the live q4 gate accordingly.",
+      "failure_interpretation": "Spatial tightness does not give diagonal low-frequency evacuation, the full annular detector fails to approximate the defect, the entrance norm ceiling or terminal alignment is invalid, cutoff-orbit compactness does not give uniform phase removal, the terminal low-pass clock has the wrong Lorentz power, the viscous alternative does not dominate the nonlinear clock, or the epistemic scope is overstated.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-full-defect-alignment.md",
+        "dossier/rounds/2026-07-25-type-ii-full-defect-alignment.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

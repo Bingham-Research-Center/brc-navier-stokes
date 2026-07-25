@@ -186,17 +186,17 @@ produces an energy-class \(a\), a non-\(H^{-1}\) cross measure, and finite unwei
 \quad(t<T^*).
 \]
 The [amplitude-slab pincer](experiments/type-ii-adjoint-amplitude-pincer.md)
-turns this into Lorentz--Zygmund divergence and near-\(M^{9/4}\) spikes. The
-[cross-frequency theorem](experiments/type-ii-cross-frequency-corridor.md)
-now defines the first half-pairing frequency \(\kappa\) and forces
+turns this into Lorentz--Zygmund divergence and near-\(M^{9/4}\) spikes.
+The [full-defect alignment theorem](experiments/type-ii-full-defect-alignment.md)
+chooses the Oseen data to exhaust the entire kinetic jump \(d\), and proves
 \[
-\|\nabla u\|_2\|\nabla a\|_2
-\gtrsim\tau^{-9/11}\log(1/\tau)^{2/11}.
+a(s_j)-(u(s_j)-u_*)\to0,\qquad u-a\to u_*
 \]
-At records, either \(\kappa_j\gtrsim m_j^{7/3}j^{2/3}\), or transport pays a sub-clock corridor above
-\(m_j^{9/4}j^{1/2}\). A scalar moving-front ledger saturates the latter,
-so the live endpoint is phase-sensitive corridor non-reuse or clock-scale
-residence, not another absolute-norm anti-correlation.
+strongly in \(L^2\). Its adjoint and cross measures both equal the positive
+kinetic defect. Uniform spectral alignment plus the terminal low-pass clock
+forces \(\kappa_j\gtrsim m_j^{7/3}j^{2/3}\), closing the sub-clock corridor
+for this entrance. The live endpoint is a non-reusable clock-scale
+residence, relative-energy, capacity, or pressure charge.
 
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.
