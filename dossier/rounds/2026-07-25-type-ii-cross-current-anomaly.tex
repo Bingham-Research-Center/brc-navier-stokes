@@ -1,0 +1,773 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Pj}{\mathbb P}
+\newcommand{\ip}[2]{\left\langle #1,#2\right\rangle}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\weakto}{\rightharpoonup}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\cF}{\mathcal F}
+\setlength{\emergencystretch}{2em}
+
+\title{The q4 Cross Defect Forces a Pressure-Blind Commutator Anomaly}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round resolves the first microlocal audit of the conditional q4
+projected-Oseen entrance.  Its primal--adjoint cross density obeys an
+exact local conservation law whose current contains both the
+Navier--Stokes pressure and the projected adjoint pressure.  Pure Fourier
+localisation cancels both pressures and forces a signed transport
+commutator flux of size \(c_0\) through arbitrarily high cutoffs.
+
+The nonzero terminal cross measure is supported on an
+\(\HH^1\)-null slice, hence is not in \(H^{-1}\).  Its preterminal
+\(H^{-1}\) norm therefore diverges.  More sharply, a localized
+mollification theorem shows that finite
+\[
+ \int_t^{T^*}
+ \norm{u(s)}_{L^{3,\infty}}\norm{\nabla a(s)}_2^2\,ds
+\]
+would force the zero weak adjoint trace to be attained strongly.
+Consequently this weighted integral is infinite on every terminal
+interval, although the unweighted adjoint dissipation is finite.
+The temporal gain
+\(\nabla a\in L_t^{22/9,2}L_x^2\) would close this q4 branch.
+
+The complete cubic cross current, including both pressures, approaches
+only the spatial Lorentz endpoint \(L^{21/16,7/5}\); the direct
+\(L^2\)-capacity argument therefore remains out of reach.  No Clay
+alternative is proved.
+\end{abstract}
+
+\section{Epistemic status and input}
+
+Every theorem below is conditional on the repository's energy-efficient
+exact q4 branch and on the previously constructed projected-Oseen
+entrance.  These antecedents are not known for arbitrary Clay data.
+External mathematical review is pending.
+
+Let \(u\) be smooth on \([0,T)\), and let
+\[
+ a\in
+ L^\infty(0,T;L^2_\sigma(\R^3))
+ \cap
+ L^2(0,T;\dot H^1_\sigma(\R^3))
+\]
+solve the frozen-drift adjoint.  The input properties are
+\begin{equation}
+ \label{eq:pair}
+ \ip{u(t)}{a(t)}=c_0>0,
+ \qquad
+ a(t)\weakto0
+ \quad(t\uparrow T),
+\end{equation}
+and
+\begin{equation}
+ \label{eq:cross-measure}
+ u(s_j)\cdot a(s_j)\,dx
+ \overset{*}{\rightharpoonup}\zeta,
+ \qquad
+ \zeta(\R^3)=c_0,
+ \qquad
+ \supp\zeta\subset\sigma,
+\end{equation}
+where
+\begin{equation}
+ \label{eq:slice}
+ \frac35\leq\dim_{\rm H}\sigma\leq1,
+ \qquad
+ \HH^1(\sigma)=0.
+\end{equation}
+The measures in \eqref{eq:cross-measure} have uniformly bounded total
+variation and are tight.
+
+The Clay problem remains unsolved.
+
+\section{Exact local cross current}
+
+The preterminal equations in pressure form are
+\begin{align}
+ \label{eq:ns}
+ \partial_tu-\nu\Delta u+(u\cdot\nabla)u+\nabla p&=0,\\
+ \label{eq:adj}
+ \partial_ta+\nu\Delta a+(u\cdot\nabla)a+\nabla q&=0,
+\end{align}
+with both fields divergence free.  The whole-space pressures satisfy
+\begin{equation}
+ \label{eq:pressures}
+ -\Delta p=\partial_i\partial_\ell(u_i u_\ell),
+ \qquad
+ -\Delta q=\partial_i\partial_\ell(u_\ell a_i).
+\end{equation}
+
+\begin{proposition}[Local primal--adjoint conservation]
+\label{prop:local}
+Put \(c:=u\cdot a\).  Then
+\begin{equation}
+ \label{eq:local-law}
+ \partial_tc+\nabla\cdot J=0,
+\end{equation}
+where
+\begin{equation}
+ \label{eq:current}
+ \boxed{
+ J_k
+ =
+ u_kc+p\,a_k+q\,u_k
+ -\nu\bigl(\partial_ku_i\,a_i-u_i\partial_ka_i\bigr).
+ }
+\end{equation}
+For a scalar cutoff \(\phi\), the exact pressure payment on
+\([t,s]\) is
+\begin{equation}
+ \label{eq:pressure-payment}
+ \mathcal P_\phi[t,s]
+ :=
+ \int_t^s\int_{\R^3}
+ (p\,a+q\,u)\cdot\nabla\phi\,dx\,d\tau.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Differentiate \(c=u_i a_i\) and insert
+\eqref{eq:ns}--\eqref{eq:adj}:
+\[
+ \partial_tc
+ =
+ \nu(\Delta u_i\,a_i-u_i\Delta a_i)
+ -(u\cdot\nabla)c
+ -\partial_i p\,a_i-u_i\partial_iq.
+\]
+The diffusion difference is
+\[
+ \partial_k(\partial_ku_i\,a_i-u_i\partial_ka_i).
+\]
+The remaining three terms are respectively the divergences of
+\(-uc\), \(-pa\), and \(-qu\).  This proves
+\eqref{eq:local-law}--\eqref{eq:current}.
+
+Testing with \(\phi\) gives
+\begin{equation}
+ \label{eq:cutoff-law}
+ \int\phi c(s)-\int\phi c(t)
+ =
+ \int_t^s\int J\cdot\nabla\phi,
+\end{equation}
+whose pressure component is \eqref{eq:pressure-payment}.
+\end{proof}
+
+\begin{remark}
+The functional \(\mathcal P_\phi\) is signed.  Neither
+\eqref{eq:local-law} nor the pressure Poisson equations give it a
+coercive lower bound.
+\end{remark}
+
+Passing \(s\uparrow T\) in \eqref{eq:cutoff-law} yields
+\begin{equation}
+ \label{eq:terminal-current}
+ \boxed{
+ \zeta=c(t)\,dx-\nabla\cdot G_t,
+ \qquad
+ G_t:=\int_t^T J(s)\,ds,
+ }
+\end{equation}
+in the distributional spaces established below.
+
+\section{The \texorpdfstring{\(\HH^1\)}{H1}-null slice forces an
+\texorpdfstring{\(H^{-1}\)}{H-1} cascade}
+
+\begin{lemma}[Capacity endpoint]
+\label{lem:capacity}
+If \(S\subset\R^3\) satisfies \(\HH^1(S)=0\), every
+\(H^{-1}(\R^3)\) distribution supported on \(S\) is zero.
+\end{lemma}
+
+\begin{proof}
+Let \(F\in H^{-1}\) be supported on \(S\), and fix a test function
+\(\psi\).  Zero \(\HH^1\) measure implies zero \(W^{1,2}\)-capacity in
+three dimensions.  The compact set
+\(\supp F\cap\supp\psi\subset S\) therefore has smooth neighbourhood
+cutoffs \(\chi_n\) such that
+\[
+ \chi_n=1\ \hbox{near }\supp F\cap\supp\psi,
+ \qquad
+ \norm{\chi_n}_{H^1}\longrightarrow0.
+\]
+\[
+ \ip{F}{\psi}=\ip{F}{\chi_n\psi}\longrightarrow0.
+\]
+Thus \(F=0\).
+\end{proof}
+
+\begin{theorem}[Forced microlocal divergence]
+\label{thm:hminus}
+The terminal cross measure satisfies
+\begin{equation}
+ \label{eq:not-hminus}
+ \boxed{\zeta\notin H^{-1}(\R^3).}
+\end{equation}
+For every inhomogeneous Littlewood--Paley decomposition,
+\begin{equation}
+ \label{eq:dyadic-divergence}
+ \sum_{k\geq-1}2^{-2k}\norm{\Delta_k\zeta}_2^2=\infty.
+\end{equation}
+Along the selected record sequence,
+\begin{equation}
+ \label{eq:preterminal-divergence}
+ \boxed{
+ \norm{u(s_j)\cdot a(s_j)}_{H^{-1}}
+ \longrightarrow\infty.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Equations \eqref{eq:cross-measure}--\eqref{eq:slice} and
+Lemma~\ref{lem:capacity} prove \eqref{eq:not-hminus}.
+The Littlewood--Paley characterisation of \(H^{-1}\) gives
+\eqref{eq:dyadic-divergence}.
+
+Let
+\[
+ M(t):=\norm{u(t)}_{L^{3,\infty}},
+ \qquad
+ U_2:=\sup_{0<t<T}\bigl(\norm{u(t)}_2+\norm{a(t)}_2\bigr).
+\]
+Lorentz Sobolev and Lorentz H\"older imply
+\begin{equation}
+ \label{eq:hminus-upper}
+ \norm{u(t)\cdot a(t)}_{H^{-1}}
+ \lesssim U_2M(t).
+\end{equation}
+If \eqref{eq:preterminal-divergence} failed, a bounded subsequence
+would converge weakly in \(H^{-1}\).  Its distributional limit is
+\(\zeta\), contradicting \eqref{eq:not-hminus}.
+
+For a finite dyadic range, tight weak-star convergence of the measures
+also gives
+\[
+ \Delta_k(u(s_j)\cdot a(s_j))
+ \longrightarrow\Delta_k\zeta
+ \quad\hbox{strongly in }L^2.
+\]
+Finite partial sums then recover the same conclusion from
+\eqref{eq:dyadic-divergence}.
+\end{proof}
+
+\begin{corollary}[A direct capacity-closing condition]
+\label{cor:l2-current}
+If the total current \(G_t\) in \eqref{eq:terminal-current} belongs to
+\(L^2(\R^3)\) for one \(t<T\), then the q4 entrance is impossible.
+\end{corollary}
+
+\begin{proof}
+Equation \eqref{eq:hminus-upper} gives \(c(t)\in H^{-1}\).
+If \(G_t\in L^2\), then \(\nabla\cdot G_t\in H^{-1}\), so
+\eqref{eq:terminal-current} would put \(\zeta\) in \(H^{-1}\).
+This contradicts Theorem~\ref{thm:hminus}.
+\end{proof}
+
+\section{Pressure-free Fourier cascade}
+
+Let \(B_N=m(D/N)\), where \(m\) is real, even, smooth, compactly
+supported, and equal to one near the origin.  It is self-adjoint and
+commutes with \(\Delta\) and \(\Pj\).
+
+\begin{theorem}[Exact spectral commutator]
+\label{thm:commutator}
+For \(T_u:=u\cdot\nabla\),
+\begin{equation}
+ \label{eq:spectral-identity}
+ \boxed{
+ \frac d{dt}\ip{u}{B_Na}
+ =
+ \ip{[T_u,B_N]u}{a}.
+ }
+\end{equation}
+For every \(t_0<T\),
+\begin{equation}
+ \label{eq:spectral-cascade}
+ \boxed{
+ \lim_{N\to\infty}
+ \int_{t_0}^{T}\ip{[T_u,B_N]u}{a}\,dt
+ =
+ -c_0.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Differentiate \(\ip{u}{B_Na}\).  The diffusion terms cancel by
+self-adjointness and commutation.  The Leray projections disappear
+against solenoidal fields and commute with \(B_N\).  Since \(T_u\) is
+skew-adjoint,
+\[
+ \frac d{dt}\ip{u}{B_Na}
+ =
+ -\ip{B_NT_uu}{a}-\ip{B_Nu}{T_ua}
+ =
+ \ip{T_uB_Nu-B_NT_uu}{a}.
+\]
+This is \eqref{eq:spectral-identity}.
+
+For fixed \(N\), spatial tightness and weak convergence of \(u(s_j)\)
+give
+\[
+ B_Nu(s_j)\longrightarrow B_Nu_*
+ \quad\hbox{strongly in }L^2.
+\]
+Together with \(a(s_j)\weakto0\),
+\[
+ \ip{u(s_j)}{B_Na(s_j)}
+ =
+ \ip{B_Nu(s_j)}{a(s_j)}
+ \longrightarrow0.
+\]
+Integrating \eqref{eq:spectral-identity} to \(s_j\) and taking
+\(j\to\infty\) yields
+\[
+ \int_{t_0}^{T}\ip{[T_u,B_N]u}{a}\,dt
+ =
+ -\ip{u(t_0)}{B_Na(t_0)}.
+\]
+The fixed-\(N\) commutator is time integrable because its smooth kernel
+and derivative map the \(L^1\) tensor \(u\otimes u\) into \(L^2\).
+Finally \(B_N\to I\) strongly on \(L^2\), and
+\eqref{eq:pair} proves \eqref{eq:spectral-cascade}.
+\end{proof}
+
+\begin{remark}
+Both pressures cancel algebraically in
+\eqref{eq:spectral-identity}.  The terminal defect is therefore a
+transport-commutator anomaly in global frequency, even though pressure
+remains present in every local spatial current.
+\end{remark}
+
+\section{Weighted renormalisation}
+
+Reverse time by setting
+\[
+ \tau:=T-t,\qquad
+ v(\tau):=a(T-\tau),\qquad
+ b(\tau):=-u(T-\tau),\qquad
+ Q(\tau):=-q(T-\tau).
+\]
+Then
+\begin{equation}
+ \label{eq:reverse}
+ \partial_\tau v-\nu\Delta v
+ +(b\cdot\nabla)v+\nabla Q=0,
+ \qquad
+ \nabla\cdot b=\nabla\cdot v=0,
+\end{equation}
+and \(v(\tau)\weakto0\) as \(\tau\downarrow0\).
+
+\begin{theorem}[Weighted renormalisation criterion]
+\label{thm:renormalisation}
+Suppose \(b,v\in L^\infty_\tau L^2_x\cap
+L^2_\tau\dot H^1_x\) solve \eqref{eq:reverse} on
+\((0,\tau_0)\), \(v(\tau)\weakto0\), and
+\begin{equation}
+ \label{eq:weighted-finite}
+ \int_0^{\tau_0}
+ \norm{b(\tau)}_{L^{3,\infty}}
+ \norm{\nabla v(\tau)}_2^2\,d\tau<\infty.
+\end{equation}
+Then \(v=0\) on \((0,\tau_0)\).
+\end{theorem}
+
+\begin{proof}
+For a spatial mollifier \(\rho_\varepsilon\), define
+\[
+ R_\varepsilon
+ :=
+ (b\otimes v)_\varepsilon-b\otimes v_\varepsilon.
+\]
+For almost every \(\tau\),
+\begin{equation}
+ \label{eq:comm-bound}
+ \norm{R_\varepsilon}_2
+ \lesssim
+ \norm{b}_{L^{3,\infty}}\norm{\nabla v}_2,
+ \qquad
+ R_\varepsilon\longrightarrow0
+ \quad\hbox{in }L^2.
+\end{equation}
+The first estimate uses
+\(\dot H^1\hookrightarrow L^{6,2}\); the convergence follows because
+approximate identities are strong on \(L^2\) and \(L^{6,2}\).
+Since
+\(\norm{\nabla v_\varepsilon}_2\leq\norm{\nabla v}_2\),
+\[
+ \left|\int R_\varepsilon:\nabla v_\varepsilon\right|
+ \lesssim
+ \norm{b}_{L^{3,\infty}}\norm{\nabla v}_2^2.
+\]
+Dominated convergence and \eqref{eq:weighted-finite} remove the
+interior transport commutator.
+
+The weak initial trace must still be handled without assuming strong
+continuity.  Fix a compact spatial cutoff \(\chi_R\).  For fixed
+\(R,\varepsilon\), the map
+\[
+ f\longmapsto\chi_R(\rho_\varepsilon*f)
+\]
+is compact on \(L^2\).  Hence
+\[
+ \norm{\chi_Rv_\varepsilon(\tau)}_2\longrightarrow0
+ \quad(\tau\downarrow0).
+\]
+The mollified equation is
+\[
+ \partial_\tau v_\varepsilon-\nu\Delta v_\varepsilon
+ +\nabla\cdot(b\otimes v_\varepsilon)+\nabla Q_\varepsilon
+ =-\nabla\cdot R_\varepsilon.
+\]
+Testing it on \((\delta,\tau_1)\) with
+\(\chi_R^2v_\varepsilon\) gives
+\begin{align*}
+&\frac12\int\chi_R^2|v_\varepsilon(\tau_1)|^2
+ +\nu\int_\delta^{\tau_1}\int
+       \chi_R^2|\nabla v_\varepsilon|^2\\
+={}&\frac12\int\chi_R^2|v_\varepsilon(\delta)|^2\\
+&+\int_\delta^{\tau_1}\int
+ \left[
+ \frac{\nu}{2}|v_\varepsilon|^2\Delta\chi_R^2
+ +\frac12|v_\varepsilon|^2b\cdot\nabla\chi_R^2
+ +Q_\varepsilon v_\varepsilon\cdot\nabla\chi_R^2
+ \right]\\
+&+\int_\delta^{\tau_1}\int
+ \left[
+ \chi_R^2R_\varepsilon:\nabla v_\varepsilon
+ +R_\varepsilon:(\nabla\chi_R^2\otimes v_\varepsilon)
+ \right].
+\end{align*}
+First let \(\delta\downarrow0\) using the compact local weak trace, then
+let \(\varepsilon\downarrow0\).  Equation \eqref{eq:comm-bound} and
+dominated convergence remove the interior commutator.
+When the derivative lands on \(\chi_R\), the commutator is bounded by
+\[
+ C_R\norm{b}_{L^{3,\infty}}\norm{\nabla v}_2\norm{v}_2.
+\]
+Energy interpolation puts
+\(\norm{b}_{L^{3,\infty}}\) in \(L^4_\tau\), so this is time
+integrable; strong convergence of \(R_\varepsilon\) makes the cutoff
+commutator vanish as well.
+
+No energy enters from spatial infinity.  Indeed, energy interpolation
+gives \(b,v\in L^4_\tau L^3_x\), while
+\[
+ -\Delta Q=\partial_i\partial_\ell(b_\ell v_i)
+\]
+and Calder\'on--Zygmund theory give
+\[
+ Q\in L^2_\tau L^{3/2}_x.
+\]
+Thus
+\[
+ b|v|^2,\ Qv\in L^{4/3}_\tau L^1_x,
+ \qquad
+ |v|^2\in L^\infty_\tau L^1_x.
+\]
+All cutoff fluxes vanish as \(R\to\infty\).  The limiting identity is
+\[
+ \frac12\norm{v(\tau_1)}_2^2
+ +\nu\int_0^{\tau_1}\norm{\nabla v(\tau)}_2^2\,d\tau
+ =0.
+\]
+It holds for almost every \(\tau_1\leq\tau_0\).  Therefore \(v=0\)
+as an energy-class solution.
+\end{proof}
+
+\begin{corollary}[Forced weighted adjoint dissipation]
+\label{cor:weighted-divergence}
+The q4 entrance satisfies
+\begin{equation}
+ \label{eq:weighted-divergence}
+ \boxed{
+ \int_t^T
+ \norm{u(s)}_{L^{3,\infty}}
+ \norm{\nabla a(s)}_2^2\,ds
+ =\infty
+ \quad\text{for every }t<T.
+ }
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Finiteness on one terminal interval would satisfy
+Theorem~\ref{thm:renormalisation} after reversing time, making
+\(a=0\) there.  This contradicts \eqref{eq:pair}.
+\end{proof}
+
+\begin{corollary}[One sufficient temporal gain]
+\label{cor:gain}
+If, on one terminal interval,
+\begin{equation}
+ \label{eq:gain}
+ \nabla a\in L_t^{22/9,2}L_x^2,
+\end{equation}
+then the q4 entrance is impossible.
+\end{corollary}
+
+\begin{proof}
+The q4 clock gives
+\[
+ M(t):=\norm{u(t)}_{L^{3,\infty}}
+ \in L_t^{11/2,\infty}.
+\]
+Equation \eqref{eq:gain} gives
+\[
+ \norm{\nabla a}_2^2\in L_t^{11/9,1}.
+\]
+Endpoint Lorentz H\"older makes the integral in
+\eqref{eq:weighted-divergence} finite, a contradiction.
+\end{proof}
+
+\section{Optimised pressure-current hull}
+
+Write
+\[
+ J=J^{\rm cub}+J^\nu,
+\]
+\[
+ J^{\rm cub}:=u(u\cdot a)+pa+qu,
+ \qquad
+ J^\nu_k:=-\nu(\partial_ku_i\,a_i-u_i\partial_ka_i).
+\]
+Set
+\[
+ X(t):=\norm{\nabla u(t)}_2,\qquad
+ Y(t):=\norm{\nabla a(t)}_2.
+\]
+
+\begin{proposition}[Exact interpolation hull]
+\label{prop:hull}
+For \(0\leq\theta<3/7\), define
+\[
+ \frac1{r_\theta}:=\frac13-\frac{\theta}{12},
+ \qquad
+ p_\theta:=\frac6{5-\theta},
+ \qquad
+ \rho_\theta:=\frac2{1+\theta}.
+\]
+Then
+\begin{equation}
+ \label{eq:cubic-hull}
+ \boxed{
+ \norm{J^{\rm cub}(t)}_{L^{p_\theta,\rho_\theta}}
+ \lesssim
+ M(t)^{2-\theta}X(t)^\theta Y(t),
+ }
+\end{equation}
+and the right side is time integrable.  Also
+\begin{equation}
+ \label{eq:viscous-hull}
+ \boxed{
+ \norm{J^\nu(t)}_{L^{3/2,1}}
+ \lesssim\nu X(t)Y(t),
+ }
+\end{equation}
+with a time-integrable right side.
+\end{proposition}
+
+\begin{proof}
+Real interpolation and Lorentz Sobolev give
+\[
+ \norm{u}_{L^{r_\theta,4/\theta}}
+ \lesssim
+ M^{1-\theta/2}X^{\theta/2},
+ \qquad
+ \norm{a}_{L^{6,2}}\lesssim Y,
+\]
+where \(4/\theta=\infty\) at \(\theta=0\).
+Lorentz H\"older applied to \(u(u\cdot a)\) proves
+\eqref{eq:cubic-hull} for the advective term.  The pressure equations
+\eqref{eq:pressures}, Lorentz Calder\'on--Zygmund bounds, and the same
+three factors prove it for \(pa\) and \(qu\).
+
+The temporal reciprocal sum is
+\[
+ \frac{2(2-\theta)}{11}
+ +\frac{\theta}{2}
+ +\frac12
+ =
+ \frac{19+7\theta}{22}<1.
+\]
+Therefore the coefficient is in \(L^1_t\).  Equation
+\eqref{eq:viscous-hull} follows from Lorentz Sobolev and
+Cauchy--Schwarz in time.
+\end{proof}
+
+As \(\theta\uparrow3/7\),
+\begin{equation}
+ \label{eq:hull-endpoint}
+ p_\theta\uparrow\frac{21}{16},
+ \qquad
+ \rho_\theta\downarrow\frac75.
+\end{equation}
+The dual spatial exponent required of a cutoff gradient approaches
+\[
+ \left(\frac{21}{16}\right)'=\frac{21}{5},
+\]
+while the zero-\(\HH^1\) capacity cutoffs provide small \(L^2\)
+gradients.  The viscous term still asks for the \(L^{3,\infty}\)
+gradient endpoint.  The cubic reciprocal gap from the direct
+\(L^2\) current target is
+\begin{equation}
+ \label{eq:capacity-gap}
+ \boxed{
+ \frac{16}{21}-\frac12=\frac{11}{42}.
+ }
+\end{equation}
+This is a no-go for the stated interpolation hull, not for structural
+cancellation or Morrey estimates.
+
+\begin{remark}[No pressure coercivity from cross density]
+On \(\mathbb T^3\), choose \(k\neq0\), \(A\cdot k=0\), and
+\[
+ u(x)=a(x)=A\cos(k\cdot x).
+\]
+Then
+\[
+ (u\cdot\nabla)a=0,\qquad q=0,
+ \qquad u\cdot a=|A|^2\cos^2(k\cdot x)\neq0.
+\]
+Thus the longitudinal pressure contraction cannot algebraically
+coerce the trace of \(u\otimes a\).  This is a periodic symbol test,
+not a same-trajectory Navier--Stokes counterexample.
+\end{remark}
+
+\section{Critical scalar comparison}
+
+Qian and Xi prove an \(L^2\) energy inequality, uniqueness, a
+fundamental solution, and regularity for scalar divergence-form
+parabolic equations whose skew coefficient is uniformly bounded in
+\(L^\infty_t\mathrm{BMO}_x\)~\cite{QXBMO}.  The q4 route does not
+assume a uniform terminal coefficient bound, its datum is only a weak
+trace, and its adjoint is a projected vector system.
+
+Their separate mixed-Lebesgue paper treats a supercritical scalar
+range but explicitly leaves supercritical regularity open
+~\cite{QXMixed}.  Neither theorem supplies
+Corollary~\ref{cor:gain}.
+
+\section{What changed in this round}
+
+\subsection*{Formal findings, subject to external review}
+
+\begin{enumerate}
+\item The primal--adjoint cross density has the exact local current
+\eqref{eq:current} and pressure functional
+\eqref{eq:pressure-payment}.
+\item Its nonzero terminal measure is outside \(H^{-1}\), forcing
+\eqref{eq:dyadic-divergence}--\eqref{eq:preterminal-divergence}.
+\item Fourier localisation cancels both pressures and forces the signed
+commutator cascade \eqref{eq:spectral-cascade}.
+\item Finite weak-\(L^3\)-weighted adjoint dissipation renormalises the
+reverse equation; hence the survivor forces
+\eqref{eq:weighted-divergence}.
+\item The temporal Lorentz gain \eqref{eq:gain} closes q4.
+\item The optimised cubic current approaches, but does not claim, the
+\(L^{21/16,7/5}\) endpoint and misses the direct \(L^2\)-capacity
+target by \eqref{eq:capacity-gap}.
+\item Cross density alone cannot coerce the adjoint pressure.
+\end{enumerate}
+
+\subsection*{Closed shortcuts}
+
+\begin{enumerate}
+\item A pressure lower bound cannot be inferred from the cross density's
+nonzero trace.
+\item Direct Hölder--Sobolev current interpolation does not reach the
+\(\HH^1\)-null capacity.
+\item The entrance cannot have finite
+\(\int M\norm{\nabla a}_2^2\); any proposed strong-trace proof that
+implicitly assumes this must prove it.
+\item Global spectral localisation cannot expose a pressure payment,
+because pressure cancels exactly there.
+\end{enumerate}
+
+\subsection*{Open obligations}
+
+\begin{enumerate}
+\item Prove \(\nabla a\in L_t^{22/9,2}L_x^2\), or directly prove
+finite weighted adjoint dissipation from self-generation of the drift.
+\item Alternatively prove equiintegrability of the commutators in
+\eqref{eq:spectral-cascade}.
+\item Find a cancellation-sensitive Morrey or total-current estimate
+that reaches the \(\HH^1\)-null capacity.
+\item Extend any closure beyond exact q4 to slower clocks and divergent
+normalised energy.
+\item Prove one complete Clay alternative for arbitrary admissible data.
+\end{enumerate}
+
+\begin{conjecture}[Self-generated reverse H\"older gain]
+Under the exact q4 hypotheses, the same-trajectory projected adjoint
+satisfies
+\[
+ \nabla a\in L_t^{22/9,2}L_x^2
+\]
+on some terminal interval.
+\end{conjecture}
+
+Corollary~\ref{cor:gain} shows that this conjecture excludes the q4
+terminal energy defect.  It is not proved.
+
+\section*{Source provenance}
+
+The pinned arXiv v2 archive for the critical BMO comparison has
+SHA-256
+\[
+\texttt{78af05bac214145c5b6d54c297867ab5f7d7c80d60dc6c40c3ae5518cdb06df2}.
+\]
+Its source file
+\texttt{Aronson-Nonsymmetric-2017-02-18.tex} has SHA-256
+\[
+\texttt{a8c65d4425496766a7acb2d25b30603f4e79fadf5f400d92f2d65da206538a36}.
+\]
+The energy inequality and uniqueness theorem are at source lines
+1220--1238, the continuity remark at lines 1332--1337, and the
+initial-value theorem at lines 1341--1372.
+
+\begin{thebibliography}{9}
+\raggedright
+
+\bibitem{QXBMO}
+Z.~Qian and G.~Xi,
+\emph{Parabolic equations with singular divergence-free drift vector
+fields},
+Journal of the London Mathematical Society 100 (2019), 17--40,
+\href{https://doi.org/10.1112/jlms.12202}
+{doi:10.1112/jlms.12202}.
+
+\bibitem{QXMixed}
+Z.~Qian and G.~Xi,
+\emph{Parabolic equations with divergence-free drift in space
+\(L_t^\ell L_x^q\)},
+Indiana University Mathematics Journal 68 (2019), 761--797,
+\href{https://doi.org/10.1512/iumj.2019.68.7685}
+{doi:10.1512/iumj.2019.68.7685}.
+
+\end{thebibliography}
+
+\end{document}

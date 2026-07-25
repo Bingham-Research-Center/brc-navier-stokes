@@ -4334,6 +4334,43 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-CROSS-CURRENT-ANOMALY-001",
+      "title": "The q4 Oseen entrance forces a pressure-blind commutator anomaly",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-PARTIAL-001",
+        "CLM-DIVERGENCE-FREE-DRIFT-SUPERCRITICAL-001",
+        "CLM-DIVERGENCE-FREE-DRIFT-BMO-001"
+      ],
+      "hypothesis": "The nonzero Oseen entrance cross defect may be removable by the H1-null terminal slice, by a pressure-sensitive local current, or by renormalising the reverse adjoint energy.",
+      "invariants": [
+        "The primal-adjoint cross density obeys an exact local conservation law with advective, primal-pressure, adjoint-pressure, and viscous Wronskian currents",
+        "Every scalar Fourier multiplier commuting with the Laplacian and Leray projection removes both pressures and leaves one exact transport commutator",
+        "The fixed primal-adjoint pairing forces a signed commutator flux of size c0 through arbitrarily high Fourier cutoffs",
+        "A nonzero measure supported on the H1-null terminal slice is not in H-minus-one",
+        "The preterminal cross densities have H-minus-one norm tending to infinity along the selected record sequence",
+        "Finite integral of weak-L3 amplitude times adjoint enstrophy renormalises the reverse equation and forces its zero weak trace to be attained strongly",
+        "The q4 entrance therefore forces infinite weak-L3-weighted adjoint dissipation on every terminal interval despite finite unweighted adjoint dissipation",
+        "The temporal Lorentz gain gradient-a in L-time-(22/9,2) L-space-2 would make the weighted cost finite and close q4",
+        "The optimised cubic cross current approaches spatial Lorentz exponent (21/16,7/5) but does not attain an L2 capacity class",
+        "The viscous cross current lies in L-time-1 L-space-(3/2,1), still below the H1 capacity target",
+        "The adjoint pressure has no algebraic coercive lower bound from the cross density, as shown by a transverse periodic symbol test",
+        "No terminal reverse Holder estimate, current-capacity cancellation, energy equality, or Clay A-D resolution is asserted"
+      ],
+      "method": "Differentiate the local primal-adjoint product, derive the physical cross-current and pressure functional, use W1,2 capacity and Littlewood-Paley characterisation to force an H-minus-one divergence, derive the pressure-free Fourier commutator identity, prove a localized spatial-mollification renormalisation criterion, optimise the full cubic Lorentz current by exact exponent arithmetic, and compare with the pinned critical BMO drift theorem.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include all current signs, pressure Poisson equations, the capacity argument, fixed-cutoff convergence, commutator cancellation, localized weak-trace renormalisation, pressure flux at infinity, Lorentz exponent optimisation, the periodic no-coercivity test, and exact source provenance. External review is pending; no executable artefact is claimed.",
+      "success_criterion": "Replace the qualitative Oseen strong-trace gate by a necessary divergent weighted adjoint-dissipation law and exact spectral anomaly, while identifying a concrete Lorentz gradient gain that would exclude the entire q4 terminal defect.",
+      "failure_interpretation": "A sign in the cross current or spectral identity, the H-minus-one capacity implication, compact localization of the weak trace, commutator domination, flux-at-infinity estimate, Lorentz exponent optimisation, source scope, or epistemic label is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-cross-current-anomaly.md",
+        "dossier/rounds/2026-07-25-type-ii-cross-current-anomaly.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

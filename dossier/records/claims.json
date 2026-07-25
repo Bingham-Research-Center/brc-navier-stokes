@@ -702,6 +702,26 @@
       "depends_on": [],
       "audit": "Pinned arXiv v3 source lines 217-253 state the upper-bound theorem, lines 318-335 explicitly leave supercritical regularity open and restrict the uniqueness application to the critical case, and lines 1282-1390 prove that critical application.",
       "last_checked": "2026-07-25"
+    },
+    {
+      "id": "CLM-DIVERGENCE-FREE-DRIFT-BMO-001",
+      "plain": "A scalar divergence-form parabolic equation with uniformly-in-time BMO skew coefficient has an L2 energy inequality and unique energy-class initial-value solution; this theorem does not cover the q4 projected-vector entrance with no uniform terminal coefficient bound.",
+      "formal": "Qian-Xi Theorem 5.3 proves time H^{-1} regularity, the L2 energy inequality, and uniqueness for energy-class weak solutions when the uniformly elliptic divergence-form coefficient has skew part in L-infinity_t BMO_x. Their subsequent remark removes the separately stated strong L2 continuity assumption, and Theorem 5.5 constructs the unique L2 initial-value solution.",
+      "domain": "Rn",
+      "forcing": "linear_divergence_free_drift",
+      "solution_class": "scalar_linear_parabolic_energy_class",
+      "assumptions": [
+        "Uniformly elliptic symmetric coefficient",
+        "Skew coefficient uniformly bounded in L-infinity_t BMO_x",
+        "The scalar divergence-form equation and an attained L2 initial datum"
+      ],
+      "conclusion": "The scalar initial-value problem has the stated energy inequality, uniqueness, and fundamental solution.",
+      "scaling": "critical_drift",
+      "status": "established",
+      "source_ids": ["SRC-QIAN-XI-2019-BMO"],
+      "depends_on": [],
+      "audit": "Pinned arXiv v2 source lines 1220-1238 give the energy inequality and uniqueness theorem, lines 1332-1337 explain strong L2 continuity follows from the energy regularity, and lines 1341-1372 state L2 well-posedness. The q4 route lacks the uniform terminal BMO coefficient hypothesis and has a projected vector pressure.",
+      "last_checked": "2026-07-25"
     }
   ]
 }

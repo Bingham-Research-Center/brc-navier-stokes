@@ -175,28 +175,27 @@ forces
 3/5\le\dim_{\rm H}\sigma\le1,\qquad\mathcal H^1(\sigma)=0.
 \]
 Direct pressure interpolation has supercriticality at least \(8/11\), outside
-the Barker--Wang theorem and \(21/44\) above its necessary pincer-closing
-range. At least one spectral alternative holds: fixed-sign nonlinear
-clock-band events occur at exactly order-one capacity; if that alternative
-fails, the defect escapes to super-clock frequency with an unbounded
-enstrophy factor.
+the Barker--Wang theorem and \(21/44\) above its pincer-closing range. Either
+fixed-sign nonlinear clock-band events occur at order-one capacity, or the
+defect escapes to super-clock frequency with unbounded enstrophy.
 
-The
-[Oseen-entrance theorem](experiments/type-ii-oseen-entrance.md)
-now unifies both alternatives. Finite-band truncations of the whole
-high-pass defect launch projected backward adjoints converging to one
-energy-class field \(a\) with
+The Oseen [cross-current anomaly](experiments/type-ii-cross-current-anomaly.md)
+now unifies both alternatives. One energy-class field \(a\) has
+\(\langle u(t),a(t)\rangle=c_0>0\), \(a(t)\rightharpoonup0\), and
+\(\inf_{t<T^*}\|a(t)\|_2>0\).
+Its cross measure is nonzero on the \(\mathcal H^1\)-null slice, so it
+is not in \(H^{-1}\) and forces divergent preterminal \(H^{-1}\) spectrum.
+Physical localisation gives an exact pressure current; Fourier localisation
+cancels both pressures and forces a signed order-one commutator cascade.
+Most sharply, the survivor requires
 \[
-\langle u(t),a(t)\rangle=c_0>0,\qquad
-a(t)\rightharpoonup0,\qquad
-\inf_{t<T^*}\|a(t)\|_2>0.
+\int_t^{T^*}\|u\|_{L^{3,\infty}}\|\nabla a\|_2^2\,ds=\infty
+\quad(t<T^*),
 \]
-Its nonzero terminal cross-defect measure is supported on \(\sigma\).
-Literal eventwise adjoint sewing pays a fixed \(L^2\) reset per event;
-pure heat is negligible, while the available low-pass strain estimate
-misses the clock by \(m_j^{1/12}j^{1/6}\). R3C now targets terminal
-strong-trace rigidity for this pressure-coupled, self-generated Oseen
-entrance state.
+although the unweighted adjoint dissipation is finite. The sufficient
+closing target is
+\(\nabla a\in L_t^{22/9,2}L_x^2\). Direct current interpolation approaches
+only \(L_x^{21/16,7/5}\), below the \(L^2\) singular-slice capacity target.
 
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.

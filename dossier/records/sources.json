@@ -538,6 +538,19 @@
       "status": "peer_reviewed",
       "last_checked": "2026-07-25",
       "notes": "Pinned arXiv v3 archive SHA-256: cf19b869a03ef7554f2675b5dd3e6e9aa8f5041dc39ce4179199ef426e55f50d. Exact source is Divergence_free_Qian-Xi-2017-12-15.tex, SHA-256 5e590c76c8e381a0a7b669f9a05ac4179a4c06ce7c9d924c0b2c3b92df082331: the smooth divergence-free supercritical upper-bound theorem is at lines 217-253; lines 318-335 state that supercritical regularity remains open and identify the critical-only uniqueness application; that application is proved at lines 1282-1390."
+    },
+    {
+      "id": "SRC-QIAN-XI-2019-BMO",
+      "title": "Parabolic equations with singular divergence-free drift vector fields",
+      "authors": ["Zhongmin Qian", "Guangyu Xi"],
+      "year": 2019,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1112/jlms.12202",
+      "version": "Journal of the London Mathematical Society 100(1), 17-40; arXiv:1612.07727v2",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-25",
+      "notes": "Pinned arXiv v2 single-file gzip archive SHA-256: 78af05bac214145c5b6d54c297867ab5f7d7c80d60dc6c40c3ae5518cdb06df2. Exact source is Aronson-Nonsymmetric-2017-02-18.tex, SHA-256 a8c65d4425496766a7acb2d25b30603f4e79fadf5f400d92f2d65da206538a36: lines 1220-1238 state the uniform-in-time BMO skew-coefficient energy inequality and L2 uniqueness theorem; lines 1332-1337 remove the redundant strong-continuity assumption; lines 1341-1372 state the fundamental-solution and L2 well-posedness theorem."
     }
   ]
 }
