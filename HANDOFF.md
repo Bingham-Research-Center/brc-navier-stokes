@@ -1,70 +1,70 @@
-# Handoff: R3C dynamic spectral shell
+# Handoff: R3C broad spectral genealogy
 
 **Updated:** 2026-07-25 · **Clay status:** unsolved
 
-**Live route:** `ROUTE-R3C` · `EXP-TYPE-II-RADIAL-TRIAD-SPECTRUM-001`
+**Live route:** `ROUTE-R3C` · `EXP-TYPE-II-SPECTRAL-QUANTILE-SPEED-001`
 
 ## Load only
 
-- [Radial triad spectrum](dossier/experiments/type-ii-radial-triad-spectrum.md)
+- [Spectral quantile speed](dossier/experiments/type-ii-spectral-quantile-speed.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
-## Exact joint object
+Deleted review correspondence is not an input.
 
-Push kinetic energy and nonlinear pairing to \(\lambda=2\nu|\xi|^2\):
+## New exact budget
+
 \[
-\mathcal E(r,s)=\int e^{-r\lambda}\,d\varepsilon_s,\qquad
-\Pi_r(s)=\int e^{-r\lambda}\,d\mu_s.
+\partial_se=m-\lambda e,\qquad
+\mathfrak q(s)=\int_0^\infty\lambda^{-1/2}|m(\lambda,s)|\,d\lambda.
 \]
-Here \(\varepsilon_s\ge0\), \(\mathcal E(\cdot,s)\) is completely monotone,
-and the entrance equation gives
+Actual quadratic structure gives
 \[
-\Pi=(\partial_s-\partial_r)\mathcal E,\qquad
-\mu_s=\partial_s\varepsilon_s+\lambda\varepsilon_s.
-\]
-The weak-zero heat boundary reconstructs
-\[
-\mathcal E(r,s)=\int_0^s\Pi_{r+s-a}(a)\,da.
+\mathfrak q(s)\lesssim\nu^{-1/2}\|v(s)\|_2M(s)Y(s),\qquad \int_0^{s_0}\mathfrak q(s)\,ds<\infty.
 \]
 
-## Correction and sharp survivor
+For a nondegenerate fixed-energy quantile \(\int_0^{\Lambda_\eta}e=\eta\),
+\[
+e(\Lambda_\eta,s)\Lambda_\eta'=\int_0^{\Lambda_\eta}\lambda e-\int_0^{\Lambda_\eta}m.
+\]
+On its descending set,
+\[
+\int e(\Lambda_\eta,s)\frac{|\Lambda_\eta'|}{\sqrt{\Lambda_\eta}}\,ds<\infty.
+\]
 
-The Laguerre kernel gives signed \(e^{-s\lambda}L_n^{(1)}(s\lambda)\) energy; it is closed.
-Complete monotonicity still does not close q4. With
-\[
-L=s^{-9/11}\ell^{2/11},\quad A=\frac d2e^{-\int_0^sL},\quad
-\mathcal E_\circ=Ae^{-rL},
-\]
-\[
-\Pi^\circ_r=-ArL'e^{-rL}=\frac{Aa(s)}s(rL)e^{-rL}>0.
-\]
-Taking \(M=(sL)^{-1}\), \(Y^2=AL/\nu\) recovers the exact q4
-power--log tails, \(MY^2\asymp s^{-1}\), all diagonal/recycling laws,
-and an early-history fraction tending to one.
+## Closed and surviving
 
-## Actual quadratic compatibility
+At the q4 scale \(L=s^{-9/11}\ell^{2/11}\), descent
+\(-\Lambda_\eta'\gtrsim L/s\) forces
+\[
+\int_0\frac{\sqrt L}{sW_\eta}\,ds<\infty,\qquad
+W_\eta:=\eta/e(\Lambda_\eta,s).
+\]
+Persistent \(W_\eta\lesssim\sqrt L\) is impossible.  This closes the
+nondegenerate adjacent-Pell/delta-shell interpretation, not the atomic
+snapshots.
 
-For every \(n^2-3m^2=1\), an explicit divergence-free torus triad has
+A smooth positive-flux shell
 \[
-Q_{n,m}(r)=\frac{nm}{2}e^{-8\nu m^2r}(1-e^{-2\nu r})>0,
+e_\phi(\lambda,s)=\frac{A(s)}{L(s)}
+\phi\!\left(\frac{\lambda}{L(s)}\right),\qquad
+A=\frac d2e^{-\int_0^sL},
 \]
-\[
-Q_{n,m}\!\left(\frac{x}{8\nu m^2}\right)\to\frac{\sqrt3}{8}xe^{-x}.
-\]
-Thus adjacent-shell quadratic transfer has the survivor's heat shape,
-but the Pell fields are snapshots and the shell ledger is not a velocity.
+has \(W_\eta\asymp L\), pays
+\(\mathfrak q_\phi\lesssim A(\sqrt L+1/(s\sqrt L))\in L^1_s\), and
+retains every current q4 scalar, Gaussian, diagonal, and early-reuse law.
+It is a spectral countermodel, not a velocity field.
 
 ## Exact live question
 
-Can \(\mu_s=\partial_s\varepsilon_s+\lambda\varepsilon_s\) sustain
-repeated positive adjacent-shell triads along one q4 NSE trajectory?
+Can one charge the necessary broad q4 shell to a finite angular, spatial,
+phase, genealogical, pressure, capacity, or strong-trace budget?
 
 ## Next bounded cycle
 
-Differentiate a fixed energy quantile of \(\varepsilon_s\). Derive its
-shell-speed law from the triad density, then test whether the moving-shell
-survivor forces a nonintegrable speed/genealogy cost against finite
-unweighted dissipation. Use smooth shells before invoking spatial
-capacity or the strong-trace drift.
+Resolve the radial transfer into angular caps and exact triad convolution.
+Derive a mode-count or parent-frequency cost for fixed-relative bandwidth,
+then test it against smooth dilations of the Pell family.  Invoke boundary
+Hausdorff geometry or strong-trace drift only if the angular survivor persists.
 
-All results await review. Keep slower clocks, divergent energy, and R3B separate.
+All findings await external review.  Keep slower clocks, divergent energy,
+R3B, and the other Clay alternatives separate.

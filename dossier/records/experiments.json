@@ -4629,6 +4629,45 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-SPECTRAL-QUANTILE-SPEED-001",
+      "title": "A finite weighted transfer budget forces q4 spectral-shell broadening",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001",
+        "CLM-PARTIAL-001"
+      ],
+      "hypothesis": "A fixed positive energy quantile descending on the q4 shell schedule may pay a nonintegrable actual-trajectory cost under the finite unweighted dissipation ledger.",
+      "invariants": [
+        "The lambda to minus one half weighted total variation of radial nonlinear transfer is bounded by nu to minus one half times kinetic energy times the H-minus-one norm of the projected nonlinearity",
+        "Lorentz Holder and Sobolev give the projected nonlinearity H-minus-one norm bounded by weak-L3 amplitude times enstrophy amplitude",
+        "The weighted transfer norm is time integrable because amplitude and enstrophy amplitude are both square integrable",
+        "Every differentiable nondegenerate fixed-energy radial quantile obeys an exact speed law from the spectral characteristic equation",
+        "On descending-frequency times the boundary energy density times quantile speed divided by square-root frequency is bounded by the finite weighted transfer norm",
+        "A q4 quantile descending at frequency L over time s must have integral of square-root L divided by s times its effective local width finite",
+        "Persistent width at most square-root L is impossible, closing nondegenerate adjacent-shell smoothing as a dynamic Pell mechanism",
+        "The atomic Pell snapshots remain valid because the density-based quantile theorem does not directly apply to them",
+        "A Gaussian heat-energy quantile obeys an exact density-free speed identity separating nonlinear flux and viscous spectral dispersion",
+        "A smooth positive spectral density of fixed relative width has exact total energy, mean frequency, characteristic flux, and transfer density",
+        "The broad-shell characteristic flux is strictly positive at every positive heat age for all sufficiently small times",
+        "The broad-shell spectrum reproduces every current q4 scalar, Gaussian, diagonal, recycling, and early-history law",
+        "Its weighted transfer charge is finite and its fixed-energy quantile width is comparable to L, so the square-root-width obstruction is sharp against current radial budgets",
+        "The broad-shell spectrum is not a velocity field and a dilated broad triad is not one Navier-Stokes evolution",
+        "No broad-shell genealogy exclusion, q4 closure, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Bound the radially pushed nonlinear pairing in lambda to minus one half total variation by H-minus-one to L2 duality, differentiate fixed sharp and Gaussian energy quantiles, convert the q4 shell speed into a width charge, and test sharpness with an exact smooth fixed-relative-width positive spectral survivor.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the weighted transfer theorem, sharp and Gaussian quantile-speed identities, q4 narrowing corollary, broad-shell energy and transfer formulas, strict positive-flux proof, finite-charge calculation, conjecture, and open obligations. External review is pending; no executable PDE artefact is claimed.",
+      "success_criterion": "Determine whether a finite actual-trajectory transfer budget excludes narrow q4 spectral descent, identify the sharp surviving width regime, and isolate the additional spatial, angular, or genealogical theorem needed there.",
+      "failure_interpretation": "The radial total-variation contraction or H-minus-one estimate is wrong, the quantile differentiation or sign is incorrect, the q4 width charge is misstated, the atomic Pell scope is overstated, the tilted-mean argument does not give uniform positive broad-shell flux, the characteristic density misses an exact energy or flux identity, its charge diverges, or the epistemic scope is overstated.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-spectral-quantile-speed.md",
+        "dossier/rounds/2026-07-25-type-ii-spectral-quantile-speed.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

@@ -816,6 +816,22 @@ the prior triad-packet theorem gives compact solenoidal
 \(\mathbb R^3\) approximations on bounded heat-age ranges.  This does not
 concatenate the Pell fields into one trajectory.
 
+### Downstream disposition
+
+The [spectral quantile-speed theorem](type-ii-spectral-quantile-speed.md)
+derives the finite actual-trajectory budget
+\[
+\int_0^{s_0}\int_0^\infty
+\lambda^{-1/2}|d\mu_s|\,ds<\infty.
+\]
+It excludes any nondegenerate fixed-energy q4 quantile that remains
+smoothed inside adjacent or \(O(\sqrt L)\)-width shells.  Hence the
+delta-shell interpretation and dynamically adjacent Pell shortcut are
+closed.  A smooth positive shell of fixed relative width \(W\asymp L\)
+pays this charge finitely while retaining all scalar q4 and early-reuse
+laws, so broad-shell genealogy is the replacement live gate.  The exact
+Pell snapshots proved above remain valid.
+
 ## 6. Exact frontier
 
 ### Robust findings, subject to external review

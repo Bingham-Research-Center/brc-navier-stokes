@@ -1,0 +1,736 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\Pp}{\mathbb P}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\ip}[2]{\left\langle #1,#2\right\rangle}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\Var}{\operatorname{Var}}
+\setlength{\emergencystretch}{3em}
+
+\title{A Finite Weighted Transfer Budget Forces\\
+q4 Spectral-Shell Broadening}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report advances the conditional, energy-efficient q4 Type-II
+entrance without resolving a Clay alternative.  The radial nonlinear
+transfer has a finite same-trajectory norm:
+\[
+ \int_0^{s_0}\int_0^\infty
+ \lambda^{-1/2}\,d|\mu_s|(\lambda)\,ds<\infty.
+\]
+It follows from \(\dot H^{-1}\)--\(L^2\) duality and the finite
+\(L_s^2\) ledgers for weak-\(L^3\) amplitude and enstrophy amplitude.
+Differentiating a fixed positive energy quantile gives an exact
+spectral-speed law.  On a descending q4 shell it forces the effective
+local width \(W_\eta\) to satisfy
+\[
+ \int_0\frac{\sqrt{L(s)}}{sW_\eta(s)}\,ds<\infty.
+\]
+Thus persistent width \(W_\eta\lesssim\sqrt L\), including any
+nondegenerate smoothing of adjacent Pell shells, is impossible.
+
+This is a genuine conditional reduction, but it does not close q4.
+We construct a smooth positive spectral density of fixed relative width
+\(W_\eta\asymp L\).  Its characteristic flux is strictly positive at
+every positive heat age for all sufficiently small times.  It obeys the
+exact energy law, matches every current q4 scalar and Gaussian budget,
+has asymptotically complete early-history reuse, and pays the new
+weighted transfer charge finitely.  The remaining known unknown is
+therefore a spatial, angular, phase, or genealogical cost for broad
+same-trajectory transfer.  The countermodel is a spectrum rather than a
+velocity field.  All novel deductions await external review.
+\end{abstract}
+
+\section{Conditional entrance and spectral balance}
+
+Let \(\nu>0\).  On \(0<s<s_0\), suppose that \(v\) and \(U\) are smooth,
+divergence-free fields on \(\R^3\) satisfying
+\begin{equation}
+\label{eq:evolution}
+ \partial_s v-\nu\Delta v+F=0,
+ \qquad
+ F:=\Pp((U\cdot\nabla)v).
+\end{equation}
+The conditional q4 entrance established in the preceding rounds supplies
+\begin{equation}
+\label{eq:energy}
+ \norm{v(s)}_2^2+
+ 2\nu\int_0^s\norm{\nabla v(a)}_2^2\,da=d>0,
+\end{equation}
+\begin{equation}
+\label{eq:heat-boundary}
+ e^{\nu r\Delta}v(s)\longrightarrow0
+ \quad\hbox{strongly in \(L^2\) for every fixed \(r>0\),}
+\end{equation}
+as \(s\downarrow0\).  Write
+\begin{equation}
+\label{eq:MY}
+ M(s):=\norm{U(s)}_{L^{3,\infty}},
+ \qquad
+ Y(s):=\norm{\nabla v(s)}_2,
+\end{equation}
+and assume the proved entrance ledgers
+\begin{equation}
+\label{eq:L2-ledgers}
+ M,Y\in L^2(0,s_0).
+\end{equation}
+
+Push the Fourier energy and nonlinear pairing forward by
+\(\lambda=2\nu|\xi|^2\):
+\begin{align}
+\label{eq:epsilon}
+ \varepsilon_s(B)
+ &:=
+ \frac12\int_{\{2\nu|\xi|^2\in B\}}
+ |\widehat v(s,\xi)|^2\,d\xi,\\
+\label{eq:mu}
+ \mu_s(B)
+ &:=
+ -\operatorname{Re}
+ \int_{\{2\nu|\xi|^2\in B\}}
+ \widehat F(s,\xi)\cdot\overline{\widehat v(s,\xi)}\,d\xi.
+\end{align}
+The previous round proved
+\begin{equation}
+\label{eq:characteristic}
+ \mathcal E(r,s):=
+ \frac12\norm{e^{\nu r\Delta}v(s)}_2^2
+ =\int_0^\infty e^{-r\lambda}\,d\varepsilon_s(\lambda),
+\end{equation}
+\begin{equation}
+\label{eq:flux}
+ \Pi_r(s):=\int_0^\infty e^{-r\lambda}\,d\mu_s(\lambda)
+ =(\partial_s-\partial_r)\mathcal E(r,s),
+\end{equation}
+and, distributionally,
+\begin{equation}
+\label{eq:measure-balance}
+ \mu_s=\partial_s\varepsilon_s+\lambda\varepsilon_s.
+\end{equation}
+When the radial measures have densities, write
+\begin{equation}
+\label{eq:density-balance}
+ \varepsilon_s(d\lambda)=e(\lambda,s)\,d\lambda,
+ \qquad
+ \mu_s(d\lambda)=m(\lambda,s)\,d\lambda,
+ \qquad
+ \partial_se=m-\lambda e.
+\end{equation}
+Only the quantile statements below require the density and
+nondegeneracy hypotheses.
+
+\section{The finite weighted transfer theorem}
+
+Define the weighted radial transfer norm
+\begin{equation}
+\label{eq:q-def}
+ \mathfrak q(s):=
+ \int_0^\infty\lambda^{-1/2}\,d|\mu_s|(\lambda).
+\end{equation}
+
+\begin{theorem}[Finite weighted nonlinear transfer]
+\label{thm:weighted}
+For almost every \(s\in(0,s_0)\),
+\begin{equation}
+\label{eq:q-bound}
+ \mathfrak q(s)
+ \le
+ (2\nu)^{-1/2}
+ \norm{F(s)}_{\dot H^{-1}}\norm{v(s)}_2
+ \lesssim
+ \nu^{-1/2}\sqrt d\,M(s)Y(s).
+\end{equation}
+Consequently,
+\begin{equation}
+\label{eq:q-L1}
+ \int_0^{s_0}\mathfrak q(s)\,ds<\infty.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Total variation cannot increase under a measurable pushforward.  Hence
+\begin{align}
+ \mathfrak q(s)
+ &\le
+ \int_{\R^3}
+ (2\nu|\xi|^2)^{-1/2}
+ |\widehat F(s,\xi)|\,|\widehat v(s,\xi)|\,d\xi \notag\\
+ &\le
+ (2\nu)^{-1/2}
+ \norm{F(s)}_{\dot H^{-1}}\norm{v(s)}_2.
+\label{eq:pushforward-CS}
+\end{align}
+For a solenoidal test field \(\psi\), integration by parts, Lorentz
+Hölder, and the Lorentz refinement of Sobolev give
+\begin{align}
+ \abs{\ip{F}{\psi}}
+ &=
+ \abs{\int_{\R^3}U_jv_i\,\partial_j\psi_i\,dx}\notag\\
+ &\lesssim
+ \norm U_{L^{3,\infty}}
+ \norm v_{L^{6,2}}
+ \norm{\nabla\psi}_2
+ \lesssim
+ MY\norm{\nabla\psi}_2.
+\label{eq:Hminus}
+\end{align}
+Because \(F\) is solenoidal, the same estimate for arbitrary tests
+follows by applying the bounded Leray projector.  Thus
+\(\norm F_{\dot H^{-1}}\lesssim MY\).  Equation
+\eqref{eq:energy} gives \(\norm v_2\le\sqrt d\), proving
+\eqref{eq:q-bound}.  Finally,
+\[
+ \int_0^{s_0}M(s)Y(s)\,ds
+ \le
+ \norm M_{L^2(0,s_0)}\norm Y_{L^2(0,s_0)}<\infty,
+\]
+which proves \eqref{eq:q-L1}.
+\end{proof}
+
+\begin{remark}
+The unweighted radial variation costs the already divergent q4 density
+\(MY^2\).  The factor \(\lambda^{-1/2}\) is one heat length; it transfers
+one derivative to the finite kinetic-energy factor and lowers the cost
+to the integrable product \(MY\).
+\end{remark}
+
+\section{Exact spectral-quantile speed}
+
+Fix \(0<\eta<d/2\).  Whenever it exists, define the low-frequency
+energy quantile \(\Lambda_\eta(s)\) by
+\begin{equation}
+\label{eq:quantile}
+ \int_0^{\Lambda_\eta(s)}e(\lambda,s)\,d\lambda=\eta.
+\end{equation}
+The heat boundary ensures that every such fixed quantile escapes to
+infinity.  Indeed, for fixed \(r,\Lambda>0\),
+\begin{equation}
+\label{eq:low-frequency}
+ \int_0^\Lambda e(\lambda,s)\,d\lambda
+ \le e^{r\Lambda}\mathcal E(r,s)\longrightarrow0.
+\end{equation}
+Since the total energy tends to \(d/2\), \(\Lambda_\eta(s)\to\infty\).
+
+\begin{theorem}[Fixed-energy quantile law]
+\label{thm:quantile}
+Suppose that \(e\) and \(m\) are locally integrable, that \(e\) is
+continuous and positive at \(\lambda=\Lambda_\eta(s)\), and that the
+quantile is differentiable.  Then
+\begin{equation}
+\label{eq:quantile-speed}
+ e(\Lambda_\eta,s)\Lambda_\eta'
+ =
+ \int_0^{\Lambda_\eta}\lambda e(\lambda,s)\,d\lambda
+ -
+ \int_0^{\Lambda_\eta}m(\lambda,s)\,d\lambda.
+\end{equation}
+On
+\(\mathcal D_\eta:=\{s:\Lambda_\eta'(s)<0\}\),
+\begin{equation}
+\label{eq:quantile-charge}
+ \int_{\mathcal D_\eta}
+ e(\Lambda_\eta(s),s)
+ \frac{|\Lambda_\eta'(s)|}{\sqrt{\Lambda_\eta(s)}}\,ds
+ \le
+ \int_0^{s_0}\mathfrak q(s)\,ds<\infty.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Differentiate \eqref{eq:quantile} and use
+\eqref{eq:density-balance}:
+\[
+ 0=
+ \int_0^{\Lambda_\eta}(m-\lambda e)\,d\lambda
+ +e(\Lambda_\eta,s)\Lambda_\eta'.
+\]
+This is \eqref{eq:quantile-speed}.  If
+\(\Lambda_\eta'<0\), then
+\begin{align*}
+ e(\Lambda_\eta,s)|\Lambda_\eta'|
+ &=
+ \int_0^{\Lambda_\eta}m\,d\lambda
+ -\int_0^{\Lambda_\eta}\lambda e\,d\lambda\\
+ &\le
+ \int_0^{\Lambda_\eta}|m|\,d\lambda
+ \le
+ \sqrt{\Lambda_\eta}\,\mathfrak q(s).
+\end{align*}
+Division by \(\sqrt{\Lambda_\eta}\), integration, and
+Theorem~\ref{thm:weighted} prove \eqref{eq:quantile-charge}.
+\end{proof}
+
+\subsection*{A smooth Gaussian quantile}
+
+There is also a density-free heat formulation.  For \(0<\theta<1\),
+let \(r_\theta(s)\) solve
+\begin{equation}
+\label{eq:heat-quantile}
+ \mathcal E(r_\theta(s),s)=\theta\mathcal E(0,s)
+\end{equation}
+and put
+\begin{equation}
+\label{eq:D}
+ \mathcal D(r,s):=-\partial_r\mathcal E(r,s)
+ =\nu\norm{\nabla e^{\nu r\Delta}v(s)}_2^2.
+\end{equation}
+Since \(\Pi_0=0\), differentiating \eqref{eq:heat-quantile} and using
+\eqref{eq:flux} gives the exact identity
+\begin{equation}
+\label{eq:heat-speed}
+ \boxed{
+ r_\theta'(s)
+ =
+ \frac{\Pi_{r_\theta(s)}(s)+\theta\mathcal D(0,s)}
+ {\mathcal D(r_\theta(s),s)}
+ -1.}
+\end{equation}
+It separates nonlinear shell motion from preferential viscous loss.
+
+\section{The q4 narrowing obstruction}
+
+Let
+\begin{equation}
+\label{eq:L}
+ \ell(s):=\log(e/s),
+ \qquad
+ L(s):=s^{-9/11}\ell(s)^{2/11},
+\end{equation}
+and define the effective local quantile width
+\begin{equation}
+\label{eq:W}
+ W_\eta(s):=\frac{\eta}{e(\Lambda_\eta(s),s)}.
+\end{equation}
+
+\begin{corollary}[Persistent narrow shells are impossible]
+\label{cor:narrow}
+Assume, for all sufficiently small \(s\), that
+\begin{equation}
+\label{eq:q4-descent}
+ \Lambda_\eta(s)\asymp L(s),
+ \qquad
+ -\Lambda_\eta'(s)\gtrsim\frac{L(s)}s.
+\end{equation}
+Then
+\begin{equation}
+\label{eq:width-charge}
+ \int_0
+ \frac{\sqrt{L(s)}}{sW_\eta(s)}\,ds<\infty.
+\end{equation}
+In particular, an eventual bound
+\begin{equation}
+\label{eq:narrow}
+ W_\eta(s)\lesssim\sqrt{L(s)}
+\end{equation}
+is impossible.
+\end{corollary}
+
+\begin{proof}
+On the descending set, the integrand in
+\eqref{eq:quantile-charge} satisfies
+\[
+ e(\Lambda_\eta,s)
+ \frac{|\Lambda_\eta'|}{\sqrt{\Lambda_\eta}}
+ \gtrsim
+ \frac{\eta\sqrt{L(s)}}{sW_\eta(s)}.
+\]
+This proves \eqref{eq:width-charge}.  Under \eqref{eq:narrow}, its
+integrand is bounded below by a positive multiple of \(1/s\), a
+contradiction.
+\end{proof}
+
+\begin{remark}[Disposition of the Pell snapshots]
+The exact Pell family transfers between
+\[
+ \lambda_m=8\nu m^2,
+ \qquad
+ \lambda_m+2\nu.
+\]
+Any nondegenerate \(O(1)\)-width smoothing that carries a fixed positive
+energy quantile has \(W_\eta=O(1)\ll\sqrt{\lambda_m}\), and so cannot be
+concatenated continuously along \eqref{eq:q4-descent}.  The exact torus
+snapshots are atomic and do not satisfy the density hypothesis in
+Theorem~\ref{thm:quantile}; their instantaneous transfer theorem remains
+valid.  What is closed is their identification with one persistently
+narrow moving quantile.
+\end{remark}
+
+More generally, the power ansatz \(W_\eta=L^\gamma\) requires
+\(\gamma>1/2\) at power level.  The endpoint \(\gamma=1/2\) already
+incurs the logarithmic divergence \(\int ds/s\).
+
+\section{A sharp broad-shell survivor}
+
+Choose \(0<a<1<b\) and
+\begin{equation}
+\label{eq:phi}
+ \phi\in C_c^\infty((0,\infty)),
+ \quad
+ \supp\phi=[a,b],
+ \quad
+ \phi>0\ \hbox{on }(a,b),
+ \quad
+ \int\phi=\int y\phi(y)\,dy=1.
+\end{equation}
+Define
+\begin{equation}
+\label{eq:A}
+ A(s):=\frac d2
+ \exp\left(-\int_0^sL(\sigma)\,d\sigma\right),
+ \qquad A'=-AL,
+\end{equation}
+\begin{equation}
+\label{eq:ephi}
+ e_\phi(\lambda,s):=
+ \frac{A(s)}{L(s)}
+ \phi\left(\frac{\lambda}{L(s)}\right).
+\end{equation}
+Let
+\begin{equation}
+\label{eq:Phi}
+ \Phi(x):=\int_0^\infty e^{-xy}\phi(y)\,dy,
+ \qquad
+ G(x):=-\Phi'(x)>0,
+ \qquad
+ \alpha(s):=-\frac{sL'(s)}{L(s)}.
+\end{equation}
+
+\begin{proposition}[Exact broad-shell characteristic]
+\label{prop:broad}
+The density \eqref{eq:ephi} is positive, has mass \(A\) and mean
+frequency \(L\):
+\begin{equation}
+\label{eq:mass-mean}
+ \int e_\phi\,d\lambda=A,
+ \qquad
+ \int\lambda e_\phi\,d\lambda=AL.
+\end{equation}
+Its heat energy and characteristic flux are
+\begin{equation}
+\label{eq:Ephi}
+ \mathcal E_\phi(r,s)=A(s)\Phi(rL(s)),
+\end{equation}
+\begin{equation}
+\label{eq:Piphi}
+ \boxed{
+ \Pi^\phi_r(s)
+ =
+ \frac{A(s)}s
+ \left[
+ \alpha(s)xG(x)
+ -sL(s)\bigl(\Phi(x)+\Phi'(x)\bigr)
+ \right],\qquad x=rL(s).}
+\end{equation}
+The corresponding transfer density is
+\begin{equation}
+\label{eq:mphi}
+ \boxed{
+ m_\phi(\lambda,s)
+ =
+ A(s)\left[
+ (y-1)\phi(y)
+ -\frac{L'(s)}{L(s)^2}
+ \bigl(\phi(y)+y\phi'(y)\bigr)
+ \right],\qquad y=\frac{\lambda}{L(s)}.}
+\end{equation}
+For every sufficiently small \(s>0\),
+\begin{equation}
+\label{eq:positive-flux}
+ \Pi^\phi_r(s)>0
+ \qquad\hbox{for every \(r>0\).}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The change of variables \(\lambda=Ly\), together with
+\eqref{eq:phi}, proves \eqref{eq:mass-mean}.  It also gives
+\eqref{eq:Ephi}.  Differentiating,
+\[
+ \partial_s\mathcal E_\phi=A'\Phi+ArL'\Phi',
+ \qquad
+ \partial_r\mathcal E_\phi=AL\Phi'.
+\]
+Use \(A'=-AL\), \(x=rL\), \(\Phi'=-G\), and the definition of
+\(\alpha\) to obtain
+\((\partial_s-\partial_r)\mathcal E_\phi=\Pi^\phi\) in the form
+\eqref{eq:Piphi}.  Finally, differentiating \eqref{eq:ephi} and using
+\(m_\phi=\partial_se_\phi+\lambda e_\phi\) gives
+\eqref{eq:mphi}.
+
+For \eqref{eq:positive-flux}, introduce the exponentially tilted mean
+\begin{equation}
+\label{eq:tilted-mean}
+ \overline y(x):=\frac{G(x)}{\Phi(x)}.
+\end{equation}
+With \(\operatorname{Var}_x\) denoting variance under the probability
+density \(e^{-xy}\phi(y)/\Phi(x)\), it satisfies
+\begin{equation}
+\label{eq:tilted-variance}
+ \overline y(0)=1,
+ \qquad
+ \overline y'(x)=-\operatorname{Var}_x(y)<0.
+\end{equation}
+Consequently,
+\begin{equation}
+\label{eq:H-positive}
+ H(x):=\Phi(x)+\Phi'(x)
+ =\Phi(x)(1-\overline y(x))>0
+ \qquad(x>0).
+\end{equation}
+The quotient \(H(x)/(xG(x))\) tends to the variance of \(\phi\) as
+\(x\downarrow0\), and it tends to zero as \(x\to\infty\), since the
+tilted mean tends to \(a>0\).  Thus
+\begin{equation}
+\label{eq:Cphi}
+ C_\phi:=\sup_{x>0}\frac{H(x)}{xG(x)}<\infty.
+\end{equation}
+Because \(\alpha(s)\to9/11\) and \(sL(s)\to0\),
+\eqref{eq:Piphi} gives
+\[
+ \Pi^\phi_r(s)
+ \ge
+ \frac{A(s)}s xG(x)
+ \bigl(\alpha(s)-sL(s)C_\phi\bigr)>0
+\]
+for every \(x>0\) and all sufficiently small \(s\).
+\end{proof}
+
+\begin{proposition}[The new budget is sharp against broad shells]
+\label{prop:sharp}
+The broad shell satisfies
+\begin{equation}
+\label{eq:qphi}
+ \mathfrak q_\phi(s)
+ \lesssim
+ A(s)\left(
+ \sqrt{L(s)}
+ +\frac{|L'(s)|}{L(s)^{3/2}}
+ \right)
+ \asymp
+ A(s)\left(
+ \sqrt{L(s)}
+ +\frac1{s\sqrt{L(s)}}
+ \right).
+\end{equation}
+Both terms are integrable at zero.  Moreover, every fixed
+\(0<\eta<d/2\) has, for small \(s\),
+\begin{equation}
+\label{eq:broad-quantile}
+ \Lambda_\eta(s)=L(s)z_\eta(s),
+ \qquad
+ W_\eta(s)\asymp L(s),
+ \qquad
+ \Lambda_\eta'(s)=z_\eta(s)L'(s)(1+o(1)),
+\end{equation}
+and its charge is of order
+\begin{equation}
+\label{eq:broad-charge}
+ \frac1{s\sqrt{L(s)}}\in L^1(0,s_0).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Substitute \(y=\lambda/L\) in \eqref{eq:mphi}.  Compact support away
+from zero gives
+\[
+ \int_0^\infty\lambda^{-1/2}|m_\phi|\,d\lambda
+ \lesssim
+ A\left(\sqrt L+\frac{|L'|}{L^{3/2}}\right).
+\]
+Since \(|L'|/L\asymp1/s\), the two singular factors are
+\[
+ s^{-9/22}\ell(s)^{1/11},
+ \qquad
+ s^{-13/22}\ell(s)^{-1/11},
+\]
+and both are integrable.
+
+Let \(z_\eta(s)\in(a,b)\) be determined by
+\[
+ \int_a^{z_\eta(s)}\phi(y)\,dy=\frac{\eta}{A(s)}.
+\]
+It converges to an interior point because \(A(s)\to d/2\) and
+\(0<\eta<d/2\).  Thus \(\phi(z_\eta)\) stays positive and
+\[
+ \Lambda_\eta=Lz_\eta,
+ \qquad
+ e_\phi(\Lambda_\eta,s)=\frac A L\phi(z_\eta),
+\]
+which proves \(W_\eta\asymp L\).  Differentiating the defining equation
+gives \(z_\eta'=O(L)\).  Because \(L^2/|L'|\asymp sL\to0\),
+\[
+ \Lambda_\eta'=z_\eta L'+Lz_\eta'
+ =z_\eta L'(1+o(1)).
+\]
+Substitution in the quantile charge yields
+\eqref{eq:broad-charge}.
+\end{proof}
+
+\begin{proposition}[All previous q4 scalar tests survive]
+\label{prop:q4}
+Assign the broad spectrum the scalar ledgers
+\begin{equation}
+\label{eq:ledger-def}
+ M_\phi(s):=\frac1{sL(s)},
+ \qquad
+ Y_\phi(s)^2:=\frac{A(s)L(s)}{\nu}.
+\end{equation}
+Then
+\begin{align}
+ \int_0^hM_\phi(s)^2\,ds
+ &\asymp h^{7/11}\ell(h)^{-4/11},\label{eq:Mtail}\\
+ \int_0^hY_\phi(s)^2\,ds
+ &\asymp h^{2/11}\ell(h)^{2/11},\label{eq:Ytail}\\
+ M_\phi(s)Y_\phi(s)^2
+ &=\frac{A(s)}{\nu s}.\label{eq:MY2}
+\end{align}
+The flux obeys
+\begin{equation}
+\label{eq:pointwise}
+ |\Pi^\phi_r(s)|
+ \lesssim r^{-1/2}M_\phi(s)Y_\phi(s),
+\end{equation}
+\begin{equation}
+\label{eq:variation}
+ \Var_{r>0}\Pi^\phi_r(s)\lesssim\frac{A(s)}s.
+\end{equation}
+For every fixed \(0<q<1\),
+\begin{equation}
+\label{eq:early}
+ \frac{\displaystyle
+ \int_0^{q\tau}\Pi^\phi_{\tau-s}(s)\,ds}
+ {\displaystyle
+ \int_0^\tau\Pi^\phi_{\tau-s}(s)\,ds}
+ \longrightarrow1
+ \qquad(\tau\downarrow0).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Equations \eqref{eq:Mtail}--\eqref{eq:MY2} are the elementary
+power--log integrals associated with \eqref{eq:L}.  For the heat bounds,
+put \(x=rL(s)\).  The profiles
+\[
+ xG(x),
+ \qquad
+ \Phi(x)+\Phi'(x)
+\]
+are smooth and exponentially decreasing.  The second vanishes at zero
+because \(\int\phi=\int y\phi=1\).  Therefore
+\[
+ x^{1/2}|xG(x)|
+ +x^{1/2}|\Phi(x)+\Phi'(x)|\lesssim1.
+\]
+The motion coefficient in \eqref{eq:Piphi} is \(A/s\); the dispersion
+coefficient is \(AL\), smaller by \(sL\to0\).  Comparison with
+\[
+ r^{-1/2}M_\phi Y_\phi
+ =
+ \sqrt{\frac A\nu}\,\frac{x^{-1/2}}s
+\]
+proves \eqref{eq:pointwise}, with constants allowed to depend on the
+fixed entrance parameters.  Finite variation of the two profiles proves
+\eqref{eq:variation}.
+
+The characteristic identity and the fixed heat boundary give
+\[
+ \int_0^\tau\Pi^\phi_{\tau-s}(s)\,ds=A(\tau).
+\]
+On \(q\tau\le s\le\tau\), the integrated motion term is
+\(O_q(\tau L(q\tau))\).  Since the dispersion profile vanishes linearly
+at zero, its integral is
+\(O_q((\tau L(q\tau))^2)\).  Both vanish as \(\tau\downarrow0\), while
+\(A(\tau)\to d/2\), proving \eqref{eq:early}.
+\end{proof}
+
+\section{Novel findings, closures, and open obligations}
+
+\subsection*{Robust conditional deductions, pending external review}
+
+\begin{enumerate}
+ \item The actual radial nonlinear transfer has the finite
+ \(\lambda^{-1/2}\)-weighted total-variation budget
+ \eqref{eq:q-L1}.
+ \item A descending fixed-energy spectral quantile obeys the exact
+ speed law \eqref{eq:quantile-speed} and finite charge
+ \eqref{eq:quantile-charge}.
+ \item On the q4 schedule, persistent local width
+ \(W_\eta\lesssim\sqrt L\) is impossible.
+ \item This closes a nondegenerate dynamic concatenation of fixed-energy
+ adjacent Pell shells while preserving the exact atomic snapshots.
+ \item A smooth fixed-relative-width positive spectrum has strictly
+ positive heat flux at every positive heat age for all sufficiently
+ small times, satisfies every current radial, temporal, and scalar q4
+ test, and pays the new charge finitely.  Thus the width exponent
+ \(1/2\) is sharp against the present information.
+\end{enumerate}
+
+\subsection*{Closed shortcuts}
+
+\begin{enumerate}
+ \item The ideal delta-shell survivor is too narrow as stated.
+ \item Adjacent-shell Pell snapshots cannot simply be interpreted as one
+ continuously descending fixed-energy q4 quantile.
+ \item The finite weighted-transfer theorem alone cannot close q4,
+ because a broad relative shell survives it.
+ \item Positivity, radial moments, Gaussian variation, and early-history
+ reuse remain insufficient without a same-trajectory broad-shell cost.
+\end{enumerate}
+
+\subsection*{Things left to prove}
+
+\begin{enumerate}
+ \item Resolve the quadratic convolution into angular caps and derive a
+ finite mode-count, phase, or parent-frequency charge for
+ \(W_\eta\gg\sqrt L\).
+ \item Test that charge against smooth fixed-relative-width dilations of
+ the exact Pell family.
+ \item Couple radial broadening to spatial concentration and the
+ Hausdorff-one-null terminal energy measure.
+ \item Use the strong-trace drift to constrain coherent steering of
+ broad triadic transfer.
+ \item Treat intermittent narrowing in place of an eventual pointwise
+ width hypothesis.
+ \item Treat slower clocks, divergent normalised energy, R3B, and the
+ other Clay alternatives separately.
+\end{enumerate}
+
+\begin{conjecture}[No dynamically broad q4 descent]
+No same-trajectory full-defect q4 entrance with finite unweighted
+dissipation can keep a fixed positive energy quantile descending at
+\[
+ \Lambda_\eta(s)\asymp
+ s^{-9/11}\ell(s)^{2/11}
+\]
+with the broad width \(W_\eta(s)\gg\sqrt{\Lambda_\eta(s)}\) required by
+Theorem~\ref{thm:quantile}, while regenerating the full boundary defect
+through positive early-history triadic work.
+\end{conjecture}
+
+\begin{remark}[Epistemic boundary]
+The conjecture is open.  The broad shell is a positive spectral
+countermodel, not a velocity field, and a dilated broad triad is not one
+Navier--Stokes evolution.  This report proves no q4 closure, energy
+equality, regularity theorem, breakdown theorem, or Clay alternative.
+\end{remark}
+
+\end{document}

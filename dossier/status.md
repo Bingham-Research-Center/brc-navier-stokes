@@ -186,20 +186,22 @@ and positive initial energy measure. The
 removes the linear datum and forces half- and quarter-order \(MY\) impulses
 and failure of finite temporal \(L^{2,q}\) secondary indices. The
 [radial triad-spectrum theorem](experiments/type-ii-radial-triad-spectrum.md)
-makes its diagonal work a spectral characteristic:
+makes its work a characteristic of positive spectral energy:
 \[
 \Pi=(\partial_s-\partial_r)\mathcal E,\qquad
 \mu_s=\partial_s\varepsilon_s+\lambda\varepsilon_s,\qquad\varepsilon_s\ge0.
 \]
-Complete monotonicity excludes the former Laguerre survivor, but a positive
-moving-shell model restores every q4 scalar law and asymptotically total
-early reuse. Exact Pell triads have positive adjacent-shell flux at every
-heat age and converge to the shell model's \(xe^{-x}\) profile. The live
-gate is temporal compatibility of this transfer with one evolving positive
-energy spectrum, not an instantaneous sign, moment, or pressure law.
-
-All current q4 gap weights remain summable; divergent normalised energy,
-slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.
+The [spectral quantile-speed theorem](experiments/type-ii-spectral-quantile-speed.md)
+then proves the actual-trajectory budget
+\(\int_0^{s_0}\int_0^\infty\lambda^{-1/2}|d\mu_s|\,ds<\infty\).
+A fixed-energy q4 quantile must consequently satisfy
+\(\int\sqrt L/(sW_\eta)\,ds<\infty\). Persistent
+\(W_\eta\lesssim\sqrt L\), including nondegenerate adjacent-Pell smoothing,
+is impossible. Exact atomic Pell snapshots remain valid. A smooth positive
+fixed-relative-width shell has strictly positive heat flux, \(W_\eta\asymp L\),
+pays the new charge finitely, and retains every current scalar and early-reuse
+law. The live gate is a finite angular, spatial, phase, or genealogical cost for broad
+same-trajectory transfer. Divergent normalised energy and slower clocks remain open.
 
 ### Frozen R3B boundary
 
@@ -232,8 +234,6 @@ linked proof notes; do not reopen them without new input or external review.
 - Canonical metadata: [records](records/README.md)
 - Human route map: [possibility tree](possibility-tree.md)
 - Proof-lab commands: [lab README](../lab/README.md)
-- Pre-slim status: `git show a7ae140:dossier/status.md`
-- Pre-slim handoff: `git show a7ae140:HANDOFF.md`
 
 The active preprint proof is no longer the main bottleneck; deriving or
 excluding the hypotheses from actual NSE dynamics is. The project still has
