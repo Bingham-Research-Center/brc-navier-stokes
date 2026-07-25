@@ -1,47 +1,43 @@
-# Handoff: R3C spatial-import non-reuse
+# Handoff: R3C diffuse-layer fragmentation
 
 **Updated:** 2026-07-24 · **Clay status:** unsolved
 
 **Live route:** `ROUTE-R3C` · **Checkpoint:**
-`EXP-TYPE-II-MULTIRECORD-SPATIAL-IMPORT-001`
+`EXP-TYPE-II-TEMPORAL-FIVE-BARRIER-001`
 
 ## Load only
 
-- [Multirecord import theorem](dossier/experiments/type-ii-multirecord-spatial-import.md)
+- [Temporal five-power theorem](dossier/experiments/type-ii-temporal-five-barrier.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
 ## Exact live question
 
-Can carrier genealogy remove the summable \(R_j\) weight from the finite
-pressure-plus-kinetic flux action, or give repeated imports finite crossing
-multiplicity along energy-transport paths?
+Must a fixed-energy amplitude layer that is diffuse at its own volume radius
+pay a nonsummable interface, enstrophy, or pressure-transport charge, or can
+it be recentered into the now-excluded retained cell?
 
 ## Live theorem
 
-On the original exact \(q=4\) grid, set
+If
 \[
-i_j=j-\lfloor j/4\rfloor.
+\|u(t)\|_{L^{3,\infty}}\in L^s(0,T^*)
+\quad\text{for some }s>5,
 \]
-Every retained partial/tight energy-efficient endpoint forces
+then no shrinking ball can retain fixed kinetic energy at times approaching
+\(T^*\). The exact \(q=4\) clock gives every \(s<11/2\); explicitly,
 \[
-\mathsf X_j:=
-\int_{t_{i_j}}^{t_j}\!\!\int
-\left(\frac12|u|^2+p\right)u\cdot\nabla\chi_j\,dx\,dt
-\ge\gamma/4.
+u\in L_t^{256/53}L_x^{96/31},
+\qquad
+\int_{B_r(x)}|u(t)|^2\lesssim r^{1/29}
 \]
-An infinite subsequence has disjoint time windows, hence
-\(\sum\mathsf X_j=\infty\). The direct common budget is only
-\[
-\sum R_j|\mathsf X_j|\lesssim
-\int_0^{T^*}\!\!\int(|u|^3+|p||u|)<\infty,
-\]
-which is compatible with geometric \(R_j\). No packet freshness or Clay
-alternative is proved.
+in its \(r^{72/29}\) terminal window. Hence every partial/tight
+energy-efficient exact \(q=4\) cell is empty. Its selected layer must be
+diffuse. Divergent-normalised energy, slower clocks, and Clay remain open.
 
 ## Next bounded cycle
 
-Decompose the signed energy flux into transport paths/tubes and test whether
-one packet can cross infinitely many shrinking moving cutoffs without a
-scale-free pressure, deformation, or residence cost. Do not rederive
-terminal infrared evacuation or local import; keep diffuse and
-divergent-normalised-energy branches separate.
+Cover the diffuse selected layer at scale \(R_j\), quantify the necessary
+component count and amplitude interfaces, and test coarea/isoperimetry
+against enstrophy and pressure transport. Seek either a fixed local sublayer
+or one scale-zero nonsummable fragmentation charge. Do not reopen retained
+\(q=4\) transport genealogy.

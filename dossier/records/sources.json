@@ -486,6 +486,19 @@
       "status": "peer_reviewed",
       "last_checked": "2026-07-24",
       "notes": "Pinned arXiv v1 gzip archive SHA-256: 878e48e0159bc0a7e2716d5dd1d82c9b43ff9e66ddf886631a0fec0e59adaa1e. The single source member is p7a.tex, uncompressed SHA-256 777e525f8be1df35b20e72c27106bf3487bb998cf11ae54a6ff6f17de6325717: theorem and compact-support statement at lines 44-66; localizable pressure law and smooth cutoff at lines 292-303; energy-pressure relation and compact-flow virial identity at lines 321-334."
+    },
+    {
+      "id": "SRC-LESLIE-SHVYDKOY-2018",
+      "title": "The Energy Measure for the Euler and Navier-Stokes Equations",
+      "authors": ["Trevor M. Leslie", "Roman Shvydkoy"],
+      "year": 2018,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1007/s00205-018-1250-4",
+      "version": "Archive for Rational Mechanics and Analysis 230(2), 459-492; arXiv:1705.04420v4 accepted version",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-24",
+      "notes": "Pinned arXiv v4 archive SHA-256: c2eeace35d05ded3c3803190fcf7d0b0a3a2dc788480bfdee7d0126ac9374a51. Exact source is CD_accepted.tex, SHA-256 c8c2dccdae9b8bb37e4fb212bef17745a8e1c494ffc2aa812f72300abaf7643c: first-blow-up and Leray-Hopf continuation assumptions and energy-measure definition at lines 309-366; LqLp local-dimension proposition and exponents at lines 521-539; three-dimensional Navier-Stokes extension at lines 903-995; refined concentration regions and theorem at lines 1183-1252. Lines 916-924 print beta where the displayed equivalence and r^-2 comparison require alpha; the proposition at lines 993-995 states the resulting NSE extension, and the repository application independently checks alpha>2."
     }
   ]
 }

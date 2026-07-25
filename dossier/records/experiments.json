@@ -4143,6 +4143,42 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-TYPE-II-TEMPORAL-FIVE-BARRIER-001",
+      "title": "Temporal weak-L3 five-power barrier excludes retained q=4 carriers",
+      "kind": "analytic_exclusion",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-SCALE-001",
+        "CLM-ENERGY-001",
+        "CLM-ENERGY-MEASURE-NO-ATOMS-001"
+      ],
+      "hypothesis": "A smooth finite-energy trajectory can realize the retained partial or tight energy-efficient exact q=4 first-record ledger despite the positive-dimensional terminal energy-measure bounds available after temporal and spatial interpolation.",
+      "invariants": [
+        "The exact q=4 first-record ceiling and gap schedule put the weak-L3 norm in strong Ls time for every s strictly below eleven halves",
+        "Real interpolation between spatial weak L3 and L6, followed by time Holder interpolation with the energy-class enstrophy bound, gives strong Lq time Lp space",
+        "Every temporal weak-L3 exponent s greater than five admits a small positive interpolation parameter for which 6/p+5/q is strictly below 3",
+        "The peer-reviewed Leslie-Shvydkoy theorem then gives positive lower local dimension and excludes point atoms in the terminal energy measure",
+        "Finite energy and finite global pressure-plus-kinetic flux action make the family of spatial energy measures uniformly tight up to the terminal time",
+        "Any fixed-energy sequence of shrinking moving balls therefore has bounded centres and creates a point atom in the terminal energy measure",
+        "For the explicit q=4 witness s=16/3 and theta=1/16, p=96/31, q=256/53, the local-energy exponent is 1/29 and the terminal-window exponent is 72/29",
+        "The exact q=4 terminal gap divided by R_j to the 72/29 tends to zero with factor bounded by j inverse times 2 to the minus 31j/29",
+        "The fixed retained local energy floor contradicts the resulting C R_j to the 1/29 upper bound",
+        "Optimizing below the unavailable eleven-halves endpoint gives lower local energy-measure dimension at least one ninth and concentration dimension at least three fifths",
+        "The retained partial or tight energy-efficient exact q=4 cell is empty, so its earlier ultraviolet and multirecord-import conclusions remain conditional but need no non-reuse closure on an actual q=4 trajectory",
+        "The diffuse energy-efficient cell, divergent-normalised-energy branch, temporal exponent five and below schedules, regularity, breakdown, and every Clay A-D alternative remain open"
+      ],
+      "method": "Convert the exact first-record schedule into temporal weak-L3 integrability, interpolate it with the energy-class L2-time L6-space bound, apply the pinned peer-reviewed terminal energy-measure theorem, prove uniform spatial tightness by an exterior local-energy cutoff, turn any retained shrinking carrier into an atom, and verify the explicit q=4 powers directly.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the clock series, Lorentz-Sobolev interpolation, exact rational exponents, published-source version and line anchors, uniform tightness, Portmanteau atom extraction, direct terminal-window contradiction, optimized dimension limits, and exact scope exclusions. External review of the repository deductions is pending; no executable artefact is claimed.",
+      "success_criterion": "The retained partial and tight energy-efficient exact q=4 geometry cells are eliminated, leaving the diffuse selected-layer cell as the only energy-efficient q=4 geometry survivor.",
+      "failure_interpretation": "The record ceiling does not imply the stated temporal integrability, the Lorentz interpolation or rational exponent ledger is wrong, the published theorem's hypotheses are unmet, spatial tightness fails, shrinking carriers do not force an atom, or the result is overstated beyond the retained exact q=4 cell and the general s-greater-than-five no-carrier theorem.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-temporal-five-barrier.md",
+        "dossier/rounds/2026-07-24-type-ii-temporal-five-barrier.tex"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

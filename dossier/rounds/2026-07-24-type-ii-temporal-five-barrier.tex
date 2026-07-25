@@ -1,0 +1,548 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+
+\title{The Temporal Weak-\(L^3\) Five-Power Barrier\\
+and Exclusion of Retained Fast Type-II Carriers}
+\author{John Robert Lawson and Codex}
+\date{Research round ending 24 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This round closes the retained partial/tight cell of the
+energy-efficient exact \(q=4\) Type-II ledger.  The record clock puts the
+weak-\(L^3\) norm in \(L^s\) in time for every \(s<11/2\).  Interpolation
+with the energy-class \(L^2_tL^6_x\) bound produces a strong
+\(L^q_tL^p_x\) pair strictly inside a peer-reviewed
+Leslie--Shvydkoy positive-energy-dimension region.  A fixed-energy
+shrinking carrier would create an atom in the terminal energy measure,
+whereas that theorem forbids atoms.  With the explicit choice
+\[
+ s=\frac{16}{3},\qquad
+ p=\frac{96}{31},\qquad
+ q=\frac{256}{53},
+\]
+the published local-energy exponents are \(1/29\) in space and \(72/29\)
+in terminal time.  The exact \(q=4\) carrier floor contradicts the
+resulting decay directly.  The diffuse and
+divergent-normalised-energy branches remain open, and the Clay problem is
+unsolved.
+\end{abstract}
+
+\section{Epistemic scope}
+
+The imported energy-measure estimate is a peer-reviewed theorem of
+Leslie and Shvydkoy~\cite{LS18}.  The record-clock conversion, Lorentz
+interpolation, tightness lemma, explicit exponent bridge, and application
+to the repository's exact \(q=4\) ledger are deductions in this round and
+await external mathematical review.  No claim of literature novelty is
+made.
+
+The conclusion is a conditional exclusion theorem: no smooth
+finite-energy trajectory can satisfy all hypotheses defining the retained
+energy-efficient exact \(q=4\) cell.  It is neither a global regularity
+theorem nor a breakdown construction.
+
+\section{First-blow-up setting}
+
+Let \(u\) be a smooth divergence-free solution of
+\[
+ \partial_tu+u\cdot\nabla u=-\nabla p+\nu\Delta u,
+ \qquad
+ \nabla\cdot u=0
+\]
+on \(\R^3\times[0,T^*)\), where \(T^*<\infty\) is the first possible
+singular time.  Assume
+\[
+ \sup_{t<T^*}\frac12\|u(t)\|_2^2\le E_0,
+ \qquad
+ \nu\int_0^{T^*}\|\nabla u(t)\|_2^2\,dt\le E_0.
+\]
+A Leray--Hopf continuation through \(T^*\), obtained by restarting at a
+regular earlier time and using weak--strong uniqueness before \(T^*\),
+places the solution in the setting of~\cite{LS18}.
+
+Define
+\[
+ M(t):=\|u(t)\|_{L^{3,\infty}(\R^3)}.
+\]
+Let \(t_j\uparrow T^*\) be first record times and put
+\[
+ m_j:=M(t_j).
+\]
+Thus
+\begin{equation}
+ \label{eq:first-record}
+ M(t)\le m_j\qquad(0\le t\le t_j).
+\end{equation}
+
+The exact \(q=4\) ledger has
+\begin{equation}
+ \label{eq:q4}
+ m_j\asymp2^{2j},
+ \qquad
+ t_{j+1}-t_j\asymp\frac{2^{-11j}}j.
+\end{equation}
+In its retained energy-efficient geometry cell there are fixed
+\(A<\infty\), \(\gamma>0\), centres \(x_j\), and radii
+\begin{equation}
+ \label{eq:radii}
+ R_j\asymp m_j^{-2}\asymp2^{-4j}
+\end{equation}
+such that
+\begin{equation}
+ \label{eq:floor}
+ \int_{B_{AR_j}(x_j)}|u(x,t_j)|^2\,dx\ge\gamma.
+\end{equation}
+
+\section{The imported energy-measure theorem}
+
+The terminal energy measure is
+\[
+ \mathcal E
+ :=
+ \underset{t\uparrow T^*}{\operatorname{w^*\!-\!lim}}
+ |u(t)|^2\,dx.
+\]
+The local energy identity makes this limit unique on bounded spatial
+domains.
+
+\begin{theorem}[Leslie--Shvydkoy, specialised to three-dimensional NSE]
+\label{thm:LS}
+Suppose
+\[
+ u\in L^q(0,T^*;L^p(\R^3)),
+ \qquad
+ 3\le p<\infty,
+ \qquad
+ \frac6p+\frac5q\le3.
+\]
+Set
+\[
+ \alpha
+ :=
+ \frac{q}{q-1}\left(1+\frac3p\right),
+ \qquad
+ \beta
+ :=
+ \frac{q}{q-1}
+ \left(3-\frac6p-\frac5q\right).
+\]
+For every compact \(K\subset\R^3\), there are \(r_K>0\) and \(C_K<\infty\)
+such that
+\begin{equation}
+ \label{eq:LS-local}
+ \sup_{\substack{T^*-r^\alpha<t<T^*\\x_0\in K}}
+ \int_{B_r(x_0)}|u(x,t)|^2\,dx
+ \le C_Kr^\beta
+ \qquad(0<r<r_K).
+\end{equation}
+In particular, if \(6/p+5/q<3\), then the terminal energy measure has no
+atoms.
+\end{theorem}
+
+\begin{remark}
+The paper states the Euler local-dimension proposition and then proves
+that it remains valid for three-dimensional Navier--Stokes solutions at a
+first blow-up time.  Strong \(L^q_tL^p_x\) is more than the weak-in-time
+hypothesis allowed for finite \(p\).
+
+The accepted source prints \(\beta>2\) at one viscous comparison where its
+displayed Prodi--Serrin equivalence and the comparison of \(r^{-2}\) with
+the time-cutoff power require \(\alpha>2\).  Its following proposition
+states the Navier--Stokes extension.  For the explicit pair used below,
+\[
+ \frac3p+\frac2q=\frac{177}{128}>1,
+ \qquad
+ \alpha=\frac{72}{29}>2,
+\]
+so that comparison is checked directly.
+\end{remark}
+
+\section{The record clock gives more than five time powers}
+
+\begin{lemma}[Clock-to-integrability conversion]
+\label{lem:clock}
+Under \eqref{eq:first-record} and \eqref{eq:q4},
+\[
+ M\in L^s(0,T^*)
+ \qquad\text{for every }s<\frac{11}{2}.
+\]
+\end{lemma}
+
+\begin{proof}
+The solution is smooth away from \(T^*\), so only a terminal tail matters.
+On \([t_j,t_{j+1}]\), the first-record property at \(t_{j+1}\) gives
+\[
+ M(t)\le m_{j+1}.
+\]
+Consequently,
+\[
+\begin{aligned}
+ \int_{t_J}^{T^*}M(t)^s\,dt
+ &\le
+ \sum_{j\ge J}
+ m_{j+1}^s(t_{j+1}-t_j)\\
+ &\le
+ C_s\sum_{j\ge J}
+ \frac{2^{(2s-11)j}}j.
+\end{aligned}
+\]
+This converges for \(s<11/2\).  At \(s=11/2\), this estimate becomes
+harmonic and makes no endpoint claim.
+\end{proof}
+
+\section{The temporal five-power interpolation barrier}
+
+\begin{lemma}[Lorentz--Sobolev interpolation]
+\label{lem:interpolation}
+Assume \(M\in L^s(0,T^*)\) for some \(s>5\).  For \(0<\theta<1\), define
+\begin{equation}
+ \label{eq:pq-def}
+ \frac1p=\frac{1-\theta}{3}+\frac{\theta}{6},
+ \qquad
+ \frac1q=\frac{1-\theta}{s}+\frac{\theta}{2}.
+\end{equation}
+Then \(u\in L^q_tL^p_x\), and
+\begin{equation}
+ \label{eq:gap}
+ 3-\frac6p-\frac5q
+ =
+ 1-\frac5s
+ -
+ \theta\left(\frac32-\frac5s\right).
+\end{equation}
+For all sufficiently small \(\theta>0\), the right-hand side is positive.
+\end{lemma}
+
+\begin{proof}
+Real interpolation gives
+\[
+ \|u(t)\|_p
+ \le
+ C
+ \|u(t)\|_{L^{3,\infty}}^{1-\theta}
+ \|u(t)\|_6^\theta.
+\]
+Sobolev and the energy identity give
+\[
+ \|u(t)\|_6\le C\|\nabla u(t)\|_2,
+ \qquad
+ \nabla u\in L^2_tL^2_x.
+\]
+H\"older's inequality in time, using \eqref{eq:pq-def}, yields
+\[
+ \|u\|_{L^q_tL^p_x}
+ \le
+ C
+ \|M\|_{L^s_t}^{1-\theta}
+ \|\nabla u\|_{L^2_tL^2_x}^{\theta}.
+\]
+Finally \(6/p=2-\theta\); substitution gives \eqref{eq:gap}.  Since
+\(s>5\), its value at \(\theta=0\) is strictly positive.
+\end{proof}
+
+\begin{theorem}[Temporal five-power no-carrier barrier]
+\label{thm:five}
+If
+\[
+ M\in L^s(0,T^*)
+ \qquad\text{for some }s>5,
+\]
+there do not exist \(t_j\uparrow T^*\), \(r_j\downarrow0\), \(x_j\in\R^3\),
+and \(\gamma>0\) such that
+\[
+ \int_{B_{r_j}(x_j)}|u(x,t_j)|^2\,dx\ge\gamma
+\]
+for every \(j\).
+\end{theorem}
+
+\begin{proof}
+Choose \(\theta>0\) sufficiently small in Lemma~\ref{lem:interpolation}.
+Then Theorem~\ref{thm:LS} applies with \(\beta>0\), and therefore
+\begin{equation}
+ \label{eq:no-atoms}
+ \mathcal E(\{x\})=0
+ \qquad(x\in\R^3).
+\end{equation}
+
+Lemma~\ref{lem:tightness} below makes the family
+\(\{|u(t)|^2\,dx:t<T^*\}\) uniformly tight.  Hence the centres of any
+fixed-energy shrinking balls are bounded.  Pass to a subsequence with
+\(x_j\to x_*\).  For every \(\rho>0\),
+\[
+ B_{r_j}(x_j)\subset\overline B_\rho(x_*)
+\]
+eventually.  The closed-set Portmanteau inequality gives
+\[
+ \mathcal E(\overline B_\rho(x_*))
+ \ge
+ \limsup_{j\to\infty}
+ \int_{\overline B_\rho(x_*)}|u(x,t_j)|^2\,dx
+ \ge\gamma.
+\]
+Continuity from above as \(\rho\downarrow0\) implies
+\[
+ \mathcal E(\{x_*\})\ge\gamma,
+\]
+contradicting \eqref{eq:no-atoms}.
+\end{proof}
+
+\begin{remark}[Sharpness of the method]
+At \(s=5\), the first positive term on the right of \eqref{eq:gap}
+vanishes and every \(\theta>0\) makes the gap negative.  Thus five is the
+exact temporal threshold of this interpolation-to-energy-dimension route,
+not an arbitrary choice.
+\end{remark}
+
+\section{Uniform spatial tightness}
+
+\begin{lemma}[Uniform energy tightness]
+\label{lem:tightness}
+For the finite-energy trajectory above,
+\[
+ \lim_{R\to\infty}
+ \sup_{0\le t<T^*}
+ \int_{|x|>R}|u(x,t)|^2\,dx
+ =0.
+\]
+\end{lemma}
+
+\begin{proof}
+Choose
+\[
+ p=\mathcal R_a\mathcal R_b(u_au_b).
+\]
+Interpolation between \(L^2\) and \(L^6\), followed by H\"older in time,
+gives
+\[
+ \int_0^{T^*}\|u(t)\|_3^3\,dt<\infty.
+\]
+The Riesz-transform estimate
+\[
+ \|p(t)\|_{3/2}\le C\|u(t)\|_3^2
+\]
+therefore gives
+\begin{equation}
+ \label{eq:flux-action}
+ \mathcal F_*
+ :=
+ \int_0^{T^*}\!\!\int_{\R^3}
+ \left(|u|^3+|p||u|\right)\,dx\,dt
+ <\infty.
+\end{equation}
+
+Let \(0\le\psi_R\le1\) vanish on \(B_R\), equal one outside \(B_{2R}\),
+and obey
+\[
+ \|\nabla\psi_R\|_\infty\le\frac CR,
+ \qquad
+ \|\Delta\psi_R\|_\infty\le\frac C{R^2}.
+\]
+Approximate \(\psi_R\) by compactly supported cutoffs and pass to the limit
+using finite energy and \eqref{eq:flux-action}.  The local energy equality,
+after dropping its nonnegative dissipation term, gives
+\[
+\begin{aligned}
+ \sup_{t<T^*}
+ \int_{|x|>2R}|u(x,t)|^2\,dx
+ \le{}&
+ C\int_{|x|>R}|u_0(x)|^2\,dx\\
+ &+\frac{C\mathcal F_*}{R}
+ +\frac{C\nu T^*}{R^2}
+ \sup_{t<T^*}\|u(t)\|_2^2.
+\end{aligned}
+\]
+Every term tends to zero as \(R\to\infty\).
+\end{proof}
+
+\section{Exact q-four exclusion}
+
+Lemma~\ref{lem:clock} allows the explicit choice
+\[
+ s=\frac{16}{3},
+ \qquad
+ \theta=\frac1{16}.
+\]
+Equations \eqref{eq:pq-def} then give
+\[
+ \frac1p=\frac{31}{96},
+ \qquad
+ \frac1q=\frac{53}{256},
+\]
+so
+\begin{equation}
+ \label{eq:explicit-pq}
+ p=\frac{96}{31},
+ \qquad
+ q=\frac{256}{53}.
+\end{equation}
+The exact published admissibility gap is
+\[
+ 3-\frac6p-\frac5q
+ =
+ \frac7{256}>0.
+\]
+Consequently,
+\begin{equation}
+ \label{eq:explicit-exponents}
+ \beta
+ =
+ \frac{q}{q-1}
+ \left(3-\frac6p-\frac5q\right)
+ =
+ \frac1{29},
+ \qquad
+ \alpha
+ =
+ \frac{q}{q-1}
+ \left(1+\frac3p\right)
+ =
+ \frac{72}{29}.
+\end{equation}
+
+\begin{corollary}[Retained exact \(q=4\) cell is empty]
+\label{cor:q4}
+No smooth finite-energy trajectory can satisfy simultaneously
+\eqref{eq:q4}, \eqref{eq:radii}, and \eqref{eq:floor}.
+\end{corollary}
+
+\begin{proof}
+This follows immediately from Theorem~\ref{thm:five}.  There is also a
+direct quantitative contradiction.
+
+The geometric gap sum in \eqref{eq:q4} gives
+\[
+ T^*-t_j\le C\frac{2^{-11j}}j.
+\]
+Using \eqref{eq:radii} and \eqref{eq:explicit-exponents},
+\[
+ \frac{T^*-t_j}{R_j^{72/29}}
+ \le
+ \frac Cj
+ 2^{-\left(11-\frac{288}{29}\right)j}
+ =
+ \frac Cj2^{-31j/29}
+ \longrightarrow0.
+\]
+Lemma~\ref{lem:tightness} places all retained centres in one compact set.
+Theorem~\ref{thm:LS}, applied with \(r=AR_j\), therefore gives
+\[
+ \int_{B_{AR_j}(x_j)}|u(x,t_j)|^2\,dx
+ \le
+ C(AR_j)^{1/29}
+ \longrightarrow0,
+\]
+contradicting \eqref{eq:floor}.
+\end{proof}
+
+\begin{remark}
+The preceding terminal-infrared and multirecord-import results remain valid
+conditional theorems.  Corollary~\ref{cor:q4} shows that all their retained
+exact \(q=4\) premises cannot occur together on an actual smooth
+trajectory.  No packet-genealogy argument is needed inside an empty cell.
+\end{remark}
+
+\section{Optimised dimension ledger}
+
+The explicit pair \eqref{eq:explicit-pq} is enough for exclusion.  The full
+clock gives a sharper quantitative terminal statement.
+
+Fix \(5<s<11/2\) and let \(\theta\downarrow0\) in
+Lemma~\ref{lem:interpolation}.  The lower local-dimension exponent tends to
+\[
+ \frac{s-5}{s-1}.
+\]
+For sufficiently small \(\theta\), the pair \((p,q)\) lies in Region II of
+the refined Leslie--Shvydkoy concentration theorem.  Its lower bound tends
+to
+\[
+ 3-\frac{2/s}{1-2/3-1/s}
+ =
+ \frac{3(s-5)}{s-3}.
+\]
+Letting \(s\uparrow11/2\) gives
+\begin{equation}
+ \label{eq:dimensions}
+ \boxed{
+ d(x,\mathcal E)\ge\frac19
+ \quad\text{for every }x,
+ \qquad
+ D(\mathcal E)\ge\frac35.
+ }
+\end{equation}
+These bounds are not needed for Corollary~\ref{cor:q4}; they record how far
+the exact clock lies inside the no-atom regime.
+
+\section{Findings and remaining obligations}
+
+\subsection*{Robust findings, subject to review}
+
+\begin{enumerate}
+\item Temporal \(L^s_tL^{3,\infty}_x\) control with any \(s>5\), combined
+with the energy class, excludes every fixed-energy shrinking carrier at a
+first blow-up time.
+\item The number five is the exact endpoint of this interpolation route.
+\item The exact \(q=4\) ledger supplies every \(s<11/2\), so it lies
+strictly beyond the barrier.
+\item The explicit pair \((p,q)=(96/31,256/53)\) gives the positive spatial
+power \(1/29\) and terminal window power \(72/29\).
+\item The retained partial/tight energy-efficient exact \(q=4\) cell is
+empty.
+\item The optimised terminal energy measure has lower local dimension at
+least \(1/9\) and concentration dimension at least \(3/5\).
+\end{enumerate}
+
+\subsection*{Things still to prove}
+
+\begin{enumerate}
+\item Exclude or rigidify the diffuse energy-efficient selected layer.
+\item Derive an interface, enstrophy, or pressure-transport charge from
+fragmentation into many subcarrier components.
+\item Control the divergent-normalised-energy branch.
+\item Treat other Type-II clocks that fail every temporal
+\(L^sL^{3,\infty}\) condition with \(s>5\), especially the endpoint \(s=5\).
+\item Prove regularity or construct admissible breakdown for all Clay data.
+\end{enumerate}
+
+\begin{conjecture}[Diffuse-layer fragmentation cost]
+Suppose an energy-efficient amplitude layer has fixed energy, total volume
+comparable to \(R_j^3\), and vanishing energy fraction in every
+radius-\(R_j\) ball.  Then either a recentered sublayer has a fixed local
+energy floor, or the layer pays a scale-zero nonsummable perimeter,
+enstrophy, or pressure-transport charge along an infinite first-record
+sequence.
+\end{conjecture}
+
+No part of this conjecture is proved here.  This round establishes no Clay
+alternative A--D.
+
+\begin{thebibliography}{9}
+
+\bibitem{LS18}
+T.~M. Leslie and R. Shvydkoy,
+\emph{The Energy Measure for the Euler and Navier--Stokes Equations},
+Archive for Rational Mechanics and Analysis \textbf{230} (2018),
+459--492.
+\href{https://doi.org/10.1007/s00205-018-1250-4}
+{doi:10.1007/s00205-018-1250-4}.
+Accepted source: arXiv:1705.04420v4.
+
+\end{thebibliography}
+
+\end{document}

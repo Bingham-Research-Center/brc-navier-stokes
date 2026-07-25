@@ -118,13 +118,13 @@ The [entrance theorem](experiments/type-ii-inviscid-carrier-entrance.md) maps
 [defect theorem](experiments/type-ii-carrier-defect-compactness.md) removes
 fixed-interval normalised viscous dissipation; the
 [carrier clock](experiments/type-ii-compact-carrier-clock.md) excludes an infinite
-nonzero \(L^2\)-precompact subsequence of the exact fast \(q=4\) survivor. The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
-makes its selected layer diffuse or fixed-energy ultraviolet above
-\(K_j/R_j\), \(K_j\to\infty\). The [multirecord import theorem](experiments/type-ii-multirecord-spatial-import.md) forces fixed
-signed energy import into every retained future carrier ball from a linear
-number of original-grid records earlier. Disjoint event totals diverge, but
-the direct finite flux action carries a summable \(R_j\) weight. The live
-gate is scale-free import non-reuse; diffuse and divergent-energy remain.
+nonzero \(L^2\)-precompact subsequence of the exact fast \(q=4\) survivor. The
+[terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
+splits its selected layer into diffuse or retained ultraviolet cells. The
+[temporal five-power theorem](experiments/type-ii-temporal-five-barrier.md)
+uses the exact clock and a peer-reviewed energy-dimension bound to exclude
+every retained partial/tight energy-efficient \(q=4\) cell. Diffuse
+fragmentation, slower clocks, and divergent-normalised energy remain.
 
 ### Breakdown side
 

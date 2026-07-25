@@ -192,14 +192,14 @@ radius-\(R_j\) carrier therefore needs \(cR_j^{5/2}\) to shrink through a
 fixed scale block. The exact \(q_j=4\) gaps are \(o(R_j^{5/2})\), so that
 representative has no infinite nonzero \(L^2\)-precompact carrier subsequence.
 The [terminal infrared theorem](experiments/type-ii-terminal-infrared-evacuation.md)
-makes the layer diffuse or fixed-energy ultraviolet above \(K_j/R_j\), \(K_j\to\infty\); the latter forces \(K_j^2/R_j^2\) enstrophy,
-zero terminal trace, and positive trace defect. The [multirecord import
-theorem](experiments/type-ii-multirecord-spatial-import.md) makes each future
-carrier ball empty a linear number of original-grid records earlier, forcing
-fixed signed import. Disjoint windows give divergent event totals, but finite \(L^1\) flux action controls only \(R_j|\mathsf X_j|\).
-Separate self-similar results retain \(2/5\le\gamma<1/2\) under their hypotheses.
-R3C now needs a scale-free import budget or finite crossing multiplicity;
-diffuse and divergent-energy cells remain open.
+splits the exact \(q=4\) layer into diffuse or retained ultraviolet cells;
+the latter also forces multirecord signed import. The
+[temporal five-power theorem](experiments/type-ii-temporal-five-barrier.md)
+now converts the clock into \(L^s_tL^{3,\infty}_x\), \(s<11/2\), and
+interpolates past a peer-reviewed positive energy-dimension threshold.
+Fixed-energy shrinking balls would be terminal atoms, so every retained
+partial/tight energy-efficient \(q=4\) cell is empty; separate self-similar bounds retain \(2/5\le\gamma<1/2\).
+R3C now targets diffuse fragmentation; divergent-energy and slower-clock cells remain open.
 
 ### Frozen R3B boundary
 
