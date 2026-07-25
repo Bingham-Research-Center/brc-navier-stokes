@@ -184,19 +184,19 @@ reverses the defect into a weak-zero field \(v\), strong-trace drift \(c\),
 and positive initial energy measure. The
 [boundary heat-impulse theorem](experiments/type-ii-boundary-heat-impulse.md)
 removes the linear datum and forces half- and quarter-order \(MY\) impulses
-and failure of every finite temporal \(L^{2,q}\) secondary index. The
-[diagonal Gaussian-flux theorem](experiments/type-ii-diagonal-heat-flux-recycling.md)
-then makes its pressure-free work current-time:
+and failure of finite temporal \(L^{2,q}\) secondary indices. The
+[radial triad-spectrum theorem](experiments/type-ii-radial-triad-spectrum.md)
+makes its diagonal work a spectral characteristic:
 \[
-\frac12\|v(\tau)\|_2^2
-=\int_0^\tau-\langle\mathbb P((U\cdot\nabla)v)(s),
-e^{2\nu(\tau-s)\Delta}v(s)\rangle\,ds.
+\Pi=(\partial_s-\partial_r)\mathcal E,\qquad
+\mu_s=\partial_s\varepsilon_s+\lambda\varepsilon_s,\qquad\varepsilon_s\ge0.
 \]
-Nested detectors recycle exactly, while disjoint heat-age bands have an
-\(\ell^1\) budget \(\int MY^2\), which q4 forces to diverge. A coherent
-scalar kernel meets every resulting constraint and reuses arbitrarily much
-early work. The live gate is an actual-quadratic triad restriction or finite
-same-trajectory charge, not abstract Gaussian orthogonality.
+Complete monotonicity excludes the former Laguerre survivor, but a positive
+moving-shell model restores every q4 scalar law and asymptotically total
+early reuse. Exact Pell triads have positive adjacent-shell flux at every
+heat age and converge to the shell model's \(xe^{-x}\) profile. The live
+gate is temporal compatibility of this transfer with one evolving positive
+energy spectrum, not an instantaneous sign, moment, or pressure law.
 
 All current q4 gap weights remain summable; divergent normalised energy,
 slower clocks, and \(2/5\le\gamma<1/2\) self-similar schedules remain open.

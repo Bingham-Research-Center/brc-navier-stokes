@@ -649,3 +649,9 @@ dyadic heat multipliers, convolution formula, nonzero flux, positive band
 pairing, and all packet radius powers.  It does not certify the
 infinite-dimensional local well-posedness argument or any same-trajectory
 claim.
+
+**Subsequent certificate extension.**  The
+[radial triad-spectrum reduction](type-ii-radial-triad-spectrum.md)
+uses the same executable module to verify an infinite Pell family of
+exact adjacent-shell triads.  That extension preserves this theorem and
+does not turn the varying packet family into one trajectory.

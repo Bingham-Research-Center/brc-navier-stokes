@@ -1,0 +1,723 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb R}
+\newcommand{\T}{\mathbb T}
+\newcommand{\Pp}{\mathbb P}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\ip}[2]{\left\langle #1,#2\right\rangle}
+\newcommand{\Var}{\operatorname{Var}}
+\setlength{\emergencystretch}{2em}
+
+\title{Radial Triad Spectrum and Dynamic Shell Descent\\
+at the q4 Nonlinear Entrance}
+\author{John Lawson and Codex}
+\date{25 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report continues the conditional energy-efficient exact q4 branch.
+The preceding round expressed half of the entrance energy as a diagonal
+Gaussian nonlinear flux.  Here we identify its exact signed radial
+spectrum and couple it to the positive radial kinetic-energy spectrum.
+If \(\mathcal E(r,s)=\frac12\norm{e^{\nu r\Delta}v(s)}_2^2\), then
+\[
+ \Pi_r(s)=(\partial_s-\partial_r)\mathcal E(r,s).
+\]
+Thus every proposed flux must reconstruct to a function completely
+monotone in heat age.  This excludes the preceding Laguerre scalar
+survivor: its reconstructed energy has a sign-changing generalized
+Laguerre inverse density.
+
+The positivity correction does not close q4.  We construct a moving
+positive spectral shell whose exact characteristic flux has profile
+\(xe^{-x}\), satisfies the energy, diagonal, and recycling identities,
+matches the q4 power--log \(M^2\) and enstrophy tails, saturates the
+divergent \(MY^2\) variation budget, and places asymptotically all work
+in shared early history.  An exact Pell family of divergence-free torus
+triads transfers energy between adjacent radial shells with positive
+heat flux for every heat age; after parabolic rescaling its profile
+converges to \((\sqrt3/8)xe^{-x}\).
+
+The remaining gate is consequently temporal rather than instantaneous:
+the positive shell motion and adjacent-shell quadratic transfer must be
+identified along one Navier--Stokes trajectory.  The shell is not a
+velocity field and the Pell family is not one evolution.  All results
+are conditional repository deductions pending external review.  No Clay
+alternative is proved.
+\end{abstract}
+
+\section{Conditional entrance and radial measures}
+
+Let \(v,c,U=v+c\) be the conditional reversed full-defect entrance from
+the preceding rounds, and set
+\begin{equation}
+\label{eq:F}
+ F(s):=\Pp((U\cdot\nabla)v)(s).
+\end{equation}
+It obeys
+\begin{equation}
+\label{eq:evolution}
+ \partial_s v-\nu\Delta v+F=0,
+ \qquad \nabla\cdot U=\nabla\cdot v=0,
+\end{equation}
+\begin{equation}
+\label{eq:energy}
+ \norm{v(s)}_2^2+
+ 2\nu\int_0^s\norm{\nabla v(a)}_2^2\,da=d>0,
+\end{equation}
+and, for each fixed \(r>0\),
+\begin{equation}
+\label{eq:heat-boundary}
+ e^{\nu r\Delta}v(s)\longrightarrow0
+ \quad\hbox{strongly in \(L^2\) as \(s\downarrow0\)}.
+\end{equation}
+The diagonal flux is
+\begin{equation}
+\label{eq:Pi}
+ \Pi_r(s):=-\ip{F(s)}{e^{2\nu r\Delta}v(s)}.
+\end{equation}
+
+Use the unitary Fourier transform
+\[
+ \widehat f(\xi)
+ =(2\pi)^{-3/2}\int_{\R^3}e^{-ix\cdot\xi}f(x)\,dx
+\]
+and push forward by
+\begin{equation}
+\label{eq:lambda}
+ \lambda=2\nu|\xi|^2.
+\end{equation}
+Define a positive measure \(\varepsilon_s\) and a signed measure
+\(\mu_s\) by
+\begin{align}
+\label{eq:epsilon}
+ \varepsilon_s(B)
+ &:=
+ \frac12\int_{\{2\nu|\xi|^2\in B\}}
+ |\widehat v(s,\xi)|^2\,d\xi,\\
+\label{eq:mu}
+ \mu_s(B)
+ &:=
+ -\operatorname{Re}
+ \int_{\{2\nu|\xi|^2\in B\}}
+ \widehat F(s,\xi)\cdot
+ \overline{\widehat v(s,\xi)}\,d\xi.
+\end{align}
+
+\begin{theorem}[Exact radial spectra]
+\label{thm:radial}
+For
+\begin{equation}
+\label{eq:heat-energy}
+ \mathcal E(r,s):=
+ \frac12\norm{e^{\nu r\Delta}v(s)}_2^2,
+\end{equation}
+one has
+\begin{align}
+\label{eq:E-Laplace}
+ \mathcal E(r,s)
+ &=\int_0^\infty e^{-r\lambda}\,d\varepsilon_s(\lambda),\\
+\label{eq:Pi-Laplace}
+ \Pi_r(s)
+ &=\int_0^\infty e^{-r\lambda}\,d\mu_s(\lambda).
+\end{align}
+If the Fourier pairings have densities, then
+\begin{equation}
+\label{eq:radial-density}
+\begin{aligned}
+ \frac{d\mu_s}{d\lambda}(\lambda)
+ =
+ -\frac1{4\nu}\sqrt{\frac{\lambda}{2\nu}}\,
+ \operatorname{Re}\int_{\mathbb S^2}
+ &\widehat F
+ \left(s,\sqrt{\frac{\lambda}{2\nu}}\omega\right)\\
+ &\cdot
+ \overline{\widehat v
+ \left(s,\sqrt{\frac{\lambda}{2\nu}}\omega\right)}
+ \,d\omega .
+\end{aligned}
+\end{equation}
+Moreover,
+\begin{equation}
+\label{eq:mass-zero}
+ \mu_s([0,\infty))=0.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Plancherel, self-adjointness, and the heat semigroup law give
+\[
+ \mathcal E(r,s)
+ =
+ \frac12\int_{\R^3}
+ e^{-2\nu r|\xi|^2}|\widehat v(s,\xi)|^2\,d\xi,
+\]
+which is \eqref{eq:E-Laplace}.  The same calculation applied to
+\eqref{eq:Pi} gives \eqref{eq:Pi-Laplace}.  In polar coordinates,
+\[
+ |\xi|^2\,d|\xi|
+ =
+ \frac1{4\nu}\sqrt{\frac{\lambda}{2\nu}}\,d\lambda,
+\]
+proving \eqref{eq:radial-density}.  Finally,
+\[
+ \mu_s([0,\infty))
+ =-\ip{F(s)}{v(s)}
+ =-\int_{\R^3}(U\cdot\nabla)v\cdot v\,dx=0
+\]
+by incompressibility.
+\end{proof}
+
+\begin{proposition}[Quadratic triad density]
+\label{prop:triad-density}
+Let \(c_0=(2\pi)^{-3/2}\).  Before radial pushforward, the signed density
+in \eqref{eq:mu} is
+\begin{equation}
+\label{eq:triad-density}
+\begin{aligned}
+ -\operatorname{Re}
+ \bigl(\widehat F(s,\xi)\cdot\overline{\widehat v(s,\xi)}\bigr)
+ =
+ c_0\operatorname{Im}\int_{\R^3}
+ &\bigl((\xi-\eta)\cdot\widehat U(s,\eta)\bigr)\\
+ &\times
+ \bigl(\widehat v(s,\xi-\eta)\cdot
+ \overline{\widehat v(s,\xi)}\bigr)\,d\eta .
+\end{aligned}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Fourier transformation gives
+\[
+ \widehat F_i(\xi)
+ =
+ ic_0P_{i\ell}(\xi)
+ \int_{\R^3}
+ (\xi-\eta)_j\widehat U_j(\eta)
+ \widehat v_\ell(\xi-\eta)\,d\eta.
+\]
+The Leray projection disappears when paired with
+\(\overline{\widehat v(\xi)}\), since the latter is perpendicular to
+\(\xi\).  The identity
+\(-\operatorname{Re}(iz)=\operatorname{Im}z\) completes the proof.
+\end{proof}
+
+\begin{remark}
+Pressure supplies no radial sign.  The split \(U=v+c\) splits \(\mu_s\)
+into self and drift measures, each of total mass zero.  Strong \(L^2\)
+convergence of \(c\) alone gives no clock-relative control of higher
+radial moments.
+\end{remark}
+
+\section{The spectral characteristic law}
+
+\begin{theorem}[Positive heat energy along characteristics]
+\label{thm:characteristic}
+For every positive smooth time,
+\begin{equation}
+\label{eq:characteristic}
+ \boxed{
+ \Pi_r(s)=(\partial_s-\partial_r)\mathcal E(r,s).
+ }
+\end{equation}
+Equivalently, in radial spectral distributions,
+\begin{equation}
+\label{eq:measure-evolution}
+ \boxed{
+ \mu_s=\partial_s\varepsilon_s+\lambda\varepsilon_s.
+ }
+\end{equation}
+For every integer \(k\ge0\),
+\begin{equation}
+\label{eq:CM}
+ \boxed{
+ (-1)^k\partial_r^k\mathcal E(r,s)
+ =
+ \int_0^\infty
+ \lambda^ke^{-r\lambda}\,d\varepsilon_s(\lambda)
+ \ge0.
+ }
+\end{equation}
+Finally, the boundary condition \eqref{eq:heat-boundary} gives
+\begin{equation}
+\label{eq:reconstruction}
+ \boxed{
+ \mathcal E(r,s)
+ =
+ \int_0^s\Pi_{r+s-a}(a)\,da.
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Differentiating \eqref{eq:heat-energy} in \(r\) gives
+\begin{equation}
+\label{eq:E-r}
+ \partial_r\mathcal E(r,s)
+ =-\nu\norm{\nabla e^{\nu r\Delta}v(s)}_2^2.
+\end{equation}
+Using \eqref{eq:evolution},
+\begin{equation}
+\label{eq:E-s}
+\begin{aligned}
+ \partial_s\mathcal E(r,s)
+ &=
+ \ip{\nu\Delta v-F}{e^{2\nu r\Delta}v}\\
+ &=
+ -\nu\norm{\nabla e^{\nu r\Delta}v}_2^2+\Pi_r(s).
+\end{aligned}
+\end{equation}
+Subtracting \eqref{eq:E-r} from \eqref{eq:E-s} proves
+\eqref{eq:characteristic}; inverse Laplace transformation proves
+\eqref{eq:measure-evolution}.  Repeated differentiation of
+\eqref{eq:E-Laplace} proves \eqref{eq:CM}.
+
+Follow the characteristic \((r+s-a,a)\), \(0\le a\le s\).  Equation
+\eqref{eq:characteristic} gives
+\[
+ \frac d{da}\mathcal E(r+s-a,a)=\Pi_{r+s-a}(a).
+\]
+Its lower endpoint vanishes by \eqref{eq:heat-boundary}.  Integration
+proves \eqref{eq:reconstruction}.
+\end{proof}
+
+\begin{corollary}[Flux admissibility audit]
+\label{cor:audit}
+Every proposed diagonal flux must reconstruct through
+\eqref{eq:reconstruction} to a completely monotone heat-age function.
+A signed Laplace representation of the flux and the cancellation
+\(\Pi_0=0\) are not sufficient.
+\end{corollary}
+
+\section{The Laguerre survivor is not positive energy}
+
+Freeze the limiting energy at \(d\) and define
+\begin{equation}
+\label{eq:old-Pi}
+ \widetilde\Pi_n(r,s)
+ :=
+ \frac{(n+1)d}{2}\frac{r^n}{(r+s)^{n+1}},
+ \qquad n\ge1.
+\end{equation}
+
+\begin{proposition}[Sign-changing reconstructed spectrum]
+\label{prop:laguerre-fails}
+The characteristic reconstruction of \eqref{eq:old-Pi} is
+\begin{equation}
+\label{eq:old-E}
+ \widetilde{\mathcal E}_n(r,s)
+ =
+ \frac d2
+ \left[
+ 1-\left(\frac r{r+s}\right)^{n+1}
+ \right].
+\end{equation}
+Its inverse Laplace density is
+\begin{equation}
+\label{eq:old-density}
+ \frac d2\,s e^{-s\lambda}L_n^{(1)}(s\lambda),
+\end{equation}
+which changes sign.  Hence \eqref{eq:old-E} is not completely monotone.
+\end{proposition}
+
+\begin{proof}
+Along the characteristic, the two arguments of
+\(\widetilde\Pi_n\) sum to \(r+s\), so
+\[
+\begin{aligned}
+ \int_0^s\widetilde\Pi_n(r+s-a,a)\,da
+ &=
+ \frac{(n+1)d}{2(r+s)^{n+1}}
+ \int_0^s(r+s-a)^n\,da\\
+ &=\widetilde{\mathcal E}_n(r,s).
+\end{aligned}
+\]
+Expanding the bracket yields
+\[
+ \widetilde{\mathcal E}_n(r,s)
+ =
+ \frac d2\sum_{k=1}^{n+1}
+ (-1)^{k+1}\binom{n+1}{k}
+ \frac{s^k}{(r+s)^k}.
+\]
+Since
+\[
+ (r+s)^{-k}
+ =
+ \frac1{(k-1)!}\int_0^\infty
+ \lambda^{k-1}e^{-(r+s)\lambda}\,d\lambda,
+\]
+the inverse density is
+\[
+ \frac d2\,s e^{-s\lambda}
+ \sum_{j=0}^n(-1)^j
+ \binom{n+1}{j+1}\frac{(s\lambda)^j}{j!},
+\]
+which is \eqref{eq:old-density}.  The generalized Laguerre polynomial
+\(L_n^{(1)}\) has \(n\) positive simple roots and changes sign.
+Bernstein's theorem therefore rules out complete monotonicity.
+\end{proof}
+
+\begin{remark}
+The full preceding survivor multiplies the same core by a slowly varying
+factor \(E_\sharp(r+s)\).  Under \(r=sx\), that factor converges with
+rescaled derivatives to \(d\), with power--log error \(O(s^{2/11})\).
+The strict derivative-sign failure persists at small \(s\).  The old
+kernel remains a countermodel to the scalar estimates of its round, but
+not to positive kinetic spectral energy.
+\end{remark}
+
+\section{A positive q4 moving-shell survivor}
+
+Put
+\begin{equation}
+\label{eq:L}
+ \ell(s):=\log(e/s),
+ \qquad
+ L(s):=s^{-9/11}\ell(s)^{2/11},
+\end{equation}
+\begin{equation}
+\label{eq:A}
+ A(s):=\frac d2
+ \exp\left(-\int_0^sL(a)\,da\right),
+\end{equation}
+and
+\begin{equation}
+\label{eq:shell-E}
+ \mathcal E_\circ(r,s):=A(s)e^{-rL(s)}.
+\end{equation}
+Define
+\begin{equation}
+\label{eq:a}
+ a(s):=-\frac{sL'(s)}{L(s)}
+ =\frac9{11}+\frac{2}{11\ell(s)}.
+\end{equation}
+
+\begin{theorem}[Positive-energy q4 reuse ledger]
+\label{thm:shell}
+The shell energy \eqref{eq:shell-E} is completely monotone, vanishes at
+every fixed positive heat age as \(s\downarrow0\), and has characteristic
+flux
+\begin{equation}
+\label{eq:shell-Pi}
+ \boxed{
+ \Pi^\circ_r(s)
+ =
+ -A(s)rL'(s)e^{-rL(s)}
+ =
+ \frac{A(s)a(s)}s
+ \bigl(rL(s)\bigr)e^{-rL(s)}>0.
+ }
+\end{equation}
+It satisfies
+\begin{equation}
+\label{eq:shell-energy}
+ A(s)+\int_0^sA(a)L(a)\,da=\frac d2.
+\end{equation}
+With
+\begin{equation}
+\label{eq:shell-MY}
+ Y_\circ(s)^2:=\frac{A(s)L(s)}{\nu},
+ \qquad
+ M_\circ(s):=\frac1{sL(s)},
+\end{equation}
+one has
+\begin{align}
+\label{eq:M-tail}
+ \int_0^hM_\circ^2
+ &\asymp h^{7/11}\ell(h)^{-4/11},\\
+\label{eq:Y-tail}
+ \int_0^hY_\circ^2
+ &\asymp h^{2/11}\ell(h)^{2/11},\\
+\label{eq:MY2}
+ M_\circ(s)Y_\circ(s)^2
+ &=\frac{A(s)}{\nu s}.
+\end{align}
+Furthermore,
+\begin{align}
+\label{eq:shell-bound}
+ |\Pi^\circ_r(s)|
+ &\lesssim r^{-1/2}M_\circ(s)Y_\circ(s),\\
+\label{eq:shell-var}
+ \Var_{r>0}\Pi^\circ_r(s)
+ &=\frac{2A(s)a(s)}{e\,s}
+ \asymp M_\circ(s)Y_\circ(s)^2.
+\end{align}
+It obeys the exact diagonal and recycling identities, and for every fixed
+\(0<q<1\),
+\begin{equation}
+\label{eq:early}
+ \boxed{
+ \frac{\displaystyle
+ \int_0^{q\tau}\Pi^\circ_{\tau-s}(s)\,ds}
+ {\displaystyle
+ \int_0^\tau\Pi^\circ_{\tau-s}(s)\,ds}
+ \longrightarrow1
+ \quad(\tau\downarrow0).
+ }
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:shell-E} is the Laplace transform of the positive
+measure \(A(s)\delta_{L(s)}\), so it is completely monotone.  Since
+\(L(s)\to\infty\), its fixed positive heat-age limit is zero.  Direct
+differentiation gives
+\[
+ A'(s)=-L(s)A(s)
+\]
+and \eqref{eq:shell-Pi}; integration gives
+\eqref{eq:shell-energy}.  The characteristic identity then supplies
+the diagonal and recycling laws.
+
+The power--log integral
+\[
+ \int_0^sL(a)\,da
+ \asymp s^{2/11}\ell(s)^{2/11}
+\]
+shows \(A(s)\to d/2\).  Equations \eqref{eq:L} and
+\eqref{eq:shell-MY} give
+\[
+ M_\circ=s^{-2/11}\ell^{-2/11},
+ \qquad
+ Y_\circ^2\asymp s^{-9/11}\ell^{2/11},
+\]
+and one-sided power--log integration proves
+\eqref{eq:M-tail}--\eqref{eq:MY2}.
+
+Put \(x=rL(s)\).  Then
+\[
+ \Pi^\circ_r(s)=\frac{A(s)a(s)}sxe^{-x}
+\]
+and
+\[
+ r^{-1/2}M_\circ Y_\circ
+ =
+ \sqrt{\frac{A(s)}{\nu}}\frac{x^{-1/2}}s.
+\]
+Boundedness of \(x^{3/2}e^{-x}\) proves
+\eqref{eq:shell-bound}.  The profile \(xe^{-x}\) rises from zero to
+\(e^{-1}\) and returns to zero, proving \eqref{eq:shell-var}.
+
+The denominator in \eqref{eq:early} equals \(A(\tau)\to d/2\).
+On \(q\tau\le s\le\tau\), use \(xe^{-x}\le x\), \(s\asymp\tau\), and
+monotonicity of \(L\):
+\[
+ \int_{q\tau}^{\tau}\Pi^\circ_{\tau-s}(s)\,ds
+ \lesssim_q\tau L(q\tau)
+ \lesssim_q
+ \tau^{2/11}\ell(\tau)^{2/11}\longrightarrow0.
+\]
+This proves \eqref{eq:early}.  The dominant source time satisfies
+\(\tau L(s_\tau)\asymp1\), hence \(s_\tau/\tau\to0\).
+\end{proof}
+
+\begin{remark}
+The moving delta shell is a legitimate ideal positive energy spectrum.
+Its time derivative contains a derivative of a delta, so its transfer
+measure is distributional in \(\lambda\).  Smooth shell mollifications
+retain the asymptotic conclusions.  No quadratic velocity or NSE
+evolution is asserted.
+\end{remark}
+
+\section{Exact adjacent-shell Pell triads}
+
+Let \(n,m\) be positive integers solving
+\begin{equation}
+\label{eq:Pell}
+ n^2-3m^2=1.
+\end{equation}
+On \(\T^3\), define
+\begin{equation}
+\label{eq:W}
+\begin{aligned}
+ W_{n,m}(x,y,z)
+ :=
+ \bigl(
+ &-m\sin(nx+my),\,
+ n\sin(nx+my),\\
+ &\sin(2my)+\sin(nx-my)
+ \bigr).
+\end{aligned}
+\end{equation}
+
+\begin{theorem}[Positive adjacent-shell quadratic heat flux]
+\label{thm:Pell}
+The field \(W_{n,m}\) is real, smooth, mean zero, and divergence-free.
+For every radial Fourier multiplier \(M\), whose shell values are
+\(\eta_j\),
+\begin{equation}
+\label{eq:Pell-flux}
+ \boxed{
+ \frac1{|\T^3|}\int_{\T^3}
+ W_{n,m}\otimes W_{n,m}:\nabla(MW_{n,m})\,dx
+ =
+ \frac{nm}{2}
+ \bigl(\eta_{4m^2}-\eta_{4m^2+1}\bigr).
+ }
+\end{equation}
+For \(M=e^{2\nu r\Delta}\),
+\begin{equation}
+\label{eq:Pell-heat}
+ \boxed{
+ Q_{n,m}(r)
+ =
+ \frac{nm}{2}e^{-8\nu m^2r}
+ \bigl(1-e^{-2\nu r}\bigr)>0
+ \quad(r>0).
+ }
+\end{equation}
+Along the Pell sequence \(n/m\to\sqrt3\),
+\begin{equation}
+\label{eq:Pell-limit}
+ \boxed{
+ Q_{n,m}\left(\frac{x}{8\nu m^2}\right)
+ \longrightarrow\frac{\sqrt3}{8}xe^{-x}
+ }
+\end{equation}
+locally uniformly for \(x\ge0\).
+\end{theorem}
+
+\begin{proof}
+The Fourier waves are
+\[
+ \pm(0,-2m,0),\qquad
+ \pm(n,m,0),\qquad
+ \pm(-n,m,0).
+\]
+Their positive-wave coefficients are \(i/2\) times
+\[
+ (0,0,1),\qquad(m,-n,0),\qquad(0,0,1),
+\]
+respectively.  Each coefficient is perpendicular to its wave.  The
+three positive representatives sum to zero, and their squared radii are
+\[
+ 4m^2,\qquad n^2+m^2=4m^2+1,
+\]
+using \eqref{eq:Pell}.
+
+Exact enumeration in
+\[
+ \sum_{k+p+q=0}
+ \widehat W_\alpha(k)\widehat W_\beta(p)
+ (iq_\beta)\eta_{|q|^2}\widehat W_\alpha(q)
+\]
+gives the two shell coefficients \(nm/2\) and \(-nm/2\).  This proves
+\eqref{eq:Pell-flux}; the repository's exact-rational certificate
+independently repeats the enumeration.  Substitution of
+\(\eta_j=e^{-2\nu rj}\) proves \eqref{eq:Pell-heat}.
+
+For \(r=x/(8\nu m^2)\),
+\[
+ Q_{n,m}(r)
+ =
+ \frac{nm}{2}e^{-x}
+ \left(1-e^{-x/(4m^2)}\right).
+\]
+Since \(n/m\to\sqrt3\), the last display converges locally uniformly to
+\((\sqrt3/8)xe^{-x}\).
+\end{proof}
+
+\begin{remark}
+The signed nonlinear spectrum has two adjacent atoms, zero total mass,
+and a nonzero first radial moment.  Thus three-dimensional
+incompressibility gives neither a first-moment cancellation nor a
+heat-age sign change.  Standard solenoidal cutoff localizes each fixed
+Pell field to \(\R^3\) on bounded heat-age ranges, but does not make the
+sequence one trajectory.
+\end{remark}
+
+\section{Round disposition}
+
+\subsection*{Robust findings, subject to external review}
+
+\begin{enumerate}
+ \item The actual Gaussian flux has the signed radial spectrum
+ \eqref{eq:mu} and explicit quadratic density
+ \eqref{eq:triad-density}.
+ \item It is the characteristic derivative of a positive completely
+ monotone heat-energy spectrum.
+ \item The previous Laguerre survivor fails this positive-energy audit.
+ \item The moving-shell model restores the q4 power--log tails, energy
+ and recycling identities, Gaussian bounds, divergent variation budget,
+ and asymptotically complete early reuse.
+ \item The Pell family gives exact adjacent-shell incompressible
+ self-interactions with positive flux at every heat age.
+ \item Its rescaled quadratic profile converges to the shell survivor's
+ \(xe^{-x}\) shape.
+\end{enumerate}
+
+\subsection*{Closed shortcuts}
+
+None of complete monotonicity alone, total nonlinear spectral mass,
+a universal first-moment cancellation, instantaneous self-interaction
+sign, pressure projection, incompressibility, or adjacent-shell
+separation closes q4.  The original Laguerre kernel is closed, but the
+positive moving shell replaces it.
+
+\subsection*{Open obligations}
+
+\begin{enumerate}
+ \item Derive a shell-speed law for a fixed quantile of
+ \(\varepsilon_s\) from \eqref{eq:triad-density}.
+ \item Prove that repeated positive adjacent-shell transfer carries a
+ finite same-trajectory genealogy cost that the moving-shell survivor
+ violates.
+ \item Quantify smooth shell thickness instead of the delta-shell
+ idealisation.
+ \item Exclude coherent steering by the strong-trace drift.
+ \item Couple the radial shell descent to the Hausdorff-one-null boundary
+ energy measure and spatial capacity.
+ \item Submit the conditional chain to independent external review.
+ \item Treat slower clocks, divergent normalised energy, R3B, and the
+ other Clay alternatives separately.
+\end{enumerate}
+
+\begin{conjecture}[No dynamically coherent q4 shell descent]
+\label{conj:shell}
+No one same-trajectory full-defect q4 entrance with finite unweighted
+dissipation can simultaneously have:
+\begin{enumerate}
+ \item positive spectral energy concentrated near
+ \(L(s)=s^{-9/11}\ell(s)^{2/11}\);
+ \item nonlinear transfer asymptotic to positive adjacent-shell Pell
+ transfers at that moving shell; and
+ \item a fixed fraction of every terminal energy quantum supplied from
+ source times \(s=o(\tau)\).
+\end{enumerate}
+\end{conjecture}
+
+\begin{remark}
+Conjecture~\ref{conj:shell} is not proved.  The shell model is not a
+velocity field and the Pell triads are snapshots.  No q4 closure,
+regularity theorem, breakdown theorem, energy-equality theorem, or Clay
+A--D resolution is asserted.
+\end{remark}
+
+\section*{Conclusion}
+
+The extra positive-energy structure invalidates the previous Laguerre
+countermodel but does not produce a contradiction.  A sharper moving
+shell meets the complete-monotonicity and q4 requirements, and exact
+quadratic triads reproduce its adjacent-shell heat shape.  The unknown
+has therefore moved from radial algebra to dynamic compatibility:
+whether one finite-energy NSE trajectory can repeatedly make those
+transfers while its positive spectrum descends from infinity.  The Clay
+problem remains unsolved.
+
+\end{document}

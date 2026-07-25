@@ -4588,6 +4588,47 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-TYPE-II-RADIAL-TRIAD-SPECTRUM-001",
+      "title": "The q4 flux is a characteristic derivative of positive spectral energy",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001",
+        "CLM-PARTIAL-001"
+      ],
+      "hypothesis": "The actual radial quadratic spectrum and positivity of heat-smoothed kinetic energy may forbid coherent nested reuse that survives scalar Gaussian-band estimates.",
+      "invariants": [
+        "Radial pushforward under lambda equals two nu times squared frequency represents heat energy by a positive measure and diagonal nonlinear flux by a signed measure",
+        "The signed radial density has an explicit quadratic Fourier-triad formula and total mass zero by transport cancellation",
+        "Heat-smoothed kinetic energy is completely monotone in heat age",
+        "The diagonal flux equals the time derivative minus the heat-age derivative of heat energy, and its signed measure equals the time derivative of spectral energy plus lambda times spectral energy",
+        "The weak-zero heat boundary reconstructs the complete heat-energy surface by integrating flux along terminal characteristics",
+        "The former coherent Laguerre flux reconstructs a generalized-Laguerre energy density that changes sign and therefore is not a kinetic-energy spectrum",
+        "A positive moving delta-shell energy spectrum satisfies the exact energy, characteristic, diagonal, and recycling identities",
+        "Choosing shell frequency s to minus nine elevenths times the logarithm to two elevenths reproduces the q4 M-squared and dissipation tails and the divergent M-weighted dissipation",
+        "The moving-shell flux obeys the pointwise heat bound and has heat-age variation comparable to the divergent M-weighted dissipation density",
+        "For every fixed terminal fraction, the moving-shell survivor places asymptotically all diagonal work in the shared early-history interval",
+        "Every positive solution of n squared minus three m squared equals one gives an explicit divergence-free torus triad transferring between the adjacent radial shells four m squared and four m squared plus one",
+        "The Pell triad heat flux is positive at every positive heat age and its parabolically rescaled profile converges to square-root-three over eight times x exp minus x",
+        "The executable certificate checks the Pell recurrence, modes, shells, exact convolution, transfer moments, positivity, and limiting coefficient",
+        "The shell survivor is not a velocity field and the Pell triads are snapshots rather than one Navier-Stokes trajectory",
+        "No dynamic shell-transfer exclusion, q4 closure, energy equality, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Push kinetic and nonlinear Fourier pairings to radial heat frequency, derive the spectral characteristic law and complete monotonicity, audit the old Laguerre kernel by inverse Laplace transform, construct an exact positive q4 moving-shell survivor, and enumerate an adjacent-shell Pell family whose quadratic heat profile converges to the survivor kernel.",
+      "certificate": "A self-contained analytic proof and formal LaTeX round report include the radial density, quadratic triad formula, characteristic identity, complete-monotonicity audit, positive shell energy law, q4 power-log arithmetic, early-reuse limit, Pell field and flux theorem, conjecture, and open obligations. The extended exact-arithmetic module and fourteen unit tests certify the finite Pell claims. External review is pending.",
+      "success_criterion": "Determine whether positive spectral energy or instantaneous quadratic triad structure excludes coherent q4 reuse, and if not isolate the missing one-trajectory shell-speed or genealogy theorem.",
+      "failure_interpretation": "The radial pushforward or Jacobian is wrong, the characteristic sign is incorrect, the Laguerre inverse density does not defeat complete monotonicity, the shell model misses an energy or q4 exponent, the early-reuse estimate fails, the Pell modes or convolution formula are incorrect, the limiting profile is misstated, or the epistemic scope is overstated.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/type-ii-radial-triad-spectrum.md",
+        "lab/navier_lab/type_ii_triad_packet.py",
+        "lab/tests/test_type_ii_triad_packet.py",
+        "dossier/rounds/2026-07-25-type-ii-radial-triad-spectrum.tex"
+      ],
+      "last_run": "2026-07-25"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

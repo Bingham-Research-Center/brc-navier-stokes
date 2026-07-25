@@ -882,3 +882,15 @@ record block while retaining finite unweighted dissipation.
 
 The conjecture is not proved.  The scalar kernel does not realise the
 quadratic Navier--Stokes relation.  No Clay alternative is proved.
+
+## Downstream disposition
+
+The subsequent
+[radial triad-spectrum reduction](type-ii-radial-triad-spectrum.md)
+adds the positive heat-energy constraint
+\(\Pi=(\partial_s-\partial_r)\mathcal E\).  It excludes the Laguerre
+kernel above as a kinetic-energy spectrum, replaces it by a completely
+monotone moving-shell survivor with the same q4 budgets and stronger
+early reuse, and exhibits exact adjacent-shell quadratic triads with the
+survivor's limiting heat profile.  The live gate is now temporal
+compatibility of those two structures on one NSE trajectory.

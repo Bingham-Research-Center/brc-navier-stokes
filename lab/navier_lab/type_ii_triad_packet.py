@@ -9,6 +9,11 @@ from math import sqrt
 
 
 WaveVector = tuple[int, int, int]
+FourierVector = tuple[
+    "RationalComplex",
+    "RationalComplex",
+    "RationalComplex",
+]
 
 
 @dataclass(frozen=True)
@@ -57,7 +62,7 @@ def dyadic_heat_band_multipliers() -> dict[int, Fraction]:
 
 def triad_fourier_modes() -> dict[
     WaveVector,
-    tuple[RationalComplex, RationalComplex, RationalComplex],
+    FourierVector,
 ]:
     """Return Fourier coefficients of the explicit divergence-free triad.
 
@@ -82,9 +87,50 @@ def triad_fourier_modes() -> dict[
     return modes
 
 
+def pell_two_shell_modes(
+    n: int,
+    m: int,
+) -> dict[WaveVector, FourierVector]:
+    """Return an exact adjacent-shell incompressible triad.
+
+    Positive integers ``n,m`` must solve ``n**2 - 3*m**2 = 1``.  The
+    three positive waves are ``(0,-2m,0)``, ``(n,m,0)``, and
+    ``(-n,m,0)``.  Their squared radii are ``4m**2`` and
+    ``4m**2 + 1``.
+    """
+    if n <= 0 or m <= 0 or n * n - 3 * m * m != 1:
+        raise ValueError("n,m must be a positive Pell solution")
+    waves_and_vectors = (
+        ((0, -2 * m, 0), (0, 0, 1)),
+        ((n, m, 0), (m, -n, 0)),
+        ((-n, m, 0), (0, 0, 1)),
+    )
+    modes: dict[WaveVector, FourierVector] = {}
+    for wave, vector in waves_and_vectors:
+        for sign in (-1, 1):
+            signed_wave = tuple(sign * entry for entry in wave)
+            modes[signed_wave] = tuple(
+                RationalComplex(imag=Fraction(sign * entry, 2))
+                for entry in vector
+            )
+    return modes
+
+
+def pell_solutions(count: int) -> tuple[tuple[int, int], ...]:
+    """Return the first ``count`` positive solutions of ``n^2-3m^2=1``."""
+    if count < 0:
+        raise ValueError("count must be nonnegative")
+    solutions: list[tuple[int, int]] = []
+    n, m = 2, 1
+    for _ in range(count):
+        solutions.append((n, m))
+        n, m = 2 * n + 3 * m, n + 2 * m
+    return tuple(solutions)
+
+
 def is_divergence_free(
     wave: WaveVector,
-    coefficient: tuple[RationalComplex, RationalComplex, RationalComplex],
+    coefficient: FourierVector,
 ) -> bool:
     """Check ``wave dot coefficient = 0`` exactly."""
     total = ZERO
@@ -93,12 +139,11 @@ def is_divergence_free(
     return total == ZERO
 
 
-def convolution_triad_flux(
-    multipliers: dict[int, Fraction],
-) -> Fraction:
-    """Compute the normalized mean of ``u tensor u : grad(Su)`` exactly."""
-    modes = triad_fourier_modes()
-    total = ZERO
+def shell_flux_coefficients(
+    modes: dict[WaveVector, FourierVector],
+) -> dict[int, Fraction]:
+    """Group ``u tensor u : grad(Mu)`` by output squared frequency."""
+    coefficients: dict[int, Fraction] = {}
     for wave_a, wave_b, wave_c in product(modes, repeat=3):
         if any(
             wave_a[index] + wave_b[index] + wave_c[index]
@@ -106,25 +151,70 @@ def convolution_triad_flux(
         ):
             continue
         squared_frequency = sum(entry * entry for entry in wave_c)
-        multiplier = multipliers[squared_frequency]
         vector_a = modes[wave_a]
         vector_b = modes[wave_b]
         vector_c = modes[wave_c]
+        shell_total = ZERO
         for first_index in range(3):
             for derivative_index in range(3):
                 derivative = RationalComplex(
                     imag=Fraction(wave_c[derivative_index])
                 )
-                term = (
+                shell_total = shell_total + (
                     vector_a[first_index]
                     * vector_b[derivative_index]
                     * derivative
                     * vector_c[first_index]
-                ).scale(multiplier)
-                total = total + term
-    if total.imag != 0:
-        raise ArithmeticError("real triad flux acquired an imaginary part")
-    return total.real
+                )
+        if shell_total.imag != 0:
+            raise ArithmeticError("real triad flux acquired an imaginary part")
+        coefficients[squared_frequency] = (
+            coefficients.get(squared_frequency, Fraction(0))
+            + shell_total.real
+        )
+    return coefficients
+
+
+def convolution_triad_flux(
+    multipliers: dict[int, Fraction],
+) -> Fraction:
+    """Compute the normalized mean of ``u tensor u : grad(Su)`` exactly."""
+    return sum(
+        coefficient * multipliers[squared_frequency]
+        for squared_frequency, coefficient in shell_flux_coefficients(
+            triad_fourier_modes()
+        ).items()
+    )
+
+
+def pell_two_shell_flux_coefficients(
+    n: int,
+    m: int,
+) -> dict[int, Fraction]:
+    """Return the exact two-shell transfer coefficients of a Pell triad."""
+    return shell_flux_coefficients(pell_two_shell_modes(n, m))
+
+
+def closed_pell_two_shell_flux(
+    multipliers: dict[int, Fraction],
+    n: int,
+    m: int,
+) -> Fraction:
+    """Return ``nm/2`` times the adjacent-shell multiplier decrement."""
+    if n <= 0 or m <= 0 or n * n - 3 * m * m != 1:
+        raise ValueError("n,m must be a positive Pell solution")
+    lower_shell = 4 * m * m
+    upper_shell = lower_shell + 1
+    return Fraction(n * m, 2) * (
+        multipliers[lower_shell] - multipliers[upper_shell]
+    )
+
+
+def pell_profile_limit_coefficient(n: int, m: int) -> Fraction:
+    """Coefficient tending to ``sqrt(3)/8`` in the parabolic profile."""
+    if n <= 0 or m <= 0 or n * n - 3 * m * m != 1:
+        raise ValueError("n,m must be a positive Pell solution")
+    return Fraction(n, 8 * m)
 
 
 def closed_triad_flux(
@@ -202,12 +292,22 @@ def report() -> str:
         amplitude=1.0,
         viscosity=1.0,
     )
+    pell_n, pell_m = pell_solutions(3)[-1]
+    pell_coefficients = pell_two_shell_flux_coefficients(pell_n, pell_m)
     return "\n".join(
         [
             "Type-II triad packet certificate",
             f"multipliers: {multipliers}",
             f"exact normalized triad flux: {flux}",
             f"positive band pairing: {band_energy_pairing(multipliers)}",
+            (
+                f"Pell adjacent-shell coefficients ({pell_n},{pell_m}): "
+                f"{pell_coefficients}"
+            ),
+            (
+                "Pell scaled-profile coefficient: "
+                f"{pell_profile_limit_coefficient(pell_n, pell_m)}"
+            ),
             f"radius powers: {packet_radius_powers()}",
             (
                 "sample fixed nonlinear work: "
