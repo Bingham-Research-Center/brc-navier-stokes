@@ -29,6 +29,7 @@ survivor into an NSE trajectory, or resolve any Clay alternative.
 | Date | Reviewer | Record |
 |---|---|---|
 | 2026-07-27 | Claude (Fable 5), external system operated by John Lawson | [Full audit and curation record](reviews/2026-07-27-fable-audit.md): ledger layer structurally clean; q4 scale judged schedule-conditional; five milestones ranked in [the registry](milestones.md); four curation commits (status scoping, registry + router rules, this record, retirement of unreferenced notes). No mathematical claim was changed. This is an external process audit, not yet external review of the mathematics. |
+| 2026-07-27 | Claude (Fable 5), second external session | Audit of the curation pass itself; addendum in [section 9 of the record](reviews/2026-07-27-fable-audit.md). Fixed: five stale provenance citations in archival rounds, four unpushed commits, missing round report. Added: the averaging-barrier classification and course round [2026-07-27-external-course-audit](rounds/2026-07-27-external-course-audit.tex), router rules binding new q4 cycles to averaging-breaking structure. No mathematical claim was changed. |
 
 Two earlier external reports (2026-07-24, untracked at the repository
 root) were deleted unread; their surviving conclusions are preserved in

@@ -237,3 +237,31 @@ Listed so a critic knows where this pass exercised judgment:
 
 External review of all mathematical content remains pending. Same-system
 recomputation, and this audit, are not that review.
+
+## 9. Addendum: second external pass, later on 2026-07-27
+
+A follow-up external session (also Claude Fable 5) audited this pass
+itself and found three defects, each fixed in the addendum commit:
+
+1. **Five stale provenance citations.** The commit-4 retirement
+   criterion resolved markdown links only; five prose citations of
+   retired notes inside three archival rounds
+   (`rounds/2026-07-24-type-ii-band-dissipation-budget.tex`,
+   `rounds/2026-07-24-type-ii-record-transport.tex`,
+   `rounds/2026-07-24-type-ii-triad-packet-sharpness.tex`) survived as
+   "proof-owning note" pointers to deleted files. Each is now annotated
+   in place with the Git recovery recipe. An exhaustive sweep found no
+   other dangling reference: imports, ledger artifact paths, markdown
+   links, and the Makefile are clean.
+2. **Stranded commits.** The four curation commits were never pushed;
+   both public remotes still served the pre-audit tree, violating the
+   push-and-verify rule. The addendum batch pushes and verifies.
+3. **Missing round report.** This pass committed four times with no
+   `dossier/rounds/` report, contrary to the router rule. The report
+   [2026-07-27-external-course-audit](../rounds/2026-07-27-external-course-audit.tex)
+   restores compliance and states the method-level finding behind
+   section 4: the charged q4 budgets are averaging-portable in the
+   sense of Tao's averaged Navier--Stokes blow-up, the durable
+   milestones are exactly the averaging-breaking results, and a
+   realization obligation (O-AVG-001) decides whether radial-scalar
+   refinement can ever close the cell.

@@ -15,6 +15,7 @@ another link only to discharge the live obligation.
 - Clay tree: `dossier/clay-target.md` → `dossier/possibility-tree.md`.
 - Breakdown/HWY: `dossier/papers/2509.25116-bridge-note.md`.
 - Human orientation: `README.md`.
+- Audit record: `dossier/reviews/2026-07-27-fable-audit.md`.
 
 ## Rules
 
@@ -27,7 +28,10 @@ another link only to discharge the live obligation.
   the same sentence; a route-level barrier needs a schedule-free proof.
 - After three budget/countermodel cycles on a route with no
   velocity-field-realizable obstruction, freeze it in `HANDOFF.md` and
-  return to `dossier/possibility-tree.md`.
+  return to `dossier/possibility-tree.md`. R3C's count restarted at the
+  2026-07-27 curation with its radial-scalar budgets spent.
+- A new budget cycle must use structure that fails under cascade
+  averaging (Tao 2016): local energy, pressure, or triad phase/geometry.
 - A schedule-independent result adds or updates its `dossier/milestones.md`
   row in the same commit.
 - Read any signed external review file at the repository root and log its
