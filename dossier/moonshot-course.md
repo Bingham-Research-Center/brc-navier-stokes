@@ -35,10 +35,10 @@ journey pays: the moonshot sets direction, the bank justifies the time.
    (which smooths); at the critical scale the known estimates break even.
 2. Tao proved a fake fluid obeying the same global accounting rules
    blows up, so accounting-only ("averaging-portable") arguments can
-   never prove regularity; this repo's q4 arms race rediscovered that
-   barrier empirically, and its durable results are exactly the ones
-   using structure the fake fluid lacks: local energy, pressure, triad
-   geometry.
+   never prove regularity by themselves. This repo's q4 stack is a
+   candidate operator-relative instance; its strongest results use
+   local energy, true pressure structure, carriers, or triad geometry,
+   but the exact classification still requires item-by-item transfer.
 3. Inversion: every certified exclusion is also a design constraint. A
    budget that survives tells the regularity side what to strengthen and
    tells the breakdown side what any singularity must look like. Both
@@ -77,17 +77,20 @@ note is citable survey material.
 **M2. Broad-shell realization, shell rung (O-AVG-001a).** Build an
 explicit energy-identity-preserving shell system whose radial spectral
 energy follows the broad-shell profile along the q4 schedule. Why: if it
-exists, radial-scalar q4 refinement is closed by theorem forever; if it
-provably cannot, the obstruction is the new portable budget eight rounds
-missed. Deliverable: exact-rational lab certificate either way. Kill:
-built-in; both branches are wins. Bank: method-barrier note.
+exists, it proves compatibility with the finite budget stack explicitly
+verified on that model; if it cannot, diagnose whether the obstruction is
+model-specific. Deliverable: analytic construction first, with an
+exact-rational certificate only for a nontrivial finite claim. Kill: three
+failed model designs freeze the rung. Bank: bounded method-barrier note.
 
 **M3. Broad-shell realization, averaged rung (O-AVG-001b).** Promote
 the shell realization into Tao's averaged class, or prove that class
 avoids the q4 cell. Why: upgrades the freeze from judgment to theorem
-and connects this repo to the one modern programme (averaged blow-up)
+only if an actual averaged trajectory reaches the cell, and connects
+this repo to the modern programme (averaged blow-up)
 closest to alternative-C machinery. Deliverable: construction or
-exclusion note. Kill: three failed embedding strategies freezes the
+exclusion note; nonrealizability alone is not a portable charge. Kill:
+three failed embedding strategies freeze the
 rung, keeping the shell result. Bank: a note extending a landmark paper
 is the most legible artifact this repo could produce.
 
@@ -184,8 +187,9 @@ by a slowly rotating goal. These checks exist to catch the rotation.
   maintenance. More than two consecutive maintenance sessions is a
   spiral; stop and pick a move.
 - **State sync.** Fetch and compare both remotes, run the validators,
-  read `HANDOFF.md` and this file's move list only; do not re-read the
-  dossier.
+  then resume the first `NEXT` item in `HANDOFF.md`. Follow only the
+  proof note, record, and course anchor named there; do not replay
+  `DONE` setup or re-read the dossier.
 
 **Tripwires (during work):**
 

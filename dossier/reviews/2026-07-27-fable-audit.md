@@ -260,8 +260,10 @@ itself and found three defects, each fixed in the addendum commit:
    `dossier/rounds/` report, contrary to the router rule. The report
    [2026-07-27-external-course-audit](../rounds/2026-07-27-external-course-audit.tex)
    restores compliance and states the method-level finding behind
-   section 4: the charged q4 budgets are averaging-portable in the
-   sense of Tao's averaged Navier--Stokes blow-up, the durable
-   milestones are exactly the averaging-breaking results, and a
-   realization obligation (O-AVG-001) decides whether radial-scalar
-   refinement can ever close the cell.
+   section 4. A later red-team correction narrowed that finding:
+   portability is relative to a selected averaged operator, the q4
+   classification still needs item-by-item transfer, and shell and
+   averaged realization have different logical force. Neither negative
+   branch automatically supplies a portable obstruction. The canonical
+   disposition is the
+   [averaging-portability note](../experiments/averaging-portability-barrier.md).

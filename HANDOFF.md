@@ -1,48 +1,54 @@
-# Handoff: R3C non-portable triad cycle
+# Handoff: Gate 0 verification campaign
 
 **Updated:** 2026-07-27 · **Clay status:** unsolved
 
-**Live route:** `ROUTE-R3C` · `EXP-TYPE-II-SPECTRAL-QUANTILE-SPEED-001`
+**Live route:** `ROUTE-ROOT` · Gate 0 before moves M1--M10
 
 ## Load only
 
-- [Course move M4](dossier/moonshot-course.md#m4-non-portable-angulartriad-cycle-route-r3c-at-most-three-cycles)
-- [Spectral quantile speed](dossier/experiments/type-ii-spectral-quantile-speed.md)
-- [`ROUTE-R3C`](dossier/records/routes.json)
+- [Course Gate 0](dossier/moonshot-course.md#gate-0-precondition-for-everything-below)
+- [2607 audit](dossier/papers/2607.08866-audit.md)
+- [`paper-2607-obligations.json`](dossier/records/paper-2607-obligations.json)
 
-Read only M4, not the whole course, for this bounded cycle.
+For the current item, follow the audit's exact-source route in `AGENTS.md`.
+Do not reread the Fable audit, the whole course, or completed repair files.
 
-## State and budget
+## Continuation contract
 
-- The actual transfer has the finite same-trajectory budget
-  \(\mathfrak q=\int\lambda^{-1/2}|m|\,d\lambda\lesssim\nu^{-1/2}\|v\|_2MY\in L^1_s\).
-- A descending fixed-energy quantile has finite charge
-  \(\int e(\Lambda_\eta,s)|\Lambda_\eta'|/\sqrt{\Lambda_\eta}\,ds\).
-- On the schedule-conditional q4 scale
-  \(L=s^{-9/11}\ell^{2/11}\), persistent width
-  \(W_\eta\lesssim\sqrt L\) is impossible. This closes nondegenerate
-  adjacent-Pell smoothing, not atomic snapshots.
-- A smooth positive-flux shell with \(W_\eta\asymp L\) pays the charge
-  and retains every current q4 scalar, Gaussian, diagonal, and early-reuse
-  law. It is a spectral countermodel, not a velocity field.
+`HANDOFF.md` is the mutable campaign state. On every automatic continuation:
 
-R3C is on cycle 1 of 3 since the 2026-07-27 curation. Radial-scalar
-budgets are spent. Only local energy, pressure, or exact triad
-phase/geometry can start this cycle; cap counting alone does not.
+1. resume the first queue item marked `NEXT`;
+2. do not repeat `DONE` work or one-time bootstrap/audit procedure;
+3. close, repair, or retract exactly one verification obligation;
+4. replace this file and advance one marker before committing.
+
+## Gate 0 queue
+
+- `DONE` Averaging-barrier red-team repair: narrowed operator-relative claim,
+  canonical note/record, corrected course and audit surfaces.
+- `NEXT` O-2607-ERRATUM: verify the pinned source and turn the existing audit
+  into a concise erratum/comment-grade bank artefact.
+- `OPEN` O-LS18-VERIFY: verify the five-power barrier's imported theorem and
+  continuation scope against the published source.
+- `OPEN` O-CARRIER-CLOCK-VERIFY: independently check the \(R^{5/2}\)
+  moving-centre carrier clock and isolate a standalone lemma.
+- `OPEN` O-PINCER-VERIFY: verify the terminal-dimension pincer's imported
+  energy-measure hypotheses.
+- `OPEN` O-AB-AMPLITUDE: verify or retract the Albritton--Barker
+  critical-amplitude reading used by the adjoint-pressure result.
 
 ## Exact live question
 
-Can one charge the necessary broad q4 shell to a finite angular, spatial,
-phase, genealogical, pressure, capacity, or strong-trace budget?
+Does the pinned arXiv:2607.08866v2 source support every surviving step and
+scope statement in the repaired conditional theorem, strongly enough for a
+concise erratum/comment note without implying arbitrary Clay-data geometry?
 
 ## Next bounded cycle
 
-Use exact Fourier convolution support and phase constraints to test a
-fixed-relative-width broad shell against smooth Pell dilations. Deliver
-either a schedule-free finite charge or an NSE-compatible survivor showing
-why that charge fails. A merely radial, scalar, or mode-count refinement is
-a negative cycle. After three negative cycles, freeze R3C and return to the
-possibility tree.
+Read only the 2607 audit, its canonical obligation record, and the exact
+source passages routed by `AGENTS.md`. Recheck the repaired theorem and
+proof-map anchors, then produce or update the erratum-grade note. Record each
+material mismatch as verified, repaired, or retracted. Do not start M1--M10.
 
-All findings await external review.  Keep slower clocks, divergent energy,
-R3B, and the other Clay alternatives separate.
+All mathematical findings await independent human review. The repaired 2607
+result remains conditional, and no Clay alternative A--D is resolved.

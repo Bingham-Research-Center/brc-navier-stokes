@@ -2738,6 +2738,38 @@
       "last_run": "2026-07-25"
     },
     {
+      "id": "EXP-AVERAGING-PORTABILITY-BARRIER-001",
+      "title": "Operator-relative averaging portability barrier and q4 classification audit",
+      "kind": "analytic_audit",
+      "route_ids": ["ROUTE-R3C"],
+      "claim_ids": [
+        "CLM-AVERAGED-001",
+        "CLM-ENERGY-001",
+        "CLM-SCALE-001"
+      ],
+      "hypothesis": "The charged q4 budget stack may transfer to Tao's selected finite-time-blow-up averaged operator and thereby identify which future arguments must spend true-equation structure.",
+      "invariants": [
+        "Portability is relative to one selected averaged operator and constants may depend on that operator",
+        "A deduction using only premises proved for both evolutions cannot establish global continuation because the selected averaged evolution blows up",
+        "The mixed weak-L3 and H-minus-one transfer estimate has not yet been proved for the selected averaged operator",
+        "The full q4 portable versus averaging-breaking classification is therefore a conjectural audit finding",
+        "A shell realization tests only the finite budgets explicitly imposed on that model",
+        "Failure of shell or averaged realization does not automatically produce a quantitative obstruction portable to true Navier-Stokes",
+        "An averaged projected equation may have a scalar pressure representation but need not retain the true local quadratic pressure identity",
+        "No q4 closure, regularity theorem, breakdown theorem, energy-equality theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Formalize portability relative to Tao's selected blow-up operator, prove the barrier by logical transfer, red-team each q4 input, and separate the shell and averaged realization obligations.",
+      "certificate": "The canonical note and correction round contain the formal barrier proof, balance audit, corrected realization logic, robust findings, and open transfer obligation. External review is pending.",
+      "success_criterion": "Replace the overbroad class-uniform and both-branches-win claims with exact operator-relative statements and a falsifiable transfer obligation.",
+      "failure_interpretation": "The selected Tao operator or source theorem is misstated, an asserted transferred estimate lacks proof, shell compatibility is generalized beyond its enumerated budgets, or nonrealizability is treated as a portable charge without extraction.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/averaging-portability-barrier.md",
+        "dossier/rounds/2026-07-27-averaging-portability-repair.tex"
+      ],
+      "last_run": "2026-07-27"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

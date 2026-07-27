@@ -28,21 +28,18 @@ and the 2026-07-27 External Course Record}
 
 \begin{abstract}
 This round accompanies the 2026-07-27 external curation pass and states
-the method-level finding behind its anti-drift rules.  Every budget so
-far charged against the exact \(q=4\) Type-II cell of ROUTE-R3C is
-\emph{averaging-portable}: its proof uses only the energy identity, norm
-interpolation, bilinear estimates uniform over Tao's averaged
-Navier--Stokes class, and radial spectral bookkeeping.  By Tao's
-finite-time blow-up theorem for an averaged system, no collection of
-averaging-portable budgets can prove global regularity.  The
-budget-versus-countermodel arms race of the final eight research rounds
-is the visible symptom of this barrier, and the empirical split between
-those rounds and the durable milestone results coincides exactly with
-the portable/non-portable split: the surviving milestones all use local
-energy, pressure, or physical-space carrier structure that does not
-survive nonlinearity averaging.  A realization obligation is posed
-whose resolution decides, either way, whether radial-scalar refinement
-of the \(q=4\) cell can ever close.  The process record fixes two
+the method-level finding behind its anti-drift rules.  Relative to
+Tao's selected finite-time-blow-up averaged operator, an argument made
+entirely from premises verified for both equations cannot prove global
+regularity.  The charged \(q=4\) budgets are candidates for this
+operator-relative classification, but the mixed Lorentz transfer
+estimate still requires item-by-item verification.  Local energy, the
+true quadratic pressure identity, physical-space carrier structure,
+and exact triad geometry are natural places where the true equation may
+break portability.  A shell realization would test only the finite
+budget stack imposed on it; an averaged-equation realization would make
+a stronger operator-relative statement.  Neither failure branch
+automatically supplies a new portable obstruction.  The process record fixes two
 discipline defects found in this audit: the four 2026-07-27 curation
 commits were never pushed to either public remote, and their batch
 omitted the required round report.  No Navier--Stokes theorem is proved
@@ -53,15 +50,16 @@ here, and the Clay problem is unsolved.
 
 The imported blow-up theorem is a peer-reviewed result of
 Tao~\cite{Tao16}.  The energy-measure theorem cited for contrast is the
-peer-reviewed result of Leslie and Shvydkoy~\cite{LS18}.  The
-classification of this repository's budgets into averaging-portable and
-averaging-breaking is a same-system audit deduction over the recorded
-proofs; it awaits external mathematical review.  The observation that
+peer-reviewed result of Leslie and Shvydkoy~\cite{LS18}.  The proposed
+classification of this repository's budgets into operator-portable and
+averaging-breaking is a same-system audit conjecture over the recorded
+proofs; it awaits item-by-item transfer and external mathematical
+review.  The observation that
 regularity arguments insensitive to nonlinearity averaging cannot close
 is Tao's own stated moral; no literature novelty is claimed for
 Theorem~\ref{thm:barrier}.  The contribution of this round is the
-file-anchored application to the exact \(q=4\) stack, the resulting
-freeze semantics, and the realization obligation of
+file-anchored audit of the exact \(q=4\) stack, the resulting course
+discipline, and the split realization obligations of
 Section~\ref{sec:realization}.
 
 Nothing here is a regularity theorem, a breakdown construction, an
@@ -81,43 +79,43 @@ Euler bilinear operator \(B\), such that the system
 admits Schwartz divergence-free data whose unique mild solution blows
 up in finite time.  The operator \(\tilde B\) preserves the energy
 cancellation \(\langle\tilde B(u,u),u\rangle=0\), hence the full energy
-identity and energy class, and obeys the standard bilinear
-(paraproduct, Sobolev, Lorentz-duality) estimates of \(B\) with
-uniform constants.
+identity and energy class.  Its representation supplies standard
+bilinear estimates with finite constants depending on the chosen
+operator.  The endpoint Lorentz estimate used below is a transfer
+obligation, not an imported theorem.
 
-\begin{definition}[averaging-portable budget]
+\begin{definition}[operator-portable premise]
 \label{def:portable}
-A trajectory inequality is \emph{averaging-portable} if its recorded
-proof uses only:
+A premise is \emph{operator-portable relative to a fixed
+\(\tilde B\)} if it has been proved for both the true Navier--Stokes
+evolution and that \(\tilde B\) evolution.  Typical candidate inputs are:
 (i) the energy identity and the energy-class norms it controls;
-(ii) bilinear estimates on the nonlinearity that hold, with some finite
-constant, uniformly over the class~\eqref{eq:averaged}; and
+(ii) bilinear estimates on the nonlinearity proved with some finite
+constant, which may depend on the selected operator; and
 (iii) radial spectral bookkeeping, that is, calculus on pushforwards of
 spectral densities under \(\xi\mapsto|\xi|\) and their heat transforms.
 \end{definition}
 
 \begin{theorem}[averaging barrier, immediate from~\cite{Tao16}]
 \label{thm:barrier}
-No collection of averaging-portable budgets implies global regularity
-for the three-dimensional Navier--Stokes equations.  More precisely,
-any exclusion argument assembled solely from averaging-portable budgets
-applies verbatim to the system~\eqref{eq:averaged} and is therefore
-consistent with finite-time blow-up along Tao's schedule.
+No valid global-regularity deduction can use only premises portable to
+Tao's selected finite-time-blow-up operator.  At least one premise or
+inference must distinguish the true Navier--Stokes nonlinearity from
+that operator.
 \end{theorem}
 
 \begin{proof}
-Tao's solution of~\eqref{eq:averaged} lies in the energy class,
-satisfies every inequality of Definition~\ref{def:portable} by
-construction of \(\tilde B\), and blows up in finite time.
+If every premise transferred, the same deduction would continue Tao's
+blowing-up solution globally, a contradiction.
 \end{proof}
 
 \begin{remark}
-Theorem~\ref{thm:barrier} does not by itself forbid closing one
-\emph{cell}, that is, one exact schedule such as the \(q=4\) record
-ledger, by portable budgets: Tao's blow-up follows its own schedule,
-and the averaged class might avoid the \(q=4\) cell entirely.  That
-question is exactly Obligation O-AVG-001 in
-Section~\ref{sec:realization}.
+Theorem~\ref{thm:barrier} neither classifies the current budgets nor
+forbids closing one exact schedule such as the \(q=4\) record ledger.
+Tao's known blow-up follows its own schedule, and the selected averaged
+operator might avoid the \(q=4\) cell entirely.  Section~\ref{sec:realization}
+therefore separates a shell-model test from the stronger
+averaged-operator question.
 \end{remark}
 
 \section{Classification of the charged q4 stack}
@@ -125,7 +123,7 @@ Section~\ref{sec:realization}.
 The budgets actually charged against the \(q=4\) cell in the final
 eight research rounds, with their recorded proofs, classify as follows.
 
-\emph{Portable.}
+\emph{Candidate operator-portable.}
 (1) The energy identity and half-energy law \(A'=-AL\)
 (rounds of 2026-07-25, radial triad spectrum and successors).
 (2) \(M=\|u\|_{\wL}\in L^4_t\) by norm interpolation in the energy
@@ -136,48 +134,42 @@ class, and the schedule-conditional record clock \(M\in L^s_t\),
 \(\mathfrak q\lesssim\nu^{-1/2}\|v\|_2\|F\|_{\dot H^{-1}}\lesssim
 \nu^{-1/2}\sqrt d\,MY\)
 of the spectral quantile-speed round: Cauchy--Schwarz in frequency plus
-Lorentz duality, both uniform over~\eqref{eq:averaged}.
-(5) The fixed-energy quantile speed law and its finite charge: calculus
-on the radial density, portable by Definition~\ref{def:portable}(iii).
+Lorentz duality.  The corresponding mixed Lorentz estimate for the
+selected averaged operator remains to be proved.
+(5) The fixed-energy quantile speed law and its finite charge: kinematic
+calculus on the radial density, provided the corresponding balance law
+has transferred.
 (6) The Gaussian, diagonal, early-reuse, and recycling ledgers: heat
 transforms of radial spectra.
 
-\emph{Averaging-breaking, and exactly the durable results.}
+\emph{Candidate averaging-breaking inputs.}
 (1) The Leslie--Shvydkoy energy-measure input~\cite{LS18} used by the
 temporal five-power barrier and the terminal-dimension pincer: its
 proof runs through the local energy balance of suitable solutions;
-frequency-space rotation and translation in \(\tilde B\) destroy
-spatial locality, so no analogue holds over~\eqref{eq:averaged}.
+the rotations, dilations, and order-zero multipliers in \(\tilde B\)
+do not preserve that local structure, so an analogue is not automatic
+for~\eqref{eq:averaged}.
 (2) The \(R^{5/2}\) carrier turnover clock: a physical-space statement
 about energy in moving balls.
-(3) The adjoint-pressure cost bounds of frozen ROUTE-R3B: the averaged
-system has no pressure.
+(3) The adjoint-pressure cost bounds of frozen ROUTE-R3B: after
+projection an averaged equation may be represented with a scalar
+pressure, but it need not retain the true local quadratic pressure
+identity.
 (4) Strong-trace and boundary-drift structure.
 
-\begin{proposition}
+\begin{conjecture}
 \label{prop:split}
-Every budget charged against the \(q=4\) cell through the round of
-2026-07-25 is averaging-portable.  Every milestone-registry result
-(rows 2--5) rests on at least one averaging-breaking input.
-\end{proposition}
+After item-by-item transfer to Tao's selected operator, every budget
+charged against the \(q=4\) cell through 2026-07-25 will be
+operator-portable, while each milestone-registry result in rows 2--5
+will retain at least one input not shared by that operator.
+\end{conjecture}
 
-\begin{proof}[Proof sketch, subject to external review]
-Inspection of the recorded proofs listed above.  The portable items
-use no localisation in physical space, no pressure, and no property of
-the exact triad convolution beyond bilinear boundedness and energy
-cancellation.  The milestone inputs are anchored: \cite{LS18} for rows
-2 and 4, the moving-ball clock for row 3, pressure costs for row 5.
-\end{proof}
-
-\begin{corollary}
-\label{cor:futility}
-Refinement of the portable stack alone cannot close the \(q=4\) cell
-unless the averaged class avoids the cell.  In particular the
-countermodel arms race of the final eight rounds was structurally
-forced: each portable budget admits a positive radial spectrum
-satisfying it, because portable budgets constrain only radial-scalar
-functionals that cascade-supporting averaged dynamics can realise.
-\end{corollary}
+The present evidence is narrower.  Explicit positive radial spectra
+satisfy the finite scalar budget stack and show that those scalar
+inequalities alone do not exclude the broad profile.  They are not
+dynamics, do not settle future budgets, and do not prove that the
+countermodel search was logically forced.
 
 This is the formal content behind the router rules added on
 2026-07-27: a new budget cycle must name structure that fails under
@@ -188,9 +180,9 @@ radial-scalar budgets recorded as spent.
 \section{Realization obligation}
 \label{sec:realization}
 
-\textbf{O-AVG-001 (open).}  Decide whether some system in the averaged
-class~\eqref{eq:averaged}, or in a shell-model class preserving the
-energy identity and the portable estimates, admits a trajectory whose
+\textbf{O-AVG-001a (open, shell rung).}  Decide whether a specified
+shell-model class preserving the energy identity and an explicitly
+enumerated finite budget stack admits a trajectory whose
 radial spectral energy realises the broad-shell profile
 \[
  e_\phi(\lambda,s)=\frac{A(s)}{L(s)}\,
@@ -200,22 +192,23 @@ radial spectral energy realises the broad-shell profile
  \qquad
  A=\frac d2e^{-\int_0^sL},
 \]
-of the spectral quantile-speed round along the \(q=4\) schedule.
+of the spectral quantile-speed round along the \(q=4\) schedule.  A
+positive construction proves compatibility only with the budgets
+actually verified on that model.  A negative result may be
+model-specific and has no automatic route consequence.
 
-If yes: the smooth broad-shell countermodel is promoted from a spectrum
-to a genuine dynamics of an energy-identity-preserving system, every
-present and future portable budget tolerates it, and radial-scalar
-refinement of the \(q=4\) cell is closed permanently, by theorem rather
-than by judgment.  If no: the proof of impossibility must exhibit an
-obstruction that is itself averaging-portable, hence a new portable
-budget of exactly the kind eight rounds failed to find, which would
-reopen the cell with a decisive tool.  Either branch is durable.
+\textbf{O-AVG-001b (open, averaged rung).}  Decide whether the selected
+Tao averaged operator admits a trajectory in the same \(q=4\) cell.  A
+positive construction gives an operator-relative barrier for any cell
+exclusion.  A proof that this averaged evolution avoids the cell does
+not automatically furnish a quantitative estimate portable back to the
+true equation.
 
 \begin{conjecture}
 \label{conj:realizable}
-The broad-shell profile is realisable in a shell-model class preserving
-the energy identity and portable estimates; consequently the \(q=4\)
-cell cannot be closed by averaging-portable budgets.
+The broad-shell profile is realisable in a specified shell-model class
+preserving the energy identity and the present finite scalar budget
+stack.
 \end{conjecture}
 
 Conjecture~\ref{conj:realizable} is not proved.  A realisation would
@@ -242,10 +235,9 @@ links only.  Each citation is now annotated in place with the Git
 recovery recipe.  Imports, ledger artifact paths, markdown links, and
 the Makefile were verified clean.
 \item \emph{Freeze semantics.}  ROUTE-R3C's budget/countermodel cycle
-count restarted at the 2026-07-27 curation.  The next cycle, the
-angular-cap and exact-triad-convolution plan of \texttt{HANDOFF.md},
-counts as cycle one of at most three.  Pure angular mode counting is
-rotation-portable and is expected to admit countermodels; the exact
+count restarted at the 2026-07-27 curation.  Its next M4 cycle, after
+Gate 0 verification, counts as cycle one of at most three.  Pure angular
+mode counting is a portability candidate expected to admit countermodels; the exact
 triad convolution support and phase constraints, local energy, and
 pressure are the admissible inputs.
 \item \emph{Verification queue.}  Before any new budget cycle, the
@@ -262,8 +254,8 @@ for these results.
 \section{Open obligations}
 
 \begin{itemize}
-\item \textbf{O-AVG-001}: realise or refute the broad-shell profile in
-an energy-identity-preserving averaged or shell class
+\item \textbf{O-AVG-001a/b}: test the broad-shell profile first in a
+specified shell class and separately in Tao's selected averaged equation
 (Section~\ref{sec:realization}).
 \item \textbf{O-LS18-VERIFY}: verify the exact statement and scope
 of~\cite{LS18} against the published text as used by milestone rows 2
@@ -273,7 +265,7 @@ communicable erratum-grade comment note for external circulation.
 \item \textbf{O-AB-AMPLITUDE}: confirm or retract the load-bearing
 critical-amplitude reading of Albritton--Barker against the published
 proof.
-\item \textbf{O-ANGULAR-TRIAD}: the HANDOFF cycle, restricted to
+\item \textbf{O-ANGULAR-TRIAD}: the queued M4 cycle, restricted to
 averaging-breaking inputs as recorded above.
 \end{itemize}
 

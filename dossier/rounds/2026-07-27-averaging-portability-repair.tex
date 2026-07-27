@@ -1,0 +1,172 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Operator-Relative Averaging Portability:\\
+A Red-Team Repair and Resumable Gate 0 Handoff}
+\author{John Robert Lawson and Codex}
+\date{27 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This correction round red-teams the strongest mathematical claims in
+the 2026-07-27 external course audit.  The sound barrier is relative to
+one selected finite-time-blow-up averaged operator: a regularity
+deduction cannot be assembled solely from premises proved for both that
+operator and the true Navier--Stokes equation.  Uniform constants over
+an averaged class are unnecessary.  The full q4 budget stack is only a
+candidate instance because its endpoint Lorentz transfer has not been
+verified operator by operator.  A shell-model realization tests only
+its enumerated budgets, while failure of either a shell or averaged
+realization does not automatically yield a portable obstruction.  The
+course, audit record, canonical record, and handoff are repaired
+accordingly.  Gate 0 now resumes from an explicit state queue rather
+than replaying one-time setup.  No Navier--Stokes theorem or Clay
+alternative is proved.
+\end{abstract}
+
+\section{Definitions and exact barrier}
+
+Let \(B\) denote the true projected Euler bilinear form, and fix one
+averaged bilinear operator \(\widetilde B_*\) for which Tao constructs
+a smooth finite-time-blow-up evolution~\cite{Tao16}.
+
+A premise \(P\) is \emph{operator-portable} when it has been proved for
+both the \(B\) evolution and the \(\widetilde B_*\) evolution.  Its
+constant may depend on \(\widetilde B_*\).
+
+\begin{theorem}[operator-relative barrier]
+\label{thm:barrier}
+No valid global-regularity deduction for three-dimensional
+Navier--Stokes can use only premises and inference steps portable to
+\(\widetilde B_*\).
+\end{theorem}
+
+\begin{proof}
+Suppose such a deduction existed.  Every premise would hold for the
+\(\widetilde B_*\) evolution, and the portable inference steps would
+give global continuation there.  This contradicts Tao's finite-time
+blow-up solution.  Therefore a valid Navier--Stokes proof must use at
+least one premise or inference which distinguishes the true
+nonlinearity from \(\widetilde B_*\).
+\end{proof}
+
+\begin{remark}
+The theorem does not make portable estimates useless.  They may be
+combined with a true-equation input.  Nor does it close a prescribed
+q4 schedule: the known averaged blow-up need not enter that cell.
+\end{remark}
+
+\section{Balance audit of the q4 claim}
+
+Energy cancellation and radial calculus are natural common inputs.
+The current weighted-transfer theorem also uses the endpoint estimate
+\[
+ \|B(u,u)\|_{\dot H^{-1}}
+ \lesssim
+ \|u\|_{L^{3,\infty}}\|\nabla u\|_2.
+\]
+For the q4 stack to be operator-portable, its analogue
+\[
+ \|\widetilde B_*(u,u)\|_{\dot H^{-1}}
+ \lesssim_{\widetilde B_*}
+ \|u\|_{L^{3,\infty}}\|\nabla u\|_2
+\]
+must be proved from the selected operator's rotation, dilation, and
+order-zero-multiplier representation.  That endpoint transfer is open
+in this repository.  Consequently the claimed full classification is
+a conjecture, not a proposition.
+
+The counterweight is still useful.  Local energy, moving-ball carrier
+structure, the true quadratic pressure identity, and exact convolution
+phase geometry are not automatically shared by the averaged equation.
+An averaged projected equation can be represented with a scalar
+pressure; what is absent is the canonical local quadratic pressure
+structure of the true nonlinearity.
+
+\begin{conjecture}[q4 portability audit target]
+The mixed Lorentz estimate and the remaining charged q4 budgets
+transfer to Tao's selected operator with operator-dependent constants.
+At least one load-bearing input in each milestone-registry result in
+rows 2--5 does not transfer.
+\end{conjecture}
+
+This conjecture awaits item-by-item proof and external review.
+
+\section{Realization logic}
+
+The original obligation conflated two experiments.
+
+\paragraph{Shell rung O-AVG-001a.}
+A shell trajectory realizing the broad q4 profile proves only that the
+explicitly imposed finite budget list is mutually compatible in that
+model.  It is not a velocity field and cannot bind unformulated future
+budgets.  Failure may reflect the model rather than a transferable
+obstruction.
+
+\paragraph{Averaged rung O-AVG-001b.}
+A trajectory of \(\widetilde B_*\) in the q4 cell would establish a
+genuine operator-relative limitation: an exclusion for true
+Navier--Stokes must use nonshared structure.  Conversely, proving that
+this averaged evolution avoids the cell does not by itself provide a
+quantitative inequality which transfers to the true equation.
+
+Thus neither experiment has ``both branches win'' logic.  Each remains
+worthwhile only with its narrower success and kill criteria.
+
+\section{Robust findings and course disposition}
+
+The following findings survive the red team, subject to external
+review:
+\begin{enumerate}
+\item Tao's theorem gives the operator-relative logical barrier in
+Theorem~\ref{thm:barrier}.
+\item The existing positive broad spectra show compatibility of the
+current radial-scalar formulas; they remain kinematic countermodels.
+\item Local energy, true pressure structure, carriers, and exact triad
+geometry are sensible places to seek nonportable information.
+\item Gate 0 verification has higher external value than immediately
+starting another q4 budget cycle.
+\end{enumerate}
+
+The canonical note is
+\texttt{dossier/experiments/averaging-portability-barrier.md}.
+The campaign handoff records completed work with \texttt{DONE}, the
+single live obligation with \texttt{NEXT}, and later work with
+\texttt{OPEN}.  Automatic continuations resume \texttt{NEXT}; they do
+not repeat this audit or its bootstrap procedure.
+
+\section{Open obligations}
+
+\begin{itemize}
+\item Prove or reject the mixed Lorentz transfer estimate for the
+selected Tao operator before promoting the q4 classification.
+\item Keep O-AVG-001a and O-AVG-001b separate, with model-specific
+success and kill criteria.
+\item Complete Gate 0 in the order recorded by \texttt{HANDOFF.md},
+starting with the pinned 2607 source and erratum-grade note.
+\item Seek independent human mathematical review; same-system red
+teaming is not external confirmation.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{Tao16}
+T. Tao,
+\emph{Finite time blowup for an averaged three-dimensional
+Navier--Stokes equation},
+Journal of the American Mathematical Society \textbf{29} (2016),
+601--674.
+\end{thebibliography}
+
+\end{document}
