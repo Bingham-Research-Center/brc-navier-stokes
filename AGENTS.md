@@ -14,7 +14,7 @@ another link only to discharge the live obligation.
 - Executable certificate: `lab/README.md` → one module/test.
 - Clay tree: `dossier/clay-target.md` → `dossier/possibility-tree.md`.
 - Breakdown/HWY: `dossier/papers/2509.25116-bridge-note.md`.
-- Human orientation: `README.md`.
+- Course: `dossier/moonshot-course.md`; human map: `README.md`.
 - Audit record: `dossier/reviews/2026-07-27-fable-audit.md`.
 
 ## Rules

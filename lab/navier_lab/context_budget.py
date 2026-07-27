@@ -14,6 +14,7 @@ LINE_BUDGETS = {
     "dossier/status.md": 240,
     "dossier/possibility-tree.md": 160,
     "dossier/milestones.md": 60,
+    "dossier/moonshot-course.md": 245,
 }
 
 REQUIRED_TEXT = {
@@ -30,6 +31,13 @@ REQUIRED_TEXT = {
         "Clay status:** unsolved",
         "External review",
         "schedule-independent",
+    ),
+    "dossier/moonshot-course.md": (
+        "Clay status:** unsolved",
+        "Primary goal",
+        "Telescope check",
+        "kill criterion",
+        "Escalate to John",
     ),
     "HANDOFF.md": (
         "Clay status:** unsolved",

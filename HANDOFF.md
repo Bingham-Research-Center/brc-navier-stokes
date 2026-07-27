@@ -9,7 +9,7 @@
 - [Spectral quantile speed](dossier/experiments/type-ii-spectral-quantile-speed.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
-Deleted review correspondence is not an input.
+Strategy gate: read [the moonshot course](dossier/moonshot-course.md) first.
 
 ## New exact budget
 
