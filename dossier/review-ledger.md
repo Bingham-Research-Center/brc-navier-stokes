@@ -24,6 +24,17 @@ conditional or countermodel scope after their corrections were folded into
 that text.  Such acceptance does not make an antecedent true, turn a scalar
 survivor into an NSE trajectory, or resolve any Clay alternative.
 
+## External review
+
+| Date | Reviewer | Record |
+|---|---|---|
+| 2026-07-27 | Claude (Fable 5), external system operated by John Lawson | [Full audit and curation record](reviews/2026-07-27-fable-audit.md): ledger layer structurally clean; q4 scale judged schedule-conditional; five milestones ranked in [the registry](milestones.md); four curation commits (status scoping, registry + router rules, this record, retirement of unreferenced notes). No mathematical claim was changed. This is an external process audit, not yet external review of the mathematics. |
+
+Two earlier external reports (2026-07-24, untracked at the repository
+root) were deleted unread; their surviving conclusions are preserved in
+section 5 of the linked record. Router rules now require reading and
+logging any signed external review file here before deletion.
+
 ## Archive
 
 The 54 detailed response transcripts remain recoverable from Git checkpoint
