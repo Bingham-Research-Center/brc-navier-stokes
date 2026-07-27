@@ -47,6 +47,7 @@ that survives the viscosity.
 - [Audit of arXiv:2607.08866](dossier/papers/2607.08866-audit.md)
 - [Line-anchored proof map of arXiv:2607.08866v2](dossier/papers/2607.08866-proof-map.md)
 - [Current status](dossier/status.md)
+- [Milestone registry](dossier/milestones.md)
 
 Canonical claims, routes, and experiments are indexed in the
 [research records](dossier/records/README.md).

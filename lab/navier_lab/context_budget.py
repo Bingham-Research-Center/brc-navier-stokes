@@ -9,10 +9,11 @@ from pathlib import Path
 REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
 
 LINE_BUDGETS = {
-    "AGENTS.md": 40,
+    "AGENTS.md": 55,
     "HANDOFF.md": 70,
     "dossier/status.md": 240,
     "dossier/possibility-tree.md": 160,
+    "dossier/milestones.md": 60,
 }
 
 REQUIRED_TEXT = {
@@ -20,6 +21,15 @@ REQUIRED_TEXT = {
         "dossier/records/",
         "make check",
         "Clay problem is unsolved",
+        "schedule-conditional",
+        "velocity-field-realizable",
+        "dossier/milestones.md",
+        "review-ledger.md",
+    ),
+    "dossier/milestones.md": (
+        "Clay status:** unsolved",
+        "External review",
+        "schedule-independent",
     ),
     "HANDOFF.md": (
         "Clay status:** unsolved",
