@@ -8,7 +8,7 @@
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Input:** the adversarially recomputed
-  [terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
+  terminal signed-flux ancestry theorem
 
 The terminal-flux theorem forces positive nonlinear input across a sharp
 frequency \(K_j\), but its conservative shell ledger permits one almost

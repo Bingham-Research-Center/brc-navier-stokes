@@ -682,7 +682,7 @@ proved.
 ## Downstream disposition
 
 The subsequent
-[diagonal Gaussian-flux reduction](type-ii-diagonal-heat-flux-recycling.md)
+diagonal Gaussian-flux reduction
 rewrites this future-dependent work as a current-time moving-heat flux,
 proves its exact nested recycling law and disjoint-band \(\ell^1\)
 estimate, and shows why that estimate still does not close q4.  The

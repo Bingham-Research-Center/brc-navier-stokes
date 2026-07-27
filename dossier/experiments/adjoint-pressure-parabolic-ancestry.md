@@ -810,7 +810,7 @@ locality, non-Zeno cascade speed, inherited-state ancestry, or
 event-index telescoping.
 
 The subsequent adversarially recomputed
-[terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
+terminal signed-flux ancestry theorem
 now resolves the inherited-state bookkeeping alternative.  A
 fixed-time \(H^1\) tail and last hitting force pre-event cumulative
 flux, while an event-adaptive sharp-annulus squeeze gives

@@ -6,8 +6,8 @@
 - **Domain:** smooth finite-energy Navier--Stokes flow on \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Inputs:** [carrier entrance](type-ii-inviscid-carrier-entrance.md),
-  [cross-record ledger](type-ii-cross-record-quantile.md), and
-  [local packet sharpness](type-ii-triad-packet-sharpness.md)
+  cross-record ledger, and
+  local packet sharpness
 
 ## Verdict
 

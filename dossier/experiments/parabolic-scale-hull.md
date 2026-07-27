@@ -7,7 +7,7 @@
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Inputs:** [terminal outer profile](terminal-outer-profile.md) and
-  [renormalised balance audit](scale-hull-balance.md)
+  renormalised balance audit
 - **Review:**
   [review-ledger summary](../review-ledger.md)
 - **Imported compactness:** Barker, Seregin, and Šverák,

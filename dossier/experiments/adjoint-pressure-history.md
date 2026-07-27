@@ -660,13 +660,13 @@ v\left(T^*+\frac{\rho_n^2}{\nu_{\rm phys}}s\right)
 
 Thus the exact open problem is a finite upper bound after the genealogy
 lower limit, not finiteness for each smooth member.  The subsequent
-[annular localisation theorem](adjoint-pressure-annular-cost.md) removes
+annular localisation theorem removes
 the diverging global energy factor completely.  It replaces that crude
 bound by a shell sum of exterior adjoint tails against centre-uniform
 local coefficient energy.  The recorded \(R^{-1/2}\) tail gives only an
 \(\ell^\infty\) shell action, whereas a finite cost requires the
 corresponding \(\ell^1\) secondary index. The later
-[nonlinear-regeneration reduction](adjoint-pressure-nonlinear-regeneration.md)
+nonlinear-regeneration reduction
 shows that reciprocal-or-lower coefficient frequencies are summable and
 remote inherited high frequencies vanish on the physical genealogy. The
 remaining endpoint is the shell-weighted high-frequency nonlinear Duhamel

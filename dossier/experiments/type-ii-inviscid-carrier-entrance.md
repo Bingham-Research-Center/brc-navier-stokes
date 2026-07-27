@@ -386,7 +386,7 @@ while the normalised layer energy stays positive, and temporal concentration
 can make a nonzero \(s=0\) carrier disappear from the space-time limit.
 
 The subsequent
-[carrier-defect theorem](type-ii-carrier-defect-compactness.md) proves that
+carrier-defect theorem proves that
 the viscous-dissipation defect vanishes on every fixed rescaled interval in
 the energy-efficient branch. It can still survive after normalisation in the
 energy-vanishing branch. Reynolds, trace, and spatial-escape defects remain

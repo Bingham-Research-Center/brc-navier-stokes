@@ -6,7 +6,7 @@
   countermodel
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** [staggered entrance ancestry](adjoint-pressure-staggered-entrance-ancestry.md),
+- **Inputs:** staggered entrance ancestry,
   [terminal dissipation collapse](adjoint-pressure-terminal-dissipation-collapse.md),
   and Barker's established higher-integrability claim
   `CLM-WEAK-L3-HIGHER-INTEGRABILITY-001`

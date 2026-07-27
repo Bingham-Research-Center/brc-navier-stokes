@@ -7,7 +7,7 @@
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Inputs:** the adversarially recomputed
-  [logarithmic interaction-depth theorem](adjoint-pressure-divergent-interaction-depth.md)
+  logarithmic interaction-depth theorem
   and Barker's published higher-integrability theorem
   `CLM-WEAK-L3-HIGHER-INTEGRABILITY-001`
 

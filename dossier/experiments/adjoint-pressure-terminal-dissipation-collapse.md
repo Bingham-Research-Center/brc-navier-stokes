@@ -5,8 +5,8 @@
 - **Status:** conditional same-genealogy analytic reduction
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Inputs:** [spatial high-pass payer](adjoint-pressure-spatial-highpass-payer.md)
-  and [staggered entrance ancestry](adjoint-pressure-staggered-entrance-ancestry.md)
+- **Inputs:** spatial high-pass payer
+  and staggered entrance ancestry
 - **External review:** pending
 - **Adversarial recomputation:** accepted; no fatal or major gap found
 

@@ -7,10 +7,10 @@
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Inputs:** adversarially recomputed
-  [temporal-disintegration theorem](adjoint-pressure-temporal-disintegration.md),
-  [first-hitting polar-vacuum theorem](adjoint-pressure-polar-vacuum.md),
-  [balanced Kato-polar compactness theorem](adjoint-pressure-balanced-polar.md),
-  and [finite-amplitude window theorem](adjoint-pressure-amplitude-window.md)
+  temporal-disintegration theorem,
+  first-hitting polar-vacuum theorem,
+  balanced Kato-polar compactness theorem,
+  and finite-amplitude window theorem
 
 The balanced finite-band branch has one fixed smooth
 relative-amplitude observable \(W_h\) with positive signed pressure
@@ -874,7 +874,7 @@ The exact balanced question is now:
 > remaining unwindowed Oseen products?
 
 The subsequent adversarially recomputed
-[product-law pressure-trace theorem](adjoint-pressure-product-trace.md)
+product-law pressure-trace theorem
 answers the first clause conditionally: the complete spatially
 reproduced compact-window mark survives as a positive pairing against a
 weak-\(L^{7/6}\) density over independent full-layer time and the

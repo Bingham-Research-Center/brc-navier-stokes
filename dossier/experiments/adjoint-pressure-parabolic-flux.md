@@ -717,7 +717,7 @@ current is also insufficient: pressure can cancel transport exactly in
 every gauge-invariant cutoff flux.
 
 The subsequent adversarially recomputed
-[terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
+terminal signed-flux ancestry theorem
 does close item 4 at the level needed to remove inherited energy as an
 unaccounted resource.  A fixed-time \(H^1\) tail and last-hitting
 argument turn every late entrance threshold into pre-event cumulative

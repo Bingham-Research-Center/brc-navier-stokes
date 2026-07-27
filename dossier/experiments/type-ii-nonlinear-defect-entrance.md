@@ -5,7 +5,7 @@
 - **Status:** complete conditional reduction; external review pending
 - **Domain:** smooth finite-energy Navier--Stokes flow on \(\mathbb R^3\)
 - **Clay status:** unsolved
-- **Input:** [full-defect alignment](type-ii-full-defect-alignment.md)
+- **Input:** full-defect alignment
 
 ## Verdict
 
@@ -915,7 +915,7 @@ Thus the discrete ledger simultaneously realises:
 
 It does not define spatial fields, the pressure, the local current, or a
 Navier--Stokes solution.  Separately, the
-[triad-packet sharpness theorem](type-ii-triad-packet-sharpness.md)
+triad-packet sharpness theorem
 constructs genuine smooth one-event Navier--Stokes packets with either
 sign of band transfer and the sharp vanishing dissipation power.  That
 theorem varies the trajectory from event to event.  Together the two

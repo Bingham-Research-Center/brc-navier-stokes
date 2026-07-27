@@ -8,7 +8,7 @@
 - **Domain:** scalar history ledger induced by the physical scale map
 - **Clay status:** unsolved
 - **Input:** adversarially recomputed
-  [intermediate-localisation theorem](adjoint-pressure-intermediate-localization.md)
+  intermediate-localisation theorem
 
 The reviewed feedback reduction now forces every selected zero-data
 feedback layer to obey

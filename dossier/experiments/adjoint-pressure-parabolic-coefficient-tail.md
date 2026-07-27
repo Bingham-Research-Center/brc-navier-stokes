@@ -9,10 +9,10 @@
 - **Domain:** \(\mathbb R^3\)
 - **Clay status:** unsolved
 - **Inputs:** adversarially recomputed
-  [direct-response decomposition](adjoint-pressure-direct-response.md),
-  [feedback-tail energy bounds](adjoint-pressure-feedback-tail.md),
-  [last-return renewal theorem](adjoint-pressure-last-return-renewal.md),
-  and [no-return parabolic-exclusion theorem](adjoint-pressure-no-return-parabolic.md)
+  direct-response decomposition,
+  feedback-tail energy bounds,
+  last-return renewal theorem,
+  and no-return parabolic-exclusion theorem
 
 The reviewed renewal theorems reduce the complete feedback branch to a
 stretched-exponential coefficient cost or superparabolic LP--Dyson

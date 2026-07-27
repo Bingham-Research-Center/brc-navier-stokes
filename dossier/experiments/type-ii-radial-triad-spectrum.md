@@ -7,8 +7,8 @@
 - **Domains:** \(\mathbb R^3\) for the conditional entrance and spectral
   measure; \(\mathbb T^3\) for the exact triad certificate
 - **Clay status:** unsolved
-- **Inputs:** [diagonal Gaussian flux](type-ii-diagonal-heat-flux-recycling.md),
-  [triad-packet sharpness](type-ii-triad-packet-sharpness.md)
+- **Inputs:** diagonal Gaussian flux,
+  triad-packet sharpness
 
 ## Verdict
 

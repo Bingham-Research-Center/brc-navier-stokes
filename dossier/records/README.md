@@ -61,6 +61,16 @@ and exact Git recovery points.  Same-system review is adversarial
 recomputation, never external confirmation.  Generate any new external packet
 from the current proof rather than stale correspondence.
 
+## Retired records
+
+Retired experiment notes and their exclusive lab artefacts live only in
+Git history. Enumerate them with
+`git log --diff-filter=D --name-only -- dossier/experiments lab` and
+restore one with `git show <sha>:<path>`. A retirement removes the ledger
+entry, the note, and its exclusive artefacts in one commit that keeps
+`make check` green; the retirement criterion is recorded in
+[the 2026-07-27 audit](../reviews/2026-07-27-fable-audit.md).
+
 ## Churn rule
 
 A routine frontier result changes one proof note, its canonical record, and

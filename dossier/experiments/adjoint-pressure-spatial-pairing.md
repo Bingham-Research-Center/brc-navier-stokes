@@ -12,7 +12,7 @@
 - **Clay status:** unsolved
 - **Inputs:** adversarially recomputed
   [adjoint-pressure history](adjoint-pressure-history.md),
-  [skew-compression obstruction](adjoint-pressure-skew-compression.md),
+  skew-compression obstruction,
   [parabolic tail-to-flux theorem](adjoint-pressure-parabolic-flux.md),
   and
   [spectral primal--adjoint pairing audit](adjoint-pressure-spectral-pairing.md)
@@ -267,7 +267,7 @@ Finally, solenoidality gives
 
 Equations (17)--(20) are exactly (4)--(5), agreeing with equation (42)
 of the
-[skew-compression audit](adjoint-pressure-skew-compression.md).  This
+skew-compression audit.  This
 identity is an input being audited for coercivity, not the new result of
 the present note.
 
@@ -607,7 +607,7 @@ The next target is no longer a bare conserved pairing.  It must either:
    frequency/spatial ancestry theorem.
 
 The subsequent adversarially recomputed
-[terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
+terminal signed-flux ancestry theorem
 implements item 4 at the cumulative level.  Fixed-time \(H^1\),
 last-hitting ancestry, and an event-adaptive sharp-annulus squeeze
 force terminal positive nonlinear input across some

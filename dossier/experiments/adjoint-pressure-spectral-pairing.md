@@ -11,7 +11,7 @@
 - **Clay status:** unsolved
 - **Inputs:** adversarially recomputed
   [adjoint-pressure history](adjoint-pressure-history.md),
-  [skew-compression obstruction](adjoint-pressure-skew-compression.md),
+  skew-compression obstruction,
   and [parabolic tail-to-flux theorem](adjoint-pressure-parabolic-flux.md)
 
 The reviewed coefficient-energy theorem leaves a positive signed
@@ -798,7 +798,7 @@ adjoint-pressure history.  A viable spatial functional must separate
 the pressure component or add cancellation control.
 
 The subsequent adversarially recomputed
-[terminal signed-flux ancestry theorem](adjoint-pressure-inherited-ancestry.md)
+terminal signed-flux ancestry theorem
 does realise item 4 far enough to force positive cumulative nonlinear
 input on a terminal interval across some
 \(K_j/\Lambda_j\to1\).  It does not make those intervals disjoint.
