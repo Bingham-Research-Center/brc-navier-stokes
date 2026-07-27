@@ -81,6 +81,7 @@
             "official_status",
             "definition",
             "established",
+            "established_reading",
             "repaired_source_theorem",
             "conditional_preprint",
             "preprint_claim",
@@ -123,7 +124,7 @@
         "entry_assumptions": {"$ref": "#/$defs/stringList"},
         "success": {"$ref": "#/$defs/nonemptyString"},
         "kill_criterion": {"$ref": "#/$defs/nonemptyString"},
-        "status": {"enum": ["program", "open", "partial", "closed"]},
+        "status": {"enum": ["program", "open", "partial", "closed", "closed_conditional"]},
         "children": {"$ref": "#/$defs/stringList"},
         "evidence_claim_ids": {"$ref": "#/$defs/stringList"}
       }

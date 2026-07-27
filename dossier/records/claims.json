@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-27",
   "claims": [
     {
       "id": "CLM-STATUS-001",
@@ -443,11 +443,11 @@
       ],
       "conclusion": "The terminal singular-point count is bounded uniformly across every solution family with the same M and N.",
       "scaling": "critical_local_quantitative",
-      "status": "established",
+      "status": "established_reading",
       "source_ids": ["SRC-SEREGIN-2021-LOCAL-WEAK-L3"],
       "depends_on": ["CLM-LOCAL-WEAK-L3-SINGULAR-FINITENESS-001"],
-      "audit": "The displayed theorem states finiteness; the quantitative dependence and floor bound are read from Proposition 1.3 and the disjoint-ball count in the published proof. Uniformity across rescaled profiles additionally requires a common energy-pressure ceiling.",
-      "last_checked": "2026-07-23"
+      "audit": "The displayed theorem states finiteness; the quantitative dependence and floor bound are read from Proposition 1.3 and the disjoint-ball count in the published proof. Uniformity across rescaled profiles additionally requires a common energy-pressure ceiling. Status established_reading: the quantitative floor bound is an in-repository reading of Proposition 1.3 and the disjoint-ball count, not the displayed theorem.",
+      "last_checked": "2026-07-27"
     },
     {
       "id": "CLM-TYPE-I-ANCIENT-EQUIVALENCE-001",
@@ -640,11 +640,11 @@
       ],
       "conclusion": "The terminal energy measure has lower local dimension beta=q/(q-1)(3-6/p-5/q)>0 and therefore vanishes on every singleton.",
       "scaling": "energy_measure_dimension",
-      "status": "established",
+      "status": "established_reading",
       "source_ids": ["SRC-LESLIE-SHVYDKOY-2018"],
       "depends_on": [],
-      "audit": "The local-dimension proposition is at exact accepted-source lines 521-539 and its three-dimensional NSE extension is stated at lines 993-995 after the viscous-term discussion at lines 903-924. The strict inequality makes beta positive. The paper's refined Region-II theorem at lines 1183-1252 gives stronger concentration-dimension bounds but is not needed for the no-atom claim.",
-      "last_checked": "2026-07-24"
+      "audit": "The local-dimension proposition is at exact accepted-source lines 521-539 and its three-dimensional NSE extension is stated at lines 993-995 after the viscous-term discussion at lines 903-924. The strict inequality makes beta positive. The paper's refined Region-II theorem at lines 1183-1252 gives stronger concentration-dimension bounds but is not needed for the no-atom claim. Status established_reading: the three-dimensional NSE application combines the paper's stated extension with in-repository steps and is not a verbatim published theorem.",
+      "last_checked": "2026-07-27"
     },
     {
       "id": "CLM-LERAY-ENERGY-EQUALITY-OPEN-001",

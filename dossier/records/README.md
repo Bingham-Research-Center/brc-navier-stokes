@@ -21,6 +21,9 @@ dependency-free validator is **lab/navier_lab/records.py**.
 ### Claims
 
 - **established:** supported by a primary peer-reviewed theorem.
+- **established_reading:** the conclusion follows from a peer-reviewed proof
+  via an explicit in-repository reading or extension; the statement is not
+  verbatim in the source and external confirmation is pending.
 - **repaired_source_theorem:** a peer-reviewed proof supports the recorded
   corrected statement, but the statement is not a verbatim published theorem
   and external confirmation of the repair is pending.
@@ -30,6 +33,14 @@ dependency-free validator is **lab/navier_lab/records.py**.
 - **official_status:** time-sensitive status from an official authority.
 - **definition:** controlling formulation or convention.
 - **open:** an explicit unsolved proposition.
+
+### Routes
+
+- **closed:** the route's question is closed by an argument unconditional at
+  its entry assumptions.
+- **closed_conditional:** the route's question is closed only inside a
+  recorded conditional chain; antecedent claims keep their own status and no
+  unconditional closure is asserted.
 
 ### Obligations
 

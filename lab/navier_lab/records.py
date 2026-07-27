@@ -86,12 +86,13 @@ CLAIM_STATUSES = {
     "official_status",
     "definition",
     "established",
+    "established_reading",
     "repaired_source_theorem",
     "conditional_preprint",
     "preprint_claim",
     "open",
 }
-ROUTE_STATUSES = {"program", "open", "partial", "closed"}
+ROUTE_STATUSES = {"program", "open", "partial", "closed", "closed_conditional"}
 EXPERIMENT_STATUSES = {"planned", "implemented", "running", "complete", "failed"}
 OBLIGATION_STATUSES = {
     "open",

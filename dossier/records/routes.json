@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-25",
+  "last_updated": "2026-07-27",
   "routes": [
     {
       "id": "ROUTE-ROOT",
@@ -167,7 +167,7 @@
       "entry_assumptions": ["A local critical distribution estimate", "Geometry beyond bare weak-L(3/2) volume control"],
       "success": "Within the repaired 2607 conditional chain, a covering theorem whose entropy cost remains absorbable.",
       "kill_criterion": "A packing geometry whose necessary covering loss consumes the entire subcritical gain.",
-      "status": "closed",
+      "status": "closed_conditional",
       "children": [],
       "evidence_claim_ids": ["CLM-GRUJIC-001"]
     },
