@@ -1,58 +1,34 @@
-# Handoff: R3C broad spectral genealogy
+# Handoff: R3C non-portable triad cycle
 
-**Updated:** 2026-07-25 · **Clay status:** unsolved
+**Updated:** 2026-07-27 · **Clay status:** unsolved
 
 **Live route:** `ROUTE-R3C` · `EXP-TYPE-II-SPECTRAL-QUANTILE-SPEED-001`
 
 ## Load only
 
+- [Course move M4](dossier/moonshot-course.md#m4-non-portable-angulartriad-cycle-route-r3c-at-most-three-cycles)
 - [Spectral quantile speed](dossier/experiments/type-ii-spectral-quantile-speed.md)
 - [`ROUTE-R3C`](dossier/records/routes.json)
 
-Strategy gate: read [the moonshot course](dossier/moonshot-course.md) first.
+Read only M4, not the whole course, for this bounded cycle.
 
-## New exact budget
+## State and budget
 
-\[
-\partial_se=m-\lambda e,\qquad
-\mathfrak q(s)=\int_0^\infty\lambda^{-1/2}|m(\lambda,s)|\,d\lambda.
-\]
-Actual quadratic structure gives
-\[
-\mathfrak q(s)\lesssim\nu^{-1/2}\|v(s)\|_2M(s)Y(s),\qquad \int_0^{s_0}\mathfrak q(s)\,ds<\infty.
-\]
+- The actual transfer has the finite same-trajectory budget
+  \(\mathfrak q=\int\lambda^{-1/2}|m|\,d\lambda\lesssim\nu^{-1/2}\|v\|_2MY\in L^1_s\).
+- A descending fixed-energy quantile has finite charge
+  \(\int e(\Lambda_\eta,s)|\Lambda_\eta'|/\sqrt{\Lambda_\eta}\,ds\).
+- On the schedule-conditional q4 scale
+  \(L=s^{-9/11}\ell^{2/11}\), persistent width
+  \(W_\eta\lesssim\sqrt L\) is impossible. This closes nondegenerate
+  adjacent-Pell smoothing, not atomic snapshots.
+- A smooth positive-flux shell with \(W_\eta\asymp L\) pays the charge
+  and retains every current q4 scalar, Gaussian, diagonal, and early-reuse
+  law. It is a spectral countermodel, not a velocity field.
 
-For a nondegenerate fixed-energy quantile \(\int_0^{\Lambda_\eta}e=\eta\),
-\[
-e(\Lambda_\eta,s)\Lambda_\eta'=\int_0^{\Lambda_\eta}\lambda e-\int_0^{\Lambda_\eta}m.
-\]
-On its descending set,
-\[
-\int e(\Lambda_\eta,s)\frac{|\Lambda_\eta'|}{\sqrt{\Lambda_\eta}}\,ds<\infty.
-\]
-
-## Closed and surviving
-
-At the q4 scale \(L=s^{-9/11}\ell^{2/11}\), descent
-\(-\Lambda_\eta'\gtrsim L/s\) forces
-\[
-\int_0\frac{\sqrt L}{sW_\eta}\,ds<\infty,\qquad
-W_\eta:=\eta/e(\Lambda_\eta,s).
-\]
-Persistent \(W_\eta\lesssim\sqrt L\) is impossible.  This closes the
-nondegenerate adjacent-Pell/delta-shell interpretation, not the atomic
-snapshots.
-
-A smooth positive-flux shell
-\[
-e_\phi(\lambda,s)=\frac{A(s)}{L(s)}
-\phi\!\left(\frac{\lambda}{L(s)}\right),\qquad
-A=\frac d2e^{-\int_0^sL},
-\]
-has \(W_\eta\asymp L\), pays
-\(\mathfrak q_\phi\lesssim A(\sqrt L+1/(s\sqrt L))\in L^1_s\), and
-retains every current q4 scalar, Gaussian, diagonal, and early-reuse law.
-It is a spectral countermodel, not a velocity field.
+R3C is on cycle 1 of 3 since the 2026-07-27 curation. Radial-scalar
+budgets are spent. Only local energy, pressure, or exact triad
+phase/geometry can start this cycle; cap counting alone does not.
 
 ## Exact live question
 
@@ -61,10 +37,12 @@ phase, genealogical, pressure, capacity, or strong-trace budget?
 
 ## Next bounded cycle
 
-Resolve the radial transfer into angular caps and exact triad convolution.
-Derive a mode-count or parent-frequency cost for fixed-relative bandwidth,
-then test it against smooth dilations of the Pell family.  Invoke boundary
-Hausdorff geometry or strong-trace drift only if the angular survivor persists.
+Use exact Fourier convolution support and phase constraints to test a
+fixed-relative-width broad shell against smooth Pell dilations. Deliver
+either a schedule-free finite charge or an NSE-compatible survivor showing
+why that charge fails. A merely radial, scalar, or mode-count refinement is
+a negative cycle. After three negative cycles, freeze R3C and return to the
+possibility tree.
 
 All findings await external review.  Keep slower clocks, divergent energy,
 R3B, and the other Clay alternatives separate.
